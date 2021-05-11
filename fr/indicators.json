@@ -22,100 +22,28 @@
           "status": "complete"
         },
         {
-          "id": "1-2-2",
-          "title": "Proportion d’hommes, de femmes et d’enfants de tous âges vivant dans une situation de pauvreté sous toutes ses formes, telles que définies par chaque pays",
-          "description": "",
-          "keywords": "",
-          "href": "/cif-cic/fr/1-2-2",
-          "status": "notstarted"
-        },
-        {
-          "id": "1-3-1",
-          "title": "Proportion de la population bénéficiant de socles ou systèmes de protection sociale, par sexe et par groupe de population (enfants, chômeurs, personnes âgées, personnes handicapées, femmes enceintes et nouveau-nés, victimes d’un accident du travail, pauvres et personnes vulnérables)",
-          "description": "",
-          "keywords": "",
-          "href": "/cif-cic/fr/1-3-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "1-4-1",
-          "title": "Proportion de la population vivant dans des ménages ayant accès aux services de base",
-          "description": "",
-          "keywords": "",
-          "href": "/cif-cic/fr/1-4-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "1-4-2",
-          "title": "Proportion de la population adulte totale, par sexe et par type d’occupation, qui dispose de la sécurité des droits fonciers et qui : a) possède des documents légalement authentifiés ; b) considère que ses droits sur la terre sont sûrs",
-          "description": "",
-          "keywords": "",
-          "href": "/cif-cic/fr/1-4-2",
-          "status": "notstarted"
-        },
-        {
-          "id": "1-5-1",
-          "title": "Nombre de personnes décédées, disparues ou directement touchées lors de catastrophes, pour 100 000 personnes",
-          "description": "",
-          "keywords": "",
-          "href": "/cif-cic/fr/1-5-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "1-5-2",
-          "title": "Pertes économiques directement attribuables à des catastrophes par rapport au produit intérieur brut mondial (PIB)",
-          "description": "",
-          "keywords": "",
-          "href": "/cif-cic/fr/1-5-2",
-          "status": "notstarted"
-        },
-        {
-          "id": "1-5-3",
-          "title": "Nombre de pays ayant adopté et mis en place des stratégies nationales de réduction des risques de catastrophe, conformément au Cadre de Sendai pour la réduction des risques de catastrophe (2015‐2030)",
-          "description": "",
-          "keywords": "",
-          "href": "/cif-cic/fr/1-5-3",
-          "status": "notstarted"
-        },
-        {
-          "id": "1-5-4",
-          "title": "Proportion d’administrations locales ayant adopté et mis en place des stratégies locales de réduction des risques de catastrophe, conformément aux stratégies suivies à l’échelle nationale",
-          "description": "",
-          "keywords": "",
-          "href": "/cif-cic/fr/1-5-4",
-          "status": "notstarted"
-        },
-        {
-          "id": "1-a-1",
-          "title": "Proportion des ressources nationales directement allouée par l’État à des programmes de réduction de la pauvreté",
-          "description": "",
-          "keywords": "",
-          "href": "/cif-cic/fr/1-a-1",
-          "status": "notstarted"
-        },
-        {
           "id": "1-a-2",
-          "title": "Proportion des dépenses publiques totales affectée aux services essentiels (éducation, santé et protection sociale)",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/cif-cic/fr/1-a-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "1-a-3",
-          "title": "Total des subventions et des flux extérieurs non générateurs d’endettement directement alloués aux programmes de réduction de la pauvreté, exprimé en proportion du PIB",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/cif-cic/fr/1-a-3",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "1-b-1",
-          "title": "Proportion des dépenses publiques de fonctionnement et d’équipement consacrée aux secteurs répondant plus particulièrement aux besoins des femmes, des pauvres et des groupes vulnérables",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/cif-cic/fr/1-b-1",
-          "status": "notstarted"
+          "status": "complete"
         }]
     }
   },
@@ -1151,67 +1079,67 @@
         },
         {
           "id": "10-4-1",
-          "title": "Part du travail dans le PIB, y compris les salaires et les transferts sociaux",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/cif-cic/fr/10-4-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "10-5-1",
-          "title": "Indicateurs de solidité financière",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/cif-cic/fr/10-5-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "10-6-1",
-          "title": "Proportion de pays en développement qui sont membres d’organisations internationales et y disposent du droit de vote",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/cif-cic/fr/10-6-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "10-7-1",
-          "title": "Dépenses de recrutement à la charge du salarié en proportion de son revenu annuel dans le pays de destination",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/cif-cic/fr/10-7-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "10-7-2",
-          "title": "Nombre de pays ayant mis en œuvre des politiques migratoires bien gérées",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/cif-cic/fr/10-7-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "10-a-1",
-          "title": "Proportion de lignes tarifaires concernées par les importations en provenance des pays les moins avancés et des pays en développement bénéficiant d’une franchise de droits",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/cif-cic/fr/10-a-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "10-b-1",
-          "title": "Montant total des ressources allouées au développement, par pays bénéficiaire et donateur et type d’apport (aide publique au développement, investissement étranger direct et autres)",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/cif-cic/fr/10-b-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "10-c-1",
-          "title": "Coûts des envois de fonds en proportion du montant transféré",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/cif-cic/fr/10-c-1",
-          "status": "notstarted"
+          "status": "complete"
         }]
     }
   },
@@ -1247,11 +1175,11 @@
         },
         {
           "id": "11-3-2",
-          "title": "Proportion de villes dotées d’une structure de participation directe de la société civile à la gestion et à l’aménagement des villes, fonctionnant de façon régulière et démocratique",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/cif-cic/fr/11-3-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "11-4-1",
