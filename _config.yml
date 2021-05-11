@@ -149,7 +149,7 @@ decimal_separator: ','
 
 # Set a base for all goal image URLs. Note that the full goal image path will be
 # the base below, completed with: /[language]/[number].png (eg, /fr/6.png).
-goal_image_base: https://sdg-data-canada-odd-donnees/cif-cic/assets/img/cards
+goal_image_base: https://sdg-data-canada-odd-donnees.github.io/cif-cic/assets/img/cards
 
 # Tell Jekyll to use the Remote Theme plugin.
 plugins:
