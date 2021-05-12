@@ -138,7 +138,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic/assets/css/style.css?v=20210512114802">
+        <link rel="stylesheet" href="/cif-cic/assets/css/style.css?v=20210512121947">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -450,7 +450,7 @@ var translations = {
   data-geocoderegex=""
   data-showmap="false"
   data-startvalues="[{&quot;field&quot;:&quot;Geography&quot;,&quot;value&quot;:&quot;Canada&quot;},{&quot;field&quot;:&quot;Area&quot;,&quot;value&quot;:&quot;Terrestrial&quot;}]"
-  data-graphlimits="null"
+  data-graphlimits="[{&quot;minimum&quot;:0,&quot;maximimum&quot;:50}]"
   data-stackeddisaggregation=""
   data-graphannotations="[{&quot;unit&quot;:&quot;Percentage&quot;,&quot;value&quot;:30,&quot;preset&quot;:&quot;target_line&quot;}]"
   data-indicatordownloads="null"
@@ -976,7 +976,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Indicator description </th>
         <td>
           
-            <p>These indicators report the amount and proportion of Canada’s terrestrial (land and freshwater) and marine area that is conserved. Land and/or water access and use within protected areas are controlled primarily for the purpose of conserving nature (for example, a park, a conservation area or a wildlife reserve). Other effective area-based conservation measures are also managed over the long term in ways that result in the effective conservation of biodiversity. However, they might have been established for other purposes.</p>
+            <p>These indicators report the amount and proportion of Canada’s terrestrial (land and freshwater) and marine area that is conserved. (ECCC)</p>
 
           
         </td>
@@ -1052,7 +1052,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Comments and limitations </th>
         <td>
           
-            <p>Comparisons with previous reports should be made with caution, as data quality and completeness continue to improve. Privately protected land and other effective area-based conservation measures contribute to achievement of Canada’s targets, but many are not yet captured within the database.</p>
+            <p>Land and/or water access and use within protected areas are controlled primarily for the purpose of conserving nature (for example, a park, a conservation area or a wildlife reserve). Other effective area-based conservation measures are also managed over the long term in ways that result in the effective conservation of biodiversity. However, they might have been established for other purposes. Comparisons with previous reports should be made with caution, as data quality and completeness continue to improve. Privately protected land and other effective area-based conservation measures contribute to achievement of Canada’s targets, but many are not yet captured within the database. (ECCC)</p>
 
           
         </td>
@@ -1068,7 +1068,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Rational and interpretation </th>
         <td>
           
-            <p>Well-managed conserved areas are one way to protect wild species and their habitats for present and future generations. Habitat conservation is a measure of human response to the loss of biodiversity and natural habitat. As the area conserved in Canada increases, more lands and waters are withdrawn from direct human development stresses, thereby contributing to biodiversity conservation and improving the health of ecosystems. In turn, healthy ecosystems provide benefits such as clean water, mitigation of climate change, pollination and improved human health.</p>
+            <p>Well-managed conserved areas are one way to protect wild species and their habitats for present and future generations. Habitat conservation is a measure of human response to the loss of biodiversity and natural habitat. As the area conserved in Canada increases, more lands and waters are withdrawn from direct human development stresses, thereby contributing to biodiversity conservation and improving the health of ecosystems. In turn, healthy ecosystems provide benefits such as clean water, mitigation of climate change, pollination and improved human health. (ECCC)</p>
 
           
         </td>
@@ -1121,7 +1121,7 @@ data-event-label="Change to indicator.sources tab"
             
 
             
-              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/5ac0985d610035f799aee34e1a5051e8d650406a" target="_blank">
+              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/21f448fb5c5ea38d351995d0f85f22dd0c99903b" target="_blank">
                 2021-05-12: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
               </a>
             
@@ -1549,12 +1549,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/cif-cic/assets/js/sdg.js?v=20210512114802'></script>
+<script src='/cif-cic/assets/js/sdg.js?v=20210512121947'></script>
 
 
     
     
-    <script src="/cif-cic/assets/js/custom.js?v=20210512114802"></script><script>
+    <script src="/cif-cic/assets/js/custom.js?v=20210512121947"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
