@@ -224,3 +224,6 @@ metadata_tabs:
   - scope: sources
     title: indicator.sources
     description: ''
+
+# Goal color graph test
+graph_color_set: 'goal'
