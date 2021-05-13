@@ -138,7 +138,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic/assets/css/style.css?v=20210512121947">
+        <link rel="stylesheet" href="/cif-cic/assets/css/style.css?v=20210513025800">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -434,7 +434,7 @@ var translations = {
   id="indicatorData"
   data-indicatorid='indicator_2-1-1'
   data-id="2-1-1"
-  data-country="Canada, Province or territory"
+  data-country="Canada, provinces and territories"
   data-charttitle="Proportion of household living with food insecurity"
   data-charttitles="null"
   data-measurementunit="Percentage"
@@ -442,7 +442,7 @@ var translations = {
   data-graphtype="bar"
   data-geocoderegex=""
   data-showmap="false"
-  data-startvalues="[{&quot;field&quot;:&quot;Géographie&quot;,&quot;value&quot;:&quot;Canada&quot;},{&quot;field&quot;:&quot;Living arrangement&quot;,&quot;value&quot;:&quot;Total all living arrangements&quot;},{&quot;field&quot;:&quot;Household food security status&quot;,&quot;value&quot;:&quot;Food insecure moderate and severe&quot;}]"
+  data-startvalues="[{&quot;field&quot;:&quot;Géographie&quot;,&quot;value&quot;:&quot;Canada&quot;},{&quot;field&quot;:&quot;Living arrangement&quot;,&quot;value&quot;:&quot;Total all living arrangements&quot;},{&quot;field&quot;:&quot;Household food security status&quot;,&quot;value&quot;:&quot;Food insecure moderate and severe&quot;},{&quot;field&quot;:&quot;Household food security status&quot;,&quot;value&quot;:&quot;Food insecure marginal&quot;}]"
   data-graphlimits="null"
   data-stackeddisaggregation=""
   data-graphannotations="null"
@@ -495,7 +495,7 @@ var translations = {
     <p>La source: Statistics Canada</p>
     
     
-    <p>Zone géographique: Canada, Province or territory</p>
+    <p>Zone géographique: Canada, provinces and territories</p>
     
     
     <p>Unité de mesure: Percentage</p>
@@ -779,7 +779,7 @@ opensdg.chartConfigAlter(function(config, info) {
 
         
         <dt>Zone géographique:</dt>
-        <dd>Canada, Province or territory</dd>
+        <dd>Canada, provinces and territories</dd>
         
 
         
@@ -824,7 +824,7 @@ opensdg.chartConfigAlter(function(config, info) {
 
         
         <dt>Zone géographique:</dt>
-        <dd>Canada, Province or territory</dd>
+        <dd>Canada, provinces and territories</dd>
         
 
         
@@ -961,7 +961,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Description de l&#39;indicateur </th>
         <td>
           
-            <p>This variable is based on a set of 18 questions and indicates whether households both with and without children were able to afford the food they needed in the previous 12 months.</p>
+            <p>This indicator measures the proportion of household living with food insecurity. This measure is based on a set of 18 questions and indicates whether households both with and without children were able to afford the food they needed in the previous 12 months.</p>
 
           
         </td>
@@ -977,7 +977,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Couverture géographique </th>
         <td>
           
-            <p>Canada, Province or territory</p>
+            <p>Canada, provinces and territories</p>
 
           
         </td>
@@ -1012,7 +1012,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Calculs </th>
         <td>
           
-            <p>This table presents estimates from two-year combined data. These estimates are less current than annual estimates, but have higher precision given the larger sample (less variability).</p>
+            <p>Not applicable</p>
 
           
         </td>
@@ -1037,7 +1037,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Commentaires et limitations </th>
         <td>
           
-            <p>In 2020, Health Canada updated its recommended derivation of food insecurity measures to include the level “marginal food insecurity”. Historically, this category was considered part of the population defined as “food secure”. Users wishing to compare estimates from this table to earlier cycles of the survey that do not include “marginal food insecurity” should add the totals of the categories “marginally insecure” and “food secure” from this table to compare to the “food secure” category of the earlier table. For international comparability, food insecurity is typically considered to be the combination of “moderate” and “severe” insecurity.</p>
+            <p>Excluded from the measure’s coverage are: persons living on reserves and other Aboriginal settlements in the provinces; full-time members of the Canadian Forces; the institutionalized population, children aged 12-17 that are living in foster care, and persons living in the Quebec health regions of Région du Nunavik and Région des Terres-Cries-de-la-Baie-James. Altogether, these exclusions represent less than 3% of the Canadian population aged 12 and over.</p>
 
           
         </td>
@@ -1106,8 +1106,8 @@ data-event-label="Change to indicator.sources tab"
             
 
             
-              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/3b9740d6e48128cfa78769f193b3e8a150eb12de" target="_blank">
-                2021-05-11: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
+              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/8c79bbe4174373dace3be8116420a86416247437" target="_blank">
+                2021-05-12: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
               </a>
             
 
@@ -1316,7 +1316,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Couverture géographique </th>
         <td>
           
-            <p>Canada, Province or territory</p>
+            <p>Canada, provinces and territories</p>
 
           
         </td>
@@ -1532,12 +1532,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/cif-cic/assets/js/sdg.js?v=20210512121947'></script>
+<script src='/cif-cic/assets/js/sdg.js?v=20210513025800'></script>
 
 
     
     
-    <script src="/cif-cic/assets/js/custom.js?v=20210512121947"></script><script>
+    <script src="/cif-cic/assets/js/custom.js?v=20210513025800"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();

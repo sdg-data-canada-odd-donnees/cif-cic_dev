@@ -138,7 +138,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic/assets/css/style.css?v=20210512121947">
+        <link rel="stylesheet" href="/cif-cic/assets/css/style.css?v=20210513025800">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -434,7 +434,7 @@ var translations = {
   id="indicatorData"
   data-indicatorid='indicator_1-2-1'
   data-id="1-2-1"
-  data-country="Canada, Province or territory"
+  data-country="Canada (excluding territories) and provinces"
   data-charttitle="Percentage of persons who are asset resilient"
   data-charttitles="null"
   data-measurementunit="Percentage"
@@ -442,7 +442,7 @@ var translations = {
   data-graphtype="line"
   data-geocoderegex=""
   data-showmap="false"
-  data-startvalues="[{&quot;field&quot;:&quot;Géographie&quot;,&quot;value&quot;:&quot;Canada&quot;},{&quot;field&quot;:&quot;Age group and family type&quot;,&quot;value&quot;:&quot;Persons all ages and family types&quot;},{&quot;field&quot;:&quot;Age group and family type&quot;,&quot;value&quot;:&quot;Persons in a couple only family&quot;},{&quot;field&quot;:&quot;Age group and family type&quot;,&quot;value&quot;:&quot;Persons in a couple with children family&quot;},{&quot;field&quot;:&quot;Age group and family type&quot;,&quot;value&quot;:&quot;Persons in a lone-parent family&quot;},{&quot;field&quot;:&quot;Age group and family type&quot;,&quot;value&quot;:&quot;Persons not in an economic family&quot;},{&quot;field&quot;:&quot;Statistics&quot;,&quot;value&quot;:&quot;Asset resilient for at least three months&quot;}]"
+  data-startvalues="[{&quot;field&quot;:&quot;Géographie&quot;,&quot;value&quot;:&quot;Canada&quot;},{&quot;field&quot;:&quot;Age group and family type&quot;,&quot;value&quot;:&quot;Persons all ages and family types&quot;},{&quot;field&quot;:&quot;Statistics&quot;,&quot;value&quot;:&quot;Asset resilient for at least three months&quot;}]"
   data-graphlimits="null"
   data-stackeddisaggregation=""
   data-graphannotations="null"
@@ -495,7 +495,7 @@ var translations = {
     <p>La source: Statistics Canada</p>
     
     
-    <p>Zone géographique: Canada, Province or territory</p>
+    <p>Zone géographique: Canada (excluding territories) and provinces</p>
     
     
     <p>Unité de mesure: Percentage</p>
@@ -787,7 +787,7 @@ opensdg.chartConfigAlter(function(config, info) {
 
         
         <dt>Zone géographique:</dt>
-        <dd>Canada, Province or territory</dd>
+        <dd>Canada (excluding territories) and provinces</dd>
         
 
         
@@ -832,7 +832,7 @@ opensdg.chartConfigAlter(function(config, info) {
 
         
         <dt>Zone géographique:</dt>
-        <dd>Canada, Province or territory</dd>
+        <dd>Canada (excluding territories) and provinces</dd>
         
 
         
@@ -953,7 +953,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Nom de la cible </th>
         <td>
           
-            <p>No target</p>
+            <p>No specific target</p>
 
           
         </td>
@@ -969,7 +969,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Description de l&#39;indicateur </th>
         <td>
           
-            <p>Asset resilience is defined as having enough savings to maintain well-being for a specified period of time. More specifically, the ability of Canadians to cover unexpected expenses, or reduced income, by drawing from assets (e.g. a bank account) for a specified period of time.</p>
+            <p>This indicator measures the percentage of persons who are asset resilient. Asset resilience is defined as having enough savings to maintain well-being for a specified period of time. More specifically, the ability of Canadians to cover unexpected expenses, or reduced income, by drawing from assets (e.g. a bank account) for a specified period of time.</p>
 
           
         </td>
@@ -985,7 +985,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Couverture géographique </th>
         <td>
           
-            <p>Canada, Province or territory</p>
+            <p>Canada (excluding territories) and provinces</p>
 
           
         </td>
@@ -1020,7 +1020,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Calculs </th>
         <td>
           
-            <p>Low income measures (LIM), are relative measures of low income, set at 50% of adjusted median household income. These measures are categorized according to the number of persons present in the household, reflecting the economies of scale inherent in household size. The LIM are based on after-tax income (AT). Liquid financial assets include bank accounts, term deposits, treasury bills, tax-free savings accounts, stocks and bonds (in mutual funds or not), and registered retirement savings plans. Economic family types are comprised of economic families (a group of two or more persons who live in the same dwelling and are related to each other by blood, marriage, common law or adoption) and persons not in an economic family (a person living either alone or with others to whom he or she is unrelated).</p>
+            <p>Not applicable</p>
 
           
         </td>
@@ -1039,7 +1039,20 @@ data-event-label="Change to indicator.sources tab"
           
       
         
+      
+      
+      <tr>
+        <th scope="row">Commentaires et limitations </th>
+        <td>
           
+            <p>The target population for the Survey of Financial Security is families across the ten provinces of Canada. Excluded from the survey are: the territories, those living on reserves and other Aboriginal settlements, official representatives of foreign countries living in Canada and their families, members of religious and other communal colonies, members of the Canadian Forces living in military bases, people living in residences for senior citizens, and people living full time in institutions. These exclusions represent approximately 2% of the population.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
         
       
@@ -1101,8 +1114,8 @@ data-event-label="Change to indicator.sources tab"
             
 
             
-              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/3b9740d6e48128cfa78769f193b3e8a150eb12de" target="_blank">
-                2021-05-11: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
+              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/d3b711402966cd76d96c04ffb54e99c97d273352" target="_blank">
+                2021-05-12: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
               </a>
             
 
@@ -1311,7 +1324,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Couverture géographique </th>
         <td>
           
-            <p>Canada, Province or territory</p>
+            <p>Canada (excluding territories) and provinces</p>
 
           
         </td>
@@ -1527,12 +1540,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/cif-cic/assets/js/sdg.js?v=20210512121947'></script>
+<script src='/cif-cic/assets/js/sdg.js?v=20210513025800'></script>
 
 
     
     
-    <script src="/cif-cic/assets/js/custom.js?v=20210512121947"></script><script>
+    <script src="/cif-cic/assets/js/custom.js?v=20210513025800"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();

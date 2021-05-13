@@ -138,7 +138,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic/assets/css/style.css?v=20210512121947">
+        <link rel="stylesheet" href="/cif-cic/assets/css/style.css?v=20210513025800">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -439,7 +439,7 @@ var translations = {
   data-charttitles="null"
   data-measurementunit="Index value"
   data-showdata="true"
-  data-graphtype="bar"
+  data-graphtype="line"
   data-geocoderegex=""
   data-showmap="false"
   data-startvalues="[{&quot;field&quot;:&quot;Index&quot;,&quot;value&quot;:&quot;Soil Quality&quot;},{&quot;field&quot;:&quot;Indicator&quot;,&quot;value&quot;:&quot;Compound Index&quot;},{&quot;field&quot;:&quot;Index&quot;,&quot;value&quot;:&quot;Biodiversity&quot;},{&quot;field&quot;:&quot;Indicator&quot;,&quot;value&quot;:&quot;Compound Index&quot;},{&quot;field&quot;:&quot;Index&quot;,&quot;value&quot;:&quot;Air Quality&quot;},{&quot;field&quot;:&quot;Indicator&quot;,&quot;value&quot;:&quot;Compound Index&quot;},{&quot;field&quot;:&quot;Index&quot;,&quot;value&quot;:&quot;Water Quality&quot;},{&quot;field&quot;:&quot;Indicator&quot;,&quot;value&quot;:&quot;Compound Index&quot;}]"
@@ -734,32 +734,40 @@ opensdg.chartConfigAlter(function(config, info) {
 </script>
 
 <script>
+// For line charts, add the vertical line hover functionality.
 opensdg.chartConfigAlter(function(config, info) {
-  if (info.stackedDisaggregation) {
     var overrides = {
-      options: {
-        scales: {
-          xAxes: [{ stacked: true }],
-          yAxes: [{ stacked: true }],
-        }
-      }
+        options: {
+            tooltips: {
+                intersect: false,
+                axis: 'x'
+            },
+        },
+        plugins: [{
+            beforeDatasetsDraw: function(chart) {
+                if (chart.tooltip._active && chart.tooltip._active.length) {
+                    var activePoint = chart.tooltip._active[0],
+                        ctx = chart.ctx,
+                        x = activePoint.tooltipPosition().x,
+                        topY = chart.scales['y-axis-0'].top,
+                        bottomY = chart.scales['y-axis-0'].bottom;
+
+                    // draw line
+                    ctx.save();
+                    ctx.beginPath();
+                    ctx.moveTo(x, topY);
+                    ctx.lineTo(x, bottomY);
+                    ctx.lineWidth = 2;
+                    ctx.strokeStyle = '#757575';
+                    ctx.setLineDash([5, 2]);
+                    ctx.stroke();
+                    ctx.restore();
+                }
+            }
+        }],
     };
-    // If we have stackedDisaggregation, we need to group datasets into stacks.
-    config.data.datasets.forEach(function(dataset) {
-      var disaggregation = $.extend({}, dataset.disaggregation);
-      // We're going to "stringify" each combination of disaggregations in order
-      // to place them in their own "stacks". To place "stacked" disaggregations
-      // into the same stack, we set them as "samestack" before stringifying.
-      // Note that the string "samestack" is completely arbitrary.
-      if (typeof disaggregation[info.stackedDisaggregation] !== 'undefined') {
-        disaggregation[info.stackedDisaggregation] = 'samestack';
-      }
-      // Use the disaggregation as a unique id for each stack.
-      dataset.stack = JSON.stringify(disaggregation);
-    });
     // Add these overrides onto the normal config, and return it.
     $.extend(true, config, overrides);
-  }
 });
 </script>
 
@@ -945,7 +953,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Nom de la cible </th>
         <td>
           
-            <p>By 2030, support improvement in the environmental performance of the agriculture sector by achieving a score of 71 or higher for the Index of Agri-Environmental Sustainability (reflecting the quality of water, soil, air and biodiversity)</p>
+            <p>By 2030, support improvement in the environmental performance of the agriculture sector by achieving a score of 71 or higher for the Index of Agri-Environmental Sustainability (reflecting the quality of water, soil, air and biodiversity).</p>
 
           
         </td>
@@ -961,7 +969,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Description de l&#39;indicateur </th>
         <td>
           
-            <p>Agriculture and Agri-Food Canada has developed a set of science-based agri-environmental indicators (AEIs) that integrate information on soils, climate and topography with statistics on land use and crop and livestock management practices. The indicators provide valuable information on the overall environmental risks and conditions in agriculture and how these change over time. The indicators are designed to be sensitive to the considerable differences in conditions and in the commodity mix across Canada, which are reflected in the significant variations in environmental performance between regions.</p>
+            <p>This indicator is an index that measures Agri-Environmental Sustainability. Agriculture and Agri-Food Canada developed a set of science-based agri-environmental indicators (AEIs) that integrate information on soils, climate and topography with statistics on land use and crop and livestock management practices. The indices are divided in five “health classes”, defined as: 80-100 Desired; 60-79 Good; 40-59 Moderate; 20-39 Poor; 0-19 At risk.</p>
 
           
         </td>
@@ -1012,7 +1020,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Calculs </th>
         <td>
           
-            <p>The agri-environmental performance index shows environmental performance state and trends over time, based on weighting the percentage of agricultural land in each indicator class, such that the index ranges from 0 (all land in the most undesirable category) to 100 (all land in the most desirable category). The equation is simply “(% in poor class multiplied by .25) plus (% in moderate class multiplied by .5) plus (% in good class multiplied by .75) plus (% in desired class).” As the percentage of land in the “at risk” class is multiplied by zero, it is not included in the algorithm.</p>
+            <p>Not applicable</p>
 
           
         </td>
@@ -1037,7 +1045,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Commentaires et limitations </th>
         <td>
           
-            <p>The AEIs are calculated using mathematical models or formulas that integrate information on soil, climate and landscape, mainly derived from the Soil Landscapes of Canada (Soil Landscapes of Canada Working Group, 2007), with information on crops, land use, land management and livestock from the Census of Agriculture and other custom data sets from provincial agencies, private sector, and remote sensing. Results are generalized to provide a snapshot of an environmental condition on the landscape at a given time. The calculations and models for each indicator differ considerably, but all mathematical models and formulas have been adapted or developed from solid scientific knowledge and understanding of the interactions between various aspects of agricultural practices and the environment.</p>
+            <p>Not applicable</p>
 
           
         </td>
@@ -1053,7 +1061,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Rationnel et interprétation </th>
         <td>
           
-            <p>The indices are divided in five “health classes”, defined as: 80-100 Desired; 60-79 Good; 40-59 Moderate; 20-39 Poor; 0-19 At risk.</p>
+            <p>The indicators provide valuable information on the overall environmental risks and conditions in agriculture and how these change over time.</p>
 
           
         </td>
@@ -1106,8 +1114,8 @@ data-event-label="Change to indicator.sources tab"
             
 
             
-              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/3b9740d6e48128cfa78769f193b3e8a150eb12de" target="_blank">
-                2021-05-11: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
+              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/3b08759ea6bf47c0bc5f26a7954d9cb01fd82a6f" target="_blank">
+                2021-05-12: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
               </a>
             
 
@@ -1357,20 +1365,7 @@ data-event-label="Change to indicator.sources tab"
   
       
         
-      
-      
-      <tr>
-        <th scope="row">Date de sortie </th>
-        <td>
           
-            <p>2016-10-19</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
       
         
           
@@ -1547,12 +1542,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/cif-cic/assets/js/sdg.js?v=20210512121947'></script>
+<script src='/cif-cic/assets/js/sdg.js?v=20210513025800'></script>
 
 
     
     
-    <script src="/cif-cic/assets/js/custom.js?v=20210512121947"></script><script>
+    <script src="/cif-cic/assets/js/custom.js?v=20210513025800"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
