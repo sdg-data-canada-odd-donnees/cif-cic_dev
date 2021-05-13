@@ -138,7 +138,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic/assets/css/style.css?v=20210513025800">
+        <link rel="stylesheet" href="/cif-cic/assets/css/style.css?v=20210513143310">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -434,7 +434,7 @@ var translations = {
   id="indicatorData"
   data-indicatorid='indicator_3-8-1'
   data-id="3-8-1"
-  data-country="Canada, province or territory"
+  data-country="Canada, provinces and territories"
   data-charttitle="Vaccination rates for selected diseases"
   data-charttitles="null"
   data-measurementunit="Percentage"
@@ -442,7 +442,7 @@ var translations = {
   data-graphtype="bar"
   data-geocoderegex=""
   data-showmap="false"
-  data-startvalues="[{&quot;field&quot;:&quot;Geography&quot;,&quot;value&quot;:&quot;Canada&quot;},{&quot;field&quot;:&quot;Selected diseases&quot;,&quot;value&quot;:&quot;Meningococcal type C&quot;},{&quot;field&quot;:&quot;Selected diseases&quot;,&quot;value&quot;:&quot;Hepatitis B&quot;},{&quot;field&quot;:&quot;Selected diseases&quot;,&quot;value&quot;:&quot;Polio&quot;},{&quot;field&quot;:&quot;Selected diseases&quot;,&quot;value&quot;:&quot;Haemophilus influenzae type B&quot;},{&quot;field&quot;:&quot;Selected diseases&quot;,&quot;value&quot;:&quot;Measles&quot;},{&quot;field&quot;:&quot;Selected diseases&quot;,&quot;value&quot;:&quot;Varicella&quot;},{&quot;field&quot;:&quot;Age&quot;,&quot;value&quot;:&quot;by 2 years of age&quot;},{&quot;field&quot;:&quot;Sex&quot;,&quot;value&quot;:&quot;All children&quot;}]"
+  data-startvalues="[{&quot;field&quot;:&quot;Geography&quot;,&quot;value&quot;:&quot;Canada&quot;},{&quot;field&quot;:&quot;Selected diseases&quot;,&quot;value&quot;:&quot;Meningococcal type C&quot;},{&quot;field&quot;:&quot;Selected diseases&quot;,&quot;value&quot;:&quot;Hepatitis B&quot;},{&quot;field&quot;:&quot;Selected diseases&quot;,&quot;value&quot;:&quot;Polio&quot;},{&quot;field&quot;:&quot;Selected diseases&quot;,&quot;value&quot;:&quot;Measles&quot;},{&quot;field&quot;:&quot;Selected diseases&quot;,&quot;value&quot;:&quot;Varicella&quot;},{&quot;field&quot;:&quot;Age&quot;,&quot;value&quot;:&quot;by 2 years of age&quot;},{&quot;field&quot;:&quot;Sex&quot;,&quot;value&quot;:&quot;All children&quot;}]"
   data-graphlimits="null"
   data-stackeddisaggregation=""
   data-graphannotations="null"
@@ -495,7 +495,7 @@ var translations = {
     <p>Source: Statistics Canada and the Public Health Agency of Canada</p>
     
     
-    <p>Geographical Area: Canada, province or territory</p>
+    <p>Geographical Area: Canada, provinces and territories</p>
     
     
     <p>Unit of Measurement: Percentage</p>
@@ -779,7 +779,7 @@ opensdg.chartConfigAlter(function(config, info) {
 
         
         <dt>Geographical Area:</dt>
-        <dd>Canada, province or territory</dd>
+        <dd>Canada, provinces and territories</dd>
         
 
         
@@ -824,7 +824,7 @@ opensdg.chartConfigAlter(function(config, info) {
 
         
         <dt>Geographical Area:</dt>
-        <dd>Canada, province or territory</dd>
+        <dd>Canada, provinces and territories</dd>
         
 
         
@@ -961,7 +961,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Indicator description </th>
         <td>
           
-            <p>The Public Health Agency of Canada routinely monitors childhood vaccination coverage in Canada through the childhood National Immunization Coverage Survey.</p>
+            <p>This indicator measures the childhood vaccination rates for selected diseases. The Public Health Agency of Canada routinely monitors childhood vaccination coverage in Canada through the childhood National Immunization Coverage Survey.</p>
 
           
         </td>
@@ -977,7 +977,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Geographical coverage </th>
         <td>
           
-            <p>Canada, province or territory</p>
+            <p>Canada, provinces and territories</p>
 
           
         </td>
@@ -1034,7 +1034,20 @@ data-event-label="Change to indicator.sources tab"
   
       
         
+      
+      
+      <tr>
+        <th scope="row">Rational and interpretation </th>
+        <td>
           
+            <p>Vaccination is the best way to prevent serious diseases that can cause severe complications, or even death. Community immunity through vaccination also protects those infants who are too young to be vaccinated.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
         
       
@@ -1080,8 +1093,8 @@ data-event-label="Change to indicator.sources tab"
             
 
             
-              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/3b9740d6e48128cfa78769f193b3e8a150eb12de" target="_blank">
-                2021-05-11: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
+              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/105478abbb4018b35ba3e12734c81c8da39dea8c" target="_blank">
+                2021-05-13: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
               </a>
             
 
@@ -1290,7 +1303,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Geographical coverage </th>
         <td>
           
-            <p>Canada, province or territory</p>
+            <p>Canada, provinces and territories</p>
 
           
         </td>
@@ -1506,12 +1519,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/cif-cic/assets/js/sdg.js?v=20210513025800'></script>
+<script src='/cif-cic/assets/js/sdg.js?v=20210513143310'></script>
 
 
     
     
-    <script src="/cif-cic/assets/js/custom.js?v=20210513025800"></script><script>
+    <script src="/cif-cic/assets/js/custom.js?v=20210513143310"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();

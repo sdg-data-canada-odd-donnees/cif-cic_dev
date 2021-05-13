@@ -138,7 +138,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic/assets/css/style.css?v=20210513025800">
+        <link rel="stylesheet" href="/cif-cic/assets/css/style.css?v=20210513143310">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -435,17 +435,17 @@ var translations = {
   data-indicatorid='indicator_3-11-1'
   data-id="3-11-1"
   data-country="Canada"
-  data-charttitle="Tuberculosis incidence per 100,000 population in Inuit Nunangat"
+  data-charttitle="Tuberculosis incidence per 100,000 population among the Inuit population"
   data-charttitles="null"
   data-measurementunit="number per 100,000 population"
   data-showdata="true"
   data-graphtype="line"
   data-geocoderegex=""
   data-showmap="false"
-  data-startvalues="null"
+  data-startvalues="[{&quot;field&quot;:&quot;Geography&quot;,&quot;value&quot;:&quot;Canada&quot;}]"
   data-graphlimits="null"
   data-stackeddisaggregation=""
-  data-graphannotations="null"
+  data-graphannotations="[{&quot;unit&quot;:&quot;Value&quot;,&quot;value&quot;:0,&quot;preset&quot;:&quot;target_line&quot;}]"
   data-indicatordownloads="null"
   data-compositebreakdownlabel=""
   data-precision="null"
@@ -480,151 +480,11 @@ var translations = {
 
     <h3>Headline data</h3>
     <table class="table-responsive table table-hover dataTable no-footer" role="grid">
-      <caption>Tuberculosis incidence per 100,000 population in Inuit Nunangat</caption>
+      <caption>Tuberculosis incidence per 100,000 population among the Inuit population</caption>
       <thead>
-        
-        
-        <th scope="col">Year</th>
-        
-        
-        
-        <th scope="col" class="table-value">Value</th>
-        
         
       </thead>
       <tbody>
-        
-        <tr>
-          
-          
-          <td>2007</td>
-          
-          
-          
-          <td class="table-value">85.2</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2008</td>
-          
-          
-          
-          <td class="table-value">160.0</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2009</td>
-          
-          
-          
-          <td class="table-value">157.1</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2010</td>
-          
-          
-          
-          <td class="table-value">200.0</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2011</td>
-          
-          
-          
-          <td class="table-value">166.7</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2012</td>
-          
-          
-          
-          <td class="table-value">251.6</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2013</td>
-          
-          
-          
-          <td class="table-value">139.4</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2014</td>
-          
-          
-          
-          <td class="table-value">177.6</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2015</td>
-          
-          
-          
-          <td class="table-value">164.7</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2016</td>
-          
-          
-          
-          <td class="table-value">170.1</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2017</td>
-          
-          
-          
-          <td class="table-value">205.8</td>
-          
-          
-        </tr>
         
       </tbody>
     </table>
@@ -685,7 +545,7 @@ data-event-label="Change to Table tab"
     <div id="selectionsChart">
       <figure role="group">
         <div id="chart-canvas">
-          <h4 id="chart-heading" class="chart-title">Tuberculosis incidence per 100,000 population in Inuit Nunangat</h4>
+          <h4 id="chart-heading" class="chart-title">Tuberculosis incidence per 100,000 population among the Inuit population</h4>
           <div id="chart" class="plot-container">
             
 <canvas
@@ -1109,7 +969,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Indicator description </th>
         <td>
           
-            <p>This indicator tracks the Tuberculosis incidence rate per 100,000 population in Inuit Nunangat</p>
+            <p>This indicator measures the Tuberculosis incidence rate per 100,000 population in Inuit Nunangat</p>
 
           
         </td>
@@ -1179,10 +1039,36 @@ data-event-label="Change to indicator.sources tab"
           
       
         
+      
+      
+      <tr>
+        <th scope="row">Comments and limitations </th>
+        <td>
           
+            <p>The indicator measures incidence rates of Tuberculosis among the Inuit population rather than the Inuit Nunangat region.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
         
+      
+      
+      <tr>
+        <th scope="row">Rational and interpretation </th>
+        <td>
           
+            <p>Tuberculosis (TB) is a major global health problem that affected an estimated 10 million people worldwide in 2017. Incidence rates among the Inuit population have consistently been higher than any other population subgroup since 2007.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
         
       
@@ -1197,8 +1083,8 @@ data-event-label="Change to indicator.sources tab"
             
 
             
-              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/3b9740d6e48128cfa78769f193b3e8a150eb12de" target="_blank">
-                2021-05-11: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
+              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/bf268c99cebb5fd4523ddd12f6a7468a46821b33" target="_blank">
+                2021-05-13: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
               </a>
             
 
@@ -1228,8 +1114,8 @@ data-event-label="Change to indicator.sources tab"
             
 
             
-              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/3b9740d6e48128cfa78769f193b3e8a150eb12de" target="_blank">
-                2021-05-11: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
+              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/7a66f222a8d07ed3b955aceb2a8cb20307772199" target="_blank">
+                2021-05-13: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
               </a>
             
 
@@ -1644,6 +1530,8 @@ data-event-label="Change to indicator.sources tab"
 <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.js"></script>
 
+<script src="//cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/0.5.7/chartjs-plugin-annotation.min.js" integrity="sha512-9hzM/Gfa9KP1hSBlq3/zyNF/dfbcjAYwUTBWYX+xi8fzfAPHL3ILwS1ci0CTVeuXTGkRAWgRMZZwtSNV7P+nfw==" crossorigin="anonymous"></script>
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
@@ -1654,12 +1542,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/cif-cic/assets/js/sdg.js?v=20210513025800'></script>
+<script src='/cif-cic/assets/js/sdg.js?v=20210513143310'></script>
 
 
     
     
-    <script src="/cif-cic/assets/js/custom.js?v=20210513025800"></script><script>
+    <script src="/cif-cic/assets/js/custom.js?v=20210513143310"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();

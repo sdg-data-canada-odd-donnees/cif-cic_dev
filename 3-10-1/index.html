@@ -138,7 +138,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic/assets/css/style.css?v=20210513025800">
+        <link rel="stylesheet" href="/cif-cic/assets/css/style.css?v=20210513143310">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -442,7 +442,7 @@ var translations = {
   data-graphtype="line"
   data-geocoderegex=""
   data-showmap="false"
-  data-startvalues="[{&quot;field&quot;:&quot;Geography&quot;,&quot;value&quot;:&quot;Canada&quot;},{&quot;field&quot;:&quot;Age at time of death&quot;,&quot;value&quot;:&quot;all ages&quot;},{&quot;field&quot;:&quot;Sex&quot;,&quot;value&quot;:&quot;Both sexes&quot;},{&quot;field&quot;:&quot;Leading causes of death&quot;,&quot;value&quot;:&quot;Malignant neoplasms&quot;},{&quot;field&quot;:&quot;Leading causes of death&quot;,&quot;value&quot;:&quot;Diabetes mellitus&quot;},{&quot;field&quot;:&quot;Leading causes of death&quot;,&quot;value&quot;:&quot;Diseases of heart&quot;},{&quot;field&quot;:&quot;Leading causes of death&quot;,&quot;value&quot;:&quot;Cerebrovascular diseases&quot;},{&quot;field&quot;:&quot;Leading causes of death&quot;,&quot;value&quot;:&quot;Influenza and pneumonia&quot;},{&quot;field&quot;:&quot;Leading causes of death&quot;,&quot;value&quot;:&quot;Chronic lower respiratory diseases&quot;}]"
+  data-startvalues="[{&quot;field&quot;:&quot;Geography&quot;,&quot;value&quot;:&quot;Canada&quot;},{&quot;field&quot;:&quot;Age at time of death&quot;,&quot;value&quot;:&quot;all ages&quot;},{&quot;field&quot;:&quot;Sex&quot;,&quot;value&quot;:&quot;Both sexes&quot;},{&quot;field&quot;:&quot;Leading causes of death&quot;,&quot;value&quot;:&quot;Malignant neoplasms&quot;},{&quot;field&quot;:&quot;Leading causes of death&quot;,&quot;value&quot;:&quot;Diseases of heart&quot;},{&quot;field&quot;:&quot;Leading causes of death&quot;,&quot;value&quot;:&quot;Cerebrovascular diseases&quot;}]"
   data-graphlimits="null"
   data-stackeddisaggregation=""
   data-graphannotations="null"
@@ -969,7 +969,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Indicator description </th>
         <td>
           
-            <p>The age-specific mortality rate represents the number of deaths in a particular age group during a given year per 100,000 population in the same age group of the same year.</p>
+            <p>This indicator measures the age-specific mortality rate for selected diseases. The age-specific mortality rate represents the number of deaths in a particular age group during a given year per 100,000 population in the same age group of the same year.</p>
 
           
         </td>
@@ -1020,7 +1020,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Calculations </th>
         <td>
           
-            <p>The cause of death tabulated is the underlying cause of death. This is defined as (a) the disease or injury which initiated the train of events leading directly to death, or (b) the circumstances of the accident or violence which produced the fatal injury. The underlying cause is selected from the conditions listed on the medical certificate of cause of death. The World Health Organization (WHO), International Statistical Classification of Diseases and Related Health Problems, 10th Revision (ICD-10) is used.</p>
+            <p>The cause of death tabulated is the underlying cause of death. This is defined as (a) the disease or injury which initiated the train of events leading directly to death, or (b) the circumstances of the accident or violence which produced the fatal injury. The underlying cause is selected from the conditions listed on the medical certificate of cause of death.</p>
 
           
         </td>
@@ -1039,10 +1039,36 @@ data-event-label="Change to indicator.sources tab"
           
       
         
+      
+      
+      <tr>
+        <th scope="row">Comments and limitations </th>
+        <td>
           
+            <p>Not applicable</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
         
+      
+      
+      <tr>
+        <th scope="row">Rational and interpretation </th>
+        <td>
           
+            <p>Mortality rates data provide a comprehensive overview of mortality in Canada and are an important baseline of mortality.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
         
       
@@ -1088,8 +1114,8 @@ data-event-label="Change to indicator.sources tab"
             
 
             
-              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/3b9740d6e48128cfa78769f193b3e8a150eb12de" target="_blank">
-                2021-05-11: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
+              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/94dc57b7931381e9db4d9fc8a4744e029f82c158" target="_blank">
+                2021-05-13: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
               </a>
             
 
@@ -1514,12 +1540,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/cif-cic/assets/js/sdg.js?v=20210513025800'></script>
+<script src='/cif-cic/assets/js/sdg.js?v=20210513143310'></script>
 
 
     
     
-    <script src="/cif-cic/assets/js/custom.js?v=20210513025800"></script><script>
+    <script src="/cif-cic/assets/js/custom.js?v=20210513143310"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();

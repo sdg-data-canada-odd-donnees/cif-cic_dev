@@ -138,7 +138,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic/assets/css/style.css?v=20210513025800">
+        <link rel="stylesheet" href="/cif-cic/assets/css/style.css?v=20210513143310">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -434,7 +434,7 @@ var translations = {
   id="indicatorData"
   data-indicatorid='indicator_3-7-1'
   data-id="3-7-1"
-  data-country="Canada (excluding territories)"
+  data-country="Canada (excluding territories) and provinces"
   data-charttitle="Percentage of the population who perceived their overall health and social well-being as very good to excellent"
   data-charttitles="null"
   data-measurementunit="Percentage"
@@ -495,7 +495,7 @@ var translations = {
     <p>La source: Statistics Canada</p>
     
     
-    <p>Zone géographique: Canada (excluding territories)</p>
+    <p>Zone géographique: Canada (excluding territories) and provinces</p>
     
     
     <p>Unité de mesure: Percentage</p>
@@ -787,7 +787,7 @@ opensdg.chartConfigAlter(function(config, info) {
 
         
         <dt>Zone géographique:</dt>
-        <dd>Canada (excluding territories)</dd>
+        <dd>Canada (excluding territories) and provinces</dd>
         
 
         
@@ -832,7 +832,7 @@ opensdg.chartConfigAlter(function(config, info) {
 
         
         <dt>Zone géographique:</dt>
-        <dd>Canada (excluding territories)</dd>
+        <dd>Canada (excluding territories) and provinces</dd>
         
 
         
@@ -969,7 +969,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Description de l&#39;indicateur </th>
         <td>
           
-            <p>Population aged 12 and over who reported perceiving their own health status as being either excellent or very good or fair or poor. Perceived health refers to the perception of a person’s health in general, either by the person himself or herself, or, in the case of proxy response, by the person responding. Health means not only the absence of disease or injury but also physical, mental and social well-being.</p>
+            <p>This indicator measures the percentage of the population aged 12 and over who reported perceiving their own health status as being either excellent or very good or fair or poor. Perceived health refers to the perception of a person’s health in general, either by the person himself or herself, or, in the case of proxy response, by the person responding. Health means not only the absence of disease or injury but also physical, mental and social well-being.</p>
 
           
         </td>
@@ -985,7 +985,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Couverture géographique </th>
         <td>
           
-            <p>Canada (excluding territories)</p>
+            <p>Canada (excluding territories) and provinces</p>
 
           
         </td>
@@ -1014,7 +1014,20 @@ data-event-label="Change to indicator.sources tab"
           
       
         
+      
+      
+      <tr>
+        <th scope="row">Calculs </th>
+        <td>
           
+            <p>Not applicable</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
         
           
@@ -1032,7 +1045,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Commentaires et limitations </th>
         <td>
           
-            <p>Data for the Canadian Community Health Survey (CCHS) are collected yearly from a sample of approximately 65,000 respondents.</p>
+            <p>The indicator covers the population 12 years of age and over living in the ten provinces. Excluded from the survey’s coverage are: persons living on reserves and other Aboriginal settlements; the institutionalized population, and children aged 12-17 that are living in foster care.</p>
 
           
         </td>
@@ -1042,7 +1055,20 @@ data-event-label="Change to indicator.sources tab"
   
       
         
+      
+      
+      <tr>
+        <th scope="row">Rationnel et interprétation </th>
+        <td>
           
+            <p>Perceived overall health provides a measure for how Canadians perceive various dimensions of their own health, providing qualitative insights for how policies could improve the way Canadians self-report well-being.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
         
       
@@ -1088,8 +1114,8 @@ data-event-label="Change to indicator.sources tab"
             
 
             
-              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/3b9740d6e48128cfa78769f193b3e8a150eb12de" target="_blank">
-                2021-05-11: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
+              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/843429e8bd3947e53dea55250c37464466052980" target="_blank">
+                2021-05-13: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
               </a>
             
 
@@ -1298,7 +1324,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Couverture géographique </th>
         <td>
           
-            <p>Canada (excluding territories)</p>
+            <p>Canada (excluding territories) and provinces</p>
 
           
         </td>
@@ -1514,12 +1540,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/cif-cic/assets/js/sdg.js?v=20210513025800'></script>
+<script src='/cif-cic/assets/js/sdg.js?v=20210513143310'></script>
 
 
     
     
-    <script src="/cif-cic/assets/js/custom.js?v=20210513025800"></script><script>
+    <script src="/cif-cic/assets/js/custom.js?v=20210513143310"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();

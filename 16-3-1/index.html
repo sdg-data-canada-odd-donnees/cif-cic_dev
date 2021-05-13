@@ -138,7 +138,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic/assets/css/style.css?v=20210513025800">
+        <link rel="stylesheet" href="/cif-cic/assets/css/style.css?v=20210513143310">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -437,7 +437,7 @@ var translations = {
   data-country="Canada, Province or territory"
   data-charttitle="Incidence rate per 100,000 population for selected types of crime"
   data-charttitles="null"
-  data-measurementunit="rate per 100,000 population"
+  data-measurementunit="Rate per 100,000 population"
   data-showdata="true"
   data-graphtype="line"
   data-geocoderegex=""
@@ -498,7 +498,7 @@ var translations = {
     <p>Geographical Area: Canada, Province or territory</p>
     
     
-    <p>Unit of Measurement: rate per 100,000 population</p>
+    <p>Unit of Measurement: Rate per 100,000 population</p>
     
     
   </div>
@@ -792,7 +792,7 @@ opensdg.chartConfigAlter(function(config, info) {
 
         
         <dt>Unit of Measurement:</dt>
-        <dd>rate per 100,000 population</dd>
+        <dd>Rate per 100,000 population</dd>
         
 
         
@@ -837,7 +837,7 @@ opensdg.chartConfigAlter(function(config, info) {
 
         
         <dt>Unit of Measurement:</dt>
-        <dd>rate per 100,000 population</dd>
+        <dd>Rate per 100,000 population</dd>
         
 
         
@@ -969,7 +969,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Indicator description </th>
         <td>
           
-            <p>This indicators tracks the rate of selected types of crime</p>
+            <p>This indicators tracks the rate of selected types of crime.</p>
 
           
         </td>
@@ -1001,7 +1001,26 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Unit of measurement </th>
         <td>
           
-            <p>rate per 100,000 population</p>
+            <p>Rate per 100,000 population</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+          
+      
+        
+      
+      
+      <tr>
+        <th scope="row">Calculations </th>
+        <td>
+          
+            <p>Not applicable</p>
 
           
         </td>
@@ -1020,16 +1039,38 @@ data-event-label="Change to indicator.sources tab"
           
       
         
+      
+      
+      <tr>
+        <th scope="row">Comments and limitations </th>
+        <td>
           
+            <p>During the production of each year’s crime statistics, data from the previous year are revised to reflect any updates or changes that have been received from the police services.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
         
-          
       
-        
-          
       
-        
+      <tr>
+        <th scope="row">Rational and interpretation </th>
+        <td>
           
+            <p>Data from the Uniform Crime Reporting (UCR) Survey provide key information for crime analysis, resource planning and program development for the policing community. Municipal and provincial governments use the data to aid decisions about the distribution of police resources, definitions of provincial standards and for comparisons with other departments and provinces or territories.
+To the federal government, the UCR survey provides information for policy and legislative development, evaluation of new legislative initiatives, and international comparisons.
+To the public, the UCR survey offers information on the nature and extent of police-reported crime and crime trends in Canada. As well, media, academics and researchers use these data to examine specific issues about crime.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
         
       
@@ -1075,8 +1116,8 @@ data-event-label="Change to indicator.sources tab"
             
 
             
-              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/3b9740d6e48128cfa78769f193b3e8a150eb12de" target="_blank">
-                2021-05-11: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
+              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/ad86f09d8238e1bb1c70973d8f8f8468f21f85f6" target="_blank">
+                2021-05-13: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
               </a>
             
 
@@ -1501,12 +1542,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/cif-cic/assets/js/sdg.js?v=20210513025800'></script>
+<script src='/cif-cic/assets/js/sdg.js?v=20210513143310'></script>
 
 
     
     
-    <script src="/cif-cic/assets/js/custom.js?v=20210513025800"></script><script>
+    <script src="/cif-cic/assets/js/custom.js?v=20210513143310"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();

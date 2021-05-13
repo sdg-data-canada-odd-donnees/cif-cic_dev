@@ -96,7 +96,7 @@
         {
           "id": "3-6-1",
           "title": "Percentage of the population who are satisfied or very satisfied with their life",
-          "description": "Population aged 12 and over who reported being satisfied or very satisfied with their life in general.",
+          "description": "This indicator measures the percentage of the population aged 12 and over who reported being satisfied or very satisfied with their life in general.",
           "keywords": "",
           "href": "/cif-cic/fr/3-6-1",
           "status": "complete"
@@ -104,7 +104,7 @@
         {
           "id": "3-7-1",
           "title": "Percentage of the population who perceived their overall health and social well-being as very good to excellent",
-          "description": "Population aged 12 and over who reported perceiving their own health status as being either excellent or very good or fair or poor. Perceived health refers to the perception of a person's health in general, either by the person himself or herself, or, in the case of proxy response, by the person responding. Health means not only the absence of disease or injury but also physical, mental and social well-being.",
+          "description": "This indicator measures the percentage of the population aged 12 and over who reported perceiving their own health status as being either excellent or very good or fair or poor. Perceived health refers to the perception of a person's health in general, either by the person himself or herself, or, in the case of proxy response, by the person responding. Health means not only the absence of disease or injury but also physical, mental and social well-being.",
           "keywords": "",
           "href": "/cif-cic/fr/3-7-1",
           "status": "complete"
@@ -112,7 +112,7 @@
         {
           "id": "3-8-1",
           "title": "Vaccination rates for selected diseases",
-          "description": "The Public Health Agency of Canada routinely monitors childhood vaccination coverage in Canada through the childhood National Immunization Coverage Survey.",
+          "description": "This indicator measures the childhood vaccination rates for selected diseases. The Public Health Agency of Canada routinely monitors childhood vaccination coverage in Canada through the childhood National Immunization Coverage Survey.",
           "keywords": "",
           "href": "/cif-cic/fr/3-8-1",
           "status": "complete"
@@ -128,7 +128,7 @@
         {
           "id": "3-10-1",
           "title": "Mortality rate for selected causes of death",
-          "description": "The age-specific mortality rate represents the number of deaths in a particular age group during a given year per 100,000 population in the same age group of the same year.",
+          "description": "This indicator measures the age-specific mortality rate for selected diseases. The age-specific mortality rate represents the number of deaths in a particular age group during a given year per 100,000 population in the same age group of the same year.",
           "keywords": "",
           "href": "/cif-cic/fr/3-10-1",
           "status": "complete"
@@ -136,7 +136,7 @@
         {
           "id": "3-11-1",
           "title": "Tuberculosis incidence per 100,000 population in Inuit Nunangat",
-          "description": "This indicator tracks the Tuberculosis incidence rate per 100,000 population in Inuit Nunangat",
+          "description": "This indicator measures the Tuberculosis incidence rate per 100,000 population in Inuit Nunangat",
           "keywords": "",
           "href": "/cif-cic/fr/3-11-1",
           "status": "complete"
@@ -656,7 +656,7 @@
         {
           "id": "16-2-1",
           "title": "Crime severity index",
-          "description": "The Crime Severity Index (CSI) measures changes in the level of severity of crime in Canada from year to year. In the index, all crimes are assigned a weight based on their seriousness. The level of seriousness is based on actual sentences handed down by the courts in all provinces and territories. More serious crimes are assigned higher weights, less serious offences lower weights. As a result, more serious offences have a greater impact on changes in the index. The PRCSI is standardized to 100 in base year 2006.",
+          "description": "The Crime Severity Index (CSI) measures changes in the level of severity of police-reported crime in Canada from year to year. The crime severity index includes all Criminal Code violations including traffic, as well as drug violations and all Federal Statutes.",
           "keywords": "",
           "href": "/cif-cic/fr/16-2-1",
           "status": "complete"
@@ -664,7 +664,7 @@
         {
           "id": "16-3-1",
           "title": "Incidence of selected types of crime",
-          "description": "This indicators tracks the rate of selected types of crime",
+          "description": "This indicators tracks the rate of selected types of crime.",
           "keywords": "",
           "href": "/cif-cic/fr/16-3-1",
           "status": "complete"
