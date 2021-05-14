@@ -2614,15 +2614,13 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
 .navbar-brand img {
   width: 70%; }
 
-.goal-banner h1, .goal-banner p {
-  color: white; }
-
 .goal-banner {
   padding-top: 15px;
   padding-bottom: 15px; }
 
 .goal-1.goal-banner {
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  color: #e5243b; }
 
 .goal-1.heading {
   background-color: #FFFFFF;
@@ -2643,7 +2641,8 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
   color: #976d1a; }
 
 .goal-2.goal-banner {
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  color: #DDA63A; }
 
 .G3-background {
   background-color: #4C9F38;
@@ -2651,7 +2650,8 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
   margin-bottom: 5px; }
 
 .goal-3.goal-banner {
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  color: #4C9F38; }
 
 .goal-3.heading {
   background-color: #FFFFFF;
@@ -2663,7 +2663,8 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
   color: #28541d; }
 
 .goal-4.goal-banner {
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  color: #C5192D; }
 
 .goal-4.heading {
   background-color: #FFFFFF;
@@ -2675,7 +2676,8 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
   color: #6d121b; }
 
 .goal-5.goal-banner {
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  color: #FF3A21; }
 
 .goal-5.heading {
   background-color: #FFFFFF;
@@ -2687,7 +2689,8 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
   color: #bd1600; }
 
 .goal-6.goal-banner {
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  color: #26BDE2; }
 
 .goal-6.heading {
   background-color: #FFFFFF;
@@ -2699,7 +2702,8 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
   color: #14768f; }
 
 .goal-7.goal-banner {
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  color: #FCC30B; }
 
 .goal-7.heading {
   background-color: #FFFFFF;
@@ -2711,7 +2715,8 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
   color: #9f7a02; }
 
 .goal-8.goal-banner {
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  color: #A21942; }
 
 .goal-8.heading {
   background-color: #FFFFFF;
@@ -2723,7 +2728,8 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
   color: #4a0b1e; }
 
 .goal-9.goal-banner {
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  color: #FD6925; }
 
 .goal-9.heading {
   background-color: #FFFFFF;
@@ -2735,7 +2741,8 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
   color: #ba3c02; }
 
 .goal-10.goal-banner {
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  color: #DD1367; }
 
 .goal-10.heading {
   background-color: #FFFFFF;
@@ -2747,7 +2754,8 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
   color: #7f0b3b; }
 
 .goal-11.goal-banner {
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  color: #FD9D24; }
 
 .goal-11.heading {
   background-color: #FFFFFF;
@@ -2759,7 +2767,8 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
   color: #bc6802; }
 
 .goal-12.goal-banner {
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  color: #BF8B2E; }
 
 .goal-12.heading {
   background-color: #FFFFFF;
@@ -2771,7 +2780,8 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
   color: #6d4f1a; }
 
 .goal-13.goal-banner {
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  color: #3F7E44; }
 
 .goal-13.heading {
   background-color: #FFFFFF;
@@ -2783,7 +2793,8 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
   color: #1e3a20; }
 
 .goal-14.goal-banner {
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  color: #0A97D9; }
 
 .goal-14.heading {
   background-color: #FFFFFF;
@@ -2795,7 +2806,8 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
   color: #055277; }
 
 .goal-15.goal-banner {
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  color: #56C02B; }
 
 .goal-15.heading {
   background-color: #FFFFFF;
@@ -2807,7 +2819,8 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
   color: #326c1b; }
 
 .goal-16.goal-banner {
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  color: #00689D; }
 
 .goal-16.heading {
   background-color: #FFFFFF;
@@ -2819,7 +2832,8 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
   color: #002436; }
 
 .goal-17.goal-banner {
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  color: #19486A; }
 
 .goal-17.heading {
   background-color: #FFFFFF;
