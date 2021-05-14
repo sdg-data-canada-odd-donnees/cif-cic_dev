@@ -11,7 +11,7 @@ remote_data_prefix: "https://sdg-data-canada-odd-donnees.github.io/cif-data-donn
 # In the next few items, replace "open-sdg" with the name of your GitHub
 # organization, and "open-sdg-data-starter" with the name of your data repository.
 # URL for the "Edit Data" button on indicators.
-data_edit_url: http://prose.io/#sdg-data-canada-odd-donnees/cif-data-donnees-cic/edit/develop/data/indicator_[id].csv
+#data_edit_url: http://prose.io/#sdg-data-canada-odd-donnees/cif-data-donnees-cic/edit/develop/data/indicator_[id].csv
 # URL for the "Edit Metadata" button on indicators.
 metadata_edit_url: http://prose.io/#sdg-data-canada-odd-donnees/cif-data-donnees-cic/edit/develop/meta/[id].md
 #
