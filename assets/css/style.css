@@ -2614,6 +2614,9 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
 .navbar-brand img {
   width: 70%; }
 
+.btn {
+  margin-bottom: 5px; }
+
 .goal-banner {
   padding-top: 10px;
   padding-bottom: 10px; }
