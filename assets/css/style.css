@@ -2622,10 +2622,13 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
   background-color: #FFFFFF;
   color: #e5243b; }
 
+.goal-1.goal-banner h1 {
+  color: #e5243b; }
+
 .goal-1.heading {
   background-color: #FFFFFF;
-  border-top: 5px solid #97131f;
-  border-bottom: 5px solid #97131f; }
+  border-top: 10px solid #97131f;
+  border-bottom: 10px solid #97131f; }
 
 .goal-1.goal-indicators div span {
   border-color: #97131f;
