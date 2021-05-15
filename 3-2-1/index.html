@@ -107,7 +107,7 @@ var translations = {
         
         Indicator 3.2.1 -
         
-        Percentage of Canadians (aged 15+) who are current cigarette smokers - Indicators For The Sustainable Development Goals
+        Percentage of Canadian students (grades 7-12) who have used a vaping product (e-cigarettes only) in the past 30 days - Indicators For The Sustainable Development Goals
     </title>
 
 
@@ -138,7 +138,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic/assets/css/style.css?v=20210514200418">
+        <link rel="stylesheet" href="/cif-cic/assets/css/style.css?v=20210515025254">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -429,7 +429,7 @@ var translations = {
             
             Indicator 3.2.1
             
-            <span class="lead-copy">Percentage of Canadians (aged 15+) who are current cigarette smokers</span>
+            <span class="lead-copy">Percentage of Canadian students (grades 7-12) who have used a vaping product (e-cigarettes only) in the past 30 days</span>
           </h1>
         </div>
       </div>
@@ -453,17 +453,17 @@ var translations = {
   data-indicatorid='indicator_3-2-1'
   data-id="3-2-1"
   data-country="Canada (excluding territories) and provinces"
-  data-charttitle="Percentage of Canadians who are current cigarette smokers"
+  data-charttitle="Past-30-day use of e-cigarettes, by province, grouped grades and sex"
   data-charttitles="null"
   data-measurementunit="Percentage"
   data-showdata="true"
-  data-graphtype="line"
+  data-graphtype="bar"
   data-geocoderegex=""
   data-showmap="false"
-  data-startvalues="[{&quot;field&quot;:&quot;Geography&quot;,&quot;value&quot;:&quot;Canada&quot;},{&quot;field&quot;:&quot;Age group&quot;,&quot;value&quot;:&quot;Total - 12 years and over&quot;},{&quot;field&quot;:&quot;Sex&quot;,&quot;value&quot;:&quot;Both sexes&quot;}]"
+  data-startvalues="[{&quot;field&quot;:&quot;Geography&quot;,&quot;value&quot;:&quot;Canada&quot;},{&quot;field&quot;:&quot;Grade&quot;,&quot;value&quot;:&quot;All grades&quot;},{&quot;field&quot;:&quot;Sex&quot;,&quot;value&quot;:&quot;Both sexes&quot;},{&quot;field&quot;:&quot;Type of e-cigarettes&quot;,&quot;value&quot;:&quot;Both type&quot;}]"
   data-graphlimits="null"
   data-stackeddisaggregation=""
-  data-graphannotations="[{&quot;unit&quot;:&quot;Percentage&quot;,&quot;value&quot;:5,&quot;preset&quot;:&quot;target_line&quot;}]"
+  data-graphannotations="[{&quot;unit&quot;:&quot;Percentage&quot;,&quot;value&quot;:10,&quot;preset&quot;:&quot;target_line&quot;}]"
   data-indicatordownloads="null"
   data-compositebreakdownlabel=""
   data-precision="null"
@@ -498,7 +498,7 @@ var translations = {
 
     <h3>Headline data</h3>
     <table class="table-responsive table table-hover dataTable no-footer" role="grid">
-      <caption>Percentage of Canadians who are current cigarette smokers</caption>
+      <caption>Past-30-day use of e-cigarettes, by province, grouped grades and sex</caption>
       <thead>
         
       </thead>
@@ -510,7 +510,7 @@ var translations = {
 
   <div id="datatableFooter">
     
-    <p>Source: Statistics Canada</p>
+    <p>Source: Propel Centre for Population Health Impact at the University of Waterloo</p>
     
     
     <p>Geographical Area: Canada (excluding territories) and provinces</p>
@@ -563,7 +563,7 @@ data-event-label="Change to Table tab"
     <div id="selectionsChart">
       <figure role="group">
         <div id="chart-canvas">
-          <h4 id="chart-heading" class="chart-title">Percentage of Canadians who are current cigarette smokers</h4>
+          <h4 id="chart-heading" class="chart-title">Past-30-day use of e-cigarettes, by province, grouped grades and sex</h4>
           <div id="chart" class="plot-container">
             
 <canvas
@@ -752,40 +752,32 @@ opensdg.chartConfigAlter(function(config, info) {
 </script>
 
 <script>
-// For line charts, add the vertical line hover functionality.
 opensdg.chartConfigAlter(function(config, info) {
+  if (info.stackedDisaggregation) {
     var overrides = {
-        options: {
-            tooltips: {
-                intersect: false,
-                axis: 'x'
-            },
-        },
-        plugins: [{
-            beforeDatasetsDraw: function(chart) {
-                if (chart.tooltip._active && chart.tooltip._active.length) {
-                    var activePoint = chart.tooltip._active[0],
-                        ctx = chart.ctx,
-                        x = activePoint.tooltipPosition().x,
-                        topY = chart.scales['y-axis-0'].top,
-                        bottomY = chart.scales['y-axis-0'].bottom;
-
-                    // draw line
-                    ctx.save();
-                    ctx.beginPath();
-                    ctx.moveTo(x, topY);
-                    ctx.lineTo(x, bottomY);
-                    ctx.lineWidth = 2;
-                    ctx.strokeStyle = '#757575';
-                    ctx.setLineDash([5, 2]);
-                    ctx.stroke();
-                    ctx.restore();
-                }
-            }
-        }],
+      options: {
+        scales: {
+          xAxes: [{ stacked: true }],
+          yAxes: [{ stacked: true }],
+        }
+      }
     };
+    // If we have stackedDisaggregation, we need to group datasets into stacks.
+    config.data.datasets.forEach(function(dataset) {
+      var disaggregation = $.extend({}, dataset.disaggregation);
+      // We're going to "stringify" each combination of disaggregations in order
+      // to place them in their own "stacks". To place "stacked" disaggregations
+      // into the same stack, we set them as "samestack" before stringifying.
+      // Note that the string "samestack" is completely arbitrary.
+      if (typeof disaggregation[info.stackedDisaggregation] !== 'undefined') {
+        disaggregation[info.stackedDisaggregation] = 'samestack';
+      }
+      // Use the disaggregation as a unique id for each stack.
+      dataset.stack = JSON.stringify(disaggregation);
+    });
     // Add these overrides onto the normal config, and return it.
     $.extend(true, config, overrides);
+  }
 });
 </script>
 
@@ -800,7 +792,7 @@ opensdg.chartConfigAlter(function(config, info) {
     <dl>
         
         <dt>Source:</dt>
-        <dd>Statistics Canada</dd>
+        <dd>Propel Centre for Population Health Impact at the University of Waterloo</dd>
         
 
         
@@ -845,7 +837,7 @@ opensdg.chartConfigAlter(function(config, info) {
     <dl>
         
         <dt>Source:</dt>
-        <dd>Statistics Canada</dd>
+        <dd>Propel Centre for Population Health Impact at the University of Waterloo</dd>
         
 
         
@@ -955,7 +947,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Indicator name </th>
         <td>
           
-            <p>Percentage of Canadians (aged 15+) who are current cigarette smokers</p>
+            <p>Percentage of Canadian students (grades 7-12) who have used a vaping product (e-cigarettes only) in the past 30 days</p>
 
           
         </td>
@@ -971,7 +963,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Target </th>
         <td>
           
-            <p>By 2035, less than 5% of Canadians (aged 15+) are cigarette smokers</p>
+            <p>By 2023, less than 10% of students (grades 7-12) have used a vaping product (e-cigarettes only) in the past 30 days</p>
 
           
         </td>
@@ -987,7 +979,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Indicator description </th>
         <td>
           
-            <p>This indicator measures the percentage of Canadians who are current cigarette smokers</p>
+            <p>This indicator measures the percentage of Canadian students who have smoked one or more cigarettes in the past 30 days. This category will include current smokers as well as experimental smokers who have tried a cigarette in the past 30 days.</p>
 
           
         </td>
@@ -1038,7 +1030,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Calculations </th>
         <td>
           
-            <p>Daily smoker refers to those who reported smoking cigarettes every day. Occasional smoker refers to those who reported smoking cigarettes occasionally. This includes former daily smokers who now smoke occasionally.</p>
+            <p>Not applicable</p>
 
           
         </td>
@@ -1063,7 +1055,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Comments and limitations </th>
         <td>
           
-            <p>Due to data availability, the indicator currently only measures the proportion of Canadians (aged 12+) who are cigarette smokers and not ones (aged 15+). The indicator does not take into account the number of cigarettes smoked. The indicator covers the population 12 years of age and over living in the ten provinces. Excluded from the survey’s coverage are: persons living on reserves and other Aboriginal settlements; the institutionalized population, and children aged 12-17 that are living in foster care.</p>
+            <p>For Quebec, grade 7-9 refers to secondary I-III and grade 10-12 refers to secondary IV-V.</p>
 
           
         </td>
@@ -1079,7 +1071,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Rational and interpretation </th>
         <td>
           
-            <p>Smoking is a risk factor for lung cancer, heart disease, stroke, chronic respiratory disease, and other conditions. According to the World Health Organization, smoking is an important and preventable cause of death.</p>
+            <p>According to the Propel Centre for Population Health Impact, school-aged children and youth are generally recognized as most at risk for experimenting with tobacco products, therefore with a measure of student substance use it is possible to examine the factors that influence their behaviour.</p>
 
           
         </td>
@@ -1101,8 +1093,8 @@ data-event-label="Change to indicator.sources tab"
             
 
             
-              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/3b9740d6e48128cfa78769f193b3e8a150eb12de" target="_blank">
-                2021-05-11: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
+              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/0ab0eced821f534dcd093ba7f2f5f5474ce07130" target="_blank">
+                2021-05-14: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
               </a>
             
 
@@ -1132,8 +1124,8 @@ data-event-label="Change to indicator.sources tab"
             
 
             
-              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/569f7105ebe9a3b8d25b8c8c7b0e12e5fba7ddba" target="_blank">
-                2021-05-13: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
+              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/a07676ae001ee18d3d697b98fcabbdf51cf46b6d" target="_blank">
+                2021-05-14: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
               </a>
             
 
@@ -1307,7 +1299,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Organisation </th>
         <td>
           
-            <p>Statistics Canada</p>
+            <p>Propel Centre for Population Health Impact at the University of Waterloo</p>
 
           
         </td>
@@ -1323,7 +1315,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Periodicity </th>
         <td>
           
-            <p>Occaisional</p>
+            <p>Annual</p>
 
           
         </td>
@@ -1364,8 +1356,8 @@ data-event-label="Change to indicator.sources tab"
             
 
             
-              <a href="https://doi.org/10.25318/1310009601-eng" target="_blank">
-                Statistics Canada. Table 13-10-0096-01  Health characteristics, annual estimates <span class="visuallyhidden">opens in a new window</span>
+              <a href="https://www.canada.ca/en/health-canada/services/canadian-student-tobacco-alcohol-drugs-survey/2018-2019-detailed-tables.html#t6" target="_blank">
+                Canadian Student Tobacco, Alcohol and Drugs Survey 2018-19 <span class="visuallyhidden">opens in a new window</span>
               </a>
             
 
@@ -1554,12 +1546,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/cif-cic/assets/js/sdg.js?v=20210514200418'></script>
+<script src='/cif-cic/assets/js/sdg.js?v=20210515025254'></script>
 
 
     
     
-    <script src="/cif-cic/assets/js/custom.js?v=20210514200418"></script><script>
+    <script src="/cif-cic/assets/js/custom.js?v=20210515025254"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();

@@ -63,24 +63,24 @@
         },
         {
           "id": "3-2-1",
-          "title": "Percentage of Canadians (aged 15+) who are current cigarette smokers",
-          "description": "This indicator measures the percentage of Canadians who are current cigarette smokers",
+          "title": "Percentage of Canadian students (grades 7-12) who have used a vaping product (e-cigarettes only) in the past 30 days",
+          "description": "This indicator measures the percentage of Canadian students who have smoked one or more cigarettes in the past 30 days. This category will include current smokers as well as experimental smokers who have tried a cigarette in the past 30 days.",
           "keywords": "",
           "href": "/cif-cic/fr/3-2-1",
           "status": "complete"
         },
         {
           "id": "3-3-1",
-          "title": "Percentage of Canadian students (grades 7-12) who have used a vaping product (e-cigarettes only) in the past 30 days",
-          "description": "This indicator measures the percentage of Canadian students who have smoked one or more cigarettes in the past 30 days. This category will include current smokers as well as experimental smokers who have tried a cigarette in the past 30 days.",
+          "title": "Percentage of the population that is overweight or obese",
+          "description": "This indicator measures percentage of the population that is overweight or obese. The indicator uses the body mass index (BMI) which is calculated by dividing the respondent's body weight (in kilograms) by their height (in metres) squared.",
           "keywords": "",
           "href": "/cif-cic/fr/3-3-1",
           "status": "complete"
         },
         {
           "id": "3-4-1",
-          "title": "Percentage of the population that is overweight or obese",
-          "description": "This indicator measures percentage of the population that is overweight or obese. The indicator uses the body mass index (BMI) which is calculated by dividing the respondent's body weight (in kilograms) by their height (in metres) squared.",
+          "title": "Prevalence of harmful alcohol use",
+          "description": "This indicator measures the prevalence of harmful alcohol use. Harmful alcohol use or heavy drinking refers to males who reported having 5 or more drinks, or women who reported having 4 or more drinks, on one occasion, at least once a month in the past year.",
           "keywords": "",
           "href": "/cif-cic/fr/3-4-1",
           "status": "complete"
@@ -95,18 +95,10 @@
         },
         {
           "id": "3-6-1",
-          "title": "Percentage of the population who are satisfied or very satisfied with their life",
-          "description": "This indicator measures the percentage of the population aged 12 and over who reported being satisfied or very satisfied with their life in general.",
-          "keywords": "",
-          "href": "/cif-cic/fr/3-6-1",
-          "status": "complete"
-        },
-        {
-          "id": "3-7-1",
           "title": "Percentage of the population who perceived their overall health and social well-being as very good to excellent",
           "description": "This indicator measures the percentage of the population aged 12 and over who reported perceiving their own health status as being either excellent or very good or fair or poor. Perceived health refers to the perception of a person's health in general, either by the person himself or herself, or, in the case of proxy response, by the person responding. Health means not only the absence of disease or injury but also physical, mental and social well-being.",
           "keywords": "",
-          "href": "/cif-cic/fr/3-7-1",
+          "href": "/cif-cic/fr/3-6-1",
           "status": "complete"
         },
         {
@@ -147,6 +139,14 @@
           "description": "This indicator measures the incidence of opioid and stimulant related overdose harms per 100,000 population.",
           "keywords": "",
           "href": "/cif-cic/fr/3-12-1",
+          "status": "complete"
+        },
+        {
+          "id": "3-15-1",
+          "title": "Percentage of Canadians (aged 15+) who are current cigarette smokers",
+          "description": "This indicator measures the percentage of Canadians who are current cigarette smokers",
+          "keywords": "",
+          "href": "/cif-cic/fr/3-15-1",
           "status": "complete"
         }]
     }
@@ -280,7 +280,7 @@
         {
           "id": "7-3-1",
           "title": "Proportion of electricity generated from renewable and non-greenhouse gas emitting sources",
-          "description": "“XXXXXXXXXX”",
+          "description": "This indicator measures the proportion of electricity generated from renewable and non-greenhouse gas emitting sources.",
           "keywords": "",
           "href": "/cif-cic/fr/7-3-1",
           "status": "complete"
@@ -536,33 +536,17 @@
         {
           "id": "13-1-1",
           "title": "Greenhouse gas emissions",
-          "description": "Greenhouse gases (GHGs) are the atmospheric gases responsible for causing global warming and climate change. The major GHGs are carbon dioxide (CO2), methane (CH4) and nitrous oxide (N20). (definition from United Nations Climate Change)",
+          "description": "Greenhouse gases (GHGs) are the atmospheric gases responsible for causing global warming and climate change. The major GHGs are carbon dioxide (CO2), methane (CH4) and nitrous oxide (N20). <em>(definition from United Nations Climate Change)</em>",
           "keywords": "",
           "href": "/cif-cic/fr/13-1-1",
           "status": "complete"
         },
         {
           "id": "13-2-1",
-          "title": "Average sea ice area",
-          "description": "Sea ice is a prominent feature in the Northern Canadian Waters.  It consists of seasonal ice that forms and melts each year (referred to as first-year ice) and ice that is present all-year round (referred to as multi-year ice). The amount and type of sea ice present, and the total minimum area it covers during the summer season,  impacts human activity and biological habitat. (definition from ECCC)",
+          "title": "Frequency of selected natural disasters",
+          "description": "This indicator tracks the frequency of selected natural disasters as defined by the Canadian Disaster Database.",
           "keywords": "",
           "href": "/cif-cic/fr/13-2-1",
-          "status": "complete"
-        },
-        {
-          "id": "13-3-1",
-          "title": "Spring snow cover extent",
-          "description": "The indicators show how Canada's snow cover is changing from year-to-year and over time. The indicators report spring snow cover extent and annual snow cover duration. Snow cover extent is the area of land with snow on the ground. (definition from ECCC)",
-          "keywords": "",
-          "href": "/cif-cic/fr/13-3-1",
-          "status": "complete"
-        },
-        {
-          "id": "13-4-1",
-          "title": "Frequency of selected natural disasters",
-          "description": "This indicator tracks the frequency of selected natural disasters as defined by the Canadian Disaster Database",
-          "keywords": "",
-          "href": "/cif-cic/fr/13-4-1",
           "status": "complete"
         }]
     }
@@ -576,7 +560,7 @@
         {
           "id": "14-1-1",
           "title": "Proportion of marine and coastal areas conserved",
-          "description": "These indicators report the amount and proportion of Canada's terrestrial (land and freshwater) and marine area that is conserved. (ECCC)",
+          "description": "These indicators report the amount and proportion of Canada's terrestrial (land and freshwater) and marine area that is conserved. <em>(ECCC)</em>",
           "keywords": "",
           "href": "/cif-cic/fr/14-1-1",
           "status": "complete"
@@ -584,7 +568,7 @@
         {
           "id": "14-2-1",
           "title": "Proportion of fishes that are sustainably harvested",
-          "description": "The indicator compares harvest rates with established harvest limits. These limits are based on scientific information, providing a direct measure of whether we are managing the use of these resources within ecosystem limits. It is one measure of fishing pressure on wild fish stocks.",
+          "description": "The indicator compares harvest rates with established harvest limits. These limits are based on scientific information, providing a direct measure of whether we are managing the use of these resources within ecosystem limits. It is one measure of fishing pressure on wild fish stocks. <em>(ECCC)</em>",
           "keywords": "",
           "href": "/cif-cic/fr/14-2-1",
           "status": "complete"
