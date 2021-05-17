@@ -2617,6 +2617,10 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
 .btn {
   margin-bottom: 5px; }
 
+.btn-primary {
+  background-color: #000000;
+  border-color: #000000; }
+
 .goal-banner {
   padding-top: 10px;
   padding-bottom: 10px; }
