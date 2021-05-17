@@ -138,7 +138,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic/assets/css/style.css?v=20210517155405">
+        <link rel="stylesheet" href="/cif-cic/assets/css/style.css?v=20210517195300">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -979,7 +979,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Description de l&#39;indicateur </th>
         <td>
           
-            <p>This indicator represent the proportion of businesses that have adopted selected environmental protection activities or management practices.</p>
+            <p>This indicator measures the share of establishments investing in environmental protection activities or management practices.</p>
 
           
         </td>
@@ -1030,9 +1030,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Calculs </th>
         <td>
           
-            <p>The Generalized Estimation System (G-Est) developed at Statistics Canada is used to produce domain estimates and quality indicators. It is a SAS based application for producing estimates (totals, ratios, percentages) for domains of a population based on a sample.
-An initial sampling weight (the design weight) is calculated for each unit in the survey and is the inverse of the probability of selection. The weight calculated for each sampling unit indicates how many other units it represents. Sampling units which are selected with certainty (must-take units) have sampling weights of one and only represent themselves; outlier units with larger than expected size are seen as misclassified and their weight is usually adjusted so that they only represent themselves, and the weights of other units are adjusted accordingly to take into account the existence of outliers. The final weights are usually either one or greater than one.
-Estimates are computed at several levels of interest such as the North American Industry Classification System code and region or province, based on the most recent classification information for the statistical entity and the survey reference period.</p>
+            <p>All of the percentages re calculated in relation to the total number of establishments in the category.</p>
 
           
         </td>
@@ -1057,7 +1055,7 @@ Estimates are computed at several levels of interest such as the North American 
         <th scope="row">Commentaires et limitations </th>
         <td>
           
-            <p>The accuracy of data collected in a sample survey is affected by both sampling and non-sampling errors. Sampling errors arise from the fact that the information obtained from a sample of the population is applied to the entire population. As for non-sampling errors, they arise from coverage error, data response error, non-response error, and processing errors. Every effort is made to reduce these types of errors including verification of keyed data, consistency and validity edits, follow up for non-response and consultation with government departments and industry associations.</p>
+            <p>Not applicable</p>
 
           
         </td>
@@ -1073,8 +1071,7 @@ Estimates are computed at several levels of interest such as the North American 
         <th scope="row">Rationnel et interprétation </th>
         <td>
           
-            <p>The Annual Environmental Protection Expenditures Survey provides a measure of the costs incurred by Canadian industries to protect the environment, whether or not they are in response to current or anticipated Canadian or international environmental regulations, conventions or voluntary agreements. The survey also collects information on the goods, technologies and services purchased by industries as well as the processes and practices adopted by them to protect the environment.
-Data from this survey are used by all levels of government for establishing informed environmental policies. The private sector also uses this information in the corporate decision-making process.</p>
+            <p>The Annual Environmental Protection Expenditures Survey provides a measure of the costs incurred by Canadian industries to protect the environment, whether or not they are in response to current or anticipated Canadian or international environmental regulations, conventions or voluntary agreements. The survey also collects information on the goods, technologies and services purchased by industries as well as the processes and practices adopted by them to protect the environment.<br /> Data from this survey are used by all levels of government for establishing informed environmental policies. The private sector also uses this information in the corporate decision-making process.</p>
 
           
         </td>
@@ -1127,8 +1124,8 @@ Data from this survey are used by all levels of government for establishing info
             
 
             
-              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/3b9740d6e48128cfa78769f193b3e8a150eb12de" target="_blank">
-                2021-05-11: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
+              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/7848f6fe32d409473c6933f5fdb928cf618dae81" target="_blank">
+                2021-05-17: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
               </a>
             
 
@@ -1757,12 +1754,12 @@ Data from this survey are used by all levels of government for establishing info
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/cif-cic/assets/js/sdg.js?v=20210517155405'></script>
+<script src='/cif-cic/assets/js/sdg.js?v=20210517195300'></script>
 
 
     
     
-    <script src="/cif-cic/assets/js/custom.js?v=20210517155405"></script><script>
+    <script src="/cif-cic/assets/js/custom.js?v=20210517195300"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
