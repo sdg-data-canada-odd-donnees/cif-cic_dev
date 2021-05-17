@@ -229,4 +229,4 @@ metadata_tabs:
     description: ''
 
 # Goal color graph test
-graph_color_set: 'goal'
+graph_color_set: 'accessible'
