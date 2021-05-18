@@ -138,7 +138,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic/assets/css/style.css?v=20210518115357">
+        <link rel="stylesheet" href="/cif-cic/assets/css/style.css?v=20210518123959">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -452,8 +452,8 @@ var translations = {
   id="indicatorData"
   data-indicatorid='indicator_8-3-1'
   data-id="8-3-1"
-  data-country="Canada, Provinces and the Territories"
-  data-charttitle="Proportion of youth not in education, employment or training, by age group"
+  data-country="Canada, provinces and territories"
+  data-charttitle="Proportion of youth not in education, employment or training (NEET)"
   data-charttitles="null"
   data-measurementunit="Percentage"
   data-showdata="true"
@@ -498,7 +498,7 @@ var translations = {
 
     <h3>Headline data</h3>
     <table class="table-responsive table table-hover dataTable no-footer" role="grid">
-      <caption>Proportion of youth not in education, employment or training, by age group</caption>
+      <caption>Proportion of youth not in education, employment or training (NEET)</caption>
       <thead>
         
         
@@ -581,7 +581,7 @@ var translations = {
     <p>Source: Statistics Canada</p>
     
     
-    <p>Geographical Area: Canada, Provinces and the Territories</p>
+    <p>Geographical Area: Canada, provinces and territories</p>
     
     
     <p>Unit of Measurement: Percentage</p>
@@ -631,7 +631,7 @@ data-event-label="Change to Table tab"
     <div id="selectionsChart">
       <figure role="group">
         <div id="chart-canvas">
-          <h4 id="chart-heading" class="chart-title">Proportion of youth not in education, employment or training, by age group</h4>
+          <h4 id="chart-heading" class="chart-title">Proportion of youth not in education, employment or training (NEET)</h4>
           <div id="chart" class="plot-container">
             
 <canvas
@@ -873,7 +873,7 @@ opensdg.chartConfigAlter(function(config, info) {
 
         
         <dt>Geographical Area:</dt>
-        <dd>Canada, Provinces and the Territories</dd>
+        <dd>Canada, provinces and territories</dd>
         
 
         
@@ -918,7 +918,7 @@ opensdg.chartConfigAlter(function(config, info) {
 
         
         <dt>Geographical Area:</dt>
-        <dd>Canada, Provinces and the Territories</dd>
+        <dd>Canada, provinces and territories</dd>
         
 
         
@@ -1039,7 +1039,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Target </th>
         <td>
           
-            <p>No target</p>
+            <p>No specific target</p>
 
           
         </td>
@@ -1055,7 +1055,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Indicator description </th>
         <td>
           
-            <p>Description</p>
+            <p>This indicator measures the proportion of youth not in education, employment or training.</p>
 
           
         </td>
@@ -1071,7 +1071,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Geographical coverage </th>
         <td>
           
-            <p>Canada, Provinces and the Territories</p>
+            <p>Canada, provinces and territories</p>
 
           
         </td>
@@ -1106,7 +1106,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Calculations </th>
         <td>
           
-            <p>Calculation</p>
+            <p>Not applicable</p>
 
           
         </td>
@@ -1131,7 +1131,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Comments and limitations </th>
         <td>
           
-            <p>Caution should be exercised in interpreting the provincial/territorial ratios and differences in ratios between provinces/territories and over time, as small estimates may present fairly high sampling variability. Estimates for small geographic areas, for small age groups or for cross-classified variables will be associated with larger variability.</p>
+            <p>Excluded from the survey’s coverage are: persons living on reserves and other Aboriginal settlements in the provinces; the institutionalized population, and households in extremely remote areas with very low population density.</p>
 
           
         </td>
@@ -1147,7 +1147,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Rational and interpretation </th>
         <td>
           
-            <p>Rationale and interpretation go here</p>
+            <p>The NEET indicator is important to measure as young people who are NEET may be experiencing difficulties transitioning from school to the labour market, and could be at risk for low income and social exclusion.</p>
 
           
         </td>
@@ -1200,8 +1200,8 @@ data-event-label="Change to indicator.sources tab"
             
 
             
-              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/3b9740d6e48128cfa78769f193b3e8a150eb12de" target="_blank">
-                2021-05-11: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
+              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/b8b03a0daf410ca7997295213a3a8592d3e5dfb4" target="_blank">
+                2021-05-18: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
               </a>
             
 
@@ -1620,12 +1620,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/cif-cic/assets/js/sdg.js?v=20210518115357'></script>
+<script src='/cif-cic/assets/js/sdg.js?v=20210518123959'></script>
 
 
     
     
-    <script src="/cif-cic/assets/js/custom.js?v=20210518115357"></script><script>
+    <script src="/cif-cic/assets/js/custom.js?v=20210518123959"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
