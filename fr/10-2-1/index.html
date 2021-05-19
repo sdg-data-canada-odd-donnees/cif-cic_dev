@@ -138,7 +138,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic/assets/css/style.css?v=20210519183908">
+        <link rel="stylesheet" href="/cif-cic/assets/css/style.css?v=20210519203456">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -452,7 +452,7 @@ var translations = {
   id="indicatorData"
   data-indicatorid='indicator_10-2-1'
   data-id="10-2-1"
-  data-country=" Canada and provinces"
+  data-country="Canada and provinces"
   data-charttitle="Proportion of the population reporting discrimination or unfair treatment"
   data-charttitles="null"
   data-measurementunit="Rate per 100,000 population"
@@ -460,7 +460,7 @@ var translations = {
   data-graphtype="line"
   data-geocoderegex=""
   data-showmap="false"
-  data-startvalues="[{&quot;field&quot;:&quot;Province&quot;,&quot;value&quot;:&quot;Canada&quot;},{&quot;field&quot;:&quot;Reporting entity&quot;,&quot;value&quot;:&quot;Police-reported&quot;},{&quot;field&quot;:&quot;Offence&quot;,&quot;value&quot;:&quot;Hate crime&quot;}]"
+  data-startvalues="[{&quot;field&quot;:&quot;Reporting entity&quot;,&quot;value&quot;:&quot;Police-reported&quot;},{&quot;field&quot;:&quot;Offence&quot;,&quot;value&quot;:&quot;Hate crime&quot;}]"
   data-graphlimits="null"
   data-stackeddisaggregation=""
   data-graphannotations="null"
@@ -501,8 +501,64 @@ var translations = {
       <caption>Proportion of the population reporting discrimination or unfair treatment</caption>
       <thead>
         
+        
+        <th scope="col">Year</th>
+        
+        
+        
+        <th scope="col" class="table-value">Value</th>
+        
+        
       </thead>
       <tbody>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td class="table-value">3.9</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td class="table-value">5.7</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td class="table-value">4.9</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td class="table-value">5.2</td>
+          
+          
+        </tr>
         
       </tbody>
     </table>
@@ -513,7 +569,7 @@ var translations = {
     <p>La source:  Statistics Canada </p>
     
     
-    <p>Zone géographique:  Canada and provinces</p>
+    <p>Zone géographique: Canada and provinces</p>
     
     
     <p>Unité de mesure: Rate per 100,000 population</p>
@@ -805,7 +861,7 @@ opensdg.chartConfigAlter(function(config, info) {
 
         
         <dt>Zone géographique:</dt>
-        <dd> Canada and provinces</dd>
+        <dd>Canada and provinces</dd>
         
 
         
@@ -850,7 +906,7 @@ opensdg.chartConfigAlter(function(config, info) {
 
         
         <dt>Zone géographique:</dt>
-        <dd> Canada and provinces</dd>
+        <dd>Canada and provinces</dd>
         
 
         
@@ -987,7 +1043,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Description de l&#39;indicateur </th>
         <td>
           
-            <p>Hate crimes refer to criminal offences motivated by bias, prejudice, or hate based on race, national or ethnic origin, language, colour, religion, sex, age, mental or physical disability, sexual orientation or any other similar factor, such as profession or political beliefs.</p>
+            <p>This indicator measures the proportion of the population reporting discrimination or unfair treatment. Hate crimes refer to criminal offences motivated by bias, prejudice, or hate based on race, national or ethnic origin, language, colour, religion, sex, age, mental or physical disability, sexual orientation or any other similar factor, such as profession or political beliefs.</p>
 
           
         </td>
@@ -1063,7 +1119,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Commentaires et limitations </th>
         <td>
           
-            <p>Over the past two decades, police services across Canada have continued to advance their identification and reporting of hate crime incidents. Changes in reporting practices can have an effect on hate crime statistics. For example, an increase in the number of hate crime incidents reported can be influenced by the introduction of a hate crime awareness campaign.</p>
+            <p>Over the past two decades, police services across Canada have continued to advance their identification and reporting of hate crime incidents. Changes in reporting practices can have an effect on hate crime statistics. For example, an increase in the number of hate crime incidents reported can be influenced by the introduction of a hate crime awareness campaign. Data for Canada include provinces and territories.</p>
 
           
         </td>
@@ -1079,7 +1135,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Rationnel et interprétation </th>
         <td>
           
-            <p>Information for Canada includes all provinces and territories.</p>
+            <p>Canada is a multicultural and diverse country, and it is important to understand the experiences of this diverse population, including the nature and extent of hate-motivated crime.</p>
 
           
         </td>
@@ -1101,8 +1157,8 @@ data-event-label="Change to indicator.sources tab"
             
 
             
-              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/3b9740d6e48128cfa78769f193b3e8a150eb12de" target="_blank">
-                2021-05-11: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
+              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/dfdee5898dbbe648c10f3f43d96fe425e0648d7d" target="_blank">
+                2021-05-19: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
               </a>
             
 
@@ -1132,8 +1188,8 @@ data-event-label="Change to indicator.sources tab"
             
 
             
-              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/3b9740d6e48128cfa78769f193b3e8a150eb12de" target="_blank">
-                2021-05-11: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
+              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/a4222efeaa0229e1b153bf95eece6d722b41b3f3" target="_blank">
+                2021-05-19: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
               </a>
             
 
@@ -1539,12 +1595,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/cif-cic/assets/js/sdg.js?v=20210519183908'></script>
+<script src='/cif-cic/assets/js/sdg.js?v=20210519203456'></script>
 
 
     
     
-    <script src="/cif-cic/assets/js/custom.js?v=20210519183908"></script><script>
+    <script src="/cif-cic/assets/js/custom.js?v=20210519203456"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
