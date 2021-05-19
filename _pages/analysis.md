@@ -1,5 +1,5 @@
 ---
-title: Analytical Products
+title: Related Products
 language: en
 permalink: /analysis/
 layout: page
