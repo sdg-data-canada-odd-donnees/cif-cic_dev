@@ -138,7 +138,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic/assets/css/style.css?v=20210519025212">
+        <link rel="stylesheet" href="/cif-cic/assets/css/style.css?v=20210519135803">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -452,10 +452,10 @@ var translations = {
   id="indicatorData"
   data-indicatorid='indicator_10-1-1'
   data-id="10-1-1"
-  data-country="Canada and provinces"
-  data-charttitle="Gini coefficient of adjusted after-tax income, annual"
+  data-country="Canada (excluding territories) and provinces"
+  data-charttitle="Gini coefficient of adjusted after-tax income"
   data-charttitles="null"
-  data-measurementunit="Decimal"
+  data-measurementunit="Number"
   data-showdata="true"
   data-graphtype="line"
   data-geocoderegex=""
@@ -498,11 +498,79 @@ var translations = {
 
     <h3>Headline data</h3>
     <table class="table-responsive table table-hover dataTable no-footer" role="grid">
-      <caption>Gini coefficient of adjusted after-tax income, annual</caption>
+      <caption>Gini coefficient of adjusted after-tax income</caption>
       <thead>
+        
+        
+        <th scope="col">Year</th>
+        
+        
+        
+        <th scope="col" class="table-value">Value</th>
+        
         
       </thead>
       <tbody>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td class="table-value">0.314</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td class="table-value">0.306</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td class="table-value">0.31</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td class="table-value">0.303</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td class="table-value">0.299</td>
+          
+          
+        </tr>
         
       </tbody>
     </table>
@@ -513,10 +581,10 @@ var translations = {
     <p>La source: Statistics Canada</p>
     
     
-    <p>Zone géographique: Canada and provinces</p>
+    <p>Zone géographique: Canada (excluding territories) and provinces</p>
     
     
-    <p>Unité de mesure: Decimal</p>
+    <p>Unité de mesure: Number</p>
     
     
   </div>
@@ -563,7 +631,7 @@ data-event-label="Change to Table tab"
     <div id="selectionsChart">
       <figure role="group">
         <div id="chart-canvas">
-          <h4 id="chart-heading" class="chart-title">Gini coefficient of adjusted after-tax income, annual</h4>
+          <h4 id="chart-heading" class="chart-title">Gini coefficient of adjusted after-tax income</h4>
           <div id="chart" class="plot-container">
             
 <canvas
@@ -805,12 +873,12 @@ opensdg.chartConfigAlter(function(config, info) {
 
         
         <dt>Zone géographique:</dt>
-        <dd>Canada and provinces</dd>
+        <dd>Canada (excluding territories) and provinces</dd>
         
 
         
         <dt>Unité de mesure:</dt>
-        <dd>Decimal</dd>
+        <dd>Number</dd>
         
 
         
@@ -850,12 +918,12 @@ opensdg.chartConfigAlter(function(config, info) {
 
         
         <dt>Zone géographique:</dt>
-        <dd>Canada and provinces</dd>
+        <dd>Canada (excluding territories) and provinces</dd>
         
 
         
         <dt>Unité de mesure:</dt>
-        <dd>Decimal</dd>
+        <dd>Number</dd>
         
 
         
@@ -971,7 +1039,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Nom de la cible </th>
         <td>
           
-            <p>No target</p>
+            <p>No specific target</p>
 
           
         </td>
@@ -987,7 +1055,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Description de l&#39;indicateur </th>
         <td>
           
-            <p>The Gini coefficient is a number between zero and one that measures the relative degree of inequality in the distribution of income. The coefficient would register zero (minimum inequality) for a population in which each person received exactly the same adjusted household income and it would register a coefficient of one (maximum inequality) if one person received all the adjusted household income and the rest received none. Even though a single Gini coefficient value has no simple interpretation, comparisons of the level over time or between populations are very straightforward: the higher the coefficient, the higher the inequality of the distribution.</p>
+            <p>This indicator measures the Gini coefficient. The Gini coefficient is a number between zero and one that measures the relative degree of inequality in the distribution of income.</p>
 
           
         </td>
@@ -1003,7 +1071,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Couverture géographique </th>
         <td>
           
-            <p>Canada and provinces</p>
+            <p>Canada (excluding territories) and provinces</p>
 
           
         </td>
@@ -1019,7 +1087,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Unité de mesure </th>
         <td>
           
-            <p>Decimal</p>
+            <p>Number</p>
 
           
         </td>
@@ -1038,7 +1106,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Calculs </th>
         <td>
           
-            <p>Calculation</p>
+            <p>The Gini coefficient would register zero (minimum inequality) for a population in which each person received exactly the same adjusted household income and it would register a coefficient of one (maximum inequality) if one person received all the adjusted household income and the rest received none.</p>
 
           
         </td>
@@ -1063,7 +1131,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Commentaires et limitations </th>
         <td>
           
-            <p>Limits</p>
+            <p>It covers all individuals in Canada, excluding persons living on reserves and other Aboriginal settlements in the provinces, the institutionalized population, and households in extremely remote areas with very low population density. Overall, these exclusions amount to less than 2 percent of the population.</p>
 
           
         </td>
@@ -1079,7 +1147,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Rationnel et interprétation </th>
         <td>
           
-            <p>Rationale and interpretation go here</p>
+            <p>Even though a single Gini coefficient value has no simple interpretation, comparisons of the level over time or between populations are very straightforward: the higher the coefficient, the higher the inequality of the distribution.</p>
 
           
         </td>
@@ -1101,8 +1169,8 @@ data-event-label="Change to indicator.sources tab"
             
 
             
-              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/3b9740d6e48128cfa78769f193b3e8a150eb12de" target="_blank">
-                2021-05-11: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
+              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/c0130cc12d7621b2fac27de2152bfbc043f3929f" target="_blank">
+                2021-05-19: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
               </a>
             
 
@@ -1132,8 +1200,8 @@ data-event-label="Change to indicator.sources tab"
             
 
             
-              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/3b9740d6e48128cfa78769f193b3e8a150eb12de" target="_blank">
-                2021-05-11: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
+              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/d4328834719023ac36294d65003f1564d04bb464" target="_blank">
+                2021-05-19: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
               </a>
             
 
@@ -1342,7 +1410,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Couverture géographique </th>
         <td>
           
-            <p>Canada, Geographical region of Canada, Province</p>
+            <p>Canada (excluding territories) and provinces</p>
 
           
         </td>
@@ -1552,12 +1620,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/cif-cic/assets/js/sdg.js?v=20210519025212'></script>
+<script src='/cif-cic/assets/js/sdg.js?v=20210519135803'></script>
 
 
     
     
-    <script src="/cif-cic/assets/js/custom.js?v=20210519025212"></script><script>
+    <script src="/cif-cic/assets/js/custom.js?v=20210519135803"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
