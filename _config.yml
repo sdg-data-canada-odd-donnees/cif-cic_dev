@@ -135,12 +135,16 @@ footer_menu:
     translation_key: general.facebook
   - path: https://instagram.com/statcan_eng/
     translation_key: general.instagram
-  - path: https://twitter.com/statcan_eng
-    translation_key: general.twitter
+  - path: https://ca.linkedin.com/company/statcan
+    translation_key: general.linkedin
   - path: https://www.reddit.com/user/StatCanada/
     translation_key: general.reddit
+  - path: https://twitter.com/statcan_eng
+    translation_key: general.twitter
   - path: https://www.youtube.com/statisticscanada
     translation_key: general.youtube
+  - path: https://www.statcan.gc.ca/
+    translation_key: general.statcan
   - path: /about/cookies-and-privacy/
     translation_key: menu.cookies
 
