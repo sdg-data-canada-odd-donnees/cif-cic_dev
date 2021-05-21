@@ -239,8 +239,8 @@
         },
         {
           "id": "6-2-1",
-          "title": "Percentage of municipalities across Canada with sustained boil water advisories",
-          "description": "This indicator measures the percentage of municipalities across Canada with sustained boil water advisories per year. A sustained boil water advisory is defined as one that exceeds 15 days in duration.",
+          "title": "Percentage of municipalities across Canada with sustained drinking water advisories",
+          "description": "This indicator measures the percentage of municipalities across Canada with sustained drinking water advisories per year. A sustained boil water advisory is defined as one that exceeds 15 days in duration.",
           "keywords": "",
           "href": "/cif-cic/6-2-1",
           "status": "complete"
