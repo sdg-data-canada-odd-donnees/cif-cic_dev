@@ -123,10 +123,10 @@ menu:
     translation_key: menu.about
  # - path: /analysis
  #   translation_key: menu.guidance
-  - path: /faq
-    translation_key: menu.faq
   - path: /news
     translation_key: menu.updates
+  - path: /faq
+    translation_key: menu.faq
 
 footer_menu:
   - path: mailto:statcan.sdg-odd.statcan@canada.ca
