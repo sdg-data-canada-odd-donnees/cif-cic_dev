@@ -133,7 +133,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic/assets/css/style.css?v=20210526042544">
+        <link rel="stylesheet" href="/cif-cic/assets/css/style.css?v=20210526120947">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -313,15 +313,46 @@ var translations = {
 
   <h1>
   
-    Statut de rapport
+    Reporting status on disaggregation
   
 </h1>
 
 
+<div class="reporting-status-description">
+  <p>This page provides information on possible disaggregation for indicators and tracj the progress of included them in the hub</p>
+
+</div>
+
 
 
   
+  <ul class="nav nav-tabs reporting-status-view" role="tablist">
+    <li role="presentation" class="nav-item active">
+      <a class="nav-link" data-toggle="tab" href="#goalsview" aria-controls="goals" role="tab" data-on="click"
+data-event-category="Tab change"
+data-event-action="Change reporting status view"
+data-event-label="Change reporting status view to goals"
+>Statut de rapport</a>
+    </li>
+    
 
+    
+      <li role="presentation" class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#disaggregationsview" aria-controls="disaggregations" role="tab" data-on="click"
+data-event-category="Tab change"
+data-event-action="Change reporting status view"
+data-event-label="Change reporting status view to disaggregations"
+>Statut de désagrégation</a>
+      </li>
+      
+
+    
+  </ul>
+  
+
+  
+  <div class="tab-content reporting-status-view">
+    <div role="tabpanel" class="tab-pane active" id="goalsview">
   
   <div class="goal goal-overall">
     <div class="details">
@@ -1022,11 +1053,718 @@ var translations = {
     <br style="clear:both;">
 </div>
   
-
+    </div>
   
 
   
 
+  
+    <div role="tabpanel" class="tab-pane" id="disaggregationsview">
+      <div class="goal goal-overall">
+    <div class="details">
+        <h2 class="status-goal">
+            Statut de désagrégation globale
+        </h2>
+        <span class="total"><span>76</span> indicateurs</span>
+        <div class="summary">
+            <div class="statuses"><div>
+                <span class="status complete"><span class="status-inner">1</span></span><strong>Entièrement désagrégé</strong><span class="value">1%</span>
+            </div><div>
+                <span class="status inprogress"><span class="status-inner">0</span></span><strong>Partiellement désagrégé</strong><span class="value">0%</span>
+            </div><div>
+                <span class="status notstarted"><span class="status-inner">0</span></span><strong>Non désagrégé</strong><span class="value">0%</span>
+            </div><div>
+                <span class="status notapplicable"><span class="status-inner">75</span></span><strong>Hors champ</strong><span class="value">99%</span>
+            </div><br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+            
+            
+            <span class="complete" style="width:1.3157894736842104%" title="Entièrement désagrégé: 1%"></span>
+            
+            
+            <span class="inprogress" style="width:0.0%" title="Partiellement désagrégé: 0%"></span>
+            
+            
+            <span class="notstarted" style="width:0.0%" title="Non désagrégé: 0%"></span>
+            
+            
+            <span class="notapplicable" style="width:98.6842105263158%" title="Hors champ: 99%"></span></div>
+    </div>
+    <br style="clear:both;">
+</div>
+      <h2>Statut par but</h2><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/cif-cic/fr/1">
+        <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic/assets/img/cards/inverted/fr/1.png" alt="Pas de pauvreté - Objectif 1" width="100" height="100" class="goal-icon-1 goal-icon-image goal-icon-image-"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/cif-cic/fr/1">Pas de pauvreté</a>
+        </h3>
+        <span class="total">2 indicateurs</span>
+        <div class="summary">
+            <div class="statuses"><div>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Entièrement désagrégé</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>Partiellement désagrégé</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status notstarted"><span class="status-inner">0</span></span><strong>Non désagrégé</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status notapplicable"><span class="status-inner">2</span></span><strong>Hors champ</strong><span class="value">100%</span>
+                </div><br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                <span class="complete" style="width:0.0%" title="Entièrement désagrégé: 0%"></span>
+                
+                
+                <span class="inprogress" style="width:0.0%" title="Partiellement désagrégé: 0%"></span>
+                
+                
+                <span class="notstarted" style="width:0.0%" title="Non désagrégé: 0%"></span>
+                
+                
+                <span class="notapplicable" style="width:100.0%" title="Hors champ: 100%"></span></div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/cif-cic/fr/2">
+        <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic/assets/img/cards/inverted/fr/2.png" alt="Faim &quot;zéro&quot; - Objectif 2" width="100" height="100" class="goal-icon-2 goal-icon-image goal-icon-image-"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/cif-cic/fr/2">Faim "zéro"</a>
+        </h3>
+        <span class="total">2 indicateurs</span>
+        <div class="summary">
+            <div class="statuses"><div>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Entièrement désagrégé</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>Partiellement désagrégé</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status notstarted"><span class="status-inner">0</span></span><strong>Non désagrégé</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status notapplicable"><span class="status-inner">2</span></span><strong>Hors champ</strong><span class="value">100%</span>
+                </div><br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                <span class="complete" style="width:0.0%" title="Entièrement désagrégé: 0%"></span>
+                
+                
+                <span class="inprogress" style="width:0.0%" title="Partiellement désagrégé: 0%"></span>
+                
+                
+                <span class="notstarted" style="width:0.0%" title="Non désagrégé: 0%"></span>
+                
+                
+                <span class="notapplicable" style="width:100.0%" title="Hors champ: 100%"></span></div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/cif-cic/fr/3">
+        <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic/assets/img/cards/inverted/fr/3.png" alt="Bonne santé et bien-être - Objectif 3" width="100" height="100" class="goal-icon-3 goal-icon-image goal-icon-image-"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/cif-cic/fr/3">Bonne santé et bien-être</a>
+        </h3>
+        <span class="total">13 indicateurs</span>
+        <div class="summary">
+            <div class="statuses"><div>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Entièrement désagrégé</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>Partiellement désagrégé</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status notstarted"><span class="status-inner">0</span></span><strong>Non désagrégé</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status notapplicable"><span class="status-inner">13</span></span><strong>Hors champ</strong><span class="value">100%</span>
+                </div><br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                <span class="complete" style="width:0.0%" title="Entièrement désagrégé: 0%"></span>
+                
+                
+                <span class="inprogress" style="width:0.0%" title="Partiellement désagrégé: 0%"></span>
+                
+                
+                <span class="notstarted" style="width:0.0%" title="Non désagrégé: 0%"></span>
+                
+                
+                <span class="notapplicable" style="width:100.0%" title="Hors champ: 100%"></span></div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/cif-cic/fr/4">
+        <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic/assets/img/cards/inverted/fr/4.png" alt="Éducation de qualité - Objectif 4" width="100" height="100" class="goal-icon-4 goal-icon-image goal-icon-image-"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/cif-cic/fr/4">Éducation de qualité</a>
+        </h3>
+        <span class="total">2 indicateurs</span>
+        <div class="summary">
+            <div class="statuses"><div>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Entièrement désagrégé</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>Partiellement désagrégé</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status notstarted"><span class="status-inner">0</span></span><strong>Non désagrégé</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status notapplicable"><span class="status-inner">2</span></span><strong>Hors champ</strong><span class="value">100%</span>
+                </div><br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                <span class="complete" style="width:0.0%" title="Entièrement désagrégé: 0%"></span>
+                
+                
+                <span class="inprogress" style="width:0.0%" title="Partiellement désagrégé: 0%"></span>
+                
+                
+                <span class="notstarted" style="width:0.0%" title="Non désagrégé: 0%"></span>
+                
+                
+                <span class="notapplicable" style="width:100.0%" title="Hors champ: 100%"></span></div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/cif-cic/fr/5">
+        <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic/assets/img/cards/inverted/fr/5.png" alt="Égalité entre les sexes - Objectif 5" width="100" height="100" class="goal-icon-5 goal-icon-image goal-icon-image-"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/cif-cic/fr/5">Égalité entre les sexes</a>
+        </h3>
+        <span class="total">4 indicateurs</span>
+        <div class="summary">
+            <div class="statuses"><div>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Entièrement désagrégé</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>Partiellement désagrégé</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status notstarted"><span class="status-inner">0</span></span><strong>Non désagrégé</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status notapplicable"><span class="status-inner">4</span></span><strong>Hors champ</strong><span class="value">100%</span>
+                </div><br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                <span class="complete" style="width:0.0%" title="Entièrement désagrégé: 0%"></span>
+                
+                
+                <span class="inprogress" style="width:0.0%" title="Partiellement désagrégé: 0%"></span>
+                
+                
+                <span class="notstarted" style="width:0.0%" title="Non désagrégé: 0%"></span>
+                
+                
+                <span class="notapplicable" style="width:100.0%" title="Hors champ: 100%"></span></div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/cif-cic/fr/6">
+        <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic/assets/img/cards/inverted/fr/6.png" alt="Eau propre et assainissement - Objectif 6" width="100" height="100" class="goal-icon-6 goal-icon-image goal-icon-image-"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/cif-cic/fr/6">Eau propre et assainissement</a>
+        </h3>
+        <span class="total">4 indicateurs</span>
+        <div class="summary">
+            <div class="statuses"><div>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Entièrement désagrégé</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>Partiellement désagrégé</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status notstarted"><span class="status-inner">0</span></span><strong>Non désagrégé</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status notapplicable"><span class="status-inner">4</span></span><strong>Hors champ</strong><span class="value">100%</span>
+                </div><br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                <span class="complete" style="width:0.0%" title="Entièrement désagrégé: 0%"></span>
+                
+                
+                <span class="inprogress" style="width:0.0%" title="Partiellement désagrégé: 0%"></span>
+                
+                
+                <span class="notstarted" style="width:0.0%" title="Non désagrégé: 0%"></span>
+                
+                
+                <span class="notapplicable" style="width:100.0%" title="Hors champ: 100%"></span></div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/cif-cic/fr/7">
+        <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic/assets/img/cards/inverted/fr/7.png" alt="Energies propres et d&#39;un coût abordable - Objectif 7" width="100" height="100" class="goal-icon-7 goal-icon-image goal-icon-image-"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/cif-cic/fr/7">Energies propres et d'un coût abordable</a>
+        </h3>
+        <span class="total">3 indicateurs</span>
+        <div class="summary">
+            <div class="statuses"><div>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Entièrement désagrégé</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>Partiellement désagrégé</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status notstarted"><span class="status-inner">0</span></span><strong>Non désagrégé</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status notapplicable"><span class="status-inner">3</span></span><strong>Hors champ</strong><span class="value">100%</span>
+                </div><br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                <span class="complete" style="width:0.0%" title="Entièrement désagrégé: 0%"></span>
+                
+                
+                <span class="inprogress" style="width:0.0%" title="Partiellement désagrégé: 0%"></span>
+                
+                
+                <span class="notstarted" style="width:0.0%" title="Non désagrégé: 0%"></span>
+                
+                
+                <span class="notapplicable" style="width:100.0%" title="Hors champ: 100%"></span></div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/cif-cic/fr/8">
+        <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic/assets/img/cards/inverted/fr/8.png" alt="Travaux décent et croissance économique - Objectif 8" width="100" height="100" class="goal-icon-8 goal-icon-image goal-icon-image-"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/cif-cic/fr/8">Travaux décent et croissance économique</a>
+        </h3>
+        <span class="total">6 indicateurs</span>
+        <div class="summary">
+            <div class="statuses"><div>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Entièrement désagrégé</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>Partiellement désagrégé</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status notstarted"><span class="status-inner">0</span></span><strong>Non désagrégé</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status notapplicable"><span class="status-inner">6</span></span><strong>Hors champ</strong><span class="value">100%</span>
+                </div><br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                <span class="complete" style="width:0.0%" title="Entièrement désagrégé: 0%"></span>
+                
+                
+                <span class="inprogress" style="width:0.0%" title="Partiellement désagrégé: 0%"></span>
+                
+                
+                <span class="notstarted" style="width:0.0%" title="Non désagrégé: 0%"></span>
+                
+                
+                <span class="notapplicable" style="width:100.0%" title="Hors champ: 100%"></span></div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/cif-cic/fr/9">
+        <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic/assets/img/cards/inverted/fr/9.png" alt="Industrie, innovation et infrastructure - Objectif 9" width="100" height="100" class="goal-icon-9 goal-icon-image goal-icon-image-"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/cif-cic/fr/9">Industrie, innovation et infrastructure</a>
+        </h3>
+        <span class="total">7 indicateurs</span>
+        <div class="summary">
+            <div class="statuses"><div>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Entièrement désagrégé</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>Partiellement désagrégé</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status notstarted"><span class="status-inner">0</span></span><strong>Non désagrégé</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status notapplicable"><span class="status-inner">7</span></span><strong>Hors champ</strong><span class="value">100%</span>
+                </div><br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                <span class="complete" style="width:0.0%" title="Entièrement désagrégé: 0%"></span>
+                
+                
+                <span class="inprogress" style="width:0.0%" title="Partiellement désagrégé: 0%"></span>
+                
+                
+                <span class="notstarted" style="width:0.0%" title="Non désagrégé: 0%"></span>
+                
+                
+                <span class="notapplicable" style="width:100.0%" title="Hors champ: 100%"></span></div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/cif-cic/fr/10">
+        <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic/assets/img/cards/inverted/fr/10.png" alt="Inégalités réduites - Objectif 10" width="100" height="100" class="goal-icon-10 goal-icon-image goal-icon-image-"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/cif-cic/fr/10">Inégalités réduites</a>
+        </h3>
+        <span class="total">4 indicateurs</span>
+        <div class="summary">
+            <div class="statuses"><div>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Entièrement désagrégé</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>Partiellement désagrégé</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status notstarted"><span class="status-inner">0</span></span><strong>Non désagrégé</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status notapplicable"><span class="status-inner">4</span></span><strong>Hors champ</strong><span class="value">100%</span>
+                </div><br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                <span class="complete" style="width:0.0%" title="Entièrement désagrégé: 0%"></span>
+                
+                
+                <span class="inprogress" style="width:0.0%" title="Partiellement désagrégé: 0%"></span>
+                
+                
+                <span class="notstarted" style="width:0.0%" title="Non désagrégé: 0%"></span>
+                
+                
+                <span class="notapplicable" style="width:100.0%" title="Hors champ: 100%"></span></div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/cif-cic/fr/11">
+        <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic/assets/img/cards/inverted/fr/11.png" alt="Villes et communautés durables - Objectif 11" width="100" height="100" class="goal-icon-11 goal-icon-image goal-icon-image-"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/cif-cic/fr/11">Villes et communautés durables</a>
+        </h3>
+        <span class="total">7 indicateurs</span>
+        <div class="summary">
+            <div class="statuses"><div>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Entièrement désagrégé</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>Partiellement désagrégé</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status notstarted"><span class="status-inner">0</span></span><strong>Non désagrégé</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status notapplicable"><span class="status-inner">7</span></span><strong>Hors champ</strong><span class="value">100%</span>
+                </div><br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                <span class="complete" style="width:0.0%" title="Entièrement désagrégé: 0%"></span>
+                
+                
+                <span class="inprogress" style="width:0.0%" title="Partiellement désagrégé: 0%"></span>
+                
+                
+                <span class="notstarted" style="width:0.0%" title="Non désagrégé: 0%"></span>
+                
+                
+                <span class="notapplicable" style="width:100.0%" title="Hors champ: 100%"></span></div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/cif-cic/fr/12">
+        <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic/assets/img/cards/inverted/fr/12.png" alt="Consommation et production responsables - Objectif 12" width="100" height="100" class="goal-icon-12 goal-icon-image goal-icon-image-"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/cif-cic/fr/12">Consommation et production responsables</a>
+        </h3>
+        <span class="total">3 indicateurs</span>
+        <div class="summary">
+            <div class="statuses"><div>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Entièrement désagrégé</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>Partiellement désagrégé</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status notstarted"><span class="status-inner">0</span></span><strong>Non désagrégé</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status notapplicable"><span class="status-inner">3</span></span><strong>Hors champ</strong><span class="value">100%</span>
+                </div><br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                <span class="complete" style="width:0.0%" title="Entièrement désagrégé: 0%"></span>
+                
+                
+                <span class="inprogress" style="width:0.0%" title="Partiellement désagrégé: 0%"></span>
+                
+                
+                <span class="notstarted" style="width:0.0%" title="Non désagrégé: 0%"></span>
+                
+                
+                <span class="notapplicable" style="width:100.0%" title="Hors champ: 100%"></span></div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/cif-cic/fr/13">
+        <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic/assets/img/cards/inverted/fr/13.png" alt="Mesures relatives à la lutte contre les changements climatiques - Objectif 13" width="100" height="100" class="goal-icon-13 goal-icon-image goal-icon-image-"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/cif-cic/fr/13">Mesures relatives à la lutte contre les changements climatiques</a>
+        </h3>
+        <span class="total">3 indicateurs</span>
+        <div class="summary">
+            <div class="statuses"><div>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Entièrement désagrégé</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>Partiellement désagrégé</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status notstarted"><span class="status-inner">0</span></span><strong>Non désagrégé</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status notapplicable"><span class="status-inner">3</span></span><strong>Hors champ</strong><span class="value">100%</span>
+                </div><br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                <span class="complete" style="width:0.0%" title="Entièrement désagrégé: 0%"></span>
+                
+                
+                <span class="inprogress" style="width:0.0%" title="Partiellement désagrégé: 0%"></span>
+                
+                
+                <span class="notstarted" style="width:0.0%" title="Non désagrégé: 0%"></span>
+                
+                
+                <span class="notapplicable" style="width:100.0%" title="Hors champ: 100%"></span></div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/cif-cic/fr/14">
+        <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic/assets/img/cards/inverted/fr/14.png" alt="Vie aquatique - Objectif 14" width="100" height="100" class="goal-icon-14 goal-icon-image goal-icon-image-"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/cif-cic/fr/14">Vie aquatique</a>
+        </h3>
+        <span class="total">2 indicateurs</span>
+        <div class="summary">
+            <div class="statuses"><div>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Entièrement désagrégé</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>Partiellement désagrégé</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status notstarted"><span class="status-inner">0</span></span><strong>Non désagrégé</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status notapplicable"><span class="status-inner">2</span></span><strong>Hors champ</strong><span class="value">100%</span>
+                </div><br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                <span class="complete" style="width:0.0%" title="Entièrement désagrégé: 0%"></span>
+                
+                
+                <span class="inprogress" style="width:0.0%" title="Partiellement désagrégé: 0%"></span>
+                
+                
+                <span class="notstarted" style="width:0.0%" title="Non désagrégé: 0%"></span>
+                
+                
+                <span class="notapplicable" style="width:100.0%" title="Hors champ: 100%"></span></div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/cif-cic/fr/15">
+        <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic/assets/img/cards/inverted/fr/15.png" alt="Vie terrestre - Objectif 15" width="100" height="100" class="goal-icon-15 goal-icon-image goal-icon-image-"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/cif-cic/fr/15">Vie terrestre</a>
+        </h3>
+        <span class="total">5 indicateurs</span>
+        <div class="summary">
+            <div class="statuses"><div>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Entièrement désagrégé</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>Partiellement désagrégé</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status notstarted"><span class="status-inner">0</span></span><strong>Non désagrégé</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status notapplicable"><span class="status-inner">5</span></span><strong>Hors champ</strong><span class="value">100%</span>
+                </div><br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                <span class="complete" style="width:0.0%" title="Entièrement désagrégé: 0%"></span>
+                
+                
+                <span class="inprogress" style="width:0.0%" title="Partiellement désagrégé: 0%"></span>
+                
+                
+                <span class="notstarted" style="width:0.0%" title="Non désagrégé: 0%"></span>
+                
+                
+                <span class="notapplicable" style="width:100.0%" title="Hors champ: 100%"></span></div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/cif-cic/fr/16">
+        <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic/assets/img/cards/inverted/fr/16.png" alt="Paix, justice et institutions efficaces - Objectif 16" width="100" height="100" class="goal-icon-16 goal-icon-image goal-icon-image-"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/cif-cic/fr/16">Paix, justice et institutions efficaces</a>
+        </h3>
+        <span class="total">7 indicateurs</span>
+        <div class="summary">
+            <div class="statuses"><div>
+                    <span class="status complete"><span class="status-inner">1</span></span><strong>Entièrement désagrégé</strong><span class="value">14%</span>
+                </div><div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>Partiellement désagrégé</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status notstarted"><span class="status-inner">0</span></span><strong>Non désagrégé</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status notapplicable"><span class="status-inner">6</span></span><strong>Hors champ</strong><span class="value">86%</span>
+                </div><br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                <span class="complete" style="width:14.285714285714285%" title="Entièrement désagrégé: 14%"></span>
+                
+                
+                <span class="inprogress" style="width:0.0%" title="Partiellement désagrégé: 0%"></span>
+                
+                
+                <span class="notstarted" style="width:0.0%" title="Non désagrégé: 0%"></span>
+                
+                
+                <span class="notapplicable" style="width:85.71428571428571%" title="Hors champ: 86%"></span></div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/cif-cic/fr/17">
+        <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic/assets/img/cards/inverted/fr/17.png" alt="Partenariats pour la réalisation des objectifs - Objectif 17" width="100" height="100" class="goal-icon-17 goal-icon-image goal-icon-image-"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/cif-cic/fr/17">Partenariats pour la réalisation des objectifs</a>
+        </h3>
+        <span class="total">2 indicateurs</span>
+        <div class="summary">
+            <div class="statuses"><div>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Entièrement désagrégé</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status inprogress"><span class="status-inner">0</span></span><strong>Partiellement désagrégé</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status notstarted"><span class="status-inner">0</span></span><strong>Non désagrégé</strong><span class="value">0%</span>
+                </div><div>
+                    <span class="status notapplicable"><span class="status-inner">2</span></span><strong>Hors champ</strong><span class="value">100%</span>
+                </div><br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                <span class="complete" style="width:0.0%" title="Entièrement désagrégé: 0%"></span>
+                
+                
+                <span class="inprogress" style="width:0.0%" title="Partiellement désagrégé: 0%"></span>
+                
+                
+                <span class="notstarted" style="width:0.0%" title="Non désagrégé: 0%"></span>
+                
+                
+                <span class="notapplicable" style="width:100.0%" title="Hors champ: 100%"></span></div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div>
+    </div>
+
+    
+  
+
+  
+  </div>
   
 
   <!---->
@@ -1118,12 +1856,12 @@ var translations = {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/cif-cic/assets/js/sdg.js?v=20210526042544'></script>
+<script src='/cif-cic/assets/js/sdg.js?v=20210526120947'></script>
 
 
     
     
-    <script src="/cif-cic/assets/js/custom.js?v=20210526042544"></script><script>
+    <script src="/cif-cic/assets/js/custom.js?v=20210526120947"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
