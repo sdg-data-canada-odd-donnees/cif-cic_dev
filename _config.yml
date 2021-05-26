@@ -242,7 +242,7 @@ metadata_tabs:
 graph_color_set: 'accessible'
 
 # Reporting status page
-reporting_status:
-    title: Reporting status on disaggregation
-    description: This page provides information on possible disaggregation for indicators and tracj the progress of included them in the hub
-    disaggregation_tabs: true
+# reporting_status:
+#    title: Reporting status on disaggregation
+#    description: This page provides information on possible disaggregation for indicators and tracj the progress of included them in the hub
+#    disaggregation_tabs: true
