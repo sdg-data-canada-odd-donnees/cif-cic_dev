@@ -4,7 +4,7 @@ title: SDG Fact sheets
 author: STC SDG Team
 excerpt: "The fact sheets finclude short, focused information and statistics relating to each of the SDGs. Each fact sheets include a community spotlight section that features the work done by Canada’s non-profit organizations and charities."
 language: en
-permalink: /sdg-fact-sheet/
+permalink: /sdg-fact-sheets/
 categories:
   - SDG
   - Infographics
