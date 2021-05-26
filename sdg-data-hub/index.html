@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" class="no-js">
+<html lang="en" class="no-js">
     <head>
         <meta charset="utf-8">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://sdg-data-canada-odd-donnees.github.io/cif-data-donnees-cic/fr',
+  remoteDataBaseUrl: 'https://sdg-data-canada-odd-donnees.github.io/cif-data-donnees-cic/en',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -38,7 +38,7 @@ var opensdg = {
     this.dataDisplayAlterations.push(callback);
   },
 
-  language: 'fr',
+  language: 'en',
 };
 
 // For backwards compatibility, some of these might need to be global.
@@ -103,7 +103,7 @@ var translations = {
         ================================================== -->
 
         
-    <title>Objectif 6 - Eau propre et assainissement - Indicators For The Sustainable Development Goals</title>
+    <title>SDG Data Hub - Indicators For The Sustainable Development Goals</title>
 
 
 
@@ -144,19 +144,19 @@ var translations = {
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><!-- ShareThis BEGIN --><!-- ShareThis END -->
 
     </head>
-<body class="language-fr layout-goal-by-target">
+<body class="language-en layout-post">
 <!-- <div class="container"> -->
 
 
-<script>translations['header'] = {"alpha":"Alpha","default_contrast":"contraste standard","disable_high_contrast":"Désactiver le contraste élevé","disclaimer":"Ceci est un site en développement. Nous apprécions vos <a href=\"mailto:%email_address\">commentaires</a>.","enable_high_contrast":"Activer le contraste élevé","high_contrast":"contraste élevé","skip_link":"Passer au contenu principal","tag_line":"17 objectifs pour transformer notre monde","toggle_menu":"Interrupteur du menu. Cliquez pour développer ou réduire le menu.","toggle_search":"Interrupteur de la barre. Cliquez pour développer ou réduire la barre de recherche."};</script>
+<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Default contrast","disable_high_contrast":"Disable high contrast","disclaimer":"This is a development website. We welcome your <a href=\"mailto:%email_address\">feedback</a>.","enable_high_contrast":"Enable high contrast","high_contrast":"High contrast","skip_link":"Skip to main content","tag_line":"17 Goals to Transform our World","toggle_menu":"Menu toggle. Click to expand or collapse the menu.","toggle_search":"Search toggle. Click to expand or collapse the search bar."};</script>
 
-<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Passer au contenu principal</a>
+<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
 <div id="disclaimer">
   <div class="container">
   <div class="disclaimer-alert">
     <strong class="phase-tag">Alpha</strong>
     
-    Ceci est un site en développement. Nous apprécions vos <a href="mailto:statcan.sdg-odd.statcan@canada.ca">commentaires</a>.
+    This is a development website. We welcome your <a href="mailto:statcan.sdg-odd.statcan@canada.ca">feedback</a>.
   </div>
 </div>
 
@@ -166,8 +166,8 @@ var translations = {
   <div class="container">
 
     <div class="logo-and-mobile-widgets">
-      <a class="navbar-brand" href="/cif-cic/fr/" id="home">
-    <img src="/cif-cic/assets/img/SDG_logo.png" alt="Objectifs de développement durable - 17 objectifs pour transformer notre monde" />
+      <a class="navbar-brand" href="/cif-cic/" id="home">
+    <img src="/cif-cic/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
 </a>
       <div class="mobile-widgets">
     <ul id='accessibility-nav' class='contrast-switcher'></ul><div class="language-toggle-mobile">
@@ -175,11 +175,11 @@ var translations = {
   
   <div class="btn-group language-toggle-dropdown ">
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Français</span>
-      <span class="language-abbreviation">fr</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
+      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">English</span>
+      <span class="language-abbreviation">en</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
     <ul class="dropdown-menu"><li>
-            <a href="/cif-cic/6/">
-              English
+            <a href="/cif-cic/fr/sdg-data-hub/">
+              Français
             </a>
           </li></ul>
   </div>
@@ -191,21 +191,21 @@ var translations = {
     <nav class="navbar navbar-default" id="main-nav">
       <ul class="top-level">
     <li id="menuToggle"
-        aria-label="Interrupteur du menu. Cliquez pour développer ou réduire le menu."
+        aria-label="Menu toggle. Click to expand or collapse the menu."
         aria-haspopup="true">
         <button data-target="menu-mobile" aria-expanded="false">Menu</button>
         <ul class="nav navbar-nav menu-target contrast-switcher" id="menu-mobile"><li class="nav-link ">
-    <a href="/cif-cic/fr/goals">Objectifs</a>
+    <a href="/cif-cic/goals">Goals</a>
 </li><li class="nav-link ">
-    <a href="/cif-cic/fr/reporting-status">Statut de rapport</a>
+    <a href="/cif-cic/reporting-status">Reporting Status</a>
 </li><li class="nav-link ">
-    <a href="/cif-cic/fr/about">À propos</a>
+    <a href="/cif-cic/about">About</a>
 </li><li class="nav-link ">
-    <a href="/cif-cic/fr/analysis">Produits connexes</a>
+    <a href="/cif-cic/analysis">Related Products</a>
 </li><li class="nav-link ">
-    <a href="/cif-cic/fr/faq">FAQ</a>
+    <a href="/cif-cic/faq">FAQ</a>
 </li><li class="nav-link ">
-    <a href="/cif-cic/fr/news">Mises à jour</a>
+    <a href="/cif-cic/news">Updates</a>
 </li><li class="language-toggle-menu-header">
     
 
@@ -217,11 +217,11 @@ var translations = {
   
   <div class="btn-group language-toggle-dropdown ">
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Français</span>
-      <span class="language-abbreviation">fr</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
+      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">English</span>
+      <span class="language-abbreviation">en</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
     <ul class="dropdown-menu"><li>
-            <a href="/cif-cic/6/">
-              English
+            <a href="/cif-cic/fr/sdg-data-hub/">
+              Français
             </a>
           </li></ul>
   </div>
@@ -234,39 +234,39 @@ var translations = {
 
     </li>
     <li id="searchToggle"
-        aria-label="Interrupteur de la barre. Cliquez pour développer ou réduire la barre de recherche."
+        aria-label="Search toggle. Click to expand or collapse the search bar."
         aria-haspopup="true">
-        <button data-target="search-mobile" aria-expanded="false">Chercher</button>
+        <button data-target="search-mobile" aria-expanded="false">Search</button>
         <div id="search-mobile" class="menu-target">
-  <form action="/cif-cic/fr/search">
-    <label class="sr-only" for="indicator_search-mobile">Chercher</label>
-    <input type="text" name="q" id="indicator_search-mobile" title="Chercher" /><!--
-    --><button aria-label="Chercher" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
+  <form action="/cif-cic/search">
+    <label class="sr-only" for="indicator_search-mobile">Search</label>
+    <input type="text" name="q" id="indicator_search-mobile" title="Search" /><!--
+    --><button aria-label="Search" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
   </form>
 </div>
 
     </li>
 </ul>
       <div id="search" class="menu-target">
-  <form action="/cif-cic/fr/search">
-    <label class="sr-only" for="indicator_search">Chercher</label>
-    <input type="text" name="q" id="indicator_search" title="Chercher" /><!--
-    --><button aria-label="Chercher" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
+  <form action="/cif-cic/search">
+    <label class="sr-only" for="indicator_search">Search</label>
+    <input type="text" name="q" id="indicator_search" title="Search" /><!--
+    --><button aria-label="Search" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
   </form>
 </div>
 
       <ul class="nav navbar-nav menu-target contrast-switcher" id="menu"><li class="nav-link ">
-    <a href="/cif-cic/fr/goals">Objectifs</a>
+    <a href="/cif-cic/goals">Goals</a>
 </li><li class="nav-link ">
-    <a href="/cif-cic/fr/reporting-status">Statut de rapport</a>
+    <a href="/cif-cic/reporting-status">Reporting Status</a>
 </li><li class="nav-link ">
-    <a href="/cif-cic/fr/about">À propos</a>
+    <a href="/cif-cic/about">About</a>
 </li><li class="nav-link ">
-    <a href="/cif-cic/fr/analysis">Produits connexes</a>
+    <a href="/cif-cic/analysis">Related Products</a>
 </li><li class="nav-link ">
-    <a href="/cif-cic/fr/faq">FAQ</a>
+    <a href="/cif-cic/faq">FAQ</a>
 </li><li class="nav-link ">
-    <a href="/cif-cic/fr/news">Mises à jour</a>
+    <a href="/cif-cic/news">Updates</a>
 </li><li class="language-toggle-menu-header">
     
 
@@ -278,11 +278,11 @@ var translations = {
   
   <div class="btn-group language-toggle-dropdown ">
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Français</span>
-      <span class="language-abbreviation">fr</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
+      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">English</span>
+      <span class="language-abbreviation">en</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
     <ul class="dropdown-menu"><li>
-            <a href="/cif-cic/6/">
-              English
+            <a href="/cif-cic/fr/sdg-data-hub/">
+              Français
             </a>
           </li></ul>
   </div>
@@ -301,214 +301,94 @@ var translations = {
 
 
 
-
 <div class="container">
-  <ol class="breadcrumb">
   
-  <li><a href="/cif-cic/fr/">Accueil</a></li>
-  <li><a href="/cif-cic/fr/goals">Objectifs</a></li>
-  
+<ol class="breadcrumb">
+  <li><a href="/cif-cic/">Home</a></li>
+  <li><a href="/cif-cic/news">Updates</a></li>
   
 </ol>
 
-  
+
+</div>
+
+
+<div id="main-content" class="container" role="main">
+  <div class="row">
+    <div class="col-md-9 push-md-3">
+      <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+        <h1 class="post-title" itemprop="name headline">SDG Data Hub</h1>
+        <p><time datetime="2018-05-16T00:00:00+00:00" itemprop="datePublished">May 16, 2018</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">STC SDG Team</span></span></p>
+
+        <div class="post-content" itemprop="articleBody">
+          <p>The 2030 Agenda and the Sustainable Development Goals (SDGs) were adopted on September 25, 2015, by the United Nations General Assembly. The 17 SDGs are a universal call to action to end poverty, protect the planet, and ensure that all people enjoy peace and prosperity. They cover a broad range of social and economic development issues, with a focus on the most vulnerable and a commitment that “no one will be left behind.” In order to measure and monitor progress on the SDGs, high quality data and information are required. To do this, the government of Canada is launching the SDG data hub, hosted by Statistics Canada.</p>
+
+<p>The <a href="https://www144.statcan.gc.ca/sdg-odd/index-eng.htm">Sustainable Development Goals Data Hub</a> was announced in the 2018 federal budget. Statistics Canada continues to work with other government departments, Canadians and the private sector to expand coverage and access to data from numerous sources, including international organizations, and to lead the work to develop robust measures in Canada for the Global Indicator Framework for Sustainable Development.</p>
+
+<p>To collect these data, Statistics Canada collaborate with federal departments and agencies, international organizations and non-governmental organizations to gather relevant statistics.</p>
+
+        </div>
+
+        
+        <ul class="post-categories">
+          
+          <li class="warning">
+            
+            
+            <a href="/cif-cic/categories/#SDG" title="View all posts in the SDG category">
+            
+            SDG
+            
+            </a>
+            
+          </li>
+          
+          <li class="warning">
+            
+            
+            <a href="/cif-cic/categories/#Data hub" title="View all posts in the Data hub category">
+            
+            Data hub
+            
+            </a>
+            
+          </li>
+          
+        </ul>
+        
+      </article>
+    </div>
     
-<div class="previous-next-links row">
-    <div class="col-xs-3 col-md-3 col-lg-4 pull-left text-left">
-        <a class="btn btn-primary" href="/cif-cic/fr/5" aria-labelledby="previous-link">
-            <i class="fa fa-chevron-left" aria-hidden="true"></i>
-            <span id="previous-link" class="hidden-sm hidden-xs">Objectif précédent</span>
-        </a>
-    </div>
-    <div class="col-xs-3 col-md-3 col-lg-4 pull-right text-right">
-        <a class="btn btn-primary" href="/cif-cic/fr/7" aria-labelledby="next-link">
-            <i class="fa fa-chevron-right" aria-hidden="true"></i>
-            <span id="next-link" class="hidden-sm hidden-xs">Objectif suivant</span>
-        </a>
-    </div>
-</div>
+    <div class="col-md-3 pull-md-9">
+      <aside id="sidebar">
+  <h4>Posts by Category</h4>
+  <ul>
+    
+      
+      <li>
+        <a href="/cif-cic/categories/#SDG" title="View all posts in the SDG category">SDG</a>
+      </li>
+    
+      
+      <li>
+        <a href="/cif-cic/categories/#Data hub" title="View all posts in the Data hub category">Data hub</a>
+      </li>
+    
+      
+      <li>
+        <a href="/cif-cic/categories/#Infographics" title="View all posts in the Infographics category">Infographics</a>
+      </li>
+    
+  </ul>
+</aside>
 
-
-  
-</div>
-
-<div class="heading goal-banner goal-6">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-4 col-md-3 col-lg-2 goal-tiles">
-        <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic/assets/img/cards/inverted/fr/6.png" alt="Eau propre et assainissement - Objectif 6" id="goal-6" class="goal-icon-image goal-icon-image-" />
-      </div>
-      <div class="col-xs-8 col-md-9 col-lg-10">
-        <h1>
-          <span class="hidden-sm hidden-md hidden-lg">Objectif 6: </span>Garantir l’accès de tous à des services d’alimentation en eau et d’assainissement gérés de façon durable
-        </h1>
-      </div>
     </div>
+    
   </div>
 </div>
 
-<div id="main-content" class="container goal-indicators goal-6 goal-by-target" role="main">
-
-  
 
 
-
-  <div class="visible-md-block visible-lg-block">
-    <div class="col-md-6">
-      <h2>Ambitions et cibles</h2>
-    </div>
-    <div class="col-md-6">
-      <h2>Indicateurs</h2>
-    </div>
-  </div>
-
-  
-  
-    
-    <div class="indicator-cards target goal-target col-md-6">
-      <span class="indicator-card-number">
-        <label class="hidden-md hidden-lg">Cible</label>
-        6.1
-      </span>
-      <p><strong>Ambition</strong> - Les Canadiens ont accès à l'eau potable et l'utilisent de façon durable <br><strong>Cible</strong> - Tous les avis à long terme sur l'eau potable dans les réseaux publics situés dans les réserves doivent être résolus </p>
-    </div>
-    <div class="indicator-cards col-md-6 row no-gutters">
-    
-
-      
-      
-      
-      
-      
-      
-      
-      
-
-      <div class="col-md-12  goal-indicator">
-        <span class="indicator-card-number">
-          6.1.1
-          <span class="status complete">
-            Diffusé en ligne
-          </span>
-        </span>
-        <a href="/cif-cic/fr/6-1-1">
-          Number of long-term drinking water advisories on public systems on reserves
-        </a>
-        
-
-      </div>
-    
-    </div>
-  
-    
-    <div class="indicator-cards target goal-target col-md-6">
-      <span class="indicator-card-number">
-        <label class="hidden-md hidden-lg">Cible</label>
-        6.2
-      </span>
-      <p><strong>Ambition</strong> - Les Canadiens ont accès à l'eau potable et l'utilisent de façon durable <br><strong>Cible</strong> - Pas de cible spécifique</p>
-    </div>
-    <div class="indicator-cards col-md-6 row no-gutters">
-    
-
-      
-      
-      
-      
-      
-      
-      
-      
-
-      <div class="col-md-12  goal-indicator">
-        <span class="indicator-card-number">
-          6.2.1
-          <span class="status complete">
-            Diffusé en ligne
-          </span>
-        </span>
-        <a href="/cif-cic/fr/6-2-1">
-          Percentage of municipalities across Canada with sustained drinking water advisories
-        </a>
-        
-
-      </div>
-    
-    </div>
-  
-    
-    <div class="indicator-cards target goal-target col-md-6">
-      <span class="indicator-card-number">
-        <label class="hidden-md hidden-lg">Cible</label>
-        6.3
-      </span>
-      <p><strong>Ambition</strong> - Les Canadiens ont accès à l'eau potable et l'utilisent de façon durable <br><strong>Cible</strong> - Promouvoir la conservation et l'utilisation avisée d'eau pour effectuer une réduction de 30 % ou une efficacité accrue dans l'utilisation de l'eau dans divers secteurs d'ici 2025</p>
-    </div>
-    <div class="indicator-cards col-md-6 row no-gutters">
-    
-
-      
-      
-      
-      
-      
-      
-      
-      
-
-      <div class="col-md-12  goal-indicator">
-        <span class="indicator-card-number">
-          6.3.1
-          <span class="status complete">
-            Diffusé en ligne
-          </span>
-        </span>
-        <a href="/cif-cic/fr/6-3-1">
-          Water use growth rate
-        </a>
-        
-
-      </div>
-    
-    </div>
-  
-    
-    <div class="indicator-cards target goal-target col-md-6">
-      <span class="indicator-card-number">
-        <label class="hidden-md hidden-lg">Cible</label>
-        6.4
-      </span>
-      D’ici à 2030, faire en sorte que les ressources en eau soient utilisées beaucoup plus efficacement dans tous les secteurs et garantir la viabilité des prélèvements et de l’approvisionnement en eau douce afin de remédier à la pénurie d’eau et de réduire nettement le nombre de personnes qui manquent d’eau
-    </div>
-    <div class="indicator-cards col-md-6 row no-gutters">
-    
-
-      
-      
-      
-      
-      
-      
-      
-      
-
-      <div class="col-md-12  goal-indicator">
-        <span class="indicator-card-number">
-          6.4.1
-          <span class="status complete">
-            Diffusé en ligne
-          </span>
-        </span>
-        <a href="/cif-cic/fr/6-4-1">
-          Water quality in Canadian rivers
-        </a>
-        
-
-      </div>
-    
-    </div>
-  
-</div>
 
 <footer role="contentinfo">
   <div class="container">
@@ -516,11 +396,11 @@ var translations = {
       <div class="col-xs-12">
         <div id="footerLinks">
           <ul>
-            <li><a href="https://open-sdg.org">Construit en utilisant Open SDG</a></li>
+            <li><a href="https://open-sdg.org">Built using Open SDG</a></li>
             
               <li>
                 
-                  <a href="mailto:statcan.sdg-odd.statcan@canada.ca" target="_blank">Contactez-nous</a>
+                  <a href="mailto:statcan.sdg-odd.statcan@canada.ca" target="_blank">Contact us</a>
                 
                 </li>
               <li>
@@ -555,11 +435,11 @@ var translations = {
                 </li>
               <li>
                 
-                  <a href="https://www.statcan.gc.ca/" target="_blank">Statistique Canada</a>
+                  <a href="https://www.statcan.gc.ca/" target="_blank">Statistics Canada</a>
                 
                 </li>
               <li>
-                <a href="/cif-cic/fr/about/cookies-and-privacy/">Cookies</a>
+                <a href="/cif-cic/about/cookies-and-privacy/">Cookies</a>
                 
                 </li>
               
@@ -591,10 +471,10 @@ var translations = {
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
 <script>translations['general'] = translations['general'] || {};
-    translations['general']['hide'] = 'masquer';</script>
+    translations['general']['hide'] = 'hide';</script>
 
 <script>translations['search'] = translations['search'] || {};
-    translations['search']['search'] = 'Chercher';</script>
+    translations['search']['search'] = 'Search';</script>
 
 <script src='/cif-cic/assets/js/sdg.js?v=20210526194818'></script>
 
