@@ -138,7 +138,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic/assets/css/style.css?v=20210528022425">
+        <link rel="stylesheet" href="/cif-cic/assets/css/style.css?v=20210528135009">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -449,14 +449,14 @@ var translations = {
   data-indicatorid='indicator_3-9-1'
   data-id="3-9-1"
   data-country="Canada"
-  data-charttitle="Incidence of selected diseases"
+  data-charttitle="Incidence rate of selected diseases"
   data-charttitles="null"
-  data-measurementunit="Rate per 100,000 or Number of cases"
+  data-measurementunit="Rate per 100,000 population"
   data-showdata="true"
   data-graphtype="line"
   data-geocoderegex=""
   data-showmap="false"
-  data-startvalues="[{&quot;field&quot;:&quot;Disease&quot;,&quot;value&quot;:&quot;Hypertension&quot;},{&quot;field&quot;:&quot;Disease&quot;,&quot;value&quot;:&quot;Dementia, including Alzheimer's disease&quot;},{&quot;field&quot;:&quot;Disease&quot;,&quot;value&quot;:&quot;Cancer&quot;}]"
+  data-startvalues="[{&quot;field&quot;:&quot;Disease&quot;,&quot;value&quot;:&quot;Hypertension&quot;},{&quot;field&quot;:&quot;Disease&quot;,&quot;value&quot;:&quot;Dementia, including Alzheimer's disease&quot;},{&quot;field&quot;:&quot;Disease&quot;,&quot;value&quot;:&quot;Cancer&quot;},{&quot;field&quot;:&quot;Disease&quot;,&quot;value&quot;:&quot;Chronic obstructive pulmonary disease&quot;},{&quot;field&quot;:&quot;Disease&quot;,&quot;value&quot;:&quot;Diabetes&quot;}]"
   data-graphlimits="null"
   data-stackeddisaggregation=""
   data-graphannotations="null"
@@ -494,7 +494,7 @@ var translations = {
 
     <h3>Headline data</h3>
     <table class="table-responsive table table-hover dataTable no-footer" role="grid">
-      <caption>Incidence of selected diseases</caption>
+      <caption>Incidence rate of selected diseases</caption>
       <thead>
         
       </thead>
@@ -512,7 +512,7 @@ var translations = {
     <p>Zone géographique: Canada</p>
     
     
-    <p>Unité de mesure: Rate per 100,000 or Number of cases</p>
+    <p>Unité de mesure: Rate per 100,000 population</p>
     
     
   </div>
@@ -559,7 +559,7 @@ data-event-label="Change to Table tab"
     <div id="selectionsChart">
       <figure role="group">
         <div id="chart-canvas">
-          <h4 id="chart-heading" class="chart-title">Incidence of selected diseases</h4>
+          <h4 id="chart-heading" class="chart-title">Incidence rate of selected diseases</h4>
           <div id="chart" class="plot-container">
             
 <canvas
@@ -806,7 +806,7 @@ opensdg.chartConfigAlter(function(config, info) {
 
         
         <dt>Unité de mesure:</dt>
-        <dd>Rate per 100,000 or Number of cases</dd>
+        <dd>Rate per 100,000 population</dd>
         
 
         
@@ -851,7 +851,7 @@ opensdg.chartConfigAlter(function(config, info) {
 
         
         <dt>Unité de mesure:</dt>
-        <dd>Rate per 100,000 or Number of cases</dd>
+        <dd>Rate per 100,000 population</dd>
         
 
         
@@ -983,7 +983,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Description de l&#39;indicateur </th>
         <td>
           
-            <p>This indicator measures the incidence of selected diseases</p>
+            <p>This indicator measures the incidence of 10 selected diseases. This refers to the rate incidence of a specific disease per 100,000 population.</p>
 
           
         </td>
@@ -1015,7 +1015,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Unité de mesure </th>
         <td>
           
-            <p>Rate per 100,000 or Number of cases</p>
+            <p>Rate per 100,000 population</p>
 
           
         </td>
@@ -1075,7 +1075,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Rationnel et interprétation </th>
         <td>
           
-            <p>Measuring the incidence of selected diseases yields vital statistics on the health of Canadians.</p>
+            <p>Measuring the incidence rates of selected diseases yield essential statistics on the health of Canadians and the prevalence of various health risks.</p>
 
           
         </td>
@@ -1097,8 +1097,8 @@ data-event-label="Change to indicator.sources tab"
             
 
             
-              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/e88d8ffd2e6cda205f923be04c26e0f6d51aa0ea" target="_blank">
-                2021-05-27: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
+              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/8b150dbfaa99b6083b89f64ffb02dc3254fc714f" target="_blank">
+                2021-05-28: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
               </a>
             
 
@@ -1128,8 +1128,8 @@ data-event-label="Change to indicator.sources tab"
             
 
             
-              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/2bb9aa196be6039dd33cb920503c85bbf37b771c" target="_blank">
-                2021-05-27: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
+              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/e2320d76ef5299353a977a622f4a2283f4792101" target="_blank">
+                2021-05-28: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
               </a>
             
 
@@ -2082,6 +2082,214 @@ data-event-label="Change to indicator.sources tab"
 
     </div>
     
+    
+    
+    <div class="col-md-6">
+      
+        <h4>La source 5</h4>
+      
+      <table class="table">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+        
+      
+      
+      <tr>
+        <th scope="row">Organisation </th>
+        <td>
+          
+            <p>Public Health Agency of Canada</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+      
+      
+      <tr>
+        <th scope="row">Périodicité </th>
+        <td>
+          
+            <p>Annual</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+          
+      
+        
+      
+      
+      <tr>
+        <th scope="row">Couverture géographique </th>
+        <td>
+          
+            <p>Canada</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+      
+      
+      <tr>
+        <th scope="row">Lien vers la source de données </th>
+        <td>
+          
+            
+            
+            
+            
+
+            
+              <a href="https://dsol-smed.phac-aspc.gc.ca/notifiable/charts?c=pl" target="_blank">
+                Notifiable diseases on-line <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
+              </a>
+            
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+      
+      
+      
+  
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</table>
+
+    </div>
+    
   </div>
 
 
@@ -2199,12 +2407,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/cif-cic/assets/js/sdg.js?v=20210528022425'></script>
+<script src='/cif-cic/assets/js/sdg.js?v=20210528135009'></script>
 
 
     
     
-    <script src="/cif-cic/assets/js/custom.js?v=20210528022425"></script><script>
+    <script src="/cif-cic/assets/js/custom.js?v=20210528135009"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
