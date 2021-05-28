@@ -138,7 +138,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic/assets/css/style.css?v=20210527021215">
+        <link rel="stylesheet" href="/cif-cic/assets/css/style.css?v=20210528022425">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -451,12 +451,12 @@ var translations = {
   data-country="Canada"
   data-charttitle="Incidence of selected diseases"
   data-charttitles="null"
-  data-measurementunit="Number"
+  data-measurementunit="Rate per 100,000 or Number of cases"
   data-showdata="true"
   data-graphtype="line"
   data-geocoderegex=""
   data-showmap="false"
-  data-startvalues="[{&quot;field&quot;:&quot;Disease&quot;,&quot;value&quot;:&quot;Creutzfeldt-Jakob&quot;},{&quot;field&quot;:&quot;Disease&quot;,&quot;value&quot;:&quot;HIV and AIDS&quot;}]"
+  data-startvalues="[{&quot;field&quot;:&quot;Disease&quot;,&quot;value&quot;:&quot;Hypertension&quot;},{&quot;field&quot;:&quot;Disease&quot;,&quot;value&quot;:&quot;Dementia, including Alzheimer's disease&quot;},{&quot;field&quot;:&quot;Disease&quot;,&quot;value&quot;:&quot;Cancer&quot;}]"
   data-graphlimits="null"
   data-stackeddisaggregation=""
   data-graphannotations="null"
@@ -512,7 +512,7 @@ var translations = {
     <p>Zone géographique: Canada</p>
     
     
-    <p>Unité de mesure: Number</p>
+    <p>Unité de mesure: Rate per 100,000 or Number of cases</p>
     
     
   </div>
@@ -806,7 +806,7 @@ opensdg.chartConfigAlter(function(config, info) {
 
         
         <dt>Unité de mesure:</dt>
-        <dd>Number</dd>
+        <dd>Rate per 100,000 or Number of cases</dd>
         
 
         
@@ -851,7 +851,7 @@ opensdg.chartConfigAlter(function(config, info) {
 
         
         <dt>Unité de mesure:</dt>
-        <dd>Number</dd>
+        <dd>Rate per 100,000 or Number of cases</dd>
         
 
         
@@ -983,7 +983,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Description de l&#39;indicateur </th>
         <td>
           
-            <p>This indicator tracks the incidence of selected diseases</p>
+            <p>This indicator measures the incidence of selected diseases</p>
 
           
         </td>
@@ -1015,7 +1015,26 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Unité de mesure </th>
         <td>
           
-            <p>Number</p>
+            <p>Rate per 100,000 or Number of cases</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+          
+      
+        
+      
+      
+      <tr>
+        <th scope="row">Calculs </th>
+        <td>
+          
+            <p>Not applicable</p>
 
           
         </td>
@@ -1034,16 +1053,36 @@ data-event-label="Change to indicator.sources tab"
           
       
         
+      
+      
+      <tr>
+        <th scope="row">Commentaires et limitations </th>
+        <td>
           
+            <p>Not applicable</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
         
-          
       
-        
-          
       
-        
+      <tr>
+        <th scope="row">Rationnel et interprétation </th>
+        <td>
           
+            <p>Measuring the incidence of selected diseases yields vital statistics on the health of Canadians.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
         
       
@@ -1058,8 +1097,8 @@ data-event-label="Change to indicator.sources tab"
             
 
             
-              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/3b9740d6e48128cfa78769f193b3e8a150eb12de" target="_blank">
-                2021-05-11: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
+              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/e88d8ffd2e6cda205f923be04c26e0f6d51aa0ea" target="_blank">
+                2021-05-27: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
               </a>
             
 
@@ -1089,8 +1128,8 @@ data-event-label="Change to indicator.sources tab"
             
 
             
-              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/3b9740d6e48128cfa78769f193b3e8a150eb12de" target="_blank">
-                2021-05-11: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
+              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/2bb9aa196be6039dd33cb920503c85bbf37b771c" target="_blank">
+                2021-05-27: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
               </a>
             
 
@@ -1323,8 +1362,8 @@ data-event-label="Change to indicator.sources tab"
             
 
             
-              <a href="https://www.canada.ca/en/public-health/services/surveillance/blood-safety-contribution-program/creutzfeldt-jakob-disease/cjd-surveillance-system.html" target="_blank">
-                Creutzfeldt-Jakob disease surveillance system <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
+              <a href="https://health-infobase.canada.ca/ccdss/data-tool/" target="_blank">
+                Canadian Chronic Disease Surveillance System (CCDSS) <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
               </a>
             
 
@@ -1627,6 +1666,422 @@ data-event-label="Change to indicator.sources tab"
 
     </div>
     
+    
+    
+    <div class="col-md-6">
+      
+        <h4>La source 3</h4>
+      
+      <table class="table">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+        
+      
+      
+      <tr>
+        <th scope="row">Organisation </th>
+        <td>
+          
+            <p>Public Health Agency of Canada</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+      
+      
+      <tr>
+        <th scope="row">Périodicité </th>
+        <td>
+          
+            <p>Annual</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+          
+      
+        
+      
+      
+      <tr>
+        <th scope="row">Couverture géographique </th>
+        <td>
+          
+            <p>Canada</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+      
+      
+      <tr>
+        <th scope="row">Lien vers la source de données </th>
+        <td>
+          
+            
+            
+            
+            
+
+            
+              <a href="https://www.canada.ca/en/public-health/services/surveillance/blood-safety-contribution-program/creutzfeldt-jakob-disease/cjd-surveillance-system.html" target="_blank">
+                Creutzfeldt-Jakob disease surveillance system <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
+              </a>
+            
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+      
+      
+      
+  
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</table>
+
+    </div>
+    
+    
+    
+    <div class="col-md-6">
+      
+        <h4>La source 4</h4>
+      
+      <table class="table">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+        
+      
+      
+      <tr>
+        <th scope="row">Organisation </th>
+        <td>
+          
+            <p>Public Health Agency of Canada</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+      
+      
+      <tr>
+        <th scope="row">Périodicité </th>
+        <td>
+          
+            <p>Annual</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+          
+      
+        
+      
+      
+      <tr>
+        <th scope="row">Couverture géographique </th>
+        <td>
+          
+            <p>Canada</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+      
+      
+      <tr>
+        <th scope="row">Lien vers la source de données </th>
+        <td>
+          
+            
+            
+            
+            
+
+            
+              <a href="https://health-infobase.canada.ca/ccdt/" target="_blank">
+                Canadian Cancer Data Tool (CCDT) <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
+              </a>
+            
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+      
+      
+      
+  
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</table>
+
+    </div>
+    
   </div>
 
 
@@ -1744,12 +2199,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/cif-cic/assets/js/sdg.js?v=20210527021215'></script>
+<script src='/cif-cic/assets/js/sdg.js?v=20210528022425'></script>
 
 
     
     
-    <script src="/cif-cic/assets/js/custom.js?v=20210527021215"></script><script>
+    <script src="/cif-cic/assets/js/custom.js?v=20210528022425"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
