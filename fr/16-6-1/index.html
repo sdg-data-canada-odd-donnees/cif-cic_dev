@@ -138,7 +138,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic/assets/css/style.css?v=20210531030915">
+        <link rel="stylesheet" href="/cif-cic/assets/css/style.css?v=20210531155838">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -435,6 +435,20 @@ var translations = {
 
 <div id="main-content" class="container goal-16" role="main">
   
+<div class="row" id="data-notice">
+  <div class="col-xs-12">
+    <div class="alert warning">
+      <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+      <div class="data-notice">
+        <h4><p>Note</p>
+</h4>
+        <p><p>Access to civil justice is an important component to the Canadian Ambition, “Equal access to justice” and is an indicator in the Global Indicator Framework.  However, currently no data exists for this in Canada, but new data are expected to be released in 2022.  Once these data are available, they will be reported in Canada’s reporting on the Global Indicator Framework for SDGs.</p>
+</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 
   
 
@@ -1196,8 +1210,8 @@ data-event-label="Change to indicator.sources tab"
             
 
             
-              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/1ac96d27470d83a4839c44437b3a2c5c1e437745" target="_blank">
-                2021-05-25: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
+              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/ce6e529f14d56bb3b2478e271738c315c9299ba3" target="_blank">
+                2021-05-31: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
               </a>
             
 
@@ -1641,12 +1655,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/cif-cic/assets/js/sdg.js?v=20210531030915'></script>
+<script src='/cif-cic/assets/js/sdg.js?v=20210531155838'></script>
 
 
     
     
-    <script src="/cif-cic/assets/js/custom.js?v=20210531030915"></script><script>
+    <script src="/cif-cic/assets/js/custom.js?v=20210531155838"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
