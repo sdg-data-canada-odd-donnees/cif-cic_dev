@@ -11,8 +11,8 @@ If you have feedback on the data hub, please email us at <a href="mailto:{{site.
 ## How often will new data be added to this site?
 We will add data as soon as it has been sourced and validated. This includes new data as well as updates to data we have already published. We will continue to incorporate data from existing sources whenever possible.
 
-## What is the relation between the Canadian Indicator Framework and the National strategy?
-<a href="https://www.canada.ca/en/employment-social-development/programs/agenda-2030/moving-forward.html">Canada’s 2030 Agenda National Strategy</a> sets out an approach to accelerate progress towards meeting the Sustainable Development Goals (SDGs) in Canada, and contribute to their achievement internationally
+## What is the relation between the Canadian Indicator Framework and Canada’s 2030 Agenda National Strategy?
+<a href="https://www.canada.ca/en/employment-social-development/programs/agenda-2030/moving-forward.html">Canada’s 2030 Agenda National Strategy</a> sets out an approach to accelerate progress towards meeting the Sustainable Development Goals (SDGs) in Canada, and contribute to their achievement internationally.
 As part of that strategy, there are five core objectives in the strategy which include: 
 1.	Fostering leadership, governance and policy coherence
 2.	Raising awareness, engagement and partnerships
