@@ -27,7 +27,7 @@ Statistics Canada is the central focal point for reporting the data and statisti
 
 Statistics Canada is continuing to examine data sources that may be useful for reporting on the indicators and over the coming months will continue to add further data disaggregation, statistics, and data visualization features to enhance the experience of users.
 
-<em>Statistics Canada SDGs' team would like to thank everyone that particiapted in the quality assurance, made suggestions for improvement or contributed in any other way to the creation of this hub.</em>
+<em>Statistics Canada's SDG team would like to thank everyone that participated in the quality assurance, made suggestions for improvement or contributed in any other way to the creation of this hub.</em>
 
 
 ## Interested in more information?
