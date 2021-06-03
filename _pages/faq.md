@@ -39,7 +39,7 @@ The goal of the SDGs of “leaving no one behind” is a critical call to action
 
 ## How accessible is this website?
 
-Our aim is to make this website as accessible and usable as possible for every user. We are working towards meeting AA level of the [Web Content Accessibility Guidelines (WCAG 2.0)](https://www.gov.uk/service-manual/helping-people-to-use-your-service/understanding-wcag-20).
+Our aim is to make this website as accessible and usable as possible for every user. The international <em>Open SDG</em> team is working towards meeting AA level of the [Web Content Accessibility Guidelines (WCAG 2.0)](https://www.w3.org/WAI/standards-guidelines/wcag/).
 
 
 ## What browsers can I use to view this website?
