@@ -1,7 +1,7 @@
 ---
-title: Fouire aux questions (FAQ)
+title: Foire aux questions (FAQ)
 language: fr
-permalink: /faq/
+permalink: /fr/faq/
 layout: page
 ---
 
