@@ -30,7 +30,7 @@ Le Cadre d’indicateurs canadien et le carrefour de données constituent des ou
 
 ## Quelle est la différence entre le Cadre d’indicateurs canadien et le Cadre de qualité de vie ?
 
-L’objectif des objectifs de développement durable de ne « laisser personne pour compte » est un appel critique à l’action à toutes la nations et personnes. Cet appel demandera l’effort et la participation de tous les paliers de gouvernement, des membres de la société civile et des individus.  
+L’objectif des objectifs de développement durable de ne « laisser personne de côté » est un appel critique à l’action à toutes la nations et personnes. Cet appel demandera l’effort et la participation de tous les paliers de gouvernement, des membres de la société civile et des individus.  
 
 En complément à la <a href= "https://www.canada.ca/fr/emploi-developpement-social/programmes/programme-2030/aller-avant.html">Stratégie nationale du Canada pour le Programme 2030 : Aller de l’avant ensemble</a> et au Cadre d’indicateurs canadien, le Budget de 2021 a lancé le nouveau <a href=" https://www.budget.gc.ca/2021/report-rapport/anx4-fr.html">Cadre de qualité de vie</a>, conçu pour mieux intégrer les mesures de qualité de vie telles que la prospérité, la santé, l’environnement, la cohésion sociale et une saine gouvernance dans la budgétisation et le développement de politiques du gouvernement fédéral. Le cadre met également l’emphase la distribution des résultats sont distribués à travers les sous-groupes de la population et l’assurance que ces résultats seront durables dans le temps.
 
