@@ -5,19 +5,19 @@ permalink: /fr/faq/
 layout: page
 ---
 
-## Comment est-ce que je peux suggérer des améliorations au carrefour de données ?
+## Comment puis-je suggérer des améliorations au carrefour de données ?
 
-Si vous avez de la rétroaction sur le carrefour de données, SVP contactez-nous au courriel suivant : <a href="mailto:{{site.email_contacts.questions}}">{{site.email_contacts.questions}}</a>.
+Si vous avez de la rétroaction à propos du carrefour de données, veuillez nous l'envoyer à l'adresse courriel suivante : <a href="mailto:{{site.email_contacts.questions}}">{{site.email_contacts.questions}}</a>.
 
 
 ## À quelle fréquence de nouvelles données seront-elles ajoutées à ce site ?
 
-Nous ajouterons des nouvelles données dès qu’elles auront été collectées et validées. Cela inclut de nouvelles données ainsi que des mises-à-jour aux données qui sont déjà publiées. Nous allons continuer d’incorporer des données de sources existante lorsque possible.
+Nous ajouterons des nouvelles données dès qu’elles auront été recueillies et validées. Cela inclut les nouvelles données ainsi que les dernières mises à jour aux données déjà publiées. Nous allons continuer d’incorporer des données de sources existante lorsque possible.
 
 
-## Quel est le lien entre le cadre d’indicateurs canadien et la Stratégie nationale du Canada pour le Programme 2030 ?
+## Quel est le lien entre le Cadre d’indicateurs canadien et la Stratégie nationale du Canada pour le Programme 2030 ?
 
-<a href="https://www.canada.ca/fr/emploi-developpement-social/programmes/programme-2030/aller-avant.html">La Stratégie nationale du Canada pour le Programme 2030</a> établit une approche pour accélérer les progrès en vue d’atteindre les ODD au Canada et contribuer à les atteindre à l’échelle internationale.
+La <a href="https://www.canada.ca/fr/emploi-developpement-social/programmes/programme-2030/aller-avant.html">Stratégie nationale du Canada pour le Programme 2030 : Aller de l’avant ensemble</a> établit une approche pour accélérer les progrès en vue d’atteindre les objectifs de développement durable (ODD) au Canada et contribuer à les atteindre à l’échelle internationale.
 Pour promouvoir l’engagement et l’action, les cinq objectifs fondamentaux suivants ont été établis : 
 1.	Encourager le leadership, la gouvernance et la cohérence des politiques
 2.	Accroître la sensibilisation, la mobilisation et les partenariats
@@ -25,14 +25,18 @@ Pour promouvoir l’engagement et l’action, les cinq objectifs fondamentaux su
 4.	Réconciliation avec les peuples autochtones et Programme 2030
 5.	Investissement dans les ODD
 
-Le cadre d’indicateurs canadien et le carrefour de données fournissent un outil de mesure et de diffusion nécessaire afin d’assurer la responsabilité et la transparence cruciales afin de faire le suivi du progrès vers la réalisation des 17 Objectifs et 31 ambitions canadiennes.
+Le Cadre d’indicateurs canadien et le carrefour de données constituent des outils de mesure et de diffusion nécessaires afin d’assurer la responsabilité et la transparence. Ils sont cruciaux dans le suivi du progrès vers la réalisation des 17 objectifs et 31 des ambitions canadiennes.
 
 
-## Quel est la différence entre le cadre d’indicateurs canadien et le cadre de qualité de vie ?
+## Quelle est la différence entre le Cadre d’indicateurs canadien et le Cadre de qualité de vie ?
 
-L’objectif des ODD de ne « laisser personne pour compte » est un appel critique à l’action à toutes la nations et personnes qui demandera l’effort et la participation de tous les paliers de gouvernement, des sociétés civiles et des individus.  En complément à la <a href= "https://www.canada.ca/fr/emploi-developpement-social/programmes/programme-2030/aller-avant.html"><em>Stratégie nationale du Canada pour le Programme 2030 : Aller de l’avant ensemble</em></a> et au cadre d’indicateurs canadien, le Budget de 2021 à introduit le nouveau <a href=" https://www.budget.gc.ca/2021/report-rapport/anx4-fr.html"><em>Cadre de qualité de vie</em></a>, conçu pour mieux intégrer les mesures de qualité de vie tel que la prospérité, la santé, l’environnement, la cohésion sociale et une saine gouvernance dans la budgétisation et le développement de politique du gouvernement fédéral. Le cadre mets également l’emphase sur comment les résultats sont distribués à travers les sous-groupes de la population et sur l’assurances que ces résultats seront durables avec le temps.
+L’objectif des objectifs de développement durable de ne « laisser personne pour compte » est un appel critique à l’action à toutes la nations et personnes. Cet appel demandera l’effort et la participation de tous les paliers de gouvernement, des membres de la société civile et des individus.  
 
-Bien que le Cadre de qualité de vie est dérivé d’évidence sur les déterminant du bien-être, plutôt qu’avoir une emphase spécifique sur les objectifs de développement durables and les défis mondiaux pour un futur meilleur et plus durables pour tous, les deux cadres partagent ultimement un dessein commun : d’encourager un changement social, économique et environnemental transformationnel afin d’atteindre une amélioration de la qualité de vie et du bien-être. Ces deux cadres se renforcent mutuellement. Cela implique que le CIC et le Cadre de qualité de vie partagent plusieurs indicateurs en commun. En tandem, ils peuvent aider à façonner les conversations futures à propos de mesurer ce qui est important et prendre action afin d’améliorer la vie des Canadiens.
+En complément à la <a href= "https://www.canada.ca/fr/emploi-developpement-social/programmes/programme-2030/aller-avant.html">Stratégie nationale du Canada pour le Programme 2030 : Aller de l’avant ensemble</a> et au Cadre d’indicateurs canadien, le Budget de 2021 a lancé le nouveau <a href=" https://www.budget.gc.ca/2021/report-rapport/anx4-fr.html"><em>Cadre de qualité de vie</em></a>, conçu pour mieux intégrer les mesures de qualité de vie telles que la prospérité, la santé, l’environnement, la cohésion sociale et une saine gouvernance dans la budgétisation et le développement de politiques du gouvernement fédéral. Le cadre met également l’emphase la distribution des résultats sont distribués à travers les sous-groupes de la population et l’assurance que ces résultats seront durables dans le temps.
+
+Le Cadre de qualité de vie est dérivé d’évidence sur les différents déterminants du bien-être, plutôt que de mettre une emphase spécifique sur les objectifs de développement durables et les défis mondiaux pour un futur meilleur et plus durable pour tous.
+
+Les deux cadres partagent néanmoins un dessein commun : encourager un changement social, économique et environnemental transformationnel afin d’atteindre une amélioration de la qualité de vie et du bien-être. Ils se renforcent mutuellement. Cela implique que le CIC et le Cadre de qualité de vie partagent plusieurs indicateurs en commun. En tandem, ils peuvent aider à façonner les conversations futures à propos des éléments importants à mesurer et des façons d’améliorer la vie des Canadiens.
 
 
 ## Quelle est la différence entre le cadre d’indicateurs canadien et le programme des Indicateurs canadiens de durabilité de l'environnement ?
