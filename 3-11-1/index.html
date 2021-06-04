@@ -138,7 +138,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic/assets/css/style.css?v=20210604144558">
+        <link rel="stylesheet" href="/cif-cic/assets/css/style.css?v=20210604202045">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -202,8 +202,6 @@ var translations = {
         <ul class="nav navbar-nav menu-target contrast-switcher" id="menu-mobile"><li class="nav-link ">
     <a href="/cif-cic/goals">Goals</a>
 </li><li class="nav-link ">
-    <a href="/cif-cic/reporting-status">Reporting Status</a>
-</li><li class="nav-link ">
     <a href="/cif-cic/about">About</a>
 </li><li class="nav-link ">
     <a href="/cif-cic/news">Related Products</a>
@@ -260,8 +258,6 @@ var translations = {
 
       <ul class="nav navbar-nav menu-target contrast-switcher" id="menu"><li class="nav-link ">
     <a href="/cif-cic/goals">Goals</a>
-</li><li class="nav-link ">
-    <a href="/cif-cic/reporting-status">Reporting Status</a>
 </li><li class="nav-link ">
     <a href="/cif-cic/about">About</a>
 </li><li class="nav-link ">
@@ -451,12 +447,12 @@ var translations = {
   data-country="Canada"
   data-charttitle="Tuberculosis incidence per 100,000 population among the Inuit population"
   data-charttitles="null"
-  data-measurementunit="number per 100,000 population"
+  data-measurementunit="Number per 100,000 population"
   data-showdata="true"
   data-graphtype="line"
   data-geocoderegex=""
   data-showmap="false"
-  data-startvalues="[{&quot;field&quot;:&quot;Geography&quot;,&quot;value&quot;:&quot;Canada&quot;}]"
+  data-startvalues="null"
   data-graphlimits="null"
   data-stackeddisaggregation=""
   data-graphannotations="[{&quot;unit&quot;:&quot;Value&quot;,&quot;value&quot;:0,&quot;preset&quot;:&quot;target_line&quot;}]"
@@ -497,8 +493,148 @@ var translations = {
       <caption>Tuberculosis incidence per 100,000 population among the Inuit population</caption>
       <thead>
         
+        
+        <th scope="col">Year</th>
+        
+        
+        
+        <th scope="col" class="table-value">Value</th>
+        
+        
       </thead>
       <tbody>
+        
+        <tr>
+          
+          
+          <td>2007</td>
+          
+          
+          
+          <td class="table-value">85.2</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2008</td>
+          
+          
+          
+          <td class="table-value">160.0</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2009</td>
+          
+          
+          
+          <td class="table-value">157.1</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2010</td>
+          
+          
+          
+          <td class="table-value">200.0</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2011</td>
+          
+          
+          
+          <td class="table-value">166.7</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td class="table-value">251.6</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td class="table-value">139.4</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td class="table-value">177.6</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td class="table-value">164.7</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td class="table-value">170.1</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td class="table-value">205.8</td>
+          
+          
+        </tr>
         
       </tbody>
     </table>
@@ -512,7 +648,7 @@ var translations = {
     <p>Geographical Area: Canada</p>
     
     
-    <p>Unit of Measurement: number per 100,000 population</p>
+    <p>Unit of Measurement: Number per 100,000 population</p>
     
     
   </div>
@@ -806,7 +942,7 @@ opensdg.chartConfigAlter(function(config, info) {
 
         
         <dt>Unit of Measurement:</dt>
-        <dd>number per 100,000 population</dd>
+        <dd>Number per 100,000 population</dd>
         
 
         
@@ -851,7 +987,7 @@ opensdg.chartConfigAlter(function(config, info) {
 
         
         <dt>Unit of Measurement:</dt>
-        <dd>number per 100,000 population</dd>
+        <dd>Number per 100,000 population</dd>
         
 
         
@@ -983,7 +1119,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Indicator description </th>
         <td>
           
-            <p>This indicator measures the Tuberculosis incidence rate per 100,000 population in Inuit Nunangat</p>
+            <p>This indicator measures the Tuberculosis incidence rate per 100,000 population in Inuit Nunangat.</p>
 
           
         </td>
@@ -1015,7 +1151,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Unit of measurement </th>
         <td>
           
-            <p>number per 100,000 population</p>
+            <p>Number per 100,000 population</p>
 
           
         </td>
@@ -1069,20 +1205,7 @@ data-event-label="Change to indicator.sources tab"
   
       
         
-      
-      
-      <tr>
-        <th scope="row">Rational and interpretation </th>
-        <td>
           
-            <p>Tuberculosis (TB) is a major global health problem that affected an estimated 10 million people worldwide in 2017. Incidence rates among the Inuit population have consistently been higher than any other population subgroup since 2007.</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
       
         
       
@@ -1097,8 +1220,8 @@ data-event-label="Change to indicator.sources tab"
             
 
             
-              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/bf268c99cebb5fd4523ddd12f6a7468a46821b33" target="_blank">
-                2021-05-13: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
+              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/d14c2e1e6b44726a3dd88b184a330734c539e143" target="_blank">
+                2021-06-04: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
               </a>
             
 
@@ -1128,8 +1251,8 @@ data-event-label="Change to indicator.sources tab"
             
 
             
-              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/a691532ea270a10691d67ff31660c484beffc48d" target="_blank">
-                2021-05-20: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
+              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/5bbd11a5b0ec5e2b3e4b78fb075d3d54c5f41edf" target="_blank">
+                2021-06-04: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
               </a>
             
 
@@ -1575,12 +1698,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/cif-cic/assets/js/sdg.js?v=20210604144558'></script>
+<script src='/cif-cic/assets/js/sdg.js?v=20210604202045'></script>
 
 
     
     
-    <script src="/cif-cic/assets/js/custom.js?v=20210604144558"></script><script>
+    <script src="/cif-cic/assets/js/custom.js?v=20210604202045"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();

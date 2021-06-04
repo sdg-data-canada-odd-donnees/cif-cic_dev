@@ -119,32 +119,32 @@
         },
         {
           "id": "3-9-1",
-          "title": "Incidence of selected diseases",
-          "description": "This indicator measures the incidence of 10 selected diseases. This refers to the rate incidence of a specific disease per 100,000 population.",
+          "title": "Incidence de certaines maladies",
+          "description": "Cet indicateur mesure l'incidence de 10 maladies sélectionnées à l'aide du taux par 100,000.",
           "keywords": "",
           "href": "/cif-cic/fr/3-9-1",
           "status": "complete"
         },
         {
           "id": "3-10-1",
-          "title": "Mortality rate for selected causes of death",
-          "description": "This indicator measures the age-specific mortality rate for selected diseases. The age-specific mortality rate represents the number of deaths in a particular age group during a given year per 100,000 population in the same age group of the same year.",
+          "title": "Taux de mortalité pour certaines cause de décès",
+          "description": "Cet indicateur mesure le taux de mortalité pour les principales causes de décès. Le taux de mortalité selon l'âge représente le nombre de décès dans un groupe d'âge particulier pendant une année donnée pour 100 000 personnes dans le même groupe d'âge de la même année.",
           "keywords": "",
           "href": "/cif-cic/fr/3-10-1",
           "status": "complete"
         },
         {
           "id": "3-11-1",
-          "title": "Tuberculosis incidence per 100,000 population in Inuit Nunangat",
-          "description": "This indicator measures the Tuberculosis incidence rate per 100,000 population in Inuit Nunangat",
+          "title": "Incidence de la tuberculose par 100 000 habitants dans l’Inuit Nunangat",
+          "description": "Cet indicateur mesure le taux d'incidence de la tuberculose par 100 000 habitants dans l’Inuit Nunangat.",
           "keywords": "",
           "href": "/cif-cic/fr/3-11-1",
           "status": "complete"
         },
         {
           "id": "3-12-1",
-          "title": "Incidence of opioid and stimulant overdose related harms",
-          "description": "<p>This indicator measures the incidence of opioid and stimulant overdose related harms per 100,000 population. More specifically, it measures the incidence of: <br> 1. apparent opiod toxicity deaths;<br> 2. opioid-related and stimulant-related poisoning hospitalizations; and<br> 3. Emergency Medical Services responses to suspected opioid overdoses</p>",
+          "title": "Incidence des méfaits associés aux surdoses d’opioïdes et de stimulants",
+          "description": "<p>Cet indicateur mesure l'incidence des méfaits associés aux surdoses d’opioïdes et de stimulants par 100,000 habitants. Plus spécifiquement, il mesure le taux d'incidence de: <br> 1. décès apparemment liés à une intoxication aux opioïdes;<br> 2. intoxication aux opioïdes et stimulants; and<br> 3. interventions des services médicaux d’urgence (SMU) pour surdoses suspectées d’être liées aux opioïdes</p>",
           "keywords": "",
           "href": "/cif-cic/fr/3-12-1",
           "status": "complete"
