@@ -36,7 +36,7 @@ En complément à la <a href= "https://www.canada.ca/fr/emploi-developpement-soc
 
 Le Cadre de qualité de vie est dérivé d’évidence sur les différents déterminants du bien-être, plutôt que de mettre une emphase spécifique sur les objectifs de développement durables et les défis mondiaux pour un futur meilleur et plus durable pour tous.
 
-Les deux cadres partagent néanmoins un dessein commun : encourager un changement social, économique et environnemental transformationnel afin d’atteindre une amélioration de la qualité de vie et du bien-être. Ils se renforcent mutuellement. Cela implique que le CIC et le Cadre de qualité de vie partagent plusieurs indicateurs en commun. En tandem, ils peuvent aider à façonner les conversations futures à propos des éléments importants à mesurer et des façons d’améliorer la vie des Canadiens.
+Les deux cadres partagent ultimement un dessein commun : encourager un changement social, économique et environnemental transformationnel afin d’atteindre une amélioration de la qualité de vie et du bien-être. Ils se renforcent mutuellement. Cela implique que le CIC et le Cadre de qualité de vie partagent plusieurs indicateurs en commun. En tandem, ils peuvent aider à façonner les conversations futures à propos des éléments importants à mesurer et des façons d’améliorer la vie des Canadiens.
 
 
 ## Quelle est la différence entre le Cadre d’indicateurs canadien et le programme des Indicateurs canadiens de durabilité de l'environnement ?
