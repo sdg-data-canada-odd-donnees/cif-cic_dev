@@ -87,7 +87,7 @@
         },
         {
           "id": "3-5-1",
-          "title": "Pourcentage de la population qui sont satisfait ou très satisfait à l’égard de la vie",
+          "title": "Pourcentage des Canadiens qui sont satisfait ou très satisfait à l’égard de la vie",
           "description": "Cet indicateur mesure le pourcentage de la population agé de 12 ans et plus qui sont satisfait ou très satisfait à l’égard de la vie.",
           "keywords": "",
           "href": "/cif-cic/fr/3-5-1",
@@ -95,7 +95,7 @@
         },
         {
           "id": "3-6-1",
-          "title": "Pourcentage de la population qui perçoivent leur santé et bien-être général comme très bon ou excellent",
+          "title": "Pourcentage des Canadiens qui perçoivent leur santé et bien-être général comme très bon ou excellent",
           "description": "Cet indicateur mesure le pourcentage de la population qui perçoivent leur santé et bien-être général comme très bon ou excellent. La santé perçue réfère à la perception d'une personne de sa santé en général, ou dans le cas d'une interview par procuration, la perception de la personne qui répond. La santé réfère non seulement à l'absence de maladie ou de blessure mais aussi à un bien-être physique, mental et social.",
           "keywords": "",
           "href": "/cif-cic/fr/3-6-1",
@@ -103,7 +103,7 @@
         },
         {
           "id": "3-7-1",
-          "title": "Pourcentage de la population qui perçoivent leur santé mentale comme très bonne ou excellente",
+          "title": "Pourcentage des Canadiens qui perçoivent leur santé mentale comme très bonne ou excellente",
           "description": "Cet indicateur mesure le pourcentage de la population qui perçoivent leur santé mentale comme très bonne ou excellente. La santé mentale perçue réfère à la perception d'une personne de sa santé mentale en général. L'état de santé mentale perçu fournit une indication générale de la population qui souffre d'une forme quelconque de désordre mental, problèmes mentaux ou émotionnels ou de détresse. Ces troubles ne sont pas nécessairement reflétés dans la santé perçue.",
           "keywords": "",
           "href": "/cif-cic/fr/3-7-1",
@@ -663,7 +663,7 @@
         
         {
           "id": "16-1-1",
-          "title": "Proportion of people in Canada who reported feeling safe walking alone in their neighborhood after dark",
+          "title": "Proportion of Canadians who reported feeling safe walking alone in their neighborhood after dark",
           "description": "This indicators tracks the proportion of people in Canada who reported feeling safe walking alone in their neighborhood after dark.",
           "keywords": "women, gender",
           "href": "/cif-cic/fr/16-1-1",
