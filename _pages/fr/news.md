@@ -1,6 +1,6 @@
 ---
 layout: news
-title: Related Products
+title: Produits connexes
 language: fr
 permalink: /fr/news/
 ---
