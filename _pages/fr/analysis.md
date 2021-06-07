@@ -5,9 +5,9 @@ permalink: /fr/analysis/
 layout: page
 ---
 
-As 2030 approaches, Statistics Canada, in collaboration with key partners and stakeholders, will continue to play a critical role in ensuring that policy makers, civil society, the private sector and Canadians have high-quality information to monitor and assess Canada’s progress toward the SDGs. The key to success in measuring Canada’s trajectory towards the SDGs will be to remain focused on the use of statistically robust data.
+À l'approche de 2030, Statistique Canada, en collaboration avec les principaux partenaires et intervenants, continuera de jouer un rôle essentiel en veillant à ce que les décideurs, la société civile, le secteur privé et les Canadiens disposent de renseignements de grande qualité pour la surveillance des données du Canada relatives aux indicateurs des ODD. La clé du succès pour mesurer la trajectoire du Canada vers les ODD est de demeurer concentré sur l'utilisation de données statistiquement solides.
 
-This page contains information on various products related to sustainable development.
+Cette page contient de l'information sur une variété de produits connexes au développement durable.
 
 
 ## Related Statistics Canada products 
