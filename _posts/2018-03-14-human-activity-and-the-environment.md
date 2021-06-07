@@ -9,4 +9,4 @@ categories:
   - Analysis
 
 ---
-Paragraph 1
+This series of publication offers analytical articles on specific topics related to human activity and the environment.
