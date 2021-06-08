@@ -95,7 +95,7 @@
         },
         {
           "id": "3-6-1",
-          "title": "Pourcentage des Canadiens qui perçoivent leur santé et bien-être général comme très bon ou excellent",
+          "title": "Pourcentage des Canadiens qui perçoivent leur santé et bien-être général comme très bons ou excellents",
           "description": "Cet indicateur mesure le pourcentage de la population qui perçoivent leur santé et bien-être général comme très bon ou excellent. La santé perçue réfère à la perception d'une personne de sa santé en général, ou dans le cas d'une interview par procuration, la perception de la personne qui répond. La santé réfère non seulement à l'absence de maladie ou de blessure mais aussi à un bien-être physique, mental et social.",
           "keywords": "",
           "href": "/cif-cic/fr/3-6-1",
@@ -175,8 +175,8 @@
         },
         {
           "id": "4-2-1",
-          "title": "Taux d’obtention d’un diplôme postsecondaire",
-          "description": "Cet indicateur mesure le taux d'obtention d'un diplôme postsecondaire. Les catégories représentent le plus haut niveau de scolarité atteint et sont mutuellement exclusives.",
+          "title": "Taux de scolarité au niveau postsecondaire",
+          "description": "Cet indicateur mesure le taux de scolarité au niveau postsecondaire. Les catégories représentent le plus haut niveau de scolarité atteint et sont mutuellement exclusives.",
           "keywords": "",
           "href": "/cif-cic/fr/4-2-1",
           "status": "complete"
@@ -191,15 +191,15 @@
         
         {
           "id": "5-1-1",
-          "title": "Proportion de la population ayant auto-déclaré avoir été agressé sexuellement dans les 12 derniers mois",
-          "description": "Cet indicateur mesure la proportion de la population ayant auto-déclaré avoir été agressé sexuellement dans les 12 derniers mois",
+          "title": "Proportion de la population ayant auto-déclaré avoir été agressée sexuellement dans les 12 derniers mois",
+          "description": "Cet indicateur mesure la proportion de la population ayant auto-déclaré avoir été agressée sexuellement dans les 12 derniers mois",
           "keywords": "",
           "href": "/cif-cic/fr/5-1-1",
           "status": "complete"
         },
         {
           "id": "5-1-2",
-          "title": "Proportion de femmes et filles âgées de 15 et plus ayant été assujetties à de la violence physique, sexuelle ou psychologique par leur partenaire intime actuel ou un ancien partenaire intime dans les 12 derniers mois",
+          "title": "Proportion de femmes et filles âgées de 15 ans et plus ayant été assujetties à de la violence physique, sexuelle ou psychologique par leur partenaire intime actuel ou un ancien partenaire intime dans les 12 derniers mois",
           "description": "Cet indicateur mesure la proportion de femmes et filles âgées de 15 et plus ayant été assujetties à de la violence physique, sexuelle ou psychologique par leur partenaire intime actuel ou un ancien partenaire intime dans les 12 derniers mois. La violence entre partenaires intimes est définie comme tout acte ou comportement violent commis par un partenaire intime actuel ou ancien et est généralement classée en trois catégories, soit la violence psychologique, la violence physique et la violence sexuelle.",
           "keywords": "",
           "href": "/cif-cic/fr/5-1-2",
@@ -239,7 +239,7 @@
         },
         {
           "id": "6-2-1",
-          "title": "Pourcentage des municipalités au Canada qui ont reçu un avis prolongé concernant la qualité de l’eau potable",
+          "title": "Pourcentage des municipalités au Canada qui ont eu des avis prolongés concernant la qualité de l’eau potable",
           "description": "Cet indicateur mesure le pourcentage des municipalités au Canada qui ont reçu un avis prolongé concernant la qualité de l’eau potable par année. Un avis prolongé concernant la qualité de l'eau dure plus de 15 jours.",
           "keywords": "",
           "href": "/cif-cic/fr/6-2-1",
@@ -727,8 +727,8 @@
         
         {
           "id": "17-1-1",
-          "title": "Number of open datasets published by the Government of Canada",
-          "description": "This indicator measures the number of open datasets published by the Government of Canada.",
+          "title": "Nombre de jeux de données ouverts diffusés par le gouvernement du Canada",
+          "description": "Cet indicateur mesure le nombre de jeux de données ouverts diffusés par le gouvernement du Canada.",
           "keywords": "",
           "href": "/cif-cic/fr/17-1-1",
           "status": "complete"
