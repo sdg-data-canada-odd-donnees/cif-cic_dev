@@ -241,6 +241,10 @@ metadata_tabs:
 # Goal color graph test
 graph_color_set: 'accessible'
 
+## To enhance the search functionality
+search_index_extra_fields:
+  - data_keywords
+
 # Reporting status page
 # reporting_status:
 #    title: Reporting status on disaggregation
