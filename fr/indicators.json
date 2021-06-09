@@ -359,24 +359,24 @@
         
         {
           "id": "9-1-1",
-          "title": "Proportion of innovation in environment-related technology",
-          "description": "The indicator measures the proportion of patents in environment-related technology out of the total number of patents.",
+          "title": "Proportion des innovations dans les technologies liées à l’environnement",
+          "description": "Cet indicateur mesure la proportion de brevets dans les technologies liées à l’environnement par rapport au nombre total de brevets.",
           "keywords": "",
           "href": "/cif-cic/fr/9-1-1",
           "status": "complete"
         },
         {
           "id": "9-2-1",
-          "title": "Gross domestic expenditure on research & development intensity",
-          "description": "This indicator measures the proportion of gross domestic expenditure allocated to research & development (GERD). The GERD is the aggregate of the total R&D expenditures and serves as a general indicator of R&D activity.",
+          "title": "Intensité des dépenses intérieures totales au titre de la recherche et développement",
+          "description": "Cet indicateur mesure la proportion de la dépense intérieure brute allouée à la recherche et au développement (DIRD). La DRID est la dépense totale affectée à des travaux de R-D et est utilisée comme indicateur général des activités de R.-D..",
           "keywords": "",
           "href": "/cif-cic/fr/9-2-1",
           "status": "complete"
         },
         {
           "id": "9-3-1",
-          "title": "Proportion of households that have access to broadband Internet service at speeds of 50 Mbps for downloads / 10 Mbps for uploads and unlimited data",
-          "description": "This indicator measures the proportion of households that have access to broadband internet service at speeds of 50 Mbps for downloads / 10 Mbps for uploads and unlimited data.",
+          "title": "Proportion des ménages qui ont accès à des services Internet à large bande à des vitesses de 50/10 Mbps",
+          "description": "Cet indicateur mesure la proportion des ménages qui ont accès à des services Internet à large bande à des vitesses de téléchargement de 50 Mbps et de téléversement de 10 Mbps et des données illimitées.",
           "keywords": "",
           "href": "/cif-cic/fr/9-3-1",
           "status": "complete"
@@ -615,24 +615,24 @@
         
         {
           "id": "15-1-1",
-          "title": "Proportion of native species ranked secure or apparently secure according to the national extinction risk level",
-          "description": "The main indicator summarizes the risk of extinction for individual species in Canada. A species is defined as a population of organisms that does not usually interbreed with other populations, even where they overlap in space and time. <em>(ECCC)</em>",
+          "title": "Proportion d’espèces sauvages indigènes classées comme étant en sécurité ou apparemment en sécurité selon le risque de disparition national",
+          "description": "L'indicateur principal résume le risque de disparition des différentes espèces au Canada. Une espèce est définie comme une population d'organismes qui ne s'accouplent pas avec d'autres populations même lorsqu'elles occupent un même territoire au même moment. <em>(ECCC)</em>",
           "keywords": "",
           "href": "/cif-cic/fr/15-1-1",
           "status": "complete"
         },
         {
           "id": "15-2-1",
-          "title": "Proportion of species at risk showing progress towards their population and distribution objectives",
-          "description": "The indicator shows whether population and distribution trends of species at risk are consistent with the objectives in final recovery strategies or management plans. <em>(ECCC)</em>",
+          "title": "Proportion d’espèces affichant des progrès vers leurs objectifs de population et de répartition",
+          "description": "L'indicateur montre si les tendances des populations et de la répartition des espèces en péril sont conformes aux objectifs des programmes de rétablissement ou des plans de gestion définitifs. <em>(ECCC)</em>",
           "keywords": "",
           "href": "/cif-cic/fr/15-2-1",
           "status": "complete"
         },
         {
           "id": "15-3-1",
-          "title": "Proportion of terrestrial (land and freshwater) area conserved",
-          "description": "These indicators report the amount and proportion of Canada's terrestrial (land and freshwater) and marine area that is conserved. <em>(ECCC)</em>",
+          "title": "Proportion d’aires terrestres (terres et eaux douces) conservées",
+          "description": "Cet indicateur mesure la proportion d’aires terrestres (terres et eaux douces) conservées. <em>(ECCC)</em>",
           "keywords": "",
           "href": "/cif-cic/fr/15-3-1",
           "status": "complete"
