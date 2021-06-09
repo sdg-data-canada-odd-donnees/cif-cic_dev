@@ -479,7 +479,7 @@
         },
         {
           "id": "11-3-1",
-          "title": "Percentage of the population living in areas where the Canadian Ambient Air Quality Standards are met",
+          "title": "Percentage of the population living in areas where air pollutants concentrations are less or equal to the 2020 Canadian Ambient Air Quality Standards",
           "description": "This indicator measures the percentage of the population living in areas where outdoor concentrations of air pollutants were below the 2020 standards. The Canadian Ambient Air Quality Standards (CAAQS, the standards) are health and environmental-based outdoor air quality objectives for pollutant concentrations in the air. The standards are intended to further protect human health and the environment and to drive continuous improvement in air quality across Canada. <em>(ECCC)</em>",
           "keywords": "",
           "href": "/cif-cic/fr/11-3-1",
@@ -639,16 +639,16 @@
         },
         {
           "id": "15-4-1",
-          "title": "Proportion of forest area under an independently verified forest management certification scheme",
-          "description": "This indicator tracks the proportion of forest area under an independently verified forest management certification scheme.",
+          "title": "Proportion des zones forestières soumises à un système de certification de la gestion forestière vérifié de manière indépendante",
+          "description": "Cet indicateur mesure la proportion des zones forestières soumises à un système de certification de la gestion forestière vérifié de manière indépendante.",
           "keywords": "",
           "href": "/cif-cic/fr/15-4-1",
           "status": "complete"
         },
         {
           "id": "15-5-1",
-          "title": "Forest area as a proportion of total land area",
-          "description": "This indicator tracks the proportion of forested areas as a proportion of total land area. Forest area is a basic sustainability indicator and is important to monitor closely, particularly in regions where forest area is being lost. <em>(NRCan)</em>",
+          "title": "Surface des zones forestières en proportion de la surface terrestre",
+          "description": "Cet indicateur mesure la surface des zones forestières en proportion de la surface terrestre. La superficie forestière est un indicateur de base de la durabilité qu’il est important de surveiller de près, en particulier dans les régions où la superficie forestière est en train de disparaître. <em>(RNCan)</em>",
           "keywords": "",
           "href": "/cif-cic/fr/15-5-1",
           "status": "complete"
@@ -663,41 +663,41 @@
         
         {
           "id": "16-1-1",
-          "title": "Proportion of Canadians who reported feeling safe walking alone in their neighborhood after dark",
-          "description": "This indicators tracks the proportion of people in Canada who reported feeling safe walking alone in their neighborhood after dark.",
-          "keywords": "women, gender",
+          "title": "Proportion des Canadiens ayant déclarée se sentir en sécurité lorsqu’ils marchent seuls dans leur voisinage quand il fait noir",
+          "description": "Cet indicateur mesure la proportion des Canadiens ayant déclarée se sentir en sécurité lorsqu’ils marchent seuls dans leur voisinage quand il fait noir",
+          "keywords": "femme, genre",
           "href": "/cif-cic/fr/16-1-1",
           "status": "complete"
         },
         {
           "id": "16-2-1",
-          "title": "Crime severity index",
-          "description": "The Crime Severity Index (CSI) measures changes in the level of severity of police-reported crime in Canada from year to year. The crime severity index includes all Criminal Code violations including traffic, as well as drug violations and all Federal Statutes.",
+          "title": "Indice de gravité de la criminalité",
+          "description": "L'Indice de gravité de la criminalité (IGC) mesure les variations dans le niveau de gravité de la criminalité au Canada d'une année à l'autre. L'Indice de gravité de la criminalité comprend toutes les infractions au Code criminel, y compris les délits de la route, ainsi que les infractions relatives aux drogues et toutes les infractions à des lois fédérales.",
           "keywords": "",
           "href": "/cif-cic/fr/16-2-1",
           "status": "complete"
         },
         {
           "id": "16-3-1",
-          "title": "Incidence of selected types of crime",
-          "description": "This indicators tracks the rate of selected types of crime.",
+          "title": "Incidence de certains types de crime",
+          "description": "Cet indicateur mesure le taux d'incidence de certains types de crimes.",
           "keywords": "",
           "href": "/cif-cic/fr/16-3-1",
           "status": "complete"
         },
         {
           "id": "16-4-1",
-          "title": "Incidence of cyber-crime",
-          "description": "This indicators tracks the number of cyber-related violations",
+          "title": "Incidence de cybercrimes",
+          "description": "Cet indicateur mesure le nombre d'infractions reliée à la cybercriminalité.",
           "keywords": "",
           "href": "/cif-cic/fr/16-4-1",
           "status": "complete"
         },
         {
           "id": "16-5-1",
-          "title": "Criminal Court case completion time",
-          "description": "This indicator track the median number of days elapsed from first appearance to final decision of criminal court cases.",
-          "keywords": "women, gender",
+          "title": "Durée de traitement des causes devant les tribunaux de juridiction criminelle",
+          "description": "Cet indicateur mesure la durée médiane de traitement des causes devant les tribunaux de juridiction criminelle selon le nombre de jours nécessaires pour régler la cause, de la première comparution à la décision finale.",
+          "keywords": "femme, genre",
           "href": "/cif-cic/fr/16-5-1",
           "status": "complete"
         },
