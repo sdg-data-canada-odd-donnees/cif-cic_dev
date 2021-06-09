@@ -17,7 +17,7 @@
           "id": "1-2-1",
           "title": "Prévalence de la résilience sur le plan des actifs",
           "description": "Cet indicateur mesure la prévalence de la résilience sur le plan des actifs. Résilience des actifs est définie comme ayant suffisamment d’épargne pour maintenir leur bien-être pendant une période de temps spécifiée.",
-          "keywords": "",
+          "keywords": "women, gender",
           "href": "/cif-cic/fr/1-2-1",
           "status": "complete"
         }]
@@ -33,7 +33,7 @@
           "id": "2-1-1",
           "title": "Prévalence de l'insécurité alimentaire",
           "description": "Cet indicateur mesure la prévalence de l'insécurité alimentaire. Cette variable est fondée sur un ensemble de 18 questions et indique si les ménages avec ou sans enfants avaient les moyens d'acheter les aliments dont ils avaient besoin au cours des 12 mois qui ont précédé l'enquête.",
-          "keywords": "",
+          "keywords": "women, gender",
           "href": "/cif-cic/fr/2-1-1",
           "status": "complete"
         },
@@ -57,7 +57,7 @@
           "id": "3-1-1",
           "title": "Pourcentage des Canadiens déclarant consommer des fruits et des légumes au moins 5 fois par jour",
           "description": "Cet indicateur mesure le pourcentage des Canadiens déclarant consommer des fruits et des légumes au moins 5 fois par jour. Cela inclut des jus de fruit purs, les fruits et légumes congéles ou conserve, et les fruits séchés, mais exclut les pommes de terre frites.",
-          "keywords": "",
+          "keywords": "women, gender",
           "href": "/cif-cic/fr/3-1-1",
           "status": "complete"
         },
@@ -65,7 +65,7 @@
           "id": "3-2-1",
           "title": "Prévalence du vapotage chez les jeunes",
           "description": "Cet indicateur mesure l'utilisation des cigarettes électroniques au cours des 30 derniers jours. Ceci inclue les fumeurs les fumeurs quotidiens et les fumeurs occasionnels.",
-          "keywords": "",
+          "keywords": "women, gender",
           "href": "/cif-cic/fr/3-2-1",
           "status": "complete"
         },
@@ -73,7 +73,7 @@
           "id": "3-3-1",
           "title": "Pourcentage de la population vivant avec de l’embonpoint ou de l’obésité",
           "description": "Cet indicateur mesure le pourcentage de la population vivant avec de l’embonpoint ou de l’obésité selon l'indice de masse corporelle mesuré (IMC). L'indice de masse corporelle (IMC) est calculée en divisant le poids du répondant (exprimé en kilogramme) par le carré de la taille (exprimée en mètres).",
-          "keywords": "",
+          "keywords": "women, gender",
           "href": "/cif-cic/fr/3-3-1",
           "status": "complete"
         },
@@ -81,7 +81,7 @@
           "id": "3-4-1",
           "title": "Prévalence de la consommation abusive d’alcool",
           "description": "Cet indicateur mesure la prévalence de la consommation abusive d’alcool. Par consommation abusive d'alcool, on entend les hommes qui ont déclaré avoir bu cinq verres d'alcool, ou les femmes ayant déclaré avoir bu quatre verres d'alcool, en une même occasion, au moins une fois par mois au cours de la dernière année.",
-          "keywords": "",
+          "keywords": "women, gender",
           "href": "/cif-cic/fr/3-4-1",
           "status": "complete"
         },
@@ -89,7 +89,7 @@
           "id": "3-5-1",
           "title": "Pourcentage des Canadiens qui sont satisfait ou très satisfait à l’égard de la vie",
           "description": "Cet indicateur mesure le pourcentage de la population agé de 12 ans et plus qui sont satisfait ou très satisfait à l’égard de la vie.",
-          "keywords": "",
+          "keywords": "women, gender",
           "href": "/cif-cic/fr/3-5-1",
           "status": "complete"
         },
@@ -97,7 +97,7 @@
           "id": "3-6-1",
           "title": "Pourcentage des Canadiens qui perçoivent leur santé et bien-être général comme très bons ou excellents",
           "description": "Cet indicateur mesure le pourcentage de la population qui perçoivent leur santé et bien-être général comme très bon ou excellent. La santé perçue réfère à la perception d'une personne de sa santé en général, ou dans le cas d'une interview par procuration, la perception de la personne qui répond. La santé réfère non seulement à l'absence de maladie ou de blessure mais aussi à un bien-être physique, mental et social.",
-          "keywords": "",
+          "keywords": "women, gender",
           "href": "/cif-cic/fr/3-6-1",
           "status": "complete"
         },
@@ -105,7 +105,7 @@
           "id": "3-7-1",
           "title": "Pourcentage des Canadiens qui perçoivent leur santé mentale comme très bonne ou excellente",
           "description": "Cet indicateur mesure le pourcentage de la population qui perçoivent leur santé mentale comme très bonne ou excellente. La santé mentale perçue réfère à la perception d'une personne de sa santé mentale en général. L'état de santé mentale perçu fournit une indication générale de la population qui souffre d'une forme quelconque de désordre mental, problèmes mentaux ou émotionnels ou de détresse. Ces troubles ne sont pas nécessairement reflétés dans la santé perçue.",
-          "keywords": "",
+          "keywords": "women, gender",
           "href": "/cif-cic/fr/3-7-1",
           "status": "complete"
         },
@@ -113,7 +113,7 @@
           "id": "3-8-1",
           "title": "Taux de vaccination pour certaines maladies",
           "description": "Cet indicateur mesure le taux de vaccination pour certaines maladies. L'Agence de la santé publique du Canada surveille la couverture vaccinale des enfants à l'aide de l’Enquête nationale sur la couverture vaccinale des enfants.",
-          "keywords": "",
+          "keywords": "women, gender",
           "href": "/cif-cic/fr/3-8-1",
           "status": "complete"
         },
@@ -129,7 +129,7 @@
           "id": "3-10-1",
           "title": "Taux de mortalité pour certaines cause de décès",
           "description": "Cet indicateur mesure le taux de mortalité pour les principales causes de décès. Le taux de mortalité selon l'âge représente le nombre de décès dans un groupe d'âge particulier pendant une année donnée pour 100 000 personnes dans le même groupe d'âge de la même année.",
-          "keywords": "",
+          "keywords": "women, gender",
           "href": "/cif-cic/fr/3-10-1",
           "status": "complete"
         },
@@ -153,7 +153,7 @@
           "id": "3-13-1",
           "title": "Prévalence de la consommation de cigarettes",
           "description": "Cet indicateur mesure le pourcentage des Canadiens qui fume actuellement, tous les jours ou à l'occasion.",
-          "keywords": "",
+          "keywords": "women, gender",
           "href": "/cif-cic/fr/3-13-1",
           "status": "complete"
         }]
@@ -169,7 +169,7 @@
           "id": "4-1-1",
           "title": "Taux d'achèvement des études secondaires",
           "description": "Cet indicateur mesure le pourcentage de personnes qui possèdent un diplome d'études secondaires ou une attestation d'équivalence.",
-          "keywords": "",
+          "keywords": "women, gender",
           "href": "/cif-cic/fr/4-1-1",
           "status": "complete"
         },
@@ -177,7 +177,7 @@
           "id": "4-2-1",
           "title": "Taux de scolarité au niveau postsecondaire",
           "description": "Cet indicateur mesure le taux de scolarité au niveau postsecondaire. Les catégories représentent le plus haut niveau de scolarité atteint et sont mutuellement exclusives.",
-          "keywords": "",
+          "keywords": "women, gender",
           "href": "/cif-cic/fr/4-2-1",
           "status": "complete"
         }]
@@ -193,7 +193,7 @@
           "id": "5-1-1",
           "title": "Proportion de la population ayant auto-déclaré avoir été agressée sexuellement dans les 12 derniers mois",
           "description": "Cet indicateur mesure la proportion de la population ayant auto-déclaré avoir été agressée sexuellement dans les 12 derniers mois",
-          "keywords": "",
+          "keywords": "women, gender",
           "href": "/cif-cic/fr/5-1-1",
           "status": "complete"
         },
@@ -201,7 +201,7 @@
           "id": "5-1-2",
           "title": "Proportion de femmes et filles âgées de 15 ans et plus ayant été assujetties à de la violence physique, sexuelle ou psychologique par leur partenaire intime actuel ou un ancien partenaire intime dans les 12 derniers mois",
           "description": "Cet indicateur mesure la proportion de femmes et filles âgées de 15 et plus ayant été assujetties à de la violence physique, sexuelle ou psychologique par leur partenaire intime actuel ou un ancien partenaire intime dans les 12 derniers mois. La violence entre partenaires intimes est définie comme tout acte ou comportement violent commis par un partenaire intime actuel ou ancien et est généralement classée en trois catégories, soit la violence psychologique, la violence physique et la violence sexuelle.",
-          "keywords": "",
+          "keywords": "women, gender",
           "href": "/cif-cic/fr/5-1-2",
           "status": "complete"
         },
@@ -209,7 +209,7 @@
           "id": "5-2-1",
           "title": "Proportion de rôles de leadership tenus par des femmes",
           "description": "Cet indicateur mesure la proportion de rôles de leadership tenus par des femmes. Le types de rôles de leadership inclues la représentation des femmes élus au Parlement national, les ministres nommés au sein du Cabinet fédéral, les juges canadiens dans l'administration publique fédéral et ceux dans les administrations provincials et territoriales ainsi que d'autres rôles de leadership.",
-          "keywords": "",
+          "keywords": "women, gender",
           "href": "/cif-cic/fr/5-2-1",
           "status": "complete"
         },
@@ -217,7 +217,7 @@
           "id": "5-3-1",
           "title": "Proportion du temps consacré à des soins et travaux domestiques non rémunérés",
           "description": "Cet indicateur mesure la proportion du temps consacré à des soins et travaux domestiques non rémunérés. Les activités de travail non-rémunéré comprends les tâches domestiques, les soins à un enfant du ménage de moins de 18 ans ou adulte du ménage ainsi que le magasinage de biens ou de services.",
-          "keywords": "",
+          "keywords": "women, gender",
           "href": "/cif-cic/fr/5-3-1",
           "status": "complete"
         }]
@@ -305,7 +305,7 @@
           "id": "8-1-1",
           "title": "Taux de chômage",
           "description": "Le taux de chômage est le nombre de personnes en chômage exprimé en pourcentage de la population active.",
-          "keywords": "",
+          "keywords": "women, gender",
           "href": "/cif-cic/fr/8-1-1",
           "status": "complete"
         },
@@ -321,7 +321,7 @@
           "id": "8-3-1",
           "title": "Proportion des jeunes qui ne sont ni en emploi, ni aux études, ni en formation",
           "description": "Cet indicateur mesure la proportion des jeunes qui ne sont ni en emploi, ni aux études, ni en formation.",
-          "keywords": "",
+          "keywords": "women, gender",
           "href": "/cif-cic/fr/8-3-1",
           "status": "complete"
         },
@@ -329,7 +329,7 @@
           "id": "8-4-1",
           "title": "Proportion des travailleurs ayant un emploi à temps partiel involontaire",
           "description": "Cet indicateur mesure la proportion des travailleurs ayant un emploi à temps partiel involontaire. Celle-ci peut être dérivée de différentes façons. Celle qui est utilisée pour cet indicateur se base sur tous les travailleurs ayant un emploi à temps partiel involontaire, qu'ils aient cherché un travail à temp plein ou non. Le taux est présenté comme le nombre de travailleurs ayant un emploi à temps partiel involontaire par rapport au nombre de travailleurs à temps partiel.",
-          "keywords": "",
+          "keywords": "women, gender",
           "href": "/cif-cic/fr/8-4-1",
           "status": "complete"
         },
@@ -441,7 +441,7 @@
           "id": "10-3-1",
           "title": "Median hourly wage ratio",
           "description": "This indicator measures the gender wage ratio. The gender wage ratio can be interpreted as the proportion of a dollar that women earn for every dollar earned by men.",
-          "keywords": "",
+          "keywords": "women, gender",
           "href": "/cif-cic/fr/10-3-1",
           "status": "complete"
         },
@@ -449,7 +449,7 @@
           "id": "10-4-1",
           "title": "Median household after-tax income",
           "description": "This indicator measures the median after-tax income. The concept of income covers income received while a resident of Canada or as relevant for income tax purposes in Canada.",
-          "keywords": "",
+          "keywords": "women, gender",
           "href": "/cif-cic/fr/10-4-1",
           "status": "complete"
         }]
@@ -473,7 +473,7 @@
           "id": "11-2-1",
           "title": "Proportion of households in core housing need",
           "description": "This indicator measures the proportion of household that lives in core housing need.",
-          "keywords": "",
+          "keywords": "women, gender",
           "href": "/cif-cic/fr/11-2-1",
           "status": "complete"
         },
@@ -513,7 +513,7 @@
           "id": "11-7-1",
           "title": "Percentage of the population aged 12 and over who reported their sense of belonging to their local community as being very strong or somewhat strong",
           "description": "This indicator measures the proportion of the population aged 12 and over who reported their sense of belonging to their local community as being very strong or somewhat strong.",
-          "keywords": "",
+          "keywords": "women, gender",
           "href": "/cif-cic/fr/11-7-1",
           "status": "complete"
         }]
