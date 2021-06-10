@@ -431,25 +431,25 @@
         },
         {
           "id": "10-2-1",
-          "title": "Proportion of the population reporting discrimination or unfair treatment",
-          "description": "This indicator measures the proportion of the population reporting discrimination or unfair treatment. Hate crimes refer to criminal offences motivated by bias, prejudice, or hate based on race, national or ethnic origin, language, colour, religion, sex, age, mental or physical disability, sexual orientation or any other similar factor, such as profession or political beliefs.",
+          "title": "Proportion de la population ayant déclaré de la discrimination ou des traitements injustes",
+          "description": "Cet indicateur mesure la proportion de la population ayant déclaré de la discrimination ou des traitements injustes. Un crime haineux est une infraction criminelle motivée par le biais, les préjugés ou par la haine de la race, de l’origine nationale ou ethnique, de la langue, de la couleur, de la religion, du sexe, de l’âge, de l’incapacité mentale ou physique, de l’orientation sexuelle, de l’identité ou expression de genre, ou de tout autre facteur semblable comme la profession ou les convictions politiques.",
           "keywords": "",
           "href": "/cif-cic/fr/10-2-1",
           "status": "complete"
         },
         {
           "id": "10-3-1",
-          "title": "Median hourly wage ratio",
-          "description": "This indicator measures the gender wage ratio. The gender wage ratio can be interpreted as the proportion of a dollar that women earn for every dollar earned by men.",
-          "keywords": "women, gender",
+          "title": "Ratio du salaire horaire médian",
+          "description": "Cet indicateur mesure le ratio du salaire horaire médian entre homme et femme. Il peut être interprété comme la proportion d'un dollar gagné par une femme pour chaque dollar gagné par un homme.",
+          "keywords": "femmes, genre",
           "href": "/cif-cic/fr/10-3-1",
           "status": "complete"
         },
         {
           "id": "10-4-1",
-          "title": "Median household after-tax income",
-          "description": "This indicator measures the median after-tax income. The concept of income covers income received while a resident of Canada or as relevant for income tax purposes in Canada.",
-          "keywords": "women, gender",
+          "title": "Revenu médian après impôt des ménages",
+          "description": "Cet indicateur mesure le revenu médian après impôt des ménages. Le concept de revenu englobe les revenus que touche un résident du Canada ou qui sont pertinents aux fins de l'impôt sur le revenu au Canada.",
+          "keywords": "femmes, genre",
           "href": "/cif-cic/fr/10-4-1",
           "status": "complete"
         }]
@@ -463,24 +463,24 @@
         
         {
           "id": "11-1-1",
-          "title": "Growth rate of people experiencing chronic homelessness",
-          "description": "<p>The indicator measures the growth rate of people experiencing chronic homelessness.<br> Refers to individuals who are currently experiencing homelessness AND who meet at least one of the following criteria:<br> 1) they have a total of at least 6 months (180 days) of homelessness over the past year;<br> 2) they have recurrent experiences of homelessness over the past 3 years, with a cumulative duration of at least 18 months (546 days). <em>(Reaching Home: Canada’s Homelessness Strategy Directives)</em>",
+          "title": "Taux de croissance de l'itinérance chronique au Canada",
+          "description": "<p>Cet indicateur mesure le taux de croissance des personnes en situation d’itinérance chronique. L’itinérance chronique désigne les personnes qui sont actuellement en situation d’itinérance et qui rencontrent l’un des critères suivants :<br> 1) ont été en situation d’itinérance pendant 6 mois (180 jours) ou plus au cours de la dernière année, ou<br> 2) ont été en situation d’itinérance pendant 18 mois (546 jours) ou plus au cours des 3 dernières années. <em>(Directives de Vers un chez-soi : la stratégie canadienne de lutte contre l'itinérance)</em>",
           "keywords": "",
           "href": "/cif-cic/fr/11-1-1",
           "status": "complete"
         },
         {
           "id": "11-2-1",
-          "title": "Proportion of households in core housing need",
-          "description": "This indicator measures the proportion of household that lives in core housing need.",
-          "keywords": "women, gender",
+          "title": "Proportion des ménages ayant des besoins impérieux en matière de logement",
+          "description": "Cet indicateur mesure la proportion des ménages vivant dans des logements ayant des besoins impérieux.",
+          "keywords": "femmes, genre",
           "href": "/cif-cic/fr/11-2-1",
           "status": "complete"
         },
         {
           "id": "11-3-1",
-          "title": "Percentage of the population living in areas where air pollutants concentrations are less or equal to the 2020 Canadian Ambient Air Quality Standards",
-          "description": "This indicator measures the percentage of the population living in areas where outdoor concentrations of air pollutants were below the 2020 standards. The Canadian Ambient Air Quality Standards (CAAQS, the standards) are health and environmental-based outdoor air quality objectives for pollutant concentrations in the air. The standards are intended to further protect human health and the environment and to drive continuous improvement in air quality across Canada. <em>(ECCC)</em>",
+          "title": "Pourcentage de la population vivant dans des zones où les concentrations des polluants atmosphériques sont moins élevées ou égales aux Normes Canadiennes de Qualité de l’Air Ambiant de 2020",
+          "description": "Cet indicateur mesure le pourcentage de la population dans des régions où les concentrations des polluants atmosphériques extérieurs étaient inférieures aux normes pour 2020. Les Normes canadiennes de qualité de l'air ambiant (NCQAA, les normes) sont des objectifs de qualité de l'air pour les concentrations de polluants dans l'air extérieur axées sur la santé et l'environnement. Elles visent à mieux protéger la santé humaine et l'environnement ainsi qu'à favoriser l'amélioration continue de la qualité de l'air partout au Canada. <em>(Environnement et Changement climatique Canada (ECCC))</em>",
           "keywords": "",
           "href": "/cif-cic/fr/11-3-1",
           "status": "complete"
@@ -535,16 +535,16 @@
         },
         {
           "id": "12-2-1",
-          "title": "Proportion of businesses that adopted selected environmental protection activities and management practices",
-          "description": "This indicator measures the share of establishments investing in environmental protection activities or management practices.",
+          "title": "Proportion d’entreprises qui ont adopté des activités de protection ou des pratiques de gestion de l’environnement",
+          "description": "Cet indicateur mesure la proportion d’entreprises qui ont adopté des activités de protection ou des pratiques de gestion de l’environnement.",
           "keywords": "",
           "href": "/cif-cic/fr/12-2-1",
           "status": "complete"
         },
         {
           "id": "12-3-1",
-          "title": "Total waste diversion per capita",
-          "description": "This indicator measures the amount of waste diverted per capita.",
+          "title": "Total des matières résiduelles récupérées par habitant",
+          "description": "Cet indicateur mesure le total des matières résiduelles récupérées par habitant.",
           "keywords": "",
           "href": "/cif-cic/fr/12-3-1",
           "status": "complete"
@@ -559,24 +559,24 @@
         
         {
           "id": "13-1-1",
-          "title": "Greenhouse gas emissions",
-          "description": "Greenhouse gases (GHGs) are the atmospheric gases responsible for causing global warming and climate change. The major GHGs are carbon dioxide (CO2), methane (CH4) and nitrous oxide (N20). <em>(definition from United Nations Climate Change)</em>",
+          "title": "Émissions de gaz à effet de serre",
+          "description": "Cet indicateur mesure les émissions de gaz à effet de serre. Les gaz à effet de serre (GES) sont des gaz atmosphérique responsable pour le réchauffement climatique ainsi que le changement climatique. Les trois principaux types de gaz à effet de serre sont le dyoxyde de carbonne, le méthane et l'oxyde nitreux. <em>(définition des Nations Unies)</em>",
           "keywords": "",
           "href": "/cif-cic/fr/13-1-1",
           "status": "complete"
         },
         {
           "id": "13-2-1",
-          "title": "Frequency of selected natural disasters",
-          "description": "This indicator tracks the frequency of selected natural disasters as defined by the Canadian Disaster Database.",
+          "title": "Fréquence de certaines catastrophes naturelles",
+          "description": "Cet indicateur mesure la fréquence de certaines catastrophes naturelles comme définie par la Base de données canadienne sur les catastrophes.",
           "keywords": "",
           "href": "/cif-cic/fr/13-2-1",
           "status": "complete"
         },
         {
           "id": "13-3-1",
-          "title": "Proportion of municipal organization who factored climate change adaptation into decision-making process",
-          "description": "<p>This indicator measure the proportion of municipal organization who factored climate change adapatation into their decision making process, for selected core infrastructure assets.<br> As of 2018, climate change adaptation is defined as changes in processes, practices, and structures to moderate potential damages or to benefit from opportunities associated with climate change. In 2016, climate change adaptation was defined as anticipating or monitoring climate change and undertaking actions to address the consequences of climate change.<br> Climate change is a long-term shift in weather conditions identified by changes in temperature, precipitation, winds, and other indicators. Climate change can involve both changes in average conditions and changes in variability, including for example, extreme events.</p>",
+          "title": "Proportion d’organisation municipales qui ont pris en considération l’adaptation aux changements climatiques dans leur processus décisionnel",
+          "description": "<p>Cet indicateur mesure la proportion d’organisation municipales qui ont pris en considération l’adaptation aux changements climatiques dans leur processus décisionnel <br><br> À partir de 2018, l’adaptation aux changements climatiques est définit comme des changements aux processus, aux pratiques et aux structures visant à atténuer les dommages potentiels ou à tirer parti des occasions liées aux changements climatiques. Pour 2016, l’adaptation aux changements climatiques était définit comme anticiper et suivre les changements climatiques et prendre des mesures à l’égard de leurs conséquences.<br><br> Les changements climatiques s'entendent d'une modification à long terme dans les conditions météorologiques mesurées par les changements dans la température, les précipitations, les vents, l'enneigement et d'autres indicateurs. Ils peuvent comprendre à la fois les changements des conditions météorologiques moyennes ainsi que la variabilité, y compris, par exemple, les changements dans les conditions extrêmes.</p>",
           "keywords": "",
           "href": "/cif-cic/fr/13-3-1",
           "status": "complete"
