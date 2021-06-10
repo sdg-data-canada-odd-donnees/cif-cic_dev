@@ -383,32 +383,32 @@
         },
         {
           "id": "9-4-1",
-          "title": "Proportion of Canadians that have access to the latest generally deployed mobile wireless technology",
-          "description": "This indicator measures the availability of the latest generally deployed mobile wireless technology. In this case, technologies such as HSPA+, LTE and LTE ‑A as well as the upcoming 5G are included.",
+          "title": "Proportion des Canadiens qui ont accès à la technologie sans fil mobile généralement déployée la plus récente",
+          "description": "Cet indicateur mesure la disponibilité de la technologie sans fil mobile généralement déployée la plus récente. On inclut les technologies telles que HSPA+ (accès haute vitesse par paquets), LTE (évolution à long terme) et LTE ‑A ainsi que la technologie 5G à venir.",
           "keywords": "",
           "href": "/cif-cic/fr/9-4-1",
           "status": "complete"
         },
         {
           "id": "9-5-1",
-          "title": "Greenhouse gas emission per value-added of infrastructure construction",
-          "description": "Not available",
+          "title": "Émissions de gaz à effets de serre par dollar de valeur ajoutée de la production d'actifs d'infrastructure",
+          "description": "NNon disponible",
           "keywords": "",
           "href": "/cif-cic/fr/9-5-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "9-6-1",
-          "title": "Number of low carbon recharging and refueling stations under development and completed along major highways, and in rural and urban areas across Canada",
-          "description": "This indicator tracks the number of alternative fuel stations (Electric, Hydrogen and Liquified Natural Gas) in Canada. “Under development” means chargers/ stations for which an agreement is in place, but which have not yet been opened to the public. “Completed” means chargers/ stations that are built and open to the public for charging or refuelling",
+          "title": "Nombre de bornes de recharge et de stations de ravitaillement à faibles émissions de carbone en cours de développement ou achevées le long des grandes autoroutes et dans les zones rurales et urbaines du Canada",
+          "description": "Cet indicateur fait un suivi sur le nombre de stations de ravitaillement alternatives (pour véhicules électriques, à hydrogène et à gaz naturel liquide) au Canada. Les stations en développement sont celles pour lesquelles il y a une entente mais qui ne sont pas ouvertes au puiblic. Les stations complétées sont celles qui sont construites et ouvertes au public pour la recharge ou le ravitaillement.",
           "keywords": "",
           "href": "/cif-cic/fr/9-6-1",
           "status": "complete"
         },
         {
           "id": "9-7-1",
-          "title": "Number of low carbon recharging and refueling stations under development and completed in public places, on-street, at apartment buildings, retail outlets, and the workplace",
-          "description": "This indicator tracks the number of low carbon recharging and refueling stations under development and completed in public places, on-street, at apartment buildings, retail outlets, and the workplace. “Under development” means chargers/ stations for which an agreement is in place, but which have not yet been opened to the public. “Completed” means chargers/ stations that are built and open to the public for charging or refuelling",
+          "title": "Nombre de bornes de recharge et de stations de ravitaillement à faibles émissions de carbone en cours de développement ou achevées dans les lieux publics, sur la rue, aux immeubles d’habitation, aux points de vente au détail et sur les lieux de travail",
+          "description": "Cet indicateur fait un suivi sur le nombre de bornes de recharge et stations de ravitaillement à faibles émissions de carbone en cours de développement ou achevées dans les lieux publics, sur la rue, aux immeubles d’habitation, aux points de vente au détail et sur les lieux de travail. Les stations en développement sont celles pour lesquelles il y a une entente mais qui ne sont pas ouvertes au puiblic. Les stations complétées sont celles qui sont construites et ouvertes au public pour la recharge ou le ravitaillement.",
           "keywords": "",
           "href": "/cif-cic/fr/9-7-1",
           "status": "notstarted"
@@ -423,8 +423,8 @@
         
         {
           "id": "10-1-1",
-          "title": "Gini Coefficient",
-          "description": "This indicator measures the Gini coefficient. The Gini coefficient is a number between zero and one that measures the relative degree of inequality in the distribution of income.",
+          "title": "Coefficient Coefficient de Gini du revenu ajusté après impôtGini",
+          "description": "Cet indicateur mesure le coefficient de Gini. Le coefficient de Gini, compris entre zéro et un, mesure le degré relatif d'inégalité dans la distribution du revenu.",
           "keywords": "",
           "href": "/cif-cic/fr/10-1-1",
           "status": "complete"
@@ -591,16 +591,16 @@
         
         {
           "id": "14-1-1",
-          "title": "Proportion of marine and coastal areas conserved",
-          "description": "These indicators report the amount and proportion of Canada's terrestrial (land and freshwater) and marine area that is conserved. <em>(ECCC)</em>",
+          "title": "Proportion d’aires marines et côtières conservées",
+          "description": "L'indicateur mesure proportion d’aires marines et côtières conservées. Les aires conservées sont des terres et des eaux dont l'utilisation est restreinte. <em>(ECCC)</em>",
           "keywords": "",
           "href": "/cif-cic/fr/14-1-1",
           "status": "complete"
         },
         {
           "id": "14-2-1",
-          "title": "Proportion of fishes that are sustainably harvested",
-          "description": "The indicator compares harvest rates with established harvest limits. These limits are based on scientific information, providing a direct measure of whether we are managing the use of these resources within ecosystem limits. It is one measure of fishing pressure on wild fish stocks. <em>(ECCC)</em>",
+          "title": "Proportion des stocks de poissons récoltés à des niveaux considérés durables",
+          "description": "L'indicateur permet de comparer les taux de récolte avec les limites de récolte établies. Ces limites sont fondées sur des données scientifiques et fournissent une mesure directe indiquant si la gestion de l'utilisation de ces ressources respecte les limites des écosystèmes. Cela constitue une mesure de la pression de la pêche sur les stocks de poissons sauvages. <em>(ECCC)</em>",
           "keywords": "",
           "href": "/cif-cic/fr/14-2-1",
           "status": "complete"

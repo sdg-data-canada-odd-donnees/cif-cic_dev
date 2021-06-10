@@ -391,16 +391,16 @@
         },
         {
           "id": "9-5-1",
-          "title": "Greenhouse gas emission per value-added of infrastructure construction",
+          "title": "Greenhouse gas emissions per dollar of value-added from the production of infrastructure assets",
           "description": "Not available",
           "keywords": "",
           "href": "/cif-cic/9-5-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "9-6-1",
           "title": "Number of low carbon recharging and refueling stations under development and completed along major highways, and in rural and urban areas across Canada",
-          "description": "This indicator tracks the number of alternative fuel stations (Electric, Hydrogen and Liquified Natural Gas) in Canada. “Under development” means chargers/ stations for which an agreement is in place, but which have not yet been opened to the public. “Completed” means chargers/ stations that are built and open to the public for charging or refuelling",
+          "description": "This indicator tracks the number of alternative fuel stations (Electric, Hydrogen and Liquified Natural Gas) in Canada. “Under development” means chargers/ stations for which an agreement is in place, but which have not yet been opened to the public. “Completed” means chargers/ stations that are built and open to the public for charging or refuelling.",
           "keywords": "",
           "href": "/cif-cic/9-6-1",
           "status": "complete"
@@ -599,7 +599,7 @@
         },
         {
           "id": "14-2-1",
-          "title": "Proportion of fishes that are sustainably harvested",
+          "title": "Proportion of fish stocks that are sustainably harvested",
           "description": "The indicator compares harvest rates with established harvest limits. These limits are based on scientific information, providing a direct measure of whether we are managing the use of these resources within ecosystem limits. It is one measure of fishing pressure on wild fish stocks. <em>(ECCC)</em>",
           "keywords": "",
           "href": "/cif-cic/14-2-1",
