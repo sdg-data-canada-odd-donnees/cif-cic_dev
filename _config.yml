@@ -54,7 +54,7 @@ create_pages:
       layout: search
 
 analytics:
-  ga_prod: ''
+  ga_prod: 'G-F9C9LT784Y'
 
 # Sticky share buttons (facebook, twitter and email)
 #sharethis_property: '5d279253faeee40012f195e1'
