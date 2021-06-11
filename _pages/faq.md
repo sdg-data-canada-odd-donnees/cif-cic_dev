@@ -17,7 +17,7 @@ We will add data as soon as it has been sourced and validated. This includes new
 
 ## What is the relation between the Canadian Indicator Framework and Canada’s 2030 Agenda National Strategy?
 
-<a href="https://www.canada.ca/en/employment-social-development/programs/agenda-2030/moving-forward.html">Canada’s 2030 Agenda National Strategy</a> sets out an approach to accelerate progress towards meeting the Sustainable Development Goals (SDGs) in Canada, and contribute to their achievement internationally.
+<a href="https://www.canada.ca/en/employment-social-development/programs/agenda-2030/moving-forward.html">Moving forward together: Canada’s 2030 Agenda National Strategy</a> sets out an approach to accelerate progress towards meeting the Sustainable Development Goals (SDGs) in Canada, and contribute to their achievement internationally.
 To promote engagement and action, the following five core objectives have been identified:  
 1.	Fostering leadership, governance and policy coherence
 2.	Raising awareness, engagement and partnerships
