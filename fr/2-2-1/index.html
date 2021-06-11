@@ -138,7 +138,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic/assets/css/style.css?v=20210611130548">
+        <link rel="stylesheet" href="/cif-cic/assets/css/style.css?v=20210611144302">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -431,6 +431,20 @@ var translations = {
 
 <div id="main-content" class="container goal-2" role="main">
   
+<div class="row" id="data-notice">
+  <div class="col-xs-12">
+    <div class="alert danger">
+      <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+      <div class="data-notice">
+        <h4><p>Note à l’utilisateur</p>
+</h4>
+        <p><p>Les données pour cet indicateur seront disponibles au courant de l’été et l’indicateur sera alors mis à jour.</p>
+</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 
   
 
@@ -1124,8 +1138,8 @@ data-event-label="Change to indicator.sources tab"
             
 
             
-              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/9cb3b1513e3d3c54d5d93616ec05a8d58596ee48" target="_blank">
-                2021-06-03: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
+              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/2946f54cdcaf43b54e841cae59a7436031f2ff8d" target="_blank">
+                2021-06-11: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
               </a>
             
 
@@ -1571,12 +1585,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/cif-cic/assets/js/sdg.js?v=20210611130548'></script>
+<script src='/cif-cic/assets/js/sdg.js?v=20210611144302'></script>
 
 
     
     
-    <script src="/cif-cic/assets/js/custom.js?v=20210611130548"></script><script>
+    <script src="/cif-cic/assets/js/custom.js?v=20210611144302"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
