@@ -134,7 +134,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic/assets/css/style.css?v=20210611180325">
+        <link rel="stylesheet" href="/cif-cic/assets/css/style.css?v=20210611181221">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -308,11 +308,11 @@ var translations = {
     <div class="frontpage-goals-grid">
 
         
-        <h2 class="frontpage-goals-grid-title">Bienvenue au carrefour de données pour le cadre d'indicateurs canadien basé sur les objectifs de développement durable</h2>
+        <h2 class="frontpage-goals-grid-title">Données %name pour les indicateurs des objectifs de développement durable</h2>
         
 
         
-        <div class="frontpage-goals-grid-description"><p>Cliquez sur chaque objectif pour accéder aux données</p>
+        <div class="frontpage-goals-grid-description"><p>Cliquez sur chaque objectif, ou %before_link recherchez, %after_link pour %name statistiques pour Sustainable Development Goal global indicateurs.</p>
 </div>
         
 
@@ -452,7 +452,7 @@ var translations = {
         Téléchargez toutes les données
     </a>
     <div id="zip-download-info">
-        ficher ZIP - 5.9 MB
+        fichier zip - 5.9 MB
         
             <br>
             Données mises à jour en dernier - Jun 11, 2021
@@ -479,11 +479,11 @@ var translations = {
   
   <h2 class="card-title"
       
-  >Carrefour de données liées aux objectifs de développement durable</h2>
+  >frontpage.second_header</h2>
   
 
   
-  <div class="card-content"><p>Données canadiennes relatives aux indicateurs des ODD</p>
+  <div class="card-content"><p>frontpage.second_content</p>
 </div>
   
 
@@ -513,7 +513,7 @@ var translations = {
   
   <h2 class="card-title"
       
-  >À propos du Canada et les objectifs de développement durable</h2>
+  >frontpage.third_header</h2>
   
 
   
@@ -627,12 +627,12 @@ var translations = {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/cif-cic/assets/js/sdg.js?v=20210611180325'></script>
+<script src='/cif-cic/assets/js/sdg.js?v=20210611181221'></script>
 
 
     
     
-    <script src="/cif-cic/assets/js/custom.js?v=20210611180325"></script><script>
+    <script src="/cif-cic/assets/js/custom.js?v=20210611181221"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
