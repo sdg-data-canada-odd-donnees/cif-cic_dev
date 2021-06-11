@@ -12,7 +12,7 @@ Tous les membres des Nations Unies ont adopté le <a href="https://www.un.org/ga
 durable à l’horizon 2030</a> en 2015, ce cadre de référence couvrent les dimensions sociales, économiques et environnementales du développement durable.
 
 Les 17 objectifs de développement durable (ODD) sont un appel universel à l’action pour :
-* éliminer la pauvreté,
+* mettre fin à la pauvreté,
 * protéger la planète,
 * et veiller à ce que toutes les personnes jouissent de la paix et de la prospérité.
 
