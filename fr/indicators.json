@@ -8,7 +8,7 @@
         {
           "id": "1-1-1",
           "title": "Taux de pauvreté basé sur le seuil officiel de la pauvreté canadienne",
-          "description": "Cet indicateur mesure le pourcentage de personnes à faible revenu basé sur la Mesure du panier de consommation (MPC), celle-ci a été adopté comme la mesure officielle de la pauvreté canadienne. D'après la MPC, une famille est à faible revenue si son revenue est insuffisant pour acheter un panier spécifique de produits et services dans sa communauté.",
+          "description": "Cet indicateur mesure le pourcentage de personnes à faible revenu basé sur la Mesure du panier de consommation (MPC), qui a été adoptée comme la mesure officielle de la pauvreté canadienne. D'après la MPC, une famille est à faible revenu si son revenu est insuffisant pour acheter un panier spécifique de produits et services dans sa communauté.",
           "keywords": "women, gender",
           "href": "/cif-cic/fr/1-1-1",
           "status": "complete"
@@ -127,7 +127,7 @@
         },
         {
           "id": "3-10-1",
-          "title": "Taux de mortalité pour certaines cause de décès",
+          "title": "Taux de mortalité pour certaines causes de décès",
           "description": "Cet indicateur mesure le taux de mortalité pour les principales causes de décès. Le taux de mortalité selon l'âge représente le nombre de décès dans un groupe d'âge particulier pendant une année donnée pour 100 000 personnes dans le même groupe d'âge de la même année.",
           "keywords": "women, gender",
           "href": "/cif-cic/fr/3-10-1",
@@ -144,7 +144,7 @@
         {
           "id": "3-12-1",
           "title": "Incidence des méfaits associés aux surdoses d’opioïdes et de stimulants",
-          "description": "<p>Cet indicateur mesure l'incidence des méfaits associés aux surdoses d’opioïdes et de stimulants par 100,000 habitants. Plus spécifiquement, il mesure le taux d'incidence de: <br> 1. décès apparemment liés à une intoxication aux opioïdes;<br> 2. intoxication aux opioïdes et stimulants; and<br> 3. interventions des services médicaux d’urgence (SMU) pour surdoses suspectées d’être liées aux opioïdes</p>",
+          "description": "<p>Cet indicateur mesure l'incidence des méfaits associés aux surdoses d’opioïdes et de stimulants par 100 000 habitants. Plus spécifiquement, il mesure le taux d'incidence de: <br> 1. décès apparemment liés à une intoxication aux opioïdes;<br> 2. intoxication aux opioïdes et stimulants; and<br> 3. interventions des services médicaux d’urgence (SMU) pour surdoses suspectées d’être liées aux opioïdes</p>",
           "keywords": "",
           "href": "/cif-cic/fr/3-12-1",
           "status": "complete"
@@ -152,7 +152,7 @@
         {
           "id": "3-13-1",
           "title": "Prévalence de la consommation de cigarettes",
-          "description": "Cet indicateur mesure le pourcentage des Canadiens qui fume actuellement, tous les jours ou à l'occasion.",
+          "description": "Cet indicateur mesure le pourcentage des Canadiens qui fument actuellement, tous les jours ou à l'occasion.",
           "keywords": "women, gender",
           "href": "/cif-cic/fr/3-13-1",
           "status": "complete"
@@ -168,7 +168,7 @@
         {
           "id": "4-1-1",
           "title": "Taux d'achèvement des études secondaires",
-          "description": "Cet indicateur mesure le pourcentage de personnes qui possèdent un diplome d'études secondaires ou une attestation d'équivalence.",
+          "description": "Cet indicateur mesure le pourcentage de personnes qui possèdent un diplôme d'études secondaires ou une attestation d'équivalence.",
           "keywords": "women, gender",
           "href": "/cif-cic/fr/4-1-1",
           "status": "complete"
@@ -208,8 +208,8 @@
         {
           "id": "5-2-1",
           "title": "Proportion de rôles de leadership tenus par des femmes",
-          "description": "Cet indicateur mesure la proportion de rôles de leadership tenus par des femmes. Le types de rôles de leadership inclues la représentation des femmes élus au Parlement national, les ministres nommés au sein du Cabinet fédéral, les juges canadiens dans l'administration publique fédéral et ceux dans les administrations provincials et territoriales ainsi que d'autres rôles de leadership.",
-          "keywords": "women, gender",
+          "description": "Cet indicateur mesure la proportion de rôles de leadership exercés par des femmes. Le types de rôles de leadership inclues la représentation des femmes élus au Parlement national, les ministres nommés au sein du Cabinet fédéral, les juges canadiens dans l'administration publique fédéral et ceux dans les administrations provincials et territoriales ainsi que d'autres rôles de leadership.",
+          "keywords": "femme, genre",
           "href": "/cif-cic/fr/5-2-1",
           "status": "complete"
         },
@@ -232,7 +232,7 @@
         {
           "id": "6-1-1",
           "title": "Nombre d’avis concernant la qualité de l'eau potable à long terme visant les systèmes d'aqueduc publics dans les réserves",
-          "description": "Cet indicateur mesure le nombre d’avis concernant la qualité de l'eau potable à long terme visant les systèmes d'aqueduc publics dans les réserves. Les avis concernant la qualité de l'eau potable sont émis pour informer les gens de ne pas boire l'eau qui pourrait être insalubre ou est insalubre en se fondant sur des tests sur la qualité de l'eau.",
+          "description": "Cet indicateur mesure le nombre d’avis concernant la qualité de l'eau potable à long terme visant les systèmes d'aqueduc publics dans les réserves. Les avis concernant la qualité de l'eau potable sont émis pour informer les gens de ne pas boire l'eau qui pourrait être ou qui est insalubre en se fondant sur des tests sur la qualité de l'eau.",
           "keywords": "",
           "href": "/cif-cic/fr/6-1-1",
           "status": "complete"
@@ -392,7 +392,7 @@
         {
           "id": "9-5-1",
           "title": "Émissions de gaz à effets de serre par dollar de valeur ajoutée de la production d'actifs d'infrastructure",
-          "description": "NNon disponible",
+          "description": "Non disponible",
           "keywords": "",
           "href": "/cif-cic/fr/9-5-1",
           "status": "notstarted"
