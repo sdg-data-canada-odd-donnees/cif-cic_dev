@@ -40,7 +40,7 @@
         {
           "id": "2-2-1",
           "title": "Indices de durabilité agroenvironnementale",
-          "description": "Cet indicateur mesure l'agriculture écologiquement durable au Canada à l'aide d'indicateurs. Agriculture et Agroalimentaire Canada a développé un groupe d'indicateurs agroenvironnementaux basé sur la science qui intègre de l'information sur les sols, climat et la topographie avec des statistiques sur l'utilisation des terres et de la gestion des cultures et du bétail.",
+          "description": "Cet indicateur mesure l'agriculture écologiquement durable au Canada à l'aide d'indicateurs. Agriculture et Agroalimentaire Canada a développé un groupe d'indicateurs agroenvironnementaux basé sur la science qui intègre de l'information sur les sols, climat et la topographie avec des statistiques sur l'utilisation des terres et de la gestion des cultures et du bétail. Les indices sont divisés en cinq « classes de santé », définies comme suit: 80-100 Souhaitable; 60-79 Bon; 40-59 Moyen; 20-39 Médiocre; 0-19 À risque.",
           "keywords": "",
           "href": "/cif-cic/fr/2-2-1",
           "status": "complete"
@@ -56,7 +56,7 @@
         {
           "id": "3-1-1",
           "title": "Pourcentage des Canadiens déclarant consommer des fruits et des légumes au moins 5 fois par jour",
-          "description": "Cet indicateur mesure le pourcentage des Canadiens déclarant consommer des fruits et des légumes au moins 5 fois par jour. Cela inclut des jus de fruit purs, les fruits et légumes congéles ou conserve, et les fruits séchés, mais exclut les pommes de terre frites.",
+          "description": "Cet indicateur mesure le pourcentage des Canadiens déclarant consommer des fruits et des légumes au moins 5 fois par jour. Cela inclut des jus de fruit purs, les fruits et légumes congelés ou en conserve, et les fruits séchés, mais exclut les pommes de terre frites.",
           "keywords": "women, gender",
           "href": "/cif-cic/fr/3-1-1",
           "status": "complete"
@@ -64,7 +64,7 @@
         {
           "id": "3-2-1",
           "title": "Prévalence du vapotage chez les jeunes",
-          "description": "Cet indicateur mesure l'utilisation des cigarettes électroniques au cours des 30 derniers jours. Ceci inclue les fumeurs les fumeurs quotidiens et les fumeurs occasionnels.",
+          "description": "Cet indicateur mesure l'utilisation des cigarettes électroniques au cours des 30 derniers jours. Ceci inclue les fumeurs quotidiens et les fumeurs occasionnels.",
           "keywords": "women, gender",
           "href": "/cif-cic/fr/3-2-1",
           "status": "complete"
@@ -88,7 +88,7 @@
         {
           "id": "3-5-1",
           "title": "Pourcentage des Canadiens qui sont satisfait ou très satisfait à l’égard de la vie",
-          "description": "Cet indicateur mesure le pourcentage de la population agé de 12 ans et plus qui sont satisfait ou très satisfait à l’égard de la vie.",
+          "description": "Cet indicateur mesure le pourcentage de la population âgée de 12 ans ou plus qui est satisfait ou très satisfait à l’égard de la vie.",
           "keywords": "women, gender",
           "href": "/cif-cic/fr/3-5-1",
           "status": "complete"
@@ -96,7 +96,7 @@
         {
           "id": "3-6-1",
           "title": "Pourcentage des Canadiens qui perçoivent leur santé et bien-être général comme très bons ou excellents",
-          "description": "Cet indicateur mesure le pourcentage de la population qui perçoivent leur santé et bien-être général comme très bon ou excellent. La santé perçue réfère à la perception d'une personne de sa santé en général, ou dans le cas d'une interview par procuration, la perception de la personne qui répond. La santé réfère non seulement à l'absence de maladie ou de blessure mais aussi à un bien-être physique, mental et social.",
+          "description": "Cet indicateur mesure le pourcentage de la population qui perçoivent leur santé et bien-être général comme très bon ou excellent. La santé perçue réfère à la perception d'une personne de sa santé en général, ou dans le cas d'une entrevue par procuration, la perception de la personne qui répond. La santé réfère non seulement à l'absence de maladie ou de blessure mais aussi à un bien-être physique, mental et social.",
           "keywords": "women, gender",
           "href": "/cif-cic/fr/3-6-1",
           "status": "complete"
@@ -312,7 +312,7 @@
         {
           "id": "8-2-1",
           "title": "Proportion des employés qui gagnent moins de 66 % de la médiane du salaire horaire des employés permanents à temps plein",
-          "description": "Cet indicateur mesure le pourcentage des employés qui gagnent moins du deux tiers de la médiane du salaire horaire des employés permanents à temps plein.",
+          "description": "Cet indicateur mesure le pourcentage et le nombre des employés qui gagnent moins du deux tiers de la médiane du salaire horaire des employés permanents à temps plein.",
           "keywords": "",
           "href": "/cif-cic/fr/8-2-1",
           "status": "complete"
@@ -423,7 +423,7 @@
         
         {
           "id": "10-1-1",
-          "title": "Coefficient Coefficient de Gini du revenu ajusté après impôtGini",
+          "title": "Coefficient de Gini",
           "description": "Cet indicateur mesure le coefficient de Gini. Le coefficient de Gini, compris entre zéro et un, mesure le degré relatif d'inégalité dans la distribution du revenu.",
           "keywords": "",
           "href": "/cif-cic/fr/10-1-1",
