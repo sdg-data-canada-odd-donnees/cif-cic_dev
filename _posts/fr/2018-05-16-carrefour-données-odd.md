@@ -7,7 +7,7 @@ language: fr
 permalink: /fr/carrefour-données-odd/
 categories:
   - ODD
-  - Data hub
+  - Carrefour de données
 
 ---
 Le programme 2030 et les objectifs de développement durable (ODD) ont été adoptés le 25 septembre 2015 par l'Assemblée générale des Nations Unies. Les 17 ODD représentent un appel à l'action universel pour mettre fin à la pauvreté, protéger la planète et veiller à ce que tous jouissent de la paix et de la prospérité. Ils couvrent un large éventail de questions relatives au développement économique et social, avec un accent sur les plus vulnérables et un engagement à veiller à ce que « personne ne soit laissé de côté ». Afin de mesurer et de surveiller les progrès relatifs aux ODD, des données et des renseignements de grande qualité sont requis. À cette fin, le gouvernement du Canada a lancé le Carrefour de données liées aux ODD, hébergé par Statistique Canada.
