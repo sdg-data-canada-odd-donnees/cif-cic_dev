@@ -16,7 +16,7 @@
         {
           "id": "1-2-1",
           "title": "Prévalence de la résilience sur le plan des actifs",
-          "description": "Cet indicateur mesure la prévalence de la résilience sur le plan des actifs. Résilience des actifs est définie comme ayant suffisamment d’épargne pour maintenir leur bien-être pendant une période de temps spécifiée.",
+          "description": "Cet indicateur mesure la prévalence de la résilience sur le plan des actifs. Une personne est en situation de résilience des actifs si elle a suffisamment d’épargne pour maintenir son bien-être pendant une période de temps précise. Plus spécifiquement, c’est la capacité qu’ont les Canadiens de pouvoir faire face à des dépenses inattendues ou à un revenu réduit en se servant de leurs actifs (par ex. un compte de banque) pour une période de temps précise.",
           "keywords": "women, gender",
           "href": "/cif-cic/fr/1-2-1",
           "status": "complete"
@@ -40,7 +40,7 @@
         {
           "id": "2-2-1",
           "title": "Indices de durabilité agroenvironnementale",
-          "description": "Cet indicateur mesure l'agriculture écologiquement durable au Canada à l'aide d'indicateurs. Agriculture et Agroalimentaire Canada a développé un groupe d'indicateurs agroenvironnementaux basé sur la science qui intègre de l'information sur les sols, climat et la topographie avec des statistiques sur l'utilisation des terres et de la gestion des cultures et du bétail. Les indices sont divisés en cinq « classes de santé », définies comme suit: 80-100 Souhaitable; 60-79 Bon; 40-59 Moyen; 20-39 Médiocre; 0-19 À risque.",
+          "description": "Cet indicateur mesure l'agriculture écologiquement durable au Canada à l'aide d'indicateurs. Agriculture et Agroalimentaire Canada a développé un groupe d'indicateurs agroenvironnementaux basé sur la science qui intègre de l'information sur les sols, le climat et la topographie avec des statistiques sur l'utilisation des terres et de la gestion des cultures et du bétail. Les indices sont divisés en cinq « classes de santé », définies comme suit: 80-100 Souhaitable; 60-79 Bon; 40-59 Moyen; 20-39 Médiocre; 0-19 À risque.",
           "keywords": "",
           "href": "/cif-cic/fr/2-2-1",
           "status": "complete"
@@ -120,7 +120,7 @@
         {
           "id": "3-9-1",
           "title": "Incidence de certaines maladies",
-          "description": "Cet indicateur mesure l'incidence de 10 maladies sélectionnées à l'aide du taux par 100,000.",
+          "description": "Cet indicateur mesure l'incidence de 10 maladies sélectionnées à l'aide du taux pour 100 000 habitants.",
           "keywords": "",
           "href": "/cif-cic/fr/3-9-1",
           "status": "complete"
