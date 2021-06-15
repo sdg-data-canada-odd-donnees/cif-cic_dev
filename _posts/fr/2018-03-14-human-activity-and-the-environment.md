@@ -9,4 +9,4 @@ categories:
   - Analyse
 
 ---
-Cette séries de publication offre des articles analytiques sur des sujets spécifiques reliées à l'activité humaine et l'environnement.
+Cette [séries de publication](https://www150.statcan.gc.ca/n1/fr/catalogue/16-201-X) offre des articles analytiques sur des sujets spécifiques reliées à l'activité humaine et l'environnement.
