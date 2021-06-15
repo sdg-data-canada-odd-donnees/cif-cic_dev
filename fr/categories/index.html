@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="fr" class="no-js">
     <head>
         <meta charset="utf-8">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://sdg-data-canada-odd-donnees.github.io/cif-data-donnees-cic/en',
+  remoteDataBaseUrl: 'https://sdg-data-canada-odd-donnees.github.io/cif-data-donnees-cic/fr',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -38,7 +38,7 @@ var opensdg = {
     this.dataDisplayAlterations.push(callback);
   },
 
-  language: 'en',
+  language: 'fr',
 };
 
 // For backwards compatibility, some of these might need to be global.
@@ -103,7 +103,7 @@ var translations = {
         ================================================== -->
 
         
-    <title>Goal 4 - Quality education - Indicators For The Sustainable Development Goals</title>
+    <title>Catégories - Indicators For The Sustainable Development Goals</title>
 
 
 
@@ -144,19 +144,19 @@ var translations = {
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><!-- ShareThis BEGIN --><!-- ShareThis END -->
 
     </head>
-<body class="language-en layout-goal-by-target">
+<body class="language-fr layout-categories">
 <!-- <div class="container"> -->
 
 
-<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Default contrast","disable_high_contrast":"Disable high contrast","disclaimer":"This is a development website. We welcome your <a href=\"mailto:%email_address\">feedback</a>.","enable_high_contrast":"Enable high contrast","high_contrast":"High contrast","skip_link":"Skip to main content","tag_line":"17 Goals to Transform our World","toggle_menu":"Menu toggle. Click to expand or collapse the menu.","toggle_search":"Search toggle. Click to expand or collapse the search bar."};</script>
+<script>translations['header'] = {"alpha":"Alpha","default_contrast":"contraste standard","disable_high_contrast":"Désactiver le contraste élevé","disclaimer":"Ceci est un site en développement. Nous apprécions vos <a href=\"mailto:%email_address\">commentaires</a>.","enable_high_contrast":"Activer le contraste élevé","high_contrast":"contraste élevé","skip_link":"Passer au contenu principal","tag_line":"17 objectifs pour transformer notre monde","toggle_menu":"Interrupteur du menu. Cliquez pour développer ou réduire le menu.","toggle_search":"Interrupteur de la barre. Cliquez pour développer ou réduire la barre de recherche."};</script>
 
-<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
+<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Passer au contenu principal</a>
 <div id="disclaimer">
   <div class="container">
   <div class="disclaimer-alert">
     <strong class="phase-tag">Alpha</strong>
     
-    This is a development website. We welcome your <a href="mailto:statcan.sdg-odd.statcan@canada.ca">feedback</a>.
+    Ceci est un site en développement. Nous apprécions vos <a href="mailto:statcan.sdg-odd.statcan@canada.ca">commentaires</a>.
   </div>
 </div>
 
@@ -166,8 +166,8 @@ var translations = {
   <div class="container">
 
     <div class="logo-and-mobile-widgets">
-      <a class="navbar-brand" href="/cif-cic/" id="home">
-    <img src="/cif-cic/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
+      <a class="navbar-brand" href="/cif-cic/fr/" id="home">
+    <img src="/cif-cic/assets/img/SDG_logo.png" alt="Objectifs de développement durable - 17 objectifs pour transformer notre monde" />
 </a>
       <div class="mobile-widgets">
     <ul id='accessibility-nav' class='contrast-switcher'></ul><div class="language-toggle-mobile">
@@ -175,11 +175,11 @@ var translations = {
   
   <div class="btn-group language-toggle-dropdown ">
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">English</span>
-      <span class="language-abbreviation">en</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
+      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Français</span>
+      <span class="language-abbreviation">fr</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
     <ul class="dropdown-menu"><li>
-            <a href="/cif-cic/fr/4/">
-              Français
+            <a href="/cif-cic/categories/">
+              English
             </a>
           </li></ul>
   </div>
@@ -191,17 +191,17 @@ var translations = {
     <nav class="navbar navbar-default" id="main-nav">
       <ul class="top-level">
     <li id="menuToggle"
-        aria-label="Menu toggle. Click to expand or collapse the menu."
+        aria-label="Interrupteur du menu. Cliquez pour développer ou réduire le menu."
         aria-haspopup="true">
         <button data-target="menu-mobile" aria-expanded="false">Menu</button>
         <ul class="nav navbar-nav menu-target contrast-switcher" id="menu-mobile"><li class="nav-link ">
-    <a href="/cif-cic/goals">Goals</a>
+    <a href="/cif-cic/fr/goals">Objectifs</a>
 </li><li class="nav-link ">
-    <a href="/cif-cic/about">About</a>
+    <a href="/cif-cic/fr/about">À propos</a>
 </li><li class="nav-link ">
-    <a href="/cif-cic/news">Related Products</a>
+    <a href="/cif-cic/fr/news">Mises à jour</a>
 </li><li class="nav-link ">
-    <a href="/cif-cic/faq">FAQ</a>
+    <a href="/cif-cic/fr/faq">FAQ</a>
 </li><li class="language-toggle-menu-header">
     
 
@@ -213,11 +213,11 @@ var translations = {
   
   <div class="btn-group language-toggle-dropdown ">
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">English</span>
-      <span class="language-abbreviation">en</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
+      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Français</span>
+      <span class="language-abbreviation">fr</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
     <ul class="dropdown-menu"><li>
-            <a href="/cif-cic/fr/4/">
-              Français
+            <a href="/cif-cic/categories/">
+              English
             </a>
           </li></ul>
   </div>
@@ -230,35 +230,35 @@ var translations = {
 
     </li>
     <li id="searchToggle"
-        aria-label="Search toggle. Click to expand or collapse the search bar."
+        aria-label="Interrupteur de la barre. Cliquez pour développer ou réduire la barre de recherche."
         aria-haspopup="true">
-        <button data-target="search-mobile" aria-expanded="false">Search</button>
+        <button data-target="search-mobile" aria-expanded="false">Chercher</button>
         <div id="search-mobile" class="menu-target">
-  <form action="/cif-cic/search">
-    <label class="sr-only" for="indicator_search-mobile">Search</label>
-    <input type="text" name="q" id="indicator_search-mobile" title="Search" /><!--
-    --><button aria-label="Search" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
+  <form action="/cif-cic/fr/search">
+    <label class="sr-only" for="indicator_search-mobile">Chercher</label>
+    <input type="text" name="q" id="indicator_search-mobile" title="Chercher" /><!--
+    --><button aria-label="Chercher" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
   </form>
 </div>
 
     </li>
 </ul>
       <div id="search" class="menu-target">
-  <form action="/cif-cic/search">
-    <label class="sr-only" for="indicator_search">Search</label>
-    <input type="text" name="q" id="indicator_search" title="Search" /><!--
-    --><button aria-label="Search" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
+  <form action="/cif-cic/fr/search">
+    <label class="sr-only" for="indicator_search">Chercher</label>
+    <input type="text" name="q" id="indicator_search" title="Chercher" /><!--
+    --><button aria-label="Chercher" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
   </form>
 </div>
 
       <ul class="nav navbar-nav menu-target contrast-switcher" id="menu"><li class="nav-link ">
-    <a href="/cif-cic/goals">Goals</a>
+    <a href="/cif-cic/fr/goals">Objectifs</a>
 </li><li class="nav-link ">
-    <a href="/cif-cic/about">About</a>
+    <a href="/cif-cic/fr/about">À propos</a>
 </li><li class="nav-link ">
-    <a href="/cif-cic/news">Related Products</a>
+    <a href="/cif-cic/fr/news">Mises à jour</a>
 </li><li class="nav-link ">
-    <a href="/cif-cic/faq">FAQ</a>
+    <a href="/cif-cic/fr/faq">FAQ</a>
 </li><li class="language-toggle-menu-header">
     
 
@@ -270,11 +270,11 @@ var translations = {
   
   <div class="btn-group language-toggle-dropdown ">
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">English</span>
-      <span class="language-abbreviation">en</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
+      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Français</span>
+      <span class="language-abbreviation">fr</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
     <ul class="dropdown-menu"><li>
-            <a href="/cif-cic/fr/4/">
-              Français
+            <a href="/cif-cic/categories/">
+              English
             </a>
           </li></ul>
   </div>
@@ -293,141 +293,106 @@ var translations = {
 
 
 
-
-<div class="container">
-  <ol class="breadcrumb">
-  
-  <li><a href="/cif-cic/">Home</a></li>
-  <li><a href="/cif-cic/goals">Goals</a></li>
-  
-  
-</ol>
-
-  
-    
-<div class="previous-next-links row">
-    <div class="col-xs-3 col-md-3 col-lg-4 pull-left text-left">
-        <a class="btn btn-primary" href="/cif-cic/3" aria-labelledby="previous-link">
-            <i class="fa fa-chevron-left" aria-hidden="true"></i>
-            <span id="previous-link" class="hidden-sm hidden-xs">Previous goal</span>
-        </a>
-    </div>
-    <div class="col-xs-3 col-md-3 col-lg-4 pull-right text-right">
-        <a class="btn btn-primary" href="/cif-cic/5" aria-labelledby="next-link">
-            <i class="fa fa-chevron-right" aria-hidden="true"></i>
-            <span id="next-link" class="hidden-sm hidden-xs">Next goal</span>
-        </a>
-    </div>
-</div>
+<div id="main-content" class="container" role="main">
+  <div class="row">
+    <div class="col-xs-12">
+      <h2 id="produits-connexes">Produits connexes</h2>
+<p>Cette page contient une séries de produits connexes aux ODD. Sélectionnez un post ou une catégorie pour y accéder.</p>
 
 
-  
-</div>
-
-<div class="heading goal-banner goal-4">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-4 col-md-3 col-lg-2 goal-tiles">
-        <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic/assets/img/cards/inverted/en/4.png" alt="Quality education - Goal 4" id="goal-4" class="goal-icon-image goal-icon-image-" />
-      </div>
-      <div class="col-xs-8 col-md-9 col-lg-10">
-        <h1>
-          <span class="hidden-sm hidden-md hidden-lg">Goal 4: </span>Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all
-        </h1>
-      </div>
+      
+        <div class="archive-group">
+          
+          <div id="#Analysis">
+            <h4 class="category-head">Analysis</h4>
+            <a name="Analysis"></a>
+            
+            
+          </div>
+        </div>
+      
+        <div class="archive-group">
+          
+          <div id="#Analyse">
+            <h4 class="category-head">Analyse</h4>
+            <a name="Analyse"></a>
+            
+            
+            <article class="archive-item">
+              <time datetime="2018-03-14T00:00:00+00:00" itemprop="datePublished">Mar 14, 2018</time> - <a href="/cif-cic/fr/activité-humaine-et-environnement/">L'activité humaine et l'environnement</a>
+            </article>
+            
+          </div>
+        </div>
+      
+        <div class="archive-group">
+          
+          <div id="#SDG">
+            <h4 class="category-head">SDG</h4>
+            <a name="SDG"></a>
+            
+            
+          </div>
+        </div>
+      
+        <div class="archive-group">
+          
+          <div id="#Data hub">
+            <h4 class="category-head">Data hub</h4>
+            <a name="Data hub"></a>
+            
+            
+            <article class="archive-item">
+              <time datetime="2018-05-16T00:00:00+00:00" itemprop="datePublished">Mai 16, 2018</time> - <a href="/cif-cic/fr/carrefour-données-odd/">Carrefour de données ODD</a>
+            </article>
+            
+          </div>
+        </div>
+      
+        <div class="archive-group">
+          
+          <div id="#ODD">
+            <h4 class="category-head">ODD</h4>
+            <a name="ODD"></a>
+            
+            
+            <article class="archive-item">
+              <time datetime="2020-10-20T00:00:00+00:00" itemprop="datePublished">Oct 20, 2020</time> - <a href="/cif-cic/fr/feuillets-information/">Feuillets d'information sur les ODD</a>
+            </article>
+            
+            <article class="archive-item">
+              <time datetime="2018-05-16T00:00:00+00:00" itemprop="datePublished">Mai 16, 2018</time> - <a href="/cif-cic/fr/carrefour-données-odd/">Carrefour de données ODD</a>
+            </article>
+            
+          </div>
+        </div>
+      
+        <div class="archive-group">
+          
+          <div id="#Infographics">
+            <h4 class="category-head">Infographics</h4>
+            <a name="Infographics"></a>
+            
+            
+          </div>
+        </div>
+      
+        <div class="archive-group">
+          
+          <div id="#Infographie">
+            <h4 class="category-head">Infographie</h4>
+            <a name="Infographie"></a>
+            
+            
+            <article class="archive-item">
+              <time datetime="2020-10-20T00:00:00+00:00" itemprop="datePublished">Oct 20, 2020</time> - <a href="/cif-cic/fr/feuillets-information/">Feuillets d'information sur les ODD</a>
+            </article>
+            
+          </div>
+        </div>
+      
     </div>
   </div>
-</div>
-
-<div id="main-content" class="container goal-indicators goal-4 goal-by-target" role="main">
-
-  
-
-
-
-  <div class="visible-md-block visible-lg-block">
-    <div class="col-md-6">
-      <h2>Ambitions and Targets</h2>
-    </div>
-    <div class="col-md-6">
-      <h2>Indicators</h2>
-    </div>
-  </div>
-
-  
-  
-    
-    <div class="indicator-cards target goal-target col-md-6">
-      <span class="indicator-card-number">
-        <label class="hidden-md hidden-lg">Target</label>
-        4.1
-      </span>
-      <p><strong>Ambition</strong> - Canadians have access to inclusive and quality education throughout their lives <br><strong>Target</strong> - No specific target</p>
-    </div>
-    <div class="indicator-cards col-md-6 row no-gutters">
-    
-
-      
-      
-      
-      
-      
-      
-      
-      
-
-      <div class="col-md-12  goal-indicator">
-        <span class="indicator-card-number">
-          4.1.1
-          <span class="status complete">
-            Reported online
-          </span>
-        </span>
-        <a href="/cif-cic/4-1-1">
-          High school completion rate
-        </a>
-        
-
-      </div>
-    
-    </div>
-  
-    
-    <div class="indicator-cards target goal-target col-md-6">
-      <span class="indicator-card-number">
-        <label class="hidden-md hidden-lg">Target</label>
-        4.2
-      </span>
-      <p><strong>Ambition</strong> - Canadians have access to inclusive and quality education throughout their lives <br><strong>Target</strong> - No specific target</p>
-    </div>
-    <div class="indicator-cards col-md-6 row no-gutters">
-    
-
-      
-      
-      
-      
-      
-      
-      
-      
-
-      <div class="col-md-12  goal-indicator">
-        <span class="indicator-card-number">
-          4.2.1
-          <span class="status complete">
-            Reported online
-          </span>
-        </span>
-        <a href="/cif-cic/4-2-1">
-           Post-secondary education attainment rate
-        </a>
-        
-
-      </div>
-    
-    </div>
-  
 </div>
 
 <footer role="contentinfo">
@@ -436,11 +401,11 @@ var translations = {
       <div class="col-xs-12">
         <div id="footerLinks">
           <ul>
-            <li><a href="https://open-sdg.org">Built using Open SDG</a></li>
+            <li><a href="https://open-sdg.org">Construit en utilisant Open SDG</a></li>
             
               <li>
                 
-                  <a href="mailto:statcan.sdg-odd.statcan@canada.ca" target="_blank">Contact us</a>
+                  <a href="mailto:statcan.sdg-odd.statcan@canada.ca" target="_blank">Contactez-nous</a>
                 
                 </li>
               <li>
@@ -475,11 +440,11 @@ var translations = {
                 </li>
               <li>
                 
-                  <a href="https://www.statcan.gc.ca/" target="_blank">Statistics Canada</a>
+                  <a href="https://www.statcan.gc.ca/" target="_blank">Statistique Canada</a>
                 
                 </li>
               <li>
-                <a href="/cif-cic/about/cookies-and-privacy/">Cookies</a>
+                <a href="/cif-cic/fr/about/cookies-and-privacy/">Cookies</a>
                 
                 </li>
               
@@ -511,10 +476,10 @@ var translations = {
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
 <script>translations['general'] = translations['general'] || {};
-    translations['general']['hide'] = 'hide';</script>
+    translations['general']['hide'] = 'masquer';</script>
 
 <script>translations['search'] = translations['search'] || {};
-    translations['search']['search'] = 'Search';</script>
+    translations['search']['search'] = 'Chercher';</script>
 
 <script src='/cif-cic/assets/js/sdg.js?v=20210615154324'></script>
 
