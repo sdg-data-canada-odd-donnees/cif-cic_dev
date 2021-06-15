@@ -4,7 +4,7 @@ title: Feuillets d'information sur les ODD
 author: Équipe des ODDs
 excerpt: "Les feuillets d'information contiennent des statistiques et des renseignements brefs et spécifiques liés à chaque ODD, ainsi qu'un encadré spécial, « Pleins feux sur la collectivité » qui met en valeur le travail effectué par les organismes sans but lucratif et les organisations caritatives du Canada."
 language: fr
-permalink: /fr/feuillets-information/
+permalink: /fr/sdg-fact-sheets/
 categories:
   - ODD
   - Infographie
