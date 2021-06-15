@@ -4,7 +4,7 @@ title: Carrefour de données ODD
 author: Équipe des ODD de Statistique Canada
 excerpt: "Le Carrefour de données liées aux objectifs de développement durable (ODD) a été développé pour être un guichet unique en ligne contenant des renseignements et des statistiques qui permettent aux Canadiens de suivre les progrès accomplis à l'égard des objectifs et des cibles du Programme 2030."
 language: fr
-permalink: /fr/carrefour-données-odd/
+permalink: /fr/sdg-data-hub/
 categories:
   - ODD
   - Carrefour de données
