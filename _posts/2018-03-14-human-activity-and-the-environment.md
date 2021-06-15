@@ -9,4 +9,4 @@ categories:
   - Analysis
 
 ---
-This series of publication offers analytical articles on specific topics related to human activity and the environment.
+This [series of publication](https://www150.statcan.gc.ca/n1/en/catalogue/16-201-X) offers analytical articles on specific topics related to human activity and the environment.
