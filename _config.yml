@@ -123,8 +123,8 @@ menu:
     translation_key: menu.about
  # - path: /analysis
  #   translation_key: menu.guidance
-  - path: /news
-    translation_key: menu.updates
+  - path: /related-products
+    translation_key: menu.related-products
   - path: /faq
     translation_key: menu.faq
 
