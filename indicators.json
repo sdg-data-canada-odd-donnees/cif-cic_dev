@@ -327,8 +327,8 @@
         },
         {
           "id": "8-4-1",
-          "title": "Proportion of involuntary part-time workers",
-          "description": "This indicator measures the proportion of involuntary part-time workers. The rate of involuntary part-time workers can be derived in different ways. The one used for this indicator is based on all involuntary part-time workers, whether they looked for full-time work or not. The rate is then presented as the number of involuntary part-timers as a share of the part-time employed.",
+          "title": "Rate of involuntary part-time work",
+          "description": "This indicator measures the rate of involuntary part-time work. The rate of involuntary part-time work can be derived in different ways. The one used for this indicator is based on all involuntary part-time workers, whether they looked for full-time work or not. The rate is then presented as the number of involuntary part-timers as a share of the part-time employed.",
           "keywords": "women, gender",
           "href": "/cif-cic/8-4-1",
           "status": "complete"
