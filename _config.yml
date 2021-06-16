@@ -213,8 +213,8 @@ breadcrumbs:
   post:
     - label: general.home
       path: /
-    - label: menu.updates
-      path: /news
+ #   - label: menu.updates
+ #     path: /news
   goal:
     - label: general.home
       path: /
