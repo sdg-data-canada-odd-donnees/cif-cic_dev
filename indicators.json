@@ -10,7 +10,7 @@
           "title": "Poverty rate, as measured by Canada’s official poverty line",
           "description": "This indicator measures the percentage of persons in low income using the Market Basket Measures (MBM), which was adopted as Canada's Official Poverty Line. According to the MBM, a family lives in poverty if it does not have enough income to purchase a specific basket of goods and services in its community.",
           "keywords": "women, gender",
-          "href": "/cif-cic/1-1-1",
+          "href": "/cif-cic_prod/1-1-1",
           "status": "complete"
         },
         {
@@ -18,7 +18,7 @@
           "title": "Prevalence of asset resilience",
           "description": "This indicator measures the percentage of persons who are asset resilient. Asset resilience is defined as having enough savings to maintain well-being for a specified period of time. More specifically, the ability of Canadians to cover unexpected expenses, or reduced income, by drawing from assets (e.g. a bank account) for a specified period of time.",
           "keywords": "women, gender",
-          "href": "/cif-cic/1-2-1",
+          "href": "/cif-cic_prod/1-2-1",
           "status": "complete"
         }]
     }
@@ -34,7 +34,7 @@
           "title": "Prevalence of food insecurity",
           "description": "This indicator measures the proportion of household living with food insecurity. This measure is based on a set of 18 questions and indicates whether households both with and without children were able to afford the food they needed in the previous 12 months.",
           "keywords": "women, gender",
-          "href": "/cif-cic/2-1-1",
+          "href": "/cif-cic_prod/2-1-1",
           "status": "complete"
         },
         {
@@ -42,7 +42,7 @@
           "title": "Index of Agri-Environmental Sustainability",
           "description": "This indicator is an index that measures Agri-Environmental Sustainability. Agriculture and Agri-Food Canada developed a set of science-based agri-environmental indicators (AEIs) that integrate information on soils, climate and topography with statistics on land use and crop and livestock management practices. The indices are divided in five “health classes”, defined as: 80-100 Desired; 60-79 Good; 40-59 Moderate; 20-39 Poor; 0-19 At risk.",
           "keywords": "",
-          "href": "/cif-cic/2-2-1",
+          "href": "/cif-cic_prod/2-2-1",
           "status": "complete"
         }]
     }
@@ -58,7 +58,7 @@
           "title": "Percentage of Canadians who report eating fruits and vegetables 5 or more times per day",
           "description": "This indicator measures the percentage of Canadians who report eating fruits and vegetables 5 or more times per day. This includes fresh fruits and vegetables as well as pure fruit juice, frozen or canned fruits and vegetables, and dried fruit, but excludes fried potatoes.",
           "keywords": "women, gender",
-          "href": "/cif-cic/3-1-1",
+          "href": "/cif-cic_prod/3-1-1",
           "status": "complete"
         },
         {
@@ -66,7 +66,7 @@
           "title": "Prevalence of vaping among youth",
           "description": "This indicator measures the percentage of Canadian students who have smoked one or more cigarettes in the past 30 days. This category will include current smokers as well as experimental smokers who have tried a cigarette in the past 30 days.",
           "keywords": "women, gender",
-          "href": "/cif-cic/3-2-1",
+          "href": "/cif-cic_prod/3-2-1",
           "status": "complete"
         },
         {
@@ -74,7 +74,7 @@
           "title": "Percentage of the population that is overweight or obese",
           "description": "This indicator measures the percentage of the population that is overweight or obese. The indicator uses the body mass index (BMI) which is calculated by dividing the respondent's body weight (in kilograms) by their height (in metres) squared.",
           "keywords": "women, gender",
-          "href": "/cif-cic/3-3-1",
+          "href": "/cif-cic_prod/3-3-1",
           "status": "complete"
         },
         {
@@ -82,7 +82,7 @@
           "title": "Prevalence of harmful alcohol use",
           "description": "This indicator measures the prevalence of harmful alcohol use. Harmful alcohol use or heavy drinking refers to males who reported having 5 or more drinks, or women who reported having 4 or more drinks, on one occasion, at least once a month in the past year.",
           "keywords": "women, gender",
-          "href": "/cif-cic/3-4-1",
+          "href": "/cif-cic_prod/3-4-1",
           "status": "complete"
         },
         {
@@ -90,7 +90,7 @@
           "title": "Percentage of Canadians who are satisfied or very satisfied with their life",
           "description": "This indicator measures the percentage of the population aged 12 and over who reported being satisfied or very satisfied with their life in general.",
           "keywords": "women, gender",
-          "href": "/cif-cic/3-5-1",
+          "href": "/cif-cic_prod/3-5-1",
           "status": "complete"
         },
         {
@@ -98,7 +98,7 @@
           "title": "Percentage of Canadians who perceived their overall health and social well-being as very good to excellent",
           "description": "This indicator measures the percentage of Canadians aged 12 and over who reported perceiving their own health status as being either excellent or very good or fair or poor. Perceived health refers to the perception of a person's health in general, either by the person himself or herself, or, in the case of proxy response, by the person responding. Health means not only the absence of disease or injury but also physical, mental and social well-being.",
           "keywords": "women, gender",
-          "href": "/cif-cic/3-6-1",
+          "href": "/cif-cic_prod/3-6-1",
           "status": "complete"
         },
         {
@@ -106,7 +106,7 @@
           "title": "Percentage of Canadians who perceived their mental health as very good to excellent",
           "description": "This indicator measures the percentage of the population who perceived their mental health as very good to excellent. Perceived mental health refers to the perception of a person's mental health in general.",
           "keywords": "women, gender",
-          "href": "/cif-cic/3-7-1",
+          "href": "/cif-cic_prod/3-7-1",
           "status": "complete"
         },
         {
@@ -114,7 +114,7 @@
           "title": "Vaccination rates for selected diseases",
           "description": "This indicator measures the childhood vaccination rates for selected diseases. The Public Health Agency of Canada routinely monitors childhood vaccination coverage in Canada through the childhood National Immunization Coverage Survey.",
           "keywords": "women, gender",
-          "href": "/cif-cic/3-8-1",
+          "href": "/cif-cic_prod/3-8-1",
           "status": "complete"
         },
         {
@@ -122,7 +122,7 @@
           "title": "Incidence of selected diseases",
           "description": "This indicator measures the incidence of 10 selected diseases. This refers to the rate incidence of a specific disease per 100,000 population.",
           "keywords": "",
-          "href": "/cif-cic/3-9-1",
+          "href": "/cif-cic_prod/3-9-1",
           "status": "complete"
         },
         {
@@ -130,7 +130,7 @@
           "title": "Mortality rate for selected causes of death",
           "description": "This indicator measures the age-specific mortality rate for selected diseases. The age-specific mortality rate represents the number of deaths in a particular age group during a given year per 100,000 population in the same age group of the same year.",
           "keywords": "women, gender",
-          "href": "/cif-cic/3-10-1",
+          "href": "/cif-cic_prod/3-10-1",
           "status": "complete"
         },
         {
@@ -138,7 +138,7 @@
           "title": "Tuberculosis incidence per 100,000 population in Inuit Nunangat",
           "description": "This indicator measures the Tuberculosis incidence rate per 100,000 population in Inuit Nunangat.",
           "keywords": "",
-          "href": "/cif-cic/3-11-1",
+          "href": "/cif-cic_prod/3-11-1",
           "status": "complete"
         },
         {
@@ -146,7 +146,7 @@
           "title": "Incidence of opioid and stimulant overdose related harms",
           "description": "<p>This indicator measures the incidence of opioid and stimulant overdose related harms per 100,000 population. More specifically, it measures the incidence of: <br> 1. apparent opiod toxicity deaths;<br> 2. opioid-related and stimulant-related poisoning hospitalizations; and<br> 3. Emergency Medical Services responses to suspected opioid overdoses</p>",
           "keywords": "",
-          "href": "/cif-cic/3-12-1",
+          "href": "/cif-cic_prod/3-12-1",
           "status": "complete"
         },
         {
@@ -154,7 +154,7 @@
           "title": "Prevalence of cigarette smoking",
           "description": "This indicator measures the percentage of Canadians who are current cigarette smokers.",
           "keywords": "women, gender",
-          "href": "/cif-cic/3-13-1",
+          "href": "/cif-cic_prod/3-13-1",
           "status": "complete"
         }]
     }
@@ -170,7 +170,7 @@
           "title": "High school completion rate",
           "description": "This indicator measures the percentage of persons who have completed a high school diploma or equivalency certificate.",
           "keywords": "women, gender",
-          "href": "/cif-cic/4-1-1",
+          "href": "/cif-cic_prod/4-1-1",
           "status": "complete"
         },
         {
@@ -178,7 +178,7 @@
           "title": "Post-secondary education attainment rate",
           "description": "This indicator measures the attainment rate for post-secondary education. Categories represent the highest level of education achieved, and are mutually exclusive.",
           "keywords": "women, gender",
-          "href": "/cif-cic/4-2-1",
+          "href": "/cif-cic_prod/4-2-1",
           "status": "complete"
         }]
     }
@@ -194,7 +194,7 @@
           "title": "Proportion of the population who self-reported being sexually assaulted in the last 12 months",
           "description": "This indicator measures the proportion of the population who self-reported being sexually assaulted in the last 12 months.",
           "keywords": "women, gender",
-          "href": "/cif-cic/5-1-1",
+          "href": "/cif-cic_prod/5-1-1",
           "status": "complete"
         },
         {
@@ -202,7 +202,7 @@
           "title": "Proportion of women and girls aged 15 years and older subjected to physical, sexual or psychological violence by a current or former intimate partner in the last 12 months",
           "description": "This indicator measures the proportion of women and girls aged 15 years and older subjected to intimate partner violence in the last 12 months. Intimate partner violence (IPV) encompasses a broad range of behaviours, ranging from emotional and financial abuse to physical and sexual assault.",
           "keywords": "women, gender",
-          "href": "/cif-cic/5-1-2",
+          "href": "/cif-cic_prod/5-1-2",
           "status": "complete"
         },
         {
@@ -210,7 +210,7 @@
           "title": "Proportion of leadership roles held by women",
           "description": "This indicator measures the proportion of women in leadership roles. Leadership roles selected include women elected to national Parliament and ministers appointed to federal cabinet, federal and provincial judges and various types of management position.",
           "keywords": "women, gender",
-          "href": "/cif-cic/5-2-1",
+          "href": "/cif-cic_prod/5-2-1",
           "status": "complete"
         },
         {
@@ -218,7 +218,7 @@
           "title": "Proportion of time spent on unpaid domestic and care work",
           "description": "This indicator measures the proportion of time spent on unpaid domestic and care work. Unpaid domestic and care work includes: household chores, care of household children or adults and shopping for goods and services.",
           "keywords": "women, gender",
-          "href": "/cif-cic/5-3-1",
+          "href": "/cif-cic_prod/5-3-1",
           "status": "complete"
         }]
     }
@@ -234,7 +234,7 @@
           "title": "Number of long-term drinking water advisories on public systems on reserves",
           "description": "This indicator measures the number of long-term drinking water advisories on public systems in First Nations communities. Drinking water advisories are issued to warn people to not drink water that may be unsafe or is known to not be safe based on water quality test results.",
           "keywords": "",
-          "href": "/cif-cic/6-1-1",
+          "href": "/cif-cic_prod/6-1-1",
           "status": "complete"
         },
         {
@@ -242,7 +242,7 @@
           "title": "Percentage of municipalities across Canada with sustained drinking water advisories",
           "description": "This indicator measures the percentage of municipalities across Canada with sustained drinking water advisories per year. A sustained drinking water advisory is defined as one that exceeds 15 days in duration.",
           "keywords": "",
-          "href": "/cif-cic/6-2-1",
+          "href": "/cif-cic_prod/6-2-1",
           "status": "complete"
         },
         {
@@ -250,7 +250,7 @@
           "title": "Water use growth rate",
           "description": "This indicator measures the growth rate in water use for different sectors of the economy as well as for households. Water use refers to the intake of water either self-supplied (i.e. direct abstraction from the environment) or supplied from municipal systems.",
           "keywords": "",
-          "href": "/cif-cic/6-3-1",
+          "href": "/cif-cic_prod/6-3-1",
           "status": "complete"
         },
         {
@@ -258,7 +258,7 @@
           "title": "Water quality in Canadian rivers",
           "description": "<p>These indicators provide a measure of the ability of river water across Canada to support plants and animals. At each monitoring site, specific water quality data are compared to water quality guidelines to create a rating for the site. If measured water quality remains within the guidelines, it can maintain a healthy ecosystem. <br> Water quality at a monitoring site is considered excellent when parameters in a river almost always meet their guidelines. Conversely, water quality is rated poor when parameters usually do not meet their guidelines, sometimes by a wide margin. ((<em>Environment and climate change Canada (ECCC)</em>)</p>",
           "keywords": "",
-          "href": "/cif-cic/6-4-1",
+          "href": "/cif-cic_prod/6-4-1",
           "status": "complete"
         }]
     }
@@ -274,7 +274,7 @@
           "title": "Annual energy savings resulting from adoption of energy efficiency codes, standards and practices",
           "description": "This indicator measures the total annual energy savings resulting from adoption of energy efficiency codes, standards and practices.",
           "keywords": "",
-          "href": "/cif-cic/7-1-1",
+          "href": "/cif-cic_prod/7-1-1",
           "status": "complete"
         },
         {
@@ -282,7 +282,7 @@
           "title": "Total energy consumption per capita",
           "description": "This indicator measures the consumption of different types of energy in terajoules or in terajoules per capita.",
           "keywords": "",
-          "href": "/cif-cic/7-2-1",
+          "href": "/cif-cic_prod/7-2-1",
           "status": "complete"
         },
         {
@@ -290,7 +290,7 @@
           "title": "Proportion of electricity generated from renewable and non-greenhouse gas emitting sources",
           "description": "This indicator measures the proportion of electricity generated from renewable and non-greenhouse gas emitting sources.",
           "keywords": "",
-          "href": "/cif-cic/7-3-1",
+          "href": "/cif-cic_prod/7-3-1",
           "status": "complete"
         }]
     }
@@ -306,7 +306,7 @@
           "title": "Unemployment rate",
           "description": "This indicator measures the unemployment rate. The unemployment rate is the number of unemployed persons expressed as a percentage of the labour force.",
           "keywords": "women, gender",
-          "href": "/cif-cic/8-1-1",
+          "href": "/cif-cic_prod/8-1-1",
           "status": "complete"
         },
         {
@@ -314,7 +314,7 @@
           "title": "Proportion of employees earning less than 66% of the median hourly wage for permanent full-time employees",
           "description": "This indicator measures the percentage and number of employees earning less than two-thirds of the annual median wage.",
           "keywords": "",
-          "href": "/cif-cic/8-2-1",
+          "href": "/cif-cic_prod/8-2-1",
           "status": "complete"
         },
         {
@@ -322,7 +322,7 @@
           "title": "Proportion of youth not in education, employment or training",
           "description": "This indicator measures the proportion of youth not in education, employment or training.",
           "keywords": "women, gender",
-          "href": "/cif-cic/8-3-1",
+          "href": "/cif-cic_prod/8-3-1",
           "status": "complete"
         },
         {
@@ -330,7 +330,7 @@
           "title": "Rate of involuntary part-time work",
           "description": "This indicator measures the rate of involuntary part-time work. The rate of involuntary part-time work can be derived in different ways. The one used for this indicator is based on all involuntary part-time workers, whether they looked for full-time work or not. The rate is then presented as the number of involuntary part-timers as a share of the part-time employed.",
           "keywords": "women, gender",
-          "href": "/cif-cic/8-4-1",
+          "href": "/cif-cic_prod/8-4-1",
           "status": "complete"
         },
         {
@@ -338,7 +338,7 @@
           "title": "Gross domestic product per capita",
           "description": "This indicator measures the gross domestic product (GDP) per capita.",
           "keywords": "",
-          "href": "/cif-cic/8-5-1",
+          "href": "/cif-cic_prod/8-5-1",
           "status": "complete"
         },
         {
@@ -346,7 +346,7 @@
           "title": "Jobs in the clean technology products sector",
           "description": "This indicator measures the number of jobs that are attributable to environmental and clean technology activity.",
           "keywords": "",
-          "href": "/cif-cic/8-6-1",
+          "href": "/cif-cic_prod/8-6-1",
           "status": "complete"
         }]
     }
@@ -362,7 +362,7 @@
           "title": "Proportion of innovation in environment-related technology",
           "description": "The indicator measures the proportion of patents in environment-related technology out of the total number of patents.",
           "keywords": "",
-          "href": "/cif-cic/9-1-1",
+          "href": "/cif-cic_prod/9-1-1",
           "status": "complete"
         },
         {
@@ -370,7 +370,7 @@
           "title": "Gross domestic expenditure on research and development intensity",
           "description": "This indicator measures the proportion of gross domestic expenditure allocated to research & development (GERD). The GERD is the aggregate of the total R&D expenditures and serves as a general indicator of R&D activity.",
           "keywords": "",
-          "href": "/cif-cic/9-2-1",
+          "href": "/cif-cic_prod/9-2-1",
           "status": "complete"
         },
         {
@@ -378,7 +378,7 @@
           "title": "Proportion of households that have access to broadband Internet service at speeds of 50/10 Mbps",
           "description": "This indicator measures the proportion of households that have access to broadband internet service at speeds of 50 Mbps for downloads / 10 Mbps for uploads and unlimited data.",
           "keywords": "",
-          "href": "/cif-cic/9-3-1",
+          "href": "/cif-cic_prod/9-3-1",
           "status": "complete"
         },
         {
@@ -386,7 +386,7 @@
           "title": "Proportion of Canadians that have access to the latest generally deployed mobile wireless technology",
           "description": "This indicator measures the availability of the latest generally deployed mobile wireless technology. In this case, technologies such as HSPA+, LTE and LTE ‑A as well as the upcoming 5G are included.",
           "keywords": "",
-          "href": "/cif-cic/9-4-1",
+          "href": "/cif-cic_prod/9-4-1",
           "status": "complete"
         },
         {
@@ -394,7 +394,7 @@
           "title": "Greenhouse gas emissions per dollar of value-added from the production of infrastructure assets",
           "description": "Not available",
           "keywords": "",
-          "href": "/cif-cic/9-5-1",
+          "href": "/cif-cic_prod/9-5-1",
           "status": "notstarted"
         },
         {
@@ -402,7 +402,7 @@
           "title": "Number of low carbon recharging and refueling stations under development and completed along major highways, and in rural and urban areas across Canada",
           "description": "This indicator tracks the number of alternative fuel stations (Electric, Hydrogen and Liquified Natural Gas) in Canada. “Under development” means chargers/ stations for which an agreement is in place, but which have not yet been opened to the public. “Completed” means chargers/ stations that are built and open to the public for charging or refuelling.",
           "keywords": "",
-          "href": "/cif-cic/9-6-1",
+          "href": "/cif-cic_prod/9-6-1",
           "status": "complete"
         },
         {
@@ -410,7 +410,7 @@
           "title": "Number of low carbon recharging and refueling stations under development and completed in public places, on-street, at apartment buildings, retail outlets, and the workplace",
           "description": "This indicator tracks the number of low carbon recharging and refueling stations under development and completed in public places, on-street, at apartment buildings, retail outlets, and the workplace. “Under development” means chargers/ stations for which an agreement is in place, but which have not yet been opened to the public. “Completed” means chargers/ stations that are built and open to the public for charging or refuelling",
           "keywords": "",
-          "href": "/cif-cic/9-7-1",
+          "href": "/cif-cic_prod/9-7-1",
           "status": "notstarted"
         }]
     }
@@ -426,7 +426,7 @@
           "title": "Gini Coefficient",
           "description": "This indicator measures the Gini coefficient. The Gini coefficient is a number between zero and one that measures the relative degree of inequality in the distribution of income.",
           "keywords": "",
-          "href": "/cif-cic/10-1-1",
+          "href": "/cif-cic_prod/10-1-1",
           "status": "complete"
         },
         {
@@ -434,7 +434,7 @@
           "title": "Proportion of the population reporting discrimination or unfair treatment",
           "description": "This indicator measures the proportion of the population reporting discrimination or unfair treatment. Hate crimes refer to criminal offences motivated by bias, prejudice, or hate based on race, national or ethnic origin, language, colour, religion, sex, age, mental or physical disability, sexual orientation or any other similar factor, such as profession or political beliefs.",
           "keywords": "",
-          "href": "/cif-cic/10-2-1",
+          "href": "/cif-cic_prod/10-2-1",
           "status": "complete"
         },
         {
@@ -442,7 +442,7 @@
           "title": "Median hourly wage ratio",
           "description": "This indicator measures the gender wage ratio. The gender wage ratio can be interpreted as the proportion of a dollar that women earn for every dollar earned by men.",
           "keywords": "women, gender",
-          "href": "/cif-cic/10-3-1",
+          "href": "/cif-cic_prod/10-3-1",
           "status": "complete"
         },
         {
@@ -450,7 +450,7 @@
           "title": "Median household after-tax income",
           "description": "This indicator measures the median after-tax income. The concept of income covers income received while a resident of Canada or as relevant for income tax purposes in Canada.",
           "keywords": "women, gender",
-          "href": "/cif-cic/10-4-1",
+          "href": "/cif-cic_prod/10-4-1",
           "status": "complete"
         }]
     }
@@ -466,7 +466,7 @@
           "title": "Growth rate of people experiencing chronic homelessness",
           "description": "<p>The indicator measures the growth rate of people experiencing chronic homelessness.<br> Refers to individuals who are currently experiencing homelessness AND who meet at least one of the following criteria:<br> 1) they have a total of at least 6 months (180 days) of homelessness over the past year;<br> 2) they have recurrent experiences of homelessness over the past 3 years, with a cumulative duration of at least 18 months (546 days). <em>(Reaching Home: Canada’s Homelessness Strategy Directives)</em>",
           "keywords": "",
-          "href": "/cif-cic/11-1-1",
+          "href": "/cif-cic_prod/11-1-1",
           "status": "complete"
         },
         {
@@ -474,7 +474,7 @@
           "title": "Proportion of households in core housing need",
           "description": "This indicator measures the proportion of household that lives in core housing need.",
           "keywords": "women, gender",
-          "href": "/cif-cic/11-2-1",
+          "href": "/cif-cic_prod/11-2-1",
           "status": "complete"
         },
         {
@@ -482,7 +482,7 @@
           "title": "Percentage of the population living in areas where air pollutants concentrations are less or equal to the 2020 Canadian Ambient Air Quality Standards",
           "description": "This indicator measures the percentage of the population living in areas where outdoor concentrations of air pollutants were below the 2020 standards. The Canadian Ambient Air Quality Standards (CAAQS, the standards) are health and environmental-based outdoor air quality objectives for pollutant concentrations in the air. The standards are intended to further protect human health and the environment and to drive continuous improvement in air quality across Canada. <em>(ECCC)</em>",
           "keywords": "",
-          "href": "/cif-cic/11-3-1",
+          "href": "/cif-cic_prod/11-3-1",
           "status": "complete"
         },
         {
@@ -490,7 +490,7 @@
           "title": "Percentage of the population living within 500 meters of a public transport stop",
           "description": "This indicator measures the proportion of the population within the geographic unit living within 500 meters of a public transit stop.",
           "keywords": "",
-          "href": "/cif-cic/11-4-1",
+          "href": "/cif-cic_prod/11-4-1",
           "status": "complete"
         },
         {
@@ -498,7 +498,7 @@
           "title": "Percentage  of the population using shared or active transportation for commuting",
           "description": "This indicator measures percentage of the population using shared or active transportation for commuting. Public transit includes bus, subway, elevated rail, light rail, streetcar, commuter train and passenger ferry. Active transport includes walking and cycling.",
           "keywords": "",
-          "href": "/cif-cic/11-5-1",
+          "href": "/cif-cic_prod/11-5-1",
           "status": "complete"
         },
         {
@@ -506,7 +506,7 @@
           "title": "Total waste disposal per capita",
           "description": "The indicator measures the amount of waste disposal (in kilograms) per capita by residential and non-residential sources.",
           "keywords": "",
-          "href": "/cif-cic/11-6-1",
+          "href": "/cif-cic_prod/11-6-1",
           "status": "complete"
         },
         {
@@ -514,7 +514,7 @@
           "title": "Percentage of the population aged 12 and over who reported their sense of belonging to their local community as being very strong or somewhat strong",
           "description": "This indicator measures the proportion of the population aged 12 and over who reported their sense of belonging to their local community as being very strong or somewhat strong.",
           "keywords": "women, gender",
-          "href": "/cif-cic/11-7-1",
+          "href": "/cif-cic_prod/11-7-1",
           "status": "complete"
         }]
     }
@@ -530,7 +530,7 @@
           "title": "Proportion of new light duty vehicle registrations that are zero-emission vehicles",
           "description": "This indicator measures the proportion of new vehicle registration that is for zero-emission vehicles.",
           "keywords": "",
-          "href": "/cif-cic/12-1-1",
+          "href": "/cif-cic_prod/12-1-1",
           "status": "complete"
         },
         {
@@ -538,7 +538,7 @@
           "title": "Proportion of businesses that adopted selected environmental protection activities and management practices",
           "description": "This indicator measures the share of establishments investing in environmental protection activities or management practices.",
           "keywords": "",
-          "href": "/cif-cic/12-2-1",
+          "href": "/cif-cic_prod/12-2-1",
           "status": "complete"
         },
         {
@@ -546,7 +546,7 @@
           "title": "Total waste diversion per capita",
           "description": "This indicator measures the amount of waste diverted per capita.",
           "keywords": "",
-          "href": "/cif-cic/12-3-1",
+          "href": "/cif-cic_prod/12-3-1",
           "status": "complete"
         }]
     }
@@ -562,7 +562,7 @@
           "title": "Greenhouse gas emissions",
           "description": "This indicator measures green gas emissions. Greenhouse gases (GHGs) are the atmospheric gases responsible for causing global warming and climate change. The major GHGs are carbon dioxide (CO2), methane (CH4) and nitrous oxide (N20). <em>(definition from United Nations Climate Change)</em>",
           "keywords": "",
-          "href": "/cif-cic/13-1-1",
+          "href": "/cif-cic_prod/13-1-1",
           "status": "complete"
         },
         {
@@ -570,7 +570,7 @@
           "title": "Frequency of selected natural disasters",
           "description": "This indicator measures the frequency of selected natural disasters as defined by the Canadian Disaster Database.",
           "keywords": "",
-          "href": "/cif-cic/13-2-1",
+          "href": "/cif-cic_prod/13-2-1",
           "status": "complete"
         },
         {
@@ -578,7 +578,7 @@
           "title": "Proportion of municipal organization who factored climate change adaptation into their decision-making process",
           "description": "<p>This indicator measures the proportion of municipal organization who factored climate change adapatation into their decision making process, for selected core infrastructure assets.<br> As of 2018, climate change adaptation is defined as changes in processes, practices, and structures to moderate potential damages or to benefit from opportunities associated with climate change. In 2016, climate change adaptation was defined as anticipating or monitoring climate change and undertaking actions to address the consequences of climate change.<br><br> Climate change is a long-term shift in weather conditions identified by changes in temperature, precipitation, winds, and other indicators. Climate change can involve both changes in average conditions and changes in variability, including for example, extreme events.</p>",
           "keywords": "",
-          "href": "/cif-cic/13-3-1",
+          "href": "/cif-cic_prod/13-3-1",
           "status": "complete"
         }]
     }
@@ -594,7 +594,7 @@
           "title": "Proportion of marine and coastal areas conserved",
           "description": "These indicators report the amount and proportion of Canada's terrestrial (land and freshwater) and marine area that is conserved. <em>(ECCC)</em>",
           "keywords": "",
-          "href": "/cif-cic/14-1-1",
+          "href": "/cif-cic_prod/14-1-1",
           "status": "complete"
         },
         {
@@ -602,7 +602,7 @@
           "title": "Proportion of fish stocks that are sustainably harvested",
           "description": "The indicator compares harvest rates with established harvest limits. These limits are based on scientific information, providing a direct measure of whether we are managing the use of these resources within ecosystem limits. It is one measure of fishing pressure on wild fish stocks. <em>(ECCC)</em>",
           "keywords": "",
-          "href": "/cif-cic/14-2-1",
+          "href": "/cif-cic_prod/14-2-1",
           "status": "complete"
         }]
     }
@@ -618,7 +618,7 @@
           "title": "Proportion of native wild species ranked secure or apparently secure according to the national extinction risk level",
           "description": "The main indicator summarizes the risk of extinction for individual species in Canada. A species is defined as a population of organisms that does not usually interbreed with other populations, even where they overlap in space and time. <em>(ECCC)</em>",
           "keywords": "",
-          "href": "/cif-cic/15-1-1",
+          "href": "/cif-cic_prod/15-1-1",
           "status": "complete"
         },
         {
@@ -626,7 +626,7 @@
           "title": "Proportion of species at risk showing progress towards their population and distribution objectives",
           "description": "The indicator shows whether population and distribution trends of species at risk are consistent with the objectives in final recovery strategies or management plans. <em>(ECCC)</em>",
           "keywords": "",
-          "href": "/cif-cic/15-2-1",
+          "href": "/cif-cic_prod/15-2-1",
           "status": "complete"
         },
         {
@@ -634,7 +634,7 @@
           "title": "Proportion of terrestrial (land and freshwater) area conserved",
           "description": "This indicator measures the proportion of Canada's terrestrial (land and freshwater) area that is conserved. <em>(ECCC)</em>",
           "keywords": "",
-          "href": "/cif-cic/15-3-1",
+          "href": "/cif-cic_prod/15-3-1",
           "status": "complete"
         },
         {
@@ -642,7 +642,7 @@
           "title": "Proportion of forest area under an independently verified forest management certification scheme",
           "description": "This indicator measures the proportion of forest area under an independently verified forest management certification scheme.",
           "keywords": "",
-          "href": "/cif-cic/15-4-1",
+          "href": "/cif-cic_prod/15-4-1",
           "status": "complete"
         },
         {
@@ -650,7 +650,7 @@
           "title": "Forest area as a proportion of total land area",
           "description": "This indicator measures the proportion of forested areas as a proportion of total land area. Forest area is a basic sustainability indicator and is important to monitor closely, particularly in regions where forest area is being lost. <em>(NRCan)</em>",
           "keywords": "",
-          "href": "/cif-cic/15-5-1",
+          "href": "/cif-cic_prod/15-5-1",
           "status": "complete"
         }]
     }
@@ -666,7 +666,7 @@
           "title": "Proportion of Canadians who reported feeling safe walking alone in their neighborhood after dark",
           "description": "This indicator measures the proportion of people in Canada who reported feeling safe walking alone in their neighborhood after dark.",
           "keywords": "women, gender",
-          "href": "/cif-cic/16-1-1",
+          "href": "/cif-cic_prod/16-1-1",
           "status": "complete"
         },
         {
@@ -674,7 +674,7 @@
           "title": "Crime severity index",
           "description": "The Crime Severity Index (CSI) measures changes in the level of severity of police-reported crime in Canada from year to year. The crime severity index includes all Criminal Code violations including traffic, as well as drug violations and all Federal Statutes.",
           "keywords": "",
-          "href": "/cif-cic/16-2-1",
+          "href": "/cif-cic_prod/16-2-1",
           "status": "complete"
         },
         {
@@ -682,7 +682,7 @@
           "title": "Incidence of selected types of crime",
           "description": "This indicator measures the rate of selected types of crime.",
           "keywords": "",
-          "href": "/cif-cic/16-3-1",
+          "href": "/cif-cic_prod/16-3-1",
           "status": "complete"
         },
         {
@@ -690,7 +690,7 @@
           "title": "Incidence of cyber-crime",
           "description": "This indicator measures the number of cyber-related violations.",
           "keywords": "",
-          "href": "/cif-cic/16-4-1",
+          "href": "/cif-cic_prod/16-4-1",
           "status": "complete"
         },
         {
@@ -698,7 +698,7 @@
           "title": "Criminal Court case completion time",
           "description": "This indicator measures the median number of days elapsed from first appearance to final decision of criminal court cases.",
           "keywords": "women, gender",
-          "href": "/cif-cic/16-5-1",
+          "href": "/cif-cic_prod/16-5-1",
           "status": "complete"
         },
         {
@@ -706,7 +706,7 @@
           "title": "Incarceration rate",
           "description": "The adult incarceration rate represents the average number of adults in custody per day for every 100,000 individuals in the adult population (18 years and older). It includes adults in sentenced custody, remand and other temporary detention.",
           "keywords": "",
-          "href": "/cif-cic/16-6-1",
+          "href": "/cif-cic_prod/16-6-1",
           "status": "complete"
         },
         {
@@ -714,7 +714,7 @@
           "title": "Proportion of the population with high levels of confidence in selected institutions",
           "description": "This indicator tracks the percentage of the population with high levels of confidence in selected institutions",
           "keywords": "women, gender",
-          "href": "/cif-cic/16-7-1",
+          "href": "/cif-cic_prod/16-7-1",
           "status": "complete"
         }]
     }
@@ -730,7 +730,7 @@
           "title": "Number of open datasets published by the Government of Canada",
           "description": "This indicator measures the number of open datasets published by the Government of Canada.",
           "keywords": "",
-          "href": "/cif-cic/17-1-1",
+          "href": "/cif-cic_prod/17-1-1",
           "status": "complete"
         },
         {
@@ -738,7 +738,7 @@
           "title": "Total official support for sustainable development",
           "description": "The concept of 'Sustainable Development' is defined as development that meets the needs of the present without compromising the ability of future generations to meet their own needs (<em>UNESCO</em> definition). Total Official Support for International Assistance (TOSSD) encompasses all officially supported resource flows to promote sustainable development in developing countries and to support development enablers and address global challenges. ([<em>Global Affairs Canada</em>](https://www.international.gc.ca/transparency-transparence/international-assistance-report-stat-rapport-aide-internationale/2019-2020.aspx?lang=eng#a1_7))",
           "keywords": "",
-          "href": "/cif-cic/17-2-1",
+          "href": "/cif-cic_prod/17-2-1",
           "status": "complete"
         }]
     }
