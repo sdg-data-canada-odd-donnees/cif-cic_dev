@@ -10,7 +10,7 @@
           "title": "Taux de pauvreté basé sur le seuil officiel de la pauvreté canadienne",
           "description": "Cet indicateur mesure le pourcentage de personnes à faible revenu basé sur la Mesure du panier de consommation (MPC), qui a été adoptée comme la mesure officielle de la pauvreté canadienne. D'après la MPC, une famille est à faible revenu si son revenu est insuffisant pour acheter un panier spécifique de produits et services dans sa communauté.",
           "keywords": "women, gender",
-          "href": "/cif-cic_prod/fr/1-1-1",
+          "href": "/cif-cic_dev/fr/1-1-1",
           "status": "complete"
         },
         {
@@ -18,7 +18,7 @@
           "title": "Prévalence de la résilience sur le plan des actifs",
           "description": "Cet indicateur mesure la prévalence de la résilience sur le plan des actifs. Une personne est en situation de résilience des actifs si elle a suffisamment d’épargne pour maintenir son bien-être pendant une période de temps précise. Plus spécifiquement, c’est la capacité qu’ont les Canadiens de pouvoir faire face à des dépenses inattendues ou à un revenu réduit en se servant de leurs actifs (par ex. un compte de banque) pour une période de temps précise.",
           "keywords": "women, gender",
-          "href": "/cif-cic_prod/fr/1-2-1",
+          "href": "/cif-cic_dev/fr/1-2-1",
           "status": "complete"
         }]
     }
@@ -34,7 +34,7 @@
           "title": "Prévalence de l'insécurité alimentaire",
           "description": "Cet indicateur mesure la prévalence de l'insécurité alimentaire. Cette variable est fondée sur un ensemble de 18 questions et indique si les ménages avec ou sans enfants avaient les moyens d'acheter les aliments dont ils avaient besoin au cours des 12 mois qui ont précédé l'enquête.",
           "keywords": "women, gender",
-          "href": "/cif-cic_prod/fr/2-1-1",
+          "href": "/cif-cic_dev/fr/2-1-1",
           "status": "complete"
         },
         {
@@ -42,7 +42,7 @@
           "title": "Indices de durabilité agroenvironnementale",
           "description": "Cet indicateur mesure l'agriculture écologiquement durable au Canada à l'aide d'indicateurs. Agriculture et Agroalimentaire Canada a développé un groupe d'indicateurs agroenvironnementaux basé sur la science qui intègre de l'information sur les sols, le climat et la topographie avec des statistiques sur l'utilisation des terres et de la gestion des cultures et du bétail. Les indices sont divisés en cinq « classes de santé », définies comme suit: 80-100 Souhaitable; 60-79 Bon; 40-59 Moyen; 20-39 Médiocre; 0-19 À risque.",
           "keywords": "",
-          "href": "/cif-cic_prod/fr/2-2-1",
+          "href": "/cif-cic_dev/fr/2-2-1",
           "status": "complete"
         }]
     }
@@ -58,7 +58,7 @@
           "title": "Pourcentage des Canadiens déclarant consommer des fruits et des légumes au moins 5 fois par jour",
           "description": "Cet indicateur mesure le pourcentage des Canadiens déclarant consommer des fruits et des légumes au moins 5 fois par jour. Cela inclut des jus de fruit purs, les fruits et légumes congelés ou en conserve, et les fruits séchés, mais exclut les pommes de terre frites.",
           "keywords": "women, gender",
-          "href": "/cif-cic_prod/fr/3-1-1",
+          "href": "/cif-cic_dev/fr/3-1-1",
           "status": "complete"
         },
         {
@@ -66,7 +66,7 @@
           "title": "Prévalence du vapotage chez les jeunes",
           "description": "Cet indicateur mesure l'utilisation des cigarettes électroniques au cours des 30 derniers jours. Ceci inclue les fumeurs quotidiens et les fumeurs occasionnels.",
           "keywords": "women, gender",
-          "href": "/cif-cic_prod/fr/3-2-1",
+          "href": "/cif-cic_dev/fr/3-2-1",
           "status": "complete"
         },
         {
@@ -74,7 +74,7 @@
           "title": "Pourcentage de la population vivant avec de l’embonpoint ou de l’obésité",
           "description": "Cet indicateur mesure le pourcentage de la population vivant avec de l’embonpoint ou de l’obésité selon l'indice de masse corporelle mesuré (IMC). L'indice de masse corporelle (IMC) est calculée en divisant le poids du répondant (exprimé en kilogramme) par le carré de la taille (exprimée en mètres).",
           "keywords": "women, gender",
-          "href": "/cif-cic_prod/fr/3-3-1",
+          "href": "/cif-cic_dev/fr/3-3-1",
           "status": "complete"
         },
         {
@@ -82,7 +82,7 @@
           "title": "Prévalence de la consommation abusive d’alcool",
           "description": "Cet indicateur mesure la prévalence de la consommation abusive d’alcool. Par consommation abusive d'alcool, on entend les hommes qui ont déclaré avoir bu cinq verres d'alcool, ou les femmes ayant déclaré avoir bu quatre verres d'alcool, en une même occasion, au moins une fois par mois au cours de la dernière année.",
           "keywords": "women, gender",
-          "href": "/cif-cic_prod/fr/3-4-1",
+          "href": "/cif-cic_dev/fr/3-4-1",
           "status": "complete"
         },
         {
@@ -90,7 +90,7 @@
           "title": "Pourcentage des Canadiens qui sont satisfait ou très satisfait à l’égard de la vie",
           "description": "Cet indicateur mesure le pourcentage de la population âgée de 12 ans ou plus qui est satisfait ou très satisfait à l’égard de la vie.",
           "keywords": "women, gender",
-          "href": "/cif-cic_prod/fr/3-5-1",
+          "href": "/cif-cic_dev/fr/3-5-1",
           "status": "complete"
         },
         {
@@ -98,7 +98,7 @@
           "title": "Pourcentage des Canadiens qui perçoivent leur santé et bien-être général comme très bons ou excellents",
           "description": "Cet indicateur mesure le pourcentage de la population qui perçoivent leur santé et bien-être général comme très bon ou excellent. La santé perçue réfère à la perception d'une personne de sa santé en général, ou dans le cas d'une entrevue par procuration, la perception de la personne qui répond. La santé réfère non seulement à l'absence de maladie ou de blessure mais aussi à un bien-être physique, mental et social.",
           "keywords": "women, gender",
-          "href": "/cif-cic_prod/fr/3-6-1",
+          "href": "/cif-cic_dev/fr/3-6-1",
           "status": "complete"
         },
         {
@@ -106,7 +106,7 @@
           "title": "Pourcentage des Canadiens qui perçoivent leur santé mentale comme très bonne ou excellente",
           "description": "Cet indicateur mesure le pourcentage de la population qui perçoivent leur santé mentale comme très bonne ou excellente. La santé mentale perçue réfère à la perception d'une personne de sa santé mentale en général. L'état de santé mentale perçu fournit une indication générale de la population qui souffre d'une forme quelconque de désordre mental, problèmes mentaux ou émotionnels ou de détresse. Ces troubles ne sont pas nécessairement reflétés dans la santé perçue.",
           "keywords": "women, gender",
-          "href": "/cif-cic_prod/fr/3-7-1",
+          "href": "/cif-cic_dev/fr/3-7-1",
           "status": "complete"
         },
         {
@@ -114,7 +114,7 @@
           "title": "Taux de vaccination pour certaines maladies",
           "description": "Cet indicateur mesure le taux de vaccination pour certaines maladies. L'Agence de la santé publique du Canada surveille la couverture vaccinale des enfants à l'aide de l’Enquête nationale sur la couverture vaccinale des enfants.",
           "keywords": "women, gender",
-          "href": "/cif-cic_prod/fr/3-8-1",
+          "href": "/cif-cic_dev/fr/3-8-1",
           "status": "complete"
         },
         {
@@ -122,7 +122,7 @@
           "title": "Incidence de certaines maladies",
           "description": "Cet indicateur mesure l'incidence de 10 maladies sélectionnées à l'aide du taux pour 100 000 habitants.",
           "keywords": "",
-          "href": "/cif-cic_prod/fr/3-9-1",
+          "href": "/cif-cic_dev/fr/3-9-1",
           "status": "complete"
         },
         {
@@ -130,7 +130,7 @@
           "title": "Taux de mortalité pour certaines causes de décès",
           "description": "Cet indicateur mesure le taux de mortalité pour les principales causes de décès. Le taux de mortalité selon l'âge représente le nombre de décès dans un groupe d'âge particulier pendant une année donnée pour 100 000 personnes dans le même groupe d'âge de la même année.",
           "keywords": "women, gender",
-          "href": "/cif-cic_prod/fr/3-10-1",
+          "href": "/cif-cic_dev/fr/3-10-1",
           "status": "complete"
         },
         {
@@ -138,7 +138,7 @@
           "title": "Incidence de la tuberculose par 100 000 habitants dans l’Inuit Nunangat",
           "description": "Cet indicateur mesure le taux d'incidence de la tuberculose par 100 000 habitants dans l’Inuit Nunangat.",
           "keywords": "",
-          "href": "/cif-cic_prod/fr/3-11-1",
+          "href": "/cif-cic_dev/fr/3-11-1",
           "status": "complete"
         },
         {
@@ -146,7 +146,7 @@
           "title": "Incidence des méfaits associés aux surdoses d’opioïdes et de stimulants",
           "description": "<p>Cet indicateur mesure l'incidence des méfaits associés aux surdoses d’opioïdes et de stimulants par 100 000 habitants. Plus spécifiquement, il mesure le taux d'incidence de: <br> 1. décès apparemment liés à une intoxication aux opioïdes;<br> 2. intoxication aux opioïdes et stimulants; and<br> 3. interventions des services médicaux d’urgence (SMU) pour surdoses suspectées d’être liées aux opioïdes</p>",
           "keywords": "",
-          "href": "/cif-cic_prod/fr/3-12-1",
+          "href": "/cif-cic_dev/fr/3-12-1",
           "status": "complete"
         },
         {
@@ -154,7 +154,7 @@
           "title": "Prévalence de la consommation de cigarettes",
           "description": "Cet indicateur mesure le pourcentage des Canadiens qui fument actuellement, tous les jours ou à l'occasion.",
           "keywords": "women, gender",
-          "href": "/cif-cic_prod/fr/3-13-1",
+          "href": "/cif-cic_dev/fr/3-13-1",
           "status": "complete"
         }]
     }
@@ -170,7 +170,7 @@
           "title": "Taux d'achèvement des études secondaires",
           "description": "Cet indicateur mesure le pourcentage de personnes qui possèdent un diplôme d'études secondaires ou une attestation d'équivalence.",
           "keywords": "women, gender",
-          "href": "/cif-cic_prod/fr/4-1-1",
+          "href": "/cif-cic_dev/fr/4-1-1",
           "status": "complete"
         },
         {
@@ -178,7 +178,7 @@
           "title": "Taux de scolarité au niveau postsecondaire",
           "description": "Cet indicateur mesure le taux de scolarité au niveau postsecondaire. Les catégories représentent le plus haut niveau de scolarité atteint et sont mutuellement exclusives.",
           "keywords": "women, gender",
-          "href": "/cif-cic_prod/fr/4-2-1",
+          "href": "/cif-cic_dev/fr/4-2-1",
           "status": "complete"
         }]
     }
@@ -194,7 +194,7 @@
           "title": "Proportion de la population ayant auto-déclaré avoir été agressée sexuellement dans les 12 derniers mois",
           "description": "Cet indicateur mesure la proportion de la population ayant auto-déclaré avoir été agressée sexuellement dans les 12 derniers mois",
           "keywords": "women, gender",
-          "href": "/cif-cic_prod/fr/5-1-1",
+          "href": "/cif-cic_dev/fr/5-1-1",
           "status": "complete"
         },
         {
@@ -202,7 +202,7 @@
           "title": "Proportion de femmes et filles âgées de 15 ans et plus ayant été assujetties à de la violence physique, sexuelle ou psychologique par leur partenaire intime actuel ou un ancien partenaire intime dans les 12 derniers mois",
           "description": "Cet indicateur mesure la proportion de femmes et filles âgées de 15 et plus ayant été assujetties à de la violence physique, sexuelle ou psychologique par leur partenaire intime actuel ou un ancien partenaire intime dans les 12 derniers mois. La violence entre partenaires intimes est définie comme tout acte ou comportement violent commis par un partenaire intime actuel ou ancien et est généralement classée en trois catégories, soit la violence psychologique, la violence physique et la violence sexuelle.",
           "keywords": "women, gender",
-          "href": "/cif-cic_prod/fr/5-1-2",
+          "href": "/cif-cic_dev/fr/5-1-2",
           "status": "complete"
         },
         {
@@ -210,7 +210,7 @@
           "title": "Proportion de rôles de leadership tenus par des femmes",
           "description": "Cet indicateur mesure la proportion de rôles de leadership exercés par des femmes. Le types de rôles de leadership inclues la représentation des femmes élus au Parlement national, les ministres nommés au sein du Cabinet fédéral, les juges canadiens dans l'administration publique fédéral et ceux dans les administrations provincials et territoriales ainsi que d'autres rôles de leadership.",
           "keywords": "femme, genre",
-          "href": "/cif-cic_prod/fr/5-2-1",
+          "href": "/cif-cic_dev/fr/5-2-1",
           "status": "complete"
         },
         {
@@ -218,7 +218,7 @@
           "title": "Proportion du temps consacré à des soins et travaux domestiques non rémunérés",
           "description": "Cet indicateur mesure la proportion du temps consacré à des soins et travaux domestiques non rémunérés. Les activités de travail non-rémunéré comprends les tâches domestiques, les soins à un enfant du ménage de moins de 18 ans ou adulte du ménage ainsi que le magasinage de biens ou de services.",
           "keywords": "women, gender",
-          "href": "/cif-cic_prod/fr/5-3-1",
+          "href": "/cif-cic_dev/fr/5-3-1",
           "status": "complete"
         }]
     }
@@ -234,7 +234,7 @@
           "title": "Nombre d’avis concernant la qualité de l'eau potable à long terme visant les systèmes d'aqueduc publics dans les réserves",
           "description": "Cet indicateur mesure le nombre d’avis concernant la qualité de l'eau potable à long terme visant les systèmes d'aqueduc publics dans les réserves. Les avis concernant la qualité de l'eau potable sont émis pour informer les gens de ne pas boire l'eau qui pourrait être ou qui est insalubre en se fondant sur des tests sur la qualité de l'eau.",
           "keywords": "",
-          "href": "/cif-cic_prod/fr/6-1-1",
+          "href": "/cif-cic_dev/fr/6-1-1",
           "status": "complete"
         },
         {
@@ -242,7 +242,7 @@
           "title": "Pourcentage des municipalités au Canada qui ont eu des avis prolongés concernant la qualité de l’eau potable",
           "description": "Cet indicateur mesure le pourcentage des municipalités au Canada qui ont reçu un avis prolongé concernant la qualité de l’eau potable par année. Un avis prolongé concernant la qualité de l'eau dure plus de 15 jours.",
           "keywords": "",
-          "href": "/cif-cic_prod/fr/6-2-1",
+          "href": "/cif-cic_dev/fr/6-2-1",
           "status": "complete"
         },
         {
@@ -250,7 +250,7 @@
           "title": "Taux de croissance de l’utilisation de l’eau",
           "description": "Cet indicateur mesure le taux de croissance de l’utilisation de l’eau pour les ménages et pour plusieurs secteurs de l'économie. L'utilisation de l'eau comprends la consommation d'eau sous forme d'intrants naturels et d'eau fournie par les systèmes municipaux de distribution d'eau ou les systèmes d'irrigation par les industries, les administrations publiques, les institutions et les ménages.",
           "keywords": "",
-          "href": "/cif-cic_prod/fr/6-3-1",
+          "href": "/cif-cic_dev/fr/6-3-1",
           "status": "complete"
         },
         {
@@ -258,7 +258,7 @@
           "title": "Qualité de l'eau des cours d'eau canadiens",
           "description": "<p>Ces indicateurs fournissent une mesure de la capacité des cours d'eau du Canada à maintenir la flore et la faune. À chaque site de suivi, des données spécifiques sur la qualité de l'eau sont comparées aux valeurs recommandées de qualité de l'eau en vue de créer une cote pour le site. Si les mesures de la qualité de l'eau demeurent dans les seuils recommandés, un écosystème sain peut être maintenu.<br> La qualité de l'eau à un site de suivi est cotée excellente lorsque les paramètres dans un cours d'eau sont presque toujours conformes aux seuils recommandés. À l'inverse, la qualité de l'eau est cotée mauvaise lorsque les paramètres ne sont habituellement pas conformes à ces seuils, parfois de beaucoup. (<em>Environnement et changement climatique Canada (ECCC)</em>)</p>",
           "keywords": "",
-          "href": "/cif-cic_prod/fr/6-4-1",
+          "href": "/cif-cic_dev/fr/6-4-1",
           "status": "complete"
         }]
     }
@@ -274,7 +274,7 @@
           "title": "Économies d'énergie annuelles provenant de l'adoption des codes, normes et pratiques en matière d'efficacité énergétique",
           "description": "Cet indicateur mesure les économies d’énergie annuelles totales découlant de l’adoption de codes, de normes et de pratiques d’efficacité énergétique.",
           "keywords": "",
-          "href": "/cif-cic_prod/fr/7-1-1",
+          "href": "/cif-cic_dev/fr/7-1-1",
           "status": "complete"
         },
         {
@@ -282,7 +282,7 @@
           "title": "Consommation totale d’énergie par habitant",
           "description": "Cet indicateur mesure la consommation de différents types d'énergie, en térajoules ou en térajoules par habitant.",
           "keywords": "",
-          "href": "/cif-cic_prod/fr/7-2-1",
+          "href": "/cif-cic_dev/fr/7-2-1",
           "status": "complete"
         },
         {
@@ -290,7 +290,7 @@
           "title": "Proportion de l’électricité produite à partir de sources renouvelables et non émettrices de gaz à effet de serre",
           "description": "Cet indicateur mesure la proportion d'électricité qui est produite à partir de sources renouvelables et non émettrices de gaz à effet de serre.",
           "keywords": "",
-          "href": "/cif-cic_prod/fr/7-3-1",
+          "href": "/cif-cic_dev/fr/7-3-1",
           "status": "complete"
         }]
     }
@@ -306,7 +306,7 @@
           "title": "Taux de chômage",
           "description": "Le taux de chômage est le nombre de personnes en chômage exprimé en pourcentage de la population active.",
           "keywords": "women, gender",
-          "href": "/cif-cic_prod/fr/8-1-1",
+          "href": "/cif-cic_dev/fr/8-1-1",
           "status": "complete"
         },
         {
@@ -314,7 +314,7 @@
           "title": "Proportion des employés qui gagnent moins de 66 % de la médiane du salaire horaire des employés permanents à temps plein",
           "description": "Cet indicateur mesure le pourcentage et le nombre des employés qui gagnent moins du deux tiers de la médiane du salaire horaire des employés permanents à temps plein.",
           "keywords": "",
-          "href": "/cif-cic_prod/fr/8-2-1",
+          "href": "/cif-cic_dev/fr/8-2-1",
           "status": "complete"
         },
         {
@@ -322,7 +322,7 @@
           "title": "Proportion des jeunes qui ne sont ni en emploi, ni aux études, ni en formation",
           "description": "Cet indicateur mesure la proportion des jeunes qui ne sont ni en emploi, ni aux études, ni en formation.",
           "keywords": "women, gender",
-          "href": "/cif-cic_prod/fr/8-3-1",
+          "href": "/cif-cic_dev/fr/8-3-1",
           "status": "complete"
         },
         {
@@ -330,7 +330,7 @@
           "title": "Taux de travail à temps partiel involontaire",
           "description": "Cet indicateur mesure le taux de travail à temps partiel involontaire. Celui-ci peut être dérivée de différentes façons. Celle qui est utilisée pour cet indicateur se base sur tous les travailleurs ayant un emploi à temps partiel involontaire, qu'ils aient cherché un travail à temp plein ou non. Le taux est présenté comme le nombre de travailleurs ayant un emploi à temps partiel involontaire par rapport au nombre de travailleurs à temps partiel.",
           "keywords": "women, gender",
-          "href": "/cif-cic_prod/fr/8-4-1",
+          "href": "/cif-cic_dev/fr/8-4-1",
           "status": "complete"
         },
         {
@@ -338,7 +338,7 @@
           "title": "Produit intérieur brut par habitant",
           "description": "Cet indicateur mesure le produit intérieur brut (PIB) par habitant.",
           "keywords": "",
-          "href": "/cif-cic_prod/fr/8-5-1",
+          "href": "/cif-cic_dev/fr/8-5-1",
           "status": "complete"
         },
         {
@@ -346,7 +346,7 @@
           "title": "Emplois dans les secteurs des technologies propres",
           "description": "Cet indicateur mesure le nombre d’emplois qu'on peut attribuer dans les secteurs des produits environnementaux et des technologies propres.",
           "keywords": "",
-          "href": "/cif-cic_prod/fr/8-6-1",
+          "href": "/cif-cic_dev/fr/8-6-1",
           "status": "complete"
         }]
     }
@@ -362,7 +362,7 @@
           "title": "Proportion des innovations dans les technologies liées à l’environnement",
           "description": "Cet indicateur mesure la proportion de brevets dans les technologies liées à l’environnement par rapport au nombre total de brevets.",
           "keywords": "",
-          "href": "/cif-cic_prod/fr/9-1-1",
+          "href": "/cif-cic_dev/fr/9-1-1",
           "status": "complete"
         },
         {
@@ -370,7 +370,7 @@
           "title": "Intensité des dépenses intérieures totales au titre de la recherche et développement",
           "description": "Cet indicateur mesure la proportion de la dépense intérieure brute allouée à la recherche et au développement (DIRD). La DRID est la dépense totale affectée à des travaux de R-D et est utilisée comme indicateur général des activités de R.-D..",
           "keywords": "",
-          "href": "/cif-cic_prod/fr/9-2-1",
+          "href": "/cif-cic_dev/fr/9-2-1",
           "status": "complete"
         },
         {
@@ -378,7 +378,7 @@
           "title": "Proportion des ménages qui ont accès à des services Internet à large bande à des vitesses de 50/10 Mbps",
           "description": "Cet indicateur mesure la proportion des ménages qui ont accès à des services Internet à large bande à des vitesses de téléchargement de 50 Mbps et de téléversement de 10 Mbps et des données illimitées.",
           "keywords": "",
-          "href": "/cif-cic_prod/fr/9-3-1",
+          "href": "/cif-cic_dev/fr/9-3-1",
           "status": "complete"
         },
         {
@@ -386,7 +386,7 @@
           "title": "Proportion des Canadiens qui ont accès à la technologie sans fil mobile généralement déployée la plus récente",
           "description": "Cet indicateur mesure la disponibilité de la technologie sans fil mobile généralement déployée la plus récente. On inclut les technologies telles que HSPA+ (accès haute vitesse par paquets), LTE (évolution à long terme) et LTE ‑A ainsi que la technologie 5G à venir.",
           "keywords": "",
-          "href": "/cif-cic_prod/fr/9-4-1",
+          "href": "/cif-cic_dev/fr/9-4-1",
           "status": "complete"
         },
         {
@@ -394,7 +394,7 @@
           "title": "Émissions de gaz à effets de serre par dollar de valeur ajoutée de la production d'actifs d'infrastructure",
           "description": "Non disponible",
           "keywords": "",
-          "href": "/cif-cic_prod/fr/9-5-1",
+          "href": "/cif-cic_dev/fr/9-5-1",
           "status": "notstarted"
         },
         {
@@ -402,7 +402,7 @@
           "title": "Nombre de bornes de recharge et de stations de ravitaillement à faibles émissions de carbone en cours de développement ou achevées le long des grandes autoroutes et dans les zones rurales et urbaines du Canada",
           "description": "Cet indicateur fait un suivi sur le nombre de stations de ravitaillement alternatives (pour véhicules électriques, à hydrogène et à gaz naturel liquide) au Canada. Les stations en développement sont celles pour lesquelles il y a une entente mais qui ne sont pas ouvertes au puiblic. Les stations complétées sont celles qui sont construites et ouvertes au public pour la recharge ou le ravitaillement.",
           "keywords": "",
-          "href": "/cif-cic_prod/fr/9-6-1",
+          "href": "/cif-cic_dev/fr/9-6-1",
           "status": "complete"
         },
         {
@@ -410,7 +410,7 @@
           "title": "Nombre de bornes de recharge et de stations de ravitaillement à faibles émissions de carbone en cours de développement ou achevées dans les lieux publics, sur la rue, aux immeubles d’habitation, aux points de vente au détail et sur les lieux de travail",
           "description": "Cet indicateur fait un suivi sur le nombre de bornes de recharge et stations de ravitaillement à faibles émissions de carbone en cours de développement ou achevées dans les lieux publics, sur la rue, aux immeubles d’habitation, aux points de vente au détail et sur les lieux de travail. Les stations en développement sont celles pour lesquelles il y a une entente mais qui ne sont pas ouvertes au puiblic. Les stations complétées sont celles qui sont construites et ouvertes au public pour la recharge ou le ravitaillement.",
           "keywords": "",
-          "href": "/cif-cic_prod/fr/9-7-1",
+          "href": "/cif-cic_dev/fr/9-7-1",
           "status": "notstarted"
         }]
     }
@@ -426,7 +426,7 @@
           "title": "Coefficient de Gini",
           "description": "Cet indicateur mesure le coefficient de Gini. Le coefficient de Gini, compris entre zéro et un, mesure le degré relatif d'inégalité dans la distribution du revenu.",
           "keywords": "",
-          "href": "/cif-cic_prod/fr/10-1-1",
+          "href": "/cif-cic_dev/fr/10-1-1",
           "status": "complete"
         },
         {
@@ -434,7 +434,7 @@
           "title": "Proportion de la population ayant déclaré de la discrimination ou des traitements injustes",
           "description": "Cet indicateur mesure la proportion de la population ayant déclaré de la discrimination ou des traitements injustes. Un crime haineux est une infraction criminelle motivée par le biais, les préjugés ou par la haine de la race, de l’origine nationale ou ethnique, de la langue, de la couleur, de la religion, du sexe, de l’âge, de l’incapacité mentale ou physique, de l’orientation sexuelle, de l’identité ou expression de genre, ou de tout autre facteur semblable comme la profession ou les convictions politiques.",
           "keywords": "",
-          "href": "/cif-cic_prod/fr/10-2-1",
+          "href": "/cif-cic_dev/fr/10-2-1",
           "status": "complete"
         },
         {
@@ -442,7 +442,7 @@
           "title": "Ratio du salaire horaire médian",
           "description": "Cet indicateur mesure le ratio du salaire horaire médian entre homme et femme. Il peut être interprété comme la proportion d'un dollar gagné par une femme pour chaque dollar gagné par un homme.",
           "keywords": "femmes, genre",
-          "href": "/cif-cic_prod/fr/10-3-1",
+          "href": "/cif-cic_dev/fr/10-3-1",
           "status": "complete"
         },
         {
@@ -450,7 +450,7 @@
           "title": "Revenu médian après impôt des ménages",
           "description": "Cet indicateur mesure le revenu médian après impôt des ménages. Le concept de revenu englobe les revenus que touche un résident du Canada ou qui sont pertinents aux fins de l'impôt sur le revenu au Canada.",
           "keywords": "femmes, genre",
-          "href": "/cif-cic_prod/fr/10-4-1",
+          "href": "/cif-cic_dev/fr/10-4-1",
           "status": "complete"
         }]
     }
@@ -466,7 +466,7 @@
           "title": "Taux de croissance de l'itinérance chronique au Canada",
           "description": "<p>Cet indicateur mesure le taux de croissance des personnes en situation d’itinérance chronique. L’itinérance chronique désigne les personnes qui sont actuellement en situation d’itinérance et qui rencontrent l’un des critères suivants :<br> 1) ont été en situation d’itinérance pendant 6 mois (180 jours) ou plus au cours de la dernière année, ou<br> 2) ont été en situation d’itinérance pendant 18 mois (546 jours) ou plus au cours des 3 dernières années. <em>(Directives de Vers un chez-soi : la stratégie canadienne de lutte contre l'itinérance)</em>",
           "keywords": "",
-          "href": "/cif-cic_prod/fr/11-1-1",
+          "href": "/cif-cic_dev/fr/11-1-1",
           "status": "complete"
         },
         {
@@ -474,7 +474,7 @@
           "title": "Proportion des ménages ayant des besoins impérieux en matière de logement",
           "description": "Cet indicateur mesure la proportion des ménages vivant dans des logements ayant des besoins impérieux.",
           "keywords": "femmes, genre",
-          "href": "/cif-cic_prod/fr/11-2-1",
+          "href": "/cif-cic_dev/fr/11-2-1",
           "status": "complete"
         },
         {
@@ -482,7 +482,7 @@
           "title": "Pourcentage de la population vivant dans des zones où les concentrations des polluants atmosphériques sont moins élevées ou égales aux Normes Canadiennes de Qualité de l’Air Ambiant de 2020",
           "description": "Cet indicateur mesure le pourcentage de la population dans des régions où les concentrations des polluants atmosphériques extérieurs étaient inférieures aux normes pour 2020. Les Normes canadiennes de qualité de l'air ambiant (NCQAA, les normes) sont des objectifs de qualité de l'air pour les concentrations de polluants dans l'air extérieur axées sur la santé et l'environnement. Elles visent à mieux protéger la santé humaine et l'environnement ainsi qu'à favoriser l'amélioration continue de la qualité de l'air partout au Canada. <em>(Environnement et Changement climatique Canada (ECCC))</em>",
           "keywords": "",
-          "href": "/cif-cic_prod/fr/11-3-1",
+          "href": "/cif-cic_dev/fr/11-3-1",
           "status": "complete"
         },
         {
@@ -490,7 +490,7 @@
           "title": "Pourcentage de la population vivant à moins de 500 mètres d'un accès au transport en commun",
           "description": "Cet indicateur mesure la proportion de la population d'une unité géographique vivant à moins de 500 mètres d'un accès au transport en commun.",
           "keywords": "",
-          "href": "/cif-cic_prod/fr/11-4-1",
+          "href": "/cif-cic_dev/fr/11-4-1",
           "status": "complete"
         },
         {
@@ -498,7 +498,7 @@
           "title": "Pourcentage de la population ayant adopté le transport en commun ou actif pour le navettage",
           "description": "Cet indicateur mesure le pourcentage de la population qui utilise le transport en commun ou actif pour le navettage. Le transport public inclut autobus, métro, métro aérien, train léger, tramway, train de banlieu et traversier de passagers. Le transport actif inclut la marche et le vélo.",
           "keywords": "",
-          "href": "/cif-cic_prod/fr/11-5-1",
+          "href": "/cif-cic_dev/fr/11-5-1",
           "status": "complete"
         },
         {
@@ -506,7 +506,7 @@
           "title": "Quantité totale de déchets envoyés aux fins d'élimination par habitant",
           "description": "Cet indicateur mesure la quantité de déchets à des fins d'éliminations (en kilogrammes) par habitant provenant de sources résidentielles ou non résidentielles.",
           "keywords": "",
-          "href": "/cif-cic_prod/fr/11-6-1",
+          "href": "/cif-cic_dev/fr/11-6-1",
           "status": "complete"
         },
         {
@@ -514,7 +514,7 @@
           "title": "Pourcentage de la population âgée de 12 ans et plus ayant déclaré avoir un sentiment d’appartenance à leur communauté locale plutôt fort ou très fort",
           "description": "Cet indicateur mesure le pourcentage de la population âgée de 12 ans et plus ayant déclaré avoir un sentiment d’appartenance à leur communauté locale plutôt fort ou très fort.",
           "keywords": "women, gender",
-          "href": "/cif-cic_prod/fr/11-7-1",
+          "href": "/cif-cic_dev/fr/11-7-1",
           "status": "complete"
         }]
     }
@@ -530,7 +530,7 @@
           "title": "Proportion des immatriculations de nouveaux véhicules légers qui sont pour des véhicules zéro émission",
           "description": "Cet indicateur mesure la proportion des immatriculations de nouveaux véhicules légers qui sont pour des véhicules zéro émission.",
           "keywords": "",
-          "href": "/cif-cic_prod/fr/12-1-1",
+          "href": "/cif-cic_dev/fr/12-1-1",
           "status": "complete"
         },
         {
@@ -538,7 +538,7 @@
           "title": "Proportion d’entreprises qui ont adopté des activités de protection ou des pratiques de gestion de l’environnement",
           "description": "Cet indicateur mesure la proportion d’entreprises qui ont adopté des activités de protection ou des pratiques de gestion de l’environnement.",
           "keywords": "",
-          "href": "/cif-cic_prod/fr/12-2-1",
+          "href": "/cif-cic_dev/fr/12-2-1",
           "status": "complete"
         },
         {
@@ -546,7 +546,7 @@
           "title": "Total des matières résiduelles récupérées par habitant",
           "description": "Cet indicateur mesure le total des matières résiduelles récupérées par habitant.",
           "keywords": "",
-          "href": "/cif-cic_prod/fr/12-3-1",
+          "href": "/cif-cic_dev/fr/12-3-1",
           "status": "complete"
         }]
     }
@@ -562,7 +562,7 @@
           "title": "Émissions de gaz à effet de serre",
           "description": "Cet indicateur mesure les émissions de gaz à effet de serre. Les gaz à effet de serre (GES) sont des gaz atmosphérique responsable pour le réchauffement climatique ainsi que le changement climatique. Les trois principaux types de gaz à effet de serre sont le dyoxyde de carbonne, le méthane et l'oxyde nitreux. <em>(définition des Nations Unies)</em>",
           "keywords": "",
-          "href": "/cif-cic_prod/fr/13-1-1",
+          "href": "/cif-cic_dev/fr/13-1-1",
           "status": "complete"
         },
         {
@@ -570,7 +570,7 @@
           "title": "Fréquence de certaines catastrophes naturelles",
           "description": "Cet indicateur mesure la fréquence de certaines catastrophes naturelles comme définie par la Base de données canadienne sur les catastrophes.",
           "keywords": "",
-          "href": "/cif-cic_prod/fr/13-2-1",
+          "href": "/cif-cic_dev/fr/13-2-1",
           "status": "complete"
         },
         {
@@ -578,7 +578,7 @@
           "title": "Proportion d’organisation municipales qui ont pris en considération l’adaptation aux changements climatiques dans leur processus décisionnel",
           "description": "<p>Cet indicateur mesure la proportion d’organisation municipales qui ont pris en considération l’adaptation aux changements climatiques dans leur processus décisionnel. <br><br> À partir de 2018, l’adaptation aux changements climatiques est définit comme des changements aux processus, aux pratiques et aux structures visant à atténuer les dommages potentiels ou à tirer parti des occasions liées aux changements climatiques. Pour 2016, l’adaptation aux changements climatiques était définit comme anticiper et suivre les changements climatiques et prendre des mesures à l’égard de leurs conséquences.<br><br> Les changements climatiques s'entendent d'une modification à long terme dans les conditions météorologiques mesurées par les changements dans la température, les précipitations, les vents, l'enneigement et d'autres indicateurs. Ils peuvent comprendre à la fois les changements des conditions météorologiques moyennes ainsi que la variabilité, y compris, par exemple, les changements dans les conditions extrêmes.</p>",
           "keywords": "",
-          "href": "/cif-cic_prod/fr/13-3-1",
+          "href": "/cif-cic_dev/fr/13-3-1",
           "status": "complete"
         }]
     }
@@ -594,7 +594,7 @@
           "title": "Proportion d’aires marines et côtières conservées",
           "description": "L'indicateur mesure proportion d’aires marines et côtières conservées. Les aires conservées sont des terres et des eaux dont l'utilisation est restreinte. <em>(ECCC)</em>",
           "keywords": "",
-          "href": "/cif-cic_prod/fr/14-1-1",
+          "href": "/cif-cic_dev/fr/14-1-1",
           "status": "complete"
         },
         {
@@ -602,7 +602,7 @@
           "title": "Proportion des stocks de poissons récoltés à des niveaux considérés durables",
           "description": "L'indicateur permet de comparer les taux de récolte avec les limites de récolte établies. Ces limites sont fondées sur des données scientifiques et fournissent une mesure directe indiquant si la gestion de l'utilisation de ces ressources respecte les limites des écosystèmes. Cela constitue une mesure de la pression de la pêche sur les stocks de poissons sauvages. <em>(ECCC)</em>",
           "keywords": "",
-          "href": "/cif-cic_prod/fr/14-2-1",
+          "href": "/cif-cic_dev/fr/14-2-1",
           "status": "complete"
         }]
     }
@@ -618,7 +618,7 @@
           "title": "Proportion d’espèces sauvages indigènes classées comme étant en sécurité ou apparemment en sécurité selon le risque de disparition national",
           "description": "L'indicateur principal résume le risque de disparition des différentes espèces au Canada. Une espèce est définie comme une population d'organismes qui ne s'accouplent pas avec d'autres populations même lorsqu'elles occupent un même territoire au même moment. <em>(ECCC)</em>",
           "keywords": "",
-          "href": "/cif-cic_prod/fr/15-1-1",
+          "href": "/cif-cic_dev/fr/15-1-1",
           "status": "complete"
         },
         {
@@ -626,7 +626,7 @@
           "title": "Proportion d’espèces affichant des progrès vers leurs objectifs de population et de répartition",
           "description": "L'indicateur montre si les tendances des populations et de la répartition des espèces en péril sont conformes aux objectifs des programmes de rétablissement ou des plans de gestion définitifs. <em>(ECCC)</em>",
           "keywords": "",
-          "href": "/cif-cic_prod/fr/15-2-1",
+          "href": "/cif-cic_dev/fr/15-2-1",
           "status": "complete"
         },
         {
@@ -634,7 +634,7 @@
           "title": "Proportion d’aires terrestres (terres et eaux douces) conservées",
           "description": "Cet indicateur mesure la proportion d’aires terrestres (terres et eaux douces) conservées. <em>(ECCC)</em>",
           "keywords": "",
-          "href": "/cif-cic_prod/fr/15-3-1",
+          "href": "/cif-cic_dev/fr/15-3-1",
           "status": "complete"
         },
         {
@@ -642,7 +642,7 @@
           "title": "Proportion des zones forestières soumises à un système de certification de la gestion forestière vérifié de manière indépendante",
           "description": "Cet indicateur mesure la proportion des zones forestières soumises à un système de certification de la gestion forestière vérifié de manière indépendante.",
           "keywords": "",
-          "href": "/cif-cic_prod/fr/15-4-1",
+          "href": "/cif-cic_dev/fr/15-4-1",
           "status": "complete"
         },
         {
@@ -650,7 +650,7 @@
           "title": "Surface des zones forestières en proportion de la surface terrestre",
           "description": "Cet indicateur mesure la surface des zones forestières en proportion de la surface terrestre. La superficie forestière est un indicateur de base de la durabilité qu’il est important de surveiller de près, en particulier dans les régions où la superficie forestière est en train de disparaître. <em>(RNCan)</em>",
           "keywords": "",
-          "href": "/cif-cic_prod/fr/15-5-1",
+          "href": "/cif-cic_dev/fr/15-5-1",
           "status": "complete"
         }]
     }
@@ -666,7 +666,7 @@
           "title": "Proportion des Canadiens ayant déclaré se sentir en sécurité lorsqu’ils marchent seuls dans leur voisinage quand il fait noir",
           "description": "Cet indicateur mesure la proportion des Canadiens ayant déclaré se sentir en sécurité lorsqu’ils marchent seuls dans leur voisinage quand il fait noir",
           "keywords": "femme, genre",
-          "href": "/cif-cic_prod/fr/16-1-1",
+          "href": "/cif-cic_dev/fr/16-1-1",
           "status": "complete"
         },
         {
@@ -674,7 +674,7 @@
           "title": "Indice de gravité de la criminalité",
           "description": "L'Indice de gravité de la criminalité (IGC) mesure les variations dans le niveau de gravité de la criminalité au Canada d'une année à l'autre. L'Indice de gravité de la criminalité comprend toutes les infractions au Code criminel, y compris les délits de la route, ainsi que les infractions relatives aux drogues et toutes les infractions à des lois fédérales.",
           "keywords": "",
-          "href": "/cif-cic_prod/fr/16-2-1",
+          "href": "/cif-cic_dev/fr/16-2-1",
           "status": "complete"
         },
         {
@@ -682,7 +682,7 @@
           "title": "Incidence de certains types de crime",
           "description": "Cet indicateur mesure le taux d'incidence de certains types de crimes.",
           "keywords": "",
-          "href": "/cif-cic_prod/fr/16-3-1",
+          "href": "/cif-cic_dev/fr/16-3-1",
           "status": "complete"
         },
         {
@@ -690,7 +690,7 @@
           "title": "Incidence de cybercrimes",
           "description": "Cet indicateur mesure le nombre d'infractions reliée à la cybercriminalité.",
           "keywords": "",
-          "href": "/cif-cic_prod/fr/16-4-1",
+          "href": "/cif-cic_dev/fr/16-4-1",
           "status": "complete"
         },
         {
@@ -698,7 +698,7 @@
           "title": "Durée de traitement des causes devant les tribunaux de juridiction criminelle",
           "description": "Cet indicateur mesure la durée médiane de traitement des causes devant les tribunaux de juridiction criminelle selon le nombre de jours nécessaires pour régler la cause, de la première comparution à la décision finale.",
           "keywords": "femme, genre",
-          "href": "/cif-cic_prod/fr/16-5-1",
+          "href": "/cif-cic_dev/fr/16-5-1",
           "status": "complete"
         },
         {
@@ -706,7 +706,7 @@
           "title": "Taux d’incarcération",
           "description": "Cet indicateur mesure le taux d'incarcération par 100,000 adultes dans la population totale (18 ans et plus). Cela inclue les adultes en détention après condamnation, détention provisoire ainsi que ceux ayant un autre statut.",
           "keywords": "",
-          "href": "/cif-cic_prod/fr/16-6-1",
+          "href": "/cif-cic_dev/fr/16-6-1",
           "status": "complete"
         },
         {
@@ -714,7 +714,7 @@
           "title": "Proportion de la population ayant une grande confiance envers certaines institutions",
           "description": "Cet indicateur mesure la proportion de la population ayant une grande confiance envers certaines institutions.",
           "keywords": "femme, genre",
-          "href": "/cif-cic_prod/fr/16-7-1",
+          "href": "/cif-cic_dev/fr/16-7-1",
           "status": "complete"
         }]
     }
@@ -730,7 +730,7 @@
           "title": "Nombre de jeux de données ouverts diffusés par le gouvernement du Canada",
           "description": "Cet indicateur mesure le nombre de jeux de données ouverts diffusés par le gouvernement du Canada.",
           "keywords": "",
-          "href": "/cif-cic_prod/fr/17-1-1",
+          "href": "/cif-cic_dev/fr/17-1-1",
           "status": "complete"
         },
         {
@@ -738,7 +738,7 @@
           "title": "Soutien public total au développement durable",
           "description": "Le concept de 'développement durable' est définit comme un développement apte à répondre aux besoins du présent sans compromettre la possibilité pour les générations à venir de satisfaire les leurs (definition de l'<em>UNESCO</em>). Le soutien public total au développement durable (TOSSD) englobe tous les flux de ressources officiellement soutenus visant à promouvoir le développement durable dans les pays en développement et à soutenir et relever les défis mondiaux. ([<em>Affaires mondiales Canada</em>](https://www.international.gc.ca/transparency-transparence/international-assistance-report-stat-rapport-aide-internationale/2019-2020.aspx?lang=fra#a1_7))",
           "keywords": "",
-          "href": "/cif-cic_prod/fr/17-2-1",
+          "href": "/cif-cic_dev/fr/17-2-1",
           "status": "complete"
         }]
     }
