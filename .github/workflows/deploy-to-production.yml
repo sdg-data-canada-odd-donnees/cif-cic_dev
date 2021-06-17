@@ -42,8 +42,8 @@ jobs:
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@3.7.1
       with:
-        REPOSITORY_NAME: sdg-data-canada-odd-donnees/cif-cic.github.io
+        REPOSITORY_NAME: sdg-data-canada-odd-donnees/sdg-data-canada-odd-donnees.github.io/cif-cic/
         ACCESS_TOKEN: ${{ secrets.token }}
-        BRANCH: master
+        BRANCH: main
         FOLDER: _site
         CLEAN: true
