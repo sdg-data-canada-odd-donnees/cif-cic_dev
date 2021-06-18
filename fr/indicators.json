@@ -664,7 +664,7 @@
         {
           "id": "16-1-1",
           "title": "Proportion des Canadiens ayant déclaré se sentir en sécurité lorsqu’ils marchent seuls dans leur voisinage quand il fait noir",
-          "description": "Cet indicateur mesure la proportion des Canadiens ayant déclaré se sentir en sécurité lorsqu’ils marchent seuls dans leur voisinage quand il fait noir",
+          "description": "Cet indicateur mesure la proportion des Canadiens ayant déclaré se sentir en sécurité lorsqu’ils marchent seuls dans leur voisinage quand il fait noir.",
           "keywords": "femme, genre",
           "href": "/cif-cic_dev/fr/16-1-1",
           "status": "complete"
@@ -704,7 +704,7 @@
         {
           "id": "16-6-1",
           "title": "Taux d’incarcération",
-          "description": "Cet indicateur mesure le taux d'incarcération par 100,000 adultes dans la population totale (18 ans et plus). Cela inclue les adultes en détention après condamnation, détention provisoire ainsi que ceux ayant un autre statut.",
+          "description": "Cet indicateur mesure le taux d'incarcération par 100 000 adultes dans la population totale (18 ans et plus). Cela inclue les adultes en détention après condamnation, détention provisoire ainsi que ceux ayant un autre statut.",
           "keywords": "",
           "href": "/cif-cic_dev/fr/16-6-1",
           "status": "complete"
