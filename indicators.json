@@ -256,7 +256,7 @@
         {
           "id": "6-4-1",
           "title": "Water quality in Canadian rivers",
-          "description": "<p>These indicators provide a measure of the ability of river water across Canada to support plants and animals. At each monitoring site, specific water quality data are compared to water quality guidelines to create a rating for the site. If measured water quality remains within the guidelines, it can maintain a healthy ecosystem. <br> Water quality at a monitoring site is considered excellent when parameters in a river almost always meet their guidelines. Conversely, water quality is rated poor when parameters usually do not meet their guidelines, sometimes by a wide margin. ((<em>Environment and climate change Canada (ECCC)</em>)</p>",
+          "description": "<p>These indicators provide a measure of the ability of river water across Canada to support plants and animals. At each monitoring site, specific water quality data are compared to water quality guidelines to create a rating for the site. If measured water quality remains within the guidelines, it can maintain a healthy ecosystem.<br><br> Water quality at a monitoring site is considered excellent when parameters in a river almost always meet their guidelines. Conversely, water quality is rated poor when parameters usually do not meet their guidelines, sometimes by a wide margin. ((<em>Environment and climate change Canada (ECCC)</em>)</p>",
           "keywords": "",
           "href": "/cif-cic_dev/6-4-1",
           "status": "complete"

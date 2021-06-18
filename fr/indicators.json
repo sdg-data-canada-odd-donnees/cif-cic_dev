@@ -192,7 +192,7 @@
         {
           "id": "5-1-1",
           "title": "Proportion de la population ayant auto-déclaré avoir été agressée sexuellement dans les 12 derniers mois",
-          "description": "Cet indicateur mesure la proportion de la population ayant auto-déclaré avoir été agressée sexuellement dans les 12 derniers mois",
+          "description": "Cet indicateur mesure la proportion de la population ayant auto-déclaré avoir été agressée sexuellement dans les 12 derniers mois.",
           "keywords": "women, gender",
           "href": "/cif-cic_dev/fr/5-1-1",
           "status": "complete"
@@ -256,7 +256,7 @@
         {
           "id": "6-4-1",
           "title": "Qualité de l'eau des cours d'eau canadiens",
-          "description": "<p>Ces indicateurs fournissent une mesure de la capacité des cours d'eau du Canada à maintenir la flore et la faune. À chaque site de suivi, des données spécifiques sur la qualité de l'eau sont comparées aux valeurs recommandées de qualité de l'eau en vue de créer une cote pour le site. Si les mesures de la qualité de l'eau demeurent dans les seuils recommandés, un écosystème sain peut être maintenu.<br> La qualité de l'eau à un site de suivi est cotée excellente lorsque les paramètres dans un cours d'eau sont presque toujours conformes aux seuils recommandés. À l'inverse, la qualité de l'eau est cotée mauvaise lorsque les paramètres ne sont habituellement pas conformes à ces seuils, parfois de beaucoup. (<em>Environnement et changement climatique Canada (ECCC)</em>)</p>",
+          "description": "<p>Ces indicateurs fournissent une mesure de la capacité des cours d'eau du Canada à maintenir la flore et la faune. À chaque site de suivi, des données spécifiques sur la qualité de l'eau sont comparées aux valeurs recommandées de qualité de l'eau en vue de créer une cote pour le site. Si les mesures de la qualité de l'eau demeurent dans les seuils recommandés, un écosystème sain peut être maintenu. <br><br>La qualité de l'eau à un site de suivi est cotée excellente lorsque les paramètres dans un cours d'eau sont presque toujours conformes aux seuils recommandés. À l'inverse, la qualité de l'eau est cotée mauvaise lorsque les paramètres ne sont habituellement pas conformes à ces seuils, parfois de beaucoup. (<em>Environnement et changement climatique Canada (ECCC)</em>)</p>",
           "keywords": "",
           "href": "/cif-cic_dev/fr/6-4-1",
           "status": "complete"
@@ -343,7 +343,7 @@
         },
         {
           "id": "8-6-1",
-          "title": "Emplois dans les secteurs des technologies propres",
+          "title": "Emplois dans les secteurs des produits de technologies propres",
           "description": "Cet indicateur mesure le nombre d’emplois qu'on peut attribuer dans les secteurs des produits environnementaux et des technologies propres.",
           "keywords": "",
           "href": "/cif-cic_dev/fr/8-6-1",
