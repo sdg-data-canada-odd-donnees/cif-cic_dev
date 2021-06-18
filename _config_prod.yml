@@ -18,4 +18,4 @@ remote_data_prefix: "https://sdg-data-canada-odd-donnees.github.io/cif-data-donn
 
 analytics:
   # For production, you likely want to enter a Google Analytics code below.
-  ga_prod: 'G-MKK1T51LBE'
+  ga_prod: 'G-CX45HHXL38'
