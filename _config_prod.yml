@@ -14,7 +14,7 @@
 baseurl: ""
 environment: production
 # Replace my-github-org and open-sdg-data-starter as needed.
-remote_data_prefix: "https://sdgcif-data-canada-oddcic-donnee.github.io/cif-data-donnees-cic"
+remote_data_prefix: "https://sdg-data-canada-odd-donnees.github.io/cif-data-donnees-cic"
 
 analytics:
   # For production, you likely want to enter a Google Analytics code below.
