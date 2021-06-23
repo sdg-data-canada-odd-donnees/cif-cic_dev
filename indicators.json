@@ -392,10 +392,10 @@
         {
           "id": "9-5-1",
           "title": "Greenhouse gas emissions per dollar of value-added from the production of infrastructure assets",
-          "description": "Not available",
+          "description": "This indicator measures greenhouse gas emissions per dollar of value-added from the production of infrastructure assets. Variances in greenhouse gas emissions per value added occur as the production of certain infrastructure assets results in more emissions than others.",
           "keywords": "",
           "href": "/cif-cic_dev/9-5-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "9-6-1",

@@ -391,11 +391,11 @@
         },
         {
           "id": "9-5-1",
-          "title": "Émissions de gaz à effets de serre par dollar de valeur ajoutée de la production d'actifs d'infrastructure",
-          "description": "Non disponible",
+          "title": "Émissions de gaz à effets de serre par dollars de valeur ajoutés de la production d'actifs d'infrastructure",
+          "description": "Cet indicateur mesure les émissions de gaz à effets de serre par dollars de valeur ajoutés de la production d'actifs d'infrastructure. Il existe des différences dans les émissions de gaz à effet de serre par valeur ajoutée puisque la production de certaines infrastructures entraîne plus d'émissions que d'autres.",
           "keywords": "",
           "href": "/cif-cic_dev/fr/9-5-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "9-6-1",
