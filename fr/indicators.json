@@ -600,7 +600,7 @@
         {
           "id": "14-2-1",
           "title": "Proportion des stocks de poissons récoltés à des niveaux considérés durables",
-          "description": "L'indicateur permet de comparer les taux de récolte avec les limites de récolte établies. Ces limites sont fondées sur des données scientifiques et fournissent une mesure directe indiquant si la gestion de l'utilisation de ces ressources respecte les limites des écosystèmes. Cela constitue une mesure de la pression de la pêche sur les stocks de poissons sauvages. <em>(ECCC)</em>",
+          "description": "L'indicateur permet de comparer les taux de récolte avec les limites de récolte établies. Ces limites sont fondées sur des données scientifiques et fournissent une mesure directe indiquant si la gestion de l'utilisation de ces ressources respecte les limites des écosystèmes. Cela constitue une mesure de la pression de la pêche sur les stocks de poissons sauvages. <em>Environnement et Changement climatique Canada (ECCC)</em>",
           "keywords": "",
           "href": "/cif-cic_dev/fr/14-2-1",
           "status": "complete"
@@ -616,7 +616,7 @@
         {
           "id": "15-1-1",
           "title": "Proportion d’espèces sauvages indigènes classées comme étant en sécurité ou apparemment en sécurité selon le risque de disparition national",
-          "description": "L'indicateur principal résume le risque de disparition des différentes espèces au Canada. Une espèce est définie comme une population d'organismes qui ne s'accouplent pas avec d'autres populations même lorsqu'elles occupent un même territoire au même moment. <em>(ECCC)</em>",
+          "description": "L'indicateur résume le risque de disparition des différentes espèces au Canada. Une espèce est définie comme une population d'organismes qui ne s'accouplent pas avec d'autres populations même lorsqu'elles occupent un même territoire au même moment. <em>Environnement et Changement climatique Canada (ECCC)</em>",
           "keywords": "",
           "href": "/cif-cic_dev/fr/15-1-1",
           "status": "complete"
@@ -624,7 +624,7 @@
         {
           "id": "15-2-1",
           "title": "Proportion d’espèces affichant des progrès vers leurs objectifs de population et de répartition",
-          "description": "L'indicateur montre si les tendances des populations et de la répartition des espèces en péril sont conformes aux objectifs des programmes de rétablissement ou des plans de gestion définitifs. <em>(ECCC)</em>",
+          "description": "L'indicateur montre si les tendances des populations et de la répartition des espèces en péril sont conformes aux objectifs des programmes de rétablissement ou des plans de gestion définitifs. <em>Environnement et Changement climatique Canada (ECCC)</em>",
           "keywords": "",
           "href": "/cif-cic_dev/fr/15-2-1",
           "status": "complete"
@@ -632,7 +632,7 @@
         {
           "id": "15-3-1",
           "title": "Proportion d’aires terrestres (terres et eaux douces) conservées",
-          "description": "Cet indicateur mesure la proportion d’aires terrestres (terres et eaux douces) conservées. <em>(ECCC)</em>",
+          "description": "Cet indicateur mesure la proportion d’aires terrestres (terres et eaux douces) conservées. Les aires conservées sont des terres et des eaux dont l'utilisation est restreinte. Elles comprennent les aires protégées, ainsi que les autres mesures de conservation efficaces par zone. <em>Environnement et Changement climatique Canada (ECCC)</em>",
           "keywords": "",
           "href": "/cif-cic_dev/fr/15-3-1",
           "status": "complete"
