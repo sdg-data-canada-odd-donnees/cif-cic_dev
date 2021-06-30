@@ -200,7 +200,7 @@
         {
           "id": "5-1-2",
           "title": "Proportion de femmes et filles âgées de 15 ans et plus ayant été assujetties à de la violence physique, sexuelle ou psychologique par leur partenaire intime actuel ou un ancien partenaire intime dans les 12 derniers mois",
-          "description": "Cet indicateur mesure la proportion de femmes et filles âgées de 15 et plus ayant été assujetties à de la violence physique, sexuelle ou psychologique par leur partenaire intime actuel ou un ancien partenaire intime dans les 12 derniers mois. La violence entre partenaires intimes est définie comme tout acte ou comportement violent commis par un partenaire intime actuel ou ancien et est généralement classée en trois catégories, soit la violence psychologique, la violence physique et la violence sexuelle.",
+          "description": "Cet indicateur mesure la proportion de femmes et filles âgées de 15 et plus ayant été assujetties à de la violence physique, sexuelle ou psychologique par leur partenaire intime actuel ou un ancien partenaire intime dans les 12 derniers mois. La violence entre partenaires intimes (VPI) englobe un large éventail de comportements, qui vont de la violence psychologique et de l’exploitation financière aux agressions physiques et sexuelles.",
           "keywords": "women, gender",
           "href": "/cif-cic_dev/fr/5-1-2",
           "status": "complete"
@@ -592,7 +592,7 @@
         {
           "id": "14-1-1",
           "title": "Proportion d’aires marines et côtières conservées",
-          "description": "L'indicateur mesure proportion d’aires marines et côtières conservées. Les aires conservées sont des terres et des eaux dont l'utilisation est restreinte. <em>(ECCC)</em>",
+          "description": "Cet indicateur mesure la proportion d’aires marines et côtières conservées. Les aires conservées sont des terres et des eaux dont l'utilisation est restreinte. Les aires conservées comprennent les aires protégées et d'autres mesures de conservation efficaces par zone. <em>Environnement et Changement climatique Canada (ECCC)</em>",
           "keywords": "",
           "href": "/cif-cic_dev/fr/14-1-1",
           "status": "complete"
