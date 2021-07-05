@@ -25,7 +25,7 @@ languages:
 remote_theme: open-sdg/open-sdg@1.3.1
 
 # Replace this title as needed.
-title: 17 goals to transform our world - Canada Indicators For The Sustainable Development Goals
+title: Canada Indicators For The Sustainable Development Goals
 url: ""
 data_dir: data
 environment: staging
