@@ -46,6 +46,7 @@ create_pages:
       title: 17 goals to transform our world
     - folder: /goals
       layout: goals
+      title: Goals
     - folder: /reporting-status
       layout: reportingstatus
     - filename: indicators.json
