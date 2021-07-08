@@ -64,7 +64,7 @@
         {
           "id": "3-2-1",
           "title": "Prévalence du vapotage chez les jeunes",
-          "description": "Cet indicateur mesure l'utilisation des cigarettes électroniques au cours des 30 derniers jours. Ceci inclue les fumeurs quotidiens et les fumeurs occasionnels.",
+          "description": "Cet indicateur mesure le pourcentage d'élèves qui ont utilisé des produits de vapotage (cigarettes électroniques seulement) au cours des 30 derniers jours. Ceci inclue les fumeurs actuel ainsi que les fumeurs expérimentaux qui ont essayés une cigarette électronique au cours des 30 dernier jours.",
           "keywords": "women, gender",
           "href": "/cif-cic_dev/fr/3-2-1",
           "status": "complete"
