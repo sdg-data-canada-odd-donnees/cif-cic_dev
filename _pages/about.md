@@ -31,5 +31,5 @@ Statistics Canada is continuing to examine data sources that may be useful for r
 
 
 ## Interested in more information?
-If you have further questions, or would like to provide feedback on the SDG Data Hub please <a href="mailto:%email_address">contact us</a>. The answers to some frequently asked questions are also available in our [FAQ]({{ site.baseurl }}/faq/).
+If you have further questions, or would like to provide feedback on the SDG Data Hub please <a href="mailto:statcan.sdg-odd.statcan@canada.ca">contact us</a>. The answers to some frequently asked questions are also available in our [FAQ]({{ site.baseurl }}/faq/).
 
