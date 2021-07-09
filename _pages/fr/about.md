@@ -31,5 +31,5 @@ Statistique Canada continue d’examiner les sources de données qui pourraient 
 <em>L’équipe des ODD de Statistique Canada tient à remercier tous ceux qui ont participé à l’assurance de la qualité, qui ont fait des suggestions d’amélioration ou qui ont contribué de toute autre façon à la création de ce carrefour de données.</em>
 
 ## Intéressé(e) à plus d'information?
-Si vous avez d’autres questions, ou si vous souhaitez nous faire parvenir vos commentaires à propos du Carrefour de données liées aux objectifs de développement durable, veuillez <a href="mailto:%email_address">communiquer avec nous</a>. Les réponses aux questions populaires sont aussi disponibles sous l'onglet: [FAQ]({{ site.baseurl }}/fr/faq/).
+Si vous avez d’autres questions, ou si vous souhaitez nous faire parvenir vos commentaires à propos du Carrefour de données liées aux objectifs de développement durable, veuillez <a href="mailto:statcan.sdg-odd.statcan@canada.ca">communiquer avec nous</a>. Les réponses aux questions populaires sont aussi disponibles sous l'onglet: [FAQ]({{ site.baseurl }}/fr/faq/).
 
