@@ -5,7 +5,7 @@ permalink: /about/
 layout: page
 ---
 
-#### Please note that this site is in the Alpha stage of development, therefore the site is still a 'work in progress'.
+#### Please note that this site is in the Beta stage of development, therefore the site is still a 'work in progress'.
 
 ## 2030 Agenda for Sustainable Development
 The <a href="https://www.un.org/ga/search/view_doc.asp?symbol=A/RES/70/1&Lang=E">2030 Agenda for Sustainable Development</a>, adopted by all United Nations Member States in 2015, provides a blueprint for improving outcomes in the economy, society and the environment. 
@@ -31,5 +31,5 @@ Statistics Canada is continuing to examine data sources that may be useful for r
 
 
 ## Interested in more information?
-If you have further questions, or would like to provide feedback on the SDG Data Hub please contact us at: <a href="mailto:{{site.email_contacts.questions}}">{{site.email_contacts.questions}}</a>. The answers to some frequently asked questions are also available in our [FAQ]({{ site.baseurl }}/faq/).
+If you have further questions, or would like to provide feedback on the SDG Data Hub please <a href="mailto:statcan.sdg-odd.statcan@canada.ca">contact us</a>. The answers to some frequently asked questions are also available in our [FAQ]({{ site.baseurl }}/faq/).
 

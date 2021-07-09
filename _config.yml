@@ -25,7 +25,7 @@ languages:
 remote_theme: open-sdg/open-sdg@1.3.1
 
 # Replace this title as needed.
-title: Indicators For The Sustainable Development Goals
+title: Canada Indicators For The Sustainable Development Goals
 url: ""
 data_dir: data
 environment: staging
@@ -43,8 +43,10 @@ create_pages:
   pages:
     - folder: /
       layout: frontpage-alt
+      title: 17 goals to transform our world
     - folder: /goals
       layout: goals
+      title: Goals
     - folder: /reporting-status
       layout: reportingstatus
     - filename: indicators.json
@@ -52,6 +54,7 @@ create_pages:
       layout: indicator-json
     - folder: /search
       layout: search
+      title: Search results
 
 analytics:
   ga_prod: 'G-F9C9LT784Y'

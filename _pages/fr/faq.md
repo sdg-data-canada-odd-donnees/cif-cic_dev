@@ -7,7 +7,7 @@ layout: page
 
 ## Comment puis-je suggérer des améliorations au carrefour de données ?
 
-Si vous avez de la rétroaction à propos du carrefour de données, veuillez nous l'envoyer à l'adresse courriel suivante : <a href="mailto:{{site.email_contacts.questions}}">{{site.email_contacts.questions}}</a>.
+Si vous avez de la rétroaction à propos du carrefour de données, veuillez <a href="mailto:statcan.sdg-odd.statcan@canada.ca">nous contacter</a>.
 
 
 ## À quelle fréquence de nouvelles données seront-elles ajoutées à ce site ?

@@ -7,7 +7,7 @@ layout: page
 
 ## How do I suggest improvements to the data hub?
 
-If you have feedback on the data hub, please email us at <a href="mailto:{{site.email_contacts.questions}}">{{site.email_contacts.questions}}</a>.
+If you have feedback on the data hub, please <a href="mailto:statcan.sdg-odd.statcan@canada.ca">email us</a>.
 
 
 ## How often will new data be added to this site?
