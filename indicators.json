@@ -144,7 +144,7 @@
         {
           "id": "3-12-1",
           "title": "Incidence of opioid and stimulant overdose related harms",
-          "description": "<p>This indicator measures the incidence of opioid and stimulant overdose related harms per 100,000 population. More specifically, it measures the incidence of: <br> 1. apparent opiod toxicity deaths;<br> 2. opioid-related and stimulant-related poisoning hospitalizations; and<br> 3. Emergency Medical Services responses to suspected opioid overdoses</p>",
+          "description": "<p>This indicator measures the incidence of opioid and stimulant overdose related harms. More specifically, it measures the incidence of: <br><br> 1. apparent opioid and stimulant toxicity deaths;<br> 2. opioid-related and stimulant-related poisoning hospitalizations; and<br> 3. Emergency Medical Services (EMS) responses to suspected opioid overdoses</p>",
           "keywords": "",
           "href": "/cif-cic_dev/3-12-1",
           "status": "complete"
