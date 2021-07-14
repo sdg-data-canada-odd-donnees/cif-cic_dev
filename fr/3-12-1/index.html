@@ -138,7 +138,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20210714125146">
+        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20210714153608">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -444,15 +444,15 @@ var translations = {
   id="indicatorData"
   data-indicatorid='indicator_3-12-1'
   data-id="3-12-1"
-  data-country="Canada"
+  data-country="Canada, provinces et territoires"
   data-charttitle="Taux d'incidence des méfaits associés aux surdoses d’opioïdes et de stimulants"
   data-charttitles="null"
-  data-measurementunit="Taux par 100 000 habitants"
+  data-measurementunit="Nombre ou taux par 100 000 personnes"
   data-showdata="true"
   data-graphtype="line"
   data-geocoderegex=""
   data-showmap="false"
-  data-startvalues="[{&quot;field&quot;:&quot;Types de méfaits&quot;,&quot;value&quot;:&quot;Hospitalisations&quot;},{&quot;field&quot;:&quot;Types de méfaits&quot;,&quot;value&quot;:&quot;Décès&quot;}]"
+  data-startvalues="[{&quot;field&quot;:&quot;Géographie&quot;,&quot;value&quot;:&quot;Canada&quot;},{&quot;field&quot;:&quot;Type d'événement&quot;,&quot;value&quot;:&quot;Décès totaux apparemment liés à une intoxication aux opioïdes&quot;},{&quot;field&quot;:&quot;Type d'événement&quot;,&quot;value&quot;:&quot;Hospitalisations pour intoxication aux opioïdes&quot;},{&quot;field&quot;:&quot;Type d'événement&quot;,&quot;value&quot;:&quot;Interventions des SMU pour surdoses suspectées d'être liées aux opioïdes&quot;}]"
   data-graphlimits="null"
   data-stackeddisaggregation=""
   data-graphannotations="null"
@@ -505,10 +505,10 @@ var translations = {
     <p>Source(s): Agence de la santé publique du Canada</p>
     
     
-    <p>Zone géographique: Canada</p>
+    <p>Zone géographique: Canada, provinces et territoires</p>
     
     
-    <p>Unité de mesure: Taux par 100 000 habitants</p>
+    <p>Unité de mesure: Nombre ou taux par 100 000 personnes</p>
     
     
   </div>
@@ -797,12 +797,12 @@ opensdg.chartConfigAlter(function(config, info) {
 
         
         <dt>Zone géographique:</dt>
-        <dd>Canada</dd>
+        <dd>Canada, provinces et territoires</dd>
         
 
         
         <dt>Unité de mesure:</dt>
-        <dd>Taux par 100 000 habitants</dd>
+        <dd>Nombre ou taux par 100 000 personnes</dd>
         
 
         
@@ -842,12 +842,12 @@ opensdg.chartConfigAlter(function(config, info) {
 
         
         <dt>Zone géographique:</dt>
-        <dd>Canada</dd>
+        <dd>Canada, provinces et territoires</dd>
         
 
         
         <dt>Unité de mesure:</dt>
-        <dd>Taux par 100 000 habitants</dd>
+        <dd>Nombre ou taux par 100 000 personnes</dd>
         
 
         
@@ -979,7 +979,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Description de l&#39;indicateur </th>
         <td>
           
-            <p>Cet indicateur mesure l'incidence des méfaits associés aux surdoses d’opioïdes et de stimulants par 100 000 habitants. Plus spécifiquement, il mesure le taux d'incidence de: <br /> 1. décès apparemment liés à une intoxication aux opioïdes;<br /> 2. intoxication aux opioïdes et stimulants; and<br /> 3. interventions des services médicaux d’urgence (SMU) pour surdoses suspectées d’être liées aux opioïdes</p>
+            <p>Cet indicateur mesure l'incidence des méfaits associés aux surdoses d’opioïdes et de stimulants. Plus spécifiquement, il mesure le nombre et le taux d'incidence : <br /><br /> 1. de décès apparemment liés à une intoxication aux opioïdes et stimulants;<br /> 2. d'intoxication aux opioïdes et stimulants; and<br /> 3. d'interventions des services médicaux d’urgence (SMU) pour surdoses suspectées d’être liées aux opioïdes</p>
 
           
         </td>
@@ -995,7 +995,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Couverture géographique </th>
         <td>
           
-            <p>Canada</p>
+            <p>Canada, provinces et territoires</p>
 
           
         </td>
@@ -1011,7 +1011,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Unité de mesure </th>
         <td>
           
-            <p>Taux par 100 000 habitants</p>
+            <p>Nombre ou taux par 100 000 personnes</p>
 
           
         </td>
@@ -1030,7 +1030,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Calculs </th>
         <td>
           
-            <p>Décès apparemment lié à une intoxication aux opioïdes : un décès causé par intoxication (empoisonnement) ou la toxicité d'une substance consommée, lorsqu'une ou plusieurs des substances en cause(s) sont des opioïdes, peu importe la façon dont elles ont été obtenues (p. ex. illégalement ou sur ordonnance). D’autres substances peuvent également être impliquées. <br /><br />Les données sur les décès apparemment liés à une intoxication aux opioïdes et des stimulants ne sont pas mutuellement exclusives. Une grande proportion des décès impliquant un stimulant impliquait également un opioïde. Le total sera une surestimation du fardeau réel des opioïdes et des stimulants.</p>
+            <p>Décès apparemment lié à une intoxication aux opioïdes : Un décès causé par intoxication (empoisonnement) ou la toxicité d'une substance consommée, lorsqu'une ou plusieurs des substances en cause(s) sont des opioïdes, peu importe la façon dont elles ont été obtenues (p. ex. illégalement ou sur ordonnance). D’autres substances peuvent également être impliquées. <br /><br />Décès apparemment lié à une intoxication aux stimulants : Un décès causé par intoxication (empoisonnement) ou la toxicité d’une substance consommée, lorsqu’une ou plusieurs des substances en cause(s) sont des stimulants, peu importe la façon dont elles ont été obtenues (p.ex. illégalement ou sur ordonnance). D’autres substances peuvent également être impliquées. <br /><br />Hospitalisation pour une intoxication aux opioïdes : Hospitalisation dans un hôpital de soins de courte durée pour un diagnostic significatif d’intoxication aux opioïdes. <br /><br />Hospitalisation pour une intoxication aux stimulants : Hospitalisation dans un hôpital de soins de courte durée pour un diagnostic significatif d’intoxication aux stimulants. <br /><br />Interventions des services médicaux d’urgence (SMU) pour surdoses suspectées d’être liées aux opioïdes : Il n’existe actuellement aucune définition de cas nationale pour les surdoses suspectées d’être liées aux opioïdes pour lesquelles les services médicaux d’urgence sont intervenus. Ainsi, chaque région rapporte des données basées sur leur propre définition de cas provinciale ou territoriale. Étant donné les différences dans les définitions de cas, les comparaisons temporelles et entre provinces et/ou territoires devraient être interprétées avec précaution. Les données fournies par les provinces et les territoires peuvent comprendre les interventions des SMU pour des surdoses suspectées d’être liées aux opioïdes : <br />- Où la naloxone a été administrée par un membre des services médicaux d’urgence ou une autre personne sur les lieux de l’incident <br />- Où la naloxone n’a pas nécessairement été administrée mais une surdose liée aux opioïdes étaient suspectée. <br /><br />Les données sur les décès apparemment liés à une intoxication aux opioïdes et des stimulants ne sont pas mutuellement exclusives. Une grande proportion des décès impliquant un stimulant impliquait également un opioïde. Le total sera une surestimation du fardeau réel des opioïdes et des stimulants.</p>
 
           
         </td>
@@ -1055,7 +1055,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Commentaires et limites </th>
         <td>
           
-            <p>Les données pour 2020 incluent les données de janvier à septembre seulement. Les données de Québec sont exclue du taux hospitalisation.</p>
+            <p>Les données de Québec sont exclue du taux d’hospitalisation.</p>
 
           
         </td>
@@ -1080,8 +1080,8 @@ data-event-label="Change to indicator.sources tab"
             
 
             
-              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/a093a22e327f4949b0d686f333773dd7ecbcbed7" target="_blank">
-                2021-07-13: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
+              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/ced632707b994fcca954e1b5a83006b97a3f53b5" target="_blank">
+                2021-07-14: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
               </a>
             
 
@@ -1111,8 +1111,8 @@ data-event-label="Change to indicator.sources tab"
             
 
             
-              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/341d63426a994b0cc0a0b7775ed480727f08edb3" target="_blank">
-                2021-07-13: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
+              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/301bacc47c84053e5f5faf880845739b290f3929" target="_blank">
+                2021-07-14: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
               </a>
             
 
@@ -1321,7 +1321,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Couverture géographique </th>
         <td>
           
-            <p>Canada</p>
+            <p>Canada, provinces et territoires</p>
 
           
         </td>
@@ -1552,12 +1552,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/cif-cic_dev/assets/js/sdg.js?v=20210714125146'></script>
+<script src='/cif-cic_dev/assets/js/sdg.js?v=20210714153608'></script>
 
 
     
     
-    <script src="/cif-cic_dev/assets/js/custom.js?v=20210714125146"></script><script>
+    <script src="/cif-cic_dev/assets/js/custom.js?v=20210714153608"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
