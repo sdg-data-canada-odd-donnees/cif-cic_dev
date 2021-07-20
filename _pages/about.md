@@ -23,7 +23,7 @@ To support Canada’s domestic implementation of the SDGs that the Government of
 The Canadian Indicator Framework (CIF) encompasses the 17 goals, and adds 31 Canadian Ambitions which have been elaborated by federal departments. In order to report on these Ambitions, Statistics Canada has developed 76 indicators that monitor progress on the National Ambitions and targets. The CIF lays the foundation for Canada to track and report on its progress on the 17 SDGs in the Canadian context.
 
 ## About this website
-Statistics Canada is the central focal point for reporting the data and statistics for both the Canadian and the Global SDG indicators  and has developed this interactive data hub using the <a href="https://open-sdg.readthedocs.io/en/latest/">Open SDG platform</a>  to disseminate the Canadian Indicator Framework data and report on progress towards the Canadian ambitions and targets.
+Statistics Canada is the central focal point for reporting the data and statistics for both the Canadian and the Global SDG indicators  and has developed this interactive data hub using the <a href="https://open-sdg.org/">Open SDG platform</a> to disseminate the Canadian Indicator Framework data and report on progress towards the Canadian ambitions and targets.
 
 Statistics Canada is continuing to examine data sources that may be useful for reporting on the indicators and over the coming months will continue to add further data disaggregation, statistics, and data visualization features to enhance the experience of users.
 
