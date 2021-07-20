@@ -39,7 +39,7 @@ The goal of the SDGs of “leaving no one behind” is a critical call to action
 
 ## How accessible is this website?
 
-Our aim is to make this website as accessible and usable as possible for every user. The <em>Open SDG</em> platform has recently achieved the AA level standard of the [Web Content Accessibility Guidelines (WCAG 2.1)](https://www.w3.org/WAI/standards-guidelines/wcag/).
+Our aim is to make this website as accessible and usable as possible for every user. The <a href="https://open-sdg.org/">Open SDG platform</a> has recently achieved the AA level standard of the [Web Content Accessibility Guidelines (WCAG 2.1)](https://www.w3.org/WAI/standards-guidelines/wcag/).
 
 
 ## What browsers can I use to view this website?
@@ -49,4 +49,4 @@ Our website works with most of the latest versions of the commonly used browsers
 
 ## Can other countries copy this website?
 
-Yes. This site is built using the Open SDG platform, which is an open source, free-to-reuse platform for managing and publishing data and statistics related to the UN Sustainable Development Goals (SDGs). See the <a href="https://open-sdg.readthedocs.io/en/latest/quick-start/">Open SDG Quick Start guide</a> for technical instructions on the quickest way to get a copy of the Open SDG platform up and running. Countries and localities exploring how to report their own SDGs data can also get support from the [Center for Open Data Enterprise (CODE)](http://www.opendataenterprise.org/) through their [SDG National Reporting Initiative](https://www.sdgreporting.org/).
+Yes. This site is built using the <a href="https://open-sdg.org/">Open SDG platform</a>, which is an open source, free-to-reuse platform for managing and publishing data and statistics related to the UN Sustainable Development Goals (SDGs). See the <a href="https://open-sdg.readthedocs.io/en/latest/quick-start/">Open SDG Quick Start guide</a> for technical instructions on the quickest way to get a copy of the Open SDG platform up and running. Countries and localities exploring how to report their own SDGs data can also get support from the [Center for Open Data Enterprise (CODE)](http://www.opendataenterprise.org/) through their [SDG National Reporting Initiative](https://www.sdgreporting.org/).
