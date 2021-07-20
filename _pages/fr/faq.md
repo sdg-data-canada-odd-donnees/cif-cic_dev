@@ -48,7 +48,7 @@ Plusieurs des indicateurs environnementaux du Cadre d'indicateurs canadien provi
 
 ## À quel point le site est-il accessible ?
 
-Nous visons à rendre ce site web le plus accessible et utilisable que possible. La plateforme <a href="https://open-sdg.org/"><em>Open SDG</em></a> (en anglais seulement) a récemment atteint le niveau AA de standard des [Règles pour l'accessibilité des contenus Web (WCAG 2.1)](https://www.w3.org/WAI/standards-guidelines/wcag/fr).
+Nous visons à rendre ce site web le plus accessible et utilisable que possible. La plateforme <a href="https://open-sdg.org/"><em>Open SDG</em></a> (en anglais seulement) a récemment atteinte le niveau AA de standard des [Règles pour l'accessibilité des contenus Web (WCAG 2.1)](https://www.w3.org/WAI/standards-guidelines/wcag/fr).
 
 
 ## Quel fureteur puis-je utiliser pour visiter ce site web ?
