@@ -48,7 +48,7 @@ Plusieurs des indicateurs environnementaux du Cadre d'indicateurs canadien provi
 
 ## À quel point le site est-il accessible ?
 
-Nous visons à rendre ce site web le plus accessible et utilisable que possible. Le gabarit du site <a href="https://open-sdg.org/"><em>Open SDG</em></a> (en anglais seulement) a récemment atteint le niveau AA de standard des [Règles pour l'accessibilité des contenus Web (WCAG 2.1)](https://www.w3.org/WAI/standards-guidelines/wcag/fr).
+Nous visons à rendre ce site web le plus accessible et utilisable que possible. La plateforme <a href="https://open-sdg.org/"><em>Open SDG</em></a> (en anglais seulement) a récemment atteint le niveau AA de standard des [Règles pour l'accessibilité des contenus Web (WCAG 2.1)](https://www.w3.org/WAI/standards-guidelines/wcag/fr).
 
 
 ## Quel fureteur puis-je utiliser pour visiter ce site web ?
@@ -58,5 +58,5 @@ Le site web fonctionne avec la plupart des plus récentes versions des fureteurs
 
 ## Est-ce que d’autres pays peuvent copier ce site web ?
 
-Oui. Ce site est construit à partir du gabarit <a href="https://open-sdg.org/"><em>Open SDG</em></a> (en anglais seulement), qui est un gabarit libre d'accès et d'utilisation pour la gestion et la publication de données et de statistiques liées aux objectifs de développement durable (ODD) des Nations Unies. Consultez le <a href="https://open-sdg.readthedocs.io/en/latest/quick-start/">guide de démarrage rapide de <em>Open SDG</em></a> (en anglais seulement) pour obtenir des instructions techniques sur le moyen le plus rapide de mettre en place une copie du gabarit <em>Open SDG</em>. Les pays qui explorent les façons de diffuser leurs données liées aux objectifs de développement durable peuvent obtenir du support du <em>[Center for Open Data Enterprise (CODE)](http://www.opendataenterprise.org/)</em> via leur <em>[SDG National Reporting Initiative](https://www.sdgreporting.org/)</em> (en anglais seulement).
+Oui. Ce site est construit à partir de la plateforme <a href="https://open-sdg.org/"><em>Open SDG</em></a> (en anglais seulement), qui est un gabarit libre d'accès et d'utilisation pour la gestion et la publication de données et de statistiques liées aux objectifs de développement durable (ODD) des Nations Unies. Consultez le <a href="https://open-sdg.readthedocs.io/en/latest/quick-start/">guide de démarrage rapide de <em>Open SDG</em></a> (en anglais seulement) pour obtenir des instructions techniques sur le moyen le plus rapide de mettre en place une copie du gabarit <em>Open SDG</em>. Les pays qui explorent les façons de diffuser leurs données liées aux objectifs de développement durable peuvent obtenir du support du <em>[Center for Open Data Enterprise (CODE)](http://www.opendataenterprise.org/)</em> via leur <em>[SDG National Reporting Initiative](https://www.sdgreporting.org/)</em> (en anglais seulement).
 
