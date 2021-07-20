@@ -5,7 +5,7 @@ permalink: /fr/about/
 layout: page
 ---
 
-#### Veuillez noter que ce site est présentement au stage Alpha, ce qui signifie que c'est encore un produit en développement.
+#### Veuillez noter que ce site est présentement au stage Beta, ce qui signifie que c'est encore un produit en développement.
 
 ## Programme de développement durable à l’horizon 2030
 Tous les membres des Nations Unies ont adopté le <a href="https://www.un.org/ga/search/view_doc.asp?symbol=A/RES/70/1&Lang=F">Programme de développement
@@ -24,7 +24,7 @@ Afin de soutenir la mise en oeuvre nationale des ODD à laquelle le Gouvernement
 Le Cadre d’indicateurs canadien (CIC) englobe les 17 objectifs et y ajoute 31 ambitions canadiennes qui ont été élaborées par les ministères fédéraux. Afin de rendre compte de ces ambitions, Statistique Canada a élaboré 76 indicateurs qui permettent de suivre les progrès réalisés à l’égard des ambitions et des cibles nationales. Le CIC établit les prémices permettant au Canada de suivre et de faire rapport des progrès à l’égard des 17 ODD dans le contexte canadien.
 
 ## À propos de ce carrefour de données
-Statistique Canada est le point focal pour la diffusion des données et des statistiques portant sur les indicateurs des ODD canadiens et mondiaux. Statistique Canada a développé ce carrefour de données interactif en utilisant la plateforme <a href="https://open-sdg.readthedocs.io/en/latest/"><em>Open SDG</em></a> (en anglais seulement) afin de diffuser les données du Cadre d'indicateur canadien et de rendre compte des progrès à l'égard des ambitions et des cibles canadiennes.
+Statistique Canada est le point focal pour la diffusion des données et des statistiques portant sur les indicateurs des ODD canadiens et mondiaux. Statistique Canada a développé ce carrefour de données interactif en utilisant la plateforme <a href="https://open-sdg.org/"><em>Open SDG</em></a> (en anglais seulement) afin de diffuser les données du Cadre d'indicateur canadien et de rendre compte des progrès à l'égard des ambitions et des cibles canadiennes.
 
 Statistique Canada continue d’examiner les sources de données qui pourraient être utiles pour le rapport des indicateurs et continuera, au cours des prochains mois, d’ajouter plus de données désagrégées, de statistiques et d'outils de visualisation afin d’améliorer l’expérience des utilisateurs.
 
