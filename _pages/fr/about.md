@@ -5,7 +5,7 @@ permalink: /fr/about/
 layout: page
 ---
 
-#### Veuillez noter que ce site est présentement au stage Alpha, ce qui signifie que c'est encore un produit en développement.
+#### Veuillez noter que ce site est présentement au stage Beta, ce qui signifie que c'est encore un produit en développement.
 
 ## Programme de développement durable à l’horizon 2030
 Tous les membres des Nations Unies ont adopté le <a href="https://www.un.org/ga/search/view_doc.asp?symbol=A/RES/70/1&Lang=F">Programme de développement
