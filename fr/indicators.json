@@ -208,7 +208,7 @@
         {
           "id": "5-2-1",
           "title": "Proportion de rôles de leadership tenus par des femmes",
-          "description": "Cet indicateur mesure la proportion de rôles de leadership exercés par des femmes. Le types de rôles de leadership inclues la représentation des femmes élus au Parlement national, les ministres nommés au sein du Cabinet fédéral, les juges canadiens dans l'administration publique fédéral et ceux dans les administrations provincials et territoriales ainsi que d'autres rôles de leadership.",
+          "description": "Cet indicateur mesure la proportion de rôles de leadership exercés par des femmes. Les rôles de leadership choisis incluent les femmes élues au Parlement national, les ministres nommés au sein du Cabinet fédéral, les juges canadiens dans l’administration publique fédérale et ceux dans les administrations provinciales et territoriales ainsi que d’autres rôles de leadership.",
           "keywords": "femme, genre",
           "href": "/cif-cic_dev/fr/5-2-1",
           "status": "complete"
@@ -216,7 +216,7 @@
         {
           "id": "5-3-1",
           "title": "Proportion du temps consacré à des soins et travaux domestiques non rémunérés",
-          "description": "Cet indicateur mesure la proportion du temps consacré à des soins et travaux domestiques non rémunérés. Les activités de travail non-rémunéré comprends les tâches domestiques, les soins à un enfant du ménage de moins de 18 ans ou adulte du ménage ainsi que le magasinage de biens ou de services.",
+          "description": "Cet indicateur mesure la proportion du temps consacré à des soins et travaux domestiques non rémunérés. Les activités de soins et de travaux domestiques non rémunérés comprennent les tâches domestiques, les soins à un enfant du ménage de moins de 18 ans ou adulte du ménage ainsi que le magasinage de biens ou de services.",
           "keywords": "women, gender",
           "href": "/cif-cic_dev/fr/5-3-1",
           "status": "complete"
@@ -248,7 +248,7 @@
         {
           "id": "6-3-1",
           "title": "Taux de croissance de l’utilisation de l’eau",
-          "description": "Cet indicateur mesure le taux de croissance de l’utilisation de l’eau pour les ménages et pour plusieurs secteurs de l'économie. L'utilisation de l'eau comprends la consommation d'eau sous forme d'intrants naturels et d'eau fournie par les systèmes municipaux de distribution d'eau ou les systèmes d'irrigation par les industries, les administrations publiques, les institutions et les ménages.",
+          "description": "Cet indicateur mesure le taux de croissance de l’utilisation de l’eau pour les ménages et pour plusieurs secteurs de l'économie. L'utilisation de l'eau comprend la consommation d'eau sous forme d'intrants naturels et d'eau fournie par les systèmes municipaux de distribution d'eau ou les systèmes d'irrigation par les industries, les administrations publiques, les institutions et les ménages.",
           "keywords": "",
           "href": "/cif-cic_dev/fr/6-3-1",
           "status": "complete"
@@ -256,7 +256,7 @@
         {
           "id": "6-4-1",
           "title": "Qualité de l'eau des cours d'eau canadiens",
-          "description": "<p>Ces indicateurs fournissent une mesure de la capacité des cours d'eau du Canada à maintenir la flore et la faune. À chaque site de suivi, des données spécifiques sur la qualité de l'eau sont comparées aux valeurs recommandées de qualité de l'eau en vue de créer une cote pour le site. Si les mesures de la qualité de l'eau demeurent dans les seuils recommandés, un écosystème sain peut être maintenu. <br><br>La qualité de l'eau à un site de suivi est cotée excellente lorsque les paramètres dans un cours d'eau sont presque toujours conformes aux seuils recommandés. À l'inverse, la qualité de l'eau est cotée mauvaise lorsque les paramètres ne sont habituellement pas conformes à ces seuils, parfois de beaucoup. <em>Environnement et changement climatique Canada (ECCC)</em></p>",
+          "description": "<p>Ces indicateurs fournissent une mesure de la capacité des cours d'eau du Canada à maintenir la flore et la faune. À chaque site de suivi, des données spécifiques sur la qualité de l'eau sont comparées aux valeurs recommandées de qualité de l'eau en vue de créer une cote pour le site. Si les mesures de la qualité de l'eau demeurent dans les seuils recommandés, un écosystème sain peut être maintenu. <br><br>La qualité de l'eau à un site de suivi est cotée excellente lorsque les paramètres dans un cours d'eau sont presque toujours conformes aux seuils recommandés. À l'inverse, la qualité de l'eau est cotée mauvaise lorsque les paramètres ne sont habituellement pas conformes à ces seuils, parfois de beaucoup. <em>Environnement et Changement climatique Canada (ECCC)</em></p>",
           "keywords": "",
           "href": "/cif-cic_dev/fr/6-4-1",
           "status": "complete"
