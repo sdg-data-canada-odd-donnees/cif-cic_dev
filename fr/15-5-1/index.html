@@ -138,7 +138,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20210818011358">
+        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20210818194836">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -1110,7 +1110,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Calculs </th>
         <td>
           
-            <p>Les données présentées ici sont fondées sur l’Inventaire forestier national du Canada (année de référence 2005), et font l’objet de rajustements annuels en fonction de l’estimation de la superficie forestière perdue (déboisement) et gagnée (boisement). <em>(RNCan)</em></p>
+            <p>Les données présentées ici sont fondées sur l’Inventaire forestier national du Canada (année de référence 2005), et font l’objet de rajustements annuels en fonction de l’estimation de la superficie forestière perdue (déboisement) et gagnée (boisement). <em>(RNCan)</em> À partir de 2018, les données sont des estimations utilisant le taux de déforestation d’une année précédente, elles doivent donc être traitées comme une valeur imputée.</p>
 
           
         </td>
@@ -1191,8 +1191,8 @@ data-event-label="Change to indicator.sources tab"
             
 
             
-              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/4890f5b47a407da5898fc5f5a65ad9dd2733f5a6" target="_blank">
-                2021-07-21: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
+              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/8cef925decf35f235132db7b64486a36f82753b4" target="_blank">
+                2021-08-18: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
               </a>
             
 
@@ -2011,12 +2011,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/cif-cic_dev/assets/js/sdg.js?v=20210818011358'></script>
+<script src='/cif-cic_dev/assets/js/sdg.js?v=20210818194836'></script>
 
 
     
     
-    <script src="/cif-cic_dev/assets/js/custom.js?v=20210818011358"></script><script>
+    <script src="/cif-cic_dev/assets/js/custom.js?v=20210818194836"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
