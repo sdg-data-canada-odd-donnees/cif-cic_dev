@@ -2685,8 +2685,8 @@ var mapView = function () {
     $('.map').show();
     $('#map').sdgMap({
       indicatorId: indicatorId,
-      mapOptions: null,
-      mapLayers: null,
+      mapOptions: {"minZoom":5},
+      mapLayers: [{"min_zoom":5,"max_zoom":10,"subfolder":"/assets/maps","label":"Label"}],
       precision: precision,
       decimalSeparator: decimalSeparator,
     });
