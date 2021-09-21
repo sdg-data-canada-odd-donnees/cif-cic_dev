@@ -114,37 +114,40 @@ var translations = {
         
         <link rel="canonical" href="/">
 
-        
-
         <!--[if IE 9]>
         <script src="/cif-cic_dev/assets/js/lib/classList.js"></script>
         <![endif]-->
 
-        <!-- Favicons ================================================== -->
-        <!-- 128x128 -->
-        <link rel="shortcut icon" type="image/ico" href="/cif-cic_dev/assets/img/favicons/favicon.ico">
-        <link rel="icon" type="image/png" href="/cif-cic_dev/assets/img/favicons/favicon.png"><!-- 192x192, as recommended for Android
-        http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
-        -->
-
         
+
+
+
+
+<link rel="shortcut icon" type="image/ico" href="/cif-cic_dev/assets/img/favicons/favicon.ico">
+<link rel="icon" type="image/png" href="/cif-cic_dev/assets/img/favicons/favicon.png">
+
 
         
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20210921011731">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
+        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20210921180957">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
         <link rel="stylesheet" href="https://cdn.rawgit.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.control.min.css"  crossorigin=""/>
         <link rel="stylesheet" href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css'  crossorigin=""/>
         <link rel="stylesheet" href="https://bowercdn.net/c/leaflet.zoomhome-latest/dist/leaflet.zoomhome.css"  crossorigin=""/>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><!-- ShareThis BEGIN --><!-- ShareThis END -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin="">
+        <link rel="stylesheet" href="https://cdn.kiprotect.com/klaro/v0.7/klaro.min.css" crossorigin=""/>
+        
+
+        
 
     </head>
-<body class="language-fr layout-goal-by-target">
+<body class="language-fr
+layout-goal-by-target
+">
 <!-- <div class="container"> -->
 
 
@@ -167,17 +170,46 @@ var translations = {
 
     <div class="logo-and-mobile-widgets">
       <a class="navbar-brand" href="/cif-cic_dev/fr/" id="home">
-    <img src="/cif-cic_dev/assets/img/SDG_logo.png" alt="Objectifs de développement durable - 17 objectifs pour transformer notre monde" />
+    <img src="" alt="" />
 </a>
       <div class="mobile-widgets">
-    <ul id='accessibility-nav' class='contrast-switcher'></ul><div class="language-toggle-mobile">
+    <ul id='accessibility-nav' class='contrast-switcher'>
+        
+
+    <li class="nav-link contrast contrast-default contrast-type-default">
+        <a title="Désactiver le contraste élevé"
+           aria-label="Désactiver le contraste élevé"
+           data-contrast-switch-to="default"
+           href="javascript:void(0)"
+           data-on="click"
+data-event-category="Accessibility"
+data-event-action="Change contrast setting"
+data-event-label="default"
+
+        >A</a>
+    </li>
+    <li class="nav-link contrast contrast-high contrast-type-default">
+        <a title="Activer le contraste élevé"
+           aria-label="Activer le contraste élevé"
+           data-contrast-switch-to="high"
+           href="javascript:void(0)"
+           data-on="click"
+data-event-category="Accessibility"
+data-event-action="Change contrast setting"
+data-event-label="high"
+
+        >A</a>
+    </li>
+
+
+    </ul><div class="language-toggle-mobile">
         <div class="language-toggle-container">
   
   <div class="btn-group language-toggle-dropdown ">
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Français</span>
       <span class="language-abbreviation">fr</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
-    <ul class="dropdown-menu"><li>
+    <ul class="dropdown-menu"><li class="language-option-en">
             <a href="/cif-cic_dev/11/">
               English
             </a>
@@ -215,7 +247,7 @@ var translations = {
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Français</span>
       <span class="language-abbreviation">fr</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
-    <ul class="dropdown-menu"><li>
+    <ul class="dropdown-menu"><li class="language-option-en">
             <a href="/cif-cic_dev/11/">
               English
             </a>
@@ -226,6 +258,36 @@ var translations = {
 
 
 </li>
+
+
+
+    <li class="nav-link contrast contrast-default contrast-type-default">
+        <a title="Désactiver le contraste élevé"
+           aria-label="Désactiver le contraste élevé"
+           data-contrast-switch-to="default"
+           href="javascript:void(0)"
+           data-on="click"
+data-event-category="Accessibility"
+data-event-action="Change contrast setting"
+data-event-label="default"
+
+        >A</a>
+    </li>
+    <li class="nav-link contrast contrast-high contrast-type-default">
+        <a title="Activer le contraste élevé"
+           aria-label="Activer le contraste élevé"
+           data-contrast-switch-to="high"
+           href="javascript:void(0)"
+           data-on="click"
+data-event-category="Accessibility"
+data-event-action="Change contrast setting"
+data-event-label="high"
+
+        >A</a>
+    </li>
+
+
+
 </ul>
 
     </li>
@@ -234,7 +296,7 @@ var translations = {
         aria-haspopup="true">
         <button data-target="search-mobile" aria-expanded="false">Chercher</button>
         <div id="search-mobile" class="menu-target">
-  <form action="/cif-cic_dev/fr/search">
+  <form action="/cif-cic_dev/fr/search/">
     <label class="sr-only" for="indicator_search-mobile">Chercher</label>
     <input type="text" name="q" id="indicator_search-mobile" title="Chercher" /><!--
     --><button aria-label="Chercher" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
@@ -244,7 +306,7 @@ var translations = {
     </li>
 </ul>
       <div id="search" class="menu-target">
-  <form action="/cif-cic_dev/fr/search">
+  <form action="/cif-cic_dev/fr/search/">
     <label class="sr-only" for="indicator_search">Chercher</label>
     <input type="text" name="q" id="indicator_search" title="Chercher" /><!--
     --><button aria-label="Chercher" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
@@ -272,7 +334,7 @@ var translations = {
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Français</span>
       <span class="language-abbreviation">fr</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
-    <ul class="dropdown-menu"><li>
+    <ul class="dropdown-menu"><li class="language-option-en">
             <a href="/cif-cic_dev/11/">
               English
             </a>
@@ -283,6 +345,36 @@ var translations = {
 
 
 </li>
+
+
+
+    <li class="nav-link contrast contrast-default contrast-type-default">
+        <a title="Désactiver le contraste élevé"
+           aria-label="Désactiver le contraste élevé"
+           data-contrast-switch-to="default"
+           href="javascript:void(0)"
+           data-on="click"
+data-event-category="Accessibility"
+data-event-action="Change contrast setting"
+data-event-label="default"
+
+        >A</a>
+    </li>
+    <li class="nav-link contrast contrast-high contrast-type-default">
+        <a title="Activer le contraste élevé"
+           aria-label="Activer le contraste élevé"
+           data-contrast-switch-to="high"
+           href="javascript:void(0)"
+           data-on="click"
+data-event-category="Accessibility"
+data-event-action="Change contrast setting"
+data-event-label="high"
+
+        >A</a>
+    </li>
+
+
+
 </ul>
 
     </nav>
@@ -339,6 +431,7 @@ var translations = {
   </div>
 </div>
 
+
 <div id="main-content" class="container goal-indicators goal-11 goal-by-target" role="main">
 
   
@@ -370,24 +463,25 @@ var translations = {
       
       
       
-      
-      
-      
-      
-      
 
       <div class="col-md-12  goal-indicator">
+        
         <span class="indicator-card-number">
           11.1.1
-          <span class="status complete">
-            Diffusé en ligne
-          </span>
+          
+
+
+<span class="status complete">
+    <span class="status-inner">Déclaré</span>
+</span>
+
         </span>
         <a href="/cif-cic_dev/fr/11-1-1">
           Taux de croissance de l'itinérance chronique au Canada
         </a>
         
 
+        
       </div>
     
     </div>
@@ -406,24 +500,25 @@ var translations = {
       
       
       
-      
-      
-      
-      
-      
 
       <div class="col-md-12  goal-indicator">
+        
         <span class="indicator-card-number">
           11.2.1
-          <span class="status complete">
-            Diffusé en ligne
-          </span>
+          
+
+
+<span class="status complete">
+    <span class="status-inner">Déclaré</span>
+</span>
+
         </span>
         <a href="/cif-cic_dev/fr/11-2-1">
           Proportion des ménages ayant des besoins impérieux en matière de logement
         </a>
         
 
+        
       </div>
     
     </div>
@@ -442,24 +537,25 @@ var translations = {
       
       
       
-      
-      
-      
-      
-      
 
       <div class="col-md-12  goal-indicator">
+        
         <span class="indicator-card-number">
           11.3.1
-          <span class="status complete">
-            Diffusé en ligne
-          </span>
+          
+
+
+<span class="status complete">
+    <span class="status-inner">Déclaré</span>
+</span>
+
         </span>
         <a href="/cif-cic_dev/fr/11-3-1">
           Pourcentage de la population vivant dans des zones où les concentrations des polluants atmosphériques sont moins élevées ou égales aux Normes Canadiennes de Qualité de l’Air Ambiant de 2020
         </a>
         
 
+        
       </div>
     
     </div>
@@ -478,24 +574,25 @@ var translations = {
       
       
       
-      
-      
-      
-      
-      
 
       <div class="col-md-12  goal-indicator">
+        
         <span class="indicator-card-number">
           11.4.1
-          <span class="status complete">
-            Diffusé en ligne
-          </span>
+          
+
+
+<span class="status complete">
+    <span class="status-inner">Déclaré</span>
+</span>
+
         </span>
         <a href="/cif-cic_dev/fr/11-4-1">
           Pourcentage de la population vivant à moins de 500 mètres d'un accès au transport en commun
         </a>
         
 
+        
       </div>
     
     </div>
@@ -514,24 +611,25 @@ var translations = {
       
       
       
-      
-      
-      
-      
-      
 
       <div class="col-md-12  goal-indicator">
+        
         <span class="indicator-card-number">
           11.5.1
-          <span class="status complete">
-            Diffusé en ligne
-          </span>
+          
+
+
+<span class="status complete">
+    <span class="status-inner">Déclaré</span>
+</span>
+
         </span>
         <a href="/cif-cic_dev/fr/11-5-1">
           Pourcentage de la population ayant adopté le transport en commun ou actif pour le navettage
         </a>
         
 
+        
       </div>
     
     </div>
@@ -550,24 +648,25 @@ var translations = {
       
       
       
-      
-      
-      
-      
-      
 
       <div class="col-md-12  goal-indicator">
+        
         <span class="indicator-card-number">
           11.6.1
-          <span class="status complete">
-            Diffusé en ligne
-          </span>
+          
+
+
+<span class="status complete">
+    <span class="status-inner">Déclaré</span>
+</span>
+
         </span>
         <a href="/cif-cic_dev/fr/11-6-1">
           Quantité totale de déchets envoyés aux fins d'élimination par habitant
         </a>
         
 
+        
       </div>
     
     </div>
@@ -586,24 +685,25 @@ var translations = {
       
       
       
-      
-      
-      
-      
-      
 
       <div class="col-md-12  goal-indicator">
+        
         <span class="indicator-card-number">
           11.7.1
-          <span class="status complete">
-            Diffusé en ligne
-          </span>
+          
+
+
+<span class="status complete">
+    <span class="status-inner">Déclaré</span>
+</span>
+
         </span>
         <a href="/cif-cic_dev/fr/11-7-1">
           Pourcentage de la population âgée de 12 ans et plus ayant déclaré avoir un sentiment d’appartenance à leur communauté locale plutôt fort ou très fort
         </a>
         
 
+        
       </div>
     
     </div>
@@ -692,12 +792,12 @@ var translations = {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/cif-cic_dev/assets/js/sdg.js?v=20210921011731'></script>
+<script src='/cif-cic_dev/assets/js/sdg.js?v=20210921180957'></script>
 
 
     
     
-    <script src="/cif-cic_dev/assets/js/custom.js?v=20210921011731"></script><script>
+    <script src="/cif-cic_dev/assets/js/custom.js?v=20210921180957"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
