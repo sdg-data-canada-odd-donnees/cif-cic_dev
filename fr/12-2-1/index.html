@@ -136,7 +136,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20210921180957">
+        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20210921181031">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -175,7 +175,7 @@ layout-indicator
 
     <div class="logo-and-mobile-widgets">
       <a class="navbar-brand" href="/cif-cic_dev/fr/" id="home">
-    <img src="" alt="" />
+    <img src="/cif-cic_dev/assets/img/SDG_logo.png" alt="Objectifs de développement durable - 17 objectifs pour transformer notre monde" />
 </a>
       <div class="mobile-widgets">
     <ul id='accessibility-nav' class='contrast-switcher'>
@@ -550,7 +550,7 @@ data-event-label="high"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="null"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Année&quot;},{&quot;name&quot;:&quot;data.Industries&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Total, industries&quot;,&quot;Exploitation forestière (sauf à forfait)&quot;,&quot;Extraction de pétrole et de gaz&quot;,&quot;Extraction minière et exploitation en carrière&quot;,&quot;Production, transport et distribution d’électricité&quot;,&quot;Distribution de gaz naturel&quot;,&quot;Fabrication d’aliments&quot;,&quot;Fabrication de boissons et de produits du tabac&quot;,&quot;Fabrication de produits en bois&quot;,&quot;Fabrication du papier&quot;,&quot;Fabrication de produits du pétrole et du charbon&quot;,&quot;Fabrication de produits chimiques&quot;,&quot;Fabrication de produits minéraux non métalliques&quot;,&quot;Première transformation des métaux&quot;,&quot;Fabrication de produits métalliques&quot;,null,&quot;Fabrication de produits en plastique et en caoutchouc&quot;,&quot;Fabrication de machines&quot;,&quot;Fabrication de meubles et de produits connexes&quot;,&quot;Autres industries de fabrication&quot;,&quot;Transport par pipeline&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Industries&quot;},{&quot;name&quot;:&quot;data.Environmental protection activities or management practices&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Gestion des eaux usées&quot;,&quot;Gestion de la pollution atmosphérique&quot;,&quot;Protection et assainissement du sol, des eaux souterraines et des eaux de surface&quot;,&quot;Protection de la biodiversité et de l’habitat&quot;,&quot;Lutte contre le bruit et les vibrations&quot;,&quot;Total, activités de protection de l'environnement&quot;,&quot;Redevances écologiques&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Activités de protection de l'environnement&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Valeur&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="null"
 >
@@ -1884,12 +1884,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/cif-cic_dev/assets/js/sdg.js?v=20210921180957'></script>
+<script src='/cif-cic_dev/assets/js/sdg.js?v=20210921181031'></script>
 
 
     
     
-    <script src="/cif-cic_dev/assets/js/custom.js?v=20210921180957"></script><script>
+    <script src="/cif-cic_dev/assets/js/custom.js?v=20210921181031"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
