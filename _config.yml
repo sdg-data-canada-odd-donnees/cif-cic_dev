@@ -185,7 +185,7 @@ exclude:
 # These are only a few of the possible settings. For more details, see:
 # https://open-sdg.readthedocs.io/en/latest/maps/
 map_options:
-  minZoom: 4
+  minZoom: 1
   maxZoom: 6
   tileURL: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
   tileOptions:
@@ -211,7 +211,7 @@ map_options:
     color: '#172d44'
     dashArray: '5,5'
 map_layers:
-  - min_zoom: 4
+  - min_zoom: 1
     max_zoom: 6
     subfolder: regions
     label: Regions
