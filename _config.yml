@@ -192,8 +192,8 @@ map_options:
 map_layers:
   - min_zoom: 5
     max_zoom: 10
-    subfolder: /assets/maps
-    label: "Label"
+#    subfolder: /assets/maps
+#    label: "Label"
 
 # Recommend accessibility improvements.
 accessible_tabs: true
