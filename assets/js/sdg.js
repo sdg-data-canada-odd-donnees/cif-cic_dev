@@ -2850,8 +2850,8 @@ var mapView = function () {
     $('.map').show();
     $('#map').sdgMap({
       indicatorId: indicatorId,
-      mapOptions: {"minZoom":5},
-      mapLayers: [{"min_zoom":5,"max_zoom":10}],
+      mapOptions: {"minZoom":4,"maxZoom":6,"tileURL":"https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png","tileOptions":null,"colorRange":"chroma.brewer.BuGn","noValueColor":"#f0f0f0","styleNormal":{"weight":1,"opacity":1,"fillOpacity":0.7,"color":"#888888","dashArray":""},"styleHighlighted":{"weight":1,"opacity":1,"fillOpacity":0.7,"color":"#111111","dashArray":""},"styleStatic":{"weight":2,"opacity":1,"fillOpacity":0,"color":"#172d44","dashArray":"5,5"}},
+      mapLayers: [{"min_zoom":4,"max_zoom":6,"subfolder":"regions","label":"Regions"}],
       precision: precision,
       decimalSeparator: decimalSeparator,
     });
