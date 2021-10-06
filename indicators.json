@@ -464,7 +464,7 @@
         {
           "id": "11-1-1",
           "title": "Growth rate of people experiencing chronic homelessness",
-          "description": "<p>The indicator measures the growth rate of people experiencing chronic homelessness.<br> Refers to individuals who are currently experiencing homelessness AND who meet at least one of the following criteria:<br> 1) they have a total of at least 6 months (180 days) of homelessness over the past year;<br> 2) they have recurrent experiences of homelessness over the past 3 years, with a cumulative duration of at least 18 months (546 days). <em>(Reaching Home: Canada’s Homelessness Strategy Directives)</em>",
+          "description": "<p>The indicator measures the growth rate of people experiencing chronic homelessness.<br> Refers to individuals who are currently experiencing homelessness AND who meet at least one of the following criteria:<br><br> 1) they have a total of at least 6 months (180 days) of homelessness over the past year;<br> 2) they have recurrent experiences of homelessness over the past 3 years, with a cumulative duration of at least 18 months (546 days). <em>(Reaching Home: Canada’s Homelessness Strategy Directives)</em>",
           "keywords": "",
           "href": "/cif-cic_dev/11-1-1",
           "status": "complete"

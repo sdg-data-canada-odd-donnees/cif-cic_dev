@@ -136,7 +136,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20211006011817">
+        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20211006173831">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -550,7 +550,7 @@ data-event-label="high"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Année&quot;},{&quot;name&quot;:&quot;data.Estimates&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Croissance depuis 2016-17&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Estimation&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Valeur&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Année&quot;},{&quot;name&quot;:&quot;data.Estimates&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;data.Growth since 2016&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Estimation&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Valeur&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="null"
 >
@@ -1080,7 +1080,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Description de l&#39;indicateur </th>
         <td>
           
-            <p>Cet indicateur mesure le taux de croissance des personnes en situation d’itinérance chronique. L’itinérance chronique désigne les personnes qui sont actuellement en situation d’itinérance et qui rencontrent l’un des critères suivants :<br /> 1) ont été en situation d’itinérance pendant 6 mois (180 jours) ou plus au cours de la dernière année, ou<br /> 2) ont été en situation d’itinérance pendant 18 mois (546 jours) ou plus au cours des 3 dernières années. <em>(Directives de Vers un chez-soi : la stratégie canadienne de lutte contre l'itinérance)</em>
+            <p>Cet indicateur mesure le taux de croissance des personnes en situation d’itinérance chronique. L’itinérance chronique désigne les personnes qui sont actuellement en situation d’itinérance et qui rencontrent l’un des critères suivants :<br /><br /> 1) ont été en situation d’itinérance pendant 6 mois (180 jours) ou plus au cours de la dernière année, ou<br /> 2) ont été en situation d’itinérance pendant 18 mois (546 jours) ou plus au cours des 3 dernières années. <em>(Directives de Vers un chez-soi : la stratégie canadienne de lutte contre l'itinérance)</em>
 </p>
 
           
@@ -1182,8 +1182,8 @@ data-event-label="Change to indicator.sources tab"
             
 
             
-              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/a8e59ce92bdad8d5cbf30e79efb9c988ff2bb5eb" target="_blank">
-                2021-06-10: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
+              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/73a5d73a9257795975dd8e476e94b622e22821c6" target="_blank">
+                2021-10-06: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
               </a>
             
 
@@ -1213,8 +1213,8 @@ data-event-label="Change to indicator.sources tab"
             
 
             
-              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/4c7e8e7c8e58d6d6989f9d7720d8f091d80a1ab3" target="_blank">
-                2021-06-10: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
+              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/0789244cf11902d246cd484ba2a4b5e58260755e" target="_blank">
+                2021-10-06: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
               </a>
             
 
@@ -1420,7 +1420,29 @@ data-event-label="Change to indicator.sources tab"
   
       
         
+      
+      
+      <tr>
+        <th scope="row">Lien vers la source de données </th>
+        <td>
           
+            
+            
+            
+            
+
+            
+              <a href="https://www.canada.ca/fr/emploi-developpement-social/ministere/rapports/plan-ministeriel/2021-2022.html" target="_blank">
+                Plan ministériel d'Emploi et Développement social Canada pour l’exercice 2021 à 2022 <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
+              </a>
+            
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
         
       
@@ -1622,12 +1644,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/cif-cic_dev/assets/js/sdg.js?v=20211006011817'></script>
+<script src='/cif-cic_dev/assets/js/sdg.js?v=20211006173831'></script>
 
 
     
     
-    <script src="/cif-cic_dev/assets/js/custom.js?v=20211006011817"></script><script>
+    <script src="/cif-cic_dev/assets/js/custom.js?v=20211006173831"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
