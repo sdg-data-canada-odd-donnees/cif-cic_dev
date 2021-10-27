@@ -64,9 +64,9 @@ analytics:
 
 # Replace the email addresses below.
 email_contacts:
-  questions: statcan.sdg-odd.statcan@canada.ca
-  suggestions: statcan.sdg-odd.statcan@canada.ca
-  functional: statcan.sdg-odd.statcan@canada.ca
+  questions: statcan.sdg-odd.statcan@statcan.gc.ca
+  suggestions: statcan.sdg-odd.statcan@statcan.gc.ca
+  functional: statcan.sdg-odd.statcan@statcan.gc.ca
 
 # International Support
 # Eg name: Australia and adjective: Australian
@@ -132,7 +132,7 @@ menu:
     translation_key: menu.faq
 
 footer_menu:
-  - path: mailto:statcan.sdg-odd.statcan@canada.ca
+  - path: mailto:statcan.sdg-odd.statcan@statcan.gc.ca
     translation_key: menu.contact_us
   - path: https://www.facebook.com/StatisticsCanada/
     translation_key: general.facebook
