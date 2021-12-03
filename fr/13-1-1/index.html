@@ -136,7 +136,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20211203011750">
+        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20211203135735">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -549,7 +549,7 @@ data-event-label="high"
   data-showdata="true"
   data-graphtype="line"
   data-geocoderegex=""
-  data-showmap="false"
+  data-showmap="true"
   data-startvalues="[{&quot;field&quot;:&quot;Géographie&quot;,&quot;value&quot;:&quot;Canada&quot;},{&quot;field&quot;:&quot;Source&quot;,&quot;value&quot;:&quot;Inventaire provincial&quot;},{&quot;field&quot;:&quot;Source&quot;,&quot;value&quot;:&quot;Inventaire territorial&quot;}]"
   data-graphlimits="null"
   data-stackeddisaggregation=""
@@ -557,7 +557,7 @@ data-event-label="high"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Année&quot;},{&quot;name&quot;:&quot;data.Geography&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Alberta&quot;,&quot;Colombie-Britannique&quot;,&quot;Canada&quot;,&quot;Manitoba&quot;,&quot;Nouveau-Brunswick&quot;,&quot;Terre-Neuve-et-Labrador&quot;,&quot;Territoires du Nord-Ouest&quot;,&quot;Territoires du Nord-Ouest et Nunavut&quot;,&quot;Nouvelle-Écosse&quot;,&quot;Nunavut&quot;,&quot;Ontario&quot;,&quot;Île-du-Prince-Édouard&quot;,&quot;Québec&quot;,&quot;Saskatchewan&quot;,&quot;Yukon&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Géographie&quot;},{&quot;name&quot;:&quot;data.Source&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Inventaire provincial&quot;,&quot;Exploitation pétrolière et gazière&quot;,&quot;Production de charbon&quot;,&quot;Électricité&quot;,&quot;Transports&quot;,&quot;Industrie lourde&quot;,&quot;Fabrication légère, construction et ressources forestières&quot;,&quot;Bâtiments&quot;,&quot;Déchets et autres&quot;,&quot;Agriculture&quot;,&quot;Inventaire territorial&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Source&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Valeur&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Année&quot;},{&quot;name&quot;:&quot;data.Geography&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Alberta&quot;,&quot;Colombie-Britannique&quot;,&quot;Canada&quot;,&quot;Manitoba&quot;,&quot;Nouveau-Brunswick&quot;,&quot;Terre-Neuve-et-Labrador&quot;,&quot;Territoires du Nord-Ouest&quot;,&quot;Territoires du Nord-Ouest et Nunavut&quot;,&quot;Nouvelle-Écosse&quot;,&quot;Nunavut&quot;,&quot;Ontario&quot;,&quot;Île-du-Prince-Édouard&quot;,&quot;Québec&quot;,&quot;Saskatchewan&quot;,&quot;Yukon&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Géographie&quot;},{&quot;name&quot;:&quot;data.Source&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Inventaire provincial&quot;,&quot;Exploitation pétrolière et gazière&quot;,&quot;Production de charbon&quot;,&quot;Électricité&quot;,&quot;Transports&quot;,&quot;Industrie lourde&quot;,&quot;Fabrication légère, construction et ressources forestières&quot;,&quot;Bâtiments&quot;,&quot;Déchets et autres&quot;,&quot;Agriculture&quot;,&quot;Inventaire territorial&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Source&quot;},{&quot;name&quot;:&quot;GeoCode&quot;,&quot;type&quot;:&quot;string&quot;,&quot;title&quot;:&quot;GeoCode&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Valeur&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="null"
 >
@@ -599,7 +599,11 @@ data-event-label="high"
         
         
         
-        <th scope="col" class="table-value">Value</th>
+        <th scope="col">Value</th>
+        
+        
+        
+        <th scope="col" class="table-value">GeoCode</th>
         
         
       </thead>
@@ -612,7 +616,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">601.5236931</td>
+          <td>601.5236931</td>
+          
+          
+          
+          <td class="table-value"></td>
           
           
         </tr>
@@ -624,7 +632,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">595.7767263</td>
+          <td>595.7767263</td>
+          
+          
+          
+          <td class="table-value"></td>
           
           
         </tr>
@@ -636,7 +648,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">613.5906402</td>
+          <td>613.5906402</td>
+          
+          
+          
+          <td class="table-value"></td>
           
           
         </tr>
@@ -648,7 +664,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">616.7983943</td>
+          <td>616.7983943</td>
+          
+          
+          
+          <td class="table-value"></td>
           
           
         </tr>
@@ -660,7 +680,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">638.0004703</td>
+          <td>638.0004703</td>
+          
+          
+          
+          <td class="table-value"></td>
           
           
         </tr>
@@ -672,7 +696,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">656.2971871</td>
+          <td>656.2971871</td>
+          
+          
+          
+          <td class="table-value"></td>
           
           
         </tr>
@@ -684,7 +712,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">678.7106864</td>
+          <td>678.7106864</td>
+          
+          
+          
+          <td class="table-value"></td>
           
           
         </tr>
@@ -696,7 +728,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">691.1943566</td>
+          <td>691.1943566</td>
+          
+          
+          
+          <td class="table-value"></td>
           
           
         </tr>
@@ -708,7 +744,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">696.9015186</td>
+          <td>696.9015186</td>
+          
+          
+          
+          <td class="table-value"></td>
           
           
         </tr>
@@ -720,7 +760,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">709.6009243</td>
+          <td>709.6009243</td>
+          
+          
+          
+          <td class="table-value"></td>
           
           
         </tr>
@@ -732,7 +776,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">733.5113373</td>
+          <td>733.5113373</td>
+          
+          
+          
+          <td class="table-value"></td>
           
           
         </tr>
@@ -744,7 +792,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">722.9350121</td>
+          <td>722.9350121</td>
+          
+          
+          
+          <td class="table-value"></td>
           
           
         </tr>
@@ -756,7 +808,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">726.5551835</td>
+          <td>726.5551835</td>
+          
+          
+          
+          <td class="table-value"></td>
           
           
         </tr>
@@ -768,7 +824,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">744.8318868</td>
+          <td>744.8318868</td>
+          
+          
+          
+          <td class="table-value"></td>
           
           
         </tr>
@@ -780,7 +840,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">745.9197824</td>
+          <td>745.9197824</td>
+          
+          
+          
+          <td class="table-value"></td>
           
           
         </tr>
@@ -792,7 +856,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">738.7172959</td>
+          <td>738.7172959</td>
+          
+          
+          
+          <td class="table-value"></td>
           
           
         </tr>
@@ -804,7 +872,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">730.0990825</td>
+          <td>730.0990825</td>
+          
+          
+          
+          <td class="table-value"></td>
           
           
         </tr>
@@ -816,7 +888,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">751.661271</td>
+          <td>751.661271</td>
+          
+          
+          
+          <td class="table-value"></td>
           
           
         </tr>
@@ -828,7 +904,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">735.6928521</td>
+          <td>735.6928521</td>
+          
+          
+          
+          <td class="table-value"></td>
           
           
         </tr>
@@ -840,7 +920,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">693.5978977</td>
+          <td>693.5978977</td>
+          
+          
+          
+          <td class="table-value"></td>
           
           
         </tr>
@@ -852,7 +936,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">702.8027469</td>
+          <td>702.8027469</td>
+          
+          
+          
+          <td class="table-value"></td>
           
           
         </tr>
@@ -864,7 +952,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">714.07775</td>
+          <td>714.07775</td>
+          
+          
+          
+          <td class="table-value"></td>
           
           
         </tr>
@@ -876,7 +968,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">717.1711766</td>
+          <td>717.1711766</td>
+          
+          
+          
+          <td class="table-value"></td>
           
           
         </tr>
@@ -888,7 +984,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">725.371843</td>
+          <td>725.371843</td>
+          
+          
+          
+          <td class="table-value"></td>
           
           
         </tr>
@@ -900,7 +1000,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">722.5576706</td>
+          <td>722.5576706</td>
+          
+          
+          
+          <td class="table-value"></td>
           
           
         </tr>
@@ -912,7 +1016,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">723.094161</td>
+          <td>723.094161</td>
+          
+          
+          
+          <td class="table-value"></td>
           
           
         </tr>
@@ -924,7 +1032,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">706.9318195</td>
+          <td>706.9318195</td>
+          
+          
+          
+          <td class="table-value"></td>
           
           
         </tr>
@@ -936,7 +1048,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">716.0903364</td>
+          <td>716.0903364</td>
+          
+          
+          
+          <td class="table-value"></td>
           
           
         </tr>
@@ -948,7 +1064,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">728.475065</td>
+          <td>728.475065</td>
+          
+          
+          
+          <td class="table-value"></td>
           
           
         </tr>
@@ -960,7 +1080,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">730.2449322</td>
+          <td>730.2449322</td>
+          
+          
+          
+          <td class="table-value"></td>
           
           
         </tr>
@@ -1010,6 +1134,12 @@ data-event-category="Tab change"
 data-event-action="Change data view"
 data-event-label="Change to Table tab"
 >Tableau</a>
+  </li><li role="presentation" class="nav-item map" style="display:none">
+    <a data-no-disagg="true" class="nav-link" data-toggle="tab" id="tab-mapview" href="#mapview" aria-controls="mapview" role="tab" data-on="click"
+data-event-category="Tab change"
+data-event-action="Change data view"
+data-event-label="Change to Map tab"
+ aria-describedby="table-alternative">Carte</a>
   </li></ul>
 
     <div class="tab-content data-view">
@@ -1349,6 +1479,44 @@ opensdg.chartConfigAlter(function(config, info) {
 
 <div id="tableSelectionDownload" class="clearfix"></div>
 
+  </div><div role="tabpanel" class="tab-pane" id="mapview" class="map">
+    
+<h4 id="map-heading" class="chart-title">Émissions de gaz à effet de serre</h4>
+<div id="map" aria-describedby="table-alternative">
+  <img class="map-loading-image" src="/cif-cic_dev/assets/img/loading.gif" alt="Chargement de la carte" />
+</div>
+
+
+
+
+<div id="mapFooter" class="table-footer-text">
+  <h5 class="sr-only">Chart details</h5>
+    <dl>
+        
+        <dt>Source(s):</dt>
+        <dd>Environnement et Changement climatique Canada</dd>
+        
+
+        
+        <dt>Zone géographique:</dt>
+        <dd>Canada, provinces et territoires</dd>
+        
+
+        
+        <dt>Unité de mesure:</dt>
+        <dd>Mégatonnes d'équivalent en dioxyde de carbone (Mt d'éq. CO2)</dd>
+        
+
+        
+
+        
+        <dt>Note de bas de page:</dt>
+        <dd>La cible pour 2030 correspond seulement à la cible pour l'inventaire total pour le Canada</dd>
+        
+    <dl>
+</div>
+
+
   </div>
 </div>
 
@@ -1571,8 +1739,8 @@ data-event-label="Change to indicator.sources tab"
             
 
             
-              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/7b3b8704a23126733ca307dab2061eceb908b8a7" target="_blank">
-                2021-06-17: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
+              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/11f5db58e37dab4c34638e5f6c22f69deb45c500" target="_blank">
+                2021-12-03: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
               </a>
             
 
@@ -1602,8 +1770,8 @@ data-event-label="Change to indicator.sources tab"
             
 
             
-              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/7a7568a30f46fefcadf03fa56115c815ba851fbf" target="_blank">
-                2021-07-21: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
+              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/6396365b554473de0912da8ddccb47129eef36d3" target="_blank">
+                2021-12-03: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
               </a>
             
 
@@ -2037,6 +2205,15 @@ data-event-label="Change to indicator.sources tab"
 <script src="//cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/0.5.7/chartjs-plugin-annotation.min.js" integrity="sha512-9hzM/Gfa9KP1hSBlq3/zyNF/dfbcjAYwUTBWYX+xi8fzfAPHL3ILwS1ci0CTVeuXTGkRAWgRMZZwtSNV7P+nfw==" crossorigin="anonymous"></script>
 
 
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
+<script src="https://cdn.jsdelivr.net/npm/leaflet.zoomshowhide@0.1.0/dist/leaflet-zoom-show-hide.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/1.4.0/chroma.min.js"></script>
+<script src="https://cdn.rawgit.com/nezasa/iso8601-js-period/master/iso8601.min.js"></script>
+<script src="https://cdn.rawgit.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.min.js"></script>
+<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+<script src="https://bowercdn.net/c/leaflet.zoomhome-latest/dist/leaflet.zoomhome.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
@@ -2046,12 +2223,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/cif-cic_dev/assets/js/sdg.js?v=20211203011750'></script>
+<script src='/cif-cic_dev/assets/js/sdg.js?v=20211203135735'></script>
 
 
     
     
-    <script src="/cif-cic_dev/assets/js/custom.js?v=20211203011750"></script><script>
+    <script src="/cif-cic_dev/assets/js/custom.js?v=20211203135735"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
