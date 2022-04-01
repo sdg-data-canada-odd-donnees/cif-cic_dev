@@ -32,7 +32,7 @@
         {
           "id": "2-1-1",
           "title": "Prévalence de l'insécurité alimentaire",
-          "description": "Cet indicateur mesure la prévalence de l'insécurité alimentaire. Cette variable est fondée sur un ensemble de 18 questions et indique si les ménages avec ou sans enfants avaient les moyens d'acheter les aliments dont ils avaient besoin au cours des 12 mois qui ont précédé l'enquête.",
+          "description": "Cet indicateur mesure la prévalence de l'insécurité alimentaire.",
           "keywords": "women, gender",
           "href": "/cif-cic_dev/fr/2-1-1",
           "status": "complete"
