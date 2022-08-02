@@ -496,7 +496,7 @@
         {
           "id": "11-5-1",
           "title": "Percentage  of the population using shared or active transportation for commuting",
-          "description": "This indicator measures percentage of the population using shared or active transportation for commuting. Public transit includes bus, subway, elevated rail, light rail, streetcar, commuter train and passenger ferry. Active transport includes walking and cycling.",
+          "description": "This indicator measures percentage of commuters using shared or active transportation. Public transit includes bus, subway, elevated rail, light rail, streetcar, commuter train and passenger ferry. Active transport includes walking and cycling.",
           "keywords": "",
           "href": "/cif-cic_dev/11-5-1",
           "status": "complete"

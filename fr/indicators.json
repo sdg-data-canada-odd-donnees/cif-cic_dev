@@ -496,7 +496,7 @@
         {
           "id": "11-5-1",
           "title": "Pourcentage de la population ayant adopté le transport en commun ou actif pour le navettage",
-          "description": "Cet indicateur mesure le pourcentage de la population qui utilise le transport en commun ou actif pour le navettage. Le transport public inclut autobus, métro, métro aérien, train léger, tramway, train de banlieu et traversier de passagers. Le transport actif inclut la marche et le vélo.",
+          "description": "Cet indicateur mesure le pourcentage de navetteurs qui utilise le transport en commun ou actif. Le transport public inclut autobus, métro, métro aérien, train léger, tramway, train de banlieu et traversier de passagers. Le transport actif inclut la marche et le vélo.",
           "keywords": "",
           "href": "/cif-cic_dev/fr/11-5-1",
           "status": "complete"
