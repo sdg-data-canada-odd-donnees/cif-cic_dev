@@ -41,10 +41,6 @@ var opensdg = {
   language: 'fr',
 };
 
-// For backwards compatibility, some of these might need to be global.
-// @TODO: Remove these eventually.
-var remoteDataBaseUrl = opensdg.remoteDataBaseUrl;
-
 </script>
 
         <script>
@@ -123,22 +119,18 @@ var translations = {
         <script src="/cif-cic_dev/assets/js/lib/classList.js"></script>
         <![endif]-->
 
-        
-
-
-
-
-<link rel="shortcut icon" type="image/ico" href="/cif-cic_dev/assets/img/favicons/favicon.ico">
-<link rel="icon" type="image/png" href="/cif-cic_dev/assets/img/favicons/favicon.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/cif-cic_dev/assets/img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/cif-cic_dev/assets/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/cif-cic_dev/assets/img/favicons/favicon-16x16.png">
+<link rel="icon" type="image/x-icon" href="/cif-cic_dev/assets/img/favicons/favicon.ico" />
 
 
         
-        
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
-        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20220808183500">
+        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20220808190657">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -149,6 +141,10 @@ var translations = {
         <link rel="stylesheet" href="https://cdn.kiprotect.com/klaro/v0.7/klaro.min.css" crossorigin=""/>
         
 
+        <!--[if IE]>
+        <link rel="stylesheet" href="/cif-cic_dev/assets/css/ie.css">
+        <![endif]-->
+
         
 
     </head>
@@ -157,95 +153,63 @@ layout-indicator
 ">
 <!-- <div class="container"> -->
 
+<script>translations['header'] = {"alpha":"Beta","default_contrast":"contraste standard","disable_high_contrast":"Désactiver le contraste élevé","disclaimer":"Ceci est un site en développement. Nous apprécions vos <a href=\"mailto:%email_address\">commentaires</a>.","enable_high_contrast":"Activer le contraste élevé","high_contrast":"contraste élevé","internet_explorer_message":"Nous avons détecté que vous utilisez Internet Explorer pour visiter ce site. Internet Explorer est en train d'être abandonné par Microsoft. Par conséquent, ce site Web ne prend plus en charge aucune version d'Internet Explorer. Certaines fonctionnalités de ce site ne fonctionneront pas. Vous devez utiliser un navigateur moderne tel que Edge, Chrome, Firefox ou Safari. Si vous avez des difficultés à installer ou à accéder à un autre navigateur, veuillez contacter votre équipe d'assistance informatique.","internet_explorer_message_title":"Ce navigateur Internet n'est plus pris en charge","skip_link":"Passer au contenu principal","tag_line":"17 objectifs pour transformer notre monde","toggle_menu":"Interrupteur du menu. Cliquez pour développer ou réduire le menu.","toggle_search":"Interrupteur de la barre. Cliquez pour développer ou réduire la barre de recherche."};</script>
 
-
-<script>translations['header'] = {"alpha":"Beta","default_contrast":"contraste standard","disable_high_contrast":"Désactiver le contraste élevé","disclaimer":"Ceci est un site en développement. Nous apprécions vos <a href=\"mailto:%email_address\">commentaires</a>.","enable_high_contrast":"Activer le contraste élevé","high_contrast":"contraste élevé","skip_link":"Passer au contenu principal","tag_line":"17 objectifs pour transformer notre monde","toggle_menu":"Interrupteur du menu. Cliquez pour développer ou réduire le menu.","toggle_search":"Interrupteur de la barre. Cliquez pour développer ou réduire la barre de recherche."};</script>
-
-<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Passer au contenu principal</a>
+<a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Passer au contenu principal</a>
+<div class="container internet-explorer-message">
+    <h2 class="internet-explorer-message-title">Ce navigateur Internet n'est plus pris en charge</h2>
+    <p class="internet-explorer-message-body">Nous avons détecté que vous utilisez Internet Explorer pour visiter ce site. Internet Explorer est en train d'être abandonné par Microsoft. Par conséquent, ce site Web ne prend plus en charge aucune version d'Internet Explorer. Certaines fonctionnalités de ce site ne fonctionneront pas. Vous devez utiliser un navigateur moderne tel que Edge, Chrome, Firefox ou Safari. Si vous avez des difficultés à installer ou à accéder à un autre navigateur, veuillez contacter votre équipe d'assistance informatique.</p>
+</div>
 <div id="disclaimer">
-  
+    
 <div class="container">
   <div class="disclaimer-alert">
     <strong class="phase-tag">Beta</strong>
     
-    Ceci est un site en développement. Nous apprécions vos <a href="mailto:statcan.sdg-odd.statcan@statcan.gc.ca">commentaires</a>.
+    Ceci est un site en développement. Nous apprécions vos <a href="mailto:%email_address">commentaires</a>.
     
   </div>
 </div>
 
 </div>
 
-<header role="banner" class="header-default">
-  <div class="container">
-
-    <div class="logo-and-mobile-widgets">
-      <a class="navbar-brand" href="/cif-cic_dev/fr/" id="home">
+<header role="banner" class="">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light flex-wrap align-items-start">
+            <a class="navbar-brand" href="/cif-cic_dev/fr/" id="home">
     <img src="/cif-cic_dev/assets/img/SDG_logo.png" alt="Objectifs de développement durable - 17 objectifs pour transformer notre monde" />
 </a>
-      <div class="mobile-widgets">
-    <ul id='accessibility-nav' class='contrast-switcher'>
-        
-
-    <li class="nav-link contrast contrast-default contrast-type-default">
-        <a title="Désactiver le contraste élevé"
-           aria-label="Désactiver le contraste élevé"
-           data-contrast-switch-to="default"
-           href="javascript:void(0)"
-           data-on="click"
-data-event-category="Accessibility"
-data-event-action="Change contrast setting"
-data-event-label="default"
-
-        >A</a>
-    </li>
-    <li class="nav-link contrast contrast-high contrast-type-default">
-        <a title="Activer le contraste élevé"
-           aria-label="Activer le contraste élevé"
-           data-contrast-switch-to="high"
-           href="javascript:void(0)"
-           data-on="click"
-data-event-category="Accessibility"
-data-event-action="Change contrast setting"
-data-event-label="high"
-
-        >A</a>
-    </li>
-
-
-    </ul><div class="language-toggle-mobile">
-        <div class="language-toggle-container">
-  
-  <div class="btn-group language-toggle-dropdown ">
-    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Français</span>
-      <span class="language-abbreviation">fr</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
-    <ul class="dropdown-menu"><li class="language-option-en">
-            <a href="/cif-cic_dev/8-3-1/">
-              English
-            </a>
-          </li></ul>
-  </div>
-</div>
-
-    </div></div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="d-flex flex-wrap w-100 justify-content-between">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav" id="menu"><li class="nav-item ">
+    <a class="nav-link" href="/cif-cic_dev/fr/goals">Objectifs</a>
+</li><li class="nav-item ">
+    <a class="nav-link" href="/cif-cic_dev/fr/about">À propos</a>
+</li><li class="nav-item ">
+    <a class="nav-link" href="/cif-cic_dev/fr/related-products">Produits connexes</a>
+</li><li class="nav-item ">
+    <a class="nav-link" href="/cif-cic_dev/fr/faq">FAQ</a>
+</li></ul>
+    
+                </div>
+                <div class="header-search-bar">
+                    <form class="align-self-lg-end" id="search" action="/cif-cic_dev/fr/search/">
+    <div class="input-group">
+        <label class="visually-hidden" for="indicator_search">Chercher</label>
+        <input class="form-control" type="search" name="q" id="indicator_search" title="Chercher">
+        <span class="input-group-append">
+            <button class="btn btn-outline-secondary ms-n5" aria-label="Chercher" id="search-btn" type="submit">
+                <i class="fa fa-search"></i>
+            </button>
+        </span>
     </div>
+</form>
 
-    <nav class="navbar navbar-default" id="main-nav">
-      <ul class="top-level">
-    <li id="menuToggle"
-        aria-label="Interrupteur du menu. Cliquez pour développer ou réduire le menu."
-        aria-haspopup="true">
-        <button data-target="menu-mobile" aria-expanded="false">Menu</button>
-        <ul class="nav navbar-nav menu-target contrast-switcher" id="menu-mobile"><li class="nav-link ">
-    <a href="/cif-cic_dev/fr/goals">Objectifs</a>
-</li><li class="nav-link ">
-    <a href="/cif-cic_dev/fr/about">À propos</a>
-</li><li class="nav-link ">
-    <a href="/cif-cic_dev/fr/related-products">Produits connexes</a>
-</li><li class="nav-link ">
-    <a href="/cif-cic_dev/fr/faq">FAQ</a>
-</li><li class="language-toggle-menu-header">
-    
+                </div>
+                <div class="header-toggles d-flex">
 
 
 
@@ -253,12 +217,13 @@ data-event-label="high"
 
   <div class="language-toggle-container">
   
-  <div class="btn-group language-toggle-dropdown ">
-    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Français</span>
-      <span class="language-abbreviation">fr</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
-    <ul class="dropdown-menu"><li class="language-option-en">
-            <a href="/cif-cic_dev/8-3-1/">
+  <div class="btn-group language-toggle-dropdown  dropdown">
+    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="fa fa-globe"></i>
+      Français
+    </button>
+    <ul class="dropdown-menu"><li>
+            <a class="dropdown-item" href="/cif-cic_dev/8-3-1/">
               English
             </a>
           </li></ul>
@@ -267,133 +232,25 @@ data-event-label="high"
 
 
 
-</li>
-
-
-
-    <li class="nav-link contrast contrast-default contrast-type-default">
-        <a title="Désactiver le contraste élevé"
-           aria-label="Désactiver le contraste élevé"
-           data-contrast-switch-to="default"
-           href="javascript:void(0)"
-           data-on="click"
-data-event-category="Accessibility"
-data-event-action="Change contrast setting"
-data-event-label="default"
-
-        >A</a>
-    </li>
-    <li class="nav-link contrast contrast-high contrast-type-default">
-        <a title="Activer le contraste élevé"
-           aria-label="Activer le contraste élevé"
-           data-contrast-switch-to="high"
-           href="javascript:void(0)"
-           data-on="click"
-data-event-category="Accessibility"
-data-event-action="Change contrast setting"
-data-event-label="high"
-
-        >A</a>
-    </li>
-
-
-
-</ul>
-
-    </li>
-    <li id="searchToggle"
-        aria-label="Interrupteur de la barre. Cliquez pour développer ou réduire la barre de recherche."
-        aria-haspopup="true">
-        <button data-target="search-mobile" aria-expanded="false">Chercher</button>
-        <div id="search-mobile" class="menu-target">
-  <form action="/cif-cic_dev/fr/search/">
-    <label class="sr-only" for="indicator_search-mobile">Chercher</label>
-    <input type="text" name="q" id="indicator_search-mobile" title="Chercher" /><!--
-    --><button aria-label="Chercher" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
-  </form>
-</div>
-
-    </li>
-</ul>
-      <div id="search" class="menu-target">
-  <form action="/cif-cic_dev/fr/search/">
-    <label class="sr-only" for="indicator_search">Chercher</label>
-    <input type="text" name="q" id="indicator_search" title="Chercher" /><!--
-    --><button aria-label="Chercher" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
-  </form>
-</div>
-
-      <ul class="nav navbar-nav menu-target contrast-switcher" id="menu"><li class="nav-link ">
-    <a href="/cif-cic_dev/fr/goals">Objectifs</a>
-</li><li class="nav-link ">
-    <a href="/cif-cic_dev/fr/about">À propos</a>
-</li><li class="nav-link ">
-    <a href="/cif-cic_dev/fr/related-products">Produits connexes</a>
-</li><li class="nav-link ">
-    <a href="/cif-cic_dev/fr/faq">FAQ</a>
-</li><li class="language-toggle-menu-header">
-    
-
-
-
-
-
-  <div class="language-toggle-container">
-  
-  <div class="btn-group language-toggle-dropdown ">
-    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Français</span>
-      <span class="language-abbreviation">fr</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
-    <ul class="dropdown-menu"><li class="language-option-en">
-            <a href="/cif-cic_dev/8-3-1/">
-              English
+                    <span class="no-js-language-toggle"><div class="language-toggle-container d-flex">
+    <i class="fa fa-globe language-toggle-globe-links"></i>
+    <ul class="language-toggle-links list-unstyled list-inline"><li class="language-option-en list-inline-item">
+            <a class="language-toggle-link" href="/cif-cic_dev/8-3-1/">
+                English
             </a>
-          </li></ul>
-  </div>
-</div>
-
-
-
-</li>
-
-
-
-    <li class="nav-link contrast contrast-default contrast-type-default">
-        <a title="Désactiver le contraste élevé"
-           aria-label="Désactiver le contraste élevé"
-           data-contrast-switch-to="default"
-           href="javascript:void(0)"
-           data-on="click"
-data-event-category="Accessibility"
-data-event-action="Change contrast setting"
-data-event-label="default"
-
-        >A</a>
-    </li>
-    <li class="nav-link contrast contrast-high contrast-type-default">
-        <a title="Activer le contraste élevé"
-           aria-label="Activer le contraste élevé"
-           data-contrast-switch-to="high"
-           href="javascript:void(0)"
-           data-on="click"
+        </li></ul>
+</div></span><a title="Activer le contraste élevé" aria-label="Activer le contraste élevé"
+    data-contrast-switch-to="" href="javascript:void(0)" data-on="click"
 data-event-category="Accessibility"
 data-event-action="Change contrast setting"
 data-event-label="high"
-
-        >A</a>
-    </li>
-
-
-
-</ul>
-
-    </nav>
-  </div>
-
+>A</a>
+                </div>
+            </div>
+        </nav>
+    </div>
 </header>
 <div id="top" tabindex=-1></div>
-
-
 
 
 
@@ -402,9 +259,6 @@ data-event-label="high"
     <div class="variable-selector
       <% if(allowedFields.indexOf(fieldItem.field) == -1) { %> disallowed <% }%>
       <% if (typeof childFields !== 'undefined' && childFields.indexOf(fieldItem.field) !== -1) { %> child <% }%>
-      <% // @deprecated start %>
-      <% if (typeof childFields === 'undefined' && allowedFields.indexOf(fieldItem.field) == -1) { %> child <% }%>
-      <% // @deprecated end %>
       "
       data-field="<%=fieldItem.field%>"
     >
@@ -471,36 +325,44 @@ data-event-label="high"
   
 </script>
 
-<script>translations['indicator'] = {"annotation_2030_target":"Cible","announce_data_added":"Graphique et tableau mis à jour pour inclure des données.","announce_data_not_available":"Le graphique et le tableau ne montrent aucune donnée.","announce_data_removed":"Graphique et tableau mis à jour pour exclure les données.","chart":"Graphique","chart_annotation":"Annotation du graphique","clear_all":"Tout effacer","clear_selections":"Effacer les sélections","data_keyboard_navigation":"Appuyez sur Entrée pour parcourir les points de données avec les touches fléchées gauche et droite.","data_not_available":"Ces données ne sont pas disponibles. Veuillez choisir des données alternatives à afficher.","data_tabular_alternative":"Pour une alternative aux données tabulaires, voir l’onglet Tableau.","dataset_size_warning":"Il y a trop de jeux de données à afficher sur le graphique. Tout ne sera pas affiché jusqu&#39;à ce que vous supprimiez certaines sélections.","download_chart":"Télécharger les données du graphique (CSV)","download_chart_image":"Télécharger le graphique","download_chart_image_title":"Télécharger le graphique en image","download_csv":"Télécharger CSV","download_csv_title":"Télécharger en format CSV","download_geojson":"Télécharger GeoJSON","download_geojson_title":"Télécharger en format GeoJSON","download_headline":"Télécharger Headline CSV","download_headline_title":"Télécharger les données de titre au format CSV","download_source":"Télécharger toutes les données (CSV)","download_source_sdmx":"Télécharger Source SDMX","download_source_sdmx_title":"Télécharger les données source au format SDMX","download_source_title":"Télécharger les données source au format CSV","download_table":"Télécharger le tableau (CSV)","edit":"Modifier","edit_configuration":"Modifier la configuration","edit_data":"Modifier les données","edit_metadata":"Modifier les métadonnées","footnote":"Note de bas de page","geographical_area":"Zone géographique","global_metadata":"Métadonnées globales","global_metadata_blurb":"Ce tableau fournit des informations sur les métadonnées pour les indicateurs SDG définis par la Commission de statistique des Nations Unies. <a href=\"https://unstats.un.org/sdgs/metadata/\">Les métadonnées globales complètes</a> sont fournies par la Division de statistique de l&#39;ONU.","legend_help":"Cliquez sur la légende pour supprimer les lignes individuelles du graphique.","loading":"Chargement","loading_map":"Chargement de la carte","map":"Carte","map_search":"Rechercher","map_search_hide":"Masquer la recherche","map_search_show":"Afficher la recherche","map_year_slider":"Curseur d’année","national_metadata":"Métadonnées nationales","national_metadata_blurb":"La section ci-dessous fournit une description de l'indicateur.","next":"Indicateur suivant","no_data_hint":"Aucune option disponible en raison des filtres ci-dessus","plot_legend_description":"Légende du tracé : liste des lignes incluses dans le graphique","previous":"Indicateur précédent","select_all":"Tout sélectionner","series":"Séries","series_help":"Choisissez des catégories dans les listes déroulantes ci-dessous pour voir différentes répartitions des données. Certaines ne seront pas disponibles jusqu&#39;à ce qu&#39;un niveau supérieur soit choisi.","source":"Source(s)","sources":"Source(s)","status":"État de l’indicateur","sub_categories":"Sous-catégories","sub_categories_show":"Afficher les sous-catégories :","table":"Tableau","table_column_sort":"Cliquez pour trier par cette colonne","tags":"Étiquettes","unit":"Unité","unit_of_measurement":"Unité de mesure","units_type":"Type d&#39;unités","variable_hint":"Disponible lorsque le champ '%field' est sélectionné","view_indicator_list":"Voir la liste des indicateurs de cet objectif"};</script>
+<script>translations['indicator'] = {"annotation_2030_target":"Cible","announce_data_added":"Graphique et tableau mis à jour pour inclure des données.","announce_data_not_available":"Le graphique et le tableau ne montrent aucune donnée.","announce_data_removed":"Graphique et tableau mis à jour pour exclure les données.","apply":"Appliquer","cancel":"Annuler","change_breakdowns":"Ventilation des changements","chart":"Graphique","chart_annotation":"Annotation du graphique","clear_all":"Tout effacer","clear_selections":"Effacer les sélections","data_keyboard_navigation":"Appuyez sur Entrée pour parcourir les points de données avec les touches fléchées gauche et droite.","data_not_available":"Ces données ne sont pas disponibles. Veuillez choisir des données alternatives à afficher.","data_tabular_alternative":"Pour une alternative aux données tabulaires, voir l’onglet Tableau.","dataset_size_warning":"Il y a trop de jeux de données à afficher sur le graphique. Tout ne sera pas affiché jusqu&#39;à ce que vous supprimiez certaines sélections.","download_chart":"Télécharger les données du graphique (CSV)","download_chart_image":"Télécharger le graphique","download_chart_image_title":"Télécharger le graphique en image","download_csv":"Télécharger CSV","download_csv_title":"Télécharger en format CSV","download_geojson":"Télécharger GeoJSON","download_geojson_title":"Télécharger en format GeoJSON","download_headline":"Télécharger Headline CSV","download_headline_title":"Télécharger les données de titre au format CSV","download_source":"Télécharger toutes les données (CSV)","download_source_for_disaggregations":"Télécharger le CSV source pour les désagrégations","download_source_sdmx":"Télécharger Source SDMX","download_source_sdmx_title":"Télécharger les données source au format SDMX","download_source_title":"Télécharger les données source au format CSV","download_table":"Télécharger le tableau (CSV)","edit":"Modifier","edit_configuration":"Modifier la configuration","edit_data":"Modifier les données","edit_metadata":"Modifier les métadonnées","footnote":"Note de bas de page","geographical_area":"Zone géographique","global_metadata":"Métadonnées globales","global_metadata_blurb":"Ce tableau fournit des informations sur les métadonnées pour les indicateurs SDG définis par la Commission de statistique des Nations Unies. <a href=\"https://unstats.un.org/sdgs/metadata/\">Les métadonnées globales complètes</a> sont fournies par la Division de statistique de l&#39;ONU.","headline_data":"Données d'en-tête","legend_help":"Cliquez sur la légende pour supprimer les lignes individuelles du graphique.","loading":"Chargement","loading_map":"Chargement de la carte","map":"Carte","map_search":"Rechercher","map_search_hide":"Masquer la recherche","map_search_show":"Afficher la recherche","map_year_slider":"Curseur d’année","national_metadata":"Métadonnées nationales","national_metadata_blurb":"La section ci-dessous fournit une description de l'indicateur.","next":"Indicateur suivant","no_data_hint":"Aucune option disponible en raison des filtres ci-dessus","no_headline_data":"Aucune donnée principale disponible","plot_legend_description":"Légende du tracé : liste des lignes incluses dans le graphique","previous":"Indicateur précédent","select_all":"Tout sélectionner","series":"Séries","series_help":"Choisissez des catégories dans les listes déroulantes ci-dessous pour voir différentes répartitions des données. Certaines ne seront pas disponibles jusqu&#39;à ce qu&#39;un niveau supérieur soit choisi.","source":"Source(s)","sources":"Source(s)","status":"État de l’indicateur","sub_categories":"Sous-catégories","sub_categories_show":"Afficher les sous-catégories :","table":"Tableau","table_column_sort":"Cliquez pour trier par cette colonne","tags":"Étiquettes","unit":"Unité","unit_of_measurement":"Unité de mesure","units_type":"Type d&#39;unités","variable_hint":"Disponible lorsque le champ '%field' est sélectionné","view_indicator_list":"Voir la liste des indicateurs de cet objectif"};</script>
 
 <script>translations['data'] = {"1 to 14 years":"1 à 14 ans","12 to 15 years":"12 à 15 ans","12 to 17 years":"12 à 17 ans","15 to 19 years":"15 à 19 ans","15 to 24":"15 à 24 ans","15 to 24 year old women":"Femmes de 15 à 24 ans","15 to 24 years":"15 à 24 ans","15 to 64 years":"15 à 64 ans","15 years and over":"15 ans et plus","16 and 17 years":"16 et 17 ans","18 to 24 years":"18 à 24 ans","18 to 34 years":"18 à 34 ans","20 to 24 years":"20 à 24 ans","25 to 29 years":"25 à 29 ans","25 to 34 years":"25 à 34 ans","25 to 44 years":"25 à 44 ans","25 to 54 years":"25 à 54 ans","25 to 64 years":"25 à 64 ans","25 years and over":"25 ans et plus","30 to 34 years":"30 à 34 ans","35 to 39 years":"35 à 39 ans","35 to 44 years":"35 à 44 ans","35 to 49 years":"35 à 49 ans","40 to 44 years":"40 à 44 ans","45 to 49 years":"45 à 49 ans","45 to 54 years":"45 à 54 ans","45 to 64 years":"45 à 64 ans","45 years and over":"45 ans et plus","50 to 54 years":"50 à 54 ans","50 to 64 years":"50 à 64 ans","55 to 59 years":"55 à 59 ans","55 to 64 years":"55 à 64 ans","55 years and over":"55 ans et plus","60 to 64 years":"60 à 64 ans","65 to 69 years":"65 à 69 ans","65 to 74 years":"65 à 74 ans","65 years and over":"65 ans et plus","70 years and over":"70 ans et plus","75 to 84 years":"75 à 84 ans","75 years and over":"75 ans et plus","85 and over":"85 ans et plus","A great deal of confidence":"Une grande confiance","Abbotsford - Mission, British Columbia":"Abbotsford - Mission, Colombie-Britannique","Accidents (unintentional injuries) [V01-X59, Y85-Y86]":"Accidents (blessures involontaires)","Accommodation and food services":"Hébergement et services de restauration","Active transport":"Transport actif","Activity group":"Groupe d'activité","Administration of justice":"Infractions contre l'administration de la justice","Administrative and support, waste management and remediation services":"Services administratifs, services de soutien, services de gestion des déchets et services d'assainissement","Adult criminal courts":"Tribunaux pour adultes","Africa":"Afrique","Against a person":"Contre la personne","Age":"Âge","Age at time of death":"Âge au décès","Age group":"Groupe d'âge","Age group and family type":"Groupe d'âge et type de famille","Age not applicable":"Âge n'ayant pas lieu de figurer","Age of accused":"Âge de l'accusé","Ages 12 to 17":"12 à 17 ans","Ages 18 to 39":"18 à 39 ans","Ages 18 to 79":"18 à 79 ans","Ages 40 to 59":"40 à 59 ans","Ages 5 to 11":"5 à 11 ans","Ages 5 to 17":"5 à 17 ans","Ages 5 to 79":"5 à 79 ans","Ages 60 to 79":"60 à 79 ans","Agricultural Ammonia Emissions":"Ammoniac d'origine agricole","Agricultural Greenhouse gas":"Gaz à effet de serre d'origine agricole","Agricultural Particulate Matter Emissions":"Particules fines","Agriculture":"Agriculture","Agriculture, fishing, hunting and trapping":"Agriculture, pêche, chasse et piégeage","Agriculture, forestry, fishing and hunting":"Agriculture, foresterie, pêche et chasse","Air Quality":"Qualité de l'air","Air pollution management":"Gestion de la pollution atmosphérique","Alberta":"Alberta","Alberta [48]":"Alberta","All ages":"Tous les âges","All children":"Tous les enfants","All grades":"Tous les niveaux","All households":"Tous les ménages","All management occupations":"Gestion","All materials diverted":"Toutes les matières","All municipalities":"Toutes les municipalités","All paper fibres":"Toutes les fibres cellulosiques","All persons":"Toutes les personnes","All regions":"Toutes les régions","All rural municipalities":"Toutes les municipalités rurales","All sources of diverted materials":"Toutes les sources des matières récupérées","All sources of waste for disposal":"Toutes les sources de déchets à des fins d'élimination","All species":"Toutes les espèces","All types of perpetrators":"Tous les types d'auteurs présumés","All urban municipalities":"Toutes les municipalités urbaines","Alzheimer's disease [G30]":"Maladie d'Alzheimer","America":"Amerique","Amphibians":"Amphibiens","Ants":"Fourmis","Apparent opioid toxicity deaths":"Décès totaux apparemment liés à une intoxication aux opioïdes","Apparent stimulant toxicity deaths":"Décès totaux apparemment liés à une intoxication aux stimulants","April":"Avril","Arts, entertainment and recreation":"Arts, spectacles et loisirs","Asia":"Asie","Assault, level 1 [1430]":"Voies de fait simples (niveau 1)","Assault, level 2, weapon or bodily harm [1420]":"Voies de fait armées ou causant des lésions corporelles (niveau 2)","Assault, level 3, aggravated [1410]":"Voies de fait graves (niveau 3)","Asset":"Actif","Asset resilient for at least one month":"Personnes en situation de résilience des actifs pour au moins un mois","Asset resilient for at least six months":"Personnes en situation de résilience des actifs pour au moins six mois","Asset resilient for at least three months":"Personnes en situation de résilience des actifs pour au moins trois mois","Atlantic":"Atlantique","Atlantic Ocean":"Océan Atlantique","Atlantic provinces":"Provinces de l'Atlantique","Atlantic region":"Région de l'Atlantique","Attempted murder [1210]":"Tentative de meurtre","Bachelor's level":"Baccalauréat","Banks":"Banques","Barrie, Ontario":"Barrie, Ontario","Bee flies":"Bombyles","Bees":"Abeilles","Beetles":"Coléoptères","Belleville, Ontario":"Belleville, Ontario","Beverage and tobacco product manufacturing":"Fabrication de boissons et de produits du tabac","Biodiversity":"Biodiversité","Biological":"Biologique","Birds":"Oiseaux","Black":"Noirs","Black flies":"Mouches noires","Both":"Les deux sexes","Both full- and part-time employees":"Ensemble des employés à temps plein et à temps partiel","Both sexes":"Les deux sexes","Both type":"Les deux types","Brantford, Ontario":"Brantford, Ontario","Bridges and tunnels":"Ponts et tunnels","British Columbia":"Colombie-Britannique","British Columbia [59]":"Colombie-Britannique","British Columbia and the Territories":"Colombie-Britannique et les Territoires","Bryophytes":"Bryophytes","Buildings":"Bâtiments","Business, finance and administration occupations [1]":"Affaires, finance et administration [1]","Calgary, Alberta":"Calgary, Alberta","Canada":"Canada","Canada (excluding territories)":"Canada (sans les territoires)","Canadian media":"Médias canadiens","Cancer":"Cancer","Care of household adults":"Soins à un adulte du ménage","Care of household children under 18 years":"Soins à un enfant du ménage de moins de 18 ans","Cerebrovascular diseases [I60-I69]":"Maladies cérébrovasculaires","Characteristics":"Caractéristiques","Chemical manufacturing":"Fabrication de produits chimiques","Chiefs in First Nation communities":"Chefs dans les communautés des Premières Nations","Child pornography":"Pornographie juvénile","Chronic liver disease and cirrhosis [K70, K73-K74]":"Maladie chronique et cirrhose du foie","Chronic lower respiratory diseases [J40-J47]":"Maladies chroniques des voies respiratoires inférieures","Chronic obstructive pulmonary disease":"Maladie pulmonaire obstructive chronique","Coal Production":"Production de charbon","Coke":"Coke","Coke oven gas":"Gaz de cokerie","Commercial and other institutional":"Commerces et autres institutions","Commercial buildings":"Immeubles commerciaux","Communications networks":"Réseaux de communication","Company":"Sociétés","Compound Index":"Indice composé","Confident":"Confiance","Construction":"Construction","Construction + renovation and demolition":"Déchets provenant de la construction, de la rénovation et de la démolition","Copper and aluminum":"Cuivre et aluminium","Corals":"Coraux","Core public infrastructure assets":"Actifs d'infrastructures publiques essentielles","Couples":"Couples","Couples with children":"Couples avec des enfants","Couples with other relatives":"Couples avec d'autres personnes apparentées","Creutzfeldt-Jakob":"Creutzfeldt-Jakob","Crime severity index":"Indice de gravité de la criminalité","Crimes against property":"Infractions contre les biens","Crimes against the person":"Infractions contre la personne","Criminal Code traffic":"Délits de la route prévus au Code criminel","Criminal harassment":"Harcèlement criminel","Cross-border flows to TOSSD-eligible countries":"Flux transfrontaliers vers les pays admissibles au TOSSD","Crustaceans":"Crustacés","Culture, recreation and sports facilities":"Culture, sports et loisirs","Cyber-related violation":"Infraction reliée à la cybercriminalité","Decapods":"Décapodes","Demand characteristics":"Caractéristiques d’écoulement","Dementia, including Alzheimer's disease":"Démence, y compris la maladie d'Alzheimer","Diabetes":"Diabète","Diabetes mellitus [E10-E14]":"Diabète sucré","Diphtheria":"Diphtérie","Diphtheria - Pertussis and tetanus":"Diphtérie, la coqueluche et le tétanos","Diphtheria - Tetanus - acellular Pertussis booster":"Vaccin de rappel de la diphtérie, la coqueluche et le tétanos","Disease":"Maladies","Diseases of heart [I00-I09, I11, I13, I20-I51]":"Maladies du coeur","Do not show progress":"N'affichent pas de progrès","Dragonflies and damselflies":"Libellules et demoiselles","EMS responses to suspected opioid-related overdoses":"Interventions des SMU pour surdoses suspectées d'être liées aux opioïdes","Earthquake":"Tremblement de terre","Economic families":"Familles économiques","Economic families and persons not in an economic family":"Familles économiques et personnes hors famille économique","Economic family type":"Type de famille économique","Edmonton, Alberta":"Edmonton, Alberta","Educational attainment level":"Niveau de scolarité","Educational services":"Services d'enseignement","Elderly couples":"Couples de personnes âgées","Elderly families":"Familles de personnes âgées","Elderly females in economic families":"Femmes âgées dans les familles économiques","Elderly females not in an economic family":"Femmes âgées hors famille économique","Elderly males in economic families":"Hommes âgés dans les familles économiques","Elderly males not in an economic family":"Hommes âgés hors famille économique","Elderly persons in economic families":"Personnes âgées dans les familles économiques","Elderly persons not in an economic family":"Personnes âgées hors famille économique","Electric":"Électrique","Electric power generation, transmission and distribution":"Production, transport et distribution d’électricité","Electric power infrastructure":"Infrastructure liées à l'énergie électrique","Electricity":"Électricité","Electronics":"Matériel électronique","Emotional, financial, or psychological abuse":"Violence psychologique ou exploitation financière","Energy use - final demand":"Consommation énergétique finale","Engineering construction":"Travaux de génie","Environmental protection activities or management practices":"Activités de protection de l'environnement","Epidemic":"Épidémie","Estimates":"Estimation","Europe":"Europe","Event sub-type":"Événement","Event type":"Type d'événement","Excellent":"Excellente","Extortion":"Extorsion","Fabricated metal product manufacturing":"Fabrication de produits métalliques","Fair":"Satisfaisante","Federal Parliament":"Parlement fédéral","Female":"Femme","Female lone-parent families":"Familles monoparentales ayant une femme à leur tête","Females":"Femmes","Females 18 to 64 years in economic families":"Femmes de 18 à 64 ans dans les familles économiques","Females in economic families":"Femmes dans les familles économiques","Females not in an economic family":"Femmes hors famille économique","Females, 18 to 64 years":"Femmes, 18 à 64 ans","Females, 65 years and over":"Femmes, 65 ans et plus","Females, under 18 years":"Femmes, moins de 18 ans","Ferrous metals":"Métaux ferreux","Finance and insurance":"Service financier et assurance","First Nations (North American Indian)":"Première Nation (Indien de l'Amérique du Nord)","First Nations council members":"Membres de conseil des Premières Nations","First Nations reserves":"Réserves des Premières Nations","First Nations, Métis, or Inuit":"Premières Nations, Métis ou Inuits","First Nations, Métis, or Inuit women":"Femmes des Premières Nations, métisses ou inuites","Fishes":"Poissons","Flood":"Inondation","Food insecure, marginal":"Insécurité alimentaire marginale","Food insecure, moderate":"Insécurité alimentaire modérée","Food insecure, moderate or severe":"Insécurité alimentaire modérée ou grave","Food insecure, severe":"Insécurité alimentaire grave","Food manufacturing":"Fabrication d’aliments","Food secure":"Sécurité alimentaire","Forestry":"Foresterie","Fraud":"Fraude","Freshwater bivalves":"Bivalves d'eau douce","Fuel type":"Type de combustible","Full-time employees":"Employés à temps plein","Furniture and related product manufacturing":"Fabrication de meubles et de produits connexes","Gable top and aseptic containers":"Récipients triangulaires et aseptiques","Gas plant natural gas liquids (NGL's)":"Liquides de gaz naturel des usines de gaz (LGN)","Gender":"Genre","Geography":"Géographie","Geological":"Géologique","Glass":"Verre","Global":"Mondial","Global and regional expenditures for international public goods":"Dépenses mondiales et régionales pour les biens publics internationaux","Good":"Bonne","Government Education Services":"Services d'éducation gouvernementaux","Government Health Services":"Services de soins de santé du gouvernement","Grade":"Niveaux de scolarité","Grades 10-12":"10e à 12e année","Grades 7-9":"7e à 9e année","Grasshoppers and relatives":"Sauterelles et semblables","Great Lakes and St. Lawrence River":"Grands Lacs et fleuve Saint-Laurent","Greater Sudbury / Grand Sudbury, Ontario":"Greater Sudbury / Grand Sudbury, Ontario","Groundfish":"Poissons de fond","Growth since 2016":"Croissance depuis 2016","Guelph, Ontario":"Guelph, Ontario","HIV and AIDS":"VIH et SIDA","Haemophilus influenzae type B":"Haemophilus influenzae de type B","Halifax, Nova Scotia":"Halifax, Nouvelle-Écosse","Hamilton, Ontario":"Hamilton, Ontario","Hate crime":"Crimes haineux","Health care and social assistance":"Soins de santé et assistance sociale","Health occupations [3]":"Secteur de la santé [3]","Heat Event":"Épisode de chaleur","Heavy Industry":"Industrie lourde","Hepatitis B":"Hépatite B","Homicide [110]":"Homicide","Horse flies":"Taons","Household chores":"Tâches domestiques","Household food security status":"Niveau de sécurité alimentaire du ménage","Households":"Ménages","Hudson Bay":"Baie d'Hudson","Human Papillomavirus":"Virus du papillome humain","Hurricane / Typhoon / Tropical Storm":"Ouragan / ouragan / tempête tropicale","Hydraulic turbine":"Turbine à hydraulique","Hydroelectricity":"Hydroélectricité","Hydrogen":"Hydrogène","Hypertension":"Hypertension","Identity fraud":"Fraude à l'identité","Identity theft":"Vol d'identité","Immigrant women":"Femmes immigrantes","Immigrants":"Immigrants","Immigrants, landed 5 or less years earlier":"Immigrants reçus 5 ans et moins auparavant","Immigrants, landed more than 10 years earlier":"Immigrants reçus plus de 10 ans auparavant","Immigrants, landed more than 5 to 10 years earlier":"Immigrants reçus plus de 5 à 10 ans auparavant","Indecent/Harassing communications":"Communications indécentes ou harcelantes","Index":"Indice","Indicator":"Indicateur","Indigenous person":"Autochtone","Indigenous population":"Population autochtone","Industries":"Industries","Industry":"Industrie","Influenza and pneumonia [J09-J18]":"Grippe et pneumopathie","Information and cultural industries":"Industries d'information et de culture","Institutional buildings":"Bâtiments institutionnels","Institutions":"Institutions","Intentional self-harm (suicide) [X60-X84, Y87.0]":"Lésions auto-infligées","Intimate partner":"Partenaires intimes","Inuk (Inuit)":"Inuk (Inuit)","Ischemic heart disease":"Cardiopathies ischémiques","Judges - Federal government public administration":"Juges - administration publique fédérale","Judges - Provincial and territorial public administration":"Juges - administrations provinciales et territoriales","Justice system and courts":"Système de justice et tribunaux","Kelowna, British Columbia":"Kelowna, Colombie-Britannique","Kingston, Ontario":"Kingston, Ontario","Kitchener - Cambridge - Waterloo, Ontario":"Kitchener - Cambridge - Waterloo, Ontario","LGBTQ2 women":"Femmes LGBTQ2","Lacewings":"Chrysopes","Land use category":"Catégorie d'utilisation des sols","Landed immigrants":"Immigrants reçus","Landslide":"Éboulement","Large pelagics":"Grands poissons pélagiques","Large population centres":"Grands centres de population","Leadership position":"Rôles de leadership","Leading causes of death (ICD-10)":"Principales causes de décès","Lethbridge, Alberta":"Lethbridge, Alberta","Level of confidence":"Niveau de confiance","Light Manufacturing, Construction and Forest Resources":"Fabrication légère, construction et ressources forestières","Living in core housing need":"Ayant des besoins impérieux en matière de logement","Living in inadequate housing":"Vivant dans un logement de qualité non convenable","Living in unaffordable housing":"Vivant dans un logement inabordable","Living in unsuitable housing":"Vivant dans un logement de taille non convenable","Living with housing problems":"Éprouvant des problèmes de logement","Local merchants and business people":"Marchands locaux et gens d’affaires","Logging (except contract)":"Exploitation forestière (sauf à forfait)","London, Ontario":"London, Ontario","Lone-parent families":"Familles monoparentales","Lone-parent family households whose reference person is female":"Ménages comptant une famille monoparentale dont la personne de référence est une femme","Lone-parent family households whose reference person is male":"Ménages comptant une famille monoparentale dont la personne de référence est un homme","Luring a child via a computer":"Leurre d'un enfant au moyen d'un ordinateur","Machinery manufacturing":"Fabrication de machines","Mackenzie River":"Fleuve Mackenzie","Macrolichens":"Macrolichens","Major corporations":"Grandes sociétés","Major roads and highways":"Principales routes et autoroutes","Making or distribution of child pornography":"Production de ou distribution de pornographie juvénile","Male":"Homme","Male lone-parent families":"Familles monoparentales ayant un homme à leur tête","Males":"Hommes","Males 18 to 64 years in economic families":"Hommes de 18 à 64 ans dans les familles économiques","Males in economic families":"Hommes dans les familles économiques","Males not in an economic family":"Hommes hors famille économique","Males, 18 to 64 years":"Hommes, 18 à 64 ans","Males, 65 years and over":"Hommes, 65 ans et plus","Males, under 18 years":"Hommes, moins de 18 ans","Malignant neoplasms [C00-C97]":"Tumeurs malignes","Mammals":"Mammifères","Management occupations [0]":"Gestion [0]","Manitoba":"Manitoba","Manitoba [46]":"Manitoba","Manufacturing":"Fabrication","Marginal":"Douteuse","Marine engineering infrastructure":"Infrastructures de génie maritime","Marine mammals":"Mammifères marins","Master's or Doctoral level":"Maîtrise ou doctorat","Mayflies":"Éphémères","Measles":"Rougeole","Measures":"Mesures","Medium population centres":"Moyens centres de population","Members of federal Cabinet":"Cabinet fédéral","Members of national Parliament":"Parlement national","Men":"Hommes","Men living alone":"Hommes vivant seuls","Meningococcal type C":"Méningite de type C","Meteorological - Hydrological":"Météorologique - hydrologique","Middle East":"Moyen-Orient","Middle management occupations in retail and wholesale trade and customer services":"Cadres intermédiaires dans le commerce de détail, de gros et des services à la clientèle","Middle management occupations in trades - transportation - production and utilities":"Cadres intermédiaires des métiers, des transports, de la production et des services d'utilité publique","Mining":"Exploitation minière","Mining and quarrying":"Extraction minière et exploitation en carrière","Mining, quarrying, and oil and gas extraction":"Extraction minière et de pétrole et de gaz","Miscellaneous non-profit institutions serving households":"Diverses institutions sans but lucratif au service des ménages","Mixed evidence":"Preuves mitigées","Mixed metals":"Métaux mélangés","Mixed pressures":"Pressions mixtes","Molluscs":"Mollusques","Moncton, New Brunswick":"Moncton, Nouveau-Brunswick","Month":"Mois","Montreal, Quebec":"Montreal, Quebec","Montréal, Quebec":"Montréal, Québec","Mosquitoes":"Moustiques","Moths and butterflies":"Papillons de nuit et papillons","Mumps":"Rubéole","Métis":"Métis","National Occupational Classification (NOC)":"Classification nationale des professions (CNP)","National marine":"National marine","National terrestrial":"National terrestrial","Natural and applied sciences and related occupations [2]":"Sciences naturelles et appliquées et domaines apparentés [2]","Natural gas":"Gaz naturel","Natural gas distribution":"Distribution de gaz naturel","Natural resources, agriculture and related production occupations [8]":"Ressources naturelles, agriculture et production connexe [8]","New Brunswick":"Nouveau-Brunswick","New Brunswick [13]":"Nouveau-Brunswick","Newfoundland and Labrador":"Terre-Neuve-et-Labrador","Newfoundland and Labrador [10]":"Terre-Neuve-et-Labrador","Noise and vibration abatement":"Lutte contre le bruit et les vibrations","Non immigrants":"Non-immigrants","Non-Aboriginal identity":"Identité non autochtone","Non-Indigenous person":"Personne non autochtone","Non-Indigenous, non-visible minority":"Non-Autochtones n’appartenant pas à une minorité visible","Non-Profit Education Services":"Services d'enseignement sans but lucratif","Non-Profit Social Assistance":"Services de bien-être sans but lucratif","Non-consensual distribution of intimate images":"Distribution nonconsensuelle d'images intimes","Non-elderly families":"Familles de personnes non âgées","Non-elderly females not in an economic family":"Femmes non âgées hors famille économique","Non-elderly males not in an economic family":"Hommes non âgés hors famille économique","Non-elderly persons not in an economic family":"Personnes non âgées hors famille économique","Non-intimate partner":"Autres personnes","Non-marine snails and slugs":"Escargots et limaces terrestres et d'eau douce","Non-metallic mineral product manufacturing":"Fabrication de produits minéraux non métalliques","Non-permanent residents":"Résidents non permanents","Non-profit arts, entertainment and recreation":"Arts, spectacles et loisirs sans but lucratif","Non-residential sources of diverted materials":"Sources des matières non résidentielles récupérées","Non-residential sources of waste for disposal":"Sources de déchets résidentielles à des fins d'élimination","Non-visible minority":"N’appartenant pas à une minorité visible","Northern and Rural Manitoba":"Régions rurales et du nord du Manitoba","Northwest Territories":"Territoires du Nord-Ouest","Northwest Territories [61]":"Territoires du Nord-Ouest","Northwest Territories and Nunavut":"Territoires du Nord-Ouest et Nunavut","Not a visible minority":"Pas une minorité visible","Not confident":"Aucune confiance","Not very much or no confidence":"Très peu confiance ou aucune confiance","Nova Scotia":"Nouvelle-Écosse","Nova Scotia [12]":"Nouvelle-Écosse","Nuclear":"Nucléaire","Number":"Nombre","Number of sites":"Nombre de sites","Nunavut":"Nunavut","Nunavut [62]":"Nunavut","Obese":"Obèse","Occupations in art, culture, recreation and sport [5]":"Arts, culture, sports et loisirs [5]","Occupations in education, law and social, community and government services [4]":"Enseignement, droit et services sociaux, communautaires et gouvernementaux [4]","Occupations in manufacturing and utilities [9]":"Fabrication et services d'utilité publique [9]","Oceania":"Océanie","Off-reserve Indigenous  population":"Population autochtone hors réserve","Offence":"Infraction","Offences":"Infractions","Oil and Gas":"Exploitation pétrolière et gazière","Oil and gas engineering construction":"Construction liée aux installations de pétrole et de gaz","Oil and gas extraction":"Extraction de pétrole et de gaz","Ontario":"Ontario","Ontario [35]":"Ontario","Opioid-related poisoning hospitalizations":"Hospitalisations pour intoxication aux opioïdes","Organics":"Matières organiques","Oshawa, Ontario":"Oshawa, Ontario","Other Aboriginal Government Services":"Autres services des administrations publiques autochtones","Other Municipal Government Services":"Autres services des administrations publiques municipales","Other ages":"Autres âges","Other elderly families":"Autres familles de personnes âgées","Other engineering construction":"Autres travaux de génie","Other federal government services":"Autres services de l'administration publique fédérale","Other finance, insurance and real estate services and management of companies and enterprises":"Autres services de finances, d'assurances et immobiliers, et gestion de sociétés et d'entreprises","Other group designated as visible minority":"Autres groupes désignés comme minorités visibles","Other industries":"Autres industries","Other machinery and equipment":"Autres machines et matériel","Other manufacturing industries":"Autres industries de fabrication","Other materials":"Autres matières","Other non-elderly families":"Autres familles de personnes non âgées","Other provincial and territorial government services":"Autres services des administrations publiques provinciales et territoriales","Other services (except public administration)":"Autres services (sauf administration publique)","Other types of electricity generation":"Autres types de production électrique","Others":"Autres","Ottawa - Gatineau (Ontario part), Ontario":"Ottawa - Gatineau (partie de l'Ontario), Ontario","Ottawa - Gatineau (Quebec part), Quebec":"Ottawa - Gatineau (partie du Québec), Québec","Ottawa-Gatineau, Ontario/Quebec":"Ottawa-Gatineau, Ontario/Québec","Overweight":"Embonpoint","Pacific Ocean":"Océan Pacifique","Paper manufacturing":"Fabrication du papier","Part-time employees":"Employés à temps partiel","Per capita":"Par habitant","Percentage":"Pourcentage","Persons 18 to 64 years":"Personnes de 18 à 64 ans","Persons 18 to 64 years in economic families":"Personnes de 18 à 64 ans dans les familles économiques","Persons 18 to 64 years old":"Personnes de 18 à 64 ans","Persons 65 years and older":"Personnes de 65 ans et plus","Persons 65 years and over":"Personnes de 65 ans et plus","Persons all ages and family types":"Personnes de tous âge et types de familles","Persons in a couple only family":"Personnes dans une famille ayant un couple seulement","Persons in a couple with children family":"Personnes dans une famille ayant un couple avec enfant","Persons in a lone-parent family":"Personnes dans une famille monoparentale","Persons in an economic family":"Personnes dans une famille économique","Persons in an other economic family type":"Personnes dans un autre type de famille économique","Persons in couple families with children":"Personnes dans les familles comptant un couple avec des enfants","Persons in couple families with other relatives":"Personnes dans les familles comptant un couple avec d'autres personnes apparentées","Persons in couples":"Personnes dans les couples","Persons in economic families":"Personnes dans les familles économiques","Persons in elderly couples":"Personnes dans les couples de personnes âgées","Persons in elderly families":"Personnes dans les familles de personnes âgées","Persons in female lone-parent families":"Personnes dans les familles monoparentales ayant une femme à leur tête","Persons in lone-parent families":"Personnes dans les familles monoparentales","Persons in low income":"Personnes à faible revenu","Persons in male lone-parent families":"Personnes dans les familles monoparentales ayant un homme à leur tête","Persons in non-elderly families":"Personnes dans les familles non âgées","Persons in other elderly families":"Personnes dans les autres familles de personnes âgées","Persons in other non-elderly families":"Personnes dans les autres familles de personnes non âgées","Persons not in an economic family":"Personnes hors famille économique","Persons under 18 years":"Personnes de moins de 18 ans","Persons under 18 years in all other economic families":"Personnes de moins de 18 ans dans l'ensemble des autres familles économiques","Persons under 18 years in couple families with children":"Personnes de moins de 18 ans dans les familles comptant un couple avec des enfants","Persons under 18 years in economic families":"Personnes de moins de 18 ans dans les familles économiques","Persons under 18 years in female lone-parent families":"Personnes de moins de 18 ans dans les familles monoparentales ayant une femme à leur tête","Persons under 18 years old":"Personnes de moins de 18 ans","Pertussis":"Coqueluche","Peterborough, Ontario":"Peterborough, Ontario","Petroleum and coal product manufacturing":"Fabrication de produits du pétrole et du charbon","Physical abuse":"Violence physique","Pillar":"Pilier","Pipeline transportation":"Transport par pipeline","Plastics":"Matières plastiques","Plastics and rubber products manufacturing":"Fabrication de produits en plastique et en caoutchouc","Pneumococcal":"Pneumocoque","Police":"Police","Police-reported":"Déclarés par la police","Polio":"Polio","Poor":"Mauvaise","Populated":"Peuplé","Population":"Population","Population centres":"Centres de population","Population characteristics":"Caractéristiques de la population","Potable water":"Eau potable","Prairie provinces":"Provinces des Prairies","Prairies":"Prairies","Primary electricity, hydro and nuclear":"Électricité primaire, hydro et nucléaire","Primary metal manufacturing":"Première transformation des métaux","Prince Edward Island":"Île-du-Prince-Édouard","Prince Edward Island [11]":"Île-du-Prince-Édouard","Professional, scientific and technical services":"Services professionnels, scientifiques et techniques","Progress":"Progrès","Protection and remediation of soil, groundwater and surface water":"Protection et assainissement du sol, des eaux souterraines et des eaux de surface","Protection of biodiversity and habitat":"Protection de la biodiversité et de l’habitat","Provincial Inventory Total":"Inventaire provincial","Public administration":"Administrations publiques","Public transit":"Transport en commun","Quebec":"Québec","Quebec [24]":"Québec","Quebec, Quebec":"Québec, Québec","Québec, Quebec":"Québec, Québec","Rate per 100,000 population":"Taux par 100 000 personnes","Real estate and rental and leasing":"Immobilier et service de location","Reference person who experienced homelessness":"Personne de référence qui a vécu une période d’itinérance","Regina, Saskatchewan":"Regina, Saskatchewan","Region":"Région","Religious organizations":"Organismes religieux","Reporting entity":"Entité déclarente","Reptiles":"Reptiles","Residential":"Résidentiel","Residential sources of diverted materials":"Sources des matières résidentielles récupérées","Residential sources of waste for disposal":"Sources de déchets non résidentielles à des fins d'élimination","Residual Soil Nitrogen":"Azote","Retail trade":"Commerce de détail","Risk of Soil Erosion":"Risques d'érosion des sols","Risk of Soil Salinization":"Risque de salinisation du sol","Risk of Water Contamination by Coliforms":"Coliforme","Risk of Water Contamination by Pesticides":"Pesticides","Risk of water contamination by phosphorus":"Phosphore","Roads":"Routes","Rotavirus":"Rotavirus","Rubella":"Oreillons","Rural areas":"Régions rurales","Rural communities":"Communautés rurales","Rural municipalities, population 1 to 4,999":"Municipalités rurales, population 1 à 4 999","Rural municipalities, population 5,000 or more":"Municipalités rurales, population 5 000 et plus","Saguenay, Quebec":"Saguenay, Québec","Saint John, New Brunswick":"Saint John, Nouveau-Brunswick","Sales and service occupations [6]":"Vente et services [6]","Salmonella":"Salmonellose","Salmonids":"Salmonidés","Saskatchewan":"Saskatchewan","Saskatchewan [47]":"Saskatchewan","Saskatoon, Saskatchewan":"Saskatoon, Saskatchewan","School system":"Système scolaire","Sea cucumbers":"Holothuries","Sea urchins":"Oursins","Sector":"Secteur","Selected characteristic":"Caractéristiques sélectionnées","Selected demographic characteristics":"Caractéristiques démographiques déterminées","Selected diseases":"Antigène ou vaccin","Selected housing vulnerable populations":"Certaines population vulnérables en matière de logement","Selected macrofungi":"Certains macro-champignons","Senior management occupations":"Cadres supérieures","Separated or divorced women":"Femmes séparées ou divorcées","Sewage infrastructure":"Infrastructures pour les eaux usées","Sex":"Sexe","Sex of accused":"Sexe de l'accusé","Sex unknown":"Sexe inconnu","Sexual abuse":"Violence sexuelle","Sexual assault, level 1 [1330]":"Agression sexuelle de niveau 1","Sexual assault, level 2, weapon or bodily harm [1320]":"Agression sexuelle, niveau 2, armée ou causant des lésions corporelles","Sexual assault, level 3, aggravated [1310]":"Agression sexuelle grave (niveau 3)","Sherbrooke, Quebec":"Sherbrooke, Québec","Shopping for goods or services":"Magasinage de biens ou de services","Short-cycle tertiary":"Enseignement tertiaire de cycle court","Show progress":"Affichent des progrès","Single women":"Femmes célibataires","Small pelagics":"Petits poissons pélagiques","Small population centres":"Petits centres de population","Soil Cover":"Couverture des sols","Soil Organic Carbon Change":"Matière organique du sol","Soil Quality":"Qualité des sols","Solar":"Solaire","Sold carbon offset credits only or sold more than purchased":"Redevances écologiques","Solid waste":"Déchets solides","Some confidence":"Une certaine confiance","Source":"Source","Sources of materials prepared for recycling":"Sources des matières préparées en vue du recyclage","Sources of waste for disposal":"Sources des déchets à des fins d'élimination","Specialized middle management occupations":"Cadres intermédiaires spécialisées","Species group":"Groupe d'espèces","Spiders":"Araignées","Sponges":"Éponges","St. Catharines - Niagara, Ontario":"St. Catharines - Niagara, Ontario","St. John's, Newfoundland and Labrador":"St. John's, Terre-Neuve-et-Labrador","Statistics":"Statistiques","Steam":"Vapeur","Stimulant-related poisoning hospitalizations":"Hospitalisations pour intoxication aux stimulants","Stock group":"Groupe de stocks","Stoneflies":"Plécoptères","Storm - Unspecified / Other":"Tempête-non précisée/autre","Storm Surge":"Onde de tempête","Storms and Severe Thunderstorms":"Orages et orages graves","Stormwater":"Eaux pluviales","Terajoules":"Térajoules","Territorial Inventory Total":"Inventaire territorial","Territories":"Territoires","Tertiary education":"Études tertiaires","Tetanus":"Tétanos","Textiles":"Textiles","Thunder Bay, Ontario":"Thunder Bay, Ontario","Tidal power turbine":"Turbine marémotrice","Tires":"Pneus","Tornado":"Tornade","Toronto, Ontario":"Toronto, Ontario","Total":"Total","Total - all violations":"Total des infractions","Total Aboriginal identity":"Total identité autochtone","Total Criminal Code":"Total des infractions au Code criminel","Total assets":"Total des actifs","Total coal":"Total charbon","Total employees, all occupations":"Total des employés, toutes les professions","Total hydro, tidal, wind, solar and other generation":"Total, tous les genres de production d'électricité","Total industrial":"Total industriel","Total intimate partner violence":"Total de tous les types de violence","Total offences":"Total des infractions","Total other violations causing death [120]":"Total des autres infractions entraînant la mort","Total other violent violations [180]":"Total des autres infractions avec violence","Total population":"Population totale","Total primary and secondary energy":"Énergie primaire et secondaire totale","Total refined petroleum products":"Total des produits pétroliers raffinés","Total robbery [160]":"Total des vols qualifiés","Total sexual violations against children [130]":"Total des infractions sexuelles contre les enfants","Total transportation":"Total transport","Total visible minority population":"Total de la population des minorités visibles","Total, 12 years and over":"Total, 12 ans et plus","Total, 15 to 29 years":"Total, 15 à 29 ans","Total, 15 years and over":"Total, 15 ans et plus","Total, 25 to 64 years":"Total, 25 à 64 ans","Total, Organisation for Economic Co-operation and Development (OECD)":"Total des pays de l’Organisation de coopération et de développement économiques (OCDE)","Total, age of accused":"Total, l'âge de l'accusé","Total, all clean technology industries":"Total, toutes les industries de technologies propres","Total, all persons":"Total, toutes les personnes","Total, all violations [0]":"Total des infractions","Total, all women":"Total, toutes les femmes","Total, environmental protection activities":"Total, activités de protection de l'environnement","Total, industries":"Total, industries","Total, lone-parent family households":"Tous les ménages","Total, one person households":"Total, ménages comptant une personne seule","Total, persons aged 15 years and over":"Total, personnes âgées de 15 ans et plus","Total, sex of accused":"Total, le sexe de l'accusé","Trades, transport and equipment operators and related occupations [7]":"Métiers, transport, machinerie et domaines apparentés [7]","Transport":"Transports","Transportation and warehousing":"Transport et entreposage","Transportation engineering infrastructure":"Infrastructures de génie liées aux transports","Transportation equipment manufacturing":null,"Transportation machinery and equipment":"Machines et matériel de transport","Trois-Rivieres, Quebec":"Trois-Rivières, Québec","Trois-Rivières, Quebec":"Trois-Rivières, Québec","Tuberculosis":"Tuberculose","Type of charging stations":"Type de poste de recharge","Type of commute":"Type de navettage","Type of court":"Type de tribunaux","Type of cyber-related violation":"Type d'infractions reliée à la cybercriminalité","Type of e-cigarettes":"Type de cigarettes","Type of electricity generation":"Type de production d'électricité","Type of event":"Type d'événement","Type of intimate partner violence":"Type de violence entre partenaires intimes","Type of materials diverted":"Type de matières récupérées","Type of municipality by population size":"Type de municipalité par taille de population","Type of perpetrator":"Type d'auteur présumé","Type of work":"Genre de travail","Undeveloped":"Non aménagés","Units":"Unités","University":"Université","Unpaid work activities":"Activités de travail non-rémunéré","Urban centres":"Régions urbaines","Urban municipalities, population 1 to 4,999":"Municipalités urbaines, population de 1 à 4 999","Urban municipalities, population 30,000 or more":"Municipalités urbaines, population de 30 000 et plus","Urban municipalities, population 5,000 to 29,999":"Municipalités urbaines, population de 5 000 à 29 999","Utilities":"Services utilitaires","Uttering threats":"Menaces","Uttering threats [1627]":"Menaces","Value":"Valeur","Vancouver, British Columbia":"Vancouver, Colombie-Britannique","Varicella":"Varicelle","Vascular plants":"Plantes vasculaires","Victoria, British Columbia":"Victoria, Colombie-Britannique","Violations":"Infractions","Violent crime severity index":"Indice des crimes avec violence","Visible minority":"Minorité visible","Waste":"Déchets et autres","Wastewater":"Eaux usées","Wastewater management":"Gestion des eaux usées","Water Quality":"Qualité de l'eau","Water quality":"Qualité de l'eau","Waterworks infrastructure":"Infrastructure d'adduction et de distribution d'eau","White goods":"Électroménagers","Whitehorse Yukon":"Whitehorse Yukon","Wholesale trade":"Commerce de gros","Wildfire":"Feu de forêt","Wildlife Habitat on Farmland":"Capacité d'habitat faunique des terres agricoles","Wind power turbine":"Turbine éolienne","Windsor, Ontario":"Windsor, Ontario","Winnipeg Manitoba":"Winnipeg Manitoba","Winnipeg, Manitoba":"Winnipeg, Manitoba","Winter Storm":"Tempête hivernale","With nicotine":"Avec nicotine","Without nicotine":"Sans nicotine","Women":"Femmes","Women designated as visible minorities":"Femmes désignées comme minorités visibles","Women living alone":"Femmes vivant seules","Women with disability":"Femmes ayant une incapacité","Wood product manufacturing":"Fabrication de produits en bois","Year":"Année","Yellowjacket wasps":"Guêpes jaunes","Yellowknife Northwest Territories":"Yellowknife Territoires du Nord-Ouest","Youth courts":"Tribunaux de la jeunesse","Youth crime severity index":"Indice de gravité de la criminalité chez les jeunes","Youth violent crime severity index":"Indice des crimes avec violence chez les jeunes","Yukon":"Yukon","Yukon [60]":"Yukon","Yukon, Northwest Territories and Nunavut":"Yukon, Territoires du Nord-Ouest et Nunavut","all ages":"Tous les âges","by 14 years of age":"14 ans","by 17 years of age":"17 ans","by 2 years of age":"2 ans","by 7 years of age":"7 ans"};</script>
 
 
 <div class="container">
   
-<ol class="breadcrumb">
-  
-  <li><a href="/cif-cic_dev/fr/">Accueil</a></li>
-  <li><a href="/cif-cic_dev/fr/goals">Objectifs</a></li>
-  
-  <li><a href="/cif-cic_dev/fr/8" title="Promouvoir une croissance économique soutenue, partagée et durable, le plein emploi productif et un travail décent pour tous">Objectif 8</a></li>
-  
-</ol>
+<nav>
+    <ol aria-label="breadcrumb" class="breadcrumb" style="--bs-breadcrumb-divider: '&rsaquo;';">
+        
+        <li class="breadcrumb-item">
+            <a href="/cif-cic_dev/fr/">Accueil</a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="/cif-cic_dev/fr/goals">Objectifs</a>
+        </li>
+        
+        <li class="breadcrumb-item">
+            <a href="/cif-cic_dev/fr/8" title="Promouvoir une croissance économique soutenue, partagée et durable, le plein emploi productif et un travail décent pour tous">Objectif 8</a>
+        </li>
+        
+    </ol>
+</nav>
 
 
   
     
-<div class="previous-next-links row">
-    <div class="col-xs-3 col-md-3 col-lg-4 pull-left text-left">
+<div class="previous-next-links d-flex justify-content-between">
+    <div class="text-left">
         <a class="btn btn-primary" href="/cif-cic_dev/fr/8-2-1" aria-labelledby="previous-link">
             <i class="fa fa-chevron-left" aria-hidden="true"></i>
-            <span id="previous-link" class="hidden-sm hidden-xs">Indicateur précédent</span>
+            <span id="previous-link" class="d-none d-md-inline">Indicateur précédent</span>
         </a>
     </div>
-    <div class="col-xs-3 col-md-3 col-lg-4 pull-right text-right">
+    <div class="text-right">
         <a class="btn btn-primary" href="/cif-cic_dev/fr/8-4-1" aria-labelledby="next-link">
+            <span id="next-link" class="d-none d-md-inline">Indicateur suivant</span>
             <i class="fa fa-chevron-right" aria-hidden="true"></i>
-            <span id="next-link" class="hidden-sm hidden-xs">Indicateur suivant</span>
         </a>
     </div>
 </div>
@@ -509,29 +371,31 @@ data-event-label="high"
   
 </div>
 <div class="heading goal-banner indicator goal-8">
-  <div class="container">
-    <div class="row">
-      
-      <div class="col-xs-4 col-md-3 col-lg-2 goal-icon goal-tiles">
-        <a href="/cif-cic_dev/fr/8" title="Voir la liste des indicateurs de cet objectif">
-          <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic_dev/assets/img/cards/inverted/fr/8.png" alt="Travaux décent et croissance économique - Objectif 8" id="goal-8" class="goal-icon-image goal-icon-image-"/>
-        </a>
-      </div>
-      <div class="col-xs-8 col-md-9 col-lg-10 indicator-details">
-      
-        <div>
-          <h1>
+    <div class="container">
+        <div class="row">
             
-            Indicateur 8.3.1
+            <div class="col-4 col-md-3 col-lg-2 goal-icon goal-tiles">
+                <a href="/cif-cic_dev/fr/8" title="Voir la liste des indicateurs de cet objectif">
+                    <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic_dev/assets/img/cards/inverted/fr/8.png"
+                        alt="Travaux décent et croissance économique - Objectif 8"
+                        id="goal-8"
+                        class="goal-icon-image goal-icon-image-" />
+                </a>
+            </div>
+            <div class="col-8 col-md-9 col-lg-10 indicator-details">
             
-            <span class="lead-copy">Proportion des jeunes qui ne sont ni en emploi, ni aux études, ni en formation</span>
-          </h1>
+                <div>
+                    <h1>
+                        
+                        Indicateur 8.3.1
+                        
+                        <span class="lead-copy">Proportion des jeunes qui ne sont ni en emploi, ni aux études, ni en formation</span>
+                    </h1>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </div>
-
 <div id="main-content" class="container goal-8" role="main">
   
 
@@ -572,7 +436,7 @@ data-event-label="high"
   data-precision="null"
 >
   
-  <span role="status" class="sr-only" id="indicator-data-view-status"></span>
+  <span role="status" class="visually-hidden" id="indicator-data-view-status"></span>
   <div id="indicator-sidebar" class="indicator-sidebar col-md-3">
     <div id="serieses"></div>
 <div id="units"></div>
@@ -591,15 +455,21 @@ data-event-label="high"
     
 
 
+
+
 <div id="headlineTable">
 
   <div id="datatables">
 
+    
     <a href="https://sdg-data-canada-odd-donnees.github.io/cif-data-donnees-cic/fr/headline/8-3-1.csv" class="btn btn-primary btn-download" download="indicator_8-3-1.csv" tabindex="0" role="button">Télécharger Headline CSV</a>
+    
+    <a href="https://sdg-data-canada-odd-donnees.github.io/cif-data-donnees-cic/fr/data/8-3-1.csv" class="btn btn-primary btn-download" download='indicator_8-3-1.csv' tabindex='0' role='button'>Télécharger toutes les données (CSV)</a>
 
-    <a href="https://sdg-data-canada-odd-donnees.github.io/cif-data-donnees-cic/fr/data/8-3-1.csv" class="btn btn-primary btn-download" style='float:left;margin-right:1em' download='indicator_8-3-1.csv' tabindex='0' role='button'>Télécharger toutes les données (CSV)</a>
+    <p class="no-js-disaggregation-hint">Télécharger le CSV source pour les désagrégations</p>
 
-    <h3>Headline data</h3>
+    
+    <h3>Données d'en-tête</h3>
     <table class="table-responsive table table-hover dataTable no-footer" role="grid">
       <caption>Proportion des jeunes qui ne sont ni en emploi, ni aux études, ni en formation</caption>
       <thead>
@@ -733,8 +603,10 @@ data-event-label="high"
         
       </tbody>
     </table>
+    
   </div>
 
+  
   <div id="datatableFooter">
     
     <p>Source(s): Statistique Canada</p>
@@ -747,6 +619,7 @@ data-event-label="high"
     
     
   </div>
+  
 
 </div>
 
@@ -755,94 +628,94 @@ data-event-label="high"
 
   <p class="async-loading" data-img="/cif-cic_dev/assets/img/loading-small.gif"></p>
 
-  <div class="async-loaded spacer medium" style="display:none;">
+  <div class="async-loaded mt-4" style="display:none;">
 
     <div style="display: none;">
-  <span id="table-alternative">Pour une alternative aux données tabulaires, voir l’onglet Tableau.</span>
-</div>
-<ul class="nav nav-tabs non-stacking-tabs data-view" role="tablist">
-  
-  <li role="presentation"
-    class="
-      nav-item
-      
-      
-      active
-    ">
-    <a
-      class="nav-link"
-      data-toggle="tab"
-      role="tab"
-      
-        id="tab-chartview"
-        href="#chartview"
-        aria-controls="chartview"
-        aria-describedby="table-alternative"
-        data-on="click"
+    <span id="table-alternative">Pour une alternative aux données tabulaires, voir l’onglet Tableau.</span>
+  </div>
+  <ul class="nav nav-tabs non-stacking-tabs data-view" role="tablist">
+    
+    <li role="presentation"
+      class="
+        nav-item
+        
+        
+      ">
+      <button
+        class="nav-link active"
+        data-bs-toggle="tab"
+        role="tab"
+        type="button"
+        
+          id="tab-chartview"
+          data-bs-target="#chartview"
+          aria-controls="chartview"
+          aria-describedby="table-alternative"
+          data-on="click"
 data-event-category="Tab change"
 data-event-action="Change data view"
 data-event-label="Change to Chart tab"
 
-      
-    >Graphique</a>
-  </li>
-  
-  <li role="presentation"
-    class="
-      nav-item
-      
-      
-      
-    ">
-    <a
-      class="nav-link"
-      data-toggle="tab"
-      role="tab"
-      
-        id="tab-tableview"
-        href="#tableview"
-        aria-controls="tableview"
-        data-on="click"
+        
+      >Graphique</button>
+    </li>
+    
+    <li role="presentation"
+      class="
+        nav-item
+        
+        
+      ">
+      <button
+        class="nav-link "
+        data-bs-toggle="tab"
+        role="tab"
+        type="button"
+        
+          id="tab-tableview"
+          data-bs-target="#tableview"
+          aria-controls="tableview"
+          data-on="click"
 data-event-category="Tab change"
 data-event-action="Change data view"
 data-event-label="Change to Table tab"
 
-      
-    >Tableau</a>
-  </li>
-  
-  <li role="presentation"
-    class="
-      nav-item
-      map
-      
-      
-    ">
-    <a
-      class="nav-link"
-      data-toggle="tab"
-      role="tab"
-      
-        id="tab-mapview"
-        href="#mapview"
-        aria-controls="mapview"
-        data-no-disagg="true"
-        data-on="click"
+        
+      >Tableau</button>
+    </li>
+    
+    <li role="presentation"
+      class="
+        nav-item
+        map
+        
+      ">
+      <button
+        class="nav-link "
+        data-bs-toggle="tab"
+        role="tab"
+        type="button"
+        
+          id="tab-mapview"
+          data-bs-target="#mapview"
+          aria-controls="mapview"
+          data-no-disagg="true"
+          data-on="click"
 data-event-category="Tab change"
 data-event-action="Change data view"
 data-event-label="Change to Map tab"
 
-      
-    >Carte</a>
-  </li>
-  
-</ul>
-
-    <div class="tab-content data-view">
-  
-    
-      <div role="tabpanel" class="tab-pane active" id="chartview">
         
+      >Carte</button>
+    </li>
+    
+  </ul>
+  
+    <div class="tab-content data-view">
+    
+      
+        <div role="tabpanel" class="tab-pane active" id="chartview">
+          
 
     <div id="dataset-size-warning" style="display:none" role="alert">
       <i class="fa fa-bolt"><span class="sr-only">Avertissement :</span></i>
@@ -850,264 +723,18 @@ data-event-label="Change to Map tab"
     </div>
 
     
-    
     <div id="selectionsChart">
       <figure role="group">
         <div id="chart-canvas">
           <h4 id="chart-heading" class="chart-title">Proportion des jeunes qui ne sont ni en emploi, ni aux études, ni en formation</h4>
           <div id="chart" class="plot-container">
-            
-              
-<canvas
+            <canvas
     role="img"
     aria-labelledby="chart-heading"
     aria-describedby="table-alternative chart-annotations"
     tabindex="0"
  ></canvas>
 
-<script>
-// Add a chart alteration to support the chart_graph_limits metadata field.
-opensdg.chartConfigAlter(function(config, info) {
-  if (info.graphLimits && Object.keys(info.graphLimits).length > 0) {
-    var overrides = {
-      options: {
-        scales: {
-          yAxes: [{
-            ticks: {
-              min: info.graphLimits.minimum,
-              max: info.graphLimits.maximum,
-            }
-          }]
-        }
-      }
-    }
-    // Add these overrides onto the normal config.
-    $.extend(true, config, overrides);
-  }
-  else {
-    // Otherwise remove any min/max that may be there.
-    try {
-      delete config.options.scales.yAxes[0].ticks.min;
-      delete config.options.scales.yAxes[0].ticks.max;
-    }
-    catch(e) {}
-  }
-});
-</script>
-
-<span style="display: none;" id="chart-annotations" role="status"></span>
-<script>
-opensdg.annotationPresets = {
-    common: {
-        // This "common" preset is applied to all annotations automatically.
-        borderColor: '#949494',
-        type: 'line',
-        borderDash: [10, 5],
-        borderWidth: 1,
-        label: {
-            backgroundColor: 'white',
-            
-            fontColor: 'black',
-            
-        },
-        // This "highContrast" overrides colors when in high-contrast mode.
-        highContrast: {
-            label: {
-                backgroundColor: 'black',
-                
-                fontColor: 'white',
-                
-            },
-        },
-        // This callback is used to generate a generic description for screenreaders.
-        // This can be overridden to be a more specific string, eg:
-        //
-        //     description: 'Chart annotation showing a 2030 target of 15%'
-        //
-        description: function() {
-            var descriptionParts = [translations.indicator.chart_annotation];
-            if (this.label && this.label.content) {
-                descriptionParts.push(translations.t(this.label.content));
-            }
-            else {
-                // If there is no label, just specify whether it is a box or line.
-                if (this.type == 'line') {
-                    descriptionParts.push(this.mode + ' line');
-                }
-                if (this.type == 'box') {
-                    descriptionParts.push('box');
-                }
-            }
-            if (typeof this.value !== 'undefined') {
-                descriptionParts.push(this.value);
-            }
-            return descriptionParts.join(': ');
-        },
-    },
-    target_line: {
-        mode: 'horizontal',
-        borderWidth: 2,
-        borderDash: [15, 10],
-        borderColor: '#757575',
-        label: {
-            position: 'right',
-            content: translations.indicator.annotation_2030_target,
-        },
-    },
-    series_break: {
-        mode: 'vertical',
-        borderDash: [2, 2],
-        label: {
-            position: 'top',
-            content: translations.indicator.annotation_series_break,
-        },
-    },
-};
-
-// Add a chart alteration to support the chart_annotations metadata field.
-opensdg.chartConfigAlter(function(config, info) {
-    if (info.graphAnnotations && info.graphAnnotations.length > 0) {
-        // Apply some helpers/fixes to the annotations.
-        var annotations = info.graphAnnotations.map(function(annotationOverrides) {
-            var annotation = {};
-            // Apply the "common" preset.
-            if (opensdg.annotationPresets.common) {
-                $.extend(true, annotation, opensdg.annotationPresets.common);
-            }
-            // Apply any specified presets.
-            if (annotationOverrides.preset) {
-                var preset = annotationOverrides.preset;
-                if (opensdg.annotationPresets[preset]) {
-                    $.extend(true, annotation, opensdg.annotationPresets[preset]);
-                }
-            }
-            // Now add any more annotation config.
-            $.extend(true, annotation, annotationOverrides);
-            // Default to horizontal lines.
-            if (!annotation.mode && annotation.type === 'line') {
-                annotation.mode = 'horizontal';
-            }
-            // Provide the obscure scaleID properties on user's behalf.
-            if (!annotation.scaleID && annotation.type === 'line') {
-                if (annotation.mode === 'horizontal') {
-                    annotation.scaleID = 'y-axis-0';
-                }
-                if (annotation.mode === 'vertical') {
-                    annotation.scaleID = 'x-axis-0';
-                }
-            }
-            if (!annotation.xScaleID && annotation.type === 'box') {
-                annotation.xScaleID = 'x-axis-0';
-            }
-            if (!annotation.yScaleID && annotation.type === 'box') {
-                annotation.yScaleID = 'y-axis-0';
-            }
-            // Provide the "enabled" label property on the user's behalf.
-            if (annotation.label && annotation.label.content) {
-                annotation.label.enabled = true;
-            }
-            // Translate any label content.
-            if (annotation.label && annotation.label.content) {
-                annotation.label.content = translations.t(annotation.label.content);
-            }
-            // Save some original values for later used when contrast mode is switched.
-            if (typeof annotation.defaultContrast === 'undefined') {
-                annotation.defaultContrast = {};
-                if (annotation.borderColor) {
-                    annotation.defaultContrast.borderColor = annotation.borderColor;
-                }
-                if (annotation.backgroundColor) {
-                    annotation.defaultContrast.backgroundColor = annotation.backgroundColor;
-                }
-                if (annotation.label) {
-                    annotation.defaultContrast.label = {};
-                    if (annotation.label.fontColor) {
-                        annotation.defaultContrast.label.fontColor = annotation.label.fontColor;
-                    }
-                    if (annotation.label.backgroundColor) {
-                        annotation.defaultContrast.label.backgroundColor = annotation.label.backgroundColor;
-                    }
-                }
-            }
-            return annotation;
-        });
-        if (annotations.length > 0) {
-            var overrides = {
-                options: {
-                    annotation: {
-                        drawTime: 'beforeDatasetsDraw',
-                        annotations: annotations
-                    }
-                }
-            };
-            // Add these overrides onto the normal config.
-            $.extend(true, config, overrides);
-
-            // Update the chart annotations element.
-            var descriptions = annotations.map(function(annotation) {
-                var description = '';
-                if (annotation.description) {
-                    if (typeof annotation.description === 'function') {
-                        description = annotation.description.call(annotation);
-                    }
-                    else {
-                        description = translations.t(annotation.description);
-                    }
-                }
-                return description;
-            }).filter(function(description) { return description != ''; });
-
-            var currentDescription = $('#chart-annotations').text();
-            var newDescription = descriptions.join('. ');
-            if (currentDescription != newDescription) {
-                $('#chart-annotations').text(newDescription);
-            }
-        }
-    }
-    else if (config.options && config.options.annotation) {
-        delete config.options.annotation;
-    }
-});
-</script>
-
-<script>
-// For line charts, add the vertical line hover functionality.
-opensdg.chartConfigAlter(function(config, info) {
-    var overrides = {
-        options: {
-            tooltips: {
-                intersect: false,
-                axis: 'x',
-            },
-        },
-        plugins: [{
-            beforeDatasetsDraw: function(chart) {
-                if (chart.tooltip._active && chart.tooltip._active.length) {
-                    var activePoint = chart.tooltip._active[0],
-                        ctx = chart.ctx,
-                        x = activePoint.tooltipPosition().x,
-                        topY = chart.scales['y-axis-0'].top,
-                        bottomY = chart.scales['y-axis-0'].bottom;
-
-                    // draw line
-                    ctx.save();
-                    ctx.beginPath();
-                    ctx.moveTo(x, topY);
-                    ctx.lineTo(x, bottomY);
-                    ctx.lineWidth = 2;
-                    ctx.strokeStyle = '#757575';
-                    ctx.stroke();
-                    ctx.restore();
-                }
-            }
-        }],
-    };
-    // Add these overrides onto the normal config, and return it.
-    $.extend(true, config, overrides);
-});
-</script>
-
-            
           </div>
           <div id="plotLegend"></div>
           
@@ -1157,7 +784,7 @@ opensdg.chartConfigAlter(function(config, info) {
         ></dd>
         
         
-    <dl>
+    </dl>
 </div>
 
         </div>
@@ -1171,15 +798,15 @@ opensdg.chartConfigAlter(function(config, info) {
 
 
 
-      </div>
-    
-  
-    
-      <div role="tabpanel" class="tab-pane " id="tableview">
-        <div style="display: none;">
-          <span id="column-sort-info">Cliquez pour trier par cette colonne</span>
         </div>
-        <div id="selectionsTable"></div>
+      
+    
+      
+        <div role="tabpanel" class="tab-pane " id="tableview">
+          <div style="display: none;">
+            <span id="column-sort-info">Cliquez pour trier par cette colonne</span>
+          </div>
+          <div id="selectionsTable"></div>
 <dl id="tableTargetLines" class="clearfix"></dl>
 
 
@@ -1228,18 +855,18 @@ opensdg.chartConfigAlter(function(config, info) {
         ></dd>
         
         
-    <dl>
+    </dl>
 </div>
 
 <div id="tableSelectionDownload" class="clearfix"></div>
 
-      </div>
+        </div>
+      
     
-  
-    
-      <div role="tabpanel" class="tab-pane " id="mapview" class="map">
-        
-<h4 id="map-heading" class="chart-title">Proportion des jeunes qui ne sont ni en emploi, ni aux études, ni en formation</h4>
+      
+        <div role="tabpanel" class="tab-pane " id="mapview" class="map">
+          
+<h4 id="map-heading" class="map-title">Proportion des jeunes qui ne sont ni en emploi, ni aux études, ni en formation</h4>
 <div id="map" aria-describedby="table-alternative">
   <img class="map-loading-image" src="/cif-cic_dev/assets/img/loading.gif" alt="Chargement de la carte" />
 </div>
@@ -1290,80 +917,87 @@ opensdg.chartConfigAlter(function(config, info) {
         ></dd>
         
         
-    <dl>
+    </dl>
 </div>
 
 
-      </div>
+        </div>
+      
     
+  </div>
   
-</div>
-
 
   </div>
 
 </section>
 
   
-  <ul class="nav nav-tabs spacer medium" role="tablist">
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-  <li role="presentation" class="nav-item active">
-    <a class="nav-link" data-toggle="tab" id="tab-national" href="#national" aria-controls="national" role="tab" data-on="click"
+  <div class="mt-4">
+<ul class="nav nav-tabs" role="tablist">
+    
+    
+        
+        
+        
+        
+        <li role="presentation" class="nav-item">
+            <button
+                type="button"
+                class="nav-link active"
+                data-bs-toggle="tab"
+                id="tab-national"
+                data-bs-target="#national"
+                aria-controls="national"
+                role="tab"
+                data-on="click"
 data-event-category="Tab change"
 data-event-action="Change metadata view"
 data-event-label="Change to indicator.national_metadata tab"
->Métadonnées nationales</a>
-  </li>
 
-  
-  
-  
-  
-  
-  
-  
-  
-  <li role="presentation" class="nav-item ">
-    <a class="nav-link" data-toggle="tab" id="tab-sources" href="#sources" aria-controls="sources" role="tab" data-on="click"
+            >Métadonnées nationales</button>
+        </li>
+    
+        
+        
+        
+        
+        <li role="presentation" class="nav-item">
+            <button
+                type="button"
+                class="nav-link "
+                data-bs-toggle="tab"
+                id="tab-sources"
+                data-bs-target="#sources"
+                aria-controls="sources"
+                role="tab"
+                data-on="click"
 data-event-category="Tab change"
 data-event-action="Change metadata view"
 data-event-label="Change to indicator.sources tab"
->Source(s)</a>
-  </li>
 
-
-  
-  <li role="presentation" class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#edit" aria-controls="edit" role="tab">Modifier</a>
-  </li>
-  
+            >Source(s)</button>
+        </li>
+    
+    
+    
+        <li role="presentation" class="nav-item">
+            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#edit" aria-controls="edit" role="tab">Modifier</a>
+        </li>
+    
 </ul>
 
 <div class="tab-content">
-  
     
-    
-    
-    
-    
-    
-    
-    
-    
-    <div role="tabpanel" class="tab-pane active" id="national">
-      <article>
-        <p>La section ci-dessous fournit une description de l’indicateur.</p>
+        
+        
+        
+        
+        
+        <div role="tabpanel" class="tab-pane active" id="national">
+            <article>
+                <p>La section ci-dessous fournit une description de l’indicateur.</p>
 
-        <table class="table">
+                <table class="table">
   
   
   
@@ -1506,66 +1140,16 @@ data-event-label="Change to indicator.sources tab"
           
       
         
-      
-      
-      <tr>
-        <th scope="row">Dernière mise à jour des données </th>
-        <td>
           
-            
-            
-            
-            
-
-            
-              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/348c3f9b796296715c3f21e4c212401a15ee5cb7" target="_blank">
-                2021-12-03: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
-              </a>
-            
-
+      
+        
           
-        </td>
-        </tr>
-        
-      
-  
       
         
-      
-      
-      
-  
-      
-        
-      
-      
-      <tr>
-        <th scope="row">Dernière mise à jour des métadonnées </th>
-        <td>
           
-            
-            
-            
-            
-
-            
-              <a href="https://github.com/sdg-data-canada-odd-donnees/cif-data-donnees-cic/commit/815f48e374d6dc310f313334ecad6fcc789b5708" target="_blank">
-                2021-12-03: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
-              </a>
-            
-
+      
+        
           
-        </td>
-        </tr>
-        
-      
-  
-      
-        
-      
-      
-      
-  
   
   
   
@@ -1650,21 +1234,17 @@ data-event-label="Change to indicator.sources tab"
   
 </table>
 
-      </article>
-    </div>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <div role="tabpanel" class="tab-pane " id="sources">
-      <article>
+            </article>
+        </div>
         
-        <!-- Count the non-empty sources (up to 5) -->
+        
+        
+        
+        
+        <div role="tabpanel" class="tab-pane " id="sources">
+            <article>
+                
+                <!-- Count the non-empty sources (up to 5) -->
 
 
 
@@ -1880,13 +1460,13 @@ data-event-label="Change to indicator.sources tab"
   </div>
 
 
-      </article>
-    </div>
+            </article>
+        </div>
+        
     
-  
-  
-  <div role="tabpanel" class="tab-pane" id="edit">
-    <div class="edit-container">
+    
+        <div role="tabpanel" class="tab-pane" id="edit">
+            <div class="edit-container">
   
   <a class="btn btn-primary" href="http://prose.io/#//edit//data/indicator_8-3-1.csv">Modifier les données</a>
   
@@ -1899,14 +1479,15 @@ data-event-label="Change to indicator.sources tab"
 
 </div>
 
-  </div>
+        </div>
+    
+</div>
   
 </div>
-
-
   </div>
 </div>
 
+  <a href="#top">Retour en haut</a>
 </div>
 
 <footer role="contentinfo">
@@ -2000,12 +1581,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/cif-cic_dev/assets/js/sdg.js?v=20220808183500'></script>
+<script src='/cif-cic_dev/assets/js/sdg.js?v=20220808190657'></script>
 
 
     
     
-    <script src="/cif-cic_dev/assets/js/custom.js?v=20220808183500"></script><script>
+    <script src="/cif-cic_dev/assets/js/custom.js?v=20220808190657"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
