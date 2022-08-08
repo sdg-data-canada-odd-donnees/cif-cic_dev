@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams%2CCustomEvent%2CArray.prototype.includes%2CArray.prototype.filter%2CArray.prototype.some%2CArray.prototype.find%2CArray.prototype.reduce%2CObject.assign%2CArray.isArray%2CObject.values%2CArray.from%2CSet%2CArray.prototype.findIndex"></script>
+        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams%2CCustomEvent%2CArray.prototype.includes%2CArray.prototype.filter%2CArray.prototype.some%2CArray.prototype.find%2CArray.prototype.reduce%2CObject.assign%2CArray.isArray%2CObject.values%2CObject.entries%2CArray.from%2CSet%2CArray.prototype.findIndex"></script>
 <script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/javascript-canvas-to-blob/3.15.0/js/canvas-to-blob.min.js"></script>
 
         <script>
@@ -128,10 +128,13 @@ var translations = {
 
 
         
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
+        
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20220808135744">
+        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20220808182212">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -146,96 +149,65 @@ var translations = {
 
     </head>
 <body class="language-fr
-layout-goal-by-target
+layout-goal-bootstrap5
 ">
 <!-- <div class="container"> -->
 
 
+
 <script>translations['header'] = {"alpha":"Beta","default_contrast":"contraste standard","disable_high_contrast":"Désactiver le contraste élevé","disclaimer":"Ceci est un site en développement. Nous apprécions vos <a href=\"mailto:%email_address\">commentaires</a>.","enable_high_contrast":"Activer le contraste élevé","high_contrast":"contraste élevé","skip_link":"Passer au contenu principal","tag_line":"17 objectifs pour transformer notre monde","toggle_menu":"Interrupteur du menu. Cliquez pour développer ou réduire le menu.","toggle_search":"Interrupteur de la barre. Cliquez pour développer ou réduire la barre de recherche."};</script>
 
-<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Passer au contenu principal</a>
+<a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Passer au contenu principal</a>
 <div id="disclaimer">
-  <div class="container">
+    
+<div class="container">
   <div class="disclaimer-alert">
     <strong class="phase-tag">Beta</strong>
     
     Ceci est un site en développement. Nous apprécions vos <a href="mailto:statcan.sdg-odd.statcan@statcan.gc.ca">commentaires</a>.
+    
   </div>
 </div>
 
 </div>
 
-<header role="banner" class="header-default">
-  <div class="container">
-
-    <div class="logo-and-mobile-widgets">
-      <a class="navbar-brand" href="/cif-cic_dev/fr/" id="home">
+<header role="banner" class="">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light flex-wrap align-items-start">
+            <a class="navbar-brand" href="/cif-cic_dev/fr/" id="home">
     <img src="/cif-cic_dev/assets/img/SDG_logo.png" alt="Objectifs de développement durable - 17 objectifs pour transformer notre monde" />
 </a>
-      <div class="mobile-widgets">
-    <ul id='accessibility-nav' class='contrast-switcher'>
-        
-
-    <li class="nav-link contrast contrast-default contrast-type-default">
-        <a title="Désactiver le contraste élevé"
-           aria-label="Désactiver le contraste élevé"
-           data-contrast-switch-to="default"
-           href="javascript:void(0)"
-           data-on="click"
-data-event-category="Accessibility"
-data-event-action="Change contrast setting"
-data-event-label="default"
-
-        >A</a>
-    </li>
-    <li class="nav-link contrast contrast-high contrast-type-default">
-        <a title="Activer le contraste élevé"
-           aria-label="Activer le contraste élevé"
-           data-contrast-switch-to="high"
-           href="javascript:void(0)"
-           data-on="click"
-data-event-category="Accessibility"
-data-event-action="Change contrast setting"
-data-event-label="high"
-
-        >A</a>
-    </li>
-
-
-    </ul><div class="language-toggle-mobile">
-        <div class="language-toggle-container">
-  
-  <div class="btn-group language-toggle-dropdown ">
-    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Français</span>
-      <span class="language-abbreviation">fr</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
-    <ul class="dropdown-menu"><li class="language-option-en">
-            <a href="/cif-cic_dev/14/">
-              English
-            </a>
-          </li></ul>
-  </div>
-</div>
-
-    </div></div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="d-flex flex-wrap w-100 justify-content-between">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav" id="menu"><li class="nav-item ">
+    <a class="nav-link" href="/cif-cic_dev/fr/goals">Objectifs</a>
+</li><li class="nav-item ">
+    <a class="nav-link" href="/cif-cic_dev/fr/about">À propos</a>
+</li><li class="nav-item ">
+    <a class="nav-link" href="/cif-cic_dev/fr/related-products">Produits connexes</a>
+</li><li class="nav-item ">
+    <a class="nav-link" href="/cif-cic_dev/fr/faq">FAQ</a>
+</li></ul>
+    
+                </div>
+                <div class="header-search-bar">
+                    <form class="align-self-lg-end" id="search" action="/cif-cic_dev/fr/search/">
+    <div class="input-group">
+        <label class="visually-hidden" for="indicator_search">Chercher</label>
+        <input class="form-control" type="search" name="q" id="indicator_search" title="Chercher">
+        <span class="input-group-append">
+            <button class="btn btn-outline-secondary ms-n5" aria-label="Chercher" id="search-btn" type="submit">
+                <i class="fa fa-search"></i>
+            </button>
+        </span>
     </div>
+</form>
 
-    <nav class="navbar navbar-default" id="main-nav">
-      <ul class="top-level">
-    <li id="menuToggle"
-        aria-label="Interrupteur du menu. Cliquez pour développer ou réduire le menu."
-        aria-haspopup="true">
-        <button data-target="menu-mobile" aria-expanded="false">Menu</button>
-        <ul class="nav navbar-nav menu-target contrast-switcher" id="menu-mobile"><li class="nav-link ">
-    <a href="/cif-cic_dev/fr/goals">Objectifs</a>
-</li><li class="nav-link ">
-    <a href="/cif-cic_dev/fr/about">À propos</a>
-</li><li class="nav-link ">
-    <a href="/cif-cic_dev/fr/related-products">Produits connexes</a>
-</li><li class="nav-link ">
-    <a href="/cif-cic_dev/fr/faq">FAQ</a>
-</li><li class="language-toggle-menu-header">
-    
+                </div>
+                <div class="header-toggles d-flex">
 
 
 
@@ -243,12 +215,13 @@ data-event-label="high"
 
   <div class="language-toggle-container">
   
-  <div class="btn-group language-toggle-dropdown ">
-    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Français</span>
-      <span class="language-abbreviation">fr</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
-    <ul class="dropdown-menu"><li class="language-option-en">
-            <a href="/cif-cic_dev/14/">
+  <div class="btn-group language-toggle-dropdown  dropdown">
+    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="fa fa-globe"></i>
+      Français
+    </button>
+    <ul class="dropdown-menu"><li>
+            <a class="dropdown-item" href="/cif-cic_dev/14/">
               English
             </a>
           </li></ul>
@@ -256,158 +229,50 @@ data-event-label="high"
 </div>
 
 
-
-</li>
-
-
-
-    <li class="nav-link contrast contrast-default contrast-type-default">
-        <a title="Désactiver le contraste élevé"
-           aria-label="Désactiver le contraste élevé"
-           data-contrast-switch-to="default"
-           href="javascript:void(0)"
-           data-on="click"
-data-event-category="Accessibility"
-data-event-action="Change contrast setting"
-data-event-label="default"
-
-        >A</a>
-    </li>
-    <li class="nav-link contrast contrast-high contrast-type-default">
-        <a title="Activer le contraste élevé"
-           aria-label="Activer le contraste élevé"
-           data-contrast-switch-to="high"
-           href="javascript:void(0)"
-           data-on="click"
+<a title="Activer le contraste élevé" aria-label="Activer le contraste élevé"
+    data-contrast-switch-to="" href="javascript:void(0)" data-on="click"
 data-event-category="Accessibility"
 data-event-action="Change contrast setting"
 data-event-label="high"
-
-        >A</a>
-    </li>
-
-
-
-</ul>
-
-    </li>
-    <li id="searchToggle"
-        aria-label="Interrupteur de la barre. Cliquez pour développer ou réduire la barre de recherche."
-        aria-haspopup="true">
-        <button data-target="search-mobile" aria-expanded="false">Chercher</button>
-        <div id="search-mobile" class="menu-target">
-  <form action="/cif-cic_dev/fr/search/">
-    <label class="sr-only" for="indicator_search-mobile">Chercher</label>
-    <input type="text" name="q" id="indicator_search-mobile" title="Chercher" /><!--
-    --><button aria-label="Chercher" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
-  </form>
-</div>
-
-    </li>
-</ul>
-      <div id="search" class="menu-target">
-  <form action="/cif-cic_dev/fr/search/">
-    <label class="sr-only" for="indicator_search">Chercher</label>
-    <input type="text" name="q" id="indicator_search" title="Chercher" /><!--
-    --><button aria-label="Chercher" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
-  </form>
-</div>
-
-      <ul class="nav navbar-nav menu-target contrast-switcher" id="menu"><li class="nav-link ">
-    <a href="/cif-cic_dev/fr/goals">Objectifs</a>
-</li><li class="nav-link ">
-    <a href="/cif-cic_dev/fr/about">À propos</a>
-</li><li class="nav-link ">
-    <a href="/cif-cic_dev/fr/related-products">Produits connexes</a>
-</li><li class="nav-link ">
-    <a href="/cif-cic_dev/fr/faq">FAQ</a>
-</li><li class="language-toggle-menu-header">
-    
-
-
-
-
-
-  <div class="language-toggle-container">
-  
-  <div class="btn-group language-toggle-dropdown ">
-    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Français</span>
-      <span class="language-abbreviation">fr</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
-    <ul class="dropdown-menu"><li class="language-option-en">
-            <a href="/cif-cic_dev/14/">
-              English
-            </a>
-          </li></ul>
-  </div>
-</div>
-
-
-
-</li>
-
-
-
-    <li class="nav-link contrast contrast-default contrast-type-default">
-        <a title="Désactiver le contraste élevé"
-           aria-label="Désactiver le contraste élevé"
-           data-contrast-switch-to="default"
-           href="javascript:void(0)"
-           data-on="click"
-data-event-category="Accessibility"
-data-event-action="Change contrast setting"
-data-event-label="default"
-
-        >A</a>
-    </li>
-    <li class="nav-link contrast contrast-high contrast-type-default">
-        <a title="Activer le contraste élevé"
-           aria-label="Activer le contraste élevé"
-           data-contrast-switch-to="high"
-           href="javascript:void(0)"
-           data-on="click"
-data-event-category="Accessibility"
-data-event-action="Change contrast setting"
-data-event-label="high"
-
-        >A</a>
-    </li>
-
-
-
-</ul>
-
-    </nav>
-  </div>
-
+>A</a>
+                </div>
+            </div>
+        </nav>
+    </div>
 </header>
 <div id="top" tabindex=-1></div>
 
 
 
 
-<div class="container">
-  <ol class="breadcrumb">
-  
-  <li><a href="/cif-cic_dev/fr/">Accueil</a></li>
-  <li><a href="/cif-cic_dev/fr/goals">Objectifs</a></li>
-  
-  
-</ol>
 
+<div class="container">
+  <nav>
+    <ol aria-label="breadcrumb" class="breadcrumb" style="--bs-breadcrumb-divider: '&rsaquo;';">
+        
+        <li class="breadcrumb-item" >
+            <a href="/cif-cic_dev/fr/">Accueil</a>
+        </li>
+        <li class="breadcrumb-item" >
+            <a href="/cif-cic_dev/fr/goals">Objectifs</a>
+        </li>
+        
+        
+    </ol>
+</nav>
   
     
-<div class="previous-next-links row">
-    <div class="col-xs-3 col-md-3 col-lg-4 pull-left text-left">
+<div class="previous-next-links d-flex justify-content-between">
+    <div class="text-left">
         <a class="btn btn-primary" href="/cif-cic_dev/fr/13" aria-labelledby="previous-link">
             <i class="fa fa-chevron-left" aria-hidden="true"></i>
-            <span id="previous-link" class="hidden-sm hidden-xs">Objectif précédent</span>
+            <span id="previous-link" class="d-none d-md-inline">Objectif précédent</span>
         </a>
     </div>
-    <div class="col-xs-3 col-md-3 col-lg-4 pull-right text-right">
+    <div class="text-right">
         <a class="btn btn-primary" href="/cif-cic_dev/fr/15" aria-labelledby="next-link">
+            <span id="next-link" class="d-none d-md-inline">Objectif suivant</span>
             <i class="fa fa-chevron-right" aria-hidden="true"></i>
-            <span id="next-link" class="hidden-sm hidden-xs">Objectif suivant</span>
         </a>
     </div>
 </div>
@@ -417,58 +282,66 @@ data-event-label="high"
 </div>
 
 <div class="heading goal-banner goal-14">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-4 col-md-3 col-lg-2 goal-tiles">
-        <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic_dev/assets/img/cards/inverted/fr/14.png" alt="Vie aquatique - Objectif 14" id="goal-14" class="goal-icon-image goal-icon-image-" />
-      </div>
-      <div class="col-xs-8 col-md-9 col-lg-10">
-        <h1>
-          <span class="hidden-sm hidden-md hidden-lg">Objectif 14: </span>Conserver et exploiter de manière durable les océans, les mers et les ressources marines aux fins du développement durable
-        </h1>
-      </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-4 col-md-3 col-lg-2 goal-tiles">
+                <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic_dev/assets/img/cards/inverted/fr/14.png" alt="Vie aquatique - Objectif 14" id="goal-14" class="goal-icon-image goal-icon-image-" />
+            </div>
+            <div class="col-8 col-md-9 col-lg-10">
+                <h1>Conserver et exploiter de manière durable les océans, les mers et les ressources marines aux fins du développement durable</h1>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
 
-<div id="main-content" class="container goal-indicators goal-14 goal-by-target" role="main">
+<div id="main-content" class="container" role="main">
 
   
 
 
 
-  <div class="visible-md-block visible-lg-block">
-    <div class="col-md-6">
-      <h2>Ambitions et cibles</h2>
-    </div>
-    <div class="col-md-6">
-      <h2>Indicateurs</h2>
-    </div>
-  </div>
+  <div class="container g-0">
+    <h2 class="goal-page-heading">Cibles et indicateurs</h2>
 
-  
-  
     
-    <div class="indicator-cards target goal-target col-md-6">
-      <span class="indicator-card-number">
-        <label class="hidden-md hidden-lg">Cible</label>
-        14.1
-      </span>
-      <p><strong>Ambition</strong> - Le Canada protège et conserve les zones marines et gère de façon durable les stocks de poissons des océans <br><strong>Cible</strong> - Conserver 25 % des océans canadiens d’ici 2025, pour atteindre 30 % d’ici 2030</p>
-    </div>
-    <div class="indicator-cards col-md-6 row no-gutters">
     
-
       
-      
-      
-
-      <div class="col-md-12  goal-indicator">
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">Cible</span> 14.1</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name"><p><strong>Ambition</strong> - Le Canada protège et conserve les zones marines et gère de façon durable les stocks de poissons des océans <br><strong>Cible</strong> - Conserver 25 % des océans canadiens d’ici 2025, pour atteindre 30 % d’ici 2030</p></span>
+          </div>
+      </div>
         
-        <span class="indicator-card-number">
-          14.1.1
+
           
+          
+          
+          
+
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">Indicateur</span> 14.1.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
+              
+              <span class="indicator-name"><a href="/cif-cic_dev/fr/14-1-1">Proportion d’aires marines et côtières conservées</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="Étiquettes"><li class="list-inline-item">
+        <span class="visually-hidden">État de l’indicateur</span>
+        
 
 
 
@@ -477,41 +350,52 @@ data-event-label="high"
 </span>
 
 
-        </span>
-        <a href="/cif-cic_dev/fr/14-1-1">
-          Proportion d’aires marines et côtières conservées
-        </a>
+        </li></ul>
+
+
+            </div>
+            
+            
+          </div>
         
-
-
-
-
-
-        
+        <hr class="goal-page-target-rule" />
+    
+      
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">Cible</span> 14.2</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name"><p><strong>Ambition</strong> - Le Canada protège et conserve les zones marines et gère de façon durable les stocks de poissons des océans <br><strong>Cible</strong> - D’ici 2023, tous les stocks majeurs de poisons et d’invertébrés sont gérés et récoltés à des niveaux considérés durables, partant de 96 % en 2016</p></span>
+          </div>
       </div>
-    
-    </div>
-  
-    
-    <div class="indicator-cards target goal-target col-md-6">
-      <span class="indicator-card-number">
-        <label class="hidden-md hidden-lg">Cible</label>
-        14.2
-      </span>
-      <p><strong>Ambition</strong> - Le Canada protège et conserve les zones marines et gère de façon durable les stocks de poissons des océans <br><strong>Cible</strong> - D’ici 2023, tous les stocks majeurs de poisons et d’invertébrés sont gérés et récoltés à des niveaux considérés durables, partant de 96 % en 2016</p>
-    </div>
-    <div class="indicator-cards col-md-6 row no-gutters">
-    
-
-      
-      
-      
-
-      <div class="col-md-12  goal-indicator">
         
-        <span class="indicator-card-number">
-          14.2.1
+
           
+          
+          
+          
+
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">Indicateur</span> 14.2.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
+              
+              <span class="indicator-name"><a href="/cif-cic_dev/fr/14-2-1">Proportion des stocks de poissons récoltés à des niveaux considérés durables</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="Étiquettes"><li class="list-inline-item">
+        <span class="visually-hidden">État de l’indicateur</span>
+        
 
 
 
@@ -520,22 +404,19 @@ data-event-label="high"
 </span>
 
 
-        </span>
-        <a href="/cif-cic_dev/fr/14-2-1">
-          Proportion des stocks de poissons récoltés à des niveaux considérés durables
-        </a>
+        </li></ul>
+
+
+            </div>
+            
+            
+          </div>
         
-
-
-
-
-
-        
-      </div>
+        <hr class="goal-page-target-rule" />
     
     </div>
-  
-</div>
+  </div>
+
 
 <footer role="contentinfo">
   <div class="container">
@@ -619,12 +500,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/cif-cic_dev/assets/js/sdg.js?v=20220808135744'></script>
+<script src='/cif-cic_dev/assets/js/sdg.js?v=20220808182212'></script>
 
 
     
     
-    <script src="/cif-cic_dev/assets/js/custom.js?v=20220808135744"></script><script>
+    <script src="/cif-cic_dev/assets/js/custom.js?v=20220808182212"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
