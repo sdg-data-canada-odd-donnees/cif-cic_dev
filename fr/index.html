@@ -130,12 +130,11 @@ var translations = {
 
         
         
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20220808182212">
+        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20220808183500">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -158,9 +157,9 @@ layout-frontpage-alt
 
 <script>translations['header'] = {"alpha":"Beta","default_contrast":"contraste standard","disable_high_contrast":"Désactiver le contraste élevé","disclaimer":"Ceci est un site en développement. Nous apprécions vos <a href=\"mailto:%email_address\">commentaires</a>.","enable_high_contrast":"Activer le contraste élevé","high_contrast":"contraste élevé","skip_link":"Passer au contenu principal","tag_line":"17 objectifs pour transformer notre monde","toggle_menu":"Interrupteur du menu. Cliquez pour développer ou réduire le menu.","toggle_search":"Interrupteur de la barre. Cliquez pour développer ou réduire la barre de recherche."};</script>
 
-<a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Passer au contenu principal</a>
+<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Passer au contenu principal</a>
 <div id="disclaimer">
-    
+  
 <div class="container">
   <div class="disclaimer-alert">
     <strong class="phase-tag">Beta</strong>
@@ -172,43 +171,77 @@ layout-frontpage-alt
 
 </div>
 
-<header role="banner" class="">
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light flex-wrap align-items-start">
-            <a class="navbar-brand" href="/cif-cic_dev/fr/" id="home">
+<header role="banner" class="header-default">
+  <div class="container">
+
+    <div class="logo-and-mobile-widgets">
+      <a class="navbar-brand" href="/cif-cic_dev/fr/" id="home">
     <img src="/cif-cic_dev/assets/img/SDG_logo.png" alt="Objectifs de développement durable - 17 objectifs pour transformer notre monde" />
 </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="d-flex flex-wrap w-100 justify-content-between">
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav" id="menu"><li class="nav-item ">
-    <a class="nav-link" href="/cif-cic_dev/fr/goals">Objectifs</a>
-</li><li class="nav-item ">
-    <a class="nav-link" href="/cif-cic_dev/fr/about">À propos</a>
-</li><li class="nav-item ">
-    <a class="nav-link" href="/cif-cic_dev/fr/related-products">Produits connexes</a>
-</li><li class="nav-item ">
-    <a class="nav-link" href="/cif-cic_dev/fr/faq">FAQ</a>
-</li></ul>
-    
-                </div>
-                <div class="header-search-bar">
-                    <form class="align-self-lg-end" id="search" action="/cif-cic_dev/fr/search/">
-    <div class="input-group">
-        <label class="visually-hidden" for="indicator_search">Chercher</label>
-        <input class="form-control" type="search" name="q" id="indicator_search" title="Chercher">
-        <span class="input-group-append">
-            <button class="btn btn-outline-secondary ms-n5" aria-label="Chercher" id="search-btn" type="submit">
-                <i class="fa fa-search"></i>
-            </button>
-        </span>
-    </div>
-</form>
+      <div class="mobile-widgets">
+    <ul id='accessibility-nav' class='contrast-switcher'>
+        
 
-                </div>
-                <div class="header-toggles d-flex">
+    <li class="nav-link contrast contrast-default contrast-type-default">
+        <a title="Désactiver le contraste élevé"
+           aria-label="Désactiver le contraste élevé"
+           data-contrast-switch-to="default"
+           href="javascript:void(0)"
+           data-on="click"
+data-event-category="Accessibility"
+data-event-action="Change contrast setting"
+data-event-label="default"
+
+        >A</a>
+    </li>
+    <li class="nav-link contrast contrast-high contrast-type-default">
+        <a title="Activer le contraste élevé"
+           aria-label="Activer le contraste élevé"
+           data-contrast-switch-to="high"
+           href="javascript:void(0)"
+           data-on="click"
+data-event-category="Accessibility"
+data-event-action="Change contrast setting"
+data-event-label="high"
+
+        >A</a>
+    </li>
+
+
+    </ul><div class="language-toggle-mobile">
+        <div class="language-toggle-container">
+  
+  <div class="btn-group language-toggle-dropdown ">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Français</span>
+      <span class="language-abbreviation">fr</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
+    <ul class="dropdown-menu"><li class="language-option-en">
+            <a href="/cif-cic_dev/">
+              English
+            </a>
+          </li></ul>
+  </div>
+</div>
+
+    </div></div>
+    </div>
+
+    <nav class="navbar navbar-default" id="main-nav">
+      <ul class="top-level">
+    <li id="menuToggle"
+        aria-label="Interrupteur du menu. Cliquez pour développer ou réduire le menu."
+        aria-haspopup="true">
+        <button data-target="menu-mobile" aria-expanded="false">Menu</button>
+        <ul class="nav navbar-nav menu-target contrast-switcher" id="menu-mobile"><li class="nav-link ">
+    <a href="/cif-cic_dev/fr/goals">Objectifs</a>
+</li><li class="nav-link ">
+    <a href="/cif-cic_dev/fr/about">À propos</a>
+</li><li class="nav-link ">
+    <a href="/cif-cic_dev/fr/related-products">Produits connexes</a>
+</li><li class="nav-link ">
+    <a href="/cif-cic_dev/fr/faq">FAQ</a>
+</li><li class="language-toggle-menu-header">
+    
 
 
 
@@ -216,13 +249,12 @@ layout-frontpage-alt
 
   <div class="language-toggle-container">
   
-  <div class="btn-group language-toggle-dropdown  dropdown">
-    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="fa fa-globe"></i>
-      Français
-    </button>
-    <ul class="dropdown-menu"><li>
-            <a class="dropdown-item" href="/cif-cic_dev/">
+  <div class="btn-group language-toggle-dropdown ">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Français</span>
+      <span class="language-abbreviation">fr</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
+    <ul class="dropdown-menu"><li class="language-option-en">
+            <a href="/cif-cic_dev/">
               English
             </a>
           </li></ul>
@@ -230,16 +262,130 @@ layout-frontpage-alt
 </div>
 
 
-<a title="Activer le contraste élevé" aria-label="Activer le contraste élevé"
-    data-contrast-switch-to="" href="javascript:void(0)" data-on="click"
+
+</li>
+
+
+
+    <li class="nav-link contrast contrast-default contrast-type-default">
+        <a title="Désactiver le contraste élevé"
+           aria-label="Désactiver le contraste élevé"
+           data-contrast-switch-to="default"
+           href="javascript:void(0)"
+           data-on="click"
+data-event-category="Accessibility"
+data-event-action="Change contrast setting"
+data-event-label="default"
+
+        >A</a>
+    </li>
+    <li class="nav-link contrast contrast-high contrast-type-default">
+        <a title="Activer le contraste élevé"
+           aria-label="Activer le contraste élevé"
+           data-contrast-switch-to="high"
+           href="javascript:void(0)"
+           data-on="click"
 data-event-category="Accessibility"
 data-event-action="Change contrast setting"
 data-event-label="high"
->A</a>
-                </div>
-            </div>
-        </nav>
-    </div>
+
+        >A</a>
+    </li>
+
+
+
+</ul>
+
+    </li>
+    <li id="searchToggle"
+        aria-label="Interrupteur de la barre. Cliquez pour développer ou réduire la barre de recherche."
+        aria-haspopup="true">
+        <button data-target="search-mobile" aria-expanded="false">Chercher</button>
+        <div id="search-mobile" class="menu-target">
+  <form action="/cif-cic_dev/fr/search/">
+    <label class="sr-only" for="indicator_search-mobile">Chercher</label>
+    <input type="text" name="q" id="indicator_search-mobile" title="Chercher" /><!--
+    --><button aria-label="Chercher" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
+  </form>
+</div>
+
+    </li>
+</ul>
+      <div id="search" class="menu-target">
+  <form action="/cif-cic_dev/fr/search/">
+    <label class="sr-only" for="indicator_search">Chercher</label>
+    <input type="text" name="q" id="indicator_search" title="Chercher" /><!--
+    --><button aria-label="Chercher" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
+  </form>
+</div>
+
+      <ul class="nav navbar-nav menu-target contrast-switcher" id="menu"><li class="nav-link ">
+    <a href="/cif-cic_dev/fr/goals">Objectifs</a>
+</li><li class="nav-link ">
+    <a href="/cif-cic_dev/fr/about">À propos</a>
+</li><li class="nav-link ">
+    <a href="/cif-cic_dev/fr/related-products">Produits connexes</a>
+</li><li class="nav-link ">
+    <a href="/cif-cic_dev/fr/faq">FAQ</a>
+</li><li class="language-toggle-menu-header">
+    
+
+
+
+
+
+  <div class="language-toggle-container">
+  
+  <div class="btn-group language-toggle-dropdown ">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Français</span>
+      <span class="language-abbreviation">fr</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
+    <ul class="dropdown-menu"><li class="language-option-en">
+            <a href="/cif-cic_dev/">
+              English
+            </a>
+          </li></ul>
+  </div>
+</div>
+
+
+
+</li>
+
+
+
+    <li class="nav-link contrast contrast-default contrast-type-default">
+        <a title="Désactiver le contraste élevé"
+           aria-label="Désactiver le contraste élevé"
+           data-contrast-switch-to="default"
+           href="javascript:void(0)"
+           data-on="click"
+data-event-category="Accessibility"
+data-event-action="Change contrast setting"
+data-event-label="default"
+
+        >A</a>
+    </li>
+    <li class="nav-link contrast contrast-high contrast-type-default">
+        <a title="Activer le contraste élevé"
+           aria-label="Activer le contraste élevé"
+           data-contrast-switch-to="high"
+           href="javascript:void(0)"
+           data-on="click"
+data-event-category="Accessibility"
+data-event-action="Change contrast setting"
+data-event-label="high"
+
+        >A</a>
+    </li>
+
+
+
+</ul>
+
+    </nav>
+  </div>
+
 </header>
 <div id="top" tabindex=-1></div>
 
@@ -270,112 +416,112 @@ data-event-label="high"
 
         
         <div class="goal-tiles">
-    <div class="row g-2">
-        
-        <div class="col-4 col-md-2 col-lg-1 goal-tile">
-            <a href="/cif-cic_dev/fr/1">
-                <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic_dev/assets/img/cards/inverted/fr/1.png" id="goal-1" alt="Pas de pauvreté - Objectif 1" class="goal-icon-image goal-icon-image-"/>
-            </a>
+            <div class="row no-gutters">
+                
+                <div class="col-xs-4 col-sm-2 col-md-1 goal-tile">
+                    <a href="/cif-cic_dev/fr/1">
+                        <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic_dev/assets/img/cards/inverted/fr/1.png" id="goal-1" alt="Pas de pauvreté - Objectif 1" class="goal-icon-image goal-icon-image-"/>
+                    </a>
+                </div>
+                
+                <div class="col-xs-4 col-sm-2 col-md-1 goal-tile">
+                    <a href="/cif-cic_dev/fr/2">
+                        <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic_dev/assets/img/cards/inverted/fr/2.png" id="goal-2" alt="Faim &quot;zéro&quot; - Objectif 2" class="goal-icon-image goal-icon-image-"/>
+                    </a>
+                </div>
+                
+                <div class="col-xs-4 col-sm-2 col-md-1 goal-tile">
+                    <a href="/cif-cic_dev/fr/3">
+                        <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic_dev/assets/img/cards/inverted/fr/3.png" id="goal-3" alt="Bonne santé et bien-être - Objectif 3" class="goal-icon-image goal-icon-image-"/>
+                    </a>
+                </div>
+                
+                <div class="col-xs-4 col-sm-2 col-md-1 goal-tile">
+                    <a href="/cif-cic_dev/fr/4">
+                        <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic_dev/assets/img/cards/inverted/fr/4.png" id="goal-4" alt="Éducation de qualité - Objectif 4" class="goal-icon-image goal-icon-image-"/>
+                    </a>
+                </div>
+                
+                <div class="col-xs-4 col-sm-2 col-md-1 goal-tile">
+                    <a href="/cif-cic_dev/fr/5">
+                        <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic_dev/assets/img/cards/inverted/fr/5.png" id="goal-5" alt="Égalité entre les sexes - Objectif 5" class="goal-icon-image goal-icon-image-"/>
+                    </a>
+                </div>
+                
+                <div class="col-xs-4 col-sm-2 col-md-1 goal-tile">
+                    <a href="/cif-cic_dev/fr/6">
+                        <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic_dev/assets/img/cards/inverted/fr/6.png" id="goal-6" alt="Eau propre et assainissement - Objectif 6" class="goal-icon-image goal-icon-image-"/>
+                    </a>
+                </div>
+                
+                <div class="col-xs-4 col-sm-2 col-md-1 goal-tile">
+                    <a href="/cif-cic_dev/fr/7">
+                        <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic_dev/assets/img/cards/inverted/fr/7.png" id="goal-7" alt="Energies propres et d&#39;un coût abordable - Objectif 7" class="goal-icon-image goal-icon-image-"/>
+                    </a>
+                </div>
+                
+                <div class="col-xs-4 col-sm-2 col-md-1 goal-tile">
+                    <a href="/cif-cic_dev/fr/8">
+                        <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic_dev/assets/img/cards/inverted/fr/8.png" id="goal-8" alt="Travaux décent et croissance économique - Objectif 8" class="goal-icon-image goal-icon-image-"/>
+                    </a>
+                </div>
+                
+                <div class="col-xs-4 col-sm-2 col-md-1 goal-tile">
+                    <a href="/cif-cic_dev/fr/9">
+                        <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic_dev/assets/img/cards/inverted/fr/9.png" id="goal-9" alt="Industrie, innovation et infrastructure - Objectif 9" class="goal-icon-image goal-icon-image-"/>
+                    </a>
+                </div>
+                
+                <div class="col-xs-4 col-sm-2 col-md-1 goal-tile">
+                    <a href="/cif-cic_dev/fr/10">
+                        <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic_dev/assets/img/cards/inverted/fr/10.png" id="goal-10" alt="Inégalités réduites - Objectif 10" class="goal-icon-image goal-icon-image-"/>
+                    </a>
+                </div>
+                
+                <div class="col-xs-4 col-sm-2 col-md-1 goal-tile">
+                    <a href="/cif-cic_dev/fr/11">
+                        <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic_dev/assets/img/cards/inverted/fr/11.png" id="goal-11" alt="Villes et communautés durables - Objectif 11" class="goal-icon-image goal-icon-image-"/>
+                    </a>
+                </div>
+                
+                <div class="col-xs-4 col-sm-2 col-md-1 goal-tile">
+                    <a href="/cif-cic_dev/fr/12">
+                        <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic_dev/assets/img/cards/inverted/fr/12.png" id="goal-12" alt="Consommation et production responsables - Objectif 12" class="goal-icon-image goal-icon-image-"/>
+                    </a>
+                </div>
+                
+                <div class="col-xs-4 col-sm-2 col-md-1 goal-tile">
+                    <a href="/cif-cic_dev/fr/13">
+                        <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic_dev/assets/img/cards/inverted/fr/13.png" id="goal-13" alt="Mesures relatives à la lutte contre les changements climatiques - Objectif 13" class="goal-icon-image goal-icon-image-"/>
+                    </a>
+                </div>
+                
+                <div class="col-xs-4 col-sm-2 col-md-1 goal-tile">
+                    <a href="/cif-cic_dev/fr/14">
+                        <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic_dev/assets/img/cards/inverted/fr/14.png" id="goal-14" alt="Vie aquatique - Objectif 14" class="goal-icon-image goal-icon-image-"/>
+                    </a>
+                </div>
+                
+                <div class="col-xs-4 col-sm-2 col-md-1 goal-tile">
+                    <a href="/cif-cic_dev/fr/15">
+                        <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic_dev/assets/img/cards/inverted/fr/15.png" id="goal-15" alt="Vie terrestre - Objectif 15" class="goal-icon-image goal-icon-image-"/>
+                    </a>
+                </div>
+                
+                <div class="col-xs-4 col-sm-2 col-md-1 goal-tile">
+                    <a href="/cif-cic_dev/fr/16">
+                        <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic_dev/assets/img/cards/inverted/fr/16.png" id="goal-16" alt="Paix, justice et institutions efficaces - Objectif 16" class="goal-icon-image goal-icon-image-"/>
+                    </a>
+                </div>
+                
+                <div class="col-xs-4 col-sm-2 col-md-1 goal-tile">
+                    <a href="/cif-cic_dev/fr/17">
+                        <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic_dev/assets/img/cards/inverted/fr/17.png" id="goal-17" alt="Partenariats pour la réalisation des objectifs - Objectif 17" class="goal-icon-image goal-icon-image-"/>
+                    </a>
+                </div>
+                
+            </div>
         </div>
-        
-        <div class="col-4 col-md-2 col-lg-1 goal-tile">
-            <a href="/cif-cic_dev/fr/2">
-                <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic_dev/assets/img/cards/inverted/fr/2.png" id="goal-2" alt="Faim &quot;zéro&quot; - Objectif 2" class="goal-icon-image goal-icon-image-"/>
-            </a>
-        </div>
-        
-        <div class="col-4 col-md-2 col-lg-1 goal-tile">
-            <a href="/cif-cic_dev/fr/3">
-                <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic_dev/assets/img/cards/inverted/fr/3.png" id="goal-3" alt="Bonne santé et bien-être - Objectif 3" class="goal-icon-image goal-icon-image-"/>
-            </a>
-        </div>
-        
-        <div class="col-4 col-md-2 col-lg-1 goal-tile">
-            <a href="/cif-cic_dev/fr/4">
-                <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic_dev/assets/img/cards/inverted/fr/4.png" id="goal-4" alt="Éducation de qualité - Objectif 4" class="goal-icon-image goal-icon-image-"/>
-            </a>
-        </div>
-        
-        <div class="col-4 col-md-2 col-lg-1 goal-tile">
-            <a href="/cif-cic_dev/fr/5">
-                <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic_dev/assets/img/cards/inverted/fr/5.png" id="goal-5" alt="Égalité entre les sexes - Objectif 5" class="goal-icon-image goal-icon-image-"/>
-            </a>
-        </div>
-        
-        <div class="col-4 col-md-2 col-lg-1 goal-tile">
-            <a href="/cif-cic_dev/fr/6">
-                <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic_dev/assets/img/cards/inverted/fr/6.png" id="goal-6" alt="Eau propre et assainissement - Objectif 6" class="goal-icon-image goal-icon-image-"/>
-            </a>
-        </div>
-        
-        <div class="col-4 col-md-2 col-lg-1 goal-tile">
-            <a href="/cif-cic_dev/fr/7">
-                <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic_dev/assets/img/cards/inverted/fr/7.png" id="goal-7" alt="Energies propres et d&#39;un coût abordable - Objectif 7" class="goal-icon-image goal-icon-image-"/>
-            </a>
-        </div>
-        
-        <div class="col-4 col-md-2 col-lg-1 goal-tile">
-            <a href="/cif-cic_dev/fr/8">
-                <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic_dev/assets/img/cards/inverted/fr/8.png" id="goal-8" alt="Travaux décent et croissance économique - Objectif 8" class="goal-icon-image goal-icon-image-"/>
-            </a>
-        </div>
-        
-        <div class="col-4 col-md-2 col-lg-1 goal-tile">
-            <a href="/cif-cic_dev/fr/9">
-                <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic_dev/assets/img/cards/inverted/fr/9.png" id="goal-9" alt="Industrie, innovation et infrastructure - Objectif 9" class="goal-icon-image goal-icon-image-"/>
-            </a>
-        </div>
-        
-        <div class="col-4 col-md-2 col-lg-1 goal-tile">
-            <a href="/cif-cic_dev/fr/10">
-                <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic_dev/assets/img/cards/inverted/fr/10.png" id="goal-10" alt="Inégalités réduites - Objectif 10" class="goal-icon-image goal-icon-image-"/>
-            </a>
-        </div>
-        
-        <div class="col-4 col-md-2 col-lg-1 goal-tile">
-            <a href="/cif-cic_dev/fr/11">
-                <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic_dev/assets/img/cards/inverted/fr/11.png" id="goal-11" alt="Villes et communautés durables - Objectif 11" class="goal-icon-image goal-icon-image-"/>
-            </a>
-        </div>
-        
-        <div class="col-4 col-md-2 col-lg-1 goal-tile">
-            <a href="/cif-cic_dev/fr/12">
-                <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic_dev/assets/img/cards/inverted/fr/12.png" id="goal-12" alt="Consommation et production responsables - Objectif 12" class="goal-icon-image goal-icon-image-"/>
-            </a>
-        </div>
-        
-        <div class="col-4 col-md-2 col-lg-1 goal-tile">
-            <a href="/cif-cic_dev/fr/13">
-                <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic_dev/assets/img/cards/inverted/fr/13.png" id="goal-13" alt="Mesures relatives à la lutte contre les changements climatiques - Objectif 13" class="goal-icon-image goal-icon-image-"/>
-            </a>
-        </div>
-        
-        <div class="col-4 col-md-2 col-lg-1 goal-tile">
-            <a href="/cif-cic_dev/fr/14">
-                <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic_dev/assets/img/cards/inverted/fr/14.png" id="goal-14" alt="Vie aquatique - Objectif 14" class="goal-icon-image goal-icon-image-"/>
-            </a>
-        </div>
-        
-        <div class="col-4 col-md-2 col-lg-1 goal-tile">
-            <a href="/cif-cic_dev/fr/15">
-                <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic_dev/assets/img/cards/inverted/fr/15.png" id="goal-15" alt="Vie terrestre - Objectif 15" class="goal-icon-image goal-icon-image-"/>
-            </a>
-        </div>
-        
-        <div class="col-4 col-md-2 col-lg-1 goal-tile">
-            <a href="/cif-cic_dev/fr/16">
-                <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic_dev/assets/img/cards/inverted/fr/16.png" id="goal-16" alt="Paix, justice et institutions efficaces - Objectif 16" class="goal-icon-image goal-icon-image-"/>
-            </a>
-        </div>
-        
-        <div class="col-4 col-md-2 col-lg-1 goal-tile">
-            <a href="/cif-cic_dev/fr/17">
-                <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic_dev/assets/img/cards/inverted/fr/17.png" id="goal-17" alt="Partenariats pour la réalisation des objectifs - Objectif 17" class="goal-icon-image goal-icon-image-"/>
-            </a>
-        </div>
-        
-    </div>
-</div>
         
     </div>
     
@@ -390,20 +536,18 @@ data-event-label="high"
         
 
         
-        <div class="col-sm-6 col-md-4">
-    <div class="card">
-    <div class="card-body">
+        <div class="card col-xs-12 col-sm-6 col-md-4">
 
-    
-    <h2 class="card-title"
-        
-    >Télécharger toutes les données</h2>
-    
   
-    
+  <h2 class="card-title"
+      
+  >Télécharger toutes les données</h2>
   
-    
-      <div class="zip-download-container">
+
+  
+
+  
+    <div class="zip-download-container">
     <a href="https://sdg-data-canada-odd-donnees.github.io/cif-data-donnees-cic/fr/zip/all_indicators.zip"
        class="btn btn-primary btn-download" aria-describedby="zip-download-info">
         Télécharger toutes les données
@@ -417,56 +561,12 @@ data-event-label="high"
     </div>
 </div>
 
-    
   
-    
 
-    </div>
   
-  </div>
-  
-  </div>
-        
 
-        
-
-    
-        
-
-        
-
-        
-        <div class="col-sm-6 col-md-4">
-    <div class="card">
-    <div class="card-body">
-
-    
-    <h2 class="card-title"
-        
-    >Carrefour de données liées aux objectifs de développement durable</h2>
-    
-  
-    
-    <div class="card-text"><p>Données canadiennes relatives aux indicateurs des ODD</p>
 </div>
-    
-  
-    
-  
-    
-    
-    
-    
-    <a class="btn btn-primary btn-download" href="https://www144.statcan.gc.ca/sdg-odd/index-eng.htm">
-      Access / Accéder
-    </a>
-    
 
-    </div>
-  
-  </div>
-  
-  </div>
         
 
         
@@ -477,34 +577,65 @@ data-event-label="high"
         
 
         
-        <div class="col-sm-6 col-md-4">
-    <div class="card">
-    <div class="card-body">
+        <div class="card col-xs-12 col-sm-6 col-md-4">
 
-    
-    <h2 class="card-title"
+  
+  <h2 class="card-title"
+      
+  >Carrefour de données liées aux objectifs de développement durable</h2>
+  
+
+  
+  <div class="card-content"><p>Données canadiennes relatives aux indicateurs des ODD</p>
+</div>
+  
+
+  
+
+  
+  
+  
+  
+  <a class="btn btn-primary btn-download" href="https://www144.statcan.gc.ca/sdg-odd/index-eng.htm">
+    Access / Accéder
+  </a>
+  
+
+</div>
+
         
-    >À propos du Canada et les objectifs de développement durable</h2>
-    
-  
-    
-  
-    
-  
-    
-    
-    
-    
-    <a class="btn btn-primary btn-download" href="https://www144.statcan.gc.ca/sdg-odd/about-apercu-eng.htm">
-      Access / Accéder
-    </a>
-    
 
-    </div>
+        
+
+    
+        
+
+        
+
+        
+        <div class="card col-xs-12 col-sm-6 col-md-4">
+
   
-  </div>
+  <h2 class="card-title"
+      
+  >À propos du Canada et les objectifs de développement durable</h2>
   
-  </div>
+
+  
+
+  
+
+  
+  
+  
+  
+  <a class="btn btn-primary btn-download" href="https://www144.statcan.gc.ca/sdg-odd/about-apercu-eng.htm">
+    Access / Accéder
+  </a>
+  
+
+</div>
+
         
 
         
@@ -598,12 +729,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/cif-cic_dev/assets/js/sdg.js?v=20220808182212'></script>
+<script src='/cif-cic_dev/assets/js/sdg.js?v=20220808183500'></script>
 
 
     
     
-    <script src="/cif-cic_dev/assets/js/custom.js?v=20220808182212"></script><script>
+    <script src="/cif-cic_dev/assets/js/custom.js?v=20220808183500"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
