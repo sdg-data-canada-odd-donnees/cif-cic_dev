@@ -22,7 +22,7 @@ languages:
 
 
 # Tell the Remote Theme plugin to use the Open SDG platform (Jekyll theme).
-remote_theme: open-sdg/open-sdg@1.7.0
+remote_theme: open-sdg/open-sdg@1.8.0
 
 # Replace this title as needed.
 title: Canada Indicators For The Sustainable Development Goals
@@ -274,3 +274,6 @@ search_index_extra_fields:
 #    title: Reporting status on disaggregation
 #    description: This page provides information on possible disaggregation for indicators and tracj the progress of included them in the hub
 #    disaggregation_tabs: true
+
+bootstrap_5: true
+chartjs_3: true
