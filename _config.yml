@@ -275,5 +275,5 @@ search_index_extra_fields:
 #    description: This page provides information on possible disaggregation for indicators and tracj the progress of included them in the hub
 #    disaggregation_tabs: true
 
-bootstrap_5: true
-chartjs_3: true
+# bootstrap_5: true
+# chartjs_3: true
