@@ -40,21 +40,17 @@ create_goals:
   layout: goal-by-target
   previous_next_links: true
 create_pages:
-  pages:
-    - folder: /
-      layout: frontpage-alt
-      title: 17 goals to transform our world
-    - folder: /goals
-      layout: goals
-      title: Goals
-    - folder: /reporting-status
-      layout: reportingstatus
-    - filename: indicators.json
-      folder: /
-      layout: indicator-json
-    - folder: /search
-      layout: search
-      title: Search results
+  - folder: /
+    layout: frontpage-alt
+  - folder: /goals
+    layout: goals
+  - folder: /reporting-status
+    layout: reportingstatus
+  - filename: indicators.json
+    folder: /
+    layout: indicator-json
+  - folder: /search
+    layout: search
 
 analytics:
   ga_prod: 'G-F9C9LT784Y'
