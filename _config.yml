@@ -276,8 +276,8 @@ search_index_extra_fields:
 progress_status:
     status_heading: Progress status
     status_types:
-#      - value: not_available
-#        label: status.progress_not_available
+      - value: not_available
+        label: status.progress_not_available
 #        image: assets/img/progress/not-available.png
 #        alt: status.progress_not_available
 #      - value: target_achieved
