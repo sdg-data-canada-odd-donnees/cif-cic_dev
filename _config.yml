@@ -274,7 +274,7 @@ search_index_extra_fields:
 # bootstrap_5: true
 # chartjs_3: true
 progress_status:
-    status_heading: Progress status
+    status_heading: status.progress-header
     status_types:
       - value: not_available
         label: status.progress_not_available
