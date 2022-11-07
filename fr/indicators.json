@@ -472,7 +472,7 @@
         {
           "id": "11-2-1",
           "title": "Proportion des ménages ayant des besoins impérieux en matière de logement",
-          "description": "Cet indicateur mesure la proportion des ménages vivant dans des logements ayant des besoins impérieux.",
+          "description": "<p>Cet indicateur mesure la proportion des ménages vivant dans des logements ayant des besoins impérieux.</p> <p><b>Besoins impérieux en matière de logement</b> indique si un ménage privé vit dans un logement qui ne rencontre pas le seuil d'au moins l'un des indicateurs de qualité, d'abordabilité ou de taille du logement, et s'il devrait consacrer 30 % ou plus de son revenu total avant impôt pour payer le loyer médian d'un autre logement acceptable dans sa collectivité (atteint les trois seuils des indicateurs de logement).</p> <p><b>Un logement est inabordable</b> si le ménage consacre 30 % ou plus de son revenu total avant impôt aux frais de logement.</p> <p><b>Un logement est de taille insuffisante</b> si le nombre de chambres ne suffit pas pour répondre aux besoins du ménage, compte tenu de la taille et de la composition du ménage, d'après les exigences de la Norme nationale d'occupation (NNO).</p> <p><b>Un logement est de qualité non convenable</b> si, de l'avis des occupants, il nécessite des réparations majeures.</p>",
           "keywords": "femmes, genre",
           "href": "/cif-cic_dev/fr/11-2-1",
           "status": "complete"
