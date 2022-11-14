@@ -3,7 +3,6 @@ title: Progress Measurement for Canada’s Sustainable Development Goals
 language: en
 permalink: /methodology/
 layout: page
-toc: true
 ---
 
 # Progress Measurement for Canada’s Sustainable Development Goals   
