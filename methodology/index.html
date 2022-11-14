@@ -125,7 +125,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20221114021810">
+        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20221114191834">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -264,9 +264,609 @@ data-event-label="high"
         
 
 
-    <h4 id="math-test">Math test</h4>
-<p>When $a \ne 0$, there are two solutions to $(ax^2 + bx + c = 0)$ and they are 
-<script type="math/tex">x = {-b \pm \sqrt{b^2-4ac} \over 2a}</script></p>
+    <h1 id="progress-measurement-for-canadas-sustainable-development-goals">Progress Measurement for Canada’s Sustainable Development Goals</h1>
+
+<h2 id="introduction">Introduction</h2>
+<p>The <a href="https://www.un.org/sustainabledevelopment/development-agenda/">2030 Agenda for Sustainable Development</a>, adopted by all United Nations Member States in 2015, provides a blueprint for improving the economy, society, and the environment in a sustainable manner. At its heart, the 17 Sustainable Development Goals (SDGs) are a universal call to action to end poverty, protect the planet, and ensure that all people globally can enjoy peace and prosperity.</p>
+
+<p>The goals are underpinned by a framework of global indicators that allow Canada and other countries to monitor and report on progress. They cover a broad range of social, environmental, and economic issues with a focus on the most vulnerable and a commitment to “leave no one behind”. To complement the global goals, countries are encouraged to develop a national implementation plan that focuses on country-developed indicators to address specific national contexts and priorities to achieve the SDGs.</p>
+
+<p>To support Canada’s domestic implementation of the SDGs that the Government of Canada has committed to, a national strategy has been established. The development of a Canadian specific indicator framework was an opportunity to elaborate on the UN’s goal with a set of indicators that align more closely with Canada’s domestic priorities related to sustainable development.</p>
+
+<h2 id="measuring-progress">Measuring Progress</h2>
+<p>Measuring and monitoring progress with reliable information is key to understanding how Canada advances toward the achievement of the SDGs.</p>
+
+<p>Closely monitoring the progress of each indicator not only teaches us about Canada’s strengths and weaknesses, but also communicates a clear message to Canadians in an open and transparent manner. A robust measure of progress quantifies an indicator’s progress towards reaching the target in a scientific manner and can be indicative of the success of policies and actions taken to achieve those targets. It can also act as a clear signal to decision-makers to influence, readjust, or develop effective evidence-based policies in areas of focus to ensure Canada achieves its targets.</p>
+
+<h2 id="methodology-adopted">Methodology Adopted</h2>
+<p>The Canadian Indicator Framework (CIF) lays the foundation for Canada to measure and report its progress on the 17 SDGs within the Canadian context; it will benefit from a robust methodology that will scientifically measure the overall progress accomplished based on existing data and provide an estimate of the amount of work still required to achieve each target and goal. Thus, Statistics Canada developed a robust and simple method of measuring progress, which will be reported using visualizations so that areas of success or weakness can be quickly and easily identified. Even in the absence of specific quantitative targets, an estimate of progress can inform whether undesired trends are being observed by reporting progress deterioration. In essence, this method of progress measurement will provide a simplified illustration of Canada’s progress toward achieving the SDGs, assuming that the current trends are maintained.</p>
+
+<h3 id="requirements">Requirements</h3>
+<p>After a thorough review of existing methodologies to measure progress for the SDGs, Statistics Canada identified essential requirements for the adopted methodology, as well as eliminated undesirable features.</p>
+
+<p>The adopted methodology must:</p>
+<ol>
+  <li>allow for different data periodicity and timeliness;</li>
+  <li>provide a calculation for measuring progress in the absence of a specific numerical target;</li>
+  <li>allow for the calculation of an aggregate measure.</li>
+</ol>
+
+<p>The adopted methodology cannot rely on:</p>
+<ol>
+  <li>the creation of targets (statistical, champion area/best performers, expert judgment);</li>
+  <li>indicator-specific thresholds for progress categories;</li>
+  <li>modelling;</li>
+  <li>the existence of long time-series.</li>
+</ol>
+
+<h3 id="methodology">Methodology</h3>
+<p>The progress measure consists of a measure of observed growth compared to an evaluation of the proximity to achieving the target under current conditions. In situations where no quantitative target is provided, the time series is evaluated on the apparent trend of the data.</p>
+
+<p>Keeping in mind the limited number of data points in each time series and a desire to keep the methodology simple and transparent, the optimal candidate for measuring Canadian progress on the SDGs closely follows Eurostat’s methodology<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>.</p>
+
+<p>The growth over the observed period is calculated by a compound annual growth rate,</p>
+
+<p>(<strong>INSERT IMAGE HERE</strong>)</p>
+
+<p>where<br />
+<em>CAGR</em><sub>o</sub> is the observed compound annual growth rate between <em>t<sub>0</sub></em> and <em>t<sub>i</sub></em>   <br />
+<em>y<sub>ti</sub></em> is the value of the indicator at time <em>t<sub>i</sub></em>  <br />
+<em>t<sub>i</sub></em> is the current year, i.e. the most recent year where data is available, and<br />
+<em>t<sub>0</sub></em> is the base year, 2015.</p>
+
+<h4 id="indicators-with-quantitative-targets">Indicators with quantitative targets</h4>
+<p>In the case where a quantitative target is provided, the observed <em>CAGR<sub>o</sub></em> is compared to a theoretical <em>CAGR<sub>r</sub></em>, which represent the growth required to achieve the target, by calculating the ratio (<em>R<sub>o/r</sub></em>) as follows:</p>
+
+<p>(<strong>INSERT IMAGE HERE</strong>)</p>
+
+<p>where</p>
+
+<p>(<strong>INSERT IMAGE HERE</strong>)</p>
+
+<p><em>x<sub>tT</sub></em> is the target value of the indicator in the target year, <em>t<sub>T</sub></em>.<br />
+The result is compared against a set of thresholds<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup> and assigned a progress category, described below:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ratio of observed over required growth rate</th>
+      <th>Category</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><em>R<sub>o/r</sub></em> ≥ 95%</td>
+      <td>Substantial progress</td>
+    </tr>
+    <tr>
+      <td>60% ≤ <em>R<sub>o/r</sub></em> &lt; 95%</td>
+      <td>Moderate progress</td>
+    </tr>
+    <tr>
+      <td>0% ≤ <em>R<sub>o/r</sub></em> &lt; 60%</td>
+      <td>Negligible progress</td>
+    </tr>
+    <tr>
+      <td><em>R<sub>o/r</sub></em> &lt; 0%</td>
+      <td>Deterioration</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="indicators-without-quantitative-targets">Indicators without quantitative targets</h4>
+<p>In the case where no quantitative targets have been provided, <em>CAGR<sub>o</sub></em> is compared to a pre-determined fixed growth rate. That threshold has been fixed at 1%.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Observed growth rate</th>
+      <th>Category</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><em>CAGR<sub>o</sub></em> &gt; 1%</td>
+      <td>Substantial progress</td>
+    </tr>
+    <tr>
+      <td>0% &lt; <em>CAGR<sub>o</sub></em> ≤ 1%</td>
+      <td>Moderate progress</td>
+    </tr>
+    <tr>
+      <td>-1% &lt; <em>CAGR<sub>o</sub></em> ≤ 0%</td>
+      <td>Moderate deterioration</td>
+    </tr>
+    <tr>
+      <td><em>CAGR<sub>o</sub></em> ≤ -1%</td>
+      <td>Significant deterioration</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="aggregation-at-the-goal-level">Aggregation at the Goal Level</h3>
+<p>For summarizing progress measurement, the methodology developed by Eurostat is once again the preferred methodology. To calculate the measure of progress at the aggregated level (target, ambition or goal), the current measurement for each indicator is converted into a score, and then averaged at the aggregated level. Each indicator within a goal (or target) are equi-weighted. The score, both at the indicator and goal/target level, varies between -5 and 5<sup id="fnref:3"><a href="#fn:3" class="footnote">3</a></sup>.</p>
+
+<h4 id="indicators-without-quantitative-targets-1">Indicators without quantitative targets</h4>
+<p>The scoring function for indicators without a quantitative target is a linear transformation of the CAGR thresholds described above. The cut-off points for a score of ±5 are set to ±2%, as illustrated in Figure 1 below.</p>
+
+<p>(<strong>INSERT IMAGE HERE</strong>)</p>
+
+<h4 id="indicators-with-quantitative-targets-1">Indicators with quantitative targets</h4>
+<p>The scoring function for indicators with a quantitative target reflects the thresholds used to categorize the indicators and uses cut-off values of 130% for a score of +5 and -60% for a score of -5. They are illustrated in Figure 2 below.</p>
+
+<p>(<strong>INSERT IMAGE HERE</strong>)</p>
+
+<h3 id="considerations-and-exceptions">Considerations and Exceptions</h3>
+<p>Due to the nature of the data, a series of considerations and exceptions have been defined:</p>
+
+<ol>
+  <li>Should there be no data in 2015, the first available year following 2015 will be used. Other exceptions regarding the first period of data availability will be treated and documented as they occur.<br />
+a. Indicators with two years as the reference period:<br />
+   i. The first year will be used as the reference period, as they often refer to fiscal year (since most indicators are policy based). The first year is the last complete year. <br />
+   ii.	Will be used if one of the years is 2015. For example, CIF indicator 3.2.1 starts in 2014-2015. For the purpose of the calculation, 2014 is used.<br />
+b. Even when the target results from a policy that was implemented after 2015, the base year for calculating the progress measure will be 2015 when data exists. This aligns with Statistics Canada quality dimensions coherence and comparability.</li>
+  <li>Similar to (1), should the target year be March 20xx, then 20xx-1 will be used as the target year in the calculation as it is the last full year.</li>
+  <li>If the target value is zero, it will be replaced by 0.001 in the calculation of the progress measure.</li>
+  <li>In the absence of a specified target date, it is assumed that 2030 is the target period.</li>
+  <li>Should the target year be in the past, the following will be done:<br />
+a. Calculate using the methodology with target until the target year (y);<br />
+b.	Continue calculating using the methodology with target, keeping the now obsolete target value and year;<br />
+c. Include a note explaining how to interpret the information.<br />
+d. Should a new target value and year be introduced, start using the new values in the calculation, and recalculate from <em>y+1</em> where applicable;<br />
+e. Include a note to users to explain the change.</li>
+  <li>A minimum of 2 years of data is required to calculate the progress measure.</li>
+  <li>In order to calculate the summary measure for a target/goal, a minimum of 60% of indicators for which it is possible to calculate a progress measure are needed.</li>
+  <li>The progress estimates oversimplify the reality and should be interpreted with additional information or caution.</li>
+  <li>The impact of policies takes time to be reflected in the data; the longer the time series, the better the progress measure will be.</li>
+  <li>Indicators that start above the target at their base year for which progress then declines will be automatically overridden to “Deterioration”<sup id="fnref:4"><a href="#fn:4" class="footnote">4</a></sup>.</li>
+  <li>Binary indicators will be assigned one of the4se 2 categories:<br />
+a. “Target achieved” if “yes”;<br />
+b. “Target not achieved” if “no”.</li>
+  <li>Specific exception: Indicator 5.3.1 Proportion of time spent on unpaid domestic and care work will be modify prior to calculation. A ratio of women/men will be used, with a desired target of 1.</li>
+</ol>
+
+<h2 id="future-work">Future Work</h2>
+
+<p>In the short term, future work in this area includes the integration of the indicator-level progress measurement into the back-end of the Open SDG platform to be widely available for all Open SDG users. In the longer term, the aggregate measurement is also planned to be integrated into the platform.</p>
+
+<p>Furthermore, a revision of the base year in the methodology will be performed in 2024, coinciding with the CIF strategic review, to assess the replacement of the measure with long-term and short-term measures.</p>
+
+<h2 id="metadata">Metadata</h2>
+
+<h5 id="canadian-indicator-framework">Canadian Indicator Framework</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Indicator number</th>
+      <th>Indicator name</th>
+      <th>Desired direction</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1.1.1</td>
+      <td>Poverty rate, as measured by Canada’s official poverty line</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>1.2.1</td>
+      <td>Prevalence of asset resilience</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>2.1.1</td>
+      <td>Prevalence of food insecurity</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>2.2.1</td>
+      <td>Index of Agri-Environmental Sustainability</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>3.1.1</td>
+      <td>Percentage of Canadians who report eating fruits and vegetables 5 or more times per day</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>3.2.1</td>
+      <td>Prevalence of vaping among youth</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>3.3.1</td>
+      <td>Percentage of the population that is overweight or obese</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>3.4.1</td>
+      <td>Prevalence of harmful alcohol use</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>3.5.1</td>
+      <td>Percentage of Canadians who are satisfied or very satisfied with their life</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>3.6.1</td>
+      <td>Percentage of Canadians who perceived their overall health and social well-being as very good to excellent</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>3.7.1</td>
+      <td>Percentage of Canadians who perceived their mental health as very good to excellent</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>3.8.1</td>
+      <td>Vaccination rates for selected diseases</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>3.9.1</td>
+      <td>Incidence of selected diseases</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>3.10.1</td>
+      <td>Mortality rate for selected causes of death</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>3.11.1</td>
+      <td>Tuberculosis incidence per 100,000 population in Inuit Nunangat</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>3.12.1</td>
+      <td>Incidence of opioid and stimulant overdose related harms</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>3.13.1</td>
+      <td>Prevalence of cigarette smoking</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>4.1.1</td>
+      <td>High school completion rate</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>4.2.1</td>
+      <td>Post-secondary education attainment rate</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>5.1.1</td>
+      <td>Proportion of the population who self-reported being sexually assaulted in the last 12 months</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>5.1.2</td>
+      <td>Proportion of women and girls aged 15 years and older subjected to physical, sexual or psychological violence by a current or former intimate partner in the last 12 months</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>5.2.1</td>
+      <td>Proportion of leadership roles held by women</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>5.3.1</td>
+      <td>Proportion of time spent on unpaid domestic and care work</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>6.1.1</td>
+      <td>Number of long-term drinking water advisories on public systems on reserves</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>6.2.1</td>
+      <td>Percentage of municipalities across Canada with sustained drinking water advisories</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>6.3.1</td>
+      <td>Water use growth rate</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>6.4.1</td>
+      <td>Water quality in Canadian rivers</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>7.1.1</td>
+      <td>Annual energy savings resulting from adoption of energy efficiency codes, standards and practices</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>7.2.1</td>
+      <td>Total energy consumption per capita</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>7.3.1</td>
+      <td>Proportion of electricity generated from renewable and non-greenhouse gas emitting sources</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>8.1.1</td>
+      <td>Unemployment rate</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>8.2.1</td>
+      <td>Proportion of employees earning less than 66% of the median hourly wage for permanent full-time employees</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>8.3.1</td>
+      <td>Proportion of youth not in education, employment or training</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>8.4.1</td>
+      <td>Rate of involuntary part-time work</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>8.5.1</td>
+      <td>Gross domestic product per capita</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>8.6.1</td>
+      <td>Proportion of jobs in the environmental and clean technology products sector</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>9.1.1</td>
+      <td>Proportion of innovation in environment-related technology</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>9.2.1</td>
+      <td>Gross domestic expenditure on research and development intensity</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>9.3.1</td>
+      <td>Proportion of households that have access to broadband Internet service at speeds of 50/10 Mbps</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>9.4.1</td>
+      <td>Proportion of Canadians that have access to the latest generally deployed mobile wireless technology</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>9.5.1</td>
+      <td>Greenhouse gas emissions per dollar of value-added from the production of infrastructure assets</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>9.6.1</td>
+      <td>Number of low carbon recharging and refueling stations under development and completed along major highways, and in rural and urban areas across Canada</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>9.7.1</td>
+      <td>Number of low carbon recharging and refueling stations under development and completed in public places, on-street, at apartment buildings, retail outlets, and the workplace</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>10.1.1</td>
+      <td>Gini Coefficient</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>10.2.1</td>
+      <td>Proportion of the population reporting discrimination or unfair treatment</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>10.3.1</td>
+      <td>Median hourly wage ratio</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>10.4.1</td>
+      <td>Median household after-tax income</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>11.1.1</td>
+      <td>Growth rate of people experiencing chronic homelessness</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>11.2.1</td>
+      <td>Proportion of households in core housing need</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>11.3.1</td>
+      <td>Percentage of the population living in areas where air pollutants concentrations are less or equal to the 2020 Canadian Ambient Air Quality Standards</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>11.4.1</td>
+      <td>Percentage of the population living within 500 meters of a public transport stop</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>11.5.1</td>
+      <td>Percentage of the population using shared or active transportation for commuting</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>11.6.1</td>
+      <td>Total waste disposal per capita</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>11.7.1</td>
+      <td>Percentage of the population aged 12 and over who reported their sense of belonging to their local community as being very strong or somewhat strong</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>12.1.1</td>
+      <td>Proportion of new light duty vehicle registrations that are zero-emission vehicles</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>12.2.1</td>
+      <td>Proportion of businesses that adopted selected environmental protection activities and management practices</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>12.3.1</td>
+      <td>Total waste diversion per capita</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>13.1.1</td>
+      <td>Greenhouse gas emissions</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>13.2.1</td>
+      <td>Frequency of selected natural disasters</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>13.3.1</td>
+      <td>Proportion of municipal organization who factored climate change adaptation into their decision-making process</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>14.1.1</td>
+      <td>Proportion of marine and coastal areas conserved</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>14.2.1</td>
+      <td>Proportion of fish stocks that are sustainably harvested</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>15.1.1</td>
+      <td>Proportion of native wild species ranked secure or apparently secure according to the national extinction risk level</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>15.2.1</td>
+      <td>Proportion of species at risk showing progress towards their population and distribution objectives</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>15.3.1</td>
+      <td>Proportion of terrestrial (land and freshwater) areas conserved</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>15.4.1</td>
+      <td>Proportion of the forest area under an independently verified forest management certification scheme</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>15.5.1</td>
+      <td>Forest area as a proportion of total land area</td>
+      <td>No change</td>
+    </tr>
+    <tr>
+      <td>16.1.1</td>
+      <td>Proportion of Canadians who reported feeling safe walking alone in their neighborhood after dark</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>16.2.1</td>
+      <td>Crime severity index</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>16.3.1</td>
+      <td>Incidence of selected types of crime</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>16.4.1</td>
+      <td>Incidence of cybercrime</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>16.5.1</td>
+      <td>Criminal Court case completion time</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>16.6.1</td>
+      <td>Incarceration rate</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>16.7.1</td>
+      <td>Proportion of the population with high levels of confidence in selected institutions</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>17.1.1</td>
+      <td>Number of open datasets published by the Government of Canada</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>17.2.1</td>
+      <td>Total official support for sustainable development</td>
+      <td>Increase</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="references">References</h2>
+
+<p>Destatis. <em>Indicator status summary</em>.</p>
+
+<p>Eurostat (2021). <em>Sustainable development in the European Union - Monitoring report on progress towards the SDGs in an EU context</em>.</p>
+
+<p>Eurostat (2014). <em>Getting messages across using indicators - A handbook based on experiences from assessing Sustainable Development Indicators</em>.</p>
+
+<p>Gennari, P. and D’Orazio, M. (2020). <em>Statistical approach for assessing progress toward the SDG targets</em>. Statistical Journal of the IAOS, 36, 1129–1142</p>
+
+<p>OECD (2019). <em>Measuring Distance to the SDG Targets - An Assessment of Where OECD Countries Stand</em>.</p>
+
+<p>UN DESA (2020). <em>Sustainable Development Goals Progress Chart 2020 - Technical Note</em>.</p>
+
+<p>Bidarbakht Nia, A. (2017). <em>A weighted extrapolation method for measuring the SDGs progress</em>. UNESCAP SD Working paper series, 04, March 2017</p>
+
+<p>Bidarbakht Nia, A. (2017). <em>Tracking progress towards the SDGs: measuring the otherwise ambiguous progress</em>. UNESCAP SD Working paper series, 05, May 2017</p>
+
+<p>UNESCAP (2020). <em>Progress Assessment Methodology</em>.</p>
+
+<p>Sachs, J., Kroll, C., Lafortune, G., Fuller, G., Woelm, F. (2021). <em>The Decade of Action for the Sustainable Development Goals: Sustainable Development Report 2021</em>. Cambridge: Cambridge University Press.</p>
+
+<h2 id="notes">Notes</h2>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>For a detailed description of the methodology, please refer to Eurostat (2021). <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>All thresholds are standards in the international communities. After assessment, it was found that they are also applicable in the Canadian context. <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:3">
+      <p>For a detailed description of the methodology, please refer to Eurostat (2021), Annex III. <a href="#fnref:3" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:4">
+      <p>This is a necessary measure to counteract a drawback of the formula: In situation where the target was achieved during the base period but deteriorated afterwards, the formula calculates significant progress as the indicator decreases (or increases) more ‘than it should’ to meet the target. <a href="#fnref:4" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
 
 
 
@@ -378,12 +978,12 @@ ga('send', 'pageview');
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/cif-cic_dev/assets/js/sdg.js?v=20221114021810'></script>
+<script src='/cif-cic_dev/assets/js/sdg.js?v=20221114191834'></script>
 
 
     
     
-    <script src="/cif-cic_dev/assets/js/custom.js?v=20221114021810"></script><script>
+    <script src="/cif-cic_dev/assets/js/custom.js?v=20221114191834"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
