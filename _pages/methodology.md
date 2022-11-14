@@ -5,9 +5,6 @@ permalink: /methodology/
 layout: page
 ---
 
-# Progress Measurement for Canada’s Sustainable Development Goals   
-
-
 ## Introduction  
 The [2030 Agenda for Sustainable Development](https://www.un.org/sustainabledevelopment/development-agenda/), adopted by all United Nations Member States in 2015, provides a blueprint for improving the economy, society, and the environment in a sustainable manner. At its heart, the 17 Sustainable Development Goals (SDGs) are a universal call to action to end poverty, protect the planet, and ensure that all people globally can enjoy peace and prosperity.  
 
@@ -46,7 +43,7 @@ Keeping in mind the limited number of data points in each time series and a desi
 The growth over the observed period is calculated by a compound annual growth rate,  
 
 
-(**INSERT IMAGE HERE**)  
+![Observed cumulative annual growth rate](https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/052b14a4d586c6af97621a0438e3764c24390df9/assets/img/methodology/cagr_observed.PNG)  
 
 where  
 *CAGR*<sub>o</sub> is the observed compound annual growth rate between *t<sub>0</sub>* and *t<sub>i</sub>*     
@@ -57,13 +54,14 @@ where
 #### Indicators with quantitative targets  
 In the case where a quantitative target is provided, the observed *CAGR<sub>o</sub>* is compared to a theoretical *CAGR<sub>r</sub>*, which represent the growth required to achieve the target, by calculating the ratio (*R<sub>o/r</sub>*) as follows:  
 
-(**INSERT IMAGE HERE**)  
+![Growth ratio](https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/052b14a4d586c6af97621a0438e3764c24390df9/assets/img/methodology/ratio.PNG)  
 
 where   
 
-(**INSERT IMAGE HERE**)  
+![Theoretical cumulative annual growth rate](https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/052b14a4d586c6af97621a0438e3764c24390df9/assets/img/methodology/cagr_theoretical.PNG)   
 
-*x<sub>tT</sub>* is the target value of the indicator in the target year, *t<sub>T</sub>*.  
+*x<sub>tT</sub>* is the target value of the indicator in the target year, *t<sub>T</sub>*.   
+
 The result is compared against a set of thresholds[^2] and assigned a progress category, described below:   
 
 | Ratio of observed over required growth rate | Category             |
@@ -73,8 +71,11 @@ The result is compared against a set of thresholds[^2] and assigned a progress c
 | 0% ≤ *R<sub>o/r</sub>* < 60%                | Negligible progress  |
 | *R<sub>o/r</sub>* < 0%                      | Deterioration        |
 
+  
+  
 #### Indicators without quantitative targets  
-In the case where no quantitative targets have been provided, *CAGR<sub>o</sub>* is compared to a pre-determined fixed growth rate. That threshold has been fixed at 1%.  
+In the case where no quantitative targets have been provided, *CAGR<sub>o</sub>* is compared to a pre-determined fixed growth rate. That threshold has been fixed at 1%.   
+
 
 | Observed growth rate          | Category                  |
 |-------------------------------|---------------------------|
@@ -89,12 +90,12 @@ For summarizing progress measurement, the methodology developed by Eurostat is o
 #### Indicators without quantitative targets   
 The scoring function for indicators without a quantitative target is a linear transformation of the CAGR thresholds described above. The cut-off points for a score of ±5 are set to ±2%, as illustrated in Figure 1 below.  
 
-(**INSERT IMAGE HERE**)  
+![Scoring function for indicators without a quantitative target](https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/052b14a4d586c6af97621a0438e3764c24390df9/assets/img/methodology/scoring_non_quantitative.png)   
 
 #### Indicators with quantitative targets  
 The scoring function for indicators with a quantitative target reflects the thresholds used to categorize the indicators and uses cut-off values of 130% for a score of +5 and -60% for a score of -5. They are illustrated in Figure 2 below.  
 
-(**INSERT IMAGE HERE**)  
+![Scoring function for indicators with a quantitative target](https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/052b14a4d586c6af97621a0438e3764c24390df9/assets/img/methodology/scoring_quantitative.png)   
 
 ### Considerations and Exceptions
 Due to the nature of the data, a series of considerations and exceptions have been defined:  
