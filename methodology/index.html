@@ -125,7 +125,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20221115021438">
+        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20221115134008">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -328,7 +328,7 @@ data-event-label="high"
 <table>
   <thead>
     <tr>
-      <th>Ratio of observed over required growth rate</th>
+      <th><em>R<sub>o/r</sub></em></th>
       <th>Category</th>
     </tr>
   </thead>
@@ -352,13 +352,15 @@ data-event-label="high"
   </tbody>
 </table>
 
+<p><br /><br /></p>
+
 <h4 id="indicators-without-quantitative-targets">Indicators without quantitative targets</h4>
 <p>In the case where no quantitative targets have been provided, <em>CAGR<sub>o</sub></em> is compared to a pre-determined fixed growth rate. That threshold has been fixed at 1%.</p>
 
 <table>
   <thead>
     <tr>
-      <th>Observed growth rate</th>
+      <th><em>CAGR<sub>o</sub></em></th>
       <th>Category</th>
     </tr>
   </thead>
@@ -381,6 +383,8 @@ data-event-label="high"
     </tr>
   </tbody>
 </table>
+
+<p><br /><br /></p>
 
 <h3 id="aggregation-at-the-goal-level">Aggregation at the Goal Level</h3>
 <p>For summarizing progress measurement, the methodology developed by Eurostat is once again the preferred methodology. To calculate the measure of progress at the aggregated level (target, ambition or goal), the current measurement for each indicator is converted into a score, and then averaged at the aggregated level. Each indicator within a goal (or target) are equi-weighted. The score, both at the indicator and goal/target level, varies between -5 and 5<sup id="fnref:3"><a href="#fn:3" class="footnote">3</a></sup>.</p>
@@ -977,12 +981,12 @@ ga('send', 'pageview');
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/cif-cic_dev/assets/js/sdg.js?v=20221115021438'></script>
+<script src='/cif-cic_dev/assets/js/sdg.js?v=20221115134008'></script>
 
 
     
     
-    <script src="/cif-cic_dev/assets/js/custom.js?v=20221115021438"></script><script>
+    <script src="/cif-cic_dev/assets/js/custom.js?v=20221115134008"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
