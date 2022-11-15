@@ -64,25 +64,28 @@ where
 
 The result is compared against a set of thresholds[^2] and assigned a progress category, described below:   
 
-| Ratio of observed over required growth rate | Category             |
-|---------------------------------------------|----------------------|
-| *R<sub>o/r</sub>* ≥ 95%                     | Substantial progress |
-| 60% ≤ *R<sub>o/r</sub>* < 95%               | Moderate progress    |
-| 0% ≤ *R<sub>o/r</sub>* < 60%                | Negligible progress  |
-| *R<sub>o/r</sub>* < 0%                      | Deterioration        |
+| *R<sub>o/r</sub>*             | Category             |
+|-------------------------------|----------------------|
+| *R<sub>o/r</sub>* ≥ 95%       | Substantial progress |
+| 60% ≤ *R<sub>o/r</sub>* < 95% | Moderate progress    |
+| 0% ≤ *R<sub>o/r</sub>* < 60%  | Negligible progress  |
+| *R<sub>o/r</sub>* < 0%        | Deterioration        |
 
+<br><br>  
   
   
 #### Indicators without quantitative targets  
 In the case where no quantitative targets have been provided, *CAGR<sub>o</sub>* is compared to a pre-determined fixed growth rate. That threshold has been fixed at 1%.   
 
 
-| Observed growth rate          | Category                  |
+| *CAGR<sub>o</sub>*            | Category                  |
 |-------------------------------|---------------------------|
 | *CAGR<sub>o</sub>* > 1%       | Substantial progress      |
 | 0% < *CAGR<sub>o</sub>* ≤ 1%  | Moderate progress         |
 | -1% < *CAGR<sub>o</sub>* ≤ 0% | Moderate deterioration    |
 | *CAGR<sub>o</sub>* ≤ -1%      | Significant deterioration |
+  
+<br><br>   
 
 ### Aggregation at the Goal Level  
 For summarizing progress measurement, the methodology developed by Eurostat is once again the preferred methodology. To calculate the measure of progress at the aggregated level (target, ambition or goal), the current measurement for each indicator is converted into a score, and then averaged at the aggregated level. Each indicator within a goal (or target) are equi-weighted. The score, both at the indicator and goal/target level, varies between -5 and 5[^3].  
