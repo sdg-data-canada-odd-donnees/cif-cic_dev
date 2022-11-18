@@ -122,10 +122,16 @@ menu:
     translation_key: menu.about
  # - path: /analysis
  #   translation_key: menu.guidance
-  - path: /related-products
-    translation_key: menu.related-products
+ # - path: /related-products
+ #   translation_key: menu.related-products
   - path: /faq
     translation_key: menu.faq
+  - translation_key: More information
+    dropdown:
+      - path: /related-products
+        translation_key: menu.related-products
+      - path: /methodology
+        translation_key: menu.methodology
 
 footer_menu:
   - path: mailto:statcan.sdg-odd.statcan@statcan.gc.ca

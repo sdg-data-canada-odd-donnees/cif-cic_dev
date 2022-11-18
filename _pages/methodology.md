@@ -51,6 +51,8 @@ where
 *t<sub>i</sub>* is the current year, i.e. the most recent year where data is available, and  
 *t<sub>0</sub>* is the base year, 2015.  
 
+<br><br> 
+
 #### Indicators with quantitative targets  
 In the case where a quantitative target is provided, the observed *CAGR<sub>o</sub>* is compared to a theoretical *CAGR<sub>r</sub>*, which represent the growth required to achieve the target, by calculating the ratio (*R<sub>o/r</sub>*) as follows:  
 
@@ -89,12 +91,13 @@ In the case where no quantitative targets have been provided, *CAGR<sub>o</sub>*
 
 ### Aggregation at the Goal Level  
 For summarizing progress measurement, the methodology developed by Eurostat is once again the preferred methodology. To calculate the measure of progress at the aggregated level (target, ambition or goal), the current measurement for each indicator is converted into a score, and then averaged at the aggregated level. Each indicator within a goal (or target) are equi-weighted. The score, both at the indicator and goal/target level, varies between -5 and 5[^3].  
-
+<br>
 #### Indicators without quantitative targets   
 The scoring function for indicators without a quantitative target is a linear transformation of the CAGR thresholds described above. The cut-off points for a score of ±5 are set to ±2%, as illustrated in Figure 1 below.  
 
 ![Scoring function for indicators without a quantitative target](https://raw.githubusercontent.com/sdg-data-canada-odd-donnees/cif-cic_dev/develop/assets/img/methodology/scoring_non_quantitative.png)   
 
+<br>
 #### Indicators with quantitative targets  
 The scoring function for indicators with a quantitative target reflects the thresholds used to categorize the indicators and uses cut-off values of 130% for a score of +5 and -60% for a score of -5. They are illustrated in Figure 2 below.  
 
