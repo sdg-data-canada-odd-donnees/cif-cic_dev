@@ -125,7 +125,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20221118021858">
+        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20221118133430">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -184,10 +184,16 @@ layout-page
 </li><li class="nav-item ">
     <a class="nav-link" href="/cif-cic_dev/about">About</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/cif-cic_dev/related-products">Related Products</a>
-</li><li class="nav-item ">
     <a class="nav-link" href="/cif-cic_dev/faq">FAQ</a>
+</li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-more-information" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    More information
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-more-information"><li class=" ">
+    <a class="dropdown-item" href="/cif-cic_dev/related-products">Related Products</a>
+</li><li class=" active">
+    <a class="dropdown-item" href="/cif-cic_dev/methodology">Progress measurement methodology</a>
 </li></ul>
+            </li></ul>
     
                 </div>
                 <div class="header-search-bar">
@@ -312,6 +318,8 @@ data-event-label="high"
 <em>t<sub>i</sub></em> is the current year, i.e. the most recent year where data is available, and<br />
 <em>t<sub>0</sub></em> is the base year, 2015.</p>
 
+<p><br /><br /></p>
+
 <h4 id="indicators-with-quantitative-targets">Indicators with quantitative targets</h4>
 <p>In the case where a quantitative target is provided, the observed <em>CAGR<sub>o</sub></em> is compared to a theoretical <em>CAGR<sub>r</sub></em>, which represent the growth required to achieve the target, by calculating the ratio (<em>R<sub>o/r</sub></em>) as follows:</p>
 
@@ -387,13 +395,14 @@ data-event-label="high"
 <p><br /><br /></p>
 
 <h3 id="aggregation-at-the-goal-level">Aggregation at the Goal Level</h3>
-<p>For summarizing progress measurement, the methodology developed by Eurostat is once again the preferred methodology. To calculate the measure of progress at the aggregated level (target, ambition or goal), the current measurement for each indicator is converted into a score, and then averaged at the aggregated level. Each indicator within a goal (or target) are equi-weighted. The score, both at the indicator and goal/target level, varies between -5 and 5<sup id="fnref:3"><a href="#fn:3" class="footnote">3</a></sup>.</p>
-
+<p>For summarizing progress measurement, the methodology developed by Eurostat is once again the preferred methodology. To calculate the measure of progress at the aggregated level (target, ambition or goal), the current measurement for each indicator is converted into a score, and then averaged at the aggregated level. Each indicator within a goal (or target) are equi-weighted. The score, both at the indicator and goal/target level, varies between -5 and 5<sup id="fnref:3"><a href="#fn:3" class="footnote">3</a></sup>.<br />
+<br /></p>
 <h4 id="indicators-without-quantitative-targets-1">Indicators without quantitative targets</h4>
 <p>The scoring function for indicators without a quantitative target is a linear transformation of the CAGR thresholds described above. The cut-off points for a score of ±5 are set to ±2%, as illustrated in Figure 1 below.</p>
 
 <p><img src="https://raw.githubusercontent.com/sdg-data-canada-odd-donnees/cif-cic_dev/develop/assets/img/methodology/scoring_non_quantitative.png" alt="Scoring function for indicators without a quantitative target" /></p>
 
+<p><br /></p>
 <h4 id="indicators-with-quantitative-targets-1">Indicators with quantitative targets</h4>
 <p>The scoring function for indicators with a quantitative target reflects the thresholds used to categorize the indicators and uses cut-off values of 130% for a score of +5 and -60% for a score of -5. They are illustrated in Figure 2 below.</p>
 
@@ -981,12 +990,12 @@ ga('send', 'pageview');
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/cif-cic_dev/assets/js/sdg.js?v=20221118021858'></script>
+<script src='/cif-cic_dev/assets/js/sdg.js?v=20221118133430'></script>
 
 
     
     
-    <script src="/cif-cic_dev/assets/js/custom.js?v=20221118021858"></script><script>
+    <script src="/cif-cic_dev/assets/js/custom.js?v=20221118133430"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
