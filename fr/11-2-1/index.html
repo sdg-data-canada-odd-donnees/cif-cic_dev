@@ -130,7 +130,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20221118133430">
+        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20221118145801">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -408,6 +408,28 @@ data-event-label="high"
   
 
   
+<div class="row indicator-progress">
+    <div class="col-sm-2 progress-status-heading">
+        <strong>État du progrès</strong>
+    </div>
+    <div class="col-sm-10">
+        
+    
+    
+        <div class="progress-status">
+        
+            <div class="progress-status-label">
+                Pas disponible
+            </div>
+        
+        
+        </div>
+    
+
+
+    </div>
+</div>
+
 
   
 
@@ -430,7 +452,7 @@ data-event-label="high"
   data-graphtypes="null"
   data-geocoderegex=""
   data-showmap="false"
-  data-startvalues="[{&quot;field&quot;:&quot;Certaines populations vulnérables en matière de logement&quot;,&quot;value&quot;:&quot;Tous les ménages&quot;},{&quot;field&quot;:&quot;Éprouvant des problèmes de logement&quot;,&quot;value&quot;:&quot;Ayant des besoins impérieux en matière de logement&quot;}]"
+  data-startvalues="[{&quot;field&quot;:&quot;Certaines population vulnérables en matière de logement&quot;,&quot;value&quot;:&quot;Tous les ménages&quot;},{&quot;field&quot;:&quot;Éprouvant des problèmes de logement&quot;,&quot;value&quot;:&quot;Ayant des besoins impérieux en matière de logement&quot;}]"
   data-graphlimits="null"
   data-stackeddisaggregation=""
   data-graphannotations="null"
@@ -880,10 +902,6 @@ data-event-label="Change to indicator.sources tab"
         <td>
           
             <p>Cet indicateur mesure la proportion des ménages vivant dans des logements ayant des besoins impérieux.</p>
-<p><b>Besoins impérieux en matière de logement</b> indique si un ménage privé vit dans un logement qui ne rencontre pas le seuil d'au moins l'un des indicateurs de qualité, d'abordabilité ou de taille du logement, et s'il devrait consacrer 30 % ou plus de son revenu total avant impôt pour payer le loyer médian d'un autre logement acceptable dans sa collectivité (atteint les trois seuils des indicateurs de logement).</p>
-<p><b>Un logement est inabordable</b> si le ménage consacre 30 % ou plus de son revenu total avant impôt aux frais de logement.</p>
-<p><b>Un logement est de taille insuffisante</b> si le nombre de chambres ne suffit pas pour répondre aux besoins du ménage, compte tenu de la taille et de la composition du ménage, d'après les exigences de la Norme nationale d'occupation (NNO).</p>
-<p><b>Un logement est de qualité non convenable</b> si, de l'avis des occupants, il nécessite des réparations majeures.</p>
 
           
         </td>
@@ -959,9 +977,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Commentaires et limites </th>
         <td>
           
-            <p>La population cible correspond à la population des 10 provinces canadiennes à l'exception des pensionnaires d'établissements institutionnels, des membres des Forces canadiennes vivant dans des camps militaires et des personnes vivant dans les réserves indiennes.</p>
-<p>Étant donné que la taille de la population non binaire est petite, il est parfois nécessaire d'agréger les données dans une variable sur le genre à deux catégories pour protéger la confidentialité des réponses fournies. Dans ces cas, les personnes dans la catégorie « personne non binaire » sont réparties entre les deux autres catégories de genre et les catégories sont désignées par le signe +.</p>
-<p>« Hommes+ » comprend les hommes et les garçons de même que certaines personnes non binaires. « Femmes+ » comprend les femmes et les filles de même que certaines personnes non binaires.</p>
+            <p>Sont pris en considération dans l’évaluation des « besoins impérieux en matière de logement » uniquement les ménages privés non agricoles, hors réserve et propriétaires ou locataires qui ont un revenu positif et dont le rapport des frais de logement au revenu est inférieur à 100 %. Les ménages non familiaux dont au moins un des soutiens est âgé de 15 à 29 ans et est aux études ne sont pas considérés comme ayant des « besoins impérieux en matière de logement », peu importe leur situation de logement. On estime que les études sont une étape de transition et donc que les faibles revenus gagnés par les ménages composés d’étudiants sont une situation temporaire.</p>
 
           
         </td>
@@ -1154,7 +1170,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Fréquence </th>
         <td>
           
-            <p>Occasionnelle</p>
+            <p>Aux 2 ans</p>
 
           
         </td>
@@ -1195,8 +1211,8 @@ data-event-label="Change to indicator.sources tab"
             
 
             
-              <a href="https://doi.org/10.25318/4610006701-fra" target="_blank">
-                Statistique Canada. Tableau 46-10-0067-01  Ménages éprouvant des problèmes de logement, selon certaines populations vulnérables et les indicateurs d'abordabilité, de taille convenable, de qualité convenable et des besoins impérieux en matière de logement <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
+              <a href="https://doi.org/10.25318/4610004601-fra" target="_blank">
+                Statistique Canada. Tableau 46-10-0046-01 Ménages éprouvant des problèmes de logement, selon certaines populations vulnérables et les besoins impérieux en matière de logement, y compris les normes de qualité, d'abordabilité et de taille <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
               </a>
             
 
@@ -1429,12 +1445,12 @@ ga('send', 'pageview');
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/cif-cic_dev/assets/js/sdg.js?v=20221118133430'></script>
+<script src='/cif-cic_dev/assets/js/sdg.js?v=20221118145801'></script>
 
 
     
     
-    <script src="/cif-cic_dev/assets/js/custom.js?v=20221118133430"></script><script>
+    <script src="/cif-cic_dev/assets/js/custom.js?v=20221118145801"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
