@@ -82,22 +82,21 @@ frontpage_goals_grid:
 
 frontpage_cards:
   - 
-    rule_color: red
     title: frontpage.download_all
     include: components/download-all-data.html
     
   - 
     title: frontpage.second_header
     content: frontpage.second_content
-    button_label: custom.access
-    button_link: custom.gif_link
+#    button_label: custom.access
+#    button_link: custom.gif_link
     
   - 
     title: frontpage.third_header
-    content: |
+    content: custom.content_test
       
-    button_label: custom.access
-    button_link: custom.about_link
+#    button_label: custom.access
+#    button_link: custom.about_link
 
 
 # Pages
