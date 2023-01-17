@@ -93,7 +93,7 @@ frontpage_cards:
     
   - 
     title: frontpage.third_header
-    content: custom.content_test
+    content: frontpage.third_content
       
 #    button_label: custom.access
 #    button_link: custom.about_link
