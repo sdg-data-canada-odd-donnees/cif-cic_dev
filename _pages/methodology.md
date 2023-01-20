@@ -10,15 +10,17 @@ The [2030 Agenda for Sustainable Development](https://www.un.org/sustainabledeve
 
 The goals are underpinned by a framework of global indicators that allow Canada and other countries to monitor and report on progress. They cover a broad range of social, environmental, and economic issues with a focus on the most vulnerable and a commitment to “leave no one behind”. To complement the global goals, countries are encouraged to develop a national implementation plan that focuses on country-developed indicators to address specific national contexts and priorities to achieve the SDGs.  
 
-To support Canada’s domestic implementation of the SDGs that the Government of Canada has committed to, a national strategy has been established. The development of a Canadian specific indicator framework was an opportunity to elaborate on the UN’s goal with a set of indicators that align more closely with Canada’s domestic priorities related to sustainable development.  
+To support Canada’s domestic implementation of the SDGs that the Government of Canada has committed to, a [national strategy](https://www.canada.ca/en/employment-social-development/programs/agenda-2030/moving-forward.html) has been established. The development of a Canadian-specific indicator framework was an opportunity to elaborate on the UN’s goals with a set of indicators that align more closely with Canada’s domestic priorities related to sustainable development.  
+
 
 ## Measuring Progress   
 Measuring and monitoring progress with reliable information is key to understanding how Canada advances toward the achievement of the SDGs.  
 
-Closely monitoring the progress of each indicator not only teaches us about Canada’s strengths and weaknesses, but also communicates a clear message to Canadians in an open and transparent manner. A robust measure of progress quantifies an indicator’s progress towards reaching the target in a scientific manner and can be indicative of the success of policies and actions taken to achieve those targets. It can also act as a clear signal to decision-makers to influence, readjust, or develop effective evidence-based policies in areas of focus to ensure Canada achieves its targets.  
+Closely monitoring the progress of each indicator not only illustrates where Canada is making progress and areas where progress is not being made and Canada can focus its efforts, but also communicates how Canada is doing in an open and transparent manner. A robust measure of progress quantifies an indicator’s progress towards reaching the target in a scientific manner and can be indicative of the success of policies and actions taken to achieve those targets. It can also act as a clear signal to decision-makers to influence, re-adjust, or develop effective evidence-based policies to ensure Canada achieves its targets.  
 
 
-## Methodology Adopted  
+
+## Methodology Adopted   
 The Canadian Indicator Framework (CIF) lays the foundation for Canada to measure and report its progress on the 17 SDGs within the Canadian context; it will benefit from a robust methodology that will scientifically measure the overall progress accomplished based on existing data and provide an estimate of the amount of work still required to achieve each target and goal. Thus, Statistics Canada developed a robust and simple method of measuring progress, which will be reported using visualizations so that areas of success or weakness can be quickly and easily identified. Even in the absence of specific quantitative targets, an estimate of progress can inform whether undesired trends are being observed by reporting progress deterioration. In essence, this method of progress measurement will provide a simplified illustration of Canada’s progress toward achieving the SDGs, assuming that the current trends are maintained.  
 
 ### Requirements  
