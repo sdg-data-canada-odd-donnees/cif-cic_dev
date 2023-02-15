@@ -79,7 +79,7 @@ où
 
 Le résultat est comparé à un ensemble de seuils[^2] et se voit attribuer une catégorie de progrès, décrites ci-dessous :     
 
-![Target table](https://raw.githubusercontent.com/sdg-data-canada-odd-donnees/cif-cic_dev/develop/assets/img/methodology/fr/target_table.png) 
+![Target table](https://raw.githubusercontent.com/sdg-data-canada-odd-donnees/cif-cic_dev/develop/assets/img/methodology/fr/target_table.PNG) 
 
 <br><br>  
   
