@@ -1,7 +1,7 @@
 ---
 title: test
 language: fr
-permalink: /fr/methodology/
+permalink: fr/methodology/
 layout: page
 ---
 
