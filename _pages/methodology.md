@@ -10,53 +10,62 @@ The [2030 Agenda for Sustainable Development](https://www.un.org/sustainabledeve
 
 The goals are underpinned by a framework of global indicators that allow Canada and other countries to monitor and report on progress. They cover a broad range of social, environmental, and economic issues with a focus on the most vulnerable and a commitment to “leave no one behind”. To complement the global goals, countries are encouraged to develop a national implementation plan that focuses on country-developed indicators to address specific national contexts and priorities to achieve the SDGs.  
 
-To support Canada’s domestic implementation of the SDGs that the Government of Canada has committed to, a [national strategy](https://www.canada.ca/en/employment-social-development/programs/agenda-2030/moving-forward.html) has been established. The development of a Canadian-specific indicator framework was an opportunity to elaborate on the UN’s goals with a set of indicators that align more closely with Canada’s domestic priorities related to sustainable development.  
+To support Canada’s domestic implementation of the SDGs that the Government of Canada has committed to, a [national strategy](https://www.canada.ca/en/employment-social-development/programs/agenda-2030/moving-forward.html) has been established. In addition, the development of a Canadian-specific indicator framework was an opportunity to elaborate on the UN goals with a set of indicators that align more closely with Canada’s domestic priorities related to sustainable development.  
+  
 
 
 ## Measuring Progress   
 Measuring and monitoring progress with reliable information is key to understanding how Canada advances toward the achievement of the SDGs.  
 
-Closely monitoring the progress of each indicator not only illustrates where Canada is making progress and areas where progress is not being made and Canada can focus its efforts, but also communicates how Canada is doing in an open and transparent manner. A robust measure of progress quantifies an indicator’s progress towards reaching the target in a scientific manner and can be indicative of the success of policies and actions taken to achieve those targets. It can also act as a clear signal to decision-makers to influence, re-adjust, or develop effective evidence-based policies to ensure Canada achieves its targets.  
+Closely monitoring the progress of each indicator not only illustrates where Canada is making progress or areas where progress is not being made and Canada can focus its efforts, but also communicates how Canada is doing in an open and transparent manner. A robust measure of progress quantifies an indicator’s progress towards reaching the target in a scientific manner and can used as a tool to better understand success of policies and actions taken to achieve those targets. It can also act as a clear signal to decision-makers to re-adjust or develop effective evidence-based policies to help ensure Canada achieves its targets.  
+ 
 
 
 
 ## Methodology Adopted   
-The Canadian Indicator Framework (CIF) lays the foundation for Canada to measure and report its progress on the 17 SDGs within the Canadian context; it will benefit from a robust methodology that will scientifically measure the overall progress accomplished based on existing data and provide an estimate of the amount of work still required to achieve each target and goal. Thus, Statistics Canada developed a robust and simple method of measuring progress, which will be reported using visualizations so that areas of success or weakness can be quickly and easily identified. Even in the absence of specific quantitative targets, an estimate of progress can inform whether undesired trends are being observed by reporting progress deterioration. In essence, this method of progress measurement will provide a simplified illustration of Canada’s progress toward achieving the SDGs, assuming that the current trends are maintained.  
+The Canadian Indicator Framework (CIF) lays the foundation for Canada to measure and report its progress on the 17 SDGs within the Canadian context. The CIF focuses on Canadian priorities for sustainable development and can be considered a complement to the Global Indicator Framework. In the CIF the 17 Sustainable Development Goals are complemented by 31 ambitions and 76 indicators that are Canadian specific. However, unlike the Global Indicator Framework where every indicator has a target, less than half of the indicators in the CIF currently have a defined target, either quantitative (e.g., target 11.5 *By 2030, 22% of commuters adopt shared or active transportation*) or aspirational (e.g., target 5.2 *Greater representation of women in leadership roles*).  
 
-### Requirements  
-After a thorough review of existing methodologies to measure progress for the SDGs, Statistics Canada identified essential requirements for the adopted methodology, as well as eliminated undesirable features.  
+To complement the CIF, Statistics Canada has developed a robust and simple method of measuring progress which can be reported using visualizations that allow data users to easily see areas of progress or weakness. Even in the absence of specific quantitative targets, an estimate of progress can inform whether undesired trends are being observed by reporting progress deterioration. In essence, this measure of progress provides a simplified illustration of Canada’s progress toward achieving the SDGs, assuming that the current trends are maintained.  
 
-The adopted methodology must:  
-1. allow for different data periodicity and timeliness;  
-2. provide a calculation for measuring progress in the absence of a specific numerical target;  
-3. allow for the calculation of an aggregate measure.  
 
-The adopted methodology cannot rely on:
-1. the creation of targets (statistical, champion area/best performers, expert judgment);  
-2. indicator-specific thresholds for progress categories;  
-3. modelling;   
-4. the existence of long time-series.  
 
-### Methodology
+### Requirements   
+Statistics Canada identified essential requirements for the adopted methodology. The guiding principle for the methodology was the necessity of a consistent and easily interpretable measure that could reach a broad audience while maintaining scientific integrity.  
+
+More specifically, the methodology must:  
+
+1. Allow for different data periodicity and timeliness: Data series available in Canada have various collection calendars and reference periods. Some are collected every year while others every few years. Furthermore, the time required between the collection of data and release of official statistics varies greatly between programs.  
+2. Provide a calculation for measuring progress in the absence of a quantitative target: To gain a greater understanding of policy impacts and progress towards the achievements of the SDGs, it is crucial to be able to assess progress in the absence of a specific numerical target.  
+3. Allow for the calculation of an aggregate measure, whether at the target, ambition, or goal level: When used appropriately, a composite measure of progress is valuable to leaders and policymakers to help steer policy and actions towards making progress to achieve the SDGs.  
+
+  
+The adopted methodology cannot rely on:  
+
+1. The need to create a target when there is none. As a statistical agency, we remain politically neutral. Therefore, it is outside the scope of our mandate to assign targets. Thus, the methodology must be valid even in the absence of a target.  
+2. Indicator-specific thresholds for progress categories: It was assessed that using different criteria for each indicator would put too much emphasis on the method rather than the message and overall progress. Therefore, the methodology developed uses a straightforward and consistent method across all indicators.  
+3.	The existence of extended time-series: Many issues covered in the SDGs haven’t been measured for an extended period. Opting for a methodology that is robust despite a shorter time-series allows for a considerable increase in the number of indicators for which progress can be calculated.  
+4.	Modelling: Similar to item 3, modelling usually requires a longer time-series which will reduce the number of indicators eligible for calculation of the progress measure.  
+
+
+### Methodology   
 The progress measure consists of a measure of observed growth compared to an evaluation of the proximity to achieving the target under current conditions. In situations where no quantitative target is provided, the time series is evaluated on the apparent trend of the data.  
+  
+Keeping in mind the limited number of data points in each time series and a desire to keep the methodology simple and transparent, the optimal methodology for measuring progress closely mirrors the progress methodology used by Eurostat[^1].  
 
-Keeping in mind the limited number of data points in each time series and a desire to keep the methodology simple and transparent, the optimal candidate for measuring Canadian progress on the SDGs closely follows Eurostat’s methodology[^1].  
+Progress is measured using the growth over the observed period and is calculated by a compound annual growth rate,  
 
-The growth over the observed period is calculated by a compound annual growth rate,  
-
-
-![Observed cumulative annual growth rate](https://raw.githubusercontent.com/sdg-data-canada-odd-donnees/cif-cic_dev/develop/assets/img/methodology/cagr_observed.PNG)  
+![](https://raw.githubusercontent.com/sdg-data-canada-odd-donnees/cif-cic_dev/develop/assets/img/methodology/cagr_observed.PNG)  
 
 where  
 *CAGR*<sub>o</sub> is the observed compound annual growth rate between *t<sub>0</sub>* and *t<sub>i</sub>*     
 *y<sub>ti</sub>* is the value of the indicator at time *t<sub>i</sub>*    
-*t<sub>i</sub>* is the current year, i.e. the most recent year where data is available, and  
-*t<sub>0</sub>* is the base year, 2015.  
+*t<sub>i</sub>* is the most recent year where data is available, and    
+*t<sub>0</sub>* is the base year, 2015, unless otherwise specified.    
 
 <br><br> 
 
 #### Indicators with quantitative targets  
-In the case where a quantitative target is provided, the observed *CAGR<sub>o</sub>* is compared to a theoretical *CAGR<sub>r</sub>*, which represent the growth required to achieve the target, by calculating the ratio (*R<sub>o/r</sub>*) as follows:  
+In the case where a quantitative target for the indicator is provided, the observed *CAGR<sub>o</sub>* is compared to the theoretical *CAGR<sub>r</sub>*, which represents the growth required to achieve the target, by calculating the ratio (*R<sub>o/r</sub>*) as follows:   
 
 ![Growth ratio](https://raw.githubusercontent.com/sdg-data-canada-odd-donnees/cif-cic_dev/develop/assets/img/methodology/ratio.PNG)  
 
@@ -68,78 +77,70 @@ where
 
 The result is compared against a set of thresholds[^2] and assigned a progress category, described below:   
 
-| *R<sub>o/r</sub>*             | Category             |
-|-------------------------------|----------------------|
-| *R<sub>o/r</sub>* ≥ 95%       | Substantial progress |
-| 60% ≤ *R<sub>o/r</sub>* < 95% | Moderate progress    |
-| 0% ≤ *R<sub>o/r</sub>* < 60%  | Negligible progress  |
-| *R<sub>o/r</sub>* < 0%        | Deterioration        |
+![Target table](https://raw.githubusercontent.com/sdg-data-canada-odd-donnees/cif-cic_dev/develop/assets/img/methodology/target_table.png) 
 
 <br><br>  
   
   
 #### Indicators without quantitative targets  
-In the case where no quantitative targets have been provided, *CAGR<sub>o</sub>* is compared to a pre-determined fixed growth rate. That threshold has been fixed at 1%.   
+In the case where no quantitative target for a given indicator has been provided, *CAGR<sub>o</sub>* is compared to a pre-determined fixed growth rate and the threshold has been fixed at ±1%.  
+  
 
-
-| *CAGR<sub>o</sub>*            | Category                  |
-|-------------------------------|---------------------------|
-| *CAGR<sub>o</sub>* > 1%       | Substantial progress      |
-| 0% < *CAGR<sub>o</sub>* ≤ 1%  | Moderate progress         |
-| -1% < *CAGR<sub>o</sub>* ≤ 0% | Moderate deterioration    |
-| *CAGR<sub>o</sub>* ≤ -1%      | Significant deterioration |
+![No target table](https://raw.githubusercontent.com/sdg-data-canada-odd-donnees/cif-cic_dev/develop/assets/img/methodology/no_target_table.PNG)  
   
 <br><br>   
 
 ### Aggregation at the Goal Level  
-For summarizing progress measurement, the methodology developed by Eurostat is once again the preferred methodology. To calculate the measure of progress at the aggregated level (target, ambition or goal), the current measurement for each indicator is converted into a score, and then averaged at the aggregated level. Each indicator within a goal (or target) are equi-weighted. The score, both at the indicator and goal/target level, varies between -5 and 5[^3].  
-<br>
-#### Indicators without quantitative targets   
-The scoring function for indicators without a quantitative target is a linear transformation of the CAGR thresholds described above. The cut-off points for a score of ±5 are set to ±2%, as illustrated in Figure 1 below.  
+To determine an aggregate level of progress (for example overall progress at the goal level, or if there is more than one indicator for a target or ambition), the methodology developed by Eurostat is once again the preferred methodology.  The progress measure for each indicator is converted into a score, and then averaged at the aggregated level. Each indicator within a goal (or target or ambition) are equi-weighted. The score, both at the indicator and goal/ambition/target level, varies between -5 and 5[^3].   
+  
+<br>  
+  
+#### Aggregation for indicators without quantitative targets     
+The scoring function for indicators without a quantitative target is a linear transformation of the CAGR thresholds described above. The cut-off points for a score of ±5 are set to ±2%, as illustrated in Figure 1 below.   
 
 ![Scoring function for indicators without a quantitative target](https://raw.githubusercontent.com/sdg-data-canada-odd-donnees/cif-cic_dev/develop/assets/img/methodology/scoring_non_quantitative.png)   
 
-<br>
-#### Indicators with quantitative targets  
-The scoring function for indicators with a quantitative target reflects the thresholds used to categorize the indicators and uses cut-off values of 130% for a score of +5 and -60% for a score of -5. They are illustrated in Figure 2 below.  
+<br>  
+  
+  
+#### Aggregation for indicators with quantitative targets     
+The scoring function for indicators with a quantitative target reflects the thresholds used to categorize the indicators and uses cut-off values of 130% for a score of +5 and -60% for a score of -5. This is illustrated in Figure 2 below.   
 
 ![Scoring function for indicators with a quantitative target](https://raw.githubusercontent.com/sdg-data-canada-odd-donnees/cif-cic_dev/develop/assets/img/methodology/scoring_quantitative.png)   
 
-### Considerations and Exceptions
+### Considerations and Exceptions    
 Due to the nature of the data, a series of considerations and exceptions have been defined:  
 
 
-1. Should there be no data in 2015, the first available year following 2015 will be used. Other exceptions regarding the first period of data availability will be treated and documented as they occur.  
-   a. Indicators with two years as the reference period:  
-      i. The first year will be used as the reference period, as they often refer to fiscal year (since most indicators are policy based). The first year is the last complete year.   
-      ii.	Will be used if one of the years is 2015. For example, CIF indicator 3.2.1 starts in 2014-2015. For the purpose of the calculation, 2014 is used.  
+1. Should there be no data in 2015, the first available year following 2015 will be used.[^4]    
+   a. For indicators with a reference period across two years, for example a reference period of April 1, 2015- March 31, 2016:  
+      i. The first year is used as the reference period (e.g., if the reference period is 2015-16, then 2015 is used).     
    b. Even when the target results from a policy that was implemented after 2015, the base year for calculating the progress measure will be 2015 when data exists. This aligns with Statistics Canada quality dimensions coherence and comparability.  
-2. Similar to (1), should the target year be March 20xx, then 20xx-1 will be used as the target year in the calculation as it is the last full year.  
+2. Similar to (1), should the target year be March 20xx, then 20xx-1 will be used as the target year in the calculation since it is the last complete year of data. For example, the year 2022 will be used in the calculation of the progress for an indicator with a target of March 2023.  
 3. If the target value is zero, it will be replaced by 0.001 in the calculation of the progress measure.  
-4. In the absence of a specified target date, it is assumed that 2030 is the target period.  
+4. In the absence of a specified target date, it is assumed that 2030 is the target period.   
 5. Should the target year be in the past, the following will be done:  
-   a. Calculate using the methodology with target until the target year (y);  
-   b.	Continue calculating using the methodology with target, keeping the now obsolete target value and year;  
-   c. Include a note explaining how to interpret the information.  
-   d. Should a new target value and year be introduced, start using the new values in the calculation, and recalculate from *y+1* where applicable;  
-   e. Include a note to users to explain the change.  
-6. A minimum of 2 years of data is required to calculate the progress measure.  
-7. In order to calculate the summary measure for a target/goal, a minimum of 60% of indicators for which it is possible to calculate a progress measure are needed.  
-8. The progress estimates oversimplify the reality and should be interpreted with additional information or caution.  
-9. The impact of policies takes time to be reflected in the data; the longer the time series, the better the progress measure will be.  
-10. Indicators that start above the target at their base year for which progress then declines will be automatically overridden to “Deterioration”[^4].  
-11. Binary indicators will be assigned one of the4se 2 categories:  
-    a. "Target achieved" if "yes";  
-    b. "Target not achieved" if "no".  
-12. Specific exception: Indicator 5.3.1 Proportion of time spent on unpaid domestic and care work will be modify prior to calculation. A ratio of women/men will be used, with a desired target of 1.  
+   a. Calculate using the methodology with target until the target year (*y*).  
+   b. Continue calculating using the methodology with target, keeping the now obsolete target value and year.   
+   c. Include a note to users explaining how to interpret the information.  
+   d. Should a new target value and year be introduced, start using the new values in the calculation, and recalculate from *y+1*.  
+   e. Include a note to users explaining the change.  
+6. A minimum of two years of data is required to calculate the progress measure.  
+7. To calculate the summary measure for a target, ambition or goal, a minimum of 60% of indicators for which it is possible to calculate a progress measure is needed.  
+8. The progress estimates oversimplify reality. Users should use the progress measure in addition to specific indicator values and other relevant information.  
+9. The impact of policies takes time to be reflected in the data; the longer the time series, the better the methodology will be to measure progress.  
+10. The progress measure for indicators that start above the target at their base year for which progress then declines will be automatically overridden to “Deterioration”[^5].  
+11. Binary indicators will be assigned one of these 2 categories:  
+   a. “Target achieved” if “yes”.   
+   b. “Target not achieved” if “no”.  
+12. For indicators with two targets, for example CIF target 3.8 - By 2025, 95% coverage of all childhood vaccines and 90% coverage of all adolescent vaccines, the result that is the farthest from its target is used as progress measure.  
+13. Specific exception: CIF indicator 5.3.1 - Proportion of time spent on unpaid domestic and care work is reporting the proportion of day spent on unpaid domestic and care work, by sex. To be able to calculate the progress toward the target Equal sharing of parenting roles and family responsibilities, the indicator will be modified prior to calculation. A ratio of the proportion of time for women to that for men will be used, with a desired target of 1.   
 
 
  
-## Future Work  
+## Future Work   
 
-In the short term, future work in this area includes the integration of the indicator-level progress measurement into the back-end of the Open SDG platform to be widely available for all Open SDG users. In the longer term, the aggregate measurement is also planned to be integrated into the platform.  
-
-Furthermore, a revision of the base year in the methodology will be performed in 2024, coinciding with the CIF strategic review, to assess the replacement of the measure with long-term and short-term measures.  
+Statistics Canada’s SDG team is working with the Open SDG community to integrate the indicator-level progress measurement into the back end of the Open SDG platform. It will be represented by a label and an icon describing the most recently calculated progress for each indicator. Once implemented, the functionality will be available for all Open SDG users. Due to the complexity of the indicator frameworks, the functionality will only include indicators that report an aggregate value at first – indicators composed solely of sub-components, such as CIF indicator 3.9.1 - *Incidence of selected diseases*, will require manual calculation and manual input of the progress labels to be displayed on the Open SDG data hub. The Statistics Canada team will continue improving the automatic calculation, as well as developing the aggregate measurement to be integrated into the platform.   
 
 
 ## Metadata   
@@ -253,4 +254,5 @@ Sachs, J., Kroll, C., Lafortune, G., Fuller, G., Woelm, F. (2021). *The Decade o
 [^1]: For a detailed description of the methodology, please refer to Eurostat (2021).  
 [^2]: All thresholds are standards in the international communities. After assessment, it was found that they are also applicable in the Canadian context.   
 [^3]: For a detailed description of the methodology, please refer to Eurostat (2021), Annex III.  
-[^4]: This is a necessary measure to counteract a drawback of the formula: In situation where the target was achieved during the base period but deteriorated afterwards, the formula calculates significant progress as the indicator decreases (or increases) more ‘than it should’ to meet the target.  
+[^4]: In very few cases where the periodicity of the data is over 4 years or more, a base period of 2014 has been used.  
+[^5]: This is a necessary measure to counteract a drawback of the formula: In situation where the target was achieved during the base period but deteriorated afterwards, the formula calculates significant progress as the indicator decreases (or increases) more ‘than it should’ to meet the target. Take for example target 3.13 *By 2035, less than 5% of Canadians (aged 15+) are cigarette smokers.* Suppose that in 2015, 3% of Canadians aged 15+ are cigarette smokers, and that in 2020 this percentage raises to 10%. The formula will calculate the growth required to go from 3% to 5% (instead of the one from 10% to 5%) and will conclude that great progress has been made since the new value not only reached 5% but progressed further ahead to 10%.  
