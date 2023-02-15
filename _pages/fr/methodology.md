@@ -56,7 +56,7 @@ Compte tenu du nombre limité de points de données dans chaque série chronolog
 
 Le progrès est mesuré en utilisant la croissance sur la période observée et est calculé par un taux de croissance annuel composé,  
 
-![](https://raw.githubusercontent.com/sdg-data-canada-odd-donnees/cif-cic_dev/develop/assets/img/methodology/fr/cagr_observed.PNG)  
+![content](https://raw.githubusercontent.com/sdg-data-canada-odd-donnees/cif-cic_dev/develop/assets/img/methodology/fr/cagr_observed.PNG)  
 
 où  
 *TCAC*<sub>o</sub> est le taux de croissance annuel observé entre *t<sub>0</sub>* et *t<sub>i</sub>*     
