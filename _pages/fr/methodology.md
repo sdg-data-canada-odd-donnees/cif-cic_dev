@@ -1,7 +1,7 @@
 ---
 title: Mesure de progrès pour les objectifs de développement durable au Canada
 language: fr
-permalink: /methodology/
+permalink: /fr/methodology/
 layout: page
 ---
 
