@@ -128,7 +128,7 @@ menu:
  #   translation_key: menu.related-products
   - path: /faq
     translation_key: menu.faq
-  - translation_key: More information
+  - translation_key: menu.more_info
     dropdown:
       - path: /related-products
         translation_key: menu.related-products
