@@ -130,7 +130,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20230220015514">
+        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20230220182253">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -466,7 +466,7 @@ data-event-label="high"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;data.Geography&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Canada&quot;,&quot;Newfoundland and Labrador&quot;,&quot;Prince Edward Island&quot;,&quot;Nova Scotia&quot;,&quot;New Brunswick&quot;,&quot;Quebec&quot;,&quot;Ontario&quot;,&quot;Manitoba&quot;,&quot;Saskatchewan&quot;,&quot;Alberta&quot;,&quot;British Columbia&quot;,&quot;Territories&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Geography&quot;},{&quot;name&quot;:&quot;data.Type of materials diverted&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;All materials diverted&quot;,&quot;All paper fibres&quot;,&quot;Glass&quot;,&quot;Ferrous metals&quot;,&quot;Copper and aluminum&quot;,&quot;Mixed metals&quot;,&quot;White goods&quot;,&quot;Electronics&quot;,&quot;Plastics&quot;,&quot;Gable top and aseptic containers&quot;,&quot;Textiles&quot;,&quot;Tires&quot;,&quot;Construction + renovation and demolition&quot;,&quot;Organics&quot;,&quot;Other materials&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Type of materials diverted&quot;},{&quot;name&quot;:&quot;data.Sources of materials prepared for recycling&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Residential sources of diverted materials&quot;,&quot;Non-residential sources of diverted materials&quot;,&quot;All sources of diverted materials&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Sources of materials prepared for recycling&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;data.Geography&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Canada&quot;,&quot;Newfoundland and Labrador&quot;,&quot;Prince Edward Island&quot;,&quot;Nova Scotia&quot;,&quot;New Brunswick&quot;,&quot;Quebec&quot;,&quot;Ontario&quot;,&quot;Manitoba&quot;,&quot;Saskatchewan&quot;,&quot;Alberta&quot;,&quot;British Columbia&quot;,&quot;Territories&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Geography&quot;},{&quot;name&quot;:&quot;data.Type of materials diverted&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;All materials diverted&quot;,&quot;All paper fibres&quot;,&quot;Glass&quot;,&quot;Ferrous metals&quot;,&quot;Copper and aluminum&quot;,&quot;Mixed metals&quot;,&quot;White goods&quot;,&quot;Electronics&quot;,&quot;Plastics&quot;,&quot;Gable top and aseptic containers&quot;,&quot;Textiles&quot;,&quot;Tires&quot;,&quot;data.Construction, renovation and demolition&quot;,&quot;Organics&quot;,&quot;Other materials&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Type of materials diverted&quot;},{&quot;name&quot;:&quot;data.Sources of materials prepared for recycling&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Residential sources of diverted materials&quot;,&quot;Non-residential sources of diverted materials&quot;,&quot;All sources of diverted materials&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Sources of materials prepared for recycling&quot;},{&quot;name&quot;:&quot;GeoCode&quot;,&quot;type&quot;:&quot;string&quot;,&quot;title&quot;:&quot;GeoCode&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="null"
 >
@@ -514,7 +514,11 @@ data-event-label="high"
         
         
         
-        <th scope="col" class="table-value">Value</th>
+        <th scope="col">Value</th>
+        
+        
+        
+        <th scope="col" class="table-value">GeoCode</th>
         
         
       </thead>
@@ -527,7 +531,27 @@ data-event-label="high"
           
           
           
-          <td class="table-value">264.874136</td>
+          <td>257.6880441</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td>260.5568381</td>
+          
+          
+          
+          <td class="table-value"></td>
           
           
         </tr>
@@ -1650,12 +1674,12 @@ ga('send', 'pageview');
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/cif-cic_dev/assets/js/sdg.js?v=20230220015514'></script>
+<script src='/cif-cic_dev/assets/js/sdg.js?v=20230220182253'></script>
 
 
     
     
-    <script src="/cif-cic_dev/assets/js/custom.js?v=20230220015514"></script><script>
+    <script src="/cif-cic_dev/assets/js/custom.js?v=20230220182253"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
