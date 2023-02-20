@@ -103,7 +103,7 @@ var translations = {
         
         Indicator 8.2.1 -
         
-        Proportion of employees earning less than 66% of the median hourly wage for permanent full-time employees - Canada Indicators For The Sustainable Development Goals
+        Proportion of 15+ employees earning less than 66% of the median hourly wage of permanent full-time 15+ employees - Canada Indicators For The Sustainable Development Goals
     </title>
 
 
@@ -130,7 +130,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20230220182253">
+        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20230220193855">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -395,7 +395,7 @@ data-event-label="high"
                         
                         Indicator 8.2.1
                         
-                        <span class="lead-copy">Proportion of employees earning less than 66% of the median hourly wage for permanent full-time employees</span>
+                        <span class="lead-copy">Proportion of 15+ employees earning less than 66% of the median hourly wage of permanent full-time 15+ employees</span>
                     </h1>
                 </div>
             </div>
@@ -435,7 +435,7 @@ data-event-label="high"
 
 <div class="row" id="page-content">
   <div class="col-xs-12">
-    <p><i>This indicator does not display a progress status as there is only one data point currently available.</i></p>
+    <p>#<i>This indicator does not display a progress status as there is only one data point currently available.</i></p>
 
   </div>
 </div>
@@ -450,12 +450,12 @@ data-event-label="high"
   data-indicatorid='indicator_8-2-1'
   data-id="8-2-1"
   data-country="Canada"
-  data-charttitle="Employees earning less than two-thirds of the annual median wage"
+  data-charttitle="Employees 15+ earning less than two-thirds of the annual median wage of permanent full-time 15+ employees"
   data-charttitles="null"
   data-measurementunit="Percentage"
   data-xaxislabel=""
   data-showdata="true"
-  data-graphtype="bar"
+  data-graphtype="line"
   data-graphtypes="null"
   data-geocoderegex=""
   data-showmap="false"
@@ -466,7 +466,7 @@ data-event-label="high"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Geography&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Canada&quot;,&quot;Newfoundland and Labrador&quot;,&quot;Prince Edward Island&quot;,&quot;Nova Scotia&quot;,&quot;New Brunswick&quot;,&quot;Quebec&quot;,&quot;Ontario&quot;,&quot;Manitoba&quot;,&quot;Saskatchewan&quot;,&quot;Alberta&quot;,&quot;British Columbia&quot;,&quot;Yukon&quot;,&quot;Northwest Territories&quot;,&quot;Nunavut&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Geography&quot;},{&quot;name&quot;:&quot;GeoCode&quot;,&quot;type&quot;:&quot;string&quot;,&quot;title&quot;:&quot;GeoCode&quot;},{&quot;name&quot;:&quot;Sex&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Total&quot;,&quot;Male&quot;,&quot;Female&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Sex&quot;},{&quot;name&quot;:&quot;Age group&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Total&quot;,&quot;15-24&quot;,&quot;25-54&quot;,&quot;55+&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Age group&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="null"
 >
@@ -497,59 +497,15 @@ data-event-label="high"
   <div id="datatables">
 
     
-    <a href="https://sdg-data-canada-odd-donnees.github.io/cif-data-donnees-cic/en/headline/8-2-1.csv" class="btn btn-primary btn-download" download="indicator_8-2-1.csv" tabindex="0" role="button">Download Headline CSV</a>
-    
     <a href="https://sdg-data-canada-odd-donnees.github.io/cif-data-donnees-cic/en/data/8-2-1.csv" class="btn btn-primary btn-download" download='indicator_8-2-1.csv' tabindex='0' role='button'>Download All Data (CSV)</a>
 
     <p class="no-js-disaggregation-hint">Download source CSV for disaggregations</p>
 
     
-    <h3>Headline data</h3>
-    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
-      <caption>Employees earning less than two-thirds of the annual median wage</caption>
-      <thead>
-        
-        
-        <th scope="col">Year</th>
-        
-        
-        
-        <th scope="col" class="table-value">Value</th>
-        
-        
-      </thead>
-      <tbody>
-        
-        <tr>
-          
-          
-          <td>2019</td>
-          
-          
-          
-          <td class="table-value">27.3</td>
-          
-          
-        </tr>
-        
-      </tbody>
-    </table>
+    <h3>No headline data available</h3>
     
   </div>
 
-  
-  <div id="datatableFooter">
-    
-    <p>Source: Statistics Canada</p>
-    
-    
-    <p>Geographical Area: Canada</p>
-    
-    
-    <p>Unit of Measurement: Percentage</p>
-    
-    
-  </div>
   
 
 </div>
@@ -632,7 +588,7 @@ data-event-label="Change to Table tab"
     <div id="selectionsChart">
       <figure role="group">
         <div id="chart-canvas">
-          <h4 id="chart-heading" class="chart-title">Employees earning less than two-thirds of the annual median wage</h4>
+          <h4 id="chart-heading" class="chart-title">Employees 15+ earning less than two-thirds of the annual median wage of permanent full-time 15+ employees</h4>
           <div id="chart" class="plot-container">
             <canvas
     role="img"
@@ -864,7 +820,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Indicator name </th>
         <td>
           
-            <p>Proportion of employees earning less than 66% of the median hourly wage for permanent full-time employees</p>
+            <p>Proportion of 15+ employees earning less than 66% of the median hourly wage of permanent full-time 15+ employees</p>
 
           
         </td>
@@ -896,7 +852,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Indicator description </th>
         <td>
           
-            <p>This indicator measures the percentage and number of employees earning less than two-thirds of the annual median wage.</p>
+            <p>This indicator measures the percentage and number of 15+ employees earning less than two-thirds of the annual median wage of permanent full-time 15+ employees.</p>
 
           
         </td>
@@ -972,7 +928,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Comments and limitations </th>
         <td>
           
-            <p>Excluded from the coverage are: persons living on reserves and other Aboriginal settlements in the provinces; full-time members of the Canadian Armed Forces, the institutionalized population, and households in extremely remote areas with very low population density.</p>
+            <p>Excluded from the coverage are: persons living on reserves and other Aboriginal settlements in the provinces; full-time members of the Canadian Armed Forces, the institutionalized population, and households in extremely remote areas with very low population density. Estimates for Canada (total) are a sum of the provincial totals and exclude the territories. Estimates for proportions by sex and age groups exclude the territories.</p>
 
           
         </td>
@@ -1440,12 +1396,12 @@ ga('send', 'pageview');
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/cif-cic_dev/assets/js/sdg.js?v=20230220182253'></script>
+<script src='/cif-cic_dev/assets/js/sdg.js?v=20230220193855'></script>
 
 
     
     
-    <script src="/cif-cic_dev/assets/js/custom.js?v=20230220182253"></script><script>
+    <script src="/cif-cic_dev/assets/js/custom.js?v=20230220193855"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

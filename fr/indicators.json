@@ -311,8 +311,8 @@
         },
         {
           "id": "8-2-1",
-          "title": "Proportion des employés qui gagnent moins de 66 % de la médiane du salaire horaire des employés permanents à temps plein",
-          "description": "Cet indicateur mesure le pourcentage et le nombre des employés qui gagnent moins du deux tiers de la médiane du salaire horaire des employés permanents à temps plein.",
+          "title": "Proportion des employés 15 ans + qui gagnent moins de 66 % de la médiane du salaire horaire des employés 15 ans + permanents à temps plein",
+          "description": "Cet indicateur mesure le pourcentage et le nombre des employés 15 ans + qui gagnent moins du deux tiers de la médiane du salaire horaire des employés 15 ans + permanents à temps plein.",
           "keywords": "",
           "href": "/cif-cic_dev/fr/8-2-1",
           "status": "complete"
