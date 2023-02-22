@@ -130,7 +130,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20230222195304">
+        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20230222202323">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -463,7 +463,7 @@ data-event-label="high"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;data.Geography&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Canada&quot;,&quot;Newfoundland and Labrador&quot;,&quot;Prince Edward Island&quot;,&quot;Nova Scotia&quot;,&quot;New Brunswick&quot;,&quot;Quebec&quot;,&quot;Ontario&quot;,&quot;Manitoba&quot;,&quot;Saskatchewan&quot;,&quot;Alberta&quot;,&quot;British Columbia&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Geography&quot;},{&quot;name&quot;:&quot;data.Age group&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Total, 12 years and over&quot;,&quot;12 to 17 years&quot;,&quot;18 to 34 years&quot;,&quot;35 to 49 years&quot;,&quot;50 to 64 years&quot;,&quot;65 years and over&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Age group&quot;},{&quot;name&quot;:&quot;data.Sex&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Males&quot;,&quot;Females&quot;,&quot;Both sexes&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Sex&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;data.Geography&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Canada&quot;,&quot;Newfoundland and Labrador&quot;,&quot;Prince Edward Island&quot;,&quot;Nova Scotia&quot;,&quot;New Brunswick&quot;,&quot;Quebec&quot;,&quot;Ontario&quot;,&quot;Manitoba&quot;,&quot;Saskatchewan&quot;,&quot;Alberta&quot;,&quot;British Columbia&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Geography&quot;},{&quot;name&quot;:&quot;data.Age group&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Total, 12 years and over&quot;,&quot;12 to 17 years&quot;,&quot;18 to 34 years&quot;,&quot;35 to 49 years&quot;,&quot;50 to 64 years&quot;,&quot;65 years and over&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Age group&quot;},{&quot;name&quot;:&quot;data.Sex&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Males&quot;,&quot;Females&quot;,&quot;Both sexes&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Sex&quot;},{&quot;name&quot;:&quot;GeoCode&quot;,&quot;type&quot;:&quot;string&quot;,&quot;title&quot;:&quot;GeoCode&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="null"
 >
@@ -511,7 +511,11 @@ data-event-label="high"
         
         
         
-        <th scope="col" class="table-value">Value</th>
+        <th scope="col">Value</th>
+        
+        
+        
+        <th scope="col" class="table-value">GeoCode</th>
         
         
       </thead>
@@ -524,7 +528,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">17.7</td>
+          <td>17.7</td>
+          
+          
+          
+          <td class="table-value"></td>
           
           
         </tr>
@@ -536,7 +544,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">16.9</td>
+          <td>16.9</td>
+          
+          
+          
+          <td class="table-value"></td>
           
           
         </tr>
@@ -548,7 +560,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">16.2</td>
+          <td>16.2</td>
+          
+          
+          
+          <td class="table-value"></td>
           
           
         </tr>
@@ -560,7 +576,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">15.8</td>
+          <td>15.8</td>
+          
+          
+          
+          <td class="table-value"></td>
           
           
         </tr>
@@ -572,7 +592,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">14.8</td>
+          <td>14.8</td>
+          
+          
+          
+          <td class="table-value"></td>
           
           
         </tr>
@@ -584,7 +608,27 @@ data-event-label="high"
           
           
           
-          <td class="table-value">12.9</td>
+          <td>12.9</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td>11.8</td>
+          
+          
+          
+          <td class="table-value"></td>
           
           
         </tr>
@@ -1499,12 +1543,12 @@ ga('send', 'pageview');
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/cif-cic_dev/assets/js/sdg.js?v=20230222195304'></script>
+<script src='/cif-cic_dev/assets/js/sdg.js?v=20230222202323'></script>
 
 
     
     
-    <script src="/cif-cic_dev/assets/js/custom.js?v=20230222195304"></script><script>
+    <script src="/cif-cic_dev/assets/js/custom.js?v=20230222202323"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
