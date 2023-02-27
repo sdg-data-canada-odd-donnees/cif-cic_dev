@@ -137,7 +137,7 @@
           "id": "3-11-1",
           "title": "Incidence de la tuberculose par 100 000 habitants dans l’Inuit Nunangat",
           "description": "Cet indicateur mesure le taux d'incidence de la tuberculose par 100 000 habitants dans l’Inuit Nunangat.",
-          "keywords": "",
+          "keywords": "Autochtone",
           "href": "/cif-cic_dev/fr/3-11-1",
           "status": "complete"
         },
@@ -169,7 +169,7 @@
           "id": "4-1-1",
           "title": "Taux d'achèvement des études secondaires",
           "description": "Cet indicateur mesure le pourcentage de personnes qui possèdent un diplôme d'études secondaires ou une attestation d'équivalence.",
-          "keywords": "women, gender",
+          "keywords": "women, gender, Indigenous",
           "href": "/cif-cic_dev/fr/4-1-1",
           "status": "complete"
         },
@@ -177,7 +177,7 @@
           "id": "4-2-1",
           "title": "Taux de scolarité au niveau postsecondaire",
           "description": "Cet indicateur mesure le taux de scolarité au niveau postsecondaire. Les catégories représentent le plus haut niveau de scolarité atteint et sont mutuellement exclusives.",
-          "keywords": "women, gender",
+          "keywords": "women, gender, Indigenous",
           "href": "/cif-cic_dev/fr/4-2-1",
           "status": "complete"
         }]
@@ -201,7 +201,7 @@
           "id": "5-1-2",
           "title": "Proportion de femmes et filles âgées de 15 ans et plus ayant été assujetties à de la violence physique, sexuelle ou psychologique par leur partenaire intime actuel ou un ancien partenaire intime dans les 12 derniers mois",
           "description": "Cet indicateur mesure la proportion de femmes et filles âgées de 15 et plus ayant été assujetties à de la violence physique, sexuelle ou psychologique par leur partenaire intime actuel ou un ancien partenaire intime dans les 12 derniers mois. La violence entre partenaires intimes (VPI) englobe un large éventail de comportements, qui vont de la violence psychologique et de l’exploitation financière aux agressions physiques et sexuelles.",
-          "keywords": "women, gender",
+          "keywords": "women, gender, Indigenous",
           "href": "/cif-cic_dev/fr/5-1-2",
           "status": "complete"
         },
@@ -233,7 +233,7 @@
           "id": "6-1-1",
           "title": "Nombre d’avis concernant la qualité de l'eau potable à long terme visant les systèmes d'aqueduc publics dans les réserves",
           "description": "Cet indicateur mesure le nombre d’avis concernant la qualité de l'eau potable à long terme visant les systèmes d'aqueduc publics dans les réserves. Les avis concernant la qualité de l'eau potable sont émis pour informer les gens de ne pas boire l'eau qui pourrait être ou qui est insalubre en se fondant sur des tests sur la qualité de l'eau.",
-          "keywords": "",
+          "keywords": "Autochtone",
           "href": "/cif-cic_dev/fr/6-1-1",
           "status": "complete"
         },
@@ -305,7 +305,7 @@
           "id": "8-1-1",
           "title": "Taux de chômage",
           "description": "Le taux de chômage est le nombre de personnes en chômage exprimé en pourcentage de la population active.",
-          "keywords": "women, gender",
+          "keywords": "women, gender, Indigenous",
           "href": "/cif-cic_dev/fr/8-1-1",
           "status": "complete"
         },
@@ -377,7 +377,7 @@
           "id": "9-3-1",
           "title": "Proportion des ménages qui ont accès à des services Internet à large bande à des vitesses de 50/10 Mbps",
           "description": "Cet indicateur mesure la proportion des ménages qui ont accès à des services Internet à large bande à des vitesses de téléchargement de 50 Mbps et de téléversement de 10 Mbps et des données illimitées.",
-          "keywords": "",
+          "keywords": "Autochtone",
           "href": "/cif-cic_dev/fr/9-3-1",
           "status": "complete"
         },
@@ -385,7 +385,7 @@
           "id": "9-4-1",
           "title": "Proportion des Canadiens qui ont accès à la technologie sans fil mobile généralement déployée la plus récente",
           "description": "Cet indicateur mesure la disponibilité de la technologie sans fil mobile généralement déployée la plus récente. On inclut les technologies telles que HSPA+ (accès haute vitesse par paquets), LTE (évolution à long terme) et LTE ‑A ainsi que la technologie 5G à venir.",
-          "keywords": "",
+          "keywords": "Autochtone",
           "href": "/cif-cic_dev/fr/9-4-1",
           "status": "complete"
         },

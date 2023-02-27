@@ -137,7 +137,7 @@
           "id": "3-11-1",
           "title": "Tuberculosis incidence per 100,000 population in Inuit Nunangat",
           "description": "This indicator measures the Tuberculosis incidence rate per 100,000 population in Inuit Nunangat.",
-          "keywords": "",
+          "keywords": "Indigenous",
           "href": "/cif-cic_dev/3-11-1",
           "status": "complete"
         },
@@ -169,7 +169,7 @@
           "id": "4-1-1",
           "title": "High school completion rate",
           "description": "This indicator measures the percentage of persons who have completed a high school diploma or equivalency certificate.",
-          "keywords": "women, gender",
+          "keywords": "women, gender, Indigenous",
           "href": "/cif-cic_dev/4-1-1",
           "status": "complete"
         },
@@ -177,7 +177,7 @@
           "id": "4-2-1",
           "title": "Post-secondary education attainment rate",
           "description": "This indicator measures the attainment rate for post-secondary education. Categories represent the highest level of education achieved, and are mutually exclusive.",
-          "keywords": "women, gender",
+          "keywords": "women, gender, Indigenous",
           "href": "/cif-cic_dev/4-2-1",
           "status": "complete"
         }]
@@ -201,7 +201,7 @@
           "id": "5-1-2",
           "title": "Proportion of women and girls aged 15 years and older subjected to physical, sexual or psychological violence by a current or former intimate partner in the last 12 months",
           "description": "This indicator measures the proportion of women and girls aged 15 years and older subjected to intimate partner violence in the last 12 months. Intimate partner violence (IPV) encompasses a broad range of behaviours, ranging from emotional and financial abuse to physical and sexual assault.",
-          "keywords": "women, gender",
+          "keywords": "women, gender, Indigenous",
           "href": "/cif-cic_dev/5-1-2",
           "status": "complete"
         },
@@ -209,7 +209,7 @@
           "id": "5-2-1",
           "title": "Proportion of leadership roles held by women",
           "description": "This indicator measures the proportion of women in leadership roles. Leadership roles selected include women elected to national Parliament and ministers appointed to federal cabinet, federal and provincial judges and various types of management position.",
-          "keywords": "women, gender",
+          "keywords": "women, gender, Indigenous",
           "href": "/cif-cic_dev/5-2-1",
           "status": "complete"
         },
@@ -233,7 +233,7 @@
           "id": "6-1-1",
           "title": "Number of long-term drinking water advisories on public systems on reserves",
           "description": "This indicator measures the number of long-term drinking water advisories on public systems in First Nations communities. Drinking water advisories are issued to warn people to not drink water that may be unsafe or is known to not be safe based on water quality test results.",
-          "keywords": "",
+          "keywords": "Indigenous",
           "href": "/cif-cic_dev/6-1-1",
           "status": "complete"
         },
@@ -305,7 +305,7 @@
           "id": "8-1-1",
           "title": "Unemployment rate",
           "description": "This indicator measures the unemployment rate. The unemployment rate is the number of unemployed persons expressed as a percentage of the labour force.",
-          "keywords": "women, gender",
+          "keywords": "women, gender, Indigenous",
           "href": "/cif-cic_dev/8-1-1",
           "status": "complete"
         },
@@ -377,7 +377,7 @@
           "id": "9-3-1",
           "title": "Proportion of households that have access to broadband Internet service at speeds of 50/10 Mbps",
           "description": "This indicator measures the proportion of households that have access to broadband internet service at speeds of 50 Mbps for downloads / 10 Mbps for uploads and unlimited data.",
-          "keywords": "",
+          "keywords": "Indigenous",
           "href": "/cif-cic_dev/9-3-1",
           "status": "complete"
         },
@@ -385,7 +385,7 @@
           "id": "9-4-1",
           "title": "Proportion of Canadians that have access to the latest generally deployed mobile wireless technology",
           "description": "This indicator measures the availability of the latest generally deployed mobile wireless technology. In this case, technologies such as HSPA+, LTE and LTE ‑A as well as the upcoming 5G are included.",
-          "keywords": "",
+          "keywords": "Indigenous",
           "href": "/cif-cic_dev/9-4-1",
           "status": "complete"
         },
