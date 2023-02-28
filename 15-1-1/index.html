@@ -130,7 +130,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20230228015354">
+        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20230228201511">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -419,9 +419,13 @@ data-event-label="high"
         <div class="progress-status">
         
             <div class="progress-status-label">
-                Not available
+                Moderate progress
             </div>
         
+        
+            <div class="progress-status-image">
+                <img src="/cif-cic_dev/assets/img/progress/yellow-gauge.png" alt="Moderate progress" />
+            </div>
         
         </div>
     
@@ -435,8 +439,7 @@ data-event-label="high"
 
 <div class="row" id="page-content">
   <div class="col-xs-12">
-    <p><i>This indicator does not display a progress status as there is only one data point currently available.</i><br /><br />
-This indicator corresponds to the Canadian Environmental Sustainability Indicators <a href="https://www.canada.ca/en/environment-climate-change/services/environmental-indicators/status-wild-species.html"> <em>Status of wild species</em></a>.</p>
+    <p>This indicator corresponds to the Canadian Environmental Sustainability Indicators <a href="https://www.canada.ca/en/environment-climate-change/services/environmental-indicators/general-status-wild-species.html"> <em>General status of wild species</em></a>.</p>
 
   </div>
 </div>
@@ -467,7 +470,7 @@ This indicator corresponds to the Canadian Environmental Sustainability Indicato
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;data.Species group&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Amphibians&quot;,&quot;Ants&quot;,&quot;Bee flies&quot;,&quot;Bees&quot;,&quot;Beetles&quot;,&quot;Birds&quot;,&quot;Black flies&quot;,&quot;Bryophytes&quot;,&quot;Corals&quot;,&quot;Decapods&quot;,&quot;Dragonflies and damselflies&quot;,&quot;Fishes&quot;,&quot;Freshwater bivalves&quot;,&quot;Grasshoppers and relatives&quot;,&quot;Horse flies&quot;,&quot;Lacewings&quot;,&quot;Macrolichens&quot;,&quot;Mammals&quot;,&quot;Mayflies&quot;,&quot;Mosquitoes&quot;,&quot;Moths and butterflies&quot;,&quot;Non-marine snails and slugs&quot;,&quot;Reptiles&quot;,&quot;Sea cucumbers&quot;,&quot;Sea urchins&quot;,&quot;Selected macrofungi&quot;,&quot;Spiders&quot;,&quot;Sponges&quot;,&quot;Stoneflies&quot;,&quot;Vascular plants&quot;,&quot;Yellowjacket wasps&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Species group&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;data.Species group&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Amphibians&quot;,&quot;Ants&quot;,&quot;Bee flies&quot;,&quot;Bees&quot;,&quot;Beetles&quot;,&quot;Birds&quot;,&quot;Black flies&quot;,&quot;Bryophytes&quot;,&quot;Corals&quot;,&quot;Decapods&quot;,&quot;Dragonflies and damselflies&quot;,&quot;Fishes&quot;,&quot;Freshwater bivalves&quot;,&quot;Grasshoppers and relatives&quot;,&quot;Horse flies&quot;,&quot;Lacewings&quot;,&quot;Macrolichens&quot;,&quot;Mammals&quot;,&quot;Mayflies&quot;,&quot;Mosquitoes&quot;,&quot;Moths and butterflies&quot;,&quot;Non-marine snails and slugs&quot;,&quot;Reptiles&quot;,&quot;Sea cucumbers&quot;,&quot;Sea urchins&quot;,&quot;Selected macrofungi&quot;,&quot;Spiders&quot;,&quot;Sponges&quot;,&quot;Stoneflies&quot;,&quot;Vascular plants&quot;,&quot;Yellowjacket wasps&quot;,&quot;data.Bivalves&quot;,&quot;Caddisflies&quot;,&quot;data.Cephalopods&quot;,&quot;data.Earthworms&quot;,&quot;data.Fleas&quot;,&quot;data.Harvestmen&quot;,&quot;data.Leeches&quot;,&quot;data.Lichens&quot;,&quot;data.Macrofungi&quot;,&quot;data.Myriapods&quot;,&quot;data.Pseudoscorpions&quot;,&quot;data.Sawflies&quot;,&quot;Scorpionflies&quot;,&quot;data.Sea stars&quot;,&quot;data.Selected flies&quot;,&quot;data.Slime moulds&quot;,&quot;data.Springtails&quot;,&quot;data.Terrestrial and freshwater snails and slugs&quot;,&quot;data.Ticks&quot;,&quot;data.True bugs&quot;,&quot;data.Water mites&quot;,&quot;data.Yellowjackets and relatives&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Species group&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="null"
 >
@@ -529,6 +532,18 @@ This indicator corresponds to the Canadian Environmental Sustainability Indicato
           
           
           <td class="table-value">79.82</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td class="table-value">80.0</td>
           
           
         </tr>
@@ -1207,8 +1222,8 @@ data-event-label="Change to indicator.sources tab"
             
 
             
-              <a href="https://www.canada.ca/en/environment-climate-change/services/environmental-indicators/status-wild-species.html" target="_blank">
-                Canadian Endangered Species Conservation Council (2016) Wild Species 2015: The General Status of Species in Canada, National General Status Working Group. <span class="visuallyhidden">opens in a new window</span>
+              <a href="https://www.wildspecies.ca/reports" target="_blank">
+                Wild Species: The General Status of Species in Canada (2015-2020) <span class="visuallyhidden">opens in a new window</span>
               </a>
             
 
@@ -1441,12 +1456,12 @@ ga('send', 'pageview');
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/cif-cic_dev/assets/js/sdg.js?v=20230228015354'></script>
+<script src='/cif-cic_dev/assets/js/sdg.js?v=20230228201511'></script>
 
 
     
     
-    <script src="/cif-cic_dev/assets/js/custom.js?v=20230228015354"></script><script>
+    <script src="/cif-cic_dev/assets/js/custom.js?v=20230228201511"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
