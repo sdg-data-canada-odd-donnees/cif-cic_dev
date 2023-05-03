@@ -130,7 +130,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20230503014024">
+        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20230503201607">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -416,6 +416,19 @@ data-event-label="high"
         
     
     
+        <div class="progress-status">
+        
+            <div class="progress-status-label">
+                Substantial progress
+            </div>
+        
+        
+            <div class="progress-status-image">
+                <img src="/cif-cic_dev/assets/img/progress/green-gauge.png" alt="Substantial progress" />
+            </div>
+        
+        </div>
+    
 
 
     </div>
@@ -450,7 +463,7 @@ data-event-label="high"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Units&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Terajoules&quot;,&quot;Per capita&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Units&quot;},{&quot;name&quot;:&quot;data.Geography&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Canada&quot;,&quot;Newfoundland and Labrador&quot;,&quot;Prince Edward Island&quot;,&quot;Nova Scotia&quot;,&quot;New Brunswick&quot;,&quot;Quebec&quot;,&quot;Ontario&quot;,&quot;Manitoba&quot;,&quot;Saskatchewan&quot;,&quot;Alberta&quot;,&quot;British Columbia&quot;,&quot;Yukon&quot;,&quot;Northwest Territories&quot;,&quot;Nunavut&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Geography&quot;},{&quot;name&quot;:&quot;data.Fuel type&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Total primary and secondary energy&quot;,&quot;Total coal&quot;,&quot;Natural gas&quot;,&quot;Gas plant natural gas liquids (NGL's)&quot;,&quot;Hydroelectricity&quot;,&quot;Nuclear&quot;,&quot;Steam&quot;,&quot;Coke&quot;,&quot;Coke oven gas&quot;,&quot;Total refined petroleum products&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Fuel type&quot;},{&quot;name&quot;:&quot;data.Demand characteristics&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Total industrial&quot;,&quot;Total transportation&quot;,&quot;Agriculture&quot;,&quot;Residential&quot;,&quot;Public administration&quot;,&quot;Commercial and other institutional&quot;,&quot;Energy use - final demand&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Demand characteristics&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Units&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Terajoules&quot;,&quot;Per capita&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Units&quot;},{&quot;name&quot;:&quot;data.Geography&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Canada&quot;,&quot;Newfoundland and Labrador&quot;,&quot;Prince Edward Island&quot;,&quot;Nova Scotia&quot;,&quot;New Brunswick&quot;,&quot;Quebec&quot;,&quot;Ontario&quot;,&quot;Manitoba&quot;,&quot;Saskatchewan&quot;,&quot;Alberta&quot;,&quot;British Columbia&quot;,&quot;Yukon&quot;,&quot;Northwest Territories&quot;,&quot;Nunavut&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Geography&quot;},{&quot;name&quot;:&quot;data.Fuel type&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Total primary and secondary energy&quot;,&quot;Total coal&quot;,&quot;Natural gas&quot;,&quot;Gas plant natural gas liquids (NGL's)&quot;,&quot;Hydroelectricity&quot;,&quot;Nuclear&quot;,&quot;Steam&quot;,&quot;Coke&quot;,&quot;Coke oven gas&quot;,&quot;Total refined petroleum products&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Fuel type&quot;},{&quot;name&quot;:&quot;data.Demand characteristics&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Total industrial&quot;,&quot;Total transportation&quot;,&quot;Agriculture&quot;,&quot;Residential&quot;,&quot;Public administration&quot;,&quot;Commercial and other institutional&quot;,&quot;Energy use - final demand&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Demand characteristics&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;string&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="null"
 >
@@ -515,7 +528,7 @@ data-event-label="high"
           
           
           
-          <td>8246990.0</td>
+          <td>8246990</td>
           
           
           
@@ -531,7 +544,7 @@ data-event-label="high"
           
           
           
-          <td>8155257.0</td>
+          <td>8155257</td>
           
           
           
@@ -547,7 +560,7 @@ data-event-label="high"
           
           
           
-          <td>8472571.0</td>
+          <td>8472571</td>
           
           
           
@@ -563,7 +576,7 @@ data-event-label="high"
           
           
           
-          <td>8852052.0</td>
+          <td>8852052</td>
           
           
           
@@ -579,7 +592,39 @@ data-event-label="high"
           
           
           
-          <td>8882020.0</td>
+          <td>8882020</td>
+          
+          
+          
+          <td class="table-value">Terajoules</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td>7,947,788</td>
+          
+          
+          
+          <td class="table-value">Terajoules</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td>8,166,974</td>
           
           
           
@@ -660,6 +705,38 @@ data-event-label="high"
           
           
           <td>0.24</td>
+          
+          
+          
+          <td class="table-value">Per capita</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td>0.21</td>
+          
+          
+          
+          <td class="table-value">Per capita</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td>0.21</td>
           
           
           
@@ -1994,12 +2071,12 @@ ga('send', 'pageview');
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/cif-cic_dev/assets/js/sdg.js?v=20230503014024'></script>
+<script src='/cif-cic_dev/assets/js/sdg.js?v=20230503201607'></script>
 
 
     
     
-    <script src="/cif-cic_dev/assets/js/custom.js?v=20230503014024"></script><script>
+    <script src="/cif-cic_dev/assets/js/custom.js?v=20230503201607"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
