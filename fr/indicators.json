@@ -288,7 +288,7 @@
         {
           "id": "7-3-1",
           "title": "Proportion de l’électricité produite à partir de sources renouvelables et non émettrices de gaz à effet de serre",
-          "description": "Cet indicateur mesure la proportion d'électricité qui est produite à partir de sources renouvelables et non émettrices de gaz à effet de serre.",
+          "description": "Cet indicateur mesure la proportion d’électricité qui est produite à partir de sources renouvelables et non émettrices de gaz à effet de serre, ce qui comprend l'énergie produite par les turbines hydrauliques, solaires, marémotrices, éoliennes, les turbines à vapeur nucléaires et toute l'électricité produite à partir de la biomasse.",
           "keywords": "",
           "href": "/cif-cic_dev/fr/7-3-1",
           "status": "complete"
