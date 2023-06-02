@@ -6,6 +6,8 @@ on:
       - develop
   schedule:
     - cron: '10 0 * * *'
+    # 10AM on Tuesdays, after data update runs
+    - cron: '00 14 * * 2'
   repository_dispatch:
     types: rebuild-staging
 
