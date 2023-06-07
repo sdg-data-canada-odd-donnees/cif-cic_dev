@@ -76,8 +76,52 @@ where
 *x<sub>tT</sub>* is the target value of the indicator in the target year, *t<sub>T</sub>*.   
 
 The result is compared against a set of thresholds[^2] and assigned a progress category, described below:   
-
-![Target table](https://raw.githubusercontent.com/sdg-data-canada-odd-donnees/cif-cic_dev/develop/assets/img/methodology/target_table.png) 
+  
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-fymr{border-color:inherit;font-weight:bold;text-align:left;vertical-align:top}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-fymr">Ratio of observed over required growth rate</th>
+    <th class="tg-fymr">Category</th>
+    <th class="tg-fymr">Symbol</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">Target is achieved</td>
+    <td class="tg-0pky">Target achieved</td>
+    <td class="tg-0pky"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/target-achieved-gauge.png?raw=true" width="150" height="150"></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">R<sub>o/r</sub> ≥ 95%</td>
+    <td class="tg-0pky">On track</td>
+    <td class="tg-0pky"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/green-gauge.png?raw=true" alt="Guage icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the green segment." width="150" height="150"></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">60% ≤ R<sub>o/r</sub> &lt; 95%</td>
+    <td class="tg-0pky">Progress made but acceleration needed</td>
+    <td class="tg-0pky"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/yellow-gauge.png?raw=true" alt="Guage icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the yellow segment." width="150" height="150"></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">0% ≤ R<sub>o/r</sub> &lt; 60%</td>
+    <td class="tg-0pky">Limited progress</td>
+    <td class="tg-0pky"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/orange-gauge.png?raw=true" alt="Guage icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the orange segment." width="150" height="150"></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">R<sub>o/r</sub> &lt; 0%</td>
+    <td class="tg-0pky">Deterioration</td>
+    <td class="tg-0pky"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/red-gauge.png?raw=true" alt="Guage icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the red segment." width="150" height="150"></td>
+  </tr>
+</tbody>
+</table>
 
 <br><br>  
   
@@ -86,7 +130,46 @@ The result is compared against a set of thresholds[^2] and assigned a progress c
 In the case where no quantitative target for a given indicator has been provided, *CAGR<sub>o</sub>* is compared to a pre-determined fixed growth rate and the threshold has been fixed at ±1%.  
   
 
-![No target table](https://raw.githubusercontent.com/sdg-data-canada-odd-donnees/cif-cic_dev/develop/assets/img/methodology/no_target_table.PNG)  
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-fymr{border-color:inherit;font-weight:bold;text-align:left;vertical-align:top}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-fymr">Ratio of observed over required growth rate</th>
+    <th class="tg-fymr">Category</th>
+    <th class="tg-fymr">Symbol</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">CAGR<sub>o</sub> ≥ 1.5%</td>
+    <td class="tg-0pky">On track</td>
+    <td class="tg-0pky"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/green-gauge.png?raw=true" alt="Guage icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the green segment." width="150" height="150"></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">0.5% ≤ CAGR<sub>o</sub> &lt; 1.5%</td>
+    <td class="tg-0pky">Progress made but acceleration needed</td>
+    <td class="tg-0pky"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/yellow-gauge.png?raw=true" alt="Guage icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the yellow segment." width="150" height="150"></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">0% ≤ CAGR<sub>o</sub> &lt; 0.5%</td>
+    <td class="tg-0pky">Limited progress</td>
+    <td class="tg-0pky"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/orange-gauge.png?raw=true" alt="Guage icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the orange segment." width="150" height="150"></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">CAGR<sub>o</sub> &lt; 0%</td>
+    <td class="tg-0pky">Deterioration</td>
+    <td class="tg-0pky"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/red-gauge.png?raw=true" alt="Guage icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the red segment." width="150" height="150"></td>
+  </tr>
+</tbody>
+</table>
   
 <br><br>   
 
