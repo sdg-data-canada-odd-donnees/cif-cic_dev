@@ -99,7 +99,7 @@ Le résultat est comparé à un ensemble de seuils[^2] et se voit attribuer une 
 <tbody>
   <tr>
     <td class="tg-0pky">La cible est atteinte</td>
-    <td class="tg-0pky">Objectif atteint</td>
+    <td class="tg-0pky">Cible atteinte</td>
     <td class="tg-0pky"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/target-achieved-gauge.png?raw=true" width="150" height="150"></td>
   </tr>
   <tr>
