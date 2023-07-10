@@ -127,7 +127,7 @@ The result is compared against a set of thresholds[^2] and assigned a progress c
   
   
 #### Indicators without quantitative targets  
-In the case where no quantitative target for a given indicator has been provided, *CAGR<sub>o</sub>* is compared to a pre-determined fixed growth rate and the threshold has been fixed at ±1%.  
+In the case where no quantitative target for a given indicator has been provided, *CAGR<sub>o</sub>* is compared to a pre-determined fixed growth rate and the thresholds have been fixed at 0%, 0.5% and 1.5%.  
   
 
 <style type="text/css">
