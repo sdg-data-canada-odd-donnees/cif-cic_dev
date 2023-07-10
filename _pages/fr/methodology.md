@@ -129,7 +129,7 @@ Le résultat est comparé à un ensemble de seuils[^2] et se voit attribuer une 
   
   
 #### Indicateurs sans cibles quantitatives     
-Dans le cas où aucune cible quantitative n’a été fournie pour un indicateur donné, le *TCAC*<sub>o</sub> est comparé à un taux de croissance fixe prédéterminé et ce seuil a été fixé à ±1%.  
+Dans le cas où aucune cible quantitative n’a été fournie pour un indicateur donné, le *TCAC*<sub>o</sub> est comparé à un taux de croissance fixe prédéterminé et les seuils ont été fixés à 0%, 0,5% et 1,5%.  
   
 
 <style type="text/css">
