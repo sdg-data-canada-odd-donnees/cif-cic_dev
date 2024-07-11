@@ -139,7 +139,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20240711131914">
+        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20240711161155">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -165,7 +165,7 @@ layout-page
 ">
 <!-- <div class="container"> -->
 
-<script>translations['header'] = {"alpha":"Beta","default_contrast":"Default contrast","disable_high_contrast":"Disable high contrast","disclaimer":"This is a website in development. We welcome your <a href=\"mailto:%email_contacts.suggestions\">feedback</a>.","enable_high_contrast":"Enable high contrast","hide_menu":"Hide navigation menu","high_contrast":"High contrast","internet_explorer_message":"We have detected that you are using Internet Explorer to visit this website. Internet Explorer is now being phased out by Microsoft. As a result, this website no longer supports any version of Internet Explorer. Some features on this site will not work. You should use a modern browser such as Edge, Chrome, Firefox, or Safari. If you have difficulty installing or accessing a different browser, please contact your IT support team.","internet_explorer_message_title":"This internet browser is no longer supported","logo_title":"Go to homepage","show_menu":"Show navigation menu","skip_link":"Skip to main content","tag_line":"17 Goals to Transform our World","toggle_menu":"Menu toggle. Click to expand or collapse the menu.","toggle_search":"Search toggle. Click to expand or collapse the search bar."};</script>
+<script>translations['header'] = {"alpha":"Beta","default_contrast":"Default contrast","disable_high_contrast":"Disable high contrast","disclaimer":"This is a website in development. We welcome your <a href=\"mailto:statcan.sdg-odd.statcan@canada.ca\">feedback</a>. <br><br> <strong>User Notice:</strong> Please note that updates will be applied to the website throughout summer 2024 to implement changes following the Canadian Indicator Framework strategic review. For more information, please consult the FAQ page.","enable_high_contrast":"Enable high contrast","hide_menu":"Hide navigation menu","high_contrast":"High contrast","internet_explorer_message":"We have detected that you are using Internet Explorer to visit this website. Internet Explorer is now being phased out by Microsoft. As a result, this website no longer supports any version of Internet Explorer. Some features on this site will not work. You should use a modern browser such as Edge, Chrome, Firefox, or Safari. If you have difficulty installing or accessing a different browser, please contact your IT support team.","internet_explorer_message_title":"This internet browser is no longer supported","logo_title":"Go to homepage","show_menu":"Show navigation menu","skip_link":"Skip to main content","tag_line":"17 Goals to Transform our World","toggle_menu":"Menu toggle. Click to expand or collapse the menu.","toggle_search":"Search toggle. Click to expand or collapse the search bar."};</script>
 
 <a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
 <div class="container internet-explorer-message">
@@ -178,7 +178,7 @@ layout-page
   <div class="disclaimer-alert">
     <strong class="phase-tag">Beta</strong>
     
-    This is a website in development. We welcome your <a href="mailto:statcan.sdg-odd.statcan@statcan.gc.ca">feedback</a>.
+    This is a website in development. We welcome your <a href="mailto:statcan.sdg-odd.statcan@canada.ca">feedback</a>. <br><br> <strong>User Notice:</strong> Please note that updates will be applied to the website throughout summer 2024 to implement changes following the Canadian Indicator Framework strategic review. For more information, please consult the FAQ page.
     
   </div>
 </div>
@@ -299,12 +299,13 @@ data-event-label="high"
 
 <p><a href="https://www.canada.ca/en/employment-social-development/programs/agenda-2030/moving-forward.html">Moving forward together: Canada’s 2030 Agenda National Strategy</a> sets out an approach to accelerate progress towards meeting the Sustainable Development Goals (SDGs) in Canada, and contribute to their achievement internationally.
 To promote engagement and action, the following five core objectives have been identified:</p>
+
 <ol>
   <li>Fostering leadership, governance and policy coherence</li>
   <li>Raising awareness, engagement and partnerships</li>
   <li>Accountability, transparency, measurement and reporting</li>
   <li>Reconciliation with Indigenous Peoples and the 2030 Agenda</li>
-  <li>Investing in the SDGs 
+  <li>Investing in the SDGs
 The Canadian Indicator Framework and the Data hub provides the measurement and reporting necessary to the ensure accountability and transparency crucial to monitor progress towards the achievement of the 17 Goals and 30 Canadian ambitions.</li>
 </ol>
 
@@ -328,6 +329,10 @@ The Canadian Indicator Framework and the Data hub provides the measurement and r
 <h2 id="can-other-countries-copy-this-website">Can other countries copy this website?</h2>
 
 <p>Yes. This site is built using the <a href="https://open-sdg.org/">Open SDG platform</a>, which is an open source, free-to-reuse platform for managing and publishing data and statistics related to the UN Sustainable Development Goals (SDGs). See the <a href="https://open-sdg.readthedocs.io/en/latest/quick-start/">Open SDG Quick Start guide</a> for technical instructions on the quickest way to get a copy of the Open SDG platform up and running. Countries and localities exploring how to report their own SDGs data can also get support from the <a href="http://www.opendataenterprise.org/">Center for Open Data Enterprise (CODE)</a> through their <a href="https://www.sdgreporting.org/">SDG National Reporting Initiative</a>.</p>
+
+<h2 id="what-is-the-canadian-indicator-framework-strategic-review">What is the Canadian Indicator Framework Strategic Review?</h2>
+
+<p>Strategic Reviews of the Canadian Indicator Framework occur every three years following the implementation of the framework in 2021. Their purpose is to ensure the continued relevance of the ambitions, targets and indicators while ensuring the alignment of the Canadian Indicator Framework to other related frameworks. As such, strategic reviews will not substantially alter the scope, intent and coherence of the original indicator framework.</p>
 
 
 
@@ -438,12 +443,12 @@ ga('send', 'pageview');
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/cif-cic_dev/assets/js/sdg.js?v=20240711131914'></script>
+<script src='/cif-cic_dev/assets/js/sdg.js?v=20240711161155'></script>
 
 
     
     
-    <script src="/cif-cic_dev/assets/js/custom.js?v=20240711131914"></script><script>
+    <script src="/cif-cic_dev/assets/js/custom.js?v=20240711161155"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
