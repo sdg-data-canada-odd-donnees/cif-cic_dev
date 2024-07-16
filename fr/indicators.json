@@ -678,14 +678,6 @@
           "status": "complete"
         },
         {
-          "id": "16-2-1",
-          "title": "Indice de gravité de la criminalité",
-          "description": "L'Indice de gravité de la criminalité (IGC) mesure les variations dans le niveau de gravité de la criminalité au Canada d'une année à l'autre. L'Indice de gravité de la criminalité comprend toutes les infractions au Code criminel, y compris les délits de la route, ainsi que les infractions relatives aux drogues et toutes les infractions à des lois fédérales.",
-          "keywords": "",
-          "href": "/cif-cic_dev/fr/16-2-1/",
-          "status": "complete"
-        },
-        {
           "id": "16-3-1",
           "title": "Incidence de certains types de crime",
           "description": "Cet indicateur mesure le taux d'incidence de certains types de crimes.",

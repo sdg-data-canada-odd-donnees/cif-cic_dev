@@ -678,14 +678,6 @@
           "status": "complete"
         },
         {
-          "id": "16-2-1",
-          "title": "Crime severity index",
-          "description": "The Crime Severity Index (CSI) measures changes in the level of severity of police-reported crime in Canada from year to year. The crime severity index includes all Criminal Code violations including traffic, as well as drug violations and all Federal Statutes.",
-          "keywords": "",
-          "href": "/cif-cic_dev/16-2-1/",
-          "status": "complete"
-        },
-        {
           "id": "16-3-1",
           "title": "Incidence of selected types of crime",
           "description": "This indicator measures the incidence rate of selected types of crime.",
