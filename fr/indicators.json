@@ -87,8 +87,8 @@
         },
         {
           "id": "3-3-1",
-          "title": "Pourcentage de la population vivant avec de l’embonpoint ou de l’obésité",
-          "description": "Cet indicateur mesure le pourcentage de la population vivant avec de l’embonpoint ou de l’obésité selon l'indice de masse corporelle mesuré (IMC). L'indice de masse corporelle (IMC) est calculée en divisant le poids du répondant (exprimé en kilogramme) par le carré de la taille (exprimée en mètres).",
+          "title": "Proportion de la population vivant avec l'obésité",
+          "description": "Cet indicateur mesure la proportion de la population vivant avec l'obésité selon l'indice de masse corporelle mesuré (IMC). L'indice de masse corporelle (IMC) est calculée en divisant le poids du répondant (exprimé en kilogramme) par le carré de la taille (exprimée en mètres).",
           "keywords": "women, gender",
           "href": "/cif-cic_dev/fr/3-3-1/",
           "status": "complete"
@@ -678,19 +678,19 @@
           "status": "complete"
         },
         {
-          "id": "16-3-1",
+          "id": "16-2-1",
           "title": "Incidence de certains types de crime",
           "description": "Cet indicateur mesure le taux d'incidence de certains types de crimes.",
           "keywords": "",
-          "href": "/cif-cic_dev/fr/16-3-1/",
+          "href": "/cif-cic_dev/fr/16-2-1/",
           "status": "complete"
         },
         {
-          "id": "16-4-1",
+          "id": "16-3-1",
           "title": "Incidence de cybercrimes",
-          "description": "Cet indicateur mesure le nombre d'infractions reliée à la cybercriminalité.",
+          "description": "Cet indicateur mesure le taux de cybercrimes pour 100 000 habitants.",
           "keywords": "",
-          "href": "/cif-cic_dev/fr/16-4-1/",
+          "href": "/cif-cic_dev/fr/16-3-1/",
           "status": "complete"
         },
         {

@@ -87,7 +87,7 @@
         },
         {
           "id": "3-3-1",
-          "title": "Percentage of the population that is overweight or obese",
+          "title": "Proportion of the population living with obesity",
           "description": "This indicator measures the percentage of the population that is overweight or obese. The indicator uses the body mass index (BMI) which is calculated by dividing the respondent's body weight (in kilograms) by their height (in metres) squared.",
           "keywords": "women, gender",
           "href": "/cif-cic_dev/3-3-1/",
@@ -678,19 +678,19 @@
           "status": "complete"
         },
         {
-          "id": "16-3-1",
+          "id": "16-2-1",
           "title": "Incidence of selected types of crime",
           "description": "This indicator measures the incidence rate of selected types of crime.",
           "keywords": "",
-          "href": "/cif-cic_dev/16-3-1/",
+          "href": "/cif-cic_dev/16-2-1/",
           "status": "complete"
         },
         {
-          "id": "16-4-1",
+          "id": "16-3-1",
           "title": "Incidence of cyber-crime",
-          "description": "This indicator measures the number of cyber-related violations.",
+          "description": "This indicator measures the rate of cyber-crimes per 100,000 population.",
           "keywords": "",
-          "href": "/cif-cic_dev/16-4-1/",
+          "href": "/cif-cic_dev/16-3-1/",
           "status": "complete"
         },
         {
