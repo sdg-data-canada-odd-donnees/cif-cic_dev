@@ -95,9 +95,9 @@
         },
         {
           "id": "3-4-1",
-          "title": "Prévalence de la consommation abusive d’alcool",
-          "description": "Cet indicateur mesure la prévalence de la consommation abusive d’alcool. Par consommation abusive d'alcool, on entend les hommes qui ont déclaré avoir bu cinq verres d'alcool, ou les femmes ayant déclaré avoir bu quatre verres d'alcool, en une même occasion, au moins une fois par mois au cours de la dernière année.",
-          "keywords": "women, gender",
+          "title": "Consommation d'alcool par habitant (âgé de 15 ans et plus) au cours d'une année civile, en litres d'alcool pur",
+          "description": "La recherche montre que la consommation par habitant est corrélée à la mortalité, à la charge de morbidité et à d'autres méfaits de l'alcool. Les ventes par habitant sont un indicateur indirect approprié pour la consommation par habitant. Un changement dans le volume des ventes (augmentation ou diminution) refléterait un changement similaire dans le volume de la consommation.",
+          "keywords": "alcohol, consumption",
           "href": "/cif-cic_dev/fr/3-4-1/",
           "status": "complete"
         },
@@ -166,11 +166,19 @@
           "status": "complete"
         },
         {
-          "id": "3-13-1",
-          "title": "Prévalence de la consommation de cigarettes",
-          "description": "Cet indicateur mesure le pourcentage des Canadiens qui fument actuellement, tous les jours ou à l'occasion.",
-          "keywords": "women, gender",
-          "href": "/cif-cic_dev/fr/3-13-1/",
+          "id": "3-14-1",
+          "title": "Pourcentage des Canadiens (âgés de 18 ans et plus) qui fument actuellement des cigarettes",
+          "description": "Cet indicateur mesure le pourcentage de Canadiens qui fument actuellement des cigarettes.",
+          "keywords": "cigarette, smoking",
+          "href": "/cif-cic_dev/fr/3-14-1/",
+          "status": "complete"
+        },
+        {
+          "id": "3-15-1",
+          "title": "Proportion de personnes ayant des besoins de soins de santé non satisfaits",
+          "description": "Cet indicateur mesure la proportion de personnes ayant des besoins de soins de santé non satisfaits.",
+          "keywords": "santé",
+          "href": "/cif-cic_dev/fr/3-15-1/",
           "status": "complete"
         }]
     }
