@@ -103,66 +103,74 @@
         },
         {
           "id": "3-5-1",
-          "title": "Percentage of Canadians who are satisfied or very satisfied with their life",
-          "description": "This indicator measures the percentage of the population aged 12 and over who reported being satisfied or very satisfied with their life in general.",
-          "keywords": "women, gender",
+          "title": "Proportion of Canadians meeting the 2020 Canadian physical activity guidelines",
+          "description": "This indicator measures the proportion of Canadians meeting the 2020 Canadian physical activity guidelines.",
+          "keywords": "physical, activity",
           "href": "/cif-cic_dev/3-5-1/",
           "status": "complete"
         },
         {
           "id": "3-6-1",
-          "title": "Percentage of Canadians who perceived their overall health and social well-being as very good to excellent",
-          "description": "This indicator measures the percentage of Canadians aged 12 and over who reported perceiving their own health status as being either excellent or very good or fair or poor. Perceived health refers to the perception of a person's health in general, either by the person himself or herself, or, in the case of proxy response, by the person responding. Health means not only the absence of disease or injury but also physical, mental and social well-being.",
+          "title": "Percentage of Canadians who are satisfied or very satisfied with their life",
+          "description": "This indicator measures the percentage of the population aged 12 and over who reported being satisfied or very satisfied with their life in general.",
           "keywords": "women, gender",
           "href": "/cif-cic_dev/3-6-1/",
           "status": "complete"
         },
         {
           "id": "3-7-1",
-          "title": "Percentage of Canadians who perceived their mental health as very good to excellent",
-          "description": "This indicator measures the percentage of the population who perceived their mental health as very good to excellent. Perceived mental health refers to the perception of a person's mental health in general.",
+          "title": "Percentage of Canadians who perceived their overall health as very good to excellent",
+          "description": "This indicator measures the percentage of Canadians aged 12 and over who reported perceiving their own health status as being either excellent or very good or fair or poor. Perceived health refers to the perception of a person's health in general, either by the person himself or herself, or, in the case of proxy response, by the person responding. Health means not only the absence of disease or injury but also physical, mental and social well-being.",
           "keywords": "women, gender",
           "href": "/cif-cic_dev/3-7-1/",
           "status": "complete"
         },
         {
           "id": "3-8-1",
-          "title": "Vaccination rates for selected diseases",
-          "description": "This indicator measures the childhood vaccination rates for selected diseases. The Public Health Agency of Canada routinely monitors childhood vaccination coverage in Canada through the childhood National Immunization Coverage Survey.",
+          "title": "Percentage of Canadians who perceived their mental health as very good to excellent",
+          "description": "This indicator measures the percentage of the population who perceived their mental health as very good to excellent. Perceived mental health refers to the perception of a person's mental health in general.",
           "keywords": "women, gender",
           "href": "/cif-cic_dev/3-8-1/",
           "status": "complete"
         },
         {
           "id": "3-9-1",
-          "title": "Incidence of selected diseases",
-          "description": "This indicator measures the incidence of 10 selected diseases. This refers to the rate incidence of a specific disease per 100,000 population.",
-          "keywords": "",
+          "title": "Vaccination rates for selected diseases",
+          "description": "This indicator measures the childhood vaccination rates for selected diseases. The Public Health Agency of Canada routinely monitors childhood vaccination coverage in Canada through the childhood National Immunization Coverage Survey.",
+          "keywords": "women, gender",
           "href": "/cif-cic_dev/3-9-1/",
           "status": "complete"
         },
         {
           "id": "3-10-1",
-          "title": "Mortality rate for selected causes of death",
-          "description": "This indicator measures the age-specific mortality rate for selected diseases. The age-specific mortality rate represents the number of deaths in a particular age group during a given year per 100,000 population in the same age group of the same year.",
-          "keywords": "women, gender",
+          "title": "Incidence of selected diseases",
+          "description": "This indicator measures the incidence of 10 selected diseases. This refers to the rate incidence of a specific disease per 100,000 population.",
+          "keywords": "",
           "href": "/cif-cic_dev/3-10-1/",
           "status": "complete"
         },
         {
           "id": "3-11-1",
-          "title": "Tuberculosis incidence per 100,000 population in Inuit Nunangat",
-          "description": "This indicator measures the Tuberculosis incidence rate per 100,000 population in Inuit Nunangat.",
-          "keywords": "Indigenous",
+          "title": "Mortality rate for selected causes of death",
+          "description": "This indicator measures the age-specific mortality rate for selected diseases. The age-specific mortality rate represents the number of deaths in a particular age group during a given year per 100,000 population in the same age group of the same year.",
+          "keywords": "women, gender",
           "href": "/cif-cic_dev/3-11-1/",
           "status": "complete"
         },
         {
           "id": "3-12-1",
-          "title": "Incidence of opioid and stimulant overdose related harms",
-          "description": "<p>This indicator measures the incidence of opioid and stimulant overdose related harms. More specifically, it measures the incidence of: <br><br> 1. apparent opioid and stimulant toxicity deaths;<br> 2. opioid-related and stimulant-related poisoning hospitalizations; and<br> 3. Emergency Medical Services (EMS) responses to suspected opioid overdoses</p>",
-          "keywords": "",
+          "title": "Tuberculosis incidence per 100,000 population in Inuit Nunangat",
+          "description": "This indicator measures the Tuberculosis incidence rate per 100,000 population in Inuit Nunangat.",
+          "keywords": "Indigenous",
           "href": "/cif-cic_dev/3-12-1/",
+          "status": "complete"
+        },
+        {
+          "id": "3-13-1",
+          "title": "Incidence of opioid and stimulant overdose related harms",
+          "description": "<p>This indicator measures the Rate of apparent opioid toxicity deaths per 100,000 population.</p>",
+          "keywords": "",
+          "href": "/cif-cic_dev/3-13-1/",
           "status": "complete"
         },
         {
