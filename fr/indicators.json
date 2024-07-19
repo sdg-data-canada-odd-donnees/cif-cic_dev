@@ -327,16 +327,16 @@
         },
         {
           "id": "7-2-1",
-          "title": "Consommation totale d’énergie par habitant",
-          "description": "Cet indicateur mesure la consommation de différents types d'énergie, en térajoules ou en térajoules par habitant.",
+          "title": "Proportion de l’électricité produite à partir de sources renouvelables et autres sources non émettrices de gaz à effet de serre",
+          "description": "Cet indicateur mesure la proportion d’électricité qui est produite à partir de sources renouvelables et non émettrices de gaz à effet de serre, ce qui comprend l'énergie produite par les turbines hydrauliques, solaires, marémotrices, éoliennes, les turbines à vapeur nucléaires et toute l'électricité produite à partir de la biomasse.",
           "keywords": "",
           "href": "/cif-cic_dev/fr/7-2-1/",
           "status": "complete"
         },
         {
           "id": "7-3-1",
-          "title": "Proportion de l’électricité produite à partir de sources renouvelables et non émettrices de gaz à effet de serre",
-          "description": "Cet indicateur mesure la proportion d’électricité qui est produite à partir de sources renouvelables et non émettrices de gaz à effet de serre, ce qui comprend l'énergie produite par les turbines hydrauliques, solaires, marémotrices, éoliennes, les turbines à vapeur nucléaires et toute l'électricité produite à partir de la biomasse.",
+          "title": "Consommation totale d’énergie par habitant",
+          "description": "Cet indicateur mesure la consommation de différents types d'énergie, en térajoules ou en térajoules par habitant.",
           "keywords": "",
           "href": "/cif-cic_dev/fr/7-3-1/",
           "status": "complete"
@@ -663,18 +663,26 @@
         },
         {
           "id": "15-3-1",
-          "title": "Proportion d’aires terrestres (terres et eaux douces) conservées",
-          "description": "Cet indicateur mesure la proportion d’aires terrestres (terres et eaux douces) conservées. Les aires conservées sont des terres et des eaux dont l'utilisation est restreinte. Elles comprennent les aires protégées, ainsi que les autres mesures de conservation efficaces par zone. <em>Environnement et Changement climatique Canada (ECCC)</em>",
+          "title": "Indice des espèces canadiennes",
+          "description": "<p>L'Indice des espèces canadiennes représente la variation proportionnelle moyenne de l'abondance des populations d'espèces de vertébrés au Canada depuis 1970. L'indice correspond à une « moyenne des tendances », plutôt qu'à une mesure des changements dans le nombre total d'animaux : chaque espèce, commune ou rare, a le même effet sur l'indice. <br><br>Les populations d'animaux sauvages dépendent d'habitats sains et sont susceptibles de subir les effets négatifs de menaces telles que la pollution, la dégradation d'habitat ou la chasse excessive. Les tendances dans les populations animales peuvent indiquer la santé de la biodiversité et des écosystèmes au Canada. <em>Environnement et Changement climatique Canada (ECCC)</em></p>",
           "keywords": "",
           "href": "/cif-cic_dev/fr/15-3-1/",
           "status": "complete"
         },
         {
-          "id": "15-5-1",
+          "id": "15-4-1",
+          "title": "Proportion d’aires terrestres (terres et eaux douces) conservées",
+          "description": "Cet indicateur mesure la proportion d’aires terrestres (terres et eaux douces) conservées. Les aires conservées sont des terres et des eaux dont l'utilisation est restreinte. Elles comprennent les aires protégées, ainsi que les autres mesures de conservation efficaces par zone. <em>Environnement et Changement climatique Canada (ECCC)</em>",
+          "keywords": "",
+          "href": "/cif-cic_dev/fr/15-4-1/",
+          "status": "complete"
+        },
+        {
+          "id": "15-6-1",
           "title": "Surface des zones forestières en proportion de la surface terrestre",
           "description": "Cet indicateur mesure la surface des zones forestières en proportion de la surface terrestre. La superficie forestière est un indicateur de base de la durabilité qu’il est important de surveiller de près, en particulier dans les régions où la superficie forestière est en train de disparaître. <em>(RNCan)</em>",
           "keywords": "",
-          "href": "/cif-cic_dev/fr/15-5-1/",
+          "href": "/cif-cic_dev/fr/15-6-1/",
           "status": "complete"
         }]
     }
