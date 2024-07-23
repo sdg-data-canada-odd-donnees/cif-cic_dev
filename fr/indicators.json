@@ -407,8 +407,8 @@
         
         {
           "id": "9-1-1",
-          "title": "Proportion des innovations dans les technologies liées à l’environnement",
-          "description": "Cet indicateur mesure la proportion de brevets dans les technologies liées à l’environnement par rapport au nombre total de brevets.",
+          "title": "Proportion des entreprises ayant introduit des innovations offrant des avantages pour l’environnement",
+          "description": "Cet indicateur mesure la proportion des entreprises ayant introduit des innovations offrant des avantages pour l’environnement. Une innovation désigne un produit ou un processus (ou une combinaison des deux) nouveau ou amélioré qui diffère sensiblement des produits ou processus précédents d'une unité et a été mis à la disposition d'utilisateurs potentiels (produit) ou mis en oeuvre par l'unité (processus).",
           "keywords": "",
           "href": "/cif-cic_dev/fr/9-1-1/",
           "status": "complete"
