@@ -144,7 +144,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20240724014146">
+        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20240724194553">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -323,7 +323,7 @@ layout-indicator-iframe
   data-indicatorid='indicator_3-3-1'
   data-id="3-3-1"
   data-country="Canada"
-  data-charttitle="Embonpoint et obésité selon l'indice de masse corporelle mesuré"
+  data-charttitle="Obésité selon l'indice de masse corporelle mesuré"
   data-charttitles="null"
   data-measurementunit="Pourcentage"
   data-xaxislabel=""
@@ -332,14 +332,14 @@ layout-indicator-iframe
   data-graphtypes="null"
   data-geocoderegex=""
   data-showmap="false"
-  data-startvalues="[{&quot;field&quot;:&quot;Géographie&quot;,&quot;value&quot;:&quot;Canada&quot;},{&quot;field&quot;:&quot;Mesures&quot;,&quot;value&quot;:&quot;Embonpoint&quot;},{&quot;field&quot;:&quot;Mesures&quot;,&quot;value&quot;:&quot;Obèse&quot;},{&quot;field&quot;:&quot;Sexe&quot;,&quot;value&quot;:&quot;Les deux sexes&quot;},{&quot;field&quot;:&quot;Groupe d'âge&quot;,&quot;value&quot;:&quot;5 à 79 ans&quot;}]"
+  data-startvalues="null"
   data-graphlimits="null"
   data-stackeddisaggregation=""
   data-graphannotations="null"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Année&quot;},{&quot;name&quot;:&quot;data.Geography&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Canada&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Géographie&quot;},{&quot;name&quot;:&quot;data.Measures&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Embonpoint&quot;,&quot;Obèse&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Mesures&quot;},{&quot;name&quot;:&quot;data.Sex&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Les deux sexes&quot;,&quot;Hommes&quot;,&quot;Femmes&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Sexe&quot;},{&quot;name&quot;:&quot;data.Age group&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;5 à 79 ans&quot;,&quot;5 à 17 ans&quot;,&quot;5 à 11 ans&quot;,&quot;12 à 17 ans&quot;,&quot;18 à 79 ans&quot;,&quot;18 à 39 ans&quot;,&quot;40 à 59 ans&quot;,&quot;60 à 79 ans&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Groupe d'âge&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Valeur&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Année&quot;},{&quot;name&quot;:&quot;Sex&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Les deux sexes&quot;,&quot;Hommes&quot;,&quot;Femmes&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Sexe&quot;},{&quot;name&quot;:&quot;Age group&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;5 à 17 ans&quot;,&quot;5 à 11 ans&quot;,&quot;12 à 17 ans&quot;,&quot;18 à 79 ans&quot;,&quot;18 à 39 ans&quot;,&quot;40 à 59 ans&quot;,&quot;60 à 79 ans&quot;,&quot;5 à 79 ans&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Groupe d'âge&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Valeur&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="null"
   data-proxy=""
@@ -374,15 +374,119 @@ layout-indicator-iframe
   <div id="datatables">
 
     
+    <a role="button" href="https://sdg-data-canada-odd-donnees.github.io/cif-data-donnees-cic/fr/headline/3-3-1.csv" class="btn btn-primary btn-download" download="indicator_3-3-1.csv" tabindex="0" role="button">Télécharger Headline CSV</a>
+    
     <a role="button" href="https://sdg-data-canada-odd-donnees.github.io/cif-data-donnees-cic/fr/data/3-3-1.csv" class="btn btn-primary btn-download" download='indicator_3-3-1.csv' tabindex='0' role='button'>Télécharger toutes les données (CSV)</a>
 
     <p class="no-js-disaggregation-hint">Télécharger le CSV source pour les désagrégations</p>
 
     
-    <h3>Aucune donnée principale disponible</h3>
+    <h3>Données d'en-tête</h3>
+    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
+      <caption>Obésité selon l'indice de masse corporelle mesuré</caption>
+      <thead>
+        
+        
+        <th scope="col">Year</th>
+        
+        
+        
+        <th scope="col" class="table-value">Value</th>
+        
+        
+      </thead>
+      <tbody>
+        
+        <tr>
+          
+          
+          <td>2009</td>
+          
+          
+          
+          <td class="table-value">22.4</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2011</td>
+          
+          
+          
+          <td class="table-value">23.8</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td class="table-value">24.2</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td class="table-value">25.7</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td class="table-value">24.4</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td class="table-value">22.1</td>
+          
+          
+        </tr>
+        
+      </tbody>
+    </table>
     
   </div>
 
+  
+  <div id="datatableFooter">
+    
+    <p>Source(s): Statistique Canada</p>
+    
+    
+    <p>Zone géographique: Canada</p>
+    
+    
+    <p>Unité de mesure: Pourcentage</p>
+    
+    
+  </div>
   
 
 </div>
@@ -466,7 +570,7 @@ data-event-label="Change to Table tab"
       <figure role="group">
         <div id="chart-canvas">
           <h4 id="chart-heading" class="chart-title">
-            Embonpoint et obésité selon l'indice de masse corporelle mesuré
+            Obésité selon l'indice de masse corporelle mesuré
           </h4>
           <div id="chart" class="plot-container">
             <canvas
@@ -1241,12 +1345,12 @@ ga('send', 'pageview');
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/cif-cic_dev/assets/js/sdg.js?v=20240724014146'></script>
+<script src='/cif-cic_dev/assets/js/sdg.js?v=20240724194553'></script>
 
 
     
     
-    <script src="/cif-cic_dev/assets/js/custom.js?v=20240724014146"></script><script>
+    <script src="/cif-cic_dev/assets/js/custom.js?v=20240724194553"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
