@@ -104,7 +104,7 @@
         {
           "id": "3-5-1",
           "title": "Proportion des Canadiens qui rencontre les Directives canadiennes en matière d'activité physique 2020",
-          "description": "Cet indicateur measure la proportion des Canadiens qui rencontre les Directives canadiennes en matière d'activité physique 2020.",
+          "description": "Cet indicateur measure la proportion des Canadiens qui rencontre les Directives canadiennes en matière d'activité physique 2020. <br><br> Les directives canadiennes en matière de mouvement sur 24 heures pour les 5 à 17 ans consistent de faire en moyenne au moins 60 minutes d'activité physique d'intensité modérée à élevée chaque jour. <br><br> Les directives canadiennes en matière de mouvement sur 24 heures pour les adultes de 18 à 79 ans consistent de faire au moins 150 minutes d'activité physique aérobie d'intensité modérée à élevée par semaine. <br><br> Les classifications sont tirées de la Société canadienne de physiologie de l'exercice, Directives canadiennes en matière de mouvement sur 24 heures, Ottawa, ON, 2020. <a href='https://csepguidelines.ca/fr/'>https://csepguidelines.ca/fr/</a>",
           "keywords": "physical, activity",
           "href": "/cif-cic_dev/fr/3-5-1/",
           "status": "complete"
