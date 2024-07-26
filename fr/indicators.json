@@ -168,7 +168,7 @@
         {
           "id": "3-13-1",
           "title": "Taux de décès apparemment liés à la toxicité des opioïdes par 100 000 habitants",
-          "description": "<p>Cet indicateur mesure le taux de décès apparemment liés à la toxicité des opioïdes par 100 000 habitants.</p> <br> Décès apparemment lié à une intoxication aux opioïdes : Un décès causé par intoxication (empoisonnement) ou la toxicité d'une substance consommée, lorsqu'une ou plusieurs des substances en cause(s) sont des opioïdes, peu importe la façon dont elles ont été obtenues (p. ex. illégalement ou sur ordonnance). D’autres substances peuvent également être impliquées.",
+          "description": "Cet indicateur mesure le taux de décès apparemment liés à la toxicité des opioïdes par 100 000 habitants. <br><br> Décès apparemment lié à une intoxication aux opioïdes : Un décès causé par intoxication (empoisonnement) ou la toxicité d'une substance consommée, lorsqu'une ou plusieurs des substances en cause(s) sont des opioïdes, peu importe la façon dont elles ont été obtenues (p. ex. illégalement ou sur ordonnance). D’autres substances peuvent également être impliquées.",
           "keywords": "",
           "href": "/cif-cic_dev/fr/3-13-1/",
           "status": "complete"
