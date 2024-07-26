@@ -167,8 +167,8 @@
         },
         {
           "id": "3-13-1",
-          "title": "Incidence of opioid and stimulant overdose related harms",
-          "description": "<p>This indicator measures the Rate of apparent opioid toxicity deaths per 100,000 population.</p>",
+          "title": "Rate of apparent opioid toxicity deaths per 100,000 population",
+          "description": "<p>This indicator measures the Rate of apparent opioid toxicity deaths per 100,000 population.</p> <br><br> Apparent opioid toxicity death (AOTD): A death caused by intoxication/toxicity (poisoning) resulting from substance use, where one or more of the substances is an opioid, regardless of how it was obtained (e.g. illegally or through personal prescription). Other substances may also be involved.",
           "keywords": "",
           "href": "/cif-cic_dev/3-13-1/",
           "status": "complete"
