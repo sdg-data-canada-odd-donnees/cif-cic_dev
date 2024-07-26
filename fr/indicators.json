@@ -168,7 +168,7 @@
         {
           "id": "3-13-1",
           "title": "Taux de décès apparemment liés à la toxicité des opioïdes par 100 000 habitants",
-          "description": "<p>Cet indicateur mesure le taux de décès apparemment liés à la toxicité des opioïdes par 100 000 habitants.</p> <br><br> Décès apparemment lié à une intoxication aux opioïdes : Un décès causé par intoxication (empoisonnement) ou la toxicité d'une substance consommée, lorsqu'une ou plusieurs des substances en cause(s) sont des opioïdes, peu importe la façon dont elles ont été obtenues (p. ex. illégalement ou sur ordonnance). D’autres substances peuvent également être impliquées.",
+          "description": "<p>Cet indicateur mesure le taux de décès apparemment liés à la toxicité des opioïdes par 100 000 habitants.</p> <br> Décès apparemment lié à une intoxication aux opioïdes : Un décès causé par intoxication (empoisonnement) ou la toxicité d'une substance consommée, lorsqu'une ou plusieurs des substances en cause(s) sont des opioïdes, peu importe la façon dont elles ont été obtenues (p. ex. illégalement ou sur ordonnance). D’autres substances peuvent également être impliquées.",
           "keywords": "",
           "href": "/cif-cic_dev/fr/3-13-1/",
           "status": "complete"
@@ -319,7 +319,7 @@
         
         {
           "id": "7-1-1",
-          "title": "Économies d'énergie annuelles totales provenant de l'adoption des codes, normes et pratiques en matière d'efficacité énergétique",
+          "title": "Économies d’énergie annuelles totales découlant de l’adoption de codes, de normes et de pratiques d’efficacité énergétique",
           "description": "Cet indicateur mesure les économies d’énergie annuelles totales découlant de l’adoption de codes, de normes et de pratiques d’efficacité énergétique.",
           "keywords": "",
           "href": "/cif-cic_dev/fr/7-1-1/",
