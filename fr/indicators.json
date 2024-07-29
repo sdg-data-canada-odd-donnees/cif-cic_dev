@@ -238,35 +238,35 @@
           "status": "complete"
         },
         {
-          "id": "5-1-2",
+          "id": "5-2-1",
           "title": "Proportion de femmes et filles âgées de 15 ans et plus ayant été assujetties à de la violence physique, sexuelle ou psychologique par leur partenaire intime actuel ou un ancien partenaire intime dans les 12 derniers mois",
           "description": "Cet indicateur mesure la proportion de femmes et filles âgées de 15 et plus ayant été assujetties à de la violence physique, sexuelle ou psychologique par leur partenaire intime actuel ou un ancien partenaire intime dans les 12 derniers mois. La violence entre partenaires intimes (VPI) englobe un large éventail de comportements, qui vont de la violence psychologique et de l’exploitation financière aux agressions physiques et sexuelles.",
           "keywords": "women, gender, Indigenous",
-          "href": "/cif-cic_dev/fr/5-1-2/",
-          "status": "complete"
-        },
-        {
-          "id": "5-2-1",
-          "title": "Proportion de rôles de leadership tenus par des femmes",
-          "description": "Cet indicateur mesure la proportion de rôles de leadership exercés par des femmes. Les rôles de leadership choisis incluent les femmes élues au Parlement national, les ministres nommées au sein du Cabinet fédéral, les juges nommées par le gouvernement fédéral ainsi que d’autres rôles de leadership.",
-          "keywords": "femme, genre",
           "href": "/cif-cic_dev/fr/5-2-1/",
           "status": "complete"
         },
         {
           "id": "5-3-1",
-          "title": "Proportion du temps consacré à des soins et travaux domestiques non rémunérés",
-          "description": "Cet indicateur mesure la proportion du temps consacré à des soins et travaux domestiques non rémunérés. Les activités de soins et de travaux domestiques non rémunérés comprennent les tâches domestiques, les soins à un enfant du ménage de moins de 18 ans ou adulte du ménage ainsi que le magasinage de biens ou de services.",
-          "keywords": "women, gender",
+          "title": "Proportion de rôles de leadership tenus par des femmes",
+          "description": "Cet indicateur mesure la proportion de rôles de leadership exercés par des femmes. Les rôles de leadership choisis incluent les femmes élues au Parlement national, les ministres nommées au sein du Cabinet fédéral, les juges nommées par le gouvernement fédéral ainsi que d’autres rôles de leadership.",
+          "keywords": "femme, genre",
           "href": "/cif-cic_dev/fr/5-3-1/",
           "status": "complete"
         },
         {
           "id": "5-4-1",
+          "title": "Proportion du temps consacré à des soins et travaux domestiques non rémunérés",
+          "description": "Cet indicateur mesure la proportion du temps consacré à des soins et travaux domestiques non rémunérés. Les activités de soins et de travaux domestiques non rémunérés comprennent les tâches domestiques, les soins à un enfant du ménage de moins de 18 ans ou adulte du ménage ainsi que le magasinage de biens ou de services.",
+          "keywords": "women, gender",
+          "href": "/cif-cic_dev/fr/5-4-1/",
+          "status": "complete"
+        },
+        {
+          "id": "5-5-1",
           "title": "Ratio du salaire horaire médian",
           "description": "Cet indicateur mesure le ratio du salaire horaire médian entre homme et femme. Il peut être interprété comme la proportion d'un dollar gagné par une femme pour chaque dollar gagné par un homme.",
           "keywords": "femmes, genre",
-          "href": "/cif-cic_dev/fr/5-4-1/",
+          "href": "/cif-cic_dev/fr/5-5-1/",
           "status": "complete"
         }]
     }
