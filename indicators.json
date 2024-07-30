@@ -263,7 +263,7 @@
         },
         {
           "id": "5-5-1",
-          "title": "Median hourly wage ratio",
+          "title": "Median hourly gender wage ratio",
           "description": "This indicator measures the gender wage ratio. The gender wage ratio can be interpreted as the proportion of a dollar that women earn for every dollar earned by men.",
           "keywords": "women, gender",
           "href": "/cif-cic_dev/5-5-1/",
@@ -720,7 +720,7 @@
         {
           "id": "16-4-1",
           "title": "Civil Court case completion time",
-          "description": "This indicator measures the time elapsed from the initiation of a civil court case to its first disposition.",
+          "description": "This indicator measures the time elapsed from the initiation of a civil court case to its first disposition. <br><br> A disposition is a court event that disposes part or all of the civil case (settlement, consent judgment and judgment). A general civil case is any civil action that is not a family-related action, such as contracts, torts, bankruptcy, probate matters, and other claims involving money. Family cases are cases involving family law-related issues, including child protection, divorce, separation, custody and access, division of property, support, and adoption.",
           "keywords": "",
           "href": "/cif-cic_dev/16-4-1/",
           "status": "complete"

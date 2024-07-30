@@ -263,7 +263,7 @@
         },
         {
           "id": "5-5-1",
-          "title": "Ratio du salaire horaire médian",
+          "title": "Ratio du salaire horaire médian entre homme et femme",
           "description": "Cet indicateur mesure le ratio du salaire horaire médian entre homme et femme. Il peut être interprété comme la proportion d'un dollar gagné par une femme pour chaque dollar gagné par un homme.",
           "keywords": "femmes, genre",
           "href": "/cif-cic_dev/fr/5-5-1/",
@@ -720,7 +720,7 @@
         {
           "id": "16-4-1",
           "title": "Durée de traitement des causes devant les tribunaux civils",
-          "description": "Cet indicateur mesure la durée de traitement des causes devant les tribunaux civils selon le nombre de jours nécessaire pour régler la cause entre son introduction et le premier évènement lié au règlement.",
+          "description": "Cet indicateur mesure la durée de traitement des causes devant les tribunaux civils selon le nombre de jours nécessaire pour régler la cause entre son introduction et le premier évènement lié au règlement. <br><br> Un type de règlement est un événement judiciaire qui règle partiellement ou entièrement la cause civile. Il peut s'agir, par exemple, d'un règlement, d'un jugement par consentement ou d'un jugement. Une affaire civile générale correspond à toute action civile qui n'est pas liée à la famille, comme un différend relatif à un contrat, un délit civil, une faillite, une succession ou d'autres réclamations financières. Les affaires familiales portent sur des questions liées au droit de la famille comme la protection des enfants, le divorce, la séparation, la garde et le droit de visite, la répartition des biens, la pension alimentaire, et l'adoption.",
           "keywords": "",
           "href": "/cif-cic_dev/fr/16-4-1/",
           "status": "complete"
