@@ -184,7 +184,7 @@
         {
           "id": "3-15-1",
           "title": "Proportion de personnes ayant des besoins de soins de santé non satisfaits",
-          "description": "Cet indicateur mesure la proportion de personnes ayant des besoins de soins de santé non satisfaits.",
+          "description": "Cet indicateur mesure la proportion de personnes ayant des besoins de soins de santé non satisfaits. <br><br> Des besoins de soins de santé non satisfaits réfèrent à la perception d'une personne d'avoir besoin de soins de santé ou non au cours des 12 derniers mois sans les avoir reçus.",
           "keywords": "santé",
           "href": "/cif-cic_dev/fr/3-15-1/",
           "status": "complete"
@@ -296,7 +296,7 @@
         {
           "id": "6-3-1",
           "title": "Taux de croissance de l’utilisation de l’eau",
-          "description": "Cet indicateur mesure le taux de croissance de l’utilisation de l’eau pour les ménages et pour plusieurs secteurs de l'économie. L'utilisation de l'eau comprend la consommation d'eau sous forme d'intrants naturels et d'eau fournie par les systèmes municipaux de distribution d'eau ou les systèmes d'irrigation par les industries, les administrations publiques, les institutions et les ménages.",
+          "description": "Cet indicateur mesure le taux de croissance de l’utilisation de l’eau pour les ménages et pour plusieurs secteurs de l'économie. L'utilisation de l’eau comprend la consommation d'eau sous forme d'intrants naturels et d'eau fournie par les systèmes municipaux de distribution d'eau ou les systèmes d'irrigation par les industries, les administrations publiques, les institutions et les ménages.",
           "keywords": "",
           "href": "/cif-cic_dev/fr/6-3-1/",
           "status": "complete"
