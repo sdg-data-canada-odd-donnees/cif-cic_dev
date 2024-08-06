@@ -678,6 +678,14 @@
           "status": "complete"
         },
         {
+          "id": "15-5-1",
+          "title": "Proportion de l'approvisionnement durable de bois d'œuvre récolté",
+          "description": "Cet indicateur mesure la quantité totale de bois récolté annuellement en pourcentage de l'approvisionnement durable en bois. Pour que les forêts puissent continuer à fournir du bois, les récoltes doivent rester dans des limites durables. L’approvisionnement durable en bois est défini comme le volume de bois potentiel qui est récolté de façon durable tel que déterminé par une analyse complexe des considérations écologiques, économiques et sociales. <em>Environnement et Changement climatique Canada (ECCC)</em>",
+          "keywords": "",
+          "href": "/cif-cic_dev/fr/15-5-1/",
+          "status": "complete"
+        },
+        {
           "id": "15-6-1",
           "title": "Surface des zones forestières en proportion de la surface terrestre",
           "description": "Cet indicateur mesure la surface des zones forestières en proportion de la surface terrestre. La superficie forestière est un indicateur de base de la durabilité qu’il est important de surveiller de près, en particulier dans les régions où la superficie forestière est en train de disparaître. <em>(RNCan)</em>",
