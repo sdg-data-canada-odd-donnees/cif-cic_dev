@@ -120,7 +120,7 @@ var translations = {
         
         Indicateur 17.1.1 -
         
-        Nombre de jeux de données ouverts diffusés par le gouvernement du Canada - Canada Indicators For The Sustainable Development Goals
+        Indicateurs de performance statistique - Canada Indicators For The Sustainable Development Goals
     </title>
 
 
@@ -144,7 +144,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20240808014330">
+        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20240808144419">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -269,7 +269,7 @@ layout-indicator-iframe
                         
                         Indicateur 17.1.1
                         
-                        <span class="lead-copy">Nombre de jeux de données ouverts diffusés par le gouvernement du Canada</span>
+                        <span class="lead-copy">Indicateurs de performance statistique</span>
                     </h1>
                 </div>
             </div>
@@ -319,23 +319,23 @@ layout-indicator-iframe
   data-indicatorid='indicator_17-1-1'
   data-id="17-1-1"
   data-country="Canada"
-  data-charttitle="Nombre de jeux de données ouverts diffusés par le gouvernement du Canada"
+  data-charttitle="Indicateurs de performance statistique"
   data-charttitles="null"
-  data-measurementunit="Nombre"
+  data-measurementunit="Score"
   data-xaxislabel=""
   data-showdata="true"
-  data-graphtype="bar"
+  data-graphtype="line"
   data-graphtypes="null"
   data-geocoderegex=""
   data-showmap="false"
-  data-startvalues="null"
-  data-graphlimits="null"
+  data-startvalues="[{&quot;field&quot;:&quot;Pilier&quot;,&quot;value&quot;:&quot;Pilier 1: Usage de données&quot;},{&quot;field&quot;:&quot;Pilier&quot;,&quot;value&quot;:&quot;Pilier 2: Services de données&quot;},{&quot;field&quot;:&quot;Pilier&quot;,&quot;value&quot;:&quot;Pilier 3: Produits de données&quot;},{&quot;field&quot;:&quot;Pilier&quot;,&quot;value&quot;:&quot;Pilier 4: Sources de données&quot;},{&quot;field&quot;:&quot;Pilier&quot;,&quot;value&quot;:&quot;Pilier 5: Infrastructure de données&quot;},{&quot;field&quot;:&quot;Pilier&quot;,&quot;value&quot;:&quot;Score global&quot;}]"
+  data-graphlimits="[{&quot;unit&quot;:&quot;Score&quot;,&quot;minimum&quot;:0,&quot;maximum&quot;:100}]"
   data-stackeddisaggregation=""
   data-graphannotations="null"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Année&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Valeur&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Année&quot;},{&quot;name&quot;:&quot;data.Pillar&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;data.Pillar 1: Data Use&quot;,&quot;data.Pillar 2: Data Services&quot;,&quot;data.Pillar 3: Data Products&quot;,&quot;data.Pillar 4: Data Sources&quot;,&quot;data.Pillar 5: Data Infrastructure&quot;,&quot;data.SPI Overall Score&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Pilier&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Valeur&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="null"
   data-proxy=""
@@ -370,71 +370,15 @@ layout-indicator-iframe
   <div id="datatables">
 
     
-    <a role="button" href="https://sdg-data-canada-odd-donnees.github.io/cif-data-donnees-cic/fr/headline/17-1-1.csv" class="btn btn-primary btn-download" download="indicator_17-1-1.csv" tabindex="0" role="button">Télécharger Headline CSV</a>
-    
     <a role="button" href="https://sdg-data-canada-odd-donnees.github.io/cif-data-donnees-cic/fr/data/17-1-1.csv" class="btn btn-primary btn-download" download='indicator_17-1-1.csv' tabindex='0' role='button'>Télécharger toutes les données (CSV)</a>
 
     <p class="no-js-disaggregation-hint">Télécharger le CSV source pour les désagrégations</p>
 
     
-    <h3>Données d'en-tête</h3>
-    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
-      <caption>Nombre de jeux de données ouverts diffusés par le gouvernement du Canada</caption>
-      <thead>
-        
-        
-        <th scope="col">Year</th>
-        
-        
-        
-        <th scope="col" class="table-value">Value</th>
-        
-        
-      </thead>
-      <tbody>
-        
-        <tr>
-          
-          
-          <td>2021</td>
-          
-          
-          
-          <td class="table-value">87798</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2022</td>
-          
-          
-          
-          <td class="table-value">30403</td>
-          
-          
-        </tr>
-        
-      </tbody>
-    </table>
+    <h3>Aucune donnée principale disponible</h3>
     
   </div>
 
-  
-  <div id="datatableFooter">
-    
-    <p>Source(s): Gouvernement du Canada</p>
-    
-    
-    <p>Zone géographique: Canada</p>
-    
-    
-    <p>Unité de mesure: Nombre</p>
-    
-    
-  </div>
   
 
 </div>
@@ -518,7 +462,7 @@ data-event-label="Change to Table tab"
       <figure role="group">
         <div id="chart-canvas">
           <h4 id="chart-heading" class="chart-title">
-            Nombre de jeux de données ouverts diffusés par le gouvernement du Canada
+            Indicateurs de performance statistique
           </h4>
           <div id="chart" class="plot-container">
             <canvas
@@ -539,7 +483,7 @@ data-event-label="Change to Table tab"
     <dl>
         
         <dt>Source(s):</dt>
-        <dd>Gouvernement du Canada</dd>
+        <dd>Groupe de la Banque mondiale</dd>
         
 
         
@@ -615,7 +559,7 @@ data-event-label="Change to Table tab"
     <dl>
         
         <dt>Source(s):</dt>
-        <dd>Gouvernement du Canada</dd>
+        <dd>Groupe de la Banque mondiale</dd>
         
 
         
@@ -758,7 +702,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Nom de l'indicateur </th>
         <td>
           
-            <p>Nombre de jeux de données ouverts diffusés par le gouvernement du Canada</p>
+            <p>Indicateurs de performance statistique</p>
 
           
         </td>
@@ -790,7 +734,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Description de l&#39;indicateur </th>
         <td>
           
-            <p>Cet indicateur mesure le nombre de jeux de données ouverts diffusés par le gouvernement du Canada.</p>
+            <p>Les indicateurs de performance statistique (IPS) évaluent la maturité et la performance des systèmes statistiques nationaux dans cinq domaines clés, appelés piliers. Les cinq piliers sont les suivants :\n\n 1. L’usage de données : les statistiques n’ont de valeur que si elles sont utilisées. Un système statistique performant produit des données qui sont utilisées largement et fréquemment.\n 2. Les services de données : une gamme de services relie les utilisateurs de données aux producteurs et facilite les dialogues entre eux, développant ainsi la confiance et un sentiment de valeur.\n 3. Les produits de données : les dialogues entre utilisateurs et producteurs dirigent la conception et la variété de produits statistiques, ainsi que leur exactitude, leur actualité, leur fréquence, leur comparabilité et leur niveaux de désagrégation. Les produits indiquent si les pays sont en mesure de produire des indicateurs liés aux 17 objectifs de développement durable.\n 4. Les sources de données : pour créer des produits utiles, le système statistique doit tirer de sources internes et externes au gouvernement. La collecte de données va donc au-delà des recensements et des sondages typiques afin d’inclure des données administratives et géospatiales ainsi que des données générées par des entreprises privées et des citoyens.\n 5. L’infrastructure de données : un système statistique mature possède une infrastructure matérielle (législation, gouvernance, normes) et une infrastructure immatérielle (compétences, partenariats) bien développées, ainsi que les ressources financières nécessaires pour fournir des produits et services de données utiles et largement utilisés.\n\n Chacun de ces piliers est supporté par quatre ou cinq dimensions et utilise des méthodes et indicateurs définis. <em>(Groupe de la Banque mondiale)</em></p>
 
           
         </td>
@@ -822,7 +766,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Unité de mesure </th>
         <td>
           
-            <p>Nombre</p>
+            <p>Score</p>
 
           
         </td>
@@ -843,7 +787,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Calculs </th>
         <td>
           
-            <p>L’indicateur représente le nombre de jeux de données qui ont été publiés chaque mois depuis le relancement du portail du gouvernement ouvert, soit le 18 juin 2013.</p>
+            <p>Les scores pour chaque pilier sont calculés en combinant les scores de chaque dimension du pilier en question, qui sont à leur tour dérivés des valeurs de leurs indicateurs respectifs. Le score global est une moyenne des scores des cinq piliers. Les pays peuvent atteindre un score global maximum de 100 et un minimum de 0. Un score de 100 indiquerait qu’un pays a mis en place tous les éléments mesurés par les IPS, tandis qu’un score de 0 indiquerait qu’aucun élément n’a été mis en place. <em>(Groupe de la Banque mondiale)</em></p>
 
           
         </td>
@@ -874,7 +818,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Commentaires et limites </th>
         <td>
           
-            <p>Cet indicateur présente le nombre de jeux de données disponibles en date de février de chaque année.</p>
+            <p>Les scores globaux des IPS sont actuellement disponibles pour les pays depuis 2016. Certains indicateurs ont des données remontant jusqu’en 2004. <em>(Groupe de la Banque mondiale)</em></p>
 
           
         </td>
@@ -1070,7 +1014,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Organisation </th>
         <td>
           
-            <p>Gouvernement du Canada</p>
+            <p>Groupe de la Banque mondiale</p>
 
           
         </td>
@@ -1086,7 +1030,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Fréquence </th>
         <td>
           
-            <p>Mensuelle</p>
+            <p>Annuelle</p>
 
           
         </td>
@@ -1107,7 +1051,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Couverture géographique </th>
         <td>
           
-            <p>Canada</p>
+            <p>Pays</p>
 
           
         </td>
@@ -1128,8 +1072,8 @@ data-event-label="Change to indicator.sources tab"
             
             
             
-              <a href="https://ouvert.canada.ca/fr/contenu/analyses-concernant-gouvernement-ouvert" target="_blank">
-                Analyses concernant le gouvernement ouvert <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
+              <a href="https://www.worldbank.org/en/programs/statistical-performance-indicators/explore-data" target="_blank">
+                World Bank Group, Statistical Performance Indicators <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
               </a>
             
 
@@ -1293,12 +1237,12 @@ ga('send', 'pageview');
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/cif-cic_dev/assets/js/sdg.js?v=20240808014330'></script>
+<script src='/cif-cic_dev/assets/js/sdg.js?v=20240808144419'></script>
 
 
     
     
-    <script src="/cif-cic_dev/assets/js/custom.js?v=20240808014330"></script><script>
+    <script src="/cif-cic_dev/assets/js/custom.js?v=20240808144419"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
