@@ -144,7 +144,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20240809183543">
+        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20240809193418">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -325,7 +325,7 @@ layout-indicator-iframe
   data-country="Canada, provinces and territories"
   data-charttitle="Rate of apparent opioid toxicity deaths per 100,000 population"
   data-charttitles="null"
-  data-measurementunit="Rate per 100,000 population"
+  data-measurementunit="Crude rate per 100,000 population"
   data-xaxislabel=""
   data-showdata="true"
   data-graphtype="line"
@@ -335,7 +335,7 @@ layout-indicator-iframe
   data-startvalues="[{&quot;field&quot;:&quot;Geography&quot;,&quot;value&quot;:&quot;Canada&quot;}]"
   data-graphlimits="null"
   data-stackeddisaggregation=""
-  data-graphannotations="[{&quot;unit&quot;:&quot;Rate per 100,000 population&quot;,&quot;value&quot;:10,&quot;preset&quot;:&quot;target_line&quot;}]"
+  data-graphannotations="[{&quot;unit&quot;:&quot;Crude rate per 100,000 population&quot;,&quot;value&quot;:10,&quot;preset&quot;:&quot;target_line&quot;}]"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
@@ -543,7 +543,7 @@ layout-indicator-iframe
     <p>Geographical Area: Canada, provinces and territories</p>
     
     
-    <p>Unit of Measurement: Rate per 100,000 population</p>
+    <p>Unit of Measurement: Crude rate per 100,000 population</p>
     
     
   </div>
@@ -973,7 +973,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Target </th>
         <td>
           
-            <p>By March 31, 2028, reduce the apparent opioid toxicity deaths to 10 per 100,000 population</p>
+            <p>By March 31, 2028, reduce the rate of apparent opioid toxicity deaths to 10 per 100,000 population</p>
 
           
         </td>
@@ -989,7 +989,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Indicator description </th>
         <td>
           
-            <p>This indicator measures the rate of apparent opioid toxicity deaths per 100,000 population. <br /><br /> Apparent opioid toxicity death (AOTD): A death caused by intoxication/toxicity (poisoning) resulting from substance use, where one or more of the substances is an opioid, regardless of how it was obtained (e.g. illegally or through personal prescription). Other substances may also be involved.</p>
+            <p>This indicator measures the rate of apparent opioid-related deaths. <br /><br /> Apparent opioid-related death: A death caused by intoxication/toxicity (poisoning) as a result of drug use, where one or more of the drugs is an opioid.</p>
 
           
         </td>
@@ -1021,7 +1021,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Unit of measurement </th>
         <td>
           
-            <p>Rate per 100,000 population</p>
+            <p>Crude rate per 100,000 population</p>
 
           
         </td>
@@ -1042,7 +1042,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Calculations </th>
         <td>
           
-            <p>Not applicable</p>
+            <p>Rate of deaths is calculated by: Count from provinces/territories data / mid-year population estimate x 100,000.  <br /><br /> Data comes from analysis of provincial/territorial coroner data (at different stages of readiness). Data is provided from Provincial/Territorial coroner data through PHAC. Indicator data will be disaggregated by sex, provinces/territories and age group, where possible. <br /><br /> The data includes: open (preliminary) and closed (certified) cases; non-natural manners of death (both intentional and unintentional); and individuals with or without prescriptions. The data does not include deaths due to chronic substance use, medical assistance in dying, and trauma where a poisonous substance contributed to the circumstances of the injury.</p>
 
           
         </td>
@@ -1073,7 +1073,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Comments and limitations </th>
         <td>
           
-            <p>Not applicable</p>
+            <p>The national overall count includes deaths from British Columbia (2019 onwards) related to all unregulated drugs and Quebec (2022 onwards) related to drug or opioid-related intoxication. Provinces and territories are included in calculations of national crude rates if they have submitted data for at least one quarter of a given year. </p>
 
           
         </td>
@@ -1503,12 +1503,12 @@ ga('send', 'pageview');
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/cif-cic_dev/assets/js/sdg.js?v=20240809183543'></script>
+<script src='/cif-cic_dev/assets/js/sdg.js?v=20240809193418'></script>
 
 
     
     
-    <script src="/cif-cic_dev/assets/js/custom.js?v=20240809183543"></script><script>
+    <script src="/cif-cic_dev/assets/js/custom.js?v=20240809193418"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

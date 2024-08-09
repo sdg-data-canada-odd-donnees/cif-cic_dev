@@ -144,7 +144,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20240809183543">
+        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20240809193418">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -474,7 +474,7 @@ data-event-label="high"
   data-country="Canada, provinces et territoires"
   data-charttitle="Taux de décès apparemment liés à la toxicité des opioïdes par 100 000 habitants"
   data-charttitles="null"
-  data-measurementunit="Taux par 100 000 personnes"
+  data-measurementunit="Taux brut par 100 000 habitants"
   data-xaxislabel=""
   data-showdata="true"
   data-graphtype="line"
@@ -484,7 +484,7 @@ data-event-label="high"
   data-startvalues="[{&quot;field&quot;:&quot;Géographie&quot;,&quot;value&quot;:&quot;Canada&quot;}]"
   data-graphlimits="null"
   data-stackeddisaggregation=""
-  data-graphannotations="[{&quot;unit&quot;:&quot;Taux par 100 000 personnes&quot;,&quot;value&quot;:10,&quot;preset&quot;:&quot;target_line&quot;}]"
+  data-graphannotations="[{&quot;unit&quot;:&quot;Taux brut par 100 000 habitants&quot;,&quot;value&quot;:10,&quot;preset&quot;:&quot;target_line&quot;}]"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
@@ -692,7 +692,7 @@ data-event-label="high"
     <p>Zone géographique: Canada, provinces et territoires</p>
     
     
-    <p>Unité de mesure: Taux par 100 000 personnes</p>
+    <p>Unité de mesure: Taux brut par 100 000 habitants</p>
     
     
   </div>
@@ -1126,7 +1126,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Nom de la cible </th>
         <td>
           
-            <p>D’ici au 31 mars 2028, réduire le nombre de décès apparemment liés à la toxicité des opioïdes à 10 pour 100 000 habitants</p>
+            <p>D’ici au 31 mars 2028, réduire le taux de décès apparemment liés à la toxicité des opioïdes à 10 par 100 000 habitants</p>
 
           
         </td>
@@ -1142,7 +1142,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Description de l&#39;indicateur </th>
         <td>
           
-            <p>Cet indicateur mesure le taux de décès apparemment liés à la toxicité des opioïdes par 100 000 habitants. <br /><br /> Décès apparemment lié à une intoxication aux opioïdes : Un décès causé par intoxication (empoisonnement) ou la toxicité d’une substance consommée, lorsqu’une ou plusieurs des substances en cause(s) sont des opioïdes, peu importe la façon dont elles ont été obtenues (p. ex. illégalement ou sur ordonnance). D’autres substances peuvent également être impliquées.</p>
+            <p>Cet indicateur mesure le taux de décès apparemment liés à la toxicité des opioïdes par 100 000 habitants. <br /><br /> Décès apparemment lié à une intoxication aux opioïdes : Un décès apparemment lié à une intoxication lorsqu’une ou plusieurs des substances en cause(s) est un opioïde.</p>
 
           
         </td>
@@ -1174,7 +1174,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Unité de mesure </th>
         <td>
           
-            <p>Taux par 100 000 personnes</p>
+            <p>Taux brut par 100 000 habitants</p>
 
           
         </td>
@@ -1195,7 +1195,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Calculs </th>
         <td>
           
-            <p>Ne s’applique pas</p>
+            <p>Le taux de mortalité est calculé en divisant le nombre de décès selon les données des provinces/territoires / estimation de la population en milieu d’année x 100 000. <br /><br /> Les données proviennent de l’analyse des données des coroners provinciaux et territoriaux (à différents stades de préparation). Les données sont fournies par les coroners provinciaux/territoriaux par l’intermédiaire de l’ASPC. Les données des indicateurs seront ventilées par sexe, par province/territoire et par groupe d’âge, dans la mesure du possible. <br /><br /> Les données comprennent : les cas ouverts (préliminaires) et fermés (certifiés) ; les modes de décès non naturels (intentionnels et non intentionnels) ; et les personnes avec ou sans ordonnance. Les données n’incluent pas les décès dus à une consommation chronique de substances, à l’assistance médicale à mourir et aux traumatismes pour lesquels une substance toxique a contribué aux circonstances de la blessure.</p>
 
           
         </td>
@@ -1226,7 +1226,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Commentaires et limites </th>
         <td>
           
-            <p>Ne s’applique pas</p>
+            <p>Le total national comprend les décès de la Colombie-Britannique (à partir de 2019) liés à toutes les drogues non réglementées et du Québec (à partir de 2022) liés à l’intoxication par les drogues ou les opioïdes. Les provinces et les territoires sont inclus dans les taux nationaux bruts s’ils ont fourni des données pendant au moins un trimestre d’une année donnée.</p>
 
           
         </td>
@@ -1735,12 +1735,12 @@ ga('send', 'pageview');
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/cif-cic_dev/assets/js/sdg.js?v=20240809183543'></script>
+<script src='/cif-cic_dev/assets/js/sdg.js?v=20240809193418'></script>
 
 
     
     
-    <script src="/cif-cic_dev/assets/js/custom.js?v=20240809183543"></script><script>
+    <script src="/cif-cic_dev/assets/js/custom.js?v=20240809193418"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
