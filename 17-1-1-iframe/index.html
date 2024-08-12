@@ -144,7 +144,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20240812014607">
+        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20240812151935">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -328,14 +328,14 @@ layout-indicator-iframe
   data-graphtypes="null"
   data-geocoderegex=""
   data-showmap="false"
-  data-startvalues="[{&quot;field&quot;:&quot;Pillar&quot;,&quot;value&quot;:&quot;SPI Overall Score&quot;}]"
+  data-startvalues="null"
   data-graphlimits="[{&quot;unit&quot;:&quot;Score&quot;,&quot;minimum&quot;:0,&quot;maximum&quot;:100}]"
   data-stackeddisaggregation=""
   data-graphannotations="null"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;data.Pillar&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Pillar 1: Data Use&quot;,&quot;Pillar 2: Data Services&quot;,&quot;Pillar 3: Data Products&quot;,&quot;Pillar 4: Data Sources&quot;,&quot;Pillar 5: Data Infrastructure&quot;,&quot;SPI Overall Score&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Pillar&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;data.Pillar&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Pillar 1: Data Use&quot;,&quot;Pillar 2: Data Services&quot;,&quot;Pillar 3: Data Products&quot;,&quot;Pillar 4: Data Sources&quot;,&quot;Pillar 5: Data Infrastructure&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Pillar&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="null"
   data-proxy=""
@@ -370,15 +370,131 @@ layout-indicator-iframe
   <div id="datatables">
 
     
+    <a role="button" href="https://sdg-data-canada-odd-donnees.github.io/cif-data-donnees-cic/en/headline/17-1-1.csv" class="btn btn-primary btn-download" download="indicator_17-1-1.csv" tabindex="0" role="button">Download Headline CSV</a>
+    
     <a role="button" href="https://sdg-data-canada-odd-donnees.github.io/cif-data-donnees-cic/en/data/17-1-1.csv" class="btn btn-primary btn-download" download='indicator_17-1-1.csv' tabindex='0' role='button'>Download All Data (CSV)</a>
 
     <p class="no-js-disaggregation-hint">Download source data for disaggregations (.csv)</p>
 
     
-    <h3>No headline data available</h3>
+    <h3>Headline data</h3>
+    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
+      <caption>Statistical Performance Indicators</caption>
+      <thead>
+        
+        
+        <th scope="col">Year</th>
+        
+        
+        
+        <th scope="col" class="table-value">Value</th>
+        
+        
+      </thead>
+      <tbody>
+        
+        <tr>
+          
+          
+          <td>2022</td>
+          
+          
+          
+          <td class="table-value">92.9225</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td class="table-value">93.42083333</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td class="table-value">87.43666667</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td class="table-value">87.46583333</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td class="table-value">86.57083333</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td class="table-value">86.44875</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td class="table-value">86.27958333</td>
+          
+          
+        </tr>
+        
+      </tbody>
+    </table>
     
   </div>
 
+  
+  <div id="datatableFooter">
+    
+    <p>Source: World Bank Group</p>
+    
+    
+    <p>Geographical Area: Canada</p>
+    
+    
+    <p>Unit of Measurement: Score</p>
+    
+    
+  </div>
   
 
 </div>
@@ -734,7 +850,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Indicator description </th>
         <td>
           
-            <p> The Statistical Performance Indicators (SPI) assess the maturity and performance of national statistical systems in five key areas, called pillars. The five pillars are:<br /><br /> 1. Data Use: Statistics have value only if they are used. A successful statistical system produces data that are used widely and frequently.<br /> 2. Data Services: A range of services connects data users to producers and facilitate dialogues between them, thus building trust and a sense of value.<br /> 3. Data Products: The dialogues between users and producers drive the design and range of statistical products and their accuracy, timeliness, frequency, comparability, and levels of disaggregation. The products signal whether countries are able to produce indicators related to the 17 Sustainable Development Goals.<br /> 4. Data Sources: To create useful products, the statistical system needs to draw on sources inside and outside the government. Data collection thus goes beyond the typical censuses and surveys to include administrative and geospatial data as well as data generated by private firms and citizens.<br /> 5. Data Infrastructure: A mature statistical system has well-developed hard infrastructure (legislation, governance, standards) and soft infrastructure (skills, partnerships) as well as the financial resources to deliver useful—and widely used—data products and services.<br /><br /> Each of these pillars is supported by four or five dimensions and uses defined methods and indicators. <em>(World Bank Group)</em> </p>
+            <p> The Statistical Performance Indicators (SPI) assess the maturity and performance of national statistical systems in five key areas, called pillars. The five pillars are:<br /><br /> 1. Data Use: Statistics have value only if they are used. A successful statistical system produces data that are used widely and frequently.<br /> 2. Data Services: A range of services connects data users to producers and facilitate dialogues between them, thus building trust and a sense of value.<br /> 3. Data Products: The dialogues between users and producers drive the design and range of statistical products and their accuracy, timeliness, frequency, comparability, and levels of disaggregation. The products signal whether countries are able to produce indicators related to the 17 Sustainable Development Goals.<br /> 4. Data Sources: To create useful products, the statistical system needs to draw on sources inside and outside the government. Data collection thus goes beyond the typical censuses and surveys to include administrative and geospatial data as well as data generated by private firms and citizens.<br /> 5. Data Infrastructure: A mature statistical system has well-developed hard infrastructure (legislation, governance, standards) and soft infrastructure (skills, partnerships) as well as the financial resources to deliver useful—and widely used—data products and services.<br /><br /> Each of these pillars is supported by four or five dimensions and uses defined methods and indicators. <em>(World Bank Group)</em><br /><br /> The series labelled as "Canada" represents the overall SPI score for Canada. </p>
 
           
         </td>
@@ -1237,12 +1353,12 @@ ga('send', 'pageview');
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/cif-cic_dev/assets/js/sdg.js?v=20240812014607'></script>
+<script src='/cif-cic_dev/assets/js/sdg.js?v=20240812151935'></script>
 
 
     
     
-    <script src="/cif-cic_dev/assets/js/custom.js?v=20240812014607"></script><script>
+    <script src="/cif-cic_dev/assets/js/custom.js?v=20240812151935"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
