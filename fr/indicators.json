@@ -780,6 +780,14 @@
           "keywords": "",
           "href": "/cif-cic_dev/fr/17-2-1/",
           "status": "complete"
+        },
+        {
+          "id": "17-3-1",
+          "title": "Exportations de produits et services environnementaux et de technologies propres à des pays en voie de développement",
+          "description": "Cet indicateur mesure les exportations estimées de produits environnementaux et de technologies propres (en millions de dollars) vers les pays en voie de développement. Les exportations de produits environnementaux comprennent les biens environnementaux, tels que l'électricité propre, les biocarburants et les biens primaires et les déchets et rebuts, ainsi que les services de gestion de déchets et d'assainissement. Les exportations de produits de technologies propres comprennent les biens de technologies propres ainsi que les services de technologies propres, incluant les services scientifiques, de recherche et développement, de soutien et de construction.",
+          "keywords": "",
+          "href": "/cif-cic_dev/fr/17-3-1/",
+          "status": "complete"
         }]
     }
   }]

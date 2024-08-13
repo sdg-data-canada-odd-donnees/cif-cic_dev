@@ -780,6 +780,14 @@
           "keywords": "",
           "href": "/cif-cic_dev/17-2-1/",
           "status": "complete"
+        },
+        {
+          "id": "17-3-1",
+          "title": "Exports of environmental and clean technology goods and services to developing countries",
+          "description": "This indicator measures the estimated exports of environmental and clean technology products (in millions of dollars) to developing countries. Exports of environmental products include environmental goods, such as clean electricity, biofuels and primary goods, and waste and scrap goods, as well as waste management and remediation services. Exports of clean technology products include clean technology goods as well as clean technology services, including scientific and research and development services, support services, and construction services.",
+          "keywords": "",
+          "href": "/cif-cic_dev/17-3-1/",
+          "status": "complete"
         }]
     }
   }]
