@@ -505,14 +505,14 @@
           "id": "11-2-1",
           "title": "Proportion des ménages ayant des besoins impérieux en matière de logement",
           "description": "Cet indicateur mesure la proportion des ménages vivant dans des logements ayant des besoins impérieux.",
-          "keywords": "femmes, genre",
+          "keywords": "",
           "href": "/cif-cic_dev/fr/11-2-1/",
           "status": "complete"
         },
         {
           "id": "11-3-1",
-          "title": "Pourcentage de la population vivant dans des zones où les concentrations des polluants atmosphériques sont moins élevées ou égales aux Normes Canadiennes de Qualité de l’Air Ambiant de 2020",
-          "description": "Cet indicateur mesure le pourcentage de la population vivant dans des zones où les concentrations des polluants atmosphériques extérieurs sont moins élevées ou égales aux Normes Canadiennes de Qualité de l’Air Ambiant de 2020. Les Normes canadiennes de qualité de l'air ambiant (NCQAA, les normes) sont des objectifs de qualité de l'air pour les concentrations de polluants dans l'air extérieur axées sur la santé et l'environnement. Elles visent à mieux protéger la santé humaine et l'environnement ainsi qu'à favoriser l'amélioration continue de la qualité de l'air partout au Canada. <em>Environnement et Changement climatique Canada (ECCC)</em>",
+          "title": "Pourcentage de la population vivant dans des zones où les concentrations des polluants atmosphériques sont inférieures ou égales aux Normes canadiennes de qualité de l’air ambiant de 2020",
+          "description": "Cet indicateur mesure la proportion de la population canadienne vivant dans des zones où les concentrations des polluants atmosphériques extérieurs étaient inférieures ou égales aux Normes canadiennes de qualité de l’air ambiant (NCQAA, les normes) pour 2020. Les normes sont des objectifs de qualité de l’air pour les concentrations de polluants dans l’air extérieur axées sur la santé et l’environnement. Elles visent à mieux protéger la santé humaine et l’environnement ainsi qu’à favoriser l’amélioration continue de la qualité de l’air partout au Canada. <em>Environnement et Changement climatique Canada (ECCC)</em>",
           "keywords": "",
           "href": "/cif-cic_dev/fr/11-3-1/",
           "status": "complete"
