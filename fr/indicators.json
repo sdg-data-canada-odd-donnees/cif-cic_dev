@@ -631,8 +631,8 @@
         },
         {
           "id": "14-2-1",
-          "title": "Proportion des stocks de poissons récoltés à des niveaux considérés durables",
-          "description": "L'indicateur permet de comparer les taux de récolte avec les limites de récolte établies. Ces limites sont fondées sur des données scientifiques et fournissent une mesure directe indiquant si la gestion de l'utilisation de ces ressources respecte les limites des écosystèmes. Cela constitue une mesure de la pression de la pêche sur les stocks de poissons sauvages. <em>Environnement et Changement climatique Canada (ECCC)</em>",
+          "title": "Proportion des principaux stocks de poissons qui se trouvent dans la zone de prudence et la zone saine",
+          "description": "Cet indicateur présente l'état (zone saine, zone de prudence, zone critique ou état incertain) des principaux stocks de poissons canadiens. Les activités humaines dans les océans, y compris la pêche, et les conditions environnementales ont une incidence sur l'abondance et la santé des stocks de poissons à l'échelle nationale et mondiale. Afin de maintenir les stocks de poissons pour les prochaines générations, il est important de suivre leur état et d'adapter les mesures de gestion (par exemple: les taux et limites de captures). <em>Environnement et Changement climatique Canada (ECCC)</em>",
           "keywords": "",
           "href": "/cif-cic_dev/fr/14-2-1/",
           "status": "complete"
