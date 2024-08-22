@@ -612,6 +612,14 @@
           "keywords": "",
           "href": "/cif-cic_dev/13-3-1/",
           "status": "complete"
+        },
+        {
+          "id": "13-4-1",
+          "title": "Dépenses d'infrastructures de protection contre les inondations",
+          "description": "Cet indicateur mesure les dépenses d'infrastructures de protection contre les inondations.",
+          "keywords": "",
+          "href": "/cif-cic_dev/13-4-1/",
+          "status": "complete"
         }]
     }
   },
