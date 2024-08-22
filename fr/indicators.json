@@ -599,8 +599,8 @@
         },
         {
           "id": "13-2-1",
-          "title": "Fréquence de certaines catastrophes naturelles",
-          "description": "Cet indicateur mesure la fréquence de certaines catastrophes naturelles comme définie par la Base de données canadienne sur les catastrophes.",
+          "title": "Nombre de décès dû à une exposition à une chaleur naturelle excessive",
+          "description": "Cet indicateur mesure le nombre de décès dû à une exposition à une chaleur naturelle excessive. Les Canadiens pourraient faire face à des risques de mortalité élevés en raison du changement climatique et des évènements de chaleur extrême plus fréquents, plus intenses et plus prolongés.",
           "keywords": "",
           "href": "/cif-cic_dev/fr/13-2-1/",
           "status": "complete"
