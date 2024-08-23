@@ -79,8 +79,8 @@
         },
         {
           "id": "3-2-1",
-          "title": "Prevalence of vaping among youth",
-          "description": "This indicator measures the percentage of Canadian students in grades 7 to 12 (secondary I through V in Quebec) who have used one or more e-cigarettes in the past 30 days. This category will include current users as well as experimental users who have tried a vaping product in the past 30 days.",
+          "title": "Percentage of youth (aged 12 to 17) who have used an e-cigarette in the past 30 days",
+          "description": "This indicator measures the percentage of Canadian youth, aged 12 to 17 who have used one or more e-cigarettes in the past 30 days. This category will include current users as well as experimental users who have tried a vaping product in the past 30 days.",
           "keywords": "women, gender",
           "href": "/cif-cic_dev/3-2-1/",
           "status": "complete"

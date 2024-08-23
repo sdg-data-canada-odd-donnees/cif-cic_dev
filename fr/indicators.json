@@ -79,8 +79,8 @@
         },
         {
           "id": "3-2-1",
-          "title": "Prévalence du vapotage chez les jeunes",
-          "description": "Cet indicateur mesure le pourcentage d'élèves de la 7e à la 12e année (de la 1re à la 5e année du secondaire au Québec) qui ont utilisé des produits de vapotage (cigarettes électroniques seulement) au cours des 30 derniers jours. Ceci inclue les utilisateurs actuel ainsi que les utilisateurs expérimentaux qui ont essayés une cigarette électronique au cours des 30 dernier jours.",
+          "title": "Pourcentage des jeunes (âgé de 12 à 17 ans) qui ont utilisé des cigarettes électroniques dans les derniers 30 jours",
+          "description": "Cet indicateur mesure le pourcentage de jeunes Canadiens âgés de 12 à 17 ans qui ont utilisé des produits de vapotage (cigarettes électroniques seulement) au cours des 30 derniers jours. Ceci inclue les utilisateurs actuel ainsi que les utilisateurs expérimentaux qui ont essayés une cigarette électronique au cours des 30 dernier jours.",
           "keywords": "women, gender",
           "href": "/cif-cic_dev/fr/3-2-1/",
           "status": "complete"
