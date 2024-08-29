@@ -7,7 +7,7 @@
         
         {
           "id": "1-1-1",
-          "title": "Taux de pauvreté basé sur le seuil officiel de la pauvreté canadienne",
+          "title": "Taux de pauvreté basé sur le seuil officiel de la pauvreté au Canada",
           "description": "Cet indicateur mesure le pourcentage de personnes à faible revenu basé sur la Mesure du panier de consommation (MPC), qui a été adoptée comme la mesure officielle de la pauvreté canadienne. D'après la MPC, une famille est à faible revenu si son revenu est insuffisant pour acheter un panier spécifique de produits et services dans sa communauté.",
           "keywords": "women, gender",
           "href": "/cif-cic_dev/fr/1-1-1/",
@@ -111,7 +111,7 @@
         },
         {
           "id": "3-6-1",
-          "title": "Pourcentage des Canadiens qui sont satisfait ou très satisfait à l’égard de la vie",
+          "title": "Pourcentage des Canadiens qui sont satisfaits ou très satisfaits à l’égard de la vie",
           "description": "Cet indicateur mesure le pourcentage de la population âgée de 12 ans ou plus qui est satisfait ou très satisfait à l’égard de la vie.",
           "keywords": "women, gender",
           "href": "/cif-cic_dev/fr/3-6-1/",
@@ -231,15 +231,15 @@
         
         {
           "id": "5-1-1",
-          "title": "Proportion de la population ayant auto-déclaré avoir été agressée sexuellement dans les 12 derniers mois",
-          "description": "Cet indicateur mesure la proportion de la population ayant auto-déclaré avoir été agressée sexuellement dans les 12 derniers mois.",
+          "title": "Proportion de la population ayant autodéclaré avoir été agressée sexuellement dans les 12 derniers mois",
+          "description": "Cet indicateur mesure la proportion de la population ayant autodéclaré avoir été agressée sexuellement dans les 12 derniers mois.",
           "keywords": "women, gender",
           "href": "/cif-cic_dev/fr/5-1-1/",
           "status": "complete"
         },
         {
           "id": "5-2-1",
-          "title": "Proportion de femmes et filles âgées de 15 ans et plus ayant été assujetties à de la violence physique, sexuelle ou psychologique par leur partenaire intime actuel ou un ancien partenaire intime dans les 12 derniers mois",
+          "title": "Proportion de femmes et filles âgées de 15 ans et plus ayant été assujettie à de la violence physique, sexuelle ou psychologique par leur partenaire intime actuel ou un ancien partenaire intime dans les 12 derniers mois",
           "description": "Cet indicateur mesure la proportion de femmes et filles âgées de 15 et plus ayant été assujetties à de la violence physique, sexuelle ou psychologique par leur partenaire intime actuel ou un ancien partenaire intime dans les 12 derniers mois. La violence entre partenaires intimes (VPI) englobe un large éventail de comportements, qui vont de la violence psychologique et de l’exploitation financière aux agressions physiques et sexuelles.",
           "keywords": "women, gender, Indigenous",
           "href": "/cif-cic_dev/fr/5-2-1/",
@@ -439,8 +439,8 @@
         },
         {
           "id": "9-5-1",
-          "title": "Émissions de gaz à effets de serre par dollars de valeur ajoutés de la production d'actifs d'infrastructure",
-          "description": "Cet indicateur mesure les émissions de gaz à effets de serre par dollars de valeur ajoutés de la production d'actifs d'infrastructure. Il existe des différences dans les émissions de gaz à effet de serre par valeur ajoutée puisque la production de certaines infrastructures entraîne plus d'émissions que d'autres.",
+          "title": "Émissions de gaz à effet de serre par dollars de valeur ajoutés de la production d'actifs d'infrastructure",
+          "description": "Cet indicateur mesure les émissions de gaz à effet de serre par dollars de valeur ajoutés de la production d'actifs d'infrastructure. Il existe des différences dans les émissions de gaz à effet de serre par valeur ajoutée puisque la production de certaines infrastructures entraîne plus d'émissions que d'autres.",
           "keywords": "",
           "href": "/cif-cic_dev/fr/9-5-1/",
           "status": "complete"
