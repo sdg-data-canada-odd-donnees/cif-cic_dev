@@ -144,7 +144,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20240829143856">
+        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20240829170419">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -328,10 +328,10 @@ layout-indicator-iframe
   data-measurementunit="Pourcentage"
   data-xaxislabel=""
   data-showdata="true"
-  data-graphtype="bar"
+  data-graphtype="line"
   data-graphtypes="null"
   data-geocoderegex=""
-  data-showmap="false"
+  data-showmap="true"
   data-startvalues="[{&quot;field&quot;:&quot;Industries&quot;,&quot;value&quot;:&quot;Total, industries&quot;}]"
   data-graphlimits="null"
   data-stackeddisaggregation=""
@@ -339,7 +339,7 @@ layout-indicator-iframe
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Année&quot;},{&quot;name&quot;:&quot;data.Industries&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Total, industries&quot;,&quot;Exploitation forestière (sauf à forfait)&quot;,&quot;Extraction de pétrole et de gaz&quot;,&quot;Extraction minière et exploitation en carrière&quot;,&quot;Production, transport et distribution d’électricité&quot;,&quot;Distribution de gaz naturel&quot;,&quot;Fabrication d’aliments&quot;,&quot;Fabrication de boissons et de produits du tabac&quot;,&quot;Fabrication de produits en bois&quot;,&quot;Fabrication du papier&quot;,&quot;Fabrication de produits du pétrole et du charbon&quot;,&quot;Fabrication de produits chimiques&quot;,&quot;Fabrication de produits minéraux non métalliques&quot;,&quot;Première transformation des métaux&quot;,&quot;Fabrication de produits métalliques&quot;,null,&quot;Fabrication de produits en plastique et en caoutchouc&quot;,&quot;Fabrication de machines&quot;,&quot;Fabrication de meubles et de produits connexes&quot;,&quot;Autres industries de fabrication&quot;,&quot;Transport par pipeline&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Industries&quot;},{&quot;name&quot;:&quot;data.Environmental protection activities or management practices&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Gestion des eaux usées&quot;,&quot;Gestion de la pollution atmosphérique&quot;,&quot;Protection et assainissement du sol, des eaux souterraines et des eaux de surface&quot;,&quot;Protection de la biodiversité et de l’habitat&quot;,&quot;Lutte contre le bruit et les vibrations&quot;,&quot;Total, activités de protection de l'environnement&quot;,&quot;Redevances écologiques&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Activités de protection de l'environnement&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Valeur&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Année&quot;},{&quot;name&quot;:&quot;Geography&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Canada&quot;,&quot;Provinces de l'Atlantique&quot;,&quot;Nouvelle-Écosse&quot;,&quot;Québec&quot;,&quot;Ontario&quot;,&quot;Provinces des Prairies&quot;,&quot;Manitoba&quot;,&quot;Saskatchewan&quot;,&quot;Alberta&quot;,&quot;Colombie-Britannique&quot;,&quot;Terre-Neuve-et-Labrador&quot;,&quot;Île-du-Prince-Édouard&quot;,&quot;Territoires&quot;,&quot;Nouveau-Brunswick&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Géographie&quot;},{&quot;name&quot;:&quot;Industries&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Total, industries&quot;,&quot;Extraction de pétrole et de gaz&quot;,&quot;Extraction minière et exploitation en carrière&quot;,&quot;Production, transport et distribution d’électricité&quot;,&quot;Distribution de gaz naturel&quot;,&quot;Fabrication d’aliments&quot;,&quot;Fabrication de boissons et de produits du tabac&quot;,&quot;Fabrication de produits en bois&quot;,&quot;Fabrication du papier&quot;,&quot;Fabrication de produits du pétrole et du charbon&quot;,&quot;Première transformation des métaux&quot;,&quot;Fabrication de produits métalliques&quot;,null,&quot;Fabrication de machines&quot;,&quot;Autres industries de fabrication&quot;,&quot;Exploitation forestière (sauf à forfait)&quot;,&quot;Fabrication de meubles et de produits connexes&quot;,&quot;Transport par pipeline&quot;,&quot;Fabrication de produits minéraux non métalliques&quot;,&quot;Fabrication de produits en plastique et en caoutchouc&quot;,&quot;Fabrication de produits chimiques&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Industries&quot;},{&quot;name&quot;:&quot;Environmental protection activities or management practices&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Total, activités de protection de l'environnement&quot;,&quot;Redevances écologiques&quot;,&quot;Gestion des eaux usées&quot;,&quot;Gestion de la pollution atmosphérique&quot;,&quot;Protection et assainissement du sol, des eaux souterraines et des eaux de surface&quot;,&quot;Protection de la biodiversité et de l’habitat&quot;,&quot;Lutte contre le bruit et les vibrations&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Activités de protection de l'environnement&quot;},{&quot;name&quot;:&quot;GeoCode&quot;,&quot;type&quot;:&quot;string&quot;,&quot;title&quot;:&quot;GeoCode&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Valeur&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="null"
   data-proxy=""
@@ -374,767 +374,15 @@ layout-indicator-iframe
   <div id="datatables">
 
     
-    <a role="button" href="https://sdg-data-canada-odd-donnees.github.io/cif-data-donnees-cic/fr/headline/12-2-1.csv" class="btn btn-primary btn-download" download="indicator_12-2-1.csv" tabindex="0" role="button">Télécharger Headline CSV</a>
-    
     <a role="button" href="https://sdg-data-canada-odd-donnees.github.io/cif-data-donnees-cic/fr/data/12-2-1.csv" class="btn btn-primary btn-download" download='indicator_12-2-1.csv' tabindex='0' role='button'>Télécharger toutes les données (CSV)</a>
 
     <p class="no-js-disaggregation-hint">Télécharger le CSV source pour les désagrégations</p>
 
     
-    <h3>Données d'en-tête</h3>
-    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
-      <caption>Proportion d’entreprises qui ont adopté des activités de protection ou des pratiques de gestion de l’environnement</caption>
-      <thead>
-        
-        
-        <th scope="col">Year</th>
-        
-        
-        
-        <th scope="col" class="table-value">Value</th>
-        
-        
-      </thead>
-      <tbody>
-        
-        <tr>
-          
-          
-          <td>2018</td>
-          
-          
-          
-          <td class="table-value">90.3</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2018</td>
-          
-          
-          
-          <td class="table-value">87.5</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2018</td>
-          
-          
-          
-          <td class="table-value">89.4</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2018</td>
-          
-          
-          
-          <td class="table-value">93.8</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2018</td>
-          
-          
-          
-          <td class="table-value">84.8</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2018</td>
-          
-          
-          
-          <td class="table-value">88.0</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2018</td>
-          
-          
-          
-          <td class="table-value">89.5</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2018</td>
-          
-          
-          
-          <td class="table-value">90.9</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2018</td>
-          
-          
-          
-          <td class="table-value">90.5</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2018</td>
-          
-          
-          
-          <td class="table-value">85.1</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2018</td>
-          
-          
-          
-          <td class="table-value">86.4</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2018</td>
-          
-          
-          
-          <td class="table-value">92.8</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2018</td>
-          
-          
-          
-          <td class="table-value">91.2</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2018</td>
-          
-          
-          
-          <td class="table-value">91.3</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2018</td>
-          
-          
-          
-          <td class="table-value">83.3</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2019</td>
-          
-          
-          
-          <td class="table-value">86.6</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2019</td>
-          
-          
-          
-          <td class="table-value">88.0</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2019</td>
-          
-          
-          
-          <td class="table-value">86.2</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2019</td>
-          
-          
-          
-          <td class="table-value">87.4</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2019</td>
-          
-          
-          
-          <td class="table-value">87.2</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2019</td>
-          
-          
-          
-          <td class="table-value">90.2</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2019</td>
-          
-          
-          
-          <td class="table-value">84.8</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2019</td>
-          
-          
-          
-          <td class="table-value">89.1</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2019</td>
-          
-          
-          
-          <td class="table-value">87.3</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2019</td>
-          
-          
-          
-          <td class="table-value">91.3</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2019</td>
-          
-          
-          
-          <td class="table-value">89.1</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2019</td>
-          
-          
-          
-          <td class="table-value">85.9</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2019</td>
-          
-          
-          
-          <td class="table-value">82.6</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2019</td>
-          
-          
-          
-          <td class="table-value">82.7</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2019</td>
-          
-          
-          
-          <td class="table-value">79.0</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2020</td>
-          
-          
-          
-          <td class="table-value">86.3</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2020</td>
-          
-          
-          
-          <td class="table-value">82.8</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2020</td>
-          
-          
-          
-          <td class="table-value">83.0</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2020</td>
-          
-          
-          
-          <td class="table-value">84.1</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2020</td>
-          
-          
-          
-          <td class="table-value">80.4</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2020</td>
-          
-          
-          
-          <td class="table-value">85.1</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2020</td>
-          
-          
-          
-          <td class="table-value">87.7</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2020</td>
-          
-          
-          
-          <td class="table-value">87.4</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2020</td>
-          
-          
-          
-          <td class="table-value">87.6</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2020</td>
-          
-          
-          
-          <td class="table-value">88.5</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2020</td>
-          
-          
-          
-          <td class="table-value">92.1</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2020</td>
-          
-          
-          
-          <td class="table-value">86.3</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2020</td>
-          
-          
-          
-          <td class="table-value">81.6</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2020</td>
-          
-          
-          
-          <td class="table-value">81.7</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2020</td>
-          
-          
-          
-          <td class="table-value">77.2</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2021</td>
-          
-          
-          
-          <td class="table-value">86.4</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2021</td>
-          
-          
-          
-          <td class="table-value">84.0</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2021</td>
-          
-          
-          
-          <td class="table-value">85.8</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2021</td>
-          
-          
-          
-          <td class="table-value">81.4</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2021</td>
-          
-          
-          
-          <td class="table-value">80.0</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2021</td>
-          
-          
-          
-          <td class="table-value">89.7</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2021</td>
-          
-          
-          
-          <td class="table-value">86.2</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2021</td>
-          
-          
-          
-          <td class="table-value">87.2</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2021</td>
-          
-          
-          
-          <td class="table-value">85.0</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2021</td>
-          
-          
-          
-          <td class="table-value">84.9</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2021</td>
-          
-          
-          
-          <td class="table-value">89.7</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2021</td>
-          
-          
-          
-          <td class="table-value">84.0</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2021</td>
-          
-          
-          
-          <td class="table-value">87.3</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2021</td>
-          
-          
-          
-          <td class="table-value">87.3</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2021</td>
-          
-          
-          
-          <td class="table-value">87.1</td>
-          
-          
-        </tr>
-        
-      </tbody>
-    </table>
+    <h3>Aucune donnée principale disponible</h3>
     
   </div>
 
-  
-  <div id="datatableFooter">
-    
-    <p>Source(s): Statistique Canada</p>
-    
-    
-    <p>Zone géographique: Canada</p>
-    
-    
-    <p>Unité de mesure: Pourcentage</p>
-    
-    
-  </div>
   
 
 </div>
@@ -1198,6 +446,31 @@ data-event-label="Change to Table tab"
 
         
       >Tableau</button>
+    </li>
+    
+    <li role="presentation"
+      class="
+        nav-item
+        map
+        
+      ">
+      <button
+        class="nav-link "
+        data-bs-toggle="tab"
+        role="tab"
+        type="button"
+        
+          id="tab-mapview"
+          data-bs-target="#mapview"
+          aria-controls="mapview"
+          data-no-disagg="true"
+          data-on="click"
+data-event-category="Tab change"
+data-event-action="Change data view"
+data-event-label="Change to Map tab"
+
+        
+      >Carte</button>
     </li>
     
   </ul>
@@ -1358,6 +631,68 @@ data-event-label="Change to Table tab"
 </div>
 
 <div id="tableSelectionDownload" class="clearfix"></div>
+
+        </div>
+      
+    
+      
+        <div role="tabpanel" class="tab-pane " id="mapview" class="map">
+          
+<h4 id="map-heading" class="map-title">Proportion d’entreprises qui ont adopté des activités de protection ou des pratiques de gestion de l’environnement</h4>
+<div id="map" aria-describedby="table-alternative">
+  <img class="map-loading-image" src="/cif-cic_dev/assets/img/loading.gif" alt="Chargement de la carte" />
+</div>
+
+
+
+
+<div id="mapFooter" class="table-footer-text">
+  <h5 class="sr-only">Chart details</h5>
+    <dl>
+        
+        <dt>Source(s):</dt>
+        <dd>Statistique Canada</dd>
+        
+
+        
+        <dt>Zone géographique:</dt>
+        <dd>Canada</dd>
+        
+
+        <dt class="data-controlled-footer-field unit-from-data">Unité de mesure:</dt>
+        <dd class="data-controlled-footer-field unit-from-data"></dd>
+
+        
+
+        
+
+        
+
+        
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        >Note de bas de page:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        ></dd>
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        >Dernière mise à jour des données:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        ></dd>
+        
+        
+    </dl>
+    
+</div>
+
 
         </div>
       
@@ -2182,6 +1517,15 @@ data-event-label="Change to indicator.sources tab"
 <script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.js"></script>
 
 
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
+<script src="https://cdn.jsdelivr.net/npm/leaflet.zoomshowhide@0.1.0/dist/leaflet-zoom-show-hide.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/1.4.0/chroma.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/iso8601-js-period@0.2.1/iso8601.min.js"></script>
+<script src="https://cdn.rawgit.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.min.js"></script>
+<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+<script src="https://cdn.jsdelivr.net/gh/torfsen/leaflet.zoomhome@master/dist/leaflet.zoomhome.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
@@ -2215,12 +1559,12 @@ ga('send', 'pageview');
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/cif-cic_dev/assets/js/sdg.js?v=20240829143856'></script>
+<script src='/cif-cic_dev/assets/js/sdg.js?v=20240829170419'></script>
 
 
     
     
-    <script src="/cif-cic_dev/assets/js/custom.js?v=20240829143856"></script><script>
+    <script src="/cif-cic_dev/assets/js/custom.js?v=20240829170419"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
