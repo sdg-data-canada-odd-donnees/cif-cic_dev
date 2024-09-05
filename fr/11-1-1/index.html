@@ -144,7 +144,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20240905014845">
+        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20240905200348">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -477,7 +477,7 @@ data-event-label="high"
   data-measurementunit="Nombre, Pourcentage"
   data-xaxislabel=""
   data-showdata="true"
-  data-graphtype="line"
+  data-graphtype="bar"
   data-graphtypes="null"
   data-geocoderegex=""
   data-showmap="false"
@@ -488,7 +488,7 @@ data-event-label="high"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Année&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Nombre d'usagers des refuges en situation d'itinérance chronique&quot;,&quot;Changement en pourcentage du nombre d'usagers des refuges en situation d'itinérance chronique par rapport au niveau de référence de 2016&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Series&quot;},{&quot;name&quot;:&quot;Units&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Nombre&quot;,&quot;Pourcentage&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Unités&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Valeur&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Année&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Nombre d'usagers des refuges en situation d'itinérance chronique&quot;,&quot;Changement en pourcentage du nombre d'usagers des refuges en situation d'itinérance chronique par rapport au niveau de référence de 2016&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Series&quot;},{&quot;name&quot;:&quot;Units&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Nombre&quot;,&quot;Percent change since 2016&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Unités&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Valeur&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="null"
   data-proxy=""
@@ -705,7 +705,7 @@ data-event-label="high"
           
           
           
-          <td>Pourcentage</td>
+          <td>Percent change since 2016</td>
           
           
           
@@ -725,7 +725,7 @@ data-event-label="high"
           
           
           
-          <td>Pourcentage</td>
+          <td>Percent change since 2016</td>
           
           
           
@@ -745,7 +745,7 @@ data-event-label="high"
           
           
           
-          <td>Pourcentage</td>
+          <td>Percent change since 2016</td>
           
           
           
@@ -765,7 +765,7 @@ data-event-label="high"
           
           
           
-          <td>Pourcentage</td>
+          <td>Percent change since 2016</td>
           
           
           
@@ -785,7 +785,7 @@ data-event-label="high"
           
           
           
-          <td>Pourcentage</td>
+          <td>Percent change since 2016</td>
           
           
           
@@ -805,7 +805,7 @@ data-event-label="high"
           
           
           
-          <td>Pourcentage</td>
+          <td>Percent change since 2016</td>
           
           
           
@@ -1974,12 +1974,12 @@ ga('send', 'pageview');
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/cif-cic_dev/assets/js/sdg.js?v=20240905014845'></script>
+<script src='/cif-cic_dev/assets/js/sdg.js?v=20240905200348'></script>
 
 
     
     
-    <script src="/cif-cic_dev/assets/js/custom.js?v=20240905014845"></script><script>
+    <script src="/cif-cic_dev/assets/js/custom.js?v=20240905200348"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
