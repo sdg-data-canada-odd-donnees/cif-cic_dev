@@ -308,6 +308,14 @@
           "keywords": "",
           "href": "/cif-cic_dev/fr/6-4-1/",
           "status": "complete"
+        },
+        {
+          "id": "6-5-1",
+          "title": "Pourcentage de systèmes de traitement des eaux usées dans les réserves qui respectent les normes de qualité des effluents",
+          "description": "Cet indicateur permet de suivre le pourcentage de systèmes de traitement des eaux usées dans les réserves qui respectent les normes de qualité des effluents du [Règlement sur les effluents des systèmes d'assainissement des eaux usées](https://laws-lois.justice.gc.ca/fra/reglements/DORS-2012-139/TexteComplet.html) ou un accord d'équivalence.",
+          "keywords": "",
+          "href": "/cif-cic_dev/fr/6-5-1/",
+          "status": "complete"
         }]
     }
   },
