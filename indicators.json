@@ -316,6 +316,14 @@
           "keywords": "",
           "href": "/cif-cic_dev/6-5-1/",
           "status": "complete"
+        },
+        {
+          "id": "6-6-1",
+          "title": "Percentage of wastewater systems in Canada where effluent quality standards are achieved",
+          "description": "This indicator tracks the percentage of wastewater systems that meet the effluent quality standards of the [Wastewater Systems Effluent Regulations](https://laws-lois.justice.gc.ca/eng/regulations/sor-2012-139/fulltext.html) or an equivalency agreement.",
+          "keywords": "",
+          "href": "/cif-cic_dev/6-6-1/",
+          "status": "complete"
         }]
     }
   },
