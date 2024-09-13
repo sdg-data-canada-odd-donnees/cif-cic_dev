@@ -139,7 +139,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20240913184914">
+        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20240913194337">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -493,7 +493,7 @@ e. Include a note to users explaining the change.</li>
    a. “Target achieved” if “yes”. <br />
    b. “Target not achieved” if “no”.</li>
   <li>For indicators with two targets, for example CIF target 3.8 - By 2025, 95% coverage of all childhood vaccines and 90% coverage of all adolescent vaccines, the result that is the farthest from its target is used as progress measure.</li>
-  <li>Specific exception: CIF indicator 5.3.1 - Proportion of time spent on unpaid domestic and care work is reporting the proportion of day spent on unpaid domestic and care work, by sex. To be able to calculate the progress toward the target Equal sharing of parenting roles and family responsibilities, the indicator will be modified prior to calculation. A ratio of the proportion of time for women to that for men will be used, with a desired target of 1.</li>
+  <li>Specific exception: CIF indicator 5.4.1 - Proportion of time spent on unpaid domestic and care work is reporting the proportion of day spent on unpaid domestic and care work, by sex. To be able to calculate the progress toward the target Equal sharing of parenting roles and family responsibilities, the indicator will be modified prior to calculation. A ratio of the proportion of time for women to that for men will be used, with a desired target of 1.</li>
 </ol>
 
 <h2 id="future-work">Future Work</h2>
@@ -524,6 +524,16 @@ e. Include a note to users explaining the change.</li>
       <td>Increase</td>
     </tr>
     <tr>
+      <td>1.3.1</td>
+      <td>Debt to disposable income ratio</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>1.4.1</td>
+      <td>Median household after-tax income</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
       <td>2.1.1</td>
       <td>Prevalence of food insecurity</td>
       <td>Decrease</td>
@@ -540,62 +550,72 @@ e. Include a note to users explaining the change.</li>
     </tr>
     <tr>
       <td>3.2.1</td>
-      <td>Prevalence of vaping among youth</td>
+      <td>Percentage of youth (aged 12 to 17) who have used an e-cigarette in the past 30 days</td>
       <td>Decrease</td>
     </tr>
     <tr>
       <td>3.3.1</td>
-      <td>Percentage of the population that is overweight or obese</td>
+      <td>Proportion of the population living with obesity</td>
       <td>Decrease</td>
     </tr>
     <tr>
       <td>3.4.1</td>
-      <td>Prevalence of harmful alcohol use</td>
+      <td>Alcohol per capita consumption (aged 15 years and older) within a calendar year in litres of pure alcohol</td>
       <td>Decrease</td>
     </tr>
     <tr>
       <td>3.5.1</td>
-      <td>Percentage of Canadians who are satisfied or very satisfied with their life</td>
+      <td>Proportion of Canadians meeting the 2020 Canadian physical activity guidelines</td>
       <td>Increase</td>
     </tr>
     <tr>
       <td>3.6.1</td>
-      <td>Percentage of Canadians who perceived their overall health and social well-being as very good to excellent</td>
+      <td>Percentage of Canadians who are satisfied or very satisfied with their life</td>
       <td>Increase</td>
     </tr>
     <tr>
       <td>3.7.1</td>
-      <td>Percentage of Canadians who perceived their mental health as very good to excellent</td>
+      <td>Percentage of Canadians who perceived their overall health as very good to excellent</td>
       <td>Increase</td>
     </tr>
     <tr>
       <td>3.8.1</td>
-      <td>Vaccination rates for selected diseases</td>
+      <td>Percentage of Canadians who perceived their mental health as very good to excellent</td>
       <td>Increase</td>
     </tr>
     <tr>
       <td>3.9.1</td>
+      <td>Vaccination rates for selected diseases</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>3.10.1</td>
       <td>Incidence of selected diseases</td>
       <td>Decrease</td>
     </tr>
     <tr>
-      <td>3.10.1</td>
+      <td>3.11.1</td>
       <td>Mortality rate for selected causes of death</td>
       <td>Decrease</td>
     </tr>
     <tr>
-      <td>3.11.1</td>
+      <td>3.12.1</td>
       <td>Tuberculosis incidence per 100,000 population in Inuit Nunangat</td>
       <td>Decrease</td>
     </tr>
     <tr>
-      <td>3.12.1</td>
-      <td>Incidence of opioid and stimulant overdose related harms</td>
+      <td>3.13.1</td>
+      <td>Rate of apparent opioid toxicity deaths per 100,000 population</td>
       <td>Decrease</td>
     </tr>
     <tr>
-      <td>3.13.1</td>
-      <td>Prevalence of cigarette smoking</td>
+      <td>3.14.1</td>
+      <td>Percentage of Canadians (aged 18+) who currently smoke cigarettes</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>3.15.1</td>
+      <td>Proportion of persons with unmet health care needs</td>
       <td>Decrease</td>
     </tr>
     <tr>
@@ -609,24 +629,34 @@ e. Include a note to users explaining the change.</li>
       <td>Increase</td>
     </tr>
     <tr>
+      <td>4.3.1</td>
+      <td>Proportion of children aged 0 to 5 years who use any forms of early learning and child care services</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
       <td>5.1.1</td>
       <td>Proportion of the population who self-reported being sexually assaulted in the last 12 months</td>
       <td>Decrease</td>
     </tr>
     <tr>
-      <td>5.1.2</td>
+      <td>5.2.1</td>
       <td>Proportion of women and girls aged 15 years and older subjected to physical, sexual or psychological violence by a current or former intimate partner in the last 12 months</td>
       <td>Decrease</td>
     </tr>
     <tr>
-      <td>5.2.1</td>
+      <td>5.3.1</td>
       <td>Proportion of leadership roles held by women</td>
       <td>Increase</td>
     </tr>
     <tr>
-      <td>5.3.1</td>
+      <td>5.4.1</td>
       <td>Proportion of time spent on unpaid domestic and care work</td>
       <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>5.5.1</td>
+      <td>Median hourly gender wage ratio</td>
+      <td>Increase</td>
     </tr>
     <tr>
       <td>6.1.1</td>
@@ -649,19 +679,29 @@ e. Include a note to users explaining the change.</li>
       <td>Increase</td>
     </tr>
     <tr>
+      <td>6.5.1</td>
+      <td>Percentage of wastewater systems on reserves where effluent quality standards are achieved</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>6.6.1</td>
+      <td>Percentage of wastewater systems in Canada where effluent quality standards are achieved</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
       <td>7.1.1</td>
-      <td>Annual energy savings resulting from adoption of energy efficiency codes, standards and practices</td>
+      <td>Total annual energy savings resulting from adoption of energy efficiency codes, standards and practices</td>
       <td>Increase</td>
     </tr>
     <tr>
       <td>7.2.1</td>
-      <td>Total energy consumption per capita</td>
-      <td>Decrease</td>
+      <td>Proportion of electricity generated from renewable and other non-greenhouse gas emitting sources</td>
+      <td>Increase</td>
     </tr>
     <tr>
       <td>7.3.1</td>
-      <td>Proportion of electricity generated from renewable and non-greenhouse gas emitting sources</td>
-      <td>Increase</td>
+      <td>Total energy consumption per capita</td>
+      <td>Decrease</td>
     </tr>
     <tr>
       <td>8.1.1</td>
@@ -670,8 +710,8 @@ e. Include a note to users explaining the change.</li>
     </tr>
     <tr>
       <td>8.2.1</td>
-      <td>Proportion of employees earning less than 66% of the median hourly wage for permanent full-time employees</td>
-      <td>Decrease</td>
+      <td>Employment rate</td>
+      <td>Increase</td>
     </tr>
     <tr>
       <td>8.3.1</td>
@@ -690,12 +730,12 @@ e. Include a note to users explaining the change.</li>
     </tr>
     <tr>
       <td>8.6.1</td>
-      <td>Proportion of jobs in the environmental and clean technology products sector</td>
+      <td>Jobs in the clean technology products sector</td>
       <td>Increase</td>
     </tr>
     <tr>
       <td>9.1.1</td>
-      <td>Proportion of innovation in environment-related technology</td>
+      <td>Proportion of enterprises that introduced innovations with environmental benefits</td>
       <td>Increase</td>
     </tr>
     <tr>
@@ -720,12 +760,12 @@ e. Include a note to users explaining the change.</li>
     </tr>
     <tr>
       <td>9.6.1</td>
-      <td>Number of low carbon recharging and refueling stations under development and completed along major highways, and in rural and urban areas across Canada</td>
+      <td>Number of publicly available electric vehicle charging and alternative fuelling stations in Canada</td>
       <td>Increase</td>
     </tr>
     <tr>
       <td>9.7.1</td>
-      <td>Number of low carbon recharging and refueling stations under development and completed in public places, on-street, at apartment buildings, retail outlets, and the workplace</td>
+      <td>Remaining useful service life ratio of infrastructure assets</td>
       <td>Increase</td>
     </tr>
     <tr>
@@ -739,18 +779,8 @@ e. Include a note to users explaining the change.</li>
       <td>Decrease</td>
     </tr>
     <tr>
-      <td>10.3.1</td>
-      <td>Median hourly wage ratio</td>
-      <td>Increase</td>
-    </tr>
-    <tr>
-      <td>10.4.1</td>
-      <td>Median household after-tax income</td>
-      <td>Increase</td>
-    </tr>
-    <tr>
       <td>11.1.1</td>
-      <td>Growth rate of people experiencing chronic homelessness</td>
+      <td>(a) Number of shelter users experiencing chronic homelessness; and (b) percentage change in the number of shelter users experiencing chronic homelessness from the 2016 baseline</td>
       <td>Decrease</td>
     </tr>
     <tr>
@@ -765,12 +795,12 @@ e. Include a note to users explaining the change.</li>
     </tr>
     <tr>
       <td>11.4.1</td>
-      <td>Percentage of the population living within 500 meters of a public transport stop</td>
+      <td>Percentage of the population living within 500 metres of a public transport stop</td>
       <td>Increase</td>
     </tr>
     <tr>
       <td>11.5.1</td>
-      <td>Percentage of the population using shared or active transportation for commuting</td>
+      <td>Proportion of commuters using sustainable transportation</td>
       <td>Increase</td>
     </tr>
     <tr>
@@ -780,7 +810,7 @@ e. Include a note to users explaining the change.</li>
     </tr>
     <tr>
       <td>11.7.1</td>
-      <td>Percentage of the population aged 12 and over who reported their sense of belonging to their local community as being very strong or somewhat strong</td>
+      <td>Proportion of the population aged 12 and over who reported their sense of belonging to their local community as being very strong or somewhat strong</td>
       <td>Increase</td>
     </tr>
     <tr>
@@ -799,18 +829,28 @@ e. Include a note to users explaining the change.</li>
       <td>Increase</td>
     </tr>
     <tr>
+      <td>12.4.1</td>
+      <td>Proportion of discarded plastic leaked permanently into the environment</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
       <td>13.1.1</td>
       <td>Greenhouse gas emissions</td>
       <td>Decrease</td>
     </tr>
     <tr>
       <td>13.2.1</td>
-      <td>Frequency of selected natural disasters</td>
+      <td>Deaths due to exposure to excessive natural heat</td>
       <td>Decrease</td>
     </tr>
     <tr>
       <td>13.3.1</td>
-      <td>Proportion of municipal organization who factored climate change adaptation into their decision-making process</td>
+      <td>Proportion of municipal organizations who factored climate change adaptation into their decision-making process</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>13.4.1</td>
+      <td>Flood protection infrastructure spending</td>
       <td>Increase</td>
     </tr>
     <tr>
@@ -820,7 +860,7 @@ e. Include a note to users explaining the change.</li>
     </tr>
     <tr>
       <td>14.2.1</td>
-      <td>Proportion of fish stocks that are sustainably harvested</td>
+      <td>Proportion of key fish stocks in the Cautious and Healthy zones</td>
       <td>Increase</td>
     </tr>
     <tr>
@@ -835,16 +875,21 @@ e. Include a note to users explaining the change.</li>
     </tr>
     <tr>
       <td>15.3.1</td>
-      <td>Proportion of terrestrial (land and freshwater) areas conserved</td>
+      <td>Canadian species index</td>
       <td>Increase</td>
     </tr>
     <tr>
       <td>15.4.1</td>
-      <td>Proportion of the forest area under an independently verified forest management certification scheme</td>
+      <td>Proportion of Canada’s land and inland waters conserved</td>
       <td>Increase</td>
     </tr>
     <tr>
       <td>15.5.1</td>
+      <td>Proportion of the sustainable wood supply harvested</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>15.6.1</td>
       <td>Forest area as a proportion of total land area</td>
       <td>No change</td>
     </tr>
@@ -855,17 +900,17 @@ e. Include a note to users explaining the change.</li>
     </tr>
     <tr>
       <td>16.2.1</td>
-      <td>Crime severity index</td>
-      <td>Decrease</td>
-    </tr>
-    <tr>
-      <td>16.3.1</td>
       <td>Incidence of selected types of crime</td>
       <td>Decrease</td>
     </tr>
     <tr>
+      <td>16.3.1</td>
+      <td>Incidence of cyber-crime</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
       <td>16.4.1</td>
-      <td>Incidence of cybercrime</td>
+      <td>Civil Court case completion time</td>
       <td>Decrease</td>
     </tr>
     <tr>
@@ -885,12 +930,17 @@ e. Include a note to users explaining the change.</li>
     </tr>
     <tr>
       <td>17.1.1</td>
-      <td>Number of open datasets published by the Government of Canada</td>
+      <td>Statistical Performance Indicators</td>
       <td>Increase</td>
     </tr>
     <tr>
       <td>17.2.1</td>
       <td>Total official support for sustainable development</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>17.3.1</td>
+      <td>Exports of environmental and clean technology goods and services to developing countries</td>
       <td>Increase</td>
     </tr>
   </tbody>
@@ -1049,12 +1099,12 @@ ga('send', 'pageview');
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/cif-cic_dev/assets/js/sdg.js?v=20240913184914'></script>
+<script src='/cif-cic_dev/assets/js/sdg.js?v=20240913194337'></script>
 
 
     
     
-    <script src="/cif-cic_dev/assets/js/custom.js?v=20240913184914"></script><script>
+    <script src="/cif-cic_dev/assets/js/custom.js?v=20240913194337"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
