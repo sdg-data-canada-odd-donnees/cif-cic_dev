@@ -220,7 +220,7 @@ En raison de la nature des données, une série de considération et d’excepti
   a. « Cible atteinte » si « oui ».
   b. « Cible non atteinte » si « non ».  
 12. Pour les indicateurs ayant deux cibles, par exemple la cible 3.8 D'ici 2025, 95 % de couverture pour les vaccins pour nourrissons et enfants et 90 % de couverture pour tous les vaccins pour adolescents, le résultat qui est le plus éloigné de sa cible sera utilisé comme mesure du progrès.  
-13. Exception spécifique : L’indicateur du CIC 5.3.1 Proportion du temps consacré à des soins et travaux domestiques non rémunérés indique la proportion du temps consacré aux soins et travaux domestiques, par sexe. Afin de calculer le progrès vers l’atteinte de la cible Partage égal des rôles parentaux et des responsabilités familiales, l’indicateur sera modifié avant le calcul. Un ratio entre la proportion du temps pour les femmes sur celle des hommes sera utilisée, avec une valeur cible de 1.   
+13. Exception spécifique : L’indicateur du CIC 5.4.1 Proportion du temps consacré à des soins et travaux domestiques non rémunérés indique la proportion du temps consacré aux soins et travaux domestiques, par sexe. Afin de calculer le progrès vers l’atteinte de la cible Partage égal des rôles parentaux et des responsabilités familiales, l’indicateur sera modifié avant le calcul. Un ratio entre la proportion du temps pour les femmes sur celle des hommes sera utilisée, avec une valeur cible de 1.   
 
  
 ## Travaux futurs     
