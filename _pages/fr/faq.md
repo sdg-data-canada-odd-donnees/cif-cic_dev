@@ -24,7 +24,7 @@ Pour promouvoir l’engagement et l’action, les cinq objectifs fondamentaux su
 4. Réconciliation avec les peuples autochtones et Programme 2030
 5. Investissement dans les ODD
 
-Le Cadre d’indicateurs canadien et le carrefour de données constituent des outils de mesure et de diffusion nécessaires afin d’assurer la responsabilité et la transparence. Ils sont cruciaux dans le suivi du progrès vers la réalisation des 17 objectifs et 31 des ambitions canadiennes.
+Le Cadre d’indicateurs canadien et le carrefour de données constituent des outils de mesure et de diffusion nécessaires afin d’assurer la responsabilité et la transparence. Ils sont cruciaux dans le suivi du progrès vers la réalisation des 17 objectifs et 33 des ambitions canadiennes.
 
 ## Quelle est la différence entre le Cadre d’indicateurs canadien et le Cadre de qualité de vie ?
 
