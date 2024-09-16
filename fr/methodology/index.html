@@ -139,7 +139,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20240916185910">
+        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20240916193303">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -507,6 +507,452 @@ data-event-label="high"
 
 <p>L’équipe des ODD de Statistique Canada collabore avec la communauté Open SDG afin d’intégrer la mesure de progrès au niveau des indicateurs dans le code de base du gabarit d’Open SDG. Elle sera représentée par une étiquette et une icône décrivant les progrès les plus récemment calculés pour chaque indicateur. Une fois mise en œuvre, cette fonctionnalité sera disponible pour tous les utilisateurs d’Open SDG. En raison de la complexité des cadres d’indicateurs, la fonctionnalité n’inclura d’abord que les indicateurs qui rapportent une valeur agrégée – les indicateurs composés uniquement de sous-composantes, comme l’indicateur du CIC 3.9.1 Incidence de certaines maladies, nécessiteront un calcul et une saisie manuelle des étiquettes et icônes de progrès à afficher sur le carrefour de données Open SDG. L’équipe de Statistique Canada continuera à améliorer le calcul automatique, ainsi qu’à développer la mesure agrégée qui sera intégrée à la plateforme.</p>
 
+<h2 id="metadata">Metadata</h2>
+
+<h5 id="cadre-dindicateurs-canadien">Cadre d’indicateurs canadien</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Numéro de l’indicateur</th>
+      <th>Nom de l’indicateur</th>
+      <th>Direction désirée</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1.1.1</td>
+      <td>Taux de pauvreté basé sur le seuil officiel de la pauvreté au Canada</td>
+      <td>Décroissance</td>
+    </tr>
+    <tr>
+      <td>1.2.1</td>
+      <td>Prévalence de la résilience sur le plan des actifs</td>
+      <td>Croissance</td>
+    </tr>
+    <tr>
+      <td>1.3.1</td>
+      <td>Dette en proportion du revenu disponible</td>
+      <td>Décroissance</td>
+    </tr>
+    <tr>
+      <td>1.4.1</td>
+      <td>Revenu médian après impôt des ménages</td>
+      <td>Croissance</td>
+    </tr>
+    <tr>
+      <td>2.1.1</td>
+      <td>Prévalence de l’insécurité alimentaire</td>
+      <td>Décroissance</td>
+    </tr>
+    <tr>
+      <td>2.2.1</td>
+      <td>Indices de durabilité agroenvironnementale</td>
+      <td>Croissance</td>
+    </tr>
+    <tr>
+      <td>3.1.1</td>
+      <td>Pourcentage des Canadiens déclarant consommer des fruits et des légumes au moins 5 fois par jour</td>
+      <td>Croissance</td>
+    </tr>
+    <tr>
+      <td>3.2.1</td>
+      <td>Pourcentage des jeunes (âgé de 12 à 17 ans) qui ont utilisé des cigarettes électroniques dans les derniers 30 jours</td>
+      <td>Décroissance</td>
+    </tr>
+    <tr>
+      <td>3.3.1</td>
+      <td>Proportion de la population vivant avec l’obésité</td>
+      <td>Décroissance</td>
+    </tr>
+    <tr>
+      <td>3.4.1</td>
+      <td>Consommation d’alcool par habitant (âgé de 15 ans et plus) au cours d’une année civile, en litres d’alcool pur</td>
+      <td>Décroissance</td>
+    </tr>
+    <tr>
+      <td>3.5.1</td>
+      <td>Proportion des Canadiens qui rencontre les Directives canadiennes en matière d’activité physique 2020</td>
+      <td>Croissance</td>
+    </tr>
+    <tr>
+      <td>3.6.1</td>
+      <td>Pourcentage des Canadiens qui sont satisfaits ou très satisfaits à l’égard de la vie</td>
+      <td>Croissance</td>
+    </tr>
+    <tr>
+      <td>3.7.1</td>
+      <td>Pourcentage des Canadiens qui perçoivent leur santé comme très bonne ou excellente</td>
+      <td>Croissance</td>
+    </tr>
+    <tr>
+      <td>3.8.1</td>
+      <td>Pourcentage des Canadiens qui perçoivent leur santé mentale comme très bonne ou excellente</td>
+      <td>Croissance</td>
+    </tr>
+    <tr>
+      <td>3.9.1</td>
+      <td>Taux de vaccination pour certaines maladies</td>
+      <td>Croissance</td>
+    </tr>
+    <tr>
+      <td>3.10.1</td>
+      <td>Incidence de certaines maladies</td>
+      <td>Décroissance</td>
+    </tr>
+    <tr>
+      <td>3.11.1</td>
+      <td>Taux de mortalité pour certaines causes de décès</td>
+      <td>Décroissance</td>
+    </tr>
+    <tr>
+      <td>3.12.1</td>
+      <td>Incidence de la tuberculose par 100 000 habitants dans l’Inuit Nunangat</td>
+      <td>Décroissance</td>
+    </tr>
+    <tr>
+      <td>3.13.1</td>
+      <td>Taux de décès apparemment liés à la toxicité des opioïdes par 100 000 habitants</td>
+      <td>Décroissance</td>
+    </tr>
+    <tr>
+      <td>3.14.1</td>
+      <td>Pourcentage des Canadiens (âgés de 18 ans et plus) qui fument actuellement des cigarettes</td>
+      <td>Décroissance</td>
+    </tr>
+    <tr>
+      <td>3.15.1</td>
+      <td>Proportion de personnes ayant des besoins de soins de santé non satisfaits</td>
+      <td>Décroissance</td>
+    </tr>
+    <tr>
+      <td>4.1.1</td>
+      <td>Taux d’achèvement des études secondaires</td>
+      <td>Croissance</td>
+    </tr>
+    <tr>
+      <td>4.2.1</td>
+      <td>Taux de scolarité au niveau postsecondaire</td>
+      <td>Croissance</td>
+    </tr>
+    <tr>
+      <td>4.3.1</td>
+      <td>Proportion d’enfants âgés de 0 à 5 ans ayant recours aux services d’apprentissage et de garde des jeunes enfants</td>
+      <td>Croissance</td>
+    </tr>
+    <tr>
+      <td>5.1.1</td>
+      <td>Proportion de la population ayant autodéclaré avoir été agressée sexuellement dans les 12 derniers mois</td>
+      <td>Décroissance</td>
+    </tr>
+    <tr>
+      <td>5.2.1</td>
+      <td>Proportion de femmes et filles âgées de 15 ans et plus ayant été assujettie à de la violence physique, sexuelle ou psychologique par leur partenaire intime actuel ou un ancien partenaire intime dans les 12 derniers mois</td>
+      <td>Décroissance</td>
+    </tr>
+    <tr>
+      <td>5.3.1</td>
+      <td>Proportion de rôles de leadership tenus par des femmes</td>
+      <td>Croissance</td>
+    </tr>
+    <tr>
+      <td>5.4.1</td>
+      <td>Proportion du temps consacré à des soins et travaux domestiques non rémunérés</td>
+      <td>Décroissance</td>
+    </tr>
+    <tr>
+      <td>5.5.1</td>
+      <td>Ratio du salaire horaire médian entre homme et femme</td>
+      <td>Croissance</td>
+    </tr>
+    <tr>
+      <td>6.1.1</td>
+      <td>Nombre d’avis concernant la qualité de l’eau potable à long terme visant les systèmes d’aqueduc publics dans les réserves</td>
+      <td>Décroissance</td>
+    </tr>
+    <tr>
+      <td>6.2.1</td>
+      <td>Pourcentage des municipalités au Canada qui ont eu des avis prolongés concernant la qualité de l’eau potable</td>
+      <td>Décroissance</td>
+    </tr>
+    <tr>
+      <td>6.3.1</td>
+      <td>Taux de croissance de l’utilisation de l’eau</td>
+      <td>Décroissance</td>
+    </tr>
+    <tr>
+      <td>6.4.1</td>
+      <td>Qualité de l’eau des cours d’eau canadiens</td>
+      <td>Croissance</td>
+    </tr>
+    <tr>
+      <td>6.5.1</td>
+      <td>Pourcentage de systèmes de traitement des eaux usées dans les réserves qui respectent les normes de qualité des effluents</td>
+      <td>Croissance</td>
+    </tr>
+    <tr>
+      <td>6.6.1</td>
+      <td>Pourcentage de systèmes de traitement d’eaux usées au Canada qui respectent les normes de qualité des effluents</td>
+      <td>Croissance</td>
+    </tr>
+    <tr>
+      <td>7.1.1</td>
+      <td>Économies d’énergie annuelles totales découlant de l’adoption de codes, de normes et de pratiques d’efficacité énergétique</td>
+      <td>Croissance</td>
+    </tr>
+    <tr>
+      <td>7.2.1</td>
+      <td>Proportion de l’électricité produite à partir de sources renouvelables et autres sources non émettrices de gaz à effet de serre</td>
+      <td>Croissance</td>
+    </tr>
+    <tr>
+      <td>7.3.1</td>
+      <td>Consommation totale d’énergie par habitant</td>
+      <td>Décroissance</td>
+    </tr>
+    <tr>
+      <td>8.1.1</td>
+      <td>Taux de chômage</td>
+      <td>Décroissance</td>
+    </tr>
+    <tr>
+      <td>8.2.1</td>
+      <td>Taux d’emploi</td>
+      <td>Croissance</td>
+    </tr>
+    <tr>
+      <td>8.3.1</td>
+      <td>Proportion des jeunes qui ne sont ni en emploi, ni aux études, ni en formation</td>
+      <td>Décroissance</td>
+    </tr>
+    <tr>
+      <td>8.4.1</td>
+      <td>Taux de travail à temps partiel involontaire</td>
+      <td>Décroissance</td>
+    </tr>
+    <tr>
+      <td>8.5.1</td>
+      <td>Produit intérieur brut par habitant</td>
+      <td>Croissance</td>
+    </tr>
+    <tr>
+      <td>8.6.1</td>
+      <td>Emplois dans les secteurs des produits de technologies propres</td>
+      <td>Croissance</td>
+    </tr>
+    <tr>
+      <td>9.1.1</td>
+      <td>Proportion des entreprises ayant introduit des innovations offrant des avantages pour l’environnement</td>
+      <td>Croissance</td>
+    </tr>
+    <tr>
+      <td>9.2.1</td>
+      <td>Intensité des dépenses intérieures totales au titre de la recherche et développement</td>
+      <td>Croissance</td>
+    </tr>
+    <tr>
+      <td>9.3.1</td>
+      <td>Proportion des ménages qui ont accès à des services Internet à large bande à des vitesses de 50/10 Mbps</td>
+      <td>Croissance</td>
+    </tr>
+    <tr>
+      <td>9.4.1</td>
+      <td>Proportion des Canadiens qui ont accès à la technologie sans fil mobile généralement déployée la plus récente</td>
+      <td>Croissance</td>
+    </tr>
+    <tr>
+      <td>9.5.1</td>
+      <td>Émissions de gaz à effet de serre par dollars de valeur ajoutés de la production d’actifs d’infrastructure</td>
+      <td>Décroissance</td>
+    </tr>
+    <tr>
+      <td>9.6.1</td>
+      <td>Nombre de stations de recharge de véhicules électriques et de ravitaillement en carburants de remplacement accessible au public au Canada</td>
+      <td>Croissance</td>
+    </tr>
+    <tr>
+      <td>9.7.1</td>
+      <td>Ratio de la durée de vie résiduelle des actifs d’infrastructure</td>
+      <td>Croissance</td>
+    </tr>
+    <tr>
+      <td>10.1.1</td>
+      <td>Coefficient de Gini</td>
+      <td>Décroissance</td>
+    </tr>
+    <tr>
+      <td>10.2.1</td>
+      <td>Proportion de la population ayant déclaré de la discrimination ou des traitements injustes</td>
+      <td>Décroissance</td>
+    </tr>
+    <tr>
+      <td>11.1.1</td>
+      <td>(a) Nombre d’usagers des refuges en situation d’itinérance chronique ; et (b) changement en pourcentage du nombre d’usagers des refuges en situation d’itinérance chronique par rapport au niveau de référence de 2016</td>
+      <td>Décroissance</td>
+    </tr>
+    <tr>
+      <td>11.2.1</td>
+      <td>Proportion des ménages ayant des besoins impérieux en matière de logement</td>
+      <td>Décroissance</td>
+    </tr>
+    <tr>
+      <td>11.3.1</td>
+      <td>Pourcentage de la population vivant dans des zones où les concentrations des polluants atmosphériques sont inférieures ou égales aux Normes canadiennes de qualité de l’air ambiant de 2020</td>
+      <td>Croissance</td>
+    </tr>
+    <tr>
+      <td>11.4.1</td>
+      <td>Pourcentage de la population vivant à moins de 500 mètres d’un accès au transport en commun</td>
+      <td>Croissance</td>
+    </tr>
+    <tr>
+      <td>11.5.1</td>
+      <td>Proportion des navetteurs ayant adopté un mode de transport durable</td>
+      <td>Croissance</td>
+    </tr>
+    <tr>
+      <td>11.6.1</td>
+      <td>Quantité totale de déchets envoyés aux fins d’élimination par habitant</td>
+      <td>Décroissance</td>
+    </tr>
+    <tr>
+      <td>11.7.1</td>
+      <td>Proportion de la population âgée de 12 ans et plus ayant déclaré avoir un sentiment d’appartenance à leur communauté locale plutôt fort ou très fort</td>
+      <td>Croissance</td>
+    </tr>
+    <tr>
+      <td>12.1.1</td>
+      <td>Proportion des immatriculations de nouveaux véhicules légers qui sont pour des véhicules zéro émission</td>
+      <td>Croissance</td>
+    </tr>
+    <tr>
+      <td>12.2.1</td>
+      <td>Proportion d’entreprises qui ont adopté des activités de protection ou des pratiques de gestion de l’environnement</td>
+      <td>Croissance</td>
+    </tr>
+    <tr>
+      <td>12.3.1</td>
+      <td>Total des matières résiduelles récupérées par habitant</td>
+      <td>Croissance</td>
+    </tr>
+    <tr>
+      <td>12.4.1</td>
+      <td>Proportion de plastique qui se retrouve de façon permanente dans l’environnement</td>
+      <td>Décroissance</td>
+    </tr>
+    <tr>
+      <td>13.1.1</td>
+      <td>Émissions de gaz à effet de serre</td>
+      <td>Décroissance</td>
+    </tr>
+    <tr>
+      <td>13.2.1</td>
+      <td>Nombre de décès dû à une exposition à une chaleur naturelle excessive</td>
+      <td>Décroissance</td>
+    </tr>
+    <tr>
+      <td>13.3.1</td>
+      <td>Proportion d’organisation municipales qui ont pris en considération l’adaptation aux changements climatiques dans leur processus décisionnel</td>
+      <td>Croissance</td>
+    </tr>
+    <tr>
+      <td>13.4.1</td>
+      <td>Dépenses d’infrastructures de protection contre les inondations</td>
+      <td>Croissance</td>
+    </tr>
+    <tr>
+      <td>14.1.1</td>
+      <td>Proportion d’aires marines et côtières conservées</td>
+      <td>Croissance</td>
+    </tr>
+    <tr>
+      <td>14.2.1</td>
+      <td>Proportion des principaux stocks de poissons qui se trouvent dans la zone de prudence et la zone saine</td>
+      <td>Croissance</td>
+    </tr>
+    <tr>
+      <td>15.1.1</td>
+      <td>Proportion d’espèces sauvages indigènes classées comme étant en sécurité ou apparemment en sécurité selon le risque de disparition national</td>
+      <td>Croissance</td>
+    </tr>
+    <tr>
+      <td>15.2.1</td>
+      <td>Proportion d’espèces affichant des progrès vers leurs objectifs de population et de répartition</td>
+      <td>Croissance</td>
+    </tr>
+    <tr>
+      <td>15.3.1</td>
+      <td>Indice des espèces canadiennes</td>
+      <td>Croissance</td>
+    </tr>
+    <tr>
+      <td>15.4.1</td>
+      <td>Proportion des terres et des eaux intérieures du Canada conservées</td>
+      <td>Croissance</td>
+    </tr>
+    <tr>
+      <td>15.5.1</td>
+      <td>Proportion de l’approvisionnement durable de bois d’œuvre récolté</td>
+      <td>Décroissance</td>
+    </tr>
+    <tr>
+      <td>15.6.1</td>
+      <td>Surface des zones forestières en proportion de la surface terrestre</td>
+      <td>Aucun changement</td>
+    </tr>
+    <tr>
+      <td>16.1.1</td>
+      <td>Proportion des Canadiens ayant déclaré se sentir en sécurité lorsqu’ils marchent seuls dans leur voisinage quand il fait noir</td>
+      <td>Croissance</td>
+    </tr>
+    <tr>
+      <td>16.2.1</td>
+      <td>Incidence de certains types de crime</td>
+      <td>Décroissance</td>
+    </tr>
+    <tr>
+      <td>16.3.1</td>
+      <td>Incidence de cybercrimes</td>
+      <td>Décroissance</td>
+    </tr>
+    <tr>
+      <td>16.4.1</td>
+      <td>Durée de traitement des causes devant les tribunaux civils</td>
+      <td>Décroissance</td>
+    </tr>
+    <tr>
+      <td>16.5.1</td>
+      <td>Durée de traitement des causes devant les tribunaux de juridiction criminelle</td>
+      <td>Décroissance</td>
+    </tr>
+    <tr>
+      <td>16.6.1</td>
+      <td>Taux d’incarcération</td>
+      <td>Décroissance</td>
+    </tr>
+    <tr>
+      <td>16.7.1</td>
+      <td>Proportion de la population ayant une grande confiance envers certaines institutions</td>
+      <td>Croissance</td>
+    </tr>
+    <tr>
+      <td>17.1.1</td>
+      <td>Indicateurs de performance statistique</td>
+      <td>Croissance</td>
+    </tr>
+    <tr>
+      <td>17.2.1</td>
+      <td>Soutien public total au développement durable</td>
+      <td>Croissance</td>
+    </tr>
+    <tr>
+      <td>17.3.1</td>
+      <td>Exportations de produits et services environnementaux et de technologies propres à des pays en voie de développement</td>
+      <td>Croissance</td>
+    </tr>
+  </tbody>
+</table>
+
 <h2 id="references">References</h2>
 
 <p>Destatis. <em>Indicator status summary</em>.</p>
@@ -660,12 +1106,12 @@ ga('send', 'pageview');
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/cif-cic_dev/assets/js/sdg.js?v=20240916185910'></script>
+<script src='/cif-cic_dev/assets/js/sdg.js?v=20240916193303'></script>
 
 
     
     
-    <script src="/cif-cic_dev/assets/js/custom.js?v=20240916185910"></script><script>
+    <script src="/cif-cic_dev/assets/js/custom.js?v=20240916193303"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
