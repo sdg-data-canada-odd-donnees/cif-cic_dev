@@ -23,7 +23,7 @@ To promote engagement and action, the following five core objectives have been i
 3. Accountability, transparency, measurement and reporting
 4. Reconciliation with Indigenous Peoples and the 2030 Agenda
 5. Investing in the SDGs
-The Canadian Indicator Framework and the Data hub provides the measurement and reporting necessary to the ensure accountability and transparency crucial to monitor progress towards the achievement of the 17 Goals and 30 Canadian ambitions.  
+The Canadian Indicator Framework and the Data hub provides the measurement and reporting necessary to the ensure accountability and transparency crucial to monitor progress towards the achievement of the 17 Goals and 33 Canadian ambitions.  
 
 ## What is the difference between the Canadian Indicator Framework and the Quality of Life Framework?
 
