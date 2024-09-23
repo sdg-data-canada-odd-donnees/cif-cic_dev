@@ -8,7 +8,7 @@ layout: page
 #### Veuillez noter que ce site est présentement au stage Beta, ce qui signifie que c'est encore un produit en développement.
 
 ## Programme de développement durable à l’horizon 2030
-Tous les membres des Nations Unies ont adopté le <a href="https://www.un.org/ga/search/view_doc.asp?symbol=A/RES/70/1&Lang=F">Programme de développement
+Tous les membres des Nations Unies ont adopté le <a href="https://sdgs.un.org/fr/2030agenda">Programme de développement
 durable à l’horizon 2030</a> en 2015, un cadre de référence pour améliorer les résultats des dimensions sociales, économiques et environnementales du développement durable.
 
 Les 17 objectifs de développement durable (ODD) sont un appel universel à l’action pour :
