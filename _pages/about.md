@@ -8,7 +8,7 @@ layout: page
 #### Please note that this site is in the Beta stage of development, therefore the site is still a 'work in progress'.
 
 ## 2030 Agenda for Sustainable Development
-The <a href="https://www.un.org/ga/search/view_doc.asp?symbol=A/RES/70/1&Lang=E">2030 Agenda for Sustainable Development</a>, adopted by all United Nations Member States in 2015, provides a blueprint for improving outcomes in the economy, society and the environment. 
+The <a href="https://sdgs.un.org/2030agenda">2030 Agenda for Sustainable Development</a>, adopted by all United Nations Member States in 2015, provides a blueprint for improving outcomes in the economy, society and the environment. 
 
 At its heart are the 17 Sustainable Development Goals (SDGs), a universal call to action to:
 * end poverty,
