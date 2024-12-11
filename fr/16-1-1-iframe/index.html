@@ -144,7 +144,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20241211020500">
+        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20241211144254">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -309,13 +309,6 @@ layout-indicator-iframe
 
   
 
-<div class="row" id="page-content">
-  <div class="col-xs-12">
-    <p><i>Cet indicateur n’affiche pas de mesure de progrès car il n’y a qu’une seule année actuellement disponible.</i></p>
-
-  </div>
-</div>
-
 
   
 
@@ -335,14 +328,14 @@ layout-indicator-iframe
   data-graphtypes="null"
   data-geocoderegex=""
   data-showmap="false"
-  data-startvalues="[{&quot;field&quot;:&quot;Géographie&quot;,&quot;value&quot;:&quot;Canada&quot;},{&quot;field&quot;:&quot;Minorité visible&quot;,&quot;value&quot;:&quot;Population totale&quot;},{&quot;field&quot;:&quot;Caractéristiques sociodémographiques&quot;,&quot;value&quot;:&quot;Total, 15 ans et plus&quot;},{&quot;field&quot;:&quot;Caractéristiques sociodémographiques&quot;,&quot;value&quot;:&quot;Hommes+&quot;},{&quot;field&quot;:&quot;Caractéristiques sociodémographiques&quot;,&quot;value&quot;:&quot;Femmes+&quot;}]"
+  data-startvalues="[{&quot;field&quot;:&quot;Minorité visible&quot;,&quot;value&quot;:&quot;Population totale&quot;},{&quot;field&quot;:&quot;Caractéristiques sociodémographiques&quot;,&quot;value&quot;:&quot;Total, 15 ans et plus&quot;}]"
   data-graphlimits="null"
   data-stackeddisaggregation=""
   data-graphannotations="null"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Année&quot;},{&quot;name&quot;:&quot;data.Geography&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Canada&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Géographie&quot;},{&quot;name&quot;:&quot;data.Visible minority&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Population totale&quot;,&quot;Total de la population des minorités visibles&quot;,&quot;Sud-Asiatique&quot;,&quot;Chinois&quot;,&quot;Noirs&quot;,&quot;Philippin&quot;,&quot;Arabe&quot;,&quot;Latino-Américain&quot;,&quot;Asiatique du Sud-Est&quot;,&quot;Pas une minorité visible&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Minorité visible&quot;},{&quot;name&quot;:&quot;data.Sociodemographic characteristics&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Total, 15 ans et plus&quot;,&quot;Hommes+&quot;,&quot;Femmes+&quot;,&quot;15 à 24 ans&quot;,&quot;25 à 64 ans&quot;,&quot;65 ans et plus&quot;,&quot;Non-immigrants&quot;,&quot;Immigrants&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Caractéristiques sociodémographiques&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Valeur&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Année&quot;},{&quot;name&quot;:&quot;Visible minority&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Population totale&quot;,&quot;Total de la population des minorités visibles&quot;,&quot;Sud-Asiatique&quot;,&quot;Chinois&quot;,&quot;Noirs&quot;,&quot;Philippin&quot;,&quot;Arabe&quot;,&quot;Latino-Américain&quot;,&quot;Asiatique du Sud-Est&quot;,&quot;Pas une minorité visible&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Minorité visible&quot;},{&quot;name&quot;:&quot;Sociodemographic characteristics&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Hommes+&quot;,&quot;Femmes+&quot;,&quot;15 à 24 ans&quot;,&quot;25 à 64 ans&quot;,&quot;65 ans et plus&quot;,&quot;Non-immigrants&quot;,&quot;Immigrants&quot;,&quot;Total, 15 ans et plus&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Caractéristiques sociodémographiques&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Valeur&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="null"
   data-proxy=""
@@ -377,15 +370,71 @@ layout-indicator-iframe
   <div id="datatables">
 
     
+    <a role="button" href="https://sdg-data-canada-odd-donnees.github.io/cif-data-donnees-cic/fr/headline/16-1-1.csv" class="btn btn-primary btn-download" download="indicator_16-1-1.csv" tabindex="0" role="button">Télécharger Headline CSV</a>
+    
     <a role="button" href="https://sdg-data-canada-odd-donnees.github.io/cif-data-donnees-cic/fr/data/16-1-1.csv" class="btn btn-primary btn-download" download='indicator_16-1-1.csv' tabindex='0' role='button'>Télécharger toutes les données (CSV)</a>
 
     <p class="no-js-disaggregation-hint">Télécharger le CSV source pour les désagrégations</p>
 
     
-    <h3>Aucune donnée principale disponible</h3>
+    <h3>Données d'en-tête</h3>
+    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
+      <caption>Proportion des Canadiens ayant déclaré se sentir en sécurité lorsqu’ils marchent seuls dans leur voisinage quand il fait noir</caption>
+      <thead>
+        
+        
+        <th scope="col">Year</th>
+        
+        
+        
+        <th scope="col" class="table-value">Value</th>
+        
+        
+      </thead>
+      <tbody>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td class="table-value">79.0</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2022</td>
+          
+          
+          
+          <td class="table-value">79.0</td>
+          
+          
+        </tr>
+        
+      </tbody>
+    </table>
     
   </div>
 
+  
+  <div id="datatableFooter">
+    
+    <p>Source(s): Statistique Canada</p>
+    
+    
+    <p>Zone géographique: Canada</p>
+    
+    
+    <p>Unité de mesure: Pourcentage</p>
+    
+    
+  </div>
   
 
 </div>
@@ -1244,12 +1293,12 @@ ga('send', 'pageview');
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/cif-cic_dev/assets/js/sdg.js?v=20241211020500'></script>
+<script src='/cif-cic_dev/assets/js/sdg.js?v=20241211144254'></script>
 
 
     
     
-    <script src="/cif-cic_dev/assets/js/custom.js?v=20241211020500"></script><script>
+    <script src="/cif-cic_dev/assets/js/custom.js?v=20241211144254"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
