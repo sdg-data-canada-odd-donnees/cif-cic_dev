@@ -22,7 +22,7 @@ languages:
 
 
 # Tell the Remote Theme plugin to use the Open SDG platform (Jekyll theme).
-remote_theme: open-sdg/open-sdg@2.3.2
+remote_theme: open-sdg/open-sdg@2.4.0-dev
 
 # Replace this title as needed.
 title: Canada Indicators For The Sustainable Development Goals
@@ -51,6 +51,8 @@ create_pages:
     layout: indicator-json
   - folder: /search
     layout: search
+ignored_disaggregations:
+  - Progress
 
 analytics:
   ga_prod: 'G-F9C9LT784Y'
@@ -161,6 +163,8 @@ non_global_metadata: indicator.national_metadata
 
 # Hide empty metadata fields.
 hide_empty_metadata: true
+hide_single_series: true
+hide_single_unit: true
 
 #Comma separator
 decimal_separator: '.'
@@ -304,6 +308,10 @@ progress_status:
         label: status.negligible_progress
         image: assets/img/progress/orange-gauge.png
         alt: status.negligible_progress
+      - value: limited_progress
+        label: status.limited_progress
+        image: assets/img/progress/orange-gauge.png
+        alt: status.limited_progress
       - value: deterioration
         label: status.deterioration
         image: assets/img/progress/red-gauge.png
