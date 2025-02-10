@@ -163,6 +163,8 @@ non_global_metadata: indicator.national_metadata
 
 # Hide empty metadata fields.
 hide_empty_metadata: true
+hide_single_series: true
+hide_single_unit: true
 
 #Comma separator
 decimal_separator: '.'
