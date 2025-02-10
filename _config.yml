@@ -51,6 +51,8 @@ create_pages:
     layout: indicator-json
   - folder: /search
     layout: search
+ignored_disaggregations:
+  - Progress
 
 analytics:
   ga_prod: 'G-F9C9LT784Y'
@@ -304,6 +306,10 @@ progress_status:
         label: status.negligible_progress
         image: assets/img/progress/orange-gauge.png
         alt: status.negligible_progress
+      - value: limited_progress
+        label: status.limited_progress
+        image: assets/img/progress/orange-gauge.png
+        alt: status.limited_progress
       - value: deterioration
         label: status.deterioration
         image: assets/img/progress/red-gauge.png
