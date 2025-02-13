@@ -144,7 +144,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20250213153955">
+        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20250213171108">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -486,8 +486,8 @@ data-event-label="high"
   data-startvalues="null"
   data-graphlimits="null"
   data-stackeddisaggregation=""
-  data-graphannotations="[{&quot;unit&quot;:&quot;Percentage&quot;,&quot;value&quot;:10,&quot;preset&quot;:&quot;target_line&quot;}]"
-  data-graphtargetlines="null"
+  data-graphannotations="null"
+  data-graphtargetlines="[{&quot;value&quot;:10}]"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
   data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Geography&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Newfoundland and Labrador&quot;,&quot;Prince Edward Island&quot;,&quot;Nova Scotia&quot;,&quot;New Brunswick&quot;,&quot;Quebec&quot;,&quot;Ontario&quot;,&quot;Manitoba&quot;,&quot;Saskatchewan&quot;,&quot;Alberta&quot;,&quot;British Columbia&quot;,&quot;Yukon&quot;,&quot;Northwest Territories&quot;,&quot;Nunavut&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Geography&quot;},{&quot;name&quot;:&quot;Sex at birth&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Male&quot;,&quot;Female&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Sex at birth&quot;},{&quot;name&quot;:&quot;Gender&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Male&quot;,&quot;Female&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Gender&quot;},{&quot;name&quot;:&quot;Indigenous status&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Indigenous identity&quot;,&quot;Non-Indigenous identity&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Indigenous status&quot;},{&quot;name&quot;:&quot;Visible minority&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;South Asian&quot;,&quot;Chinese&quot;,&quot;Black&quot;,&quot;Filipino&quot;,&quot;Arab&quot;,&quot;Latin American&quot;,&quot;Not a visible minority&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Visible minority&quot;},{&quot;name&quot;:&quot;Immigration status&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Non-immigrant&quot;,&quot;Immigrant&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Immigration status&quot;},{&quot;name&quot;:&quot;Education level of parent or legal guardian&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Less than high school diploma or its equivalent&quot;,&quot;High school diploma or a high school equivalency certificate&quot;,&quot;Trades certificate or diploma&quot;,&quot;College/CEGEP/other non-university&quot;,&quot;University certificate or diploma below the bachelor&quot;,&quot;Bachelor's degree (e.g. B.A., B.Sc., LL.B.)&quot;,&quot;University certificate, diploma, degree above the BA&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Education level of parent or legal guardian&quot;},{&quot;name&quot;:&quot;Education level of parent's or legal guardian's spouse&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Less than high school diploma or its equivalent&quot;,&quot;High school diploma or a high school equivalency certificate&quot;,&quot;Trades certificate or diploma&quot;,&quot;College/CEGEP/other non-university&quot;,&quot;University certificate or diploma below the bachelor&quot;,&quot;Bachelor's degree (e.g. B.A., B.Sc., LL.B.)&quot;,&quot;University certificate, diploma, degree above the BA&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Education level of parent's or legal guardian's spouse&quot;},{&quot;name&quot;:&quot;Labour market status of parent or legal guardian&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Worked at a job or business&quot;,&quot;Had a job but did not work (absent)&quot;,&quot;Did not have a job&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Labour market status of parent or legal guardian&quot;},{&quot;name&quot;:&quot;Labour market status of parent's or legal guardian's spouse&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Worked at a job or business&quot;,&quot;Had a job but did not work (absent)&quot;,&quot;Did not have a job&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Labour market status of parent's or legal guardian's spouse&quot;},{&quot;name&quot;:&quot;GeoCode&quot;,&quot;type&quot;:&quot;string&quot;,&quot;title&quot;:&quot;GeoCode&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
@@ -1625,12 +1625,12 @@ ga('send', 'pageview');
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/cif-cic_dev/assets/js/sdg.js?v=20250213153955'></script>
+<script src='/cif-cic_dev/assets/js/sdg.js?v=20250213171108'></script>
 
 
     
     
-    <script src="/cif-cic_dev/assets/js/custom.js?v=20250213153955"></script><script>
+    <script src="/cif-cic_dev/assets/js/custom.js?v=20250213171108"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
