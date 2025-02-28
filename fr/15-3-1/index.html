@@ -144,7 +144,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20250228015801">
+        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20250228192008">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -444,9 +444,13 @@ data-event-label="high"
         <div class="progress-status">
         
             <div class="progress-status-label">
-                Pas disponible
+                Détérioration
             </div>
         
+        
+            <div class="progress-status-image">
+                <img src="/cif-cic_dev/assets/img/progress/red-gauge.png" alt="Détérioration" />
+            </div>
         
         </div>
     
@@ -491,7 +495,7 @@ data-event-label="high"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Année&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Par groupe d'espèces&quot;,&quot;Par système&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Series&quot;},{&quot;name&quot;:&quot;Species group&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Indice des oiseaux&quot;,&quot;Indice des mammifères&quot;,&quot;Indice des poissons&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Groupe d'espèces&quot;},{&quot;name&quot;:&quot;System&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Indice terrestre&quot;,&quot;Indice d'eau douce&quot;,&quot;Indice marin&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Système&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Valeur&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Année&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Par groupe d'espèces&quot;,&quot;Par système&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Series&quot;},{&quot;name&quot;:&quot;Species group&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Indice des oiseaux&quot;,&quot;Indice des mammifères&quot;,&quot;Indice des poissons&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Groupe d'espèces&quot;},{&quot;name&quot;:&quot;System&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Indice terrestre&quot;,&quot;Indice d'eau douce&quot;,&quot;Indice marin&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Système&quot;},{&quot;name&quot;:&quot;Progress&quot;,&quot;type&quot;:&quot;string&quot;,&quot;title&quot;:&quot;Progress&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Valeur&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="null"
   data-proxy=""
@@ -547,7 +551,11 @@ data-event-label="high"
         
         
         
-        <th scope="col" class="table-value">Series</th>
+        <th scope="col">Series</th>
+        
+        
+        
+        <th scope="col" class="table-value">Progress</th>
         
         
       </thead>
@@ -564,7 +572,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par groupe d'espèces</td>
+          <td>Par groupe d'espèces</td>
+          
+          
+          
+          <td class="table-value">1.0</td>
           
           
         </tr>
@@ -580,7 +592,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par groupe d'espèces</td>
+          <td>Par groupe d'espèces</td>
+          
+          
+          
+          <td class="table-value">1.0145</td>
           
           
         </tr>
@@ -596,7 +612,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par groupe d'espèces</td>
+          <td>Par groupe d'espèces</td>
+          
+          
+          
+          <td class="table-value">1.0266</td>
           
           
         </tr>
@@ -612,7 +632,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par groupe d'espèces</td>
+          <td>Par groupe d'espèces</td>
+          
+          
+          
+          <td class="table-value">1.0352</td>
           
           
         </tr>
@@ -628,7 +652,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par groupe d'espèces</td>
+          <td>Par groupe d'espèces</td>
+          
+          
+          
+          <td class="table-value">1.0398</td>
           
           
         </tr>
@@ -644,7 +672,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par groupe d'espèces</td>
+          <td>Par groupe d'espèces</td>
+          
+          
+          
+          <td class="table-value">1.0453</td>
           
           
         </tr>
@@ -660,7 +692,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par groupe d'espèces</td>
+          <td>Par groupe d'espèces</td>
+          
+          
+          
+          <td class="table-value">1.0485</td>
           
           
         </tr>
@@ -676,7 +712,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par groupe d'espèces</td>
+          <td>Par groupe d'espèces</td>
+          
+          
+          
+          <td class="table-value">1.0503</td>
           
           
         </tr>
@@ -692,7 +732,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par groupe d'espèces</td>
+          <td>Par groupe d'espèces</td>
+          
+          
+          
+          <td class="table-value">1.0559</td>
           
           
         </tr>
@@ -708,7 +752,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par groupe d'espèces</td>
+          <td>Par groupe d'espèces</td>
+          
+          
+          
+          <td class="table-value">1.0634</td>
           
           
         </tr>
@@ -724,7 +772,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par groupe d'espèces</td>
+          <td>Par groupe d'espèces</td>
+          
+          
+          
+          <td class="table-value">1.0725</td>
           
           
         </tr>
@@ -740,7 +792,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par groupe d'espèces</td>
+          <td>Par groupe d'espèces</td>
+          
+          
+          
+          <td class="table-value">1.0803</td>
           
           
         </tr>
@@ -756,7 +812,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par groupe d'espèces</td>
+          <td>Par groupe d'espèces</td>
+          
+          
+          
+          <td class="table-value">1.0801</td>
           
           
         </tr>
@@ -772,7 +832,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par groupe d'espèces</td>
+          <td>Par groupe d'espèces</td>
+          
+          
+          
+          <td class="table-value">1.0811</td>
           
           
         </tr>
@@ -788,7 +852,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par groupe d'espèces</td>
+          <td>Par groupe d'espèces</td>
+          
+          
+          
+          <td class="table-value">1.0897</td>
           
           
         </tr>
@@ -804,7 +872,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par groupe d'espèces</td>
+          <td>Par groupe d'espèces</td>
+          
+          
+          
+          <td class="table-value">1.097</td>
           
           
         </tr>
@@ -820,7 +892,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par groupe d'espèces</td>
+          <td>Par groupe d'espèces</td>
+          
+          
+          
+          <td class="table-value">1.1002</td>
           
           
         </tr>
@@ -836,7 +912,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par groupe d'espèces</td>
+          <td>Par groupe d'espèces</td>
+          
+          
+          
+          <td class="table-value">1.0885</td>
           
           
         </tr>
@@ -852,7 +932,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par groupe d'espèces</td>
+          <td>Par groupe d'espèces</td>
+          
+          
+          
+          <td class="table-value">1.0806</td>
           
           
         </tr>
@@ -868,7 +952,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par groupe d'espèces</td>
+          <td>Par groupe d'espèces</td>
+          
+          
+          
+          <td class="table-value">1.0723</td>
           
           
         </tr>
@@ -884,7 +972,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par groupe d'espèces</td>
+          <td>Par groupe d'espèces</td>
+          
+          
+          
+          <td class="table-value">1.0696</td>
           
           
         </tr>
@@ -900,7 +992,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par groupe d'espèces</td>
+          <td>Par groupe d'espèces</td>
+          
+          
+          
+          <td class="table-value">1.0658</td>
           
           
         </tr>
@@ -916,7 +1012,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par groupe d'espèces</td>
+          <td>Par groupe d'espèces</td>
+          
+          
+          
+          <td class="table-value">1.063</td>
           
           
         </tr>
@@ -932,7 +1032,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par groupe d'espèces</td>
+          <td>Par groupe d'espèces</td>
+          
+          
+          
+          <td class="table-value">1.065</td>
           
           
         </tr>
@@ -948,7 +1052,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par groupe d'espèces</td>
+          <td>Par groupe d'espèces</td>
+          
+          
+          
+          <td class="table-value">1.0707</td>
           
           
         </tr>
@@ -964,7 +1072,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par groupe d'espèces</td>
+          <td>Par groupe d'espèces</td>
+          
+          
+          
+          <td class="table-value">1.0715</td>
           
           
         </tr>
@@ -980,7 +1092,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par groupe d'espèces</td>
+          <td>Par groupe d'espèces</td>
+          
+          
+          
+          <td class="table-value">1.0695</td>
           
           
         </tr>
@@ -996,7 +1112,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par groupe d'espèces</td>
+          <td>Par groupe d'espèces</td>
+          
+          
+          
+          <td class="table-value">1.0652</td>
           
           
         </tr>
@@ -1012,7 +1132,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par groupe d'espèces</td>
+          <td>Par groupe d'espèces</td>
+          
+          
+          
+          <td class="table-value">1.0527</td>
           
           
         </tr>
@@ -1028,7 +1152,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par groupe d'espèces</td>
+          <td>Par groupe d'espèces</td>
+          
+          
+          
+          <td class="table-value">1.0417</td>
           
           
         </tr>
@@ -1044,7 +1172,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par groupe d'espèces</td>
+          <td>Par groupe d'espèces</td>
+          
+          
+          
+          <td class="table-value">1.0331</td>
           
           
         </tr>
@@ -1060,7 +1192,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par groupe d'espèces</td>
+          <td>Par groupe d'espèces</td>
+          
+          
+          
+          <td class="table-value">1.0277</td>
           
           
         </tr>
@@ -1076,7 +1212,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par groupe d'espèces</td>
+          <td>Par groupe d'espèces</td>
+          
+          
+          
+          <td class="table-value">1.0207</td>
           
           
         </tr>
@@ -1092,7 +1232,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par groupe d'espèces</td>
+          <td>Par groupe d'espèces</td>
+          
+          
+          
+          <td class="table-value">1.0159</td>
           
           
         </tr>
@@ -1108,7 +1252,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par groupe d'espèces</td>
+          <td>Par groupe d'espèces</td>
+          
+          
+          
+          <td class="table-value">1.0107</td>
           
           
         </tr>
@@ -1124,7 +1272,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par groupe d'espèces</td>
+          <td>Par groupe d'espèces</td>
+          
+          
+          
+          <td class="table-value">1.0117</td>
           
           
         </tr>
@@ -1140,7 +1292,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par groupe d'espèces</td>
+          <td>Par groupe d'espèces</td>
+          
+          
+          
+          <td class="table-value">1.0132</td>
           
           
         </tr>
@@ -1156,7 +1312,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par groupe d'espèces</td>
+          <td>Par groupe d'espèces</td>
+          
+          
+          
+          <td class="table-value">1.0117</td>
           
           
         </tr>
@@ -1172,7 +1332,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par groupe d'espèces</td>
+          <td>Par groupe d'espèces</td>
+          
+          
+          
+          <td class="table-value">1.0043</td>
           
           
         </tr>
@@ -1188,7 +1352,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par groupe d'espèces</td>
+          <td>Par groupe d'espèces</td>
+          
+          
+          
+          <td class="table-value">0.9986</td>
           
           
         </tr>
@@ -1204,7 +1372,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par groupe d'espèces</td>
+          <td>Par groupe d'espèces</td>
+          
+          
+          
+          <td class="table-value">0.9924</td>
           
           
         </tr>
@@ -1220,7 +1392,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par groupe d'espèces</td>
+          <td>Par groupe d'espèces</td>
+          
+          
+          
+          <td class="table-value">0.9872</td>
           
           
         </tr>
@@ -1236,7 +1412,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par groupe d'espèces</td>
+          <td>Par groupe d'espèces</td>
+          
+          
+          
+          <td class="table-value">0.9741</td>
           
           
         </tr>
@@ -1252,7 +1432,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par groupe d'espèces</td>
+          <td>Par groupe d'espèces</td>
+          
+          
+          
+          <td class="table-value">0.9568</td>
           
           
         </tr>
@@ -1268,7 +1452,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par groupe d'espèces</td>
+          <td>Par groupe d'espèces</td>
+          
+          
+          
+          <td class="table-value">0.9414</td>
           
           
         </tr>
@@ -1284,7 +1472,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par groupe d'espèces</td>
+          <td>Par groupe d'espèces</td>
+          
+          
+          
+          <td class="table-value">0.9339</td>
           
           
         </tr>
@@ -1300,7 +1492,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par groupe d'espèces</td>
+          <td>Par groupe d'espèces</td>
+          
+          
+          
+          <td class="table-value">0.9356</td>
           
           
         </tr>
@@ -1316,7 +1512,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par groupe d'espèces</td>
+          <td>Par groupe d'espèces</td>
+          
+          
+          
+          <td class="table-value">0.9252</td>
           
           
         </tr>
@@ -1332,7 +1532,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par groupe d'espèces</td>
+          <td>Par groupe d'espèces</td>
+          
+          
+          
+          <td class="table-value">0.9257</td>
           
           
         </tr>
@@ -1348,7 +1552,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par système</td>
+          <td>Par système</td>
+          
+          
+          
+          <td class="table-value">1.0</td>
           
           
         </tr>
@@ -1364,7 +1572,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par système</td>
+          <td>Par système</td>
+          
+          
+          
+          <td class="table-value">1.0145</td>
           
           
         </tr>
@@ -1380,7 +1592,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par système</td>
+          <td>Par système</td>
+          
+          
+          
+          <td class="table-value">1.0266</td>
           
           
         </tr>
@@ -1396,7 +1612,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par système</td>
+          <td>Par système</td>
+          
+          
+          
+          <td class="table-value">1.0352</td>
           
           
         </tr>
@@ -1412,7 +1632,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par système</td>
+          <td>Par système</td>
+          
+          
+          
+          <td class="table-value">1.0398</td>
           
           
         </tr>
@@ -1428,7 +1652,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par système</td>
+          <td>Par système</td>
+          
+          
+          
+          <td class="table-value">1.0453</td>
           
           
         </tr>
@@ -1444,7 +1672,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par système</td>
+          <td>Par système</td>
+          
+          
+          
+          <td class="table-value">1.0485</td>
           
           
         </tr>
@@ -1460,7 +1692,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par système</td>
+          <td>Par système</td>
+          
+          
+          
+          <td class="table-value">1.0503</td>
           
           
         </tr>
@@ -1476,7 +1712,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par système</td>
+          <td>Par système</td>
+          
+          
+          
+          <td class="table-value">1.0559</td>
           
           
         </tr>
@@ -1492,7 +1732,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par système</td>
+          <td>Par système</td>
+          
+          
+          
+          <td class="table-value">1.0634</td>
           
           
         </tr>
@@ -1508,7 +1752,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par système</td>
+          <td>Par système</td>
+          
+          
+          
+          <td class="table-value">1.0725</td>
           
           
         </tr>
@@ -1524,7 +1772,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par système</td>
+          <td>Par système</td>
+          
+          
+          
+          <td class="table-value">1.0803</td>
           
           
         </tr>
@@ -1540,7 +1792,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par système</td>
+          <td>Par système</td>
+          
+          
+          
+          <td class="table-value">1.0801</td>
           
           
         </tr>
@@ -1556,7 +1812,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par système</td>
+          <td>Par système</td>
+          
+          
+          
+          <td class="table-value">1.0811</td>
           
           
         </tr>
@@ -1572,7 +1832,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par système</td>
+          <td>Par système</td>
+          
+          
+          
+          <td class="table-value">1.0897</td>
           
           
         </tr>
@@ -1588,7 +1852,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par système</td>
+          <td>Par système</td>
+          
+          
+          
+          <td class="table-value">1.097</td>
           
           
         </tr>
@@ -1604,7 +1872,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par système</td>
+          <td>Par système</td>
+          
+          
+          
+          <td class="table-value">1.1002</td>
           
           
         </tr>
@@ -1620,7 +1892,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par système</td>
+          <td>Par système</td>
+          
+          
+          
+          <td class="table-value">1.0885</td>
           
           
         </tr>
@@ -1636,7 +1912,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par système</td>
+          <td>Par système</td>
+          
+          
+          
+          <td class="table-value">1.0806</td>
           
           
         </tr>
@@ -1652,7 +1932,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par système</td>
+          <td>Par système</td>
+          
+          
+          
+          <td class="table-value">1.0723</td>
           
           
         </tr>
@@ -1668,7 +1952,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par système</td>
+          <td>Par système</td>
+          
+          
+          
+          <td class="table-value">1.0696</td>
           
           
         </tr>
@@ -1684,7 +1972,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par système</td>
+          <td>Par système</td>
+          
+          
+          
+          <td class="table-value">1.0658</td>
           
           
         </tr>
@@ -1700,7 +1992,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par système</td>
+          <td>Par système</td>
+          
+          
+          
+          <td class="table-value">1.063</td>
           
           
         </tr>
@@ -1716,7 +2012,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par système</td>
+          <td>Par système</td>
+          
+          
+          
+          <td class="table-value">1.065</td>
           
           
         </tr>
@@ -1732,7 +2032,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par système</td>
+          <td>Par système</td>
+          
+          
+          
+          <td class="table-value">1.0707</td>
           
           
         </tr>
@@ -1748,7 +2052,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par système</td>
+          <td>Par système</td>
+          
+          
+          
+          <td class="table-value">1.0715</td>
           
           
         </tr>
@@ -1764,7 +2072,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par système</td>
+          <td>Par système</td>
+          
+          
+          
+          <td class="table-value">1.0695</td>
           
           
         </tr>
@@ -1780,7 +2092,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par système</td>
+          <td>Par système</td>
+          
+          
+          
+          <td class="table-value">1.0652</td>
           
           
         </tr>
@@ -1796,7 +2112,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par système</td>
+          <td>Par système</td>
+          
+          
+          
+          <td class="table-value">1.0527</td>
           
           
         </tr>
@@ -1812,7 +2132,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par système</td>
+          <td>Par système</td>
+          
+          
+          
+          <td class="table-value">1.0417</td>
           
           
         </tr>
@@ -1828,7 +2152,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par système</td>
+          <td>Par système</td>
+          
+          
+          
+          <td class="table-value">1.0331</td>
           
           
         </tr>
@@ -1844,7 +2172,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par système</td>
+          <td>Par système</td>
+          
+          
+          
+          <td class="table-value">1.0277</td>
           
           
         </tr>
@@ -1860,7 +2192,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par système</td>
+          <td>Par système</td>
+          
+          
+          
+          <td class="table-value">1.0207</td>
           
           
         </tr>
@@ -1876,7 +2212,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par système</td>
+          <td>Par système</td>
+          
+          
+          
+          <td class="table-value">1.0159</td>
           
           
         </tr>
@@ -1892,7 +2232,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par système</td>
+          <td>Par système</td>
+          
+          
+          
+          <td class="table-value">1.0107</td>
           
           
         </tr>
@@ -1908,7 +2252,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par système</td>
+          <td>Par système</td>
+          
+          
+          
+          <td class="table-value">1.0117</td>
           
           
         </tr>
@@ -1924,7 +2272,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par système</td>
+          <td>Par système</td>
+          
+          
+          
+          <td class="table-value">1.0132</td>
           
           
         </tr>
@@ -1940,7 +2292,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par système</td>
+          <td>Par système</td>
+          
+          
+          
+          <td class="table-value">1.0117</td>
           
           
         </tr>
@@ -1956,7 +2312,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par système</td>
+          <td>Par système</td>
+          
+          
+          
+          <td class="table-value">1.0043</td>
           
           
         </tr>
@@ -1972,7 +2332,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par système</td>
+          <td>Par système</td>
+          
+          
+          
+          <td class="table-value">0.9986</td>
           
           
         </tr>
@@ -1988,7 +2352,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par système</td>
+          <td>Par système</td>
+          
+          
+          
+          <td class="table-value">0.9924</td>
           
           
         </tr>
@@ -2004,7 +2372,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par système</td>
+          <td>Par système</td>
+          
+          
+          
+          <td class="table-value">0.9872</td>
           
           
         </tr>
@@ -2020,7 +2392,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par système</td>
+          <td>Par système</td>
+          
+          
+          
+          <td class="table-value">0.9741</td>
           
           
         </tr>
@@ -2036,7 +2412,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par système</td>
+          <td>Par système</td>
+          
+          
+          
+          <td class="table-value">0.9568</td>
           
           
         </tr>
@@ -2052,7 +2432,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par système</td>
+          <td>Par système</td>
+          
+          
+          
+          <td class="table-value">0.9414</td>
           
           
         </tr>
@@ -2068,7 +2452,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par système</td>
+          <td>Par système</td>
+          
+          
+          
+          <td class="table-value">0.9339</td>
           
           
         </tr>
@@ -2084,7 +2472,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par système</td>
+          <td>Par système</td>
+          
+          
+          
+          <td class="table-value">0.9356</td>
           
           
         </tr>
@@ -2100,7 +2492,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par système</td>
+          <td>Par système</td>
+          
+          
+          
+          <td class="table-value">0.9252</td>
           
           
         </tr>
@@ -2116,7 +2512,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Par système</td>
+          <td>Par système</td>
+          
+          
+          
+          <td class="table-value">0.9257</td>
           
           
         </tr>
@@ -3069,12 +3469,12 @@ ga('send', 'pageview');
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/cif-cic_dev/assets/js/sdg.js?v=20250228015801'></script>
+<script src='/cif-cic_dev/assets/js/sdg.js?v=20250228192008'></script>
 
 
     
     
-    <script src="/cif-cic_dev/assets/js/custom.js?v=20250228015801"></script><script>
+    <script src="/cif-cic_dev/assets/js/custom.js?v=20250228192008"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
