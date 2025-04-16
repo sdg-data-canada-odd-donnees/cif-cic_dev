@@ -193,11 +193,14 @@ exclude:
 # These are only a few of the possible settings. For more details, see:
 # https://open-sdg.readthedocs.io/en/latest/maps/
 map_options:
+  disaggregation_controls: true
   minZoom: 2
   maxZoom: 6
-  tileURL: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
+  tileURL: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png'
   tileOptions:
- # attribution: 'My map attribution'
+    id: ''
+    accessToken: ''
+    attribution: <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>
   colorRange: chroma.brewer.BuGn
   noValueColor: '#f0f0f0'
   styleNormal:
