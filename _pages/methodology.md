@@ -48,11 +48,11 @@ Progress is measured using the growth over the observed period and is calculated
 
 ![Compound annual growth rate equation](https://raw.githubusercontent.com/sdg-data-canada-odd-donnees/cif-cic_dev/develop/assets/img/methodology/cagr_i.svg)
 
-where  
-*CAGR*<sub>i</sub> is the observed compound annual growth rate between *t*<sub>0</sub> and *t*<sub>i</sub>,
-*y*<sub>i</sub> is the value of the indicator at time *t*<sub>i</sub>,
-*t*<sub>i</sub> is the most recent year where data is available,
-*t*<sub>0</sub> is the base year, 2015, unless otherwise specified, and
+where<br>
+*CAGR*<sub>i</sub> is the observed compound annual growth rate between *t*<sub>0</sub> and *t*<sub>i</sub>,<br>
+*y*<sub>i</sub> is the value of the indicator at time *t*<sub>i</sub>,<br>
+*t*<sub>i</sub> is the most recent year where data is available,<br>
+*t*<sub>0</sub> is the base year, 2015, unless otherwise specified, and<br>
 *y*<sub>0</sub> is the value of the indicator in the base year.
 
 #### Indicators with quantitative targets
@@ -60,24 +60,16 @@ In the case where a quantitative target for the indicator is provided, the obser
 
 ![Equation for the ratio of the observed compound annual growth rate to the growth rate required to reach the target on time](https://raw.githubusercontent.com/sdg-data-canada-odd-donnees/cif-cic_dev/develop/assets/img/methodology/r.svg)
 
-where
-![Equation for the compound annual growth rate required to reach the target on time](https://raw.githubusercontent.com/sdg-data-canada-odd-donnees/cif-cic_dev/develop/assets/img/methodology/cagr_t.svg)
-*y*<sub>T</sub> is the target value of the indicator in the target year, *t*<sub>T</sub>, and
+where<br>
+![Equation for the compound annual growth rate required to reach the target on time](https://raw.githubusercontent.com/sdg-data-canada-odd-donnees/cif-cic_dev/develop/assets/img/methodology/cagr_t.svg)<br>
+*y*<sub>T</sub> is the target value of the indicator in the target year, *t*<sub>T</sub>, and<br>
 *d* is +1 when the desired progress is in the positive direction and -1 when the desired progress is in the negative direction.
 
 This formula represents the ratio of the observed growth rate compared to the growth rate required to reach the target while accounting for certain edge cases where the direction to the target differs from the desired direction of progress (e.g., some cases where the base value achieves the target).
 
 The result is compared against a set of thresholds[^2] and assigned a progress category as described in the table below:
 
-| Ratio of observed over required growth rate  | Category                              | Symbol     |
-| :------------------------------------------- | :------------------------------------ | :--------- |
-| *Target is achieved*                         | Target achieved                       | <img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/target-achieved-gauge.png?raw=true" alt="Gauge icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the rightmost edge of the green segment." width="100" height="100"> |
-| *R* &geq; 95%                                | On track                              | <img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/green-gauge.png?raw=true" alt="Gauge icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the green segment." width="100" height="100"> |
-| 60% &leq; *R* &lt; 95%                       | Progress made but acceleration needed | <img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/yellow-gauge.png?raw=true" alt="Gauge icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the yellow segment." width="100" height="100"> |
-| 0% &leq; *R* &lt; 60%                        | Limited progress                      | <img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/orange-gauge.png?raw=true" alt="Gauge icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the orange segment." width="100" height="100"> |
-| *R* &lt; 0%                                  | Deterioration                         | <img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/red-gauge.png?raw=true" alt="Gauge icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the red segment." width="100" height="100"> |
-
-<!-- <style type="text/css">
+<style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   overflow:hidden;padding:10px 5px;word-break:normal;}
@@ -96,32 +88,32 @@ The result is compared against a set of thresholds[^2] and assigned a progress c
 </thead>
 <tbody>
   <tr>
-    <td class="tg-0pky">*Target is achieved*</td>
+    <td class="tg-0pky"><em>Target is achieved</em></td>
     <td class="tg-0pky">Target achieved</td>
-    <td class="tg-0pky"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/target-achieved-gauge.png?raw=true" width="150" height="150"></td>
+    <td class="tg-0pky"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/target-achieved-gauge.png?raw=true" alt="Gauge icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the rightmost edge of the green segment." width="100" height="100"></td>
   </tr>
   <tr>
-    <td class="tg-0pky">*R* &geq; 95%</td>
+    <td class="tg-0pky"><em>R</em> &geq; 95%</td>
     <td class="tg-0pky">On track</td>
-    <td class="tg-0pky"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/green-gauge.png?raw=true" alt="Guage icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the green segment." width="150" height="150"></td>
+    <td class="tg-0pky"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/green-gauge.png?raw=true" alt="Gauge icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the green segment." width="100" height="100"></td>
   </tr>
   <tr>
-    <td class="tg-0pky">60% &leq; *R* &lt; 95%</td>
+    <td class="tg-0pky">60% &leq; <em>R</em> &lt; 95%</td>
     <td class="tg-0pky">Progress made but acceleration needed</td>
-    <td class="tg-0pky"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/yellow-gauge.png?raw=true" alt="Guage icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the yellow segment." width="150" height="150"></td>
+    <td class="tg-0pky"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/yellow-gauge.png?raw=true" alt="Gauge icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the yellow segment." width="100" height="100"></td>
   </tr>
   <tr>
-    <td class="tg-0pky">0% &leq; *R* &lt; 60%</td>
+    <td class="tg-0pky">0% &leq; <em>R</em> &lt; 60%</td>
     <td class="tg-0pky">Limited progress</td>
-    <td class="tg-0pky"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/orange-gauge.png?raw=true" alt="Guage icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the orange segment." width="150" height="150"></td>
+    <td class="tg-0pky"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/orange-gauge.png?raw=true" alt="Gauge icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the orange segment." width="100" height="100"></td>
   </tr>
   <tr>
-    <td class="tg-0pky">*R* &lt; 0%</td>
+    <td class="tg-0pky"><em>R</em> &lt; 0%</td>
     <td class="tg-0pky">Deterioration</td>
-    <td class="tg-0pky"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/red-gauge.png?raw=true" alt="Guage icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the red segment." width="150" height="150"></td>
+    <td class="tg-0pky"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/red-gauge.png?raw=true" alt="Gauge icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the red segment." width="100" height="100"></td>
   </tr>
 </tbody>
-</table> -->
+</table>
   
 #### Indicators without quantitative targets
 In the case where no quantitative target for a given indicator has been provided, the observed compound annual growth rate is compared to predetermined fixed growth rates while also accounting for the desired direction of progress.
@@ -130,14 +122,7 @@ In the case where no quantitative target for a given indicator has been provided
 
 The thresholds are described in the table below:
 
-| Observed growth rate                          | Category                              | Symbol     |
-| :-------------------------------------------- | :------------------------------------ | :--------- |
-| *CAGR* &geq; 1.5% *C*&ast;                    | On track                              | <img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/green-gauge.png?raw=true" alt="Gauge icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the green segment." width="100" height="100"> |
-| 0.5% *C*&ast; &leq; *CAGR* &lt; 1.5% *C*&ast; | Progress made but acceleration needed | <img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/yellow-gauge.png?raw=true" alt="Gauge icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the yellow segment." width="100" height="100"> |
-| 0% &leq; *CAGR* &lt; 0.5% *C*&ast;            | Limited progress                      | <img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/orange-gauge.png?raw=true" alt="Gauge icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the orange segment." width="100" height="100"> |
-| *CAGR* &lt; 0%                                | Deterioration                         | <img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/red-gauge.png?raw=true" alt="Gauge icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the red segment." width="100" height="100"> |
-&ast; *The scaling factor C is only applied for indicators with natural limits as defined below. It is a variable between 0 and 1 that reduces thresholds greater than 0% to produce more realistic progress assessments near limits.*
-<!-- <style type="text/css">
+<style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   overflow:hidden;padding:10px 5px;word-break:normal;}
@@ -156,37 +141,38 @@ The thresholds are described in the table below:
 </thead>
 <tbody>
   <tr>
-    <td class="tg-0pky">*CAGR* &geq; 1.5% *C*&ast;</td>
+    <td class="tg-0pky"><em>CAGR</em> &geq; 1.5% <em>C</em>&ast;</td>
     <td class="tg-0pky">On track</td>
-    <td class="tg-0pky"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/green-gauge.png?raw=true" alt="Guage icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the green segment." width="150" height="150"></td>
+    <td class="tg-0pky"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/green-gauge.png?raw=true" alt="Gauge icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the green segment." width="100" height="100"></td>
   </tr>
   <tr>
-    <td class="tg-0pky">0.5% *C*&ast; &leq; *CAGR* &lt; 1.5% *C*&ast;</td>
+    <td class="tg-0pky">0.5% <em>C</em>&ast; &leq; <em>CAGR</em> &lt; 1.5% <em>C</em>&ast;</td>
     <td class="tg-0pky">Progress made but acceleration needed</td>
-    <td class="tg-0pky"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/yellow-gauge.png?raw=true" alt="Guage icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the yellow segment." width="150" height="150"></td>
+    <td class="tg-0pky"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/yellow-gauge.png?raw=true" alt="Gauge icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the yellow segment." width="100" height="100"></td>
   </tr>
   <tr>
-    <td class="tg-0pky">0% &leq; **CAGR* &lt; 0.5% *C*&ast;</td>
+    <td class="tg-0pky">0% &leq; <em>CAGR</em> &lt; 0.5% <em>C</em>&ast;</td>
     <td class="tg-0pky">Limited progress</td>
-    <td class="tg-0pky"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/orange-gauge.png?raw=true" alt="Guage icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the orange segment." width="150" height="150"></td>
+    <td class="tg-0pky"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/orange-gauge.png?raw=true" alt="Gauge icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the orange segment." width="100" height="100"></td>
   </tr>
   <tr>
-    <td class="tg-0pky">*CAGR* &lt; 0%</td>
+    <td class="tg-0pky"><em>CAGR</em> &lt; 0%</td>
     <td class="tg-0pky">Deterioration</td>
-    <td class="tg-0pky"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/red-gauge.png?raw=true" alt="Guage icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the red segment." width="150" height="150"></td>
+    <td class="tg-0pky"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/red-gauge.png?raw=true" alt="Gauge icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the red segment." width="100" height="100"></td>
   </tr>
 </tbody>
-</table> -->
-  
+</table>
+*<em>The scaling factor C is only applied for indicators with natural limits as defined below. It is a variable between 0 and 1 that reduces thresholds greater than 0% to produce more realistic progress assessments near limits.</em>
+
 In some cases, indicators may have natural maximum or minimum limits. For example, CIF indicator 9.4.1 *Proportion of Canadians that have access to the latest generally deployed mobile wireless technology* cannot exceed a maximum limit of 100%. If the value of the indicator in the base year is already near the natural limit, it may be impossible to achieve the growth rates required to attain a progress status of “On track” or “Progress made but acceleration needed” without exceeding the maximum limit of 100%. In these cases, the growth rate thresholds presented in the table are scaled down by a factor that accounts for the base value *y*<sub>0</sub> and natural limit *y*<sub>lim</sub> of the indicator. Progress thresholds greater than 0% are reduced by a factor of
 
 ![Scaling factor equation](https://raw.githubusercontent.com/sdg-data-canada-odd-donnees/cif-cic_dev/develop/assets/img/methodology/coeff.svg)
 
-where the first case (0 &leq; *y*<sub>0</sub> &lt; *y*<sub>lim</sub>) covers situations with a maximum limit and the last two cases cover situations with a minimum limit. The scaling factor, *C*, is a variable between 0 and 1 that reduces the progress thresholds according to the proximity between the base value and the limit. If the base value is very close to the limit, C will be near zero and will aggressively reduce the thresholds to allow a more realistic range of progress assessments. Alternatively, if the base value is far from the limit, *C* will be near 1 and will have a minimal impact on the final progress assessment for the indicator.
+where the first case (0 ≤ *y*<sub>0</sub> &lt; *y*<sub>lim</sub>) covers situations with a maximum limit and the last two cases cover situations with a minimum limit. The scaling factor, *C*, is a variable between 0 and 1 that reduces the progress thresholds according to the proximity between the base value and the limit. If the base value is very close to the limit, *C* will be near zero and will aggressively reduce the thresholds to allow a more realistic range of progress assessments. Alternatively, if the base value is far from the limit, *C* will be near 1 and will have a minimal impact on the final progress assessment for the indicator.
 
 The scaling factor defined above was chosen to optimally reduce the progress thresholds in a way that (1) ensures the possibility of attaining a progress status of “On track” without exceeding the limit throughout the first 15 years,[^3] (2) ensures the reduction factor is identical at equal relative distances from a minimum or a maximum limit, and (3) poses a minimal effect on the thresholds used at intermediate values and those values far away from the limit.[^4]
 
-Only a limit that affects progress in the desired direction is considered. For example, a maximum limit is not considered for indicators whose desired direction of progress is negative. Also, the scaling factor is not applied to thresholds less than or equal to zero (thresholds &leq; 0%), which represent movement in the inverse direction from the desired direction of progress.
+Only a limit that affects progress in the desired direction is considered. For example, a maximum limit is not considered for indicators whose desired direction of progress is negative. Also, the scaling factor is not applied to thresholds less than or equal to zero (thresholds ≤ 0%), which represent movement in the inverse direction from the desired direction of progress.
 
 #### Aggregated progress status
 In some instances, an indicator may not have an explicit headline series or may be composed of many sub-indicators of equal importance. For example, CIF indicator 5.3.1 *Proportion of leadership roles held by women* provides an assortment of data series for women in various leadership positions. In these situations, the trend of each series is considered in making a final progress assessment for the indicator as a whole.
@@ -195,25 +181,26 @@ To do so, the progress value (*R* for indicators with quantitative targets and *
 
 | Symbol  | Category                              | Score      |
 | :------ | :------------------------------------ | :--------- |
-| <img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/target-achieved-gauge.png?raw=true" alt="Gauge icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the rightmost edge of the green segment." width="100" height="100"> | Target achieved                       | 5&ast;     |
-| <img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/green-gauge.png?raw=true" alt="Gauge icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the green segment." width="100" height="100"> | On track                              | [2.5, 5[   |
-| <img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/yellow-gauge.png?raw=true" alt="Gauge icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the yellow segment." width="100" height="100"> | Progress made but acceleration needed | [0, 2.5[   |
-| <img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/orange-gauge.png?raw=true" alt="Gauge icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the orange segment." width="100" height="100"> | Limited progress                      | [-2.5, 0[  |
-| <img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/red-gauge.png?raw=true" alt="Gauge icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the red segment." width="100" height="100"> | Deterioration                         | [-5, -2.5[ |
-&ast; *Only applicable for indicators with quantitative targets. Indicators that achieve the target are automatically assigned a score of 5 regardless of the underlying trend.*
+| <img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/target-achieved-gauge.png?raw=true" alt="Gauge icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the rightmost edge of the green segment." width="50" height="50"> | Target achieved         | 5*         |
+| <img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/green-gauge.png?raw=true" alt="Gauge icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the green segment." width="50" height="50"> | On track                               | [2.5, 5[   |
+| <img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/yellow-gauge.png?raw=true" alt="Gauge icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the yellow segment." width="50" height="50"> | Progress made but acceleration needed | [0, 2.5[   |
+| <img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/orange-gauge.png?raw=true" alt="Gauge icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the orange segment." width="50" height="50"> | Limited progress                      | [-2.5, 0[  |
+| <img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/red-gauge.png?raw=true" alt="Gauge icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the red segment." width="50" height="50"> | Deterioration                            | [-5, -2.5[ |
+
+*<em>Only applicable for indicators with quantitative targets. Indicators that achieve the target are automatically assigned a score of 5 regardless of the underlying trend.</em>
 
 For indicators without quantitative targets, the cut-off thresholds are 2% for a score of +5 and -2% for a score of -5 as illustrated in Figure 1 below. If applicable, thresholds greater than 0% are reduced by the scaling factor *C* to maintain consistency between scores for indicators with a limit and indicators without a limit.
 
 <figure>
   <figcaption>Figure 1. Score transformation for indicators without quantitative targets</figcaption>
-  <img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/methodology/qualitative_score_transformation_en.svg?raw=true" alt="Score transformation for indicators without quantitative targets. When the progress value (CAGR) is less than or equal to -2%, the score is -5. Between progress values of -2% and 0%, the score increases linearly from -5  to -2.5. Between progress values of 0% and 0.5%, where the latter threshold may be reduced by the scaling factor if applicable, the score increases linearly from -2.5 to 0. Between progress values of 0.5% and 1.5%, where both thresholds may be reduced by the scaling factor if applicable, the score increases linearly from 0 to 2.5. Between progress values of 1.5% and 2%, where both tresholds may be reduced by the scaling factor if applicable, the score increases linearly from 2.5 to 5. Beyond progress values of 2% (reduced by the scaling factor if applicable), the score is 5." style="width:100%">
+  <img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/methodology/qualitative_score_transformation_en.svg?raw=true" alt="Score transformation for indicators without quantitative targets. When the progress value (CAGR) is less than or equal to -2%, the score is -5. Between progress values of -2% and 0%, the score increases linearly from -5  to -2.5. Between progress values of 0% and 0.5%, where the latter threshold may be reduced by the scaling factor if applicable, the score increases linearly from -2.5 to 0. Between progress values of 0.5% and 1.5%, where both thresholds may be reduced by the scaling factor if applicable, the score increases linearly from 0 to 2.5. Between progress values of 1.5% and 2%, where both tresholds may be reduced by the scaling factor if applicable, the score increases linearly from 2.5 to 5. Beyond progress values of 2% (reduced by the scaling factor if applicable), the score is 5.">
 </figure>
 
 For indicators with quantitative targets, the cut-off thresholds are 130% for a score of +5 and -60% for a score of -5 as illustrated in Figure 2 below.
 
 <figure>
   <figcaption>Figure 2. Score transformation for indicators with quantitative targets</figcaption>
-  <img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/methodology/quantitative_score_transformation_en.svg?raw=true" alt="Score transformation for indicators with quantitative targets. When the progress value (R) is less than or equal to -60%, the score is -5. Between progress values of -60% and 60%, the score increases linearly from -5  to 0. Between progress values of 60% and 130%, the score inscreases linearly from 0 to 5. Beyond progress values of 130%, the score is 5." style="width:100%">
+  <img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/methodology/quantitative_score_transformation_en.svg?raw=true" alt="Score transformation for indicators with quantitative targets. When the progress value (R) is less than or equal to -60%, the score is -5. Between progress values of -60% and 60%, the score increases linearly from -5  to 0. Between progress values of 60% and 130%, the score inscreases linearly from 0 to 5. Beyond progress values of 130%, the score is 5.">
 </figure>
 
 The mean of the progress scores from each series is taken as the overall progress score for the indicator. The aggregate progress status is determined directly from the overall progress score according to the defined ranges of each progress category. For example, the aggregate progress status for an indicator with an overall score of +1 is “Progress made but acceleration needed”.
@@ -229,7 +216,7 @@ The progress measurement methodology uses an exponential model to evaluate the g
 
 Generally, care should be taken to manually select an appropriate replacement value. For example, a target of zero could be replaced by a suitably small number like 1 or 0.001, but the latter is a factor of 1000 smaller than the former, which could significantly impact the final progress assessment.
 
-Another special consideration for the base value comes when it is exactly equal to the natural limit (*y*<sub>0</sub> = *y*<sub>lim</sub>) of an indicator without a quantitative target. In this case, the scaling factor *C* will be exactly zero, meaning all progress thresholds greater than 0% will be reduced to zero as well. In such a situation, if the calculated progress value is zero or greater (*CAGR* &geq; 0), the current value is maintained at the limit (or may even exceed the limit) and a progress status of “On track” as well as a score of +5 are assigned to the series. However, if the calculated progress value is negative (*CAGR* &lt; 0), the progress score and status can be determined as usual.
+Another special consideration for the base value comes when it is exactly equal to the natural limit (*y*<sub>0</sub> = *y*<sub>lim</sub>) of an indicator without a quantitative target. In this case, the scaling factor *C* will be exactly zero, meaning all progress thresholds greater than 0% will be reduced to zero as well. In such a situation, if the calculated progress value is zero or greater (*CAGR* ≥ 0), the current value is maintained at the limit (or may even exceed the limit) and a progress status of “On track” as well as a score of +5 are assigned to the series. However, if the calculated progress value is negative (*CAGR* &lt; 0), the progress score and status can be determined as usual.
 
 #### Special considerations for the base year and the target year
 The [2030 Agenda for Sustainable Development](https://www.un.org/sustainabledevelopment/development-agenda/) was adopted in 2015 to catalyze progress towards the 17 Sustainable Development Goals by 2030. As such, the base year is assumed to be 2015 and the target year is assumed to be 2030 unless specified otherwise. Even when the target results from a policy that was implemented after 2015, the base year will be 2015 when data exists unless otherwise specified. This approach ensures coherence and comparability across assessments, in alignment with Statistics Canada’s dimensions of data quality.
