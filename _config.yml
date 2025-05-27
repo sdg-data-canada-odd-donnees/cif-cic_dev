@@ -289,16 +289,19 @@ search_index_extra_fields:
 # bootstrap_5: true
 # chartjs_3: true
 progress_status:
-    status_heading: status.progress_header
+    status_heading: status.progress_status
     status_types:
+      - value: not_available_manual
+        label: status.not_available_manual
+        alt: status.not_available_manual
       - value: not_available
         label: status.progress_not_available
-#        image: assets/img/progress/not-available.png
-#        alt: status.progress_not_available
+        # image: assets/img/progress/not-available.png
+        alt: status.progress_not_available
       - value: target_achieved
-        label: status.progress_target_achieved
+        label: status.target_achieved
         image: assets/img/progress/target-achieved-gauge.png
-        alt: status.progress_target_achieved
+        alt: status.target_achieved
       - value: substantial_progress
         label: status.substantial_progress
         image: assets/img/progress/green-gauge.png
@@ -307,10 +310,6 @@ progress_status:
         label: status.moderate_progress
         image: assets/img/progress/yellow-gauge.png
         alt: status.moderate_progress
-      - value: negligible_progress
-        label: status.negligible_progress
-        image: assets/img/progress/orange-gauge.png
-        alt: status.negligible_progress
       - value: limited_progress
         label: status.limited_progress
         image: assets/img/progress/orange-gauge.png
@@ -319,11 +318,3 @@ progress_status:
         label: status.deterioration
         image: assets/img/progress/red-gauge.png
         alt: status.deterioration
-      - value: moderate_deterioration
-        label: status.moderate_deterioration
-        image: assets/img/progress/orange-gauge.png
-        alt: status.moderate_deterioration
-      - value: substantial_deterioration
-        label: status.substantial_deterioration
-        image: assets/img/progress/red-gauge.png
-        alt: status.substantial_deterioration
