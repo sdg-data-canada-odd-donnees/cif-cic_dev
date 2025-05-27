@@ -139,7 +139,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20250527143610">
+        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20250527144527">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -341,7 +341,7 @@ data-event-label="high"
 <em>t</em><sub>0</sub> est l’année de base, 2015, sauf indication contraire, et<br />
 <em>y</em><sub>0</sub> est la valeur de l’indicateur dans l’année de base.</p>
 
-<h4 id="indicateurs-avec-cibles-quantitatives">Indicateurs avec cibles quantitatives</h4>
+<h4 id="indicateurs-avec-cibles-quantitatives"><strong>Indicateurs avec cibles quantitatives</strong></h4>
 <p>Dans le cas où une cible quantitative est fournie pour l’indicateur, le <em>TCAC</em><sub>i</sub> observé est comparé à la magnitude du <em>TCAC</em><sub>T</sub> théorique, qui représente le taux de croissance annuel qui serait nécessaire pour atteindre la cible dans les délais, en calculant le ratio (<em>R</em>) comme suit :</p>
 
 <p><img src="https://raw.githubusercontent.com/sdg-data-canada-odd-donnees/cif-cic_dev/develop/assets/img/methodology/fr/r.svg" alt="Équation pour le ratio entre le taux de croissance annuel observé et le taux de croissance annual requis pour atteindre la cible dans les délais" /></p>
@@ -402,7 +402,9 @@ data-event-label="high"
 </tbody>
 </table>
 
-<h4 id="indicateurs-sans-cibles-quantitatives">Indicateurs sans cibles quantitatives</h4>
+<p><br /><br /></p>
+
+<h4 id="indicateurs-sans-cibles-quantitatives"><strong>Indicateurs sans cibles quantitatives</strong></h4>
 <p>Dans le cas où aucune cible quantitative n’a été fournie pour un indicateur donné, le taux de croissance annuel composé est comparé à un taux de croissance fixe prédéterminé en tenant aussi compte de la direction de progrès désirée.</p>
 
 <p><img src="https://raw.githubusercontent.com/sdg-data-canada-odd-donnees/cif-cic_dev/develop/assets/img/methodology/fr/cagr.svg" alt="Équation pour le taux de croissance annuel composé tenant compte de la direction de progrès désirée" /></p>
@@ -454,7 +456,7 @@ data-event-label="high"
 
 <p>Dans certains cas, un indicateur peut avoir une limite maximale ou minimale naturelle. Par exemple, l’indicateur 9.4.1 du CIC <em>Proportion des Canadiens qui ont accès à la technologie sans fil mobile généralement déployée la plus récente</em> ne peut pas surpasser une limite maximale de 100 %. Si la valeur de l’indicateur dans l’année de base est déjà proche de la limite naturelle, il pourrait être impossible de réaliser les taux de croissance nécessaires pour atteindre la catégorie de progrès « Sur la bonne voie » ou « Des progrès ont été réalisés, mais une accélération est nécessaire » sans dépasser la limite maximale de 100 %. Dans ces cas, les seuils de progrès présentés dans le tableau sont réduits par un facteur qui tient compte de la valeur de base <em>y</em><sub>0</sub> et de la limite naturelle <em>y</em><sub>lim</sub> de l’indicateur. Les seuils de progrès supérieurs à 0 % sont réduits d’un facteur de</p>
 
-<p><img src="https://raw.githubusercontent.com/sdg-data-canada-odd-donnees/cif-cic_dev/develop/assets/img/methodology/fr/coeff.svg" alt="Équation pour le facteur d'échelle" /></p>
+<p><img src="https://raw.githubusercontent.com/sdg-data-canada-odd-donnees/cif-cic_dev/develop/assets/img/methodology/coeff.svg" alt="Équation pour le facteur d'échelle" /></p>
 
 <p>où le premier cas (0 ≤ y<sub>0</sub> &lt; <em>y</em><sub>lim</sub>) concerne les situations avec une limite maximale et les deux cas suivants concernent les situations avec une limite minimale. Le facteur d’échelle, <em>C</em>, est une variable comprise entre 0 et 1 qui réduit les seuils de progrès selon la proximité entre la valeur de base et la limite. Si la valeur de base est très proche de la limite, <em>C</em> s’approchera à zéro et réduira fortement les seuils afin de permettre une gamme plus réaliste d’estimations de progrès. Autrement, si la valeur de base est éloignée de la limite, <em>C</em> s’approchera à 1 et aura un impact minime sur l’estimation finale du progrès pour l’indicateur.</p>
 
@@ -462,48 +464,57 @@ data-event-label="high"
 
 <p>Seule une limite qui affecte le progrès dans la direction désirée est considérée. Par exemple, une limite maximale n’est pas considérée pour les indicateurs dont le sens de progression désiré est négatif. De même, le facteur d’échelle n’est pas appliqué aux seuils inférieurs ou égales à zéro (seuils ≤ 0 %) qui représentent un mouvement dans la direction inverse à la direction de progrès désirée.</p>
 
-<h4 id="agrégation-du-progrès">Agrégation du progrès</h4>
+<h4 id="agrégation-du-progrès"><strong>Agrégation du progrès</strong></h4>
 <p>Dans certains cas, un indicateur peut ne pas avoir une série principale explicite ou peut être composé de plusieurs sous-indicateurs d’importance égale. Par exemple, l’indicateur 5.3.1 du CIC <em>Proportion de rôles de leadership tenus par des femmes</em> fournit plusieurs séries de données portant sur les femmes occupant divers postes de leadership. Dans ces situations, la tendance de chaque série est considérée dans l’évaluation finale du progrès de l’indicateur au complet.</p>
 
 <p>Pour ce faire, la valeur du progrès (<em>R</em> pour les indicateurs avec cibles quantitatives et <em>TCAC</em> pour les indicateurs sans cibles quantitatives) pour chaque série pertinente est convertie en un score. Le score est obtenu par une transformation linéaire de la valeur du progrès en un score compris entre -5 pour les indicateurs démontrant une détérioration substantielle et +5 pour les indicateurs démontrant une progression substantielle (voir les figures 1 et 2). La gamme complète de scores est divisée en intervalles égaux parmi les quatre catégories de progrès : les scores entre 2,5 et 5 appartiennent à la catégorie « Sur la bonne voie », les scores entre 0 et 2,5 appartiennent à la catégorie « Des progrès ont été réalisés, mais une accélération est nécessaire », les scores entre -2,5 et 0 appartiennent à la catégorie « Progrès limités » et les scores entre -5 et -2,5 appartiennent à la catégorie « Détérioration ».</p>
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: left">Symbole</th>
-      <th style="text-align: left">Catégorie</th>
-      <th style="text-align: left">Score</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: left"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/target-achieved-gauge.png?raw=true" alt="Icône d'un jauge divisé également en quatre sections (de gauche à droite): rouge, orange, jaune et vert. Une aiguille noire pointe vers l'extrémité droite de la section verte." width="50" height="50" /></td>
-      <td style="text-align: left">Cible atteinte</td>
-      <td style="text-align: left">5*</td>
-    </tr>
-    <tr>
-      <td style="text-align: left"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/green-gauge.png?raw=true" alt="Icône d'un jauge divisé également en quatre sections (de gauche à droite): rouge, orange, jaune et vert. Une aiguille noire pointe au milieu de la section verte." width="50" height="50" /></td>
-      <td style="text-align: left">Sur la bonne voie</td>
-      <td style="text-align: left">[2.5, 5[</td>
-    </tr>
-    <tr>
-      <td style="text-align: left"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/yellow-gauge.png?raw=true" alt="Icône d'un jauge divisé également en quatre sections (de gauche à droite): rouge, orange, jaune et vert. Une aiguille noire pointe au milieu de la section jaune." width="50" height="50" /></td>
-      <td style="text-align: left">Des progrès ont été réalisés, mais une accélération est nécessaire</td>
-      <td style="text-align: left">[0, 2.5[</td>
-    </tr>
-    <tr>
-      <td style="text-align: left"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/orange-gauge.png?raw=true" alt="Icône d'un jauge divisé également en quatre sections (de gauche à droite): rouge, orange, jaune et vert. Une aiguille noire pointe au milieu de la section orange." width="50" height="50" /></td>
-      <td style="text-align: left">Progrès limités</td>
-      <td style="text-align: left">[-2.5, 0[</td>
-    </tr>
-    <tr>
-      <td style="text-align: left"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/red-gauge.png?raw=true" alt="Icône d'un jauge divisé également en quatre sections (de gauche à droite): rouge, orange, jaune et vert. Une aiguille noire pointe au milieu de la section rouge." width="50" height="50" /></td>
-      <td style="text-align: left">Détérioration</td>
-      <td style="text-align: left">[-5, -2.5[</td>
-    </tr>
-  </tbody>
-</table>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-fymr{border-color:inherit;font-weight:bold;text-align:left;vertical-align:top}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
 
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-fymr">Symbole</th>
+    <th class="tg-fymr">Catégorie</th>
+    <th class="tg-fymr">Score</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/target-achieved-gauge.png?raw=true" alt="Icône d'un jauge divisé également en quatre sections (de gauche à droite): rouge, orange, jaune et vert. Une aiguille noire pointe vers l'extrémité droite de la section verte." width="50" height="50" /></td>
+    <td class="tg-0pky">Cible atteinte</td>
+    <td class="tg-0pky">5*</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/green-gauge.png?raw=true" alt="Icône d'un jauge divisé également en quatre sections (de gauche à droite): rouge, orange, jaune et vert. Une aiguille noire pointe au milieu de la section verte." width="50" height="50" /></td>
+    <td class="tg-0pky">Sur la bonne voie</td>
+    <td class="tg-0pky">[2,5, 5]</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/yellow-gauge.png?raw=true" alt="Icône d'un jauge divisé également en quatre sections (de gauche à droite): rouge, orange, jaune et vert. Une aiguille noire pointe au milieu de la section jaune." width="50" height="50" /></td>
+    <td class="tg-0pky">Des progrès ont été réalisés, mais une accélération est nécessaire</td>
+    <td class="tg-0pky">[0, 2,5[</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/orange-gauge.png?raw=true" alt="Icône d'un jauge divisé également en quatre sections (de gauche à droite): rouge, orange, jaune et vert. Une aiguille noire pointe au milieu de la section orange." width="50" height="50" /></td>
+    <td class="tg-0pky">Progrès limités</td>
+    <td class="tg-0pky">[-2,5, 0]</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/red-gauge.png?raw=true" alt="Icône d'un jauge divisé également en quatre sections (de gauche à droite): rouge, orange, jaune et vert. Une aiguille noire pointe au milieu de la section rouge." width="50" height="50" /></td>
+    <td class="tg-0pky">Détérioration</td>
+    <td class="tg-0pky">[-5, -2,5[</td>
+  </tr>
+</tbody>
+</table>
 <p>*<em>Seulement applicable aux indicateurs avec cibles quantitatives. Les indicateurs qui atteignent leur cible se voient automatiquement attribuer un score de 5, quelle que soit la tendance sous-jacente.</em></p>
 
 <p>Pour les indicateurs sans cibles quantitatives, les seuils limites sont de 2 % pour un score de +5 et de -2 % pour un score de -5, comme illustré dans la figure 1 ci-dessous. Le cas échéant, les seuils supérieurs à 0 % sont réduits par le facteur d’échelle afin de maintenir la cohérence entre les scores des indicateurs avec limite et sans limites.</p>
@@ -526,7 +537,7 @@ data-event-label="high"
 
 <h3 id="considérations-et-exceptions">Considérations et exceptions</h3>
 
-<h4 id="considérations-spéciales-concernant-la-valeur-de-base-et-la-valeur-cible">Considérations spéciales concernant la valeur de base et la valeur cible</h4>
+<h4 id="considérations-spéciales-concernant-la-valeur-de-base-et-la-valeur-cible"><strong>Considérations spéciales concernant la valeur de base et la valeur cible</strong></h4>
 <p>La méthodologie de mesure de progrès prend un  modèle exponentiel pour évaluer le taux de croissance d’un indicateur observé jusqu’à présent par rapport à différents seuils. En tant que modèle exponentiel, il ne peut pas traiter les cas où la valeur de base ou la cible est zéro. Par conséquent, sauf indication contraire, les remplacements suivants sont effectués automatiquement :</p>
 <ol>
   <li>Si la valeur cible est zéro, elle est remplacée par 0,001 dans le calcul de la mesure de progrès.</li>
@@ -537,12 +548,12 @@ data-event-label="high"
 
 <p>La valeur de base fait l’objet d’une autre considération spéciale lorsqu’elle est exactement égale à la limite  naturelle (<em>y</em><sub>0</sub> = <em>y</em><sub>lim</sub>) d’un indicateur sans cible quantitative. Dans ce cas, le facteur d’échelle <em>C</em> sera exactement zéro, ce qui signifie que tous les seuils de progrès supérieurs à 0 % seront aussi ramenés à zéro. Dans une telle situation, si la valeur du progrès calculée est égale ou supérieure à zéro (<em>TCAC</em> ≥ 0), la valeur actuelle est maintenue à la limite (ou pourrait même surpasser la limite) et l’état de progrès « Sur la bonne voie » ainsi qu’un score de +5 sont attribués à la série. Cependant, si la valeur du progrès calculée est négative (<em>TCAC</em> &lt; 0), le score et l’état de progrès peuvent être déterminés selon la procédure habituelle.</p>
 
-<h4 id="considérations-spéciales-concernant-lannée-de-base-et-lannée-cible">Considérations spéciales concernant l’année de base et l’année cible</h4>
+<h4 id="considérations-spéciales-concernant-lannée-de-base-et-lannée-cible"><strong>Considérations spéciales concernant l’année de base et l’année cible</strong></h4>
 <p>Le <a href="https://www.un.org/sustainabledevelopment/fr/development-agenda/">Programme de développement durable à l’horizon 2030</a> a été adopté en 2015 pour catalyser le progrès envers les 17 objectifs de développement durable d’ici 2030. À cet effet, on suppose que l’année de base est 2015 et l’année cible est 2030, sauf indication contraire. Même lorsque l’objectif résulte d’une politique mise en œuvre après 2015, l’année de base sera 2015 lorsque les données existent, sauf indication contraire. Cette approche assure la cohérence et la comparabilité des estimations, conformément aux dimensions de la qualité des données de Statistique Canada.</p>
 
 <p>S’il n’y a pas de données en 2015, la première année disponible après 2015 sera utilisée. Dans les rares cas où la périodicité des données est de 4 ans ou plus, l’année de base 2014 peut être utilisée à la place. De plus, si la période de référence s’étend sur plusieurs années, la première année est utilisée comme période de référence. Par exemple, la période de référence 2015-16 est interprétée comme l’année de référence 2015 dans le calcul du progrès.</p>
 
-<h4 id="exigences-minimales-concernant-les-données">Exigences minimales concernant les données</h4>
+<h4 id="exigences-minimales-concernant-les-données"><strong>Exigences minimales concernant les données</strong></h4>
 <p>Les données doivent répondre à certains critères afin que la méthodologie puisse produire une estimation du progrès.</p>
 <ol>
   <li>Au moins deux années de données sont nécessaires afin de calculer la mesure de progrès.</li>
@@ -553,17 +564,17 @@ data-event-label="high"
 
 <p>Dans de rares cas, lorsque les experts responsables ont déterminé qu’une évaluation du progrès entraverait l’interprétation des données de l’indicateur, l’état du progrès sera plutôt indiqué comme « Non disponible ».</p>
 
-<h4 id="indicateurs-binaires">Indicateurs binaires</h4>
+<h4 id="indicateurs-binaires"><strong>Indicateurs binaires</strong></h4>
 <p>Les indicateurs binaires sont classés comme suit :</p>
 <ol>
   <li>« Cible atteinte » si toutes les conditions de la cible sont satisfaites.</li>
   <li>« Cible non atteinte » si une ou plusieurs conditions de la cible ne sont pas satisfaites.</li>
 </ol>
 
-<h4 id="interprétation">Interprétation</h4>
+<h4 id="interprétation"><strong>Interprétation</strong></h4>
 <p>Les estimations de progrès générés par la méthodologie décrite représentent une simplification de la réalité. La méthodologie pourrait produire de meilleurs résultats lorsqu’elle est appliquée à des indicateurs démontrant une tendance de croissance exponentielle continue année après année que lorsqu’elle est appliquée à d’autres types d’indicateurs. Les résultats pour les indicateurs ayant une valeur de base ou valeur cible de zéro devraient également être interprétés avec prudence en raison des limites du modèle sous-jacent. Il est important de noter que les politiques prennent du temps avant de produire des résultats mesurables. Les utilisateurs devraient interpréter l’état du progrès indiqué en conséquence, conjointement avec toute autre information contextuelle pertinente.</p>
 
-<h4 id="exceptions-spécifiques-dans-le-cadre-dindicateurs-canadien">Exceptions spécifiques dans le Cadre d’indicateurs canadien</h4>
+<h4 id="exceptions-spécifiques-dans-le-cadre-dindicateurs-canadien"><strong>Exceptions spécifiques dans le Cadre d’indicateurs canadien</strong></h4>
 <p>La méthodologie de mesure de progrès permet de transformer les données d’une forme invalide en une forme valide équivalente avant de calculer les progrès.</p>
 
 <p>Lorsque la cible énoncée est d’atteindre ou de promouvoir le partage égal des responsabilités dans le ménage et la famille, on interprète que la cible signifie un ratio égal entre les sexes. Par exemple, les données de l’indicateur 5.4.1 du CIC <em>Proportion du temps consacré à des soins et travaux domestiques non rémunérés</em> sont transformées, avant le calcul du progrès, en un ratio du temps consacré par les femmes aux soins et travaux domestiques non rémunérés par rapport au temps consacré par les hommes. La progression désirée est une diminution vers un ratio cible de 1.</p>
@@ -1175,12 +1186,12 @@ ga('send', 'pageview');
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/cif-cic_dev/assets/js/sdg.js?v=20250527143610'></script>
+<script src='/cif-cic_dev/assets/js/sdg.js?v=20250527144527'></script>
 
 
     
     
-    <script src="/cif-cic_dev/assets/js/custom.js?v=20250527143610"></script><script>
+    <script src="/cif-cic_dev/assets/js/custom.js?v=20250527144527"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

@@ -139,7 +139,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20250527143610">
+        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20250527144527">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -340,7 +340,7 @@ data-event-label="high"
 <em>t</em><sub>0</sub> is the base year, 2015, unless otherwise specified, and<br />
 <em>y</em><sub>0</sub> is the value of the indicator in the base year.</p>
 
-<h4 id="indicators-with-quantitative-targets">Indicators with quantitative targets</h4>
+<h4 id="indicators-with-quantitative-targets"><strong>Indicators with quantitative targets</strong></h4>
 <p>In the case where a quantitative target for the indicator is provided, the observed <em>CAGR</em><sub>i</sub> is compared to the magnitude of the theoretical <em>CAGR</em><sub>T</sub>, which represents the annual growth rate that would be required to achieve the target on time, by calculating the ratio (<em>R</em>) as follows:</p>
 
 <p><img src="https://raw.githubusercontent.com/sdg-data-canada-odd-donnees/cif-cic_dev/develop/assets/img/methodology/r.svg" alt="Equation for the ratio of the observed compound annual growth rate to the growth rate required to reach the target on time" /></p>
@@ -401,7 +401,9 @@ data-event-label="high"
 </tbody>
 </table>
 
-<h4 id="indicators-without-quantitative-targets">Indicators without quantitative targets</h4>
+<p><br /><br /></p>
+
+<h4 id="indicators-without-quantitative-targets"><strong>Indicators without quantitative targets</strong></h4>
 <p>In the case where no quantitative target for a given indicator has been provided, the observed compound annual growth rate is compared to predetermined fixed growth rates while also accounting for the desired direction of progress.</p>
 
 <p><img src="https://raw.githubusercontent.com/sdg-data-canada-odd-donnees/cif-cic_dev/develop/assets/img/methodology/cagr.svg" alt="Equation for the observed compound annual growth rate accounting for the desired direction of progress" /></p>
@@ -461,48 +463,57 @@ data-event-label="high"
 
 <p>Only a limit that affects progress in the desired direction is considered. For example, a maximum limit is not considered for indicators whose desired direction of progress is negative. Also, the scaling factor is not applied to thresholds less than or equal to zero (thresholds ≤ 0%), which represent movement in the inverse direction from the desired direction of progress.</p>
 
-<h4 id="aggregated-progress-status">Aggregated progress status</h4>
+<h4 id="aggregated-progress-status"><strong>Aggregated progress status</strong></h4>
 <p>In some instances, an indicator may not have an explicit headline series or may be composed of many sub-indicators of equal importance. For example, CIF indicator 5.3.1 <em>Proportion of leadership roles held by women</em> provides an assortment of data series for women in various leadership positions. In these situations, the trend of each series is considered in making a final progress assessment for the indicator as a whole.</p>
 
 <p>To do so, the progress value (<em>R</em> for indicators with quantitative targets and <em>CAGR</em> for indicators without quantitative targets) for each relevant series is converted to a score. The score is obtained from a linear transformation of the progress value to a score that ranges from -5 for indicators showing substantial deterioration to +5 for indicators showing substantial progress (see Figures 1 and 2). The score range is divided equally between all four progress categories: scores between 2.5 and 5 belong to the “On track” category, scores between 0 and 2.5 belong to the “Progress made but acceleration needed” category, scores between -2.5 and 0 belong to the “Limited progress” category, and scores between -5 and -2.5 belong to the “Deterioration” category.</p>
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: left">Symbol</th>
-      <th style="text-align: left">Category</th>
-      <th style="text-align: left">Score</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: left"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/target-achieved-gauge.png?raw=true" alt="Gauge icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the rightmost edge of the green segment." width="50" height="50" /></td>
-      <td style="text-align: left">Target achieved</td>
-      <td style="text-align: left">5*</td>
-    </tr>
-    <tr>
-      <td style="text-align: left"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/green-gauge.png?raw=true" alt="Gauge icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the green segment." width="50" height="50" /></td>
-      <td style="text-align: left">On track</td>
-      <td style="text-align: left">[2.5, 5[</td>
-    </tr>
-    <tr>
-      <td style="text-align: left"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/yellow-gauge.png?raw=true" alt="Gauge icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the yellow segment." width="50" height="50" /></td>
-      <td style="text-align: left">Progress made but acceleration needed</td>
-      <td style="text-align: left">[0, 2.5[</td>
-    </tr>
-    <tr>
-      <td style="text-align: left"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/orange-gauge.png?raw=true" alt="Gauge icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the orange segment." width="50" height="50" /></td>
-      <td style="text-align: left">Limited progress</td>
-      <td style="text-align: left">[-2.5, 0[</td>
-    </tr>
-    <tr>
-      <td style="text-align: left"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/red-gauge.png?raw=true" alt="Gauge icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the red segment." width="50" height="50" /></td>
-      <td style="text-align: left">Deterioration</td>
-      <td style="text-align: left">[-5, -2.5[</td>
-    </tr>
-  </tbody>
-</table>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-fymr{border-color:inherit;font-weight:bold;text-align:left;vertical-align:top}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
 
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-fymr">Symbol</th>
+    <th class="tg-fymr">Category</th>
+    <th class="tg-fymr">Score</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/target-achieved-gauge.png?raw=true" alt="Gauge icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the rightmost edge of the green segment." width="50" height="50" /></td>
+    <td class="tg-0pky">Target achieved</td>
+    <td class="tg-0pky">5*</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/green-gauge.png?raw=true" alt="Gauge icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the green segment." width="50" height="50" /></td>
+    <td class="tg-0pky">On track</td>
+    <td class="tg-0pky">[2.5, 5]</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/yellow-gauge.png?raw=true" alt="Gauge icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the yellow segment." width="50" height="50" /></td>
+    <td class="tg-0pky">Progress made but acceleration needed</td>
+    <td class="tg-0pky">[0, 2.5[</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/orange-gauge.png?raw=true" alt="Gauge icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the orange segment." width="50" height="50" /></td>
+    <td class="tg-0pky">Limited progress</td>
+    <td class="tg-0pky">[-2.5, 0[</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/red-gauge.png?raw=true" alt="Gauge icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the red segment." width="50" height="50" /></td>
+    <td class="tg-0pky">Deterioration</td>
+    <td class="tg-0pky">[-5, -2.5[</td>
+  </tr>
+</tbody>
+</table>
 <p>*<em>Only applicable for indicators with quantitative targets. Indicators that achieve the target are automatically assigned a score of 5 regardless of the underlying trend.</em></p>
 
 <p>For indicators without quantitative targets, the cut-off thresholds are 2% for a score of +5 and -2% for a score of -5 as illustrated in Figure 1 below. If applicable, thresholds greater than 0% are reduced by the scaling factor <em>C</em> to maintain consistency between scores for indicators with a limit and indicators without a limit.</p>
@@ -525,7 +536,7 @@ data-event-label="high"
 
 <h3 id="considerations-and-exceptions">Considerations and Exceptions</h3>
 
-<h4 id="special-considerations-for-the-base-year-and-the-target-year">Special considerations for the base year and the target year</h4>
+<h4 id="special-considerations-for-the-base-year-and-the-target-year"><strong>Special considerations for the base year and the target year</strong></h4>
 <p>The progress measurement methodology uses an exponential model to evaluate the growth rate of an indicator observed to date against various thresholds. As an exponential model, it cannot handle cases where either the base value or the target is zero. Therefore, unless otherwise specified, the following replacements are performed automatically:</p>
 <ol>
   <li>If the target value is zero, it is replaced by 0.001 in the calculation of the progress measure.</li>
@@ -536,12 +547,12 @@ data-event-label="high"
 
 <p>Another special consideration for the base value comes when it is exactly equal to the natural limit (<em>y</em><sub>0</sub> = <em>y</em><sub>lim</sub>) of an indicator without a quantitative target. In this case, the scaling factor <em>C</em> will be exactly zero, meaning all progress thresholds greater than 0% will be reduced to zero as well. In such a situation, if the calculated progress value is zero or greater (<em>CAGR</em> ≥ 0), the current value is maintained at the limit (or may even exceed the limit) and a progress status of “On track” as well as a score of +5 are assigned to the series. However, if the calculated progress value is negative (<em>CAGR</em> &lt; 0), the progress score and status can be determined as usual.</p>
 
-<h4 id="special-considerations-for-the-base-year-and-the-target-year-1">Special considerations for the base year and the target year</h4>
+<h4 id="special-considerations-for-the-base-year-and-the-target-year-1"><strong>Special considerations for the base year and the target year</strong></h4>
 <p>The <a href="https://www.un.org/sustainabledevelopment/development-agenda/">2030 Agenda for Sustainable Development</a> was adopted in 2015 to catalyze progress towards the 17 Sustainable Development Goals by 2030. As such, the base year is assumed to be 2015 and the target year is assumed to be 2030 unless specified otherwise. Even when the target results from a policy that was implemented after 2015, the base year will be 2015 when data exists unless otherwise specified. This approach ensures coherence and comparability across assessments, in alignment with Statistics Canada’s dimensions of data quality.</p>
 
 <p>Should there be no available data for 2015, the first available year following 2015 will be used. In very few cases where the periodicity of the data is over 4 years or more, a base year of 2014 may be used instead. Additionally, if the reference period spans multiple years, the first year is used as the reference period. For example, the reference period 2015-16 is interpreted as the reference year 2015 in the progress calculation.</p>
 
-<h4 id="minimum-data-requirements">Minimum data requirements</h4>
+<h4 id="minimum-data-requirements"><strong>Minimum data requirements</strong></h4>
 <p>The data must meet certain requirements in order to produce a progress assessment.</p>
 <ol>
   <li>At least two years of data is required to calculate the progress measure.</li>
@@ -552,17 +563,17 @@ data-event-label="high"
 
 <p>In rare cases, when the relevant experts have determined that a progress assessment would hinder the interpretation of the indicator data, the progress status will instead be reported as “Not available”.</p>
 
-<h4 id="binary-indicators">Binary indicators</h4>
+<h4 id="binary-indicators"><strong>Binary indicators</strong></h4>
 <p>Binary indicators are categorized as follows:</p>
 <ol>
   <li>“Target achieved” if all conditions for meeting the target have been met.</li>
   <li>“Target not achieved” if one or more conditions for meeting the target have not been met.</li>
 </ol>
 
-<h4 id="interpretation">Interpretation</h4>
+<h4 id="interpretation"><strong>Interpretation</strong></h4>
 <p>The progress assessments generated by the outlined methodology oversimplify reality. The methodology may produce better results when applied to indicators demonstrating a trend of continuous exponential growth year after year than when applied to other types of indicators. Results for indicators where the base value or the target value is zero should also be interpreted carefully due to the limitations of the underlying model. Importantly, it takes time for policies to yield measurable results. Users should interpret the reported progress status accordingly, alongside any other relevant contextual information.</p>
 
-<h4 id="specific-exceptions-for-the-canadian-indicator-framework">Specific exceptions for the Canadian Indicator Framework</h4>
+<h4 id="specific-exceptions-for-the-canadian-indicator-framework"><strong>Specific exceptions for the Canadian Indicator Framework</strong></h4>
 <p>The progress measurement methodology allows data to be transformed from an invalid form to an equivalent valid form before the progress calculation.</p>
 
 <p>When the stated target is to achieve or promote equal sharing of responsibilities within the household and family, it is interpreted as meaning an equal ratio between the sexes. For example, the data for CIF indicator 5.4.1 Proportion of time spent on unpaid domestic and care work is transformed, prior to the progress calculation, into a ratio of the time spent by women on unpaid domestic and care work to that spent by men. The desired progress is a reduction towards a target ratio of 1.</p>
@@ -1175,12 +1186,12 @@ ga('send', 'pageview');
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/cif-cic_dev/assets/js/sdg.js?v=20250527143610'></script>
+<script src='/cif-cic_dev/assets/js/sdg.js?v=20250527144527'></script>
 
 
     
     
-    <script src="/cif-cic_dev/assets/js/custom.js?v=20250527143610"></script><script>
+    <script src="/cif-cic_dev/assets/js/custom.js?v=20250527144527"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
