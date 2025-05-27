@@ -54,7 +54,7 @@ où<br>
 *t*<sub>0</sub> est l’année de base, 2015, sauf indication contraire, et<br>
 *y*<sub>0</sub> est la valeur de l’indicateur dans l’année de base.
 
-#### <strong>Indicateurs avec cibles quantitatives</strong>
+#### <b>Indicateurs avec cibles quantitatives</b>
 Dans le cas où une cible quantitative est fournie pour l’indicateur, le *TCAC*<sub>i</sub> observé est comparé à la magnitude du *TCAC*<sub>T</sub> théorique, qui représente le taux de croissance annuel qui serait nécessaire pour atteindre la cible dans les délais, en calculant le ratio (*R*) comme suit :
 
 ![Équation pour le ratio entre le taux de croissance annuel observé et le taux de croissance annual requis pour atteindre la cible dans les délais](https://raw.githubusercontent.com/sdg-data-canada-odd-donnees/cif-cic_dev/develop/assets/img/methodology/fr/r.svg)  
@@ -116,7 +116,7 @@ Le résultat est comparé à un ensemble de seuils[^2] et se voit attribuer une 
 
 <br><br>
 
-#### <strong>Indicateurs sans cibles quantitatives</strong>
+#### <b>Indicateurs sans cibles quantitatives</b>
 Dans le cas où aucune cible quantitative n’a été fournie pour un indicateur donné, le taux de croissance annuel composé est comparé à un taux de croissance fixe prédéterminé en tenant aussi compte de la direction de progrès désirée.
 
 ![Équation pour le taux de croissance annuel composé tenant compte de la direction de progrès désirée](https://raw.githubusercontent.com/sdg-data-canada-odd-donnees/cif-cic_dev/develop/assets/img/methodology/fr/cagr.svg)
@@ -175,7 +175,7 @@ Le facteur d’échelle défini ci-dessus a été choisi afin de réduire les se
 
 Seule une limite qui affecte le progrès dans la direction désirée est considérée. Par exemple, une limite maximale n’est pas considérée pour les indicateurs dont le sens de progression désiré est négatif. De même, le facteur d’échelle n’est pas appliqué aux seuils inférieurs ou égales à zéro (seuils ≤ 0 %) qui représentent un mouvement dans la direction inverse à la direction de progrès désirée.
 
-#### <strong>Agrégation du progrès</strong>
+#### <b>Agrégation du progrès</b>
 Dans certains cas, un indicateur peut ne pas avoir une série principale explicite ou peut être composé de plusieurs sous-indicateurs d’importance égale. Par exemple, l’indicateur 5.3.1 du CIC *Proportion de rôles de leadership tenus par des femmes* fournit plusieurs séries de données portant sur les femmes occupant divers postes de leadership. Dans ces situations, la tendance de chaque série est considérée dans l’évaluation finale du progrès de l’indicateur au complet.
 
 Pour ce faire, la valeur du progrès (*R* pour les indicateurs avec cibles quantitatives et *TCAC* pour les indicateurs sans cibles quantitatives) pour chaque série pertinente est convertie en un score. Le score est obtenu par une transformation linéaire de la valeur du progrès en un score compris entre -5 pour les indicateurs démontrant une détérioration substantielle et +5 pour les indicateurs démontrant une progression substantielle (voir les figures 1 et 2). La gamme complète de scores est divisée en intervalles égaux parmi les quatre catégories de progrès : les scores entre 2,5 et 5 appartiennent à la catégorie « Sur la bonne voie », les scores entre 0 et 2,5 appartiennent à la catégorie « Des progrès ont été réalisés, mais une accélération est nécessaire », les scores entre -2,5 et 0 appartiennent à la catégorie « Progrès limités » et les scores entre -5 et -2,5 appartiennent à la catégorie « Détérioration ».
@@ -216,7 +216,7 @@ Pour ce faire, la valeur du progrès (*R* pour les indicateurs avec cibles quant
   <tr>
     <td class="tg-0pky"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/orange-gauge.png?raw=true" alt="Icône d'un jauge divisé également en quatre sections (de gauche à droite): rouge, orange, jaune et vert. Une aiguille noire pointe au milieu de la section orange." width="50" height="50"></td>
     <td class="tg-0pky">Progrès limités</td>
-    <td class="tg-0pky">[-2,5, 0]</td>
+    <td class="tg-0pky">[-2,5, 0[</td>
   </tr>
   <tr>
     <td class="tg-0pky"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/red-gauge.png?raw=true" alt="Icône d'un jauge divisé également en quatre sections (de gauche à droite): rouge, orange, jaune et vert. Une aiguille noire pointe au milieu de la section rouge." width="50" height="50"></td>
@@ -247,7 +247,7 @@ Toute série qui atteint sa cible se voit automatiquement attribuer un score de 
 
 ### Considérations et exceptions
 
-#### <strong>Considérations spéciales concernant la valeur de base et la valeur cible</strong>
+#### <b>Considérations spéciales concernant la valeur de base et la valeur cible</b>
 La méthodologie de mesure de progrès prend un  modèle exponentiel pour évaluer le taux de croissance d’un indicateur observé jusqu’à présent par rapport à différents seuils. En tant que modèle exponentiel, il ne peut pas traiter les cas où la valeur de base ou la cible est zéro. Par conséquent, sauf indication contraire, les remplacements suivants sont effectués automatiquement :
 1. Si la valeur cible est zéro, elle est remplacée par 0,001 dans le calcul de la mesure de progrès.
 2. Si la valeur de base est zéro, elle est remplacée par 0,001 dans le calcul de la mesure de progrès.
@@ -256,12 +256,12 @@ De règle générale, il convient de veiller à sélectionner manuellement une v
 
 La valeur de base fait l’objet d’une autre considération spéciale lorsqu’elle est exactement égale à la limite  naturelle (*y*<sub>0</sub> = *y*<sub>lim</sub>) d’un indicateur sans cible quantitative. Dans ce cas, le facteur d’échelle *C* sera exactement zéro, ce qui signifie que tous les seuils de progrès supérieurs à 0 % seront aussi ramenés à zéro. Dans une telle situation, si la valeur du progrès calculée est égale ou supérieure à zéro (*TCAC* ≥ 0), la valeur actuelle est maintenue à la limite (ou pourrait même surpasser la limite) et l’état de progrès « Sur la bonne voie » ainsi qu’un score de +5 sont attribués à la série. Cependant, si la valeur du progrès calculée est négative (*TCAC* &lt; 0), le score et l’état de progrès peuvent être déterminés selon la procédure habituelle.
 
-#### <strong>Considérations spéciales concernant l’année de base et l’année cible</strong>
+#### <b>Considérations spéciales concernant l’année de base et l’année cible</b>
 Le [Programme de développement durable à l’horizon 2030](https://www.un.org/sustainabledevelopment/fr/development-agenda/) a été adopté en 2015 pour catalyser le progrès envers les 17 objectifs de développement durable d’ici 2030. À cet effet, on suppose que l’année de base est 2015 et l’année cible est 2030, sauf indication contraire. Même lorsque l’objectif résulte d’une politique mise en œuvre après 2015, l’année de base sera 2015 lorsque les données existent, sauf indication contraire. Cette approche assure la cohérence et la comparabilité des estimations, conformément aux dimensions de la qualité des données de Statistique Canada.
 
 S’il n’y a pas de données en 2015, la première année disponible après 2015 sera utilisée. Dans les rares cas où la périodicité des données est de 4 ans ou plus, l’année de base 2014 peut être utilisée à la place. De plus, si la période de référence s’étend sur plusieurs années, la première année est utilisée comme période de référence. Par exemple, la période de référence 2015-16 est interprétée comme l’année de référence 2015 dans le calcul du progrès.
 
-#### <strong>Exigences minimales concernant les données</strong>
+#### <b>Exigences minimales concernant les données</b>
 Les données doivent répondre à certains critères afin que la méthodologie puisse produire une estimation du progrès.
 1. Au moins deux années de données sont nécessaires afin de calculer la mesure de progrès.
 2. Comme la méthodologie de mesure de progrès est basée sur un modèle de croissance exponentielle, elle n’est valide que lorsque toutes les valeurs sont positives ou toutes les valeurs sont négatives. Si toutes les valeurs sont négatives, la direction de progression désirée est inversée dans le calcul de la mesure de progrès.
@@ -270,15 +270,15 @@ Lorsque les données d’un indicateur ne satisfont pas à ces critères, l’é
 
 Dans de rares cas, lorsque les experts responsables ont déterminé qu’une évaluation du progrès entraverait l’interprétation des données de l’indicateur, l’état du progrès sera plutôt indiqué comme « Non disponible ».
 
-#### <strong>Indicateurs binaires</strong>
+#### <b>Indicateurs binaires</b>
 Les indicateurs binaires sont classés comme suit :
 1. « Cible atteinte » si toutes les conditions de la cible sont satisfaites.
 2. « Cible non atteinte » si une ou plusieurs conditions de la cible ne sont pas satisfaites.
 
-#### <strong>Interprétation</strong>
+#### <b>Interprétation</b>
 Les estimations de progrès générés par la méthodologie décrite représentent une simplification de la réalité. La méthodologie pourrait produire de meilleurs résultats lorsqu’elle est appliquée à des indicateurs démontrant une tendance de croissance exponentielle continue année après année que lorsqu’elle est appliquée à d’autres types d’indicateurs. Les résultats pour les indicateurs ayant une valeur de base ou valeur cible de zéro devraient également être interprétés avec prudence en raison des limites du modèle sous-jacent. Il est important de noter que les politiques prennent du temps avant de produire des résultats mesurables. Les utilisateurs devraient interpréter l’état du progrès indiqué en conséquence, conjointement avec toute autre information contextuelle pertinente.
 
-#### <strong>Exceptions spécifiques dans le Cadre d’indicateurs canadien</strong>
+#### <b>Exceptions spécifiques dans le Cadre d’indicateurs canadien</b>
 La méthodologie de mesure de progrès permet de transformer les données d’une forme invalide en une forme valide équivalente avant de calculer les progrès.
 
 Lorsque la cible énoncée est d’atteindre ou de promouvoir le partage égal des responsabilités dans le ménage et la famille, on interprète que la cible signifie un ratio égal entre les sexes. Par exemple, les données de l’indicateur 5.4.1 du CIC *Proportion du temps consacré à des soins et travaux domestiques non rémunérés* sont transformées, avant le calcul du progrès, en un ratio du temps consacré par les femmes aux soins et travaux domestiques non rémunérés par rapport au temps consacré par les hommes. La progression désirée est une diminution vers un ratio cible de 1.

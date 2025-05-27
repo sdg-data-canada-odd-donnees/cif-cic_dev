@@ -55,7 +55,7 @@ where<br>
 *t*<sub>0</sub> is the base year, 2015, unless otherwise specified, and<br>
 *y*<sub>0</sub> is the value of the indicator in the base year.
 
-#### <strong>Indicators with quantitative targets</strong>
+#### <b>Indicators with quantitative targets</b>
 In the case where a quantitative target for the indicator is provided, the observed *CAGR*<sub>i</sub> is compared to the magnitude of the theoretical *CAGR*<sub>T</sub>, which represents the annual growth rate that would be required to achieve the target on time, by calculating the ratio (*R*) as follows:
 
 ![Equation for the ratio of the observed compound annual growth rate to the growth rate required to reach the target on time](https://raw.githubusercontent.com/sdg-data-canada-odd-donnees/cif-cic_dev/develop/assets/img/methodology/r.svg)
@@ -117,7 +117,7 @@ The result is compared against a set of thresholds[^2] and assigned a progress c
 
 <br><br>
   
-#### <strong>Indicators without quantitative targets</strong>
+#### <b>Indicators without quantitative targets</b>
 In the case where no quantitative target for a given indicator has been provided, the observed compound annual growth rate is compared to predetermined fixed growth rates while also accounting for the desired direction of progress.
 
 ![Equation for the observed compound annual growth rate accounting for the desired direction of progress](https://raw.githubusercontent.com/sdg-data-canada-odd-donnees/cif-cic_dev/develop/assets/img/methodology/cagr.svg)
@@ -176,7 +176,7 @@ The scaling factor defined above was chosen to optimally reduce the progress thr
 
 Only a limit that affects progress in the desired direction is considered. For example, a maximum limit is not considered for indicators whose desired direction of progress is negative. Also, the scaling factor is not applied to thresholds less than or equal to zero (thresholds ≤ 0%), which represent movement in the inverse direction from the desired direction of progress.
 
-#### <strong>Aggregated progress status</strong>
+#### <b>Aggregated progress status</b>
 In some instances, an indicator may not have an explicit headline series or may be composed of many sub-indicators of equal importance. For example, CIF indicator 5.3.1 *Proportion of leadership roles held by women* provides an assortment of data series for women in various leadership positions. In these situations, the trend of each series is considered in making a final progress assessment for the indicator as a whole.
 
 To do so, the progress value (*R* for indicators with quantitative targets and *CAGR* for indicators without quantitative targets) for each relevant series is converted to a score. The score is obtained from a linear transformation of the progress value to a score that ranges from -5 for indicators showing substantial deterioration to +5 for indicators showing substantial progress (see Figures 1 and 2). The score range is divided equally between all four progress categories: scores between 2.5 and 5 belong to the “On track” category, scores between 0 and 2.5 belong to the “Progress made but acceleration needed” category, scores between -2.5 and 0 belong to the “Limited progress” category, and scores between -5 and -2.5 belong to the “Deterioration” category.
@@ -248,7 +248,7 @@ Any series that achieves its target is automatically assigned a progress score o
 
 ### Considerations and Exceptions
 
-#### <strong>Special considerations for the base year and the target year</strong>
+#### <b>Special considerations for the base year and the target year</b>
 The progress measurement methodology uses an exponential model to evaluate the growth rate of an indicator observed to date against various thresholds. As an exponential model, it cannot handle cases where either the base value or the target is zero. Therefore, unless otherwise specified, the following replacements are performed automatically:
 1. If the target value is zero, it is replaced by 0.001 in the calculation of the progress measure.
 2. If the base value is zero, it is replaced by 0.001 in the calculation of the progress measure.
@@ -257,12 +257,12 @@ Generally, care should be taken to manually select an appropriate replacement va
 
 Another special consideration for the base value comes when it is exactly equal to the natural limit (*y*<sub>0</sub> = *y*<sub>lim</sub>) of an indicator without a quantitative target. In this case, the scaling factor *C* will be exactly zero, meaning all progress thresholds greater than 0% will be reduced to zero as well. In such a situation, if the calculated progress value is zero or greater (*CAGR* ≥ 0), the current value is maintained at the limit (or may even exceed the limit) and a progress status of “On track” as well as a score of +5 are assigned to the series. However, if the calculated progress value is negative (*CAGR* &lt; 0), the progress score and status can be determined as usual.
 
-#### <strong>Special considerations for the base year and the target year</strong>
+#### <b>Special considerations for the base year and the target year</b>
 The [2030 Agenda for Sustainable Development](https://www.un.org/sustainabledevelopment/development-agenda/) was adopted in 2015 to catalyze progress towards the 17 Sustainable Development Goals by 2030. As such, the base year is assumed to be 2015 and the target year is assumed to be 2030 unless specified otherwise. Even when the target results from a policy that was implemented after 2015, the base year will be 2015 when data exists unless otherwise specified. This approach ensures coherence and comparability across assessments, in alignment with Statistics Canada’s dimensions of data quality.
 
 Should there be no available data for 2015, the first available year following 2015 will be used. In very few cases where the periodicity of the data is over 4 years or more, a base year of 2014 may be used instead. Additionally, if the reference period spans multiple years, the first year is used as the reference period. For example, the reference period 2015-16 is interpreted as the reference year 2015 in the progress calculation.
 
-#### <strong>Minimum data requirements</strong>
+#### <b>Minimum data requirements</b>
 The data must meet certain requirements in order to produce a progress assessment.
 1. At least two years of data is required to calculate the progress measure.
 2. As the described progress measure methodology is based on an exponential growth model, it is valid only when all values are positive or all values are negative. If all values are negative, the desired direction of progress is flipped in the progress measure calculation.
@@ -271,15 +271,15 @@ When the data for an indicator does not meet these minimum requirements, the pro
 
 In rare cases, when the relevant experts have determined that a progress assessment would hinder the interpretation of the indicator data, the progress status will instead be reported as “Not available”.
 
-#### <strong>Binary indicators</strong>
+#### <b>Binary indicators</b>
 Binary indicators are categorized as follows:
 1. “Target achieved” if all conditions for meeting the target have been met.
 2. “Target not achieved” if one or more conditions for meeting the target have not been met.
 
-#### <strong>Interpretation</strong>
+#### <b>Interpretation</b>
 The progress assessments generated by the outlined methodology oversimplify reality. The methodology may produce better results when applied to indicators demonstrating a trend of continuous exponential growth year after year than when applied to other types of indicators. Results for indicators where the base value or the target value is zero should also be interpreted carefully due to the limitations of the underlying model. Importantly, it takes time for policies to yield measurable results. Users should interpret the reported progress status accordingly, alongside any other relevant contextual information.
 
-#### <strong>Specific exceptions for the Canadian Indicator Framework</strong>
+#### <b>Specific exceptions for the Canadian Indicator Framework</b>
 The progress measurement methodology allows data to be transformed from an invalid form to an equivalent valid form before the progress calculation.
 
 When the stated target is to achieve or promote equal sharing of responsibilities within the household and family, it is interpreted as meaning an equal ratio between the sexes. For example, the data for CIF indicator 5.4.1 Proportion of time spent on unpaid domestic and care work is transformed, prior to the progress calculation, into a ratio of the time spent by women on unpaid domestic and care work to that spent by men. The desired progress is a reduction towards a target ratio of 1.
