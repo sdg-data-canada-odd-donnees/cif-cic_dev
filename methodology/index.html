@@ -139,7 +139,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20250528021911">
+        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20250528141359">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -536,7 +536,7 @@ data-event-label="high"
 
 <h3 id="considerations-and-exceptions">Considerations and Exceptions</h3>
 
-<h4 id="special-considerations-for-the-base-year-and-the-target-year"><b>Special considerations for the base year and the target year</b></h4>
+<h4 id="special-considerations-for-the-base-value-and-the-target-value"><b>Special considerations for the base value and the target value</b></h4>
 <p>The progress measurement methodology uses an exponential model to evaluate the growth rate of an indicator observed to date against various thresholds. As an exponential model, it cannot handle cases where either the base value or the target is zero. Therefore, unless otherwise specified, the following replacements are performed automatically:</p>
 <ol>
   <li>If the target value is zero, it is replaced by 0.001 in the calculation of the progress measure.</li>
@@ -547,7 +547,7 @@ data-event-label="high"
 
 <p>Another special consideration for the base value comes when it is exactly equal to the natural limit (<em>y</em><sub>0</sub> = <em>y</em><sub>lim</sub>) of an indicator without a quantitative target. In this case, the scaling factor <em>C</em> will be exactly zero, meaning all progress thresholds greater than 0% will be reduced to zero as well. In such a situation, if the calculated progress value is zero or greater (<em>CAGR</em> ≥ 0), the current value is maintained at the limit (or may even exceed the limit) and a progress status of “On track” as well as a score of +5 are assigned to the series. However, if the calculated progress value is negative (<em>CAGR</em> &lt; 0), the progress score and status can be determined as usual.</p>
 
-<h4 id="special-considerations-for-the-base-year-and-the-target-year-1"><b>Special considerations for the base year and the target year</b></h4>
+<h4 id="special-considerations-for-the-base-year-and-the-target-year"><b>Special considerations for the base year and the target year</b></h4>
 <p>The <a href="https://www.un.org/sustainabledevelopment/development-agenda/">2030 Agenda for Sustainable Development</a> was adopted in 2015 to catalyze progress towards the 17 Sustainable Development Goals by 2030. As such, the base year is assumed to be 2015 and the target year is assumed to be 2030 unless specified otherwise. Even when the target results from a policy that was implemented after 2015, the base year will be 2015 when data exists unless otherwise specified. This approach ensures coherence and comparability across assessments, in alignment with Statistics Canada’s dimensions of data quality.</p>
 
 <p>Should there be no available data for 2015, the first available year following 2015 will be used. In very few cases where the periodicity of the data is over 4 years or more, a base year of 2014 may be used instead. Additionally, if the reference period spans multiple years, the first year is used as the reference period. For example, the reference period 2015-16 is interpreted as the reference year 2015 in the progress calculation.</p>
@@ -1186,12 +1186,12 @@ ga('send', 'pageview');
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/cif-cic_dev/assets/js/sdg.js?v=20250528021911'></script>
+<script src='/cif-cic_dev/assets/js/sdg.js?v=20250528141359'></script>
 
 
     
     
-    <script src="/cif-cic_dev/assets/js/custom.js?v=20250528021911"></script><script>
+    <script src="/cif-cic_dev/assets/js/custom.js?v=20250528141359"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
