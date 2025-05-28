@@ -248,7 +248,7 @@ Any series that achieves its target is automatically assigned a progress score o
 
 ### Considerations and Exceptions
 
-#### <b>Special considerations for the base year and the target year</b>
+#### <b>Special considerations for the base value and the target value</b>
 The progress measurement methodology uses an exponential model to evaluate the growth rate of an indicator observed to date against various thresholds. As an exponential model, it cannot handle cases where either the base value or the target is zero. Therefore, unless otherwise specified, the following replacements are performed automatically:
 1. If the target value is zero, it is replaced by 0.001 in the calculation of the progress measure.
 2. If the base value is zero, it is replaced by 0.001 in the calculation of the progress measure.
