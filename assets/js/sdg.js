@@ -130,7 +130,6 @@ opensdg.autotrack = function(preset, category, action, label) {
     this.startValues = options.startValues;
     this.configObsAttributes = null;
     this.allObservationAttributes = options.allObservationAttributes;
-    this._browserDecimalSeparator = this.viewHelpers.getBrowserDecimalSeparator();
 
     // Require at least one geoLayer.
     if (!options.mapLayers || !options.mapLayers.length) {
@@ -345,11 +344,7 @@ opensdg.autotrack = function(preset, category, action, label) {
             localeOpts.minimumFractionDigits = this._precision;
             localeOpts.maximumFractionDigits = this._precision;
         }
-        value = value.toLocaleString(opensdg.language_numbers, localeOpts);
-        // Still use the custom decimal separator if it is there.
-        if (this._decimalSeparator) {
-          value = value.toString().replace(this._browserDecimalSeparator, this._decimalSeparator);
-        }
+        value = value.toLocaleString(opensdg.language, localeOpts);
       }
       return value;
     },
@@ -4655,7 +4650,7 @@ function setDataTableWidth(table) {
     // ascertain whether the table should be width 100% or explicit width:
     var containerWidth = table.closest('.dataTables_wrapper').width();
 
-    if (totalWidth > containerWidth && containerWidth > 0) {
+    if (totalWidth > containerWidth) {
         table.css('width', totalWidth + 'px');
     } else {
         table.css('width', '100%');
@@ -4733,11 +4728,7 @@ function alterDataDisplay(value, info, context, additionalInfo) {
             localeOpts.minimumFractionDigits = VIEW._precision;
             localeOpts.maximumFractionDigits = VIEW._precision;
         }
-        altered = altered.toLocaleString(opensdg.language_numbers, localeOpts);
-        // Still use the custom decimal separator if it is there.
-        if (OPTIONS.decimalSeparator) {
-            altered = altered.toString().replace(VIEW._browserDecimalSeparator, OPTIONS.decimalSeparator);
-        }
+        altered = altered.toLocaleString(opensdg.language, localeOpts);
     }
     // Now let's add any footnotes from observation attributes.
     var obsAttributes = [];
@@ -4768,17 +4759,6 @@ function alterDataDisplay(value, info, context, additionalInfo) {
  */
 function getObservationAttributeFootnoteSymbol(num) {
     return '[' + translations.indicator.note + ' ' + (num + 1) + ']';
-}
-
-/**
- * Figure out what the browser will be using for the decimal separator.
- *
- * @returns {string} The decimal separator the browser will use.
- */
-function getBrowserDecimalSeparator() {
-    var browserDecimal = 1.1;
-    browserDecimal = browserDecimal.toLocaleString(opensdg.language_numbers).substring(1, 2);
-    return browserDecimal;
 }
 
   /**
@@ -4970,7 +4950,6 @@ function createIndicatorDownloadButtons(indicatorDownloads, indicatorId, el) {
     sortFieldGroup: sortFieldGroup,
     getObservationAttributeFootnoteSymbol: getObservationAttributeFootnoteSymbol,
     getObservationAttributeText: getObservationAttributeText,
-    getBrowserDecimalSeparator: getBrowserDecimalSeparator,
   }
 })();
 
@@ -4982,7 +4961,6 @@ function createIndicatorDownloadButtons(indicatorDownloads, indicatorId, el) {
     VIEW._legendElement = OPTIONS.legendElement;
     VIEW._precision = undefined;
     VIEW._chartInstances = {};
-    VIEW._browserDecimalSeparator = helpers.getBrowserDecimalSeparator();
 
     var chartHeight = screen.height < OPTIONS.maxChartHeight ? screen.height : OPTIONS.maxChartHeight;
     $('.plot-container', OPTIONS.rootElement).css('height', chartHeight + 'px');
