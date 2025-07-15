@@ -1,6 +1,11 @@
 // Enter any custom Sass in this file.
 // Changing the size of the Canada flag in the banner. Keeping the banner size the same
 
+.notavailable {
+    background-color: darkgray;
+    border-style: dotted;
+}
+
 .navbar-brand img {
   width: 70%;
 }
