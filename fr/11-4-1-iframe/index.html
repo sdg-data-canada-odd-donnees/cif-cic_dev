@@ -144,7 +144,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20250715142030">
+        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20250715171400">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -286,38 +286,24 @@ layout-indicator-iframe
 </div>
 <div id="main-content" class="container goal-11" role="main">
   
-
-  
-
-  
-
-  
-<div class="row indicator-progress">
-    <div class="col-sm-2 progress-status-heading">
-        <strong>État du progrès actuel</strong>
-    </div>
-    <div class="col-sm-10">
-        
-    
-    
-        <div class="progress-status">
-        
-            <div class="progress-status-label">
-                Détérioration
-            </div>
-        
-        
-            <div class="progress-status-image">
-                <img src="/cif-cic_dev/assets/img/progress/red-gauge.png" alt="Détérioration" />
-            </div>
-        
-        </div>
-    
-
-
-    </div>
+<div class="row alert warning" id="data-notice">
+  <div class="col-xs-2 col-sm-1">
+    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+  </div>
+  <div class="col-xs-10 col-sm-11 data-notice">
+    <div class="notice-heading" role="alert"><p>Données actuellement indisponibles</p>
+</div>
+    <div><p>Les données pour cet indicateur sont actuellement en cours de révision par Statistique Canada. Les données révisées seront disponibles en automne 2025.<br />Veuillez <a href="mailto:statcan.sdg-odd.statcan@statcan.gc.ca">communiquer avec nous</a> si vous avez des questions.</p>
+</div>
+  </div>
 </div>
 
+
+  
+
+  
+
+  
 
   
 
@@ -339,7 +325,7 @@ layout-indicator-iframe
   data-graphtype="bar"
   data-graphtypes="null"
   data-geocoderegex=""
-  data-showmap="true"
+  data-showmap="false"
   data-startvalues="[{&quot;field&quot;:&quot;Géographie&quot;,&quot;value&quot;:&quot;Canada&quot;},{&quot;field&quot;:&quot;Emplacement&quot;,&quot;value&quot;:&quot;Total, emplacement&quot;},{&quot;field&quot;:&quot;Genre&quot;,&quot;value&quot;:&quot;Total, genre&quot;},{&quot;field&quot;:&quot;Démographique and socio-économique&quot;,&quot;value&quot;:&quot;Total - Groupes d'âge de la population - Données intégrales (100 %)&quot;}]"
   data-graphlimits="null"
   data-stackeddisaggregation=""
@@ -347,7 +333,7 @@ layout-indicator-iframe
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Année&quot;},{&quot;name&quot;:&quot;Geography&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Canada&quot;,&quot;Terre-Neuve-et-Labrador&quot;,&quot;St. John's, Terre-Neuve-et-Labrador&quot;,&quot;Île-du-Prince-Édouard&quot;,&quot;Nouvelle-Écosse&quot;,&quot;Halifax, Nouvelle-Écosse&quot;,&quot;Nouveau-Brunswick&quot;,&quot;Fredericton, Nouveau-Brunswick&quot;,&quot;Moncton, Nouveau-Brunswick&quot;,&quot;Saint John, Nouveau-Brunswick&quot;,&quot;Québec&quot;,&quot;Drummondville, Québec&quot;,&quot;Montréal, Québec&quot;,&quot;Ottawa - Gatineau (partie du Québec), Québec&quot;,&quot;L'Ange-Gardien, Québec&quot;,&quot;Québec, Québec&quot;,&quot;Saguenay, Québec&quot;,&quot;Sherbrooke, Québec&quot;,&quot;Trois-Rivières, Québec&quot;,&quot;Ontario&quot;,&quot;Barrie, Ontario&quot;,&quot;Belleville - Quinte West, Ontario&quot;,&quot;Brantford, Ontario&quot;,&quot;Grand Sudbury, Ontario&quot;,&quot;Guelph, Ontario&quot;,&quot;Hamilton, Ontario&quot;,&quot;Kingston, Ontario&quot;,&quot;Kitchener - Cambridge - Waterloo, Ontario&quot;,&quot;London, Ontario&quot;,&quot;Oshawa, Ontario&quot;,&quot;Ottawa - Gatineau (partie de l'Ontario), Ontario&quot;,&quot;Peterborough, Ontario&quot;,&quot;St. Catharines - Niagara, Ontario&quot;,&quot;Thunder Bay, Ontario&quot;,&quot;Toronto, Ontario&quot;,&quot;Windsor, Ontario&quot;,&quot;Manitoba&quot;,&quot;Winnipeg, Manitoba&quot;,&quot;Saskatchewan&quot;,&quot;Regina, Saskatchewan&quot;,&quot;Saskatoon, Saskatchewan&quot;,&quot;Alberta&quot;,&quot;Calgary, Alberta&quot;,&quot;Edmonton, Alberta&quot;,&quot;Lethbridge, Alberta&quot;,&quot;Red Deer, Alberta&quot;,&quot;Colombie-Britannique&quot;,&quot;Abbotsford - Mission, Colombie-Britannique&quot;,&quot;Chilliwack, Colombie-Britannique&quot;,&quot;Kamloops, Colombie-Britannique&quot;,&quot;Kelowna, Colombie-Britannique&quot;,&quot;Nanaimo, Colombie-Britannique&quot;,&quot;Vancouver, Colombie-Britannique&quot;,&quot;Victoria, Colombie-Britannique&quot;,&quot;Yukon&quot;,&quot;Territoires du Nord-Ouest&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Géographie&quot;},{&quot;name&quot;:&quot;Location&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Total, emplacement&quot;,&quot;Urbain&quot;,&quot;Rurale&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Emplacement&quot;},{&quot;name&quot;:&quot;Gender&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Total, genre&quot;,&quot;Hommes+&quot;,&quot;Femmes+&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Genre&quot;},{&quot;name&quot;:&quot;Demographic and socio-economic&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;0 à 14 ans&quot;,&quot;15 à 64 ans&quot;,&quot;15 à 19 ans&quot;,&quot;20 à 24 ans&quot;,&quot;65 ans et plus&quot;,&quot;Total - Groupes d'âge de la population - Données intégrales (100 %)&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Démographique and socio-économique&quot;},{&quot;name&quot;:&quot;GeoCode&quot;,&quot;type&quot;:&quot;string&quot;,&quot;title&quot;:&quot;GeoCode&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Valeur&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Année&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Valeur&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="null"
   data-proxy=""
@@ -382,83 +368,15 @@ layout-indicator-iframe
   <div id="datatables">
 
     
-    <a role="button" href="https://sdg-data-canada-odd-donnees.github.io/cif-data-donnees-cic/fr/headline/11-4-1.csv" class="btn btn-primary btn-download" download="indicator_11-4-1.csv" tabindex="0" role="button">Télécharger Headline CSV</a>
-    
     <a role="button" href="https://sdg-data-canada-odd-donnees.github.io/cif-data-donnees-cic/fr/data/11-4-1.csv" class="btn btn-primary btn-download" download='indicator_11-4-1.csv' tabindex='0' role='button'>Télécharger toutes les données (CSV)</a>
 
     <p class="no-js-disaggregation-hint">Télécharger les données sources pour désagrégations (.csv)</p>
 
     
-    <h3>Données d'en-tête</h3>
-    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
-      <caption>Pourcentage de la population vivant à moins de 500 mètres d'un accès au transport en commun</caption>
-      <thead>
-        
-        
-        <th scope="col">Year</th>
-        
-        
-        
-        <th scope="col">Value</th>
-        
-        
-        
-        <th scope="col" class="table-value">GeoCode</th>
-        
-        
-      </thead>
-      <tbody>
-        
-        <tr>
-          
-          
-          <td>2023</td>
-          
-          
-          
-          <td>75.2</td>
-          
-          
-          
-          <td class="table-value"></td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2024</td>
-          
-          
-          
-          <td>74.6</td>
-          
-          
-          
-          <td class="table-value"></td>
-          
-          
-        </tr>
-        
-      </tbody>
-    </table>
+    <h3>Aucune donnée principale disponible</h3>
     
   </div>
 
-  
-  <div id="datatableFooter">
-    
-    <p>Source(s): Statistique Canada</p>
-    
-    
-    <p>Zone géographique: Province ou territoire, Région métropolitaine de recensement, Partie de région métropolitaine de recensement</p>
-    
-    
-    <p>Unité de mesure: Pourcentage</p>
-    
-    
-  </div>
   
 
 </div>
@@ -522,31 +440,6 @@ data-event-label="Change to Table tab"
 
         
       >Tableau</button>
-    </li>
-    
-    <li role="presentation"
-      class="
-        nav-item
-        map
-        
-      ">
-      <button
-        class="nav-link "
-        data-bs-toggle="tab"
-        role="tab"
-        type="button"
-        
-          id="tab-mapview"
-          data-bs-target="#mapview"
-          aria-controls="mapview"
-          data-no-disagg="true"
-          data-on="click"
-data-event-category="Tab change"
-data-event-action="Change data view"
-data-event-label="Change to Map tab"
-
-        
-      >Carte</button>
     </li>
     
   </ul>
@@ -707,68 +600,6 @@ data-event-label="Change to Map tab"
 </div>
 
 <div id="tableSelectionDownload" class="clearfix"></div>
-
-        </div>
-      
-    
-      
-        <div role="tabpanel" class="tab-pane " id="mapview" class="map">
-          
-<h4 id="map-heading" class="map-title">Pourcentage de la population vivant à moins de 500 mètres d'un accès au transport en commun</h4>
-<div id="map" aria-describedby="table-alternative">
-  <img class="map-loading-image" src="/cif-cic_dev/assets/img/loading.gif" alt="Chargement de la carte" />
-</div>
-
-
-
-
-<div id="mapFooter" class="table-footer-text">
-  <h5 class="sr-only">Chart details</h5>
-    <dl>
-        
-        <dt>Source(s):</dt>
-        <dd>Statistique Canada</dd>
-        
-
-        
-        <dt>Zone géographique:</dt>
-        <dd>Province ou territoire, Région métropolitaine de recensement, Partie de région métropolitaine de recensement</dd>
-        
-
-        <dt class="data-controlled-footer-field unit-from-data">Unité de mesure:</dt>
-        <dd class="data-controlled-footer-field unit-from-data"></dd>
-
-        
-
-        
-
-        
-
-        
-        
-        <dt
-          class="data-controlled-footer-field"
-          data-ts-attribute="COMMENT_TS"
-        >Note de bas de page:</dt>
-        <dd
-          class="data-controlled-footer-field"
-          data-ts-attribute="COMMENT_TS"
-        ></dd>
-        
-        <dt
-          class="data-controlled-footer-field"
-          data-ts-attribute="DATA_LAST_UPDATE"
-        >Dernière mise à jour des données:</dt>
-        <dd
-          class="data-controlled-footer-field"
-          data-ts-attribute="DATA_LAST_UPDATE"
-        ></dd>
-        
-        
-    </dl>
-    
-</div>
-
 
         </div>
       
@@ -1380,15 +1211,6 @@ data-event-label="Change to indicator.sources tab"
 <script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.js" integrity="sha384-kdgUFNEbslNOEAQ/zFH9wjDORAbvN0KUYOpfJIJYPdjtzLXkZsMJAXU9HPpi5B5c" crossorigin="anonymous"></script>
 
 
-<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
-<script src="https://cdn.jsdelivr.net/npm/leaflet.zoomshowhide@0.1.0/dist/leaflet-zoom-show-hide.js" integrity="sha384-+Ae+bvCvR9gwQHFyh60GUfdqhUAL+S/O5mLeAkmkv2yBQxeLxm3gvLEzYPoXBwbT" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/1.4.0/chroma.min.js" integrity="sha384-cU7kVmimPTBpe76764qMxEdujXzlgSm15cCQe6FXFud5DiV4vrJQHUK9S0Lo2cqT" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/iso8601-js-period@0.2.1/iso8601.js" integrity="sha384-vOZkQA9epgnqbXkNdVSlxfyhrOSzYBsL3s3b2CQYn05H6lzrbrb368uBSRSUTAiv" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/gh/socib/Leaflet.TimeDimension@fa36ffee7f6390aadce8c055ca7c60ede7c2134c/dist/leaflet.timedimension.min.js" integrity="sha384-xQ62+wlP0nHf7UhZ81djmqLn+7arwKiMk/dJk+smi+rJhaXPZAeFPX4bEiD9twIy" crossorigin="anonymous"></script>
-<script src="https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js" integrity="sha384-btJhAWztz7ttA6ibFC5ppM39nkCPK6CWzRVmsaLcDn37mA3x1TzF1DbFwa6tJpTN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/gh/torfsen/leaflet.zoomhome@84a0291e80244ed9301cbc09d55850f0af53e602/dist/leaflet.zoomhome.min.js" integrity="sha384-UH2Ux7vOhzo5dH5kWWPmpvCCRCiS0hQ12YQN6qTUJXOpx+HpKePItLNSSm2AxKjF" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.js" integrity="sha384-C/UzSz5aXmLxJwe/b9I0CIv+cfLcGIXmfl40m9+kyJhlgNxvWT6+WRjCbA8Eflf/" crossorigin="anonymous"></script>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha384-eEX5kO4tdQpY+eTjDbZNPlMm4QhsK+kosSZtkzp+uZk0L5g0lSzmWXWHzKDoOzA7" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js" integrity="sha384-3qyhlVVDXXiWhzgKIoL/aw+uaXN5kyAFE0Jv2LGoV+nnQnum4ebt1QAtRbjnz9pL" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js" integrity="sha384-KQ8aykg/lc6595wSrMplFVs4kRS66x+EdkX7EQsJ2Pe6FX7l3tMqyD1Am0c2dKBG" crossorigin="anonymous"></script>
@@ -1422,12 +1244,12 @@ ga('send', 'pageview');
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/cif-cic_dev/assets/js/sdg.js?v=20250715142030'></script>
+<script src='/cif-cic_dev/assets/js/sdg.js?v=20250715171400'></script>
 
 
     
     
-    <script src="/cif-cic_dev/assets/js/custom.js?v=20250715142030"></script><script>
+    <script src="/cif-cic_dev/assets/js/custom.js?v=20250715171400"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
