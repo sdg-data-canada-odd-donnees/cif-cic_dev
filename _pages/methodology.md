@@ -10,17 +10,17 @@ The [2030 Agenda for Sustainable Development](https://www.un.org/sustainabledeve
 
 The goals are underpinned by a framework of global indicators that allow Canada and other countries to monitor and report on progress. They cover a broad range of social, environmental, and economic issues with a focus on the most vulnerable and a commitment to “leave no one behind”. To complement the global goals, countries are encouraged to develop a national implementation plan that focuses on country-developed indicators to address specific national contexts and priorities to achieve the SDGs.
 
-To support Canada’s domestic implementation of the SDGs that the Government of Canada has committed to, a [national strategy](https://www.canada.ca/en/employment-social-development/programs/agenda-2030/moving-forward.html) has been established. In addition, the development of a Canadian-specific indicator framework was an opportunity to elaborate on the UN goals with a set of indicators that align more closely with Canada’s domestic priorities related to sustainable development.
+To support the Government of Canada’s commitment to a domestic implementation of the SDGs, a [national strategy](https://www.canada.ca/en/employment-social-development/programs/agenda-2030/moving-forward.html) has been established. In addition, the development of a Canadian-specific indicator framework was an opportunity to elaborate on the UN goals with a set of indicators that align more closely with Canada’s domestic priorities in sustainable development.
 
 ## Measuring Progress
-Measuring and monitoring progress with reliable information is key to understanding how Canada advances toward the achievement of the SDGs.
+Measuring and monitoring progress with reliable information is key to understanding how a country advances towards the achievement of the SDGs.
 
-Closely monitoring the progress of each indicator not only illustrates where Canada is making progress or areas where progress is not being made and Canada can focus its efforts, but also communicates how Canada is doing in an open and transparent manner. A robust measure of progress quantifies an indicator’s progress towards reaching the target in a scientific manner and can be used as a tool to better understand success of policies and actions taken to achieve those targets. It can also act as a clear signal to decision-makers to readjust or develop effective evidence-based policies to help ensure Canada achieves its targets.
+Closely monitoring the progress of each indicator not only shows where a country is making progress or falling behind, which helps to better focus its efforts, but also communicates how the country is performing in an open and transparent manner. A robust measure of progress quantifies an indicator’s progress towards reaching the target in a scientific manner and can be used as a tool to better understand success of policies and actions taken to achieve those targets. It can also act as a clear signal to decision-makers to readjust or develop effective evidence-based policies to help ensure the country achieves its targets.
 
 ## Methodology Adopted
-The Canadian Indicator Framework (CIF) lays the foundation for Canada to measure and report its progress on the 17 SDGs within the Canadian context. The CIF focuses on Canadian priorities for sustainable development and can be considered a complement to the Global Indicator Framework. In the CIF the 17 Sustainable Development Goals are complemented by 33 ambitions and 86 indicators that are Canadian specific. However, unlike the Global Indicator Framework where every indicator has a target, less than half of the indicators in the CIF currently have a defined target, either quantitative (e.g., target 11.5 *By 2030, 22% of commuters use sustainable transportation*) or aspirational (e.g., target 5.3 *Greater representation of women in leadership roles*).
+The Global Indicator Framework (GIF) lays the foundation for Canada and all other countries to measure and report their progress towards the 17 SDGs. The GIF divides the 17 SDGs across 169 targets and 234 unique indicators, all of which were agreed upon and are measured consistently by all United Nations Member States. The Canadian Indicator Framework (CIF) focuses on Canadian priorities for sustainable development and can be considered a complement to the GIF. The CIF complements the 17 SDGs with 33 ambitions and 86 indicators that are specific to Canada. Across the GIF and the CIF, indicators may have defined quantitative targets (e.g., GIF 1.2 and CIF 1.1 both target a 50% reduction of the poverty rate according to national definitions), aspirational targets (e.g., CIF target 5.3 *Greater representation of women in leadership roles*), or no target at all.
 
-To complement the CIF, Statistics Canada has developed a robust and simple method of measuring progress which can be reported using visualizations that allow data users to easily see areas of progress or weakness. Even in the absence of specific quantitative targets, an estimate of progress can inform whether undesired trends are being observed by reporting progress deterioration. In essence, this measure of progress provides a simplified illustration of Canada’s progress towards achieving the SDGs, assuming that the current trends are maintained.
+To complement the GIF and the CIF, Statistics Canada has developed a robust and simple method of measuring progress which can be reported using visualizations that allow data users to easily see areas of progress or weakness. Even in the absence of specific quantitative targets, an estimate of progress can inform whether undesired trends are being observed by reporting progress deterioration. In essence, this measure of progress provides a simplified illustration of Canada’s progress towards achieving the SDGs, assuming that the current trends are maintained.
 
 ### Requirements
 Statistics Canada identified essential requirements for the adopted methodology. The guiding principle for the methodology was the necessity of a consistent and easily interpretable measure that could reach a broad audience while maintaining scientific integrity.
@@ -246,6 +246,9 @@ The mean of the progress scores from each series is taken as the overall progres
 
 Any series that achieves its target is automatically assigned a progress score of +5. However, all series must achieve the target for the aggregate progress status to be “Target achieved”.
 
+##### Sub-indicator grouping
+In rare cases, sub-indicators may be reported via multiple series (sub-sub-indicators). In this situation, the progress scores from each series grouped within the sub-indicator are determined and averaged together before passing along the group’s mean score to be used in the next steps of the aggregate progress calculation of the indicator. For example, GIF indicator 1.4.1 Proportion of population living in households with access to basic services is composed of many sub-indicators covering access to different forms of basic services. Each basic service should be accorded equal weighting in the determination of the progress score for this indicator. However, the Access to basic education sub-indicator is itself composed of multiple sub-sub-indicators that cover a range of age groups and subjects. Therefore, the progress scores from each available sub-sub-indicator are grouped together and averaged, resulting in a single mean progress score for the Access to basic education sub-indicator. The mean of the progress scores from each sub-indicator (where some of the sub-indicators’ scores may themselves be the result of an averaged group of sub-sub-indicator scores) then becomes the final aggregate progress score for the indicator. Grouping depth is not limited. This grouping method guarantees that sub-indicators are weighted equally when assigning a progress status to the indicator.
+
 ### Considerations and Exceptions
 
 #### <b>Special considerations for the base value and the target value</b>
@@ -272,7 +275,7 @@ When the data for an indicator does not meet these minimum requirements, the pro
 In rare cases, when the relevant experts have determined that a progress assessment would hinder the interpretation of the indicator data, the progress status will instead be reported as “Not available”.
 
 #### <b>Binary indicators</b>
-Binary indicators are categorized as follows:
+Binary or non-statitical indicators are categorized as follows:
 1. “Target achieved” if all conditions for meeting the target have been met.
 2. “Target not achieved” if one or more conditions for meeting the target have not been met.
 
@@ -280,17 +283,29 @@ Binary indicators are categorized as follows:
 The progress assessments generated by the outlined methodology oversimplify reality. The methodology may produce better results when applied to indicators demonstrating a trend of continuous exponential growth year after year than when applied to other types of indicators. Results for indicators where the base value or the target value is zero should also be interpreted carefully due to the limitations of the underlying model. Importantly, it takes time for policies to yield measurable results. Users should interpret the reported progress status accordingly, alongside any other relevant contextual information.
 
 #### <b>Specific exceptions for the Canadian Indicator Framework</b>
-The progress measurement methodology allows data to be transformed from an invalid form to an equivalent valid form before the progress calculation.
+To overcome certain limitations of the progress measurement methodology, data may be transformed into an equivalent valid form before calculating progress. Such transformations are intended to enable consistent progress measurements across a greater number of indicators.
 
-When the stated target is to achieve or promote equal sharing of responsibilities within the household and family, it is interpreted as meaning an equal ratio between the sexes. For example, the data for CIF indicator 5.4.1 Proportion of time spent on unpaid domestic and care work is transformed, prior to the progress calculation, into a ratio of the time spent by women on unpaid domestic and care work to that spent by men. The desired progress is a reduction towards a target ratio of 1.
+##### Goldilocks indicators
+For some indicators, it is desirable to approach and meet the target, but exceeding it may have negative consequences. We have labelled indicators with these types of targets as “Goldilocks” indicators because being far above the target is “too cold”, being below the target is “too hot”, while achieving the target is deemed “just right”. The results improve as we approach the target and worsen as we move away from the target in either direction. The methods used to address this type of target are described below:
+<ol type="a">
+  <!-- CIF 5.3.1 Proportion of leadership roles held by women -->
+  <li>CIF indicator 5.4.1 <i>Proportion of time spent on unpaid domestic and care work</i>: The stated target is “equal sharing of parenting roles and family responsibilities” and it is interpreted as meaning the time spent on unpaid domestic and care work for men and women should be equal. As such, this indicator’s data is transformed into a measure of the ratio of the time spent on unpaid domestic and care work between men and women. To ensure that inequities in either direction are handled fairly and equally, both the ratio of time spent by women to men and the reciprocal ratio of time spent by men to women are determined. The transformed value used in subsequent progress calculations is whichever is larger between the ratio of women to men and the ratio of men to women: max(<i>f</i><sub>i</sub>⁄<i>m</i><sub>i</sub>, <i>m</i><sub>i</sub>⁄<i>f</i><sub>i</sub> ), where <i>f</i><sub>i</sub> represents the observed time spent by women on unpaid domestic and care work and <i>m</i><sub>i</sub> represents the observed time spent by men on unpaid domestic and care work. Therefore, women spending twice as much time as men on unpaid domestic and care work is measured equally to the reciprocal situation, in which men spend twice as much time as women on unpaid domestic and care work. The desired progression is a reduction towards a target ratio of 1. However, a reduction in the total time spent on domestic and care work from all genders may not be the desired outcome as it may indicate growing neglect rather than gender equality. Therefore, caution should be exercised when interpreting the progress of this indicator.</li>
+  <!-- CIF 5.5.1 Median hourly gender wage gap -->
+  <!-- CIF 8.1.1 Unemployment rate -->
+  <!-- CIF 8.2.1 Employment rate -->
+</ol>
+
+##### Unit transformations
+The methodology is not applicable to indicators that allow both negative and positive values, such as indicators measuring percent change or growth rates. When possible, the values for these types of indicators should be transformed into unit types that are compatible with the progress measurement methodology before performing the progress calculations.
 
 CIF indicator 15.3.1 *Canadian Species Index* reports the cumulative percent change of the Canadian Species Index since 1970. Cumulative percent change values are unsuitable for the described progress measure methodology because both positive and negative values are allowed. Therefore, the progress measure is calculated by first transforming the indicator data from a relative measure to an absolute one. The base value in 1970 can be set to 1 and the following years’ values are converted by applying the cumulative percent change to this base value. For example, in 2015, the cumulative percent change since 1970 was -6.61%, so 1(1-0.0661) = 0.9399 is taken as the value for 2015 in the progress measure calculation.
 
+##### Other transformations
 CIF indicator 16.4.1 *Civil Court case completion time* reports progress based on the proportion of cases that are completed in 6 months or less, which is equal to the sum of the percentage of cases completed in less than or equal to 3 months and the percentage of cases completed in greater than 3 months to 6 months. The desired progress is in the positive direction, i.e., to increase the proportion of Civil Court cases that are completed in 6 months or less.
  
 ## Community
 
-The progress measure methodology described above is applied throughout the Canadian Indicator Framework for the Sustainable Development Goals Data Hub. At a glance, users can interpret indicator-level progress towards Canada’s national sustainable development goals!
+The progress measure methodology described above is applied throughout Statistics Canada’s Data Hubs for the SDGs. At a glance, users can interpret indicator-level progress towards Canada’s sustainable development goals!
 
 Statistics Canada’s SDG team is working with the [Open SDG](https://open-sdg.org/) community to integrate the indicator-level progress measurement into the back-end of the Open SDG platform. The official release of the progress measurement functionality is coming soon with the launch of Open SDG 2.4.0.
 
@@ -300,6 +315,7 @@ Please [contact us](mailto:statcan.sdg-odd.statcan@statcan.gc.ca) if you have an
 ## Metadata
 
 ##### Canadian Indicator Framework
+The table below provides the targets and desired directions used by Statistics Canada to measure Canada’s progress across the CIF.
 
 | Indicator number | Indicator name                                                                                                                                                                | Target or desired direction   |
 |------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------|
@@ -330,7 +346,7 @@ Please [contact us](mailto:statcan.sdg-odd.statcan@statcan.gc.ca) if you have an
 | 5.1.1            | Proportion of the population who self-reported being sexually assaulted in the last 12 months                                                                                 | Decrease                      |
 | 5.2.1            | Proportion of women and girls aged 15 years and older subjected to physical, sexual or psychological violence by a current or former intimate partner in the last 12 months   | ≤ 11.5%                       |
 | 5.3.1            | Proportion of leadership roles held by women                                                                                                                                  | Increase                      |
-| 5.4.1            | Proportion of time spent on unpaid domestic and care work                                                                                                                     | Ratio ≤ 1                     |
+| 5.4.1            | Proportion of time spent on unpaid domestic and care work                                                                                                                     | Ratio = 1                     |
 | 5.5.1            | Median hourly gender wage ratio                                                                                                                                               | Increase                      |
 | 6.1.1            | Number of long-term drinking water advisories on public systems on reserves                                                                                                   | < 1                           |
 | 6.2.1            | Percentage of municipalities across Canada with sustained drinking water advisories                                                                                           | Decrease                      |
