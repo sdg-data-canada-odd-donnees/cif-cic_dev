@@ -352,7 +352,7 @@
         {
           "id": "7-3-1",
           "title": "Consommation totale d’énergie par habitant",
-          "description": "Cet indicateur mesure la consommation de différents types d'énergie, en térajoules ou en térajoules par habitant.",
+          "description": "Cet indicateur mesure la consommation de différents types d'énergie, en térajoules par habitant.",
           "keywords": "",
           "href": "/cif-cic_dev/fr/7-3-1/",
           "status": "complete"
