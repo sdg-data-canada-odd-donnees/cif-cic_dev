@@ -146,7 +146,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20260209032229">
+        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20260209144557">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -305,12 +305,12 @@ layout-indicator-iframe
         <div class="progress-status">
         
             <div class="progress-status-label">
-                Sur la bonne voie
+                Des progrès ont été réalisés, mais une accélération est nécessaire
             </div>
         
         
             <div class="progress-status-image">
-                <img src="/cif-cic_dev/assets/img/progress/green-gauge.png" alt="Sur la bonne voie" />
+                <img src="/cif-cic_dev/assets/img/progress/yellow-gauge.png" alt="Des progrès ont été réalisés, mais une accélération est nécessaire" />
             </div>
         
         </div>
@@ -349,7 +349,7 @@ layout-indicator-iframe
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Année&quot;},{&quot;name&quot;:&quot;Sex&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Les deux sexes&quot;,&quot;Hommes&quot;,&quot;Femmes&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Sexe&quot;},{&quot;name&quot;:&quot;Age group&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;5 à 17 ans&quot;,&quot;Ages 6 to 17&quot;,&quot;18 à 79 ans&quot;,&quot;5 à 11 ans&quot;,&quot;Ages 6 to 11&quot;,&quot;12 à 17 ans&quot;,&quot;18 à 39 ans&quot;,&quot;40 à 59 ans&quot;,&quot;60 à 79 ans&quot;,&quot;Ages 18 to 64&quot;,&quot;Ages 65 to 79&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Groupe d'âge&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Valeur&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Année&quot;},{&quot;name&quot;:&quot;Sex&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Les deux sexes&quot;,&quot;Hommes&quot;,&quot;Femmes&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Sexe&quot;},{&quot;name&quot;:&quot;Age group&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;5 à 17 ans&quot;,&quot;Ages 6 to 17&quot;,&quot;18 à 79 ans&quot;,&quot;5 à 11 ans&quot;,&quot;Ages 6 to 11&quot;,&quot;12 à 17 ans&quot;,&quot;18 à 39 ans&quot;,&quot;40 à 59 ans&quot;,&quot;60 à 79 ans&quot;,&quot;Ages 18 to 64&quot;,&quot;Ages 65 to 79&quot;,&quot;Ages 3 to 79&quot;,&quot;Ages 3 to 17&quot;,&quot;Ages 3 to 4&quot;,&quot;Ages 40 to 64&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Groupe d'âge&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Valeur&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="null"
   data-proxy=""
@@ -832,7 +832,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Commentaires et limites </th>
         <td>
           
-            <p>Ne s’applique pas</p>
+            <p>En raison des changements apportés à la méthodologie de la composante du moniteur d’activité à partir du cycle 7 de l’Enquête canadienne sur les mesures de la santé, il est recommandé de faire preuve de prudence lors de la comparaison des données des cycles précédents (2007–2009 à 2018–2019) avec celles publiées à partir du cycle 7 (2022–2024).</p>
 
           
         </td>
@@ -975,8 +975,8 @@ data-event-label="Change to indicator.sources tab"
     
     <div class="col-md-6">
       
-        <h4 class="sr-only">Source(s) 1</h4>
       
+        <h4>Source(s) 1</h4>
       
       <table class="table metadata-content">
   <tbody>
@@ -1087,7 +1087,7 @@ data-event-label="Change to indicator.sources tab"
             
             
               <a href="https://doi.org/10.25318/1310082101-fra" target="_blank">
-                Statistique Canada. Tableau 13-10-0821-01  Distribution de la population à domicile selon s’ils rencontrent/ne rencontrent pas les Directives canadiennes en matière d’activité physique, 2020 <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
+                Statistique Canada. Tableau 13-10-0821-01  Respect des recommandations en matière d’activité physique mesuré à l'aide d'un acceléromètre Actical <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
               </a>
             
 
@@ -1140,6 +1140,228 @@ data-event-label="Change to indicator.sources tab"
   
   
   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+    </div>
+    
+    
+    
+    <div class="col-md-6">
+      
+      
+        <h4>Source(s) 2</h4>
+      
+      <table class="table metadata-content">
+  <tbody>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Organisation </th>
+        <td>
+          
+            <p>Statistique Canada</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Fréquence </th>
+        <td>
+          
+            <p>Occasionnelle</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Couverture géographique </th>
+        <td>
+          
+            <p>Canada</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Lien vers la source de données </th>
+        <td>
+          
+            
+            
+            
+            
+            
+              <a href="https://doi.org/10.25318/1310096901-fra" target="_blank">
+                Statistique Canada. Tableau 13-10-0969-01  Respect des recommandations en matière d’activité physique, de comportement sédentaire et de sommeil, selon les données auto-déclarées et mesurées à l’aide d’un accéléromètre ActiGraph <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
+              </a>
+            
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
   
   
   
@@ -1251,12 +1473,12 @@ ga('send', 'pageview');
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/cif-cic_dev/assets/js/sdg.js?v=20260209032229'></script>
+<script src='/cif-cic_dev/assets/js/sdg.js?v=20260209144557'></script>
 
 
     
     
-    <script src="/cif-cic_dev/assets/js/custom.js?v=20260209032229"></script><script>
+    <script src="/cif-cic_dev/assets/js/custom.js?v=20260209144557"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
