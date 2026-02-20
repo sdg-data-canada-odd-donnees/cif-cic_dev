@@ -146,7 +146,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20260220185129">
+        <link rel="stylesheet" href="/cif-cic_dev/assets/css/style.css?v=20260220201014">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -453,12 +453,12 @@ data-event-label="high"
         <div class="progress-status">
         
             <div class="progress-status-label">
-                On track
+                Progress made but acceleration needed
             </div>
         
         
             <div class="progress-status-image">
-                <img src="/cif-cic_dev/assets/img/progress/green-gauge.png" alt="On track" />
+                <img src="/cif-cic_dev/assets/img/progress/yellow-gauge.png" alt="Progress made but acceleration needed" />
             </div>
         
         </div>
@@ -497,7 +497,7 @@ data-event-label="high"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Geography&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;British Columbia and the Territories&quot;,&quot;Manitoba&quot;,&quot;New Brunswick&quot;,&quot;Ontario&quot;,&quot;Prince Edward Island&quot;,&quot;Quebec&quot;,&quot;Saskatchewan&quot;,&quot;Nova Scotia&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Geography&quot;},{&quot;name&quot;:&quot;GeoCode&quot;,&quot;type&quot;:&quot;string&quot;,&quot;title&quot;:&quot;GeoCode&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Geography&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;British Columbia and the Territories&quot;,&quot;Manitoba&quot;,&quot;New Brunswick&quot;,&quot;Ontario&quot;,&quot;Prince Edward Island&quot;,&quot;Quebec&quot;,&quot;Saskatchewan&quot;,&quot;British Columbia&quot;,&quot;Northwest Territories&quot;,&quot;Nova Scotia&quot;,&quot;Yukon&quot;,&quot;Nunavut&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Geography&quot;},{&quot;name&quot;:&quot;GeoCode&quot;,&quot;type&quot;:&quot;string&quot;,&quot;title&quot;:&quot;GeoCode&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="null"
   data-proxy=""
@@ -630,7 +630,7 @@ data-event-label="high"
           
           
           
-          <td>2.91</td>
+          <td>2.9</td>
           
           
           
@@ -662,7 +662,7 @@ data-event-label="high"
           
           
           
-          <td>5.24</td>
+          <td>5.25</td>
           
           
           
@@ -711,6 +711,22 @@ data-event-label="high"
           
           
           <td>14.63</td>
+          
+          
+          
+          <td class="table-value"></td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2025</td>
+          
+          
+          
+          <td>8.88</td>
           
           
           
@@ -1714,7 +1730,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Periodicity </th>
         <td>
           
-            <p>Annual</p>
+            <p>Quarterly</p>
 
           
         </td>
@@ -1735,7 +1751,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Geographical coverage </th>
         <td>
           
-            <p>Canada, Province or territory</p>
+            <p>Canada, Province or territory, Census subdivision, Census metropolitan area, Census agglomeration, Census metropolitan area part, Census agglomeration part</p>
 
           
         </td>
@@ -1756,8 +1772,8 @@ data-event-label="Change to indicator.sources tab"
             
             
             
-              <a href="https://doi.org/10.25318/2010002401-eng" target="_blank">
-                Statistics Canada. Table 20-10-0024-01  New motor vehicle registrations, quarterly <span class="visuallyhidden">opens in a new window</span>
+              <a href="https://doi.org/10.25318/2010002501-eng" target="_blank">
+                Statistics Canada. Table 20-10-0025-01  New motor vehicle registrations, quarterly, by geographic level <span class="visuallyhidden">opens in a new window</span>
               </a>
             
 
@@ -1997,12 +2013,12 @@ ga('send', 'pageview');
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/cif-cic_dev/assets/js/sdg.js?v=20260220185129'></script>
+<script src='/cif-cic_dev/assets/js/sdg.js?v=20260220201014'></script>
 
 
     
     
-    <script src="/cif-cic_dev/assets/js/custom.js?v=20260220185129"></script><script>
+    <script src="/cif-cic_dev/assets/js/custom.js?v=20260220201014"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
