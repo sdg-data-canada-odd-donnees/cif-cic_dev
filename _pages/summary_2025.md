@@ -23,9 +23,9 @@ As of December 31, 2025,
 - 44% showed deterioration in progress.[^1]
 
 #### <b>Figure 1: Canada’s progress toward the Sustainable Development Goals from 2015 to December 31, 2025, by goal, Canadian Indicator Framework</b>
-![Canadian Indicator Framework Image Summary, 2025](https://raw.githubusercontent.com/sdg-data-canada-odd-donnees/sdg-odd-dev/develop/assets/img/summary/2025/GIF_2025_EN.svg)
+![Canadian Indicator Framework Image Summary, 2025](https://raw.githubusercontent.com/sdg-data-canada-odd-donnees/cif-cic_dev/develop/assets/img/summary/2025/CIF_2025_EN.svg)
 
-<a href="https://github.com/sdg-data-canada-odd-donnees/sdg-odd-dev/blob/4e4de68188854f53e55d6ed08b5059a9377429bc/assets/img/summary/2025/gif_metadata_2025.csv" download>
+<a href="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/bd1f64bd51123326f220fd6b6367f0a15e7d599e/assets/img/summary/2025/cif_metadata_2025.csv" download>
   Download the detailed Summary of progress for 2025
 </a>
 
