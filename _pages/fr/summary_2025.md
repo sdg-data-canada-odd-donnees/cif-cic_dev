@@ -1,0 +1,32 @@
+---
+title: Sommaire de progrès annuel - 2025
+language: fr
+permalink: /fr/summary_2025/
+layout: page
+---
+
+## Cadre mondial d'indicateurs (CMI) pour les objectifs de développement durable (ODD)
+
+### Introduction
+
+En date du 31 décembre 2025, il y avait 251 indicateurs dans le CMI et il était possible de classer les progrès réalisés pour 132 (53 %) d'entre eux. Ceux-ci sont divisés en cinq catégories de progrès, allant de « Détérioration » à « Cible atteinte » (pour plus d'information sur les catégories de progrès, veuillez vous référer à la section [Méthodologie de mesure des progrès](https://sdggif-data-canada-oddcmi-donnee.github.io/fr/methodology/)). 
+
+La figure 1 présente un résumé visuel des progrès réalisés par le Canada depuis 2015, ventilés par objectif. Pour chaque objectif, des cercles de différentes tailles indiquent le nombre d'indicateurs classé dans chaque catégorie de progrès. 
+
+### Sommaire
+
+En date du 31 décembre 2025, 
+- 19 % des indicateurs du Cadre mondial d’indicateurs dont le progrès est classé avaient atteint leur cible
+- 25 % étaient sur la bonne voie de les atteindre d’ici leurs échéances. 
+- Pour 11 % des indicateurs, des progrès ont été réalisés, mais une accélération est nécessaire.
+- 20 %  avaient démontré des progrès limités.
+- 26 % démontraient une détérioration du progrès.[^1]
+
+#### <b>Figure 1  : Progrès réalisés par le Canada à l’égard des objectifs de développement durable au cours de la période allant de 2015 au 31 décembre 2025, par objectif, Cadre mondial d’indicateurs</b>
+![Image sommaire du Cadre mondial d'indicateurs, 2025](https://raw.githubusercontent.com/sdg-data-canada-odd-donnees/sdg-odd-dev/develop/assets/img/summary/2025/GIF_2025_FR.svg)
+<a href="https://github.com/sdg-data-canada-odd-donnees/sdg-odd-dev/blob/8b167cb3f4ebb22366ebd17a2949c17179c66e59/assets/img/summary/2025/gif_metadata_2025_fr.csv" download>
+  Télécharger le Sommaire de progrès détaillé pour 2025
+</a>
+
+## Notes
+[^1]: Le progrès peut ne pas sommer à 100 % dû aux arrondissements.
