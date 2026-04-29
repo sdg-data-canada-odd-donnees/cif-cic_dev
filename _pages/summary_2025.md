@@ -16,7 +16,7 @@ Figure 1 provides a visual summary of Canada’s progress since 2015, broken dow
 ### Summary
 
 As of December 31, 2025,
-- 4% of the indicators in the Global Indicator Framework for which progress has been tracked had achieved their targets.
+- 4% of the indicators in the Canadian Indicator Framework for which progress has been tracked had achieved their targets.
 - 21% were on track to meet them by their deadlines.
 - For 19% of the indicators, progress has been made but an acceleration is needed.
 - 13% showed limited progress.
