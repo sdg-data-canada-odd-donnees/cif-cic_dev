@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="fr" class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" integrity="sha384-bPV3mA2eo3edoq56VzcPBmG1N1QVUfjYMxVIJPPzyFJyFZ8GFfN7Npt06Zr23qts" crossorigin="anonymous"></script>
+        <script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?version=4.8.0&features=Promise%2CString.prototype.includes%2CCustomEvent%2CArray.prototype.includes%2CArray.prototype.find%2CObject.assign%2CObject.values%2CObject.entries%2CArray.from%2CSet%2CArray.prototype.findIndex%2Cfetch"></script>
+<script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/javascript-canvas-to-blob/3.15.0/js/canvas-to-blob.min.js"></script>
+        <script>
+// This is where we initialise any global variables, namespaced in "opensdg".
+var opensdg = {
+
+  // A base URL for asynchronous calls to SDG data.
+  remoteDataBaseUrl: 'https://sdg-data-canada-odd-donnees.github.io/cif-data-donnees-cic/fr',
+
+  chartConfigAlterations: [],
+  // A hook which can be used to modify the configuration for Chart.js.
+  chartConfigAlter: function(callback) {
+    this.chartConfigAlterations.push(callback);
+  },
+
+  tableConfigAlterations: [],
+  // A hook which can be used to modify the configuration for Datatables.
+  tableConfigAlter: function(callback) {
+    this.tableConfigAlterations.push(callback);
+  },
+
+  // A hook which can be replaced to alter whether/how the values that are
+  // displayed on indicator tables/graphs get rounded. A "context" parameter
+  // is also passed which contains additional information.
+  dataRounding: function(value, context) {
+    // Alterations go here.
+    return value;
+  },
+
+  // A hook which can be used to alter the data before it is displayed on charts/tables.
+  dataDisplayAlterations: [],
+  dataDisplayAlter: function(callback) {
+    this.dataDisplayAlterations.push(callback);
+  },
+
+  // Disaggregations which should be ignored on indicator pages.
+  ignoredDisaggregations: null,
+
+  language: 'fr',
+
+  language_numbers: 'fr',
+
+  mapColors: {
+    "default": [
+        "#c4e1c6",
+        "#b0d1b3",
+        "#9bc2a1",
+        "#87b28f",
+        "#74a37c",
+        "#60946b",
+        "#4d8559",
+        "#3a7747",
+        "#276836"
+    ]
+},
+};
+
+</script>
+
+        <script>
+// JavaScript container for translation data.
+var translations = {
+  //Javascript version of the "t" filter from jekyll-open-sdg-plugins.
+  t: function(key) {
+
+    if (!key || typeof key !== 'string') {
+      return '';
+    }
+
+    // The majority of uses of this function are to translate disaggregation
+    // data. To spare data providers of needing to enter "data." in front of
+    // their disaggregation data, we specifically look for that here.
+    if (typeof this.data === 'object' && this.data !== null && this.data[key]) {
+      return this.data[key];
+    }
+
+    var originalKey = key;
+    var drilled = this;
+    var levelsDrilled = 0;
+    var levels = key.split('.');
+
+    for (var level in levels) {
+      // If we have drilled down to soon, abort.
+      if (typeof drilled !== 'object') {
+        break;
+      }
+
+      if (levels[level] in drilled) {
+        drilled = drilled[levels[level]];
+        levelsDrilled += 1;
+      }
+    }
+
+    // If we didn't drill the right number of levels, return the original string.
+    if (levels.length != levelsDrilled) {
+      return originalKey;
+    }
+
+    // Otherwise we must have drilled all the way.
+    return drilled;
+  },
+};
+</script>
+
+        <!-- Basic Page Needs
+        ================================================== -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- Mobile Specific Metas
+        ================================================== -->
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Title and meta description
+        ================================================== -->
+
+        
+    <title>Canada Indicators For The Sustainable Development Goals</title>
+
+
+
+        
+
+        <!--[if IE 9]>
+        <script src="/assets/js/lib/classList.js"></script>
+        <![endif]-->
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+<link rel="icon" type="image/x-icon" href="/assets/img/favicons/favicon.ico" />
+
+        
+
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20260622150748">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+          integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+          crossorigin=""/>
+        <link rel="stylesheet" href="https://cdn.rawgit.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.control.min.css"  crossorigin=""/>
+        <link rel="stylesheet" href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css'  crossorigin=""/>
+        <link rel="stylesheet" href="https://bowercdn.net/c/leaflet.zoomhome-latest/dist/leaflet.zoomhome.css"  crossorigin=""/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin="">
+        <link rel="stylesheet" href="https://cdn.kiprotect.com/klaro/v0.7/klaro.min.css" crossorigin=""/>
+        
+
+        
+
+
+        <!--[if IE]>
+        <link rel="stylesheet" href="/assets/css/ie.css">
+        <![endif]-->
+
+        
+
+    </head>
+<body class="language-fr
+layout-reportingstatus
+">
+<!-- <div class="container"> -->
+
+<script>translations['header'] = {"alpha":"Beta","default_contrast":"contraste standard","disable_high_contrast":"Désactiver le contraste élevé","disclaimer":"Ceci est un site en développement. Nous apprécions vos <a href=\"mailto:statcan.sdg-odd.statcan@canada.ca\">commentaires</a>.","enable_high_contrast":"Activer le contraste élevé","hide_menu":"Cacher le menu de navigation","high_contrast":"contraste élevé","internet_explorer_message":"Nous avons détecté que vous utilisez Internet Explorer pour visiter ce site. Internet Explorer est en train d'être abandonné par Microsoft. Par conséquent, ce site Web ne prend plus en charge aucune version d'Internet Explorer. Certaines fonctionnalités de ce site ne fonctionneront pas. Vous devez utiliser un navigateur moderne tel que Edge, Chrome, Firefox ou Safari. Si vous avez des difficultés à installer ou à accéder à un autre navigateur, veuillez contacter votre équipe d'assistance informatique.","internet_explorer_message_title":"Ce navigateur Internet n'est plus pris en charge","logo_title":"Aller à la page d'accueil","show_menu":"Afficher le menu de navigation","skip_link":"Passer au contenu principal","tag_line":"17 objectifs pour transformer notre monde","toggle_menu":"Interrupteur du menu. Cliquez pour développer ou réduire le menu.","toggle_search":"Interrupteur de la barre. Cliquez pour développer ou réduire la barre de recherche."};</script>
+
+<a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Passer au contenu principal</a>
+<div class="container internet-explorer-message">
+    <h2 class="internet-explorer-message-title">Ce navigateur Internet n'est plus pris en charge</h2>
+    <p class="internet-explorer-message-body">Nous avons détecté que vous utilisez Internet Explorer pour visiter ce site. Internet Explorer est en train d'être abandonné par Microsoft. Par conséquent, ce site Web ne prend plus en charge aucune version d'Internet Explorer. Certaines fonctionnalités de ce site ne fonctionneront pas. Vous devez utiliser un navigateur moderne tel que Edge, Chrome, Firefox ou Safari. Si vous avez des difficultés à installer ou à accéder à un autre navigateur, veuillez contacter votre équipe d'assistance informatique.</p>
+</div>
+<div id="disclaimer">
+    
+<div class="container">
+  <div class="disclaimer-alert">
+    <strong class="phase-tag">Beta</strong>
+    
+    Ceci est un site en développement. Nous apprécions vos <a href="mailto:statcan.sdg-odd.statcan@canada.ca">commentaires</a>.
+    
+  </div>
+</div>
+
+</div>
+
+<header role="banner" class="">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light flex-wrap align-items-start">
+            <a class="navbar-brand" href="/fr/" id="home" aria-label="Aller à la page d'accueil" title="Aller à la page d'accueil">
+    <img src="/assets/img/SDG_logo.png" alt="Objectifs de développement durable - 17 objectifs pour transformer notre monde" />
+</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Afficher le menu de navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="d-flex flex-wrap w-100 justify-content-between">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav" id="menu"><li class="nav-item ">
+    <a class="nav-link" href="/fr/goals">Objectifs</a>
+</li><li class="nav-item ">
+    <a class="nav-link" href="/fr/about">À propos</a>
+</li><li class="nav-item ">
+    <a class="nav-link" href="/fr/faq">FAQ</a>
+</li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-menu-summary" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Sommaire de progrès annuel
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-menu-summary"><li class=" ">
+    <a class="dropdown-item" href="/fr/summary_2025">Sommaire 2025</a>
+</li></ul>
+            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-menu-more-info" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Plus d'information
+
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-menu-more-info"><li class=" ">
+    <a class="dropdown-item" href="/fr/related-products">Produits connexes</a>
+</li><li class=" ">
+    <a class="dropdown-item" href="/fr/methodology">Méthodologie de mesure des progrès</a>
+</li></ul>
+            </li></ul>
+    
+                </div>
+                <div class="header-search-bar">
+                    <form class="align-self-lg-end" id="search" action="/fr/search/">
+    <div class="input-group">
+        <label class="visually-hidden" for="indicator_search">Chercher</label>
+        <input class="form-control" type="search" name="q" id="indicator_search" title="Chercher">
+        <span class="input-group-append">
+            <button class="btn btn-outline-secondary ms-n5" aria-label="Recherche sur le site" id="search-btn" type="submit">
+                <i class="fa fa-search"></i>
+            </button>
+        </span>
+    </div>
+</form>
+
+                </div>
+                <div class="header-toggles d-flex">
+
+
+
+
+
+  <div class="language-toggle-container">
+  
+  <div class="btn-group language-toggle-dropdown  dropdown">
+    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="fa fa-globe"></i>
+      Français
+    </button>
+    <ul class="dropdown-menu"><li>
+            <a class="dropdown-item" href="/reporting-status/">
+              English
+            </a>
+          </li></ul>
+  </div>
+</div>
+
+
+
+                    <span class="no-js-language-toggle"><div class="language-toggle-container d-flex">
+    <i class="fa fa-globe language-toggle-globe-links"></i>
+    <ul class="language-toggle-links list-unstyled list-inline"><li class="language-option-en list-inline-item">
+            <a class="language-toggle-link" href="/reporting-status/">
+                English
+            </a>
+        </li></ul>
+</div></span><a title="Activer le contraste élevé" aria-label="Activer le contraste élevé"
+    data-contrast-switch-to="" role="button" href="javascript:void(0)" data-on="click"
+data-event-category="Accessibility"
+data-event-action="Change contrast setting"
+data-event-label="high"
+>A</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<div id="top" tabindex=-1></div>
+
+
+
+
+
+
+
+
+
+<div class="container">
+  <nav>
+    <ol aria-label="breadcrumb" class="breadcrumb" style="--bs-breadcrumb-divider: '&rsaquo;';">
+        <li class="breadcrumb-item" >
+            <a href="/fr/">Accueil</a>
+        </li>
+        <li class="breadcrumb-item active"></li>
+    </ol>
+</nav>
+</div>
+<div id="main-content" class="container reportingstatus" role="main">
+
+  <h1>
+  
+    État des rapports
+  
+</h1>
+
+
+<div class="reporting-status-description">
+  <p>status.status_description</p>
+
+</div>
+
+
+
+  <div>
+  
+
+  
+  <div class="goal goal-overall">
+    
+    <div class="frame goal-tiles">
+        <img src="/assets/img/SDG Wheel_Transparent-01.png" alt="Objectifs de développement durable" width="100" height="100" class="goal-icon-image goal-icon-image-"/>
+    </div>
+    
+    <div class="details">
+        <h2 class="status-goal">
+            État général des rapports
+        </h2>
+        <span class="total"><span>86</span> indicateurs</span>
+        
+        <div class="summary">
+            <div class="statuses">
+            
+            
+            <div>
+                <span class="status complete"><span class="status-inner">86</span></span><strong>Diffusé en ligne</strong><span class="value">100%</span>
+            </div>
+            
+            
+            <br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+            
+            
+            
+            
+            
+            <span class="complete" style="width:100.0%" title="Diffusé en ligne: 100%"></span>
+            
+            
+            </div>
+        
+    </div>
+    <br style="clear:both;">
+</div>
+  <h2>Statut par objectif</h2><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/fr/1/" title="Voir les cibles et les indicateurs de l'objectif 1" aria-label="Voir les cibles et les indicateurs de l'objectif 1">
+        <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic_dev/assets/img/cards/inverted/fr/1.png" alt="Pas de pauvreté - Objectif 1" width="100" height="100" class="goal-icon-1 goal-icon-image goal-icon-image-"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/fr/1/">Pas de pauvreté</a>
+        </h3>
+        <span class="total">4 indicateurs</span>
+        
+        <div class="summary">
+            <div class="statuses">
+                
+                
+                <div>
+                    <span class="status complete"><span class="status-inner">4</span></span><strong>Diffusé en ligne</strong><span class="value">100%</span>
+                </div>
+                
+                
+                <br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                
+                
+                
+                <span class="complete" style="width:100.0%" title="Diffusé en ligne: 100%"></span>
+                
+                
+                </div>
+        
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/fr/2/" title="Voir les cibles et les indicateurs de l'objectif 2" aria-label="Voir les cibles et les indicateurs de l'objectif 2">
+        <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic_dev/assets/img/cards/inverted/fr/2.png" alt="Faim &quot;zéro&quot; - Objectif 2" width="100" height="100" class="goal-icon-2 goal-icon-image goal-icon-image-"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/fr/2/">Faim "zéro"</a>
+        </h3>
+        <span class="total">2 indicateurs</span>
+        
+        <div class="summary">
+            <div class="statuses">
+                
+                
+                <div>
+                    <span class="status complete"><span class="status-inner">2</span></span><strong>Diffusé en ligne</strong><span class="value">100%</span>
+                </div>
+                
+                
+                <br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                
+                
+                
+                <span class="complete" style="width:100.0%" title="Diffusé en ligne: 100%"></span>
+                
+                
+                </div>
+        
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/fr/3/" title="Voir les cibles et les indicateurs de l'objectif 3" aria-label="Voir les cibles et les indicateurs de l'objectif 3">
+        <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic_dev/assets/img/cards/inverted/fr/3.png" alt="Bonne santé et bien-être - Objectif 3" width="100" height="100" class="goal-icon-3 goal-icon-image goal-icon-image-"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/fr/3/">Bonne santé et bien-être</a>
+        </h3>
+        <span class="total">15 indicateurs</span>
+        
+        <div class="summary">
+            <div class="statuses">
+                
+                
+                <div>
+                    <span class="status complete"><span class="status-inner">15</span></span><strong>Diffusé en ligne</strong><span class="value">100%</span>
+                </div>
+                
+                
+                <br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                
+                
+                
+                <span class="complete" style="width:100.0%" title="Diffusé en ligne: 100%"></span>
+                
+                
+                </div>
+        
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/fr/4/" title="Voir les cibles et les indicateurs de l'objectif 4" aria-label="Voir les cibles et les indicateurs de l'objectif 4">
+        <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic_dev/assets/img/cards/inverted/fr/4.png" alt="Éducation de qualité - Objectif 4" width="100" height="100" class="goal-icon-4 goal-icon-image goal-icon-image-"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/fr/4/">Éducation de qualité</a>
+        </h3>
+        <span class="total">3 indicateurs</span>
+        
+        <div class="summary">
+            <div class="statuses">
+                
+                
+                <div>
+                    <span class="status complete"><span class="status-inner">3</span></span><strong>Diffusé en ligne</strong><span class="value">100%</span>
+                </div>
+                
+                
+                <br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                
+                
+                
+                <span class="complete" style="width:100.0%" title="Diffusé en ligne: 100%"></span>
+                
+                
+                </div>
+        
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/fr/5/" title="Voir les cibles et les indicateurs de l'objectif 5" aria-label="Voir les cibles et les indicateurs de l'objectif 5">
+        <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic_dev/assets/img/cards/inverted/fr/5.png" alt="Égalité entre les sexes - Objectif 5" width="100" height="100" class="goal-icon-5 goal-icon-image goal-icon-image-"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/fr/5/">Égalité entre les sexes</a>
+        </h3>
+        <span class="total">5 indicateurs</span>
+        
+        <div class="summary">
+            <div class="statuses">
+                
+                
+                <div>
+                    <span class="status complete"><span class="status-inner">5</span></span><strong>Diffusé en ligne</strong><span class="value">100%</span>
+                </div>
+                
+                
+                <br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                
+                
+                
+                <span class="complete" style="width:100.0%" title="Diffusé en ligne: 100%"></span>
+                
+                
+                </div>
+        
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/fr/6/" title="Voir les cibles et les indicateurs de l'objectif 6" aria-label="Voir les cibles et les indicateurs de l'objectif 6">
+        <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic_dev/assets/img/cards/inverted/fr/6.png" alt="Eau propre et assainissement - Objectif 6" width="100" height="100" class="goal-icon-6 goal-icon-image goal-icon-image-"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/fr/6/">Eau propre et assainissement</a>
+        </h3>
+        <span class="total">6 indicateurs</span>
+        
+        <div class="summary">
+            <div class="statuses">
+                
+                
+                <div>
+                    <span class="status complete"><span class="status-inner">6</span></span><strong>Diffusé en ligne</strong><span class="value">100%</span>
+                </div>
+                
+                
+                <br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                
+                
+                
+                <span class="complete" style="width:100.0%" title="Diffusé en ligne: 100%"></span>
+                
+                
+                </div>
+        
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/fr/7/" title="Voir les cibles et les indicateurs de l'objectif 7" aria-label="Voir les cibles et les indicateurs de l'objectif 7">
+        <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic_dev/assets/img/cards/inverted/fr/7.png" alt="Energies propres et d&#39;un coût abordable - Objectif 7" width="100" height="100" class="goal-icon-7 goal-icon-image goal-icon-image-"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/fr/7/">Energies propres et d'un coût abordable</a>
+        </h3>
+        <span class="total">3 indicateurs</span>
+        
+        <div class="summary">
+            <div class="statuses">
+                
+                
+                <div>
+                    <span class="status complete"><span class="status-inner">3</span></span><strong>Diffusé en ligne</strong><span class="value">100%</span>
+                </div>
+                
+                
+                <br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                
+                
+                
+                <span class="complete" style="width:100.0%" title="Diffusé en ligne: 100%"></span>
+                
+                
+                </div>
+        
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/fr/8/" title="Voir les cibles et les indicateurs de l'objectif 8" aria-label="Voir les cibles et les indicateurs de l'objectif 8">
+        <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic_dev/assets/img/cards/inverted/fr/8.png" alt="Travaux décent et croissance économique - Objectif 8" width="100" height="100" class="goal-icon-8 goal-icon-image goal-icon-image-"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/fr/8/">Travaux décent et croissance économique</a>
+        </h3>
+        <span class="total">6 indicateurs</span>
+        
+        <div class="summary">
+            <div class="statuses">
+                
+                
+                <div>
+                    <span class="status complete"><span class="status-inner">6</span></span><strong>Diffusé en ligne</strong><span class="value">100%</span>
+                </div>
+                
+                
+                <br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                
+                
+                
+                <span class="complete" style="width:100.0%" title="Diffusé en ligne: 100%"></span>
+                
+                
+                </div>
+        
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/fr/9/" title="Voir les cibles et les indicateurs de l'objectif 9" aria-label="Voir les cibles et les indicateurs de l'objectif 9">
+        <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic_dev/assets/img/cards/inverted/fr/9.png" alt="Industrie, innovation et infrastructure - Objectif 9" width="100" height="100" class="goal-icon-9 goal-icon-image goal-icon-image-"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/fr/9/">Industrie, innovation et infrastructure</a>
+        </h3>
+        <span class="total">7 indicateurs</span>
+        
+        <div class="summary">
+            <div class="statuses">
+                
+                
+                <div>
+                    <span class="status complete"><span class="status-inner">7</span></span><strong>Diffusé en ligne</strong><span class="value">100%</span>
+                </div>
+                
+                
+                <br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                
+                
+                
+                <span class="complete" style="width:100.0%" title="Diffusé en ligne: 100%"></span>
+                
+                
+                </div>
+        
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/fr/10/" title="Voir les cibles et les indicateurs de l'objectif 10" aria-label="Voir les cibles et les indicateurs de l'objectif 10">
+        <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic_dev/assets/img/cards/inverted/fr/10.png" alt="Inégalités réduites - Objectif 10" width="100" height="100" class="goal-icon-10 goal-icon-image goal-icon-image-"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/fr/10/">Inégalités réduites</a>
+        </h3>
+        <span class="total">2 indicateurs</span>
+        
+        <div class="summary">
+            <div class="statuses">
+                
+                
+                <div>
+                    <span class="status complete"><span class="status-inner">2</span></span><strong>Diffusé en ligne</strong><span class="value">100%</span>
+                </div>
+                
+                
+                <br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                
+                
+                
+                <span class="complete" style="width:100.0%" title="Diffusé en ligne: 100%"></span>
+                
+                
+                </div>
+        
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/fr/11/" title="Voir les cibles et les indicateurs de l'objectif 11" aria-label="Voir les cibles et les indicateurs de l'objectif 11">
+        <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic_dev/assets/img/cards/inverted/fr/11.png" alt="Villes et communautés durables - Objectif 11" width="100" height="100" class="goal-icon-11 goal-icon-image goal-icon-image-"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/fr/11/">Villes et communautés durables</a>
+        </h3>
+        <span class="total">7 indicateurs</span>
+        
+        <div class="summary">
+            <div class="statuses">
+                
+                
+                <div>
+                    <span class="status complete"><span class="status-inner">7</span></span><strong>Diffusé en ligne</strong><span class="value">100%</span>
+                </div>
+                
+                
+                <br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                
+                
+                
+                <span class="complete" style="width:100.0%" title="Diffusé en ligne: 100%"></span>
+                
+                
+                </div>
+        
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/fr/12/" title="Voir les cibles et les indicateurs de l'objectif 12" aria-label="Voir les cibles et les indicateurs de l'objectif 12">
+        <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic_dev/assets/img/cards/inverted/fr/12.png" alt="Consommation et production responsables - Objectif 12" width="100" height="100" class="goal-icon-12 goal-icon-image goal-icon-image-"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/fr/12/">Consommation et production responsables</a>
+        </h3>
+        <span class="total">4 indicateurs</span>
+        
+        <div class="summary">
+            <div class="statuses">
+                
+                
+                <div>
+                    <span class="status complete"><span class="status-inner">4</span></span><strong>Diffusé en ligne</strong><span class="value">100%</span>
+                </div>
+                
+                
+                <br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                
+                
+                
+                <span class="complete" style="width:100.0%" title="Diffusé en ligne: 100%"></span>
+                
+                
+                </div>
+        
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/fr/13/" title="Voir les cibles et les indicateurs de l'objectif 13" aria-label="Voir les cibles et les indicateurs de l'objectif 13">
+        <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic_dev/assets/img/cards/inverted/fr/13.png" alt="Mesures relatives à la lutte contre les changements climatiques - Objectif 13" width="100" height="100" class="goal-icon-13 goal-icon-image goal-icon-image-"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/fr/13/">Mesures relatives à la lutte contre les changements climatiques</a>
+        </h3>
+        <span class="total">4 indicateurs</span>
+        
+        <div class="summary">
+            <div class="statuses">
+                
+                
+                <div>
+                    <span class="status complete"><span class="status-inner">4</span></span><strong>Diffusé en ligne</strong><span class="value">100%</span>
+                </div>
+                
+                
+                <br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                
+                
+                
+                <span class="complete" style="width:100.0%" title="Diffusé en ligne: 100%"></span>
+                
+                
+                </div>
+        
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/fr/14/" title="Voir les cibles et les indicateurs de l'objectif 14" aria-label="Voir les cibles et les indicateurs de l'objectif 14">
+        <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic_dev/assets/img/cards/inverted/fr/14.png" alt="Vie aquatique - Objectif 14" width="100" height="100" class="goal-icon-14 goal-icon-image goal-icon-image-"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/fr/14/">Vie aquatique</a>
+        </h3>
+        <span class="total">2 indicateurs</span>
+        
+        <div class="summary">
+            <div class="statuses">
+                
+                
+                <div>
+                    <span class="status complete"><span class="status-inner">2</span></span><strong>Diffusé en ligne</strong><span class="value">100%</span>
+                </div>
+                
+                
+                <br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                
+                
+                
+                <span class="complete" style="width:100.0%" title="Diffusé en ligne: 100%"></span>
+                
+                
+                </div>
+        
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/fr/15/" title="Voir les cibles et les indicateurs de l'objectif 15" aria-label="Voir les cibles et les indicateurs de l'objectif 15">
+        <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic_dev/assets/img/cards/inverted/fr/15.png" alt="Vie terrestre - Objectif 15" width="100" height="100" class="goal-icon-15 goal-icon-image goal-icon-image-"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/fr/15/">Vie terrestre</a>
+        </h3>
+        <span class="total">6 indicateurs</span>
+        
+        <div class="summary">
+            <div class="statuses">
+                
+                
+                <div>
+                    <span class="status complete"><span class="status-inner">6</span></span><strong>Diffusé en ligne</strong><span class="value">100%</span>
+                </div>
+                
+                
+                <br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                
+                
+                
+                <span class="complete" style="width:100.0%" title="Diffusé en ligne: 100%"></span>
+                
+                
+                </div>
+        
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/fr/16/" title="Voir les cibles et les indicateurs de l'objectif 16" aria-label="Voir les cibles et les indicateurs de l'objectif 16">
+        <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic_dev/assets/img/cards/inverted/fr/16.png" alt="Paix, justice et institutions efficaces - Objectif 16" width="100" height="100" class="goal-icon-16 goal-icon-image goal-icon-image-"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/fr/16/">Paix, justice et institutions efficaces</a>
+        </h3>
+        <span class="total">7 indicateurs</span>
+        
+        <div class="summary">
+            <div class="statuses">
+                
+                
+                <div>
+                    <span class="status complete"><span class="status-inner">7</span></span><strong>Diffusé en ligne</strong><span class="value">100%</span>
+                </div>
+                
+                
+                <br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                
+                
+                
+                <span class="complete" style="width:100.0%" title="Diffusé en ligne: 100%"></span>
+                
+                
+                </div>
+        
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/fr/17/" title="Voir les cibles et les indicateurs de l'objectif 17" aria-label="Voir les cibles et les indicateurs de l'objectif 17">
+        <img src="https://sdg-data-canada-odd-donnees.github.io/cif-cic_dev/assets/img/cards/inverted/fr/17.png" alt="Partenariats pour la réalisation des objectifs - Objectif 17" width="100" height="100" class="goal-icon-17 goal-icon-image goal-icon-image-"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/fr/17/">Partenariats pour la réalisation des objectifs</a>
+        </h3>
+        <span class="total">3 indicateurs</span>
+        
+        <div class="summary">
+            <div class="statuses">
+                
+                
+                <div>
+                    <span class="status complete"><span class="status-inner">3</span></span><strong>Diffusé en ligne</strong><span class="value">100%</span>
+                </div>
+                
+                
+                <br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                
+                
+                
+                <span class="complete" style="width:100.0%" title="Diffusé en ligne: 100%"></span>
+                
+                
+                </div>
+        
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div>
+  
+
+  
+
+  
+
+  
+
+  </div>
+  <a href="#top">Retour en haut</a>
+</div>
+<footer role="contentinfo">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div id="footerLinks">
+          <ul>
+            <li><a href="https://open-sdg.org">Construit en utilisant Open SDG</a></li>
+            
+              <li>
+                
+                  <a href="mailto:statcan.sdg-odd.statcan@statcan.gc.ca" target="_blank">Contactez-nous</a>
+                
+                </li>
+              <li>
+                
+                  <a href="https://www.facebook.com/StatisticsCanada/" target="_blank">Facebook</a>
+                
+                </li>
+              <li>
+                
+                  <a href="https://instagram.com/statcan_eng/" target="_blank">Instagram</a>
+                
+                </li>
+              <li>
+                
+                  <a href="https://ca.linkedin.com/company/statcan" target="_blank">LinkedIn</a>
+                
+                </li>
+              <li>
+                
+                  <a href="https://www.reddit.com/user/StatCanada/" target="_blank">Reddit</a>
+                
+                </li>
+              <li>
+                
+                  <a href="https://twitter.com/statcan_eng" target="_blank">X (anciennement Twitter)</a>
+                
+                </li>
+              <li>
+                
+                  <a href="https://www.youtube.com/statisticscanada" target="_blank">YouTube</a>
+                
+                </li>
+              <li>
+                
+                  <a href="https://www.statcan.gc.ca/" target="_blank">Statistique Canada</a>
+                
+                </li>
+              <li>
+                <a href="/fr/about/cookies-and-privacy/">Cookies (en anglais seulement)</a>
+                
+                </li>
+              
+            
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- /.container </div> -->
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js" integrity="sha384-ficRBwtap/VLzILv81vIvgp30PoJYnlCm96tPpNYHXAf+h9SIThOZxxIzRUzbpAh" crossorigin="anonymous"></script>
+<script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js" integrity="sha384-jIAE3P7Re8BgMkT0XOtfQ6lzZgbDw/02WeRMJvXK3WMHBNynEx5xofqia1OHuGh0" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js" integrity="sha256-Y26AMvaIfrZ1EQU49pf6H4QzVTrOI8m9wQYKkftBt4s=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.js" integrity="sha384-kdgUFNEbslNOEAQ/zFH9wjDORAbvN0KUYOpfJIJYPdjtzLXkZsMJAXU9HPpi5B5c" crossorigin="anonymous"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha384-eEX5kO4tdQpY+eTjDbZNPlMm4QhsK+kosSZtkzp+uZk0L5g0lSzmWXWHzKDoOzA7" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js" integrity="sha384-3qyhlVVDXXiWhzgKIoL/aw+uaXN5kyAFE0Jv2LGoV+nnQnum4ebt1QAtRbjnz9pL" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js" integrity="sha384-KQ8aykg/lc6595wSrMplFVs4kRS66x+EdkX7EQsJ2Pe6FX7l3tMqyD1Am0c2dKBG" crossorigin="anonymous"></script>
+
+
+
+
+
+  <script >
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'G-CX45HHXL38', 'auto');
+ga('require', 'eventTracker', {
+    attributePrefix: 'data-'
+});
+// anonymize user IPs (chops off the last IP triplet)
+ga('set', 'anonymizeIp', true);
+// forces SSL even if the page were somehow loaded over http://
+ga('set', 'forceSSL', true);
+ga('send', 'pageview');
+</script>
+
+
+
+<script>translations['general'] = translations['general'] || {};
+    translations['general']['hide'] = 'masquer';</script>
+
+<script>translations['search'] = translations['search'] || {};
+    translations['search']['search'] = 'Chercher';</script>
+
+<script src='/assets/js/sdg.js?v=20260622150748'></script>
+
+
+    
+    
+    <script src="/assets/js/custom.js?v=20260622150748"></script><script>
+    new indicatorInit();
+    new accessibilitySwitcher();
+</script>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CX45HHXL38"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CX45HHXL38');
+</script>
+
+
+</body>
+</html>
+</script>

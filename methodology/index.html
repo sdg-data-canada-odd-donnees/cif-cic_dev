@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" integrity="sha384-bPV3mA2eo3edoq56VzcPBmG1N1QVUfjYMxVIJPPzyFJyFZ8GFfN7Npt06Zr23qts" crossorigin="anonymous"></script>
+        <script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?version=4.8.0&features=Promise%2CString.prototype.includes%2CCustomEvent%2CArray.prototype.includes%2CArray.prototype.find%2CObject.assign%2CObject.values%2CObject.entries%2CArray.from%2CSet%2CArray.prototype.findIndex%2Cfetch"></script>
+<script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/javascript-canvas-to-blob/3.15.0/js/canvas-to-blob.min.js"></script>
+        <script>
+// This is where we initialise any global variables, namespaced in "opensdg".
+var opensdg = {
+
+  // A base URL for asynchronous calls to SDG data.
+  remoteDataBaseUrl: 'https://sdg-data-canada-odd-donnees.github.io/cif-data-donnees-cic/en',
+
+  chartConfigAlterations: [],
+  // A hook which can be used to modify the configuration for Chart.js.
+  chartConfigAlter: function(callback) {
+    this.chartConfigAlterations.push(callback);
+  },
+
+  tableConfigAlterations: [],
+  // A hook which can be used to modify the configuration for Datatables.
+  tableConfigAlter: function(callback) {
+    this.tableConfigAlterations.push(callback);
+  },
+
+  // A hook which can be replaced to alter whether/how the values that are
+  // displayed on indicator tables/graphs get rounded. A "context" parameter
+  // is also passed which contains additional information.
+  dataRounding: function(value, context) {
+    // Alterations go here.
+    return value;
+  },
+
+  // A hook which can be used to alter the data before it is displayed on charts/tables.
+  dataDisplayAlterations: [],
+  dataDisplayAlter: function(callback) {
+    this.dataDisplayAlterations.push(callback);
+  },
+
+  // Disaggregations which should be ignored on indicator pages.
+  ignoredDisaggregations: null,
+
+  language: 'en',
+
+  language_numbers: 'en',
+
+  mapColors: {
+    "default": [
+        "#c4e1c6",
+        "#b0d1b3",
+        "#9bc2a1",
+        "#87b28f",
+        "#74a37c",
+        "#60946b",
+        "#4d8559",
+        "#3a7747",
+        "#276836"
+    ]
+},
+};
+
+</script>
+
+        <script>
+// JavaScript container for translation data.
+var translations = {
+  //Javascript version of the "t" filter from jekyll-open-sdg-plugins.
+  t: function(key) {
+
+    if (!key || typeof key !== 'string') {
+      return '';
+    }
+
+    // The majority of uses of this function are to translate disaggregation
+    // data. To spare data providers of needing to enter "data." in front of
+    // their disaggregation data, we specifically look for that here.
+    if (typeof this.data === 'object' && this.data !== null && this.data[key]) {
+      return this.data[key];
+    }
+
+    var originalKey = key;
+    var drilled = this;
+    var levelsDrilled = 0;
+    var levels = key.split('.');
+
+    for (var level in levels) {
+      // If we have drilled down to soon, abort.
+      if (typeof drilled !== 'object') {
+        break;
+      }
+
+      if (levels[level] in drilled) {
+        drilled = drilled[levels[level]];
+        levelsDrilled += 1;
+      }
+    }
+
+    // If we didn't drill the right number of levels, return the original string.
+    if (levels.length != levelsDrilled) {
+      return originalKey;
+    }
+
+    // Otherwise we must have drilled all the way.
+    return drilled;
+  },
+};
+</script>
+
+        <!-- Basic Page Needs
+        ================================================== -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- Mobile Specific Metas
+        ================================================== -->
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Title and meta description
+        ================================================== -->
+
+        
+    <title>Progress Measurement for Canada’s Sustainable Development Goals - Canada Indicators For The Sustainable Development Goals</title>
+
+
+
+        
+
+        <!--[if IE 9]>
+        <script src="/assets/js/lib/classList.js"></script>
+        <![endif]-->
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+<link rel="icon" type="image/x-icon" href="/assets/img/favicons/favicon.ico" />
+
+        
+
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20260622150748">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+          integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+          crossorigin=""/>
+        <link rel="stylesheet" href="https://cdn.rawgit.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.control.min.css"  crossorigin=""/>
+        <link rel="stylesheet" href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css'  crossorigin=""/>
+        <link rel="stylesheet" href="https://bowercdn.net/c/leaflet.zoomhome-latest/dist/leaflet.zoomhome.css"  crossorigin=""/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin="">
+        <link rel="stylesheet" href="https://cdn.kiprotect.com/klaro/v0.7/klaro.min.css" crossorigin=""/>
+        
+
+        
+
+
+        <!--[if IE]>
+        <link rel="stylesheet" href="/assets/css/ie.css">
+        <![endif]-->
+
+        
+
+    </head>
+<body class="language-en
+layout-page
+">
+<!-- <div class="container"> -->
+
+<script>translations['header'] = {"alpha":"Beta","default_contrast":"Default contrast","disable_high_contrast":"Disable high contrast","disclaimer":"This is a website in development. We welcome your <a href=\"mailto:statcan.sdg-odd.statcan@canada.ca\">feedback</a>.","enable_high_contrast":"Enable high contrast","hide_menu":"Hide navigation menu","high_contrast":"High contrast","internet_explorer_message":"We have detected that you are using Internet Explorer to visit this website. Internet Explorer is now being phased out by Microsoft. As a result, this website no longer supports any version of Internet Explorer. Some features on this site will not work. You should use a modern browser such as Edge, Chrome, Firefox, or Safari. If you have difficulty installing or accessing a different browser, please contact your IT support team.","internet_explorer_message_title":"This internet browser is no longer supported","logo_title":"Go to homepage","show_menu":"Show navigation menu","skip_link":"Skip to main content","tag_line":"17 Goals to Transform our World","toggle_menu":"Menu toggle. Click to expand or collapse the menu.","toggle_search":"Search toggle. Click to expand or collapse the search bar."};</script>
+
+<a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
+<div class="container internet-explorer-message">
+    <h2 class="internet-explorer-message-title">This internet browser is no longer supported</h2>
+    <p class="internet-explorer-message-body">We have detected that you are using Internet Explorer to visit this website. Internet Explorer is now being phased out by Microsoft. As a result, this website no longer supports any version of Internet Explorer. Some features on this site will not work. You should use a modern browser such as Edge, Chrome, Firefox, or Safari. If you have difficulty installing or accessing a different browser, please contact your IT support team.</p>
+</div>
+<div id="disclaimer">
+    
+<div class="container">
+  <div class="disclaimer-alert">
+    <strong class="phase-tag">Beta</strong>
+    
+    This is a website in development. We welcome your <a href="mailto:statcan.sdg-odd.statcan@canada.ca">feedback</a>.
+    
+  </div>
+</div>
+
+</div>
+
+<header role="banner" class="">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light flex-wrap align-items-start">
+            <a class="navbar-brand" href="/" id="home" aria-label="Go to homepage" title="Go to homepage">
+    <img src="/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
+</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Show navigation menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="d-flex flex-wrap w-100 justify-content-between">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav" id="menu"><li class="nav-item ">
+    <a class="nav-link" href="/goals">Goals</a>
+</li><li class="nav-item ">
+    <a class="nav-link" href="/about">About</a>
+</li><li class="nav-item ">
+    <a class="nav-link" href="/faq">FAQ</a>
+</li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-menu-summary" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Annual Summary of Progress
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-menu-summary"><li class=" ">
+    <a class="dropdown-item" href="/summary_2025">2025 summary</a>
+</li></ul>
+            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-menu-more-info" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    More information
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-menu-more-info"><li class=" ">
+    <a class="dropdown-item" href="/related-products">Related Products</a>
+</li><li class=" active">
+    <a class="dropdown-item" href="/methodology">Progress measurement methodology</a>
+</li></ul>
+            </li></ul>
+    
+                </div>
+                <div class="header-search-bar">
+                    <form class="align-self-lg-end" id="search" action="/search/">
+    <div class="input-group">
+        <label class="visually-hidden" for="indicator_search">Search</label>
+        <input class="form-control" type="search" name="q" id="indicator_search" title="Search">
+        <span class="input-group-append">
+            <button class="btn btn-outline-secondary ms-n5" aria-label="Site search" id="search-btn" type="submit">
+                <i class="fa fa-search"></i>
+            </button>
+        </span>
+    </div>
+</form>
+
+                </div>
+                <div class="header-toggles d-flex">
+
+
+
+
+
+  <div class="language-toggle-container">
+  
+  <div class="btn-group language-toggle-dropdown  dropdown">
+    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="fa fa-globe"></i>
+      English
+    </button>
+    <ul class="dropdown-menu"><li>
+            <a class="dropdown-item" href="/fr/methodology/">
+              Français
+            </a>
+          </li></ul>
+  </div>
+</div>
+
+
+
+                    <span class="no-js-language-toggle"><div class="language-toggle-container d-flex">
+    <i class="fa fa-globe language-toggle-globe-links"></i>
+    <ul class="language-toggle-links list-unstyled list-inline"><li class="language-option-fr list-inline-item">
+            <a class="language-toggle-link" href="/fr/methodology/">
+                Français
+            </a>
+        </li></ul>
+</div></span><a title="Enable high contrast" aria-label="Enable high contrast"
+    data-contrast-switch-to="" role="button" href="javascript:void(0)" data-on="click"
+data-event-category="Accessibility"
+data-event-action="Change contrast setting"
+data-event-label="high"
+>A</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<div id="top" tabindex=-1></div>
+
+
+<div class="container">
+    <nav>
+    <ol aria-label="breadcrumb" class="breadcrumb" style="--bs-breadcrumb-divider: '&rsaquo;';">
+        <li class="breadcrumb-item" >
+            <a href="/">Home</a>
+        </li>
+        <li class="breadcrumb-item active">Progress Measurement for Canada’s Sustainable Development Goals</li>
+    </ol>
+</nav>
+</div>
+<div id="main-content" class="container" role="main">
+    <div>
+        <h1>Progress Measurement for Canada’s Sustainable Development Goals</h1>
+        
+
+
+    <h2 id="introduction">Introduction</h2>
+<p>The <a href="https://www.un.org/sustainabledevelopment/development-agenda/">2030 Agenda for Sustainable Development</a>, adopted by all United Nations Member States in 2015, provides a blueprint for improving the economy, society, and the environment in a sustainable manner. At its heart, the 17 Sustainable Development Goals (SDGs) are a universal call to action to end poverty, protect the planet, and ensure that all people globally can enjoy peace and prosperity.</p>
+
+<p>The goals are underpinned by a framework of global indicators that allow Canada and other countries to monitor and report on progress. They cover a broad range of social, environmental, and economic issues with a focus on the most vulnerable and a commitment to “leave no one behind”. To complement the global goals, countries are encouraged to develop a national implementation plan that focuses on country-developed indicators to address specific national contexts and priorities to achieve the SDGs.</p>
+
+<p>To support the Government of Canada’s commitment to a domestic implementation of the SDGs, a <a href="https://www.canada.ca/en/employment-social-development/programs/agenda-2030/moving-forward.html">national strategy</a> has been established. In addition, the development of a Canadian-specific indicator framework was an opportunity to elaborate on the UN goals with a set of indicators that align more closely with Canada’s domestic priorities in sustainable development.</p>
+
+<h2 id="measuring-progress">Measuring Progress</h2>
+<p>Measuring and monitoring progress with reliable information is key to understanding how a country advances towards the achievement of the SDGs.</p>
+
+<p>Closely monitoring the progress of each indicator not only shows where a country is making progress or falling behind, which helps to better focus its efforts, but also communicates how the country is performing in an open and transparent manner. A robust measure of progress quantifies an indicator’s progress towards reaching the target in a scientific manner and can be used as a tool to better understand success of policies and actions taken to achieve those targets. It can also act as a clear signal to decision-makers to readjust or develop effective evidence-based policies to help ensure the country achieves its targets.</p>
+
+<h2 id="methodology-adopted">Methodology Adopted</h2>
+<p>The Global Indicator Framework (GIF) lays the foundation for Canada and all other countries to measure and report their progress towards the 17 SDGs. The GIF divides the 17 SDGs across 169 targets and 234 unique indicators, all of which were agreed upon and are measured consistently by all United Nations Member States. The Canadian Indicator Framework (CIF) focuses on Canadian priorities for sustainable development and can be considered a complement to the GIF. The CIF complements the 17 SDGs with 33 ambitions and 86 indicators that are specific to Canada. Across the GIF and the CIF, indicators may have defined quantitative targets (e.g., GIF 1.2 and CIF 1.1 both target a 50% reduction of the poverty rate according to national definitions), aspirational targets (e.g., CIF target 5.3 <em>Greater representation of women in leadership roles</em>), or no target at all.</p>
+
+<p>To complement the GIF and the CIF, Statistics Canada has developed a robust and simple method of measuring progress which can be reported using visualizations that allow data users to easily see areas of progress or weakness. Even in the absence of specific quantitative targets, an estimate of progress can inform whether undesired trends are being observed by reporting progress deterioration. In essence, this measure of progress provides a simplified illustration of Canada’s progress towards achieving the SDGs, assuming that the current trends are maintained.</p>
+
+<h3 id="requirements">Requirements</h3>
+<p>Statistics Canada identified essential requirements for the adopted methodology. The guiding principle for the methodology was the necessity of a consistent and easily interpretable measure that could reach a broad audience while maintaining scientific integrity.</p>
+
+<p>More specifically, the methodology must:</p>
+
+<ol>
+  <li>Allow for different data periodicity and timeliness: Data series available in Canada have various collection calendars and reference periods. Some are collected every year while others are collected every few years. Furthermore, the time required between the collection of data and release of official statistics varies greatly between programs.</li>
+  <li>Provide a calculation for measuring progress in the absence of a quantitative target: To gain a greater understanding of policy impacts and progress towards the achievements of the SDGs, it is crucial to be able to assess progress in the absence of a specific numerical target.</li>
+  <li>Allow for the calculation of an aggregate measure, whether at the target, ambition, or goal level: When used appropriately, a composite measure of progress is valuable to leaders and policymakers to help steer policy and actions towards making progress to achieve the SDGs.</li>
+</ol>
+
+<p>The adopted methodology cannot rely on:</p>
+
+<ol>
+  <li>The need to create a target when there is none. As a statistical agency, we remain politically neutral. Therefore, it is outside the scope of our mandate to assign targets. Thus, the methodology must be valid even in the absence of a target.</li>
+  <li>Indicator-specific thresholds for progress categories: It was assessed that using different criteria for each indicator would put too much emphasis on the method rather than the message and overall progress. Therefore, the methodology developed uses a straightforward and consistent method across all indicators.</li>
+  <li>The existence of extended time series: Many issues covered in the SDGs haven’t been measured for an extended period. Opting for a methodology that is robust despite a shorter time series allows for a considerable increase in the number of indicators for which progress can be calculated.</li>
+  <li>Modelling: Similar to item 3, modelling usually requires a longer time series which will reduce the number of indicators eligible for calculation of the progress measure.</li>
+</ol>
+
+<h3 id="methodology">Methodology</h3>
+<p>The progress measure consists of a measure of observed growth compared to an evaluation of the proximity to achieving the target under current conditions. In situations where no quantitative target is provided, the time series is evaluated on the apparent trend of the data.</p>
+
+<p>Keeping in mind the limited number of data points in each time series and a desire to keep the methodology simple and transparent, the optimal methodology for measuring progress was inspired by the progress methodology used by Eurostat.<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></p>
+
+<p>Progress is measured using the growth over the observed period and is calculated by a compound annual growth rate,</p>
+
+<p><img src="https://raw.githubusercontent.com/sdg-data-canada-odd-donnees/cif-cic_dev/develop/assets/img/methodology/cagr_i.svg" alt="Compound annual growth rate equation" /></p>
+
+<p>where<br />
+<em>CAGR</em><sub>i</sub> is the observed compound annual growth rate between <em>t</em><sub>0</sub> and <em>t</em><sub>i</sub>,<br />
+<em>y</em><sub>i</sub> is the value of the indicator at time <em>t</em><sub>i</sub>,<br />
+<em>t</em><sub>i</sub> is the most recent year where data is available,<br />
+<em>t</em><sub>0</sub> is the base year, 2015, unless otherwise specified, and<br />
+<em>y</em><sub>0</sub> is the value of the indicator in the base year.</p>
+
+<h4 id="indicators-with-quantitative-targets"><b>Indicators with quantitative targets</b></h4>
+<p>In the case where a quantitative target for the indicator is provided, the observed <em>CAGR</em><sub>i</sub> is compared to the magnitude of the theoretical <em>CAGR</em><sub>T</sub>, which represents the annual growth rate that would be required to achieve the target on time, by calculating the ratio (<em>R</em>) as follows:</p>
+
+<p><img src="https://raw.githubusercontent.com/sdg-data-canada-odd-donnees/cif-cic_dev/develop/assets/img/methodology/r.svg" alt="Equation for the ratio of the observed compound annual growth rate to the growth rate required to reach the target on time" /></p>
+
+<p>where<br />
+<img src="https://raw.githubusercontent.com/sdg-data-canada-odd-donnees/cif-cic_dev/develop/assets/img/methodology/cagr_t.svg" alt="Equation for the compound annual growth rate required to reach the target on time" /><br />
+<em>y</em><sub>T</sub> is the target value of the indicator in the target year, <em>t</em><sub>T</sub>, and<br />
+<em>d</em> is +1 when the desired progress is in the positive direction and -1 when the desired progress is in the negative direction.</p>
+
+<p>This formula represents the ratio of the observed growth rate compared to the growth rate required to reach the target while accounting for certain edge cases where the direction to the target differs from the desired direction of progress (e.g., some cases where the base value achieves the target).</p>
+
+<p>The result is compared against a set of thresholds<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup> and assigned a progress category as described in the table below:</p>
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-fymr{border-color:inherit;font-weight:bold;text-align:left;vertical-align:top}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
+
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-fymr">Ratio of observed over required growth rate</th>
+    <th class="tg-fymr">Category</th>
+    <th class="tg-fymr">Symbol</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky"><em>Target is achieved</em></td>
+    <td class="tg-0pky">Target achieved</td>
+    <td class="tg-0pky"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/target-achieved-gauge.png?raw=true" alt="Gauge icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the rightmost edge of the green segment." width="100" height="100" /></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><em>R</em> &geq; 95%</td>
+    <td class="tg-0pky">On track</td>
+    <td class="tg-0pky"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/green-gauge.png?raw=true" alt="Gauge icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the green segment." width="100" height="100" /></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">60% &leq; <em>R</em> &lt; 95%</td>
+    <td class="tg-0pky">Progress made but acceleration needed</td>
+    <td class="tg-0pky"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/yellow-gauge.png?raw=true" alt="Gauge icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the yellow segment." width="100" height="100" /></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">0% &leq; <em>R</em> &lt; 60%</td>
+    <td class="tg-0pky">Limited progress</td>
+    <td class="tg-0pky"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/orange-gauge.png?raw=true" alt="Gauge icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the orange segment." width="100" height="100" /></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><em>R</em> &lt; 0%</td>
+    <td class="tg-0pky">Deterioration</td>
+    <td class="tg-0pky"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/red-gauge.png?raw=true" alt="Gauge icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the red segment." width="100" height="100" /></td>
+  </tr>
+</tbody>
+</table>
+
+<p><br /><br /></p>
+
+<h4 id="indicators-without-quantitative-targets"><b>Indicators without quantitative targets</b></h4>
+<p>In the case where no quantitative target for a given indicator has been provided, the observed compound annual growth rate is compared to predetermined fixed growth rates while also accounting for the desired direction of progress.</p>
+
+<p><img src="https://raw.githubusercontent.com/sdg-data-canada-odd-donnees/cif-cic_dev/develop/assets/img/methodology/cagr.svg" alt="Equation for the observed compound annual growth rate accounting for the desired direction of progress" /></p>
+
+<p>The thresholds are described in the table below:</p>
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-fymr{border-color:inherit;font-weight:bold;text-align:left;vertical-align:top}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
+
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-fymr">Observed growth rate</th>
+    <th class="tg-fymr">Category</th>
+    <th class="tg-fymr">Symbol</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky"><em>CAGR</em> &geq; 1.5% <em>C</em>&ast;</td>
+    <td class="tg-0pky">On track</td>
+    <td class="tg-0pky"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/green-gauge.png?raw=true" alt="Gauge icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the green segment." width="100" height="100" /></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">0.5% <em>C</em>&ast; &leq; <em>CAGR</em> &lt; 1.5% <em>C</em>&ast;</td>
+    <td class="tg-0pky">Progress made but acceleration needed</td>
+    <td class="tg-0pky"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/yellow-gauge.png?raw=true" alt="Gauge icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the yellow segment." width="100" height="100" /></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">0% &leq; <em>CAGR</em> &lt; 0.5% <em>C</em>&ast;</td>
+    <td class="tg-0pky">Limited progress</td>
+    <td class="tg-0pky"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/orange-gauge.png?raw=true" alt="Gauge icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the orange segment." width="100" height="100" /></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><em>CAGR</em> &lt; 0%</td>
+    <td class="tg-0pky">Deterioration</td>
+    <td class="tg-0pky"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/red-gauge.png?raw=true" alt="Gauge icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the red segment." width="100" height="100" /></td>
+  </tr>
+</tbody>
+</table>
+<p>*<em>The scaling factor C is only applied for indicators with natural limits as defined below. It is a variable between 0 and 1 that reduces thresholds greater than 0% to produce more realistic progress assessments near limits.</em></p>
+
+<p>In some cases, indicators may have natural maximum or minimum limits. For example, CIF indicator 9.4.1 <em>Proportion of Canadians that have access to the latest generally deployed mobile wireless technology</em> cannot exceed a maximum limit of 100%. If the value of the indicator in the base year is already near the natural limit, it may be impossible to achieve the growth rates required to attain a progress status of “On track” or “Progress made but acceleration needed” without exceeding the maximum limit of 100%. In these cases, the growth rate thresholds presented in the table are scaled down by a factor that accounts for the base value <em>y</em><sub>0</sub> and natural limit <em>y</em><sub>lim</sub> of the indicator. Progress thresholds greater than 0% are reduced by a factor of</p>
+
+<p><img src="https://raw.githubusercontent.com/sdg-data-canada-odd-donnees/cif-cic_dev/develop/assets/img/methodology/coeff.svg" alt="Scaling factor equation" /></p>
+
+<p>where the first case (0 ≤ <em>y</em><sub>0</sub> &lt; <em>y</em><sub>lim</sub>) covers situations with a maximum limit and the last two cases cover situations with a minimum limit. The scaling factor, <em>C</em>, is a variable between 0 and 1 that reduces the progress thresholds according to the proximity between the base value and the limit. If the base value is very close to the limit, <em>C</em> will be near zero and will aggressively reduce the thresholds to allow a more realistic range of progress assessments. Alternatively, if the base value is far from the limit, <em>C</em> will be near 1 and will have a minimal impact on the final progress assessment for the indicator.</p>
+
+<p>The scaling factor defined above was chosen to optimally reduce the progress thresholds in a way that (1) ensures the possibility of attaining a progress status of “On track” without exceeding the limit throughout the first 15 years,<sup id="fnref:3"><a href="#fn:3" class="footnote">3</a></sup> (2) ensures the reduction factor is identical at equal relative distances from a minimum or a maximum limit, and (3) poses a minimal effect on the thresholds used at intermediate values and those values far away from the limit.<sup id="fnref:4"><a href="#fn:4" class="footnote">4</a></sup></p>
+
+<p>Only a limit that affects progress in the desired direction is considered. For example, a maximum limit is not considered for indicators whose desired direction of progress is negative. Also, the scaling factor is not applied to thresholds less than or equal to zero (thresholds ≤ 0%), which represent movement in the inverse direction from the desired direction of progress.</p>
+
+<h4 id="aggregated-progress-status"><b>Aggregated progress status</b></h4>
+<p>In some instances, an indicator may not have an explicit headline series or may be composed of many sub-indicators of equal importance. For example, CIF indicator 5.3.1 <em>Proportion of leadership roles held by women</em> provides an assortment of data series for women in various leadership positions. In these situations, the trend of each series is considered in making a final progress assessment for the indicator as a whole.</p>
+
+<p>To do so, the progress value (<em>R</em> for indicators with quantitative targets and <em>CAGR</em> for indicators without quantitative targets) for each relevant series is converted to a score. The score is obtained from a linear transformation of the progress value to a score that ranges from -5 for indicators showing substantial deterioration to +5 for indicators showing substantial progress (see Figures 1 and 2). The score range is divided equally between all four progress categories: scores between 2.5 and 5 belong to the “On track” category, scores between 0 and 2.5 belong to the “Progress made but acceleration needed” category, scores between -2.5 and 0 belong to the “Limited progress” category, and scores between -5 and -2.5 belong to the “Deterioration” category.</p>
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-fymr{border-color:inherit;font-weight:bold;text-align:left;vertical-align:top}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
+
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-fymr">Symbol</th>
+    <th class="tg-fymr">Category</th>
+    <th class="tg-fymr">Score</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/target-achieved-gauge.png?raw=true" alt="Gauge icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the rightmost edge of the green segment." width="50" height="50" /></td>
+    <td class="tg-0pky">Target achieved</td>
+    <td class="tg-0pky">5*</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/green-gauge.png?raw=true" alt="Gauge icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the green segment." width="50" height="50" /></td>
+    <td class="tg-0pky">On track</td>
+    <td class="tg-0pky">[2.5, 5]</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/yellow-gauge.png?raw=true" alt="Gauge icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the yellow segment." width="50" height="50" /></td>
+    <td class="tg-0pky">Progress made but acceleration needed</td>
+    <td class="tg-0pky">[0, 2.5[</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/orange-gauge.png?raw=true" alt="Gauge icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the orange segment." width="50" height="50" /></td>
+    <td class="tg-0pky">Limited progress</td>
+    <td class="tg-0pky">[-2.5, 0[</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/progress/red-gauge.png?raw=true" alt="Gauge icon with four equally sized colour segments (from left to right): red, orange, yellow, green. A black needle points at the middle of the red segment." width="50" height="50" /></td>
+    <td class="tg-0pky">Deterioration</td>
+    <td class="tg-0pky">[-5, -2.5[</td>
+  </tr>
+</tbody>
+</table>
+<p>*<em>Only applicable for indicators with quantitative targets. Indicators that achieve the target are automatically assigned a score of 5 regardless of the underlying trend.</em></p>
+
+<p>For indicators without quantitative targets, the cut-off thresholds are 2% for a score of +5 and -2% for a score of -5 as illustrated in Figure 1 below. If applicable, thresholds greater than 0% are reduced by the scaling factor <em>C</em> to maintain consistency between scores for indicators with a limit and indicators without a limit.</p>
+
+<figure>
+  <figcaption>Figure 1. Score transformation for indicators without quantitative targets</figcaption>
+  <img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/methodology/qualitative_score_transformation_en.svg?raw=true" alt="Score transformation for indicators without quantitative targets. When the progress value (CAGR) is less than or equal to -2%, the score is -5. Between progress values of -2% and 0%, the score increases linearly from -5  to -2.5. Between progress values of 0% and 0.5%, where the latter threshold may be reduced by the scaling factor if applicable, the score increases linearly from -2.5 to 0. Between progress values of 0.5% and 1.5%, where both thresholds may be reduced by the scaling factor if applicable, the score increases linearly from 0 to 2.5. Between progress values of 1.5% and 2%, where both tresholds may be reduced by the scaling factor if applicable, the score increases linearly from 2.5 to 5. Beyond progress values of 2% (reduced by the scaling factor if applicable), the score is 5." />
+</figure>
+
+<p>For indicators with quantitative targets, the cut-off thresholds are 130% for a score of +5 and -60% for a score of -5 as illustrated in Figure 2 below.</p>
+
+<figure>
+  <figcaption>Figure 2. Score transformation for indicators with quantitative targets</figcaption>
+  <img src="https://github.com/sdg-data-canada-odd-donnees/cif-cic_dev/blob/develop/assets/img/methodology/quantitative_score_transformation_en.svg?raw=true" alt="Score transformation for indicators with quantitative targets. When the progress value (R) is less than or equal to -60%, the score is -5. Between progress values of -60% and 60%, the score increases linearly from -5  to 0. Between progress values of 60% and 130%, the score inscreases linearly from 0 to 5. Beyond progress values of 130%, the score is 5." />
+</figure>
+
+<p>The mean of the progress scores from each series is taken as the overall progress score for the indicator. The aggregate progress status is determined directly from the overall progress score according to the defined ranges of each progress category. For example, the aggregate progress status for an indicator with an overall score of +1 is “Progress made but acceleration needed”.</p>
+
+<p>Any series that achieves its target is automatically assigned a progress score of +5. However, all series must achieve the target for the aggregate progress status to be “Target achieved”.</p>
+
+<h5 id="sub-indicator-grouping">Sub-indicator grouping</h5>
+<p>In rare cases, sub-indicators may be reported via multiple series (sub-sub-indicators). In this situation, the progress scores from each series grouped within the sub-indicator are determined and averaged together before passing along the group’s mean score to be used in the next steps of the aggregate progress calculation of the indicator. For example, GIF indicator 1.4.1 Proportion of population living in households with access to basic services is composed of many sub-indicators covering access to different forms of basic services. Each basic service should be accorded equal weighting in the determination of the progress score for this indicator. However, the Access to basic education sub-indicator is itself composed of multiple sub-sub-indicators that cover a range of age groups and subjects. Therefore, the progress scores from each available sub-sub-indicator are grouped together and averaged, resulting in a single mean progress score for the Access to basic education sub-indicator. The mean of the progress scores from each sub-indicator (where some of the sub-indicators’ scores may themselves be the result of an averaged group of sub-sub-indicator scores) then becomes the final aggregate progress score for the indicator. Grouping depth is not limited. This grouping method guarantees that sub-indicators are weighted equally when assigning a progress status to the indicator.</p>
+
+<h3 id="considerations-and-exceptions">Considerations and Exceptions</h3>
+
+<h4 id="special-considerations-for-the-base-value-and-the-target-value"><b>Special considerations for the base value and the target value</b></h4>
+<p>The progress measurement methodology uses an exponential model to evaluate the growth rate of an indicator observed to date against various thresholds. As an exponential model, it cannot handle cases where either the base value or the target is zero. Therefore, unless otherwise specified, the following replacements are performed automatically:</p>
+<ol>
+  <li>If the target value is zero, it is replaced by 0.001 in the calculation of the progress measure.</li>
+  <li>If the base value is zero, it is replaced by 0.001 in the calculation of the progress measure.</li>
+</ol>
+
+<p>Generally, care should be taken to manually select an appropriate replacement value. For example, a target of zero could be replaced by a suitably small number like 1 or 0.001, but the latter is a factor of 1000 smaller than the former, which could significantly impact the final progress assessment.</p>
+
+<p>Another special consideration for the base value comes when it is exactly equal to the natural limit (<em>y</em><sub>0</sub> = <em>y</em><sub>lim</sub>) of an indicator without a quantitative target. In this case, the scaling factor <em>C</em> will be exactly zero, meaning all progress thresholds greater than 0% will be reduced to zero as well. In such a situation, if the calculated progress value is zero or greater (<em>CAGR</em> ≥ 0), the current value is maintained at the limit (or may even exceed the limit) and a progress status of “On track” as well as a score of +5 are assigned to the series. However, if the calculated progress value is negative (<em>CAGR</em> &lt; 0), the progress score and status can be determined as usual.</p>
+
+<h4 id="special-considerations-for-the-base-year-and-the-target-year"><b>Special considerations for the base year and the target year</b></h4>
+<p>The <a href="https://www.un.org/sustainabledevelopment/development-agenda/">2030 Agenda for Sustainable Development</a> was adopted in 2015 to catalyze progress towards the 17 Sustainable Development Goals by 2030. As such, the base year is assumed to be 2015 and the target year is assumed to be 2030 unless specified otherwise. Even when the target results from a policy that was implemented after 2015, the base year will be 2015 when data exists unless otherwise specified. This approach ensures coherence and comparability across assessments, in alignment with Statistics Canada’s dimensions of data quality.</p>
+
+<p>Should there be no available data for 2015, the first available year following 2015 will be used. In very few cases where the periodicity of the data is over 4 years or more, a base year of 2014 may be used instead. Additionally, if the reference period spans multiple years, the first year is used as the reference period. For example, the reference period 2015-16 is interpreted as the reference year 2015 in the progress calculation.</p>
+
+<h4 id="minimum-data-requirements"><b>Minimum data requirements</b></h4>
+<p>The data must meet certain requirements in order to produce a progress assessment.</p>
+<ol>
+  <li>At least two years of data is required to calculate the progress measure.</li>
+  <li>As the described progress measure methodology is based on an exponential growth model, it is valid only when all values are positive or all values are negative. If all values are negative, the desired direction of progress is flipped in the progress measure calculation.</li>
+</ol>
+
+<p>When the data for an indicator does not meet these minimum requirements, the progress status will be reported as “Unable to assess”.</p>
+
+<p>In rare cases, when the relevant experts have determined that a progress assessment would hinder the interpretation of the indicator data, the progress status will instead be reported as “Not available”.</p>
+
+<h4 id="binary-indicators"><b>Binary indicators</b></h4>
+<p>Binary or non-statitical indicators are categorized as follows:</p>
+<ol>
+  <li>“Target achieved” if all conditions for meeting the target have been met.</li>
+  <li>“Target not achieved” if one or more conditions for meeting the target have not been met.</li>
+</ol>
+
+<h4 id="interpretation"><b>Interpretation</b></h4>
+<p>The progress assessments generated by the outlined methodology oversimplify reality. The methodology may produce better results when applied to indicators demonstrating a trend of continuous exponential growth year after year than when applied to other types of indicators. Results for indicators where the base value or the target value is zero should also be interpreted carefully due to the limitations of the underlying model. Importantly, it takes time for policies to yield measurable results. Users should interpret the reported progress status accordingly, alongside any other relevant contextual information.</p>
+
+<h4 id="specific-exceptions-for-the-canadian-indicator-framework"><b>Specific exceptions for the Canadian Indicator Framework</b></h4>
+<p>To overcome certain limitations of the progress measurement methodology, data may be transformed into an equivalent valid form before calculating progress. Such transformations are intended to enable consistent progress measurements across a greater number of indicators.</p>
+
+<h5 id="goldilocks-indicators">Goldilocks indicators</h5>
+<p>For some indicators, it is desirable to approach and meet the target, but exceeding it may have negative consequences. We have labelled indicators with these types of targets as “Goldilocks” indicators because being far above the target is “too cold”, being below the target is “too hot”, while achieving the target is deemed “just right”. The results improve as we approach the target and worsen as we move away from the target in either direction. The methods used to address this type of target are described below:</p>
+<ol type="a">
+  <!-- CIF 5.3.1 Proportion of leadership roles held by women -->
+  <li>CIF indicator 5.4.1 <i>Proportion of time spent on unpaid domestic and care work</i>: The stated target is “equal sharing of parenting roles and family responsibilities” and it is interpreted as meaning the time spent on unpaid domestic and care work for men and women should be equal. As such, this indicator’s data is transformed into a measure of the ratio of the time spent on unpaid domestic and care work between men and women. To ensure that inequities in either direction are handled fairly and equally, both the ratio of time spent by women to men and the reciprocal ratio of time spent by men to women are determined. The transformed value used in subsequent progress calculations is whichever is larger between the ratio of women to men and the ratio of men to women: max(<i>f</i><sub>i</sub>⁄<i>m</i><sub>i</sub>, <i>m</i><sub>i</sub>⁄<i>f</i><sub>i</sub> ), where <i>f</i><sub>i</sub> represents the observed time spent by women on unpaid domestic and care work and <i>m</i><sub>i</sub> represents the observed time spent by men on unpaid domestic and care work. Therefore, women spending twice as much time as men on unpaid domestic and care work is measured equally to the reciprocal situation, in which men spend twice as much time as women on unpaid domestic and care work. The desired progression is a reduction towards a target ratio of 1. However, a reduction in the total time spent on domestic and care work from all genders may not be the desired outcome as it may indicate growing neglect rather than gender equality. Therefore, caution should be exercised when interpreting the progress of this indicator.</li>
+  <!-- CIF 5.5.1 Median hourly gender wage gap -->
+  <!-- CIF 8.1.1 Unemployment rate -->
+  <!-- CIF 8.2.1 Employment rate -->
+</ol>
+
+<h5 id="unit-transformations">Unit transformations</h5>
+<p>The methodology is not applicable to indicators that allow both negative and positive values, such as indicators measuring percent change or growth rates. When possible, the values for these types of indicators should be transformed into unit types that are compatible with the progress measurement methodology before performing the progress calculations.</p>
+
+<p>CIF indicator 15.3.1 <em>Canadian Species Index</em> reports the cumulative percent change of the Canadian Species Index since 1970. Cumulative percent change values are unsuitable for the described progress measure methodology because both positive and negative values are allowed. Therefore, the progress measure is calculated by first transforming the indicator data from a relative measure to an absolute one. The base value in 1970 can be set to 1 and the following years’ values are converted by applying the cumulative percent change to this base value. For example, in 2015, the cumulative percent change since 1970 was -6.61%, so 1(1-0.0661) = 0.9399 is taken as the value for 2015 in the progress measure calculation.</p>
+
+<h5 id="other-transformations">Other transformations</h5>
+<p>CIF indicator 16.4.1 <em>Civil Court case completion time</em> reports progress based on the proportion of cases that are completed in 6 months or less, which is equal to the sum of the percentage of cases completed in less than or equal to 3 months and the percentage of cases completed in greater than 3 months to 6 months. The desired progress is in the positive direction, i.e., to increase the proportion of Civil Court cases that are completed in 6 months or less.</p>
+
+<h2 id="community">Community</h2>
+
+<p>The progress measure methodology described above is applied throughout Statistics Canada’s Data Hubs for the SDGs. At a glance, users can interpret indicator-level progress towards Canada’s sustainable development goals!</p>
+
+<p>Statistics Canada’s SDG team is working with the <a href="https://open-sdg.org/">Open SDG</a> community to integrate the indicator-level progress measurement into the back-end of the Open SDG platform. The official release of the progress measurement functionality is coming soon with the launch of Open SDG 2.4.0.</p>
+
+<p>Please <a href="mailto:statcan.sdg-odd.statcan@statcan.gc.ca">contact us</a> if you have any questions or want to know more about Statistics Canada’s progress measurement methodology for the Sustainable Development Goals.</p>
+
+<h2 id="metadata">Metadata</h2>
+
+<h5 id="canadian-indicator-framework">Canadian Indicator Framework</h5>
+<p>The table below provides the targets and desired directions used by Statistics Canada to measure Canada’s progress across the CIF.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Indicator number</th>
+      <th>Indicator name</th>
+      <th>Target or desired direction</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1.1.1</td>
+      <td>Poverty rate, as measured by Canada’s official poverty line</td>
+      <td>≤ 7.25%</td>
+    </tr>
+    <tr>
+      <td>1.2.1</td>
+      <td>Prevalence of asset resilience</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>1.3.1</td>
+      <td>Debt to disposable income ratio</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>1.4.1</td>
+      <td>Median household after-tax income</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>2.1.1</td>
+      <td>Prevalence of food insecurity</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>2.2.1</td>
+      <td>Index of Agri-Environmental Sustainability</td>
+      <td>Score ≥ 71</td>
+    </tr>
+    <tr>
+      <td>3.1.1</td>
+      <td>Percentage of Canadians who report eating fruits and vegetables 5 or more times per day</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>3.2.1</td>
+      <td>Percentage of youth (aged 12 to 17) who have used an e-cigarette in the past 30 days</td>
+      <td>≤ 10%</td>
+    </tr>
+    <tr>
+      <td>3.3.1</td>
+      <td>Proportion of the population living with obesity</td>
+      <td>≤ 8 litres</td>
+    </tr>
+    <tr>
+      <td>3.4.1</td>
+      <td>Alcohol per capita consumption (aged 15 years and older) within a calendar year in litres of pure alcohol</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>3.5.1</td>
+      <td>Proportion of Canadians meeting the 2020 Canadian physical activity guidelines</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>3.6.1</td>
+      <td>Percentage of Canadians who are satisfied or very satisfied with their life</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>3.7.1</td>
+      <td>Percentage of Canadians who perceived their overall health as very good to excellent</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>3.8.1</td>
+      <td>Percentage of Canadians who perceived their mental health as very good to excellent</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>3.9.1</td>
+      <td>Vaccination rates for selected diseases</td>
+      <td>Child ≥ 95%; Adolescent ≥ 90%</td>
+    </tr>
+    <tr>
+      <td>3.10.1</td>
+      <td>Incidence of selected diseases</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>3.11.1</td>
+      <td>Mortality rate for selected causes of death</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>3.12.1</td>
+      <td>Tuberculosis incidence per 100,000 population in Inuit Nunangat</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>3.13.1</td>
+      <td>Rate of apparent opioid toxicity deaths per 100,000 population</td>
+      <td>≤ 10</td>
+    </tr>
+    <tr>
+      <td>3.14.1</td>
+      <td>Percentage of Canadians (aged 18+) who currently smoke cigarettes</td>
+      <td>≤ 5%</td>
+    </tr>
+    <tr>
+      <td>3.15.1</td>
+      <td>Proportion of persons with unmet health care needs</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>4.1.1</td>
+      <td>High school completion rate</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>4.2.1</td>
+      <td>Post-secondary education attainment rate</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>4.3.1</td>
+      <td>Proportion of children aged 0 to 5 years who use any forms of early learning and child care services</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>5.1.1</td>
+      <td>Proportion of the population who self-reported being sexually assaulted in the last 12 months</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>5.2.1</td>
+      <td>Proportion of women and girls aged 15 years and older subjected to physical, sexual or psychological violence by a current or former intimate partner in the last 12 months</td>
+      <td>≤ 11.5%</td>
+    </tr>
+    <tr>
+      <td>5.3.1</td>
+      <td>Proportion of leadership roles held by women</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>5.4.1</td>
+      <td>Proportion of time spent on unpaid domestic and care work</td>
+      <td>Ratio = 1</td>
+    </tr>
+    <tr>
+      <td>5.5.1</td>
+      <td>Median hourly gender wage ratio</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>6.1.1</td>
+      <td>Number of long-term drinking water advisories on public systems on reserves</td>
+      <td>&lt; 1</td>
+    </tr>
+    <tr>
+      <td>6.2.1</td>
+      <td>Percentage of municipalities across Canada with sustained drinking water advisories</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>6.3.1</td>
+      <td>Water use growth rate</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>6.4.1</td>
+      <td>Water quality in Canadian rivers</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>6.5.1</td>
+      <td>Percentage of wastewater systems on reserves where effluent quality standards are achieved</td>
+      <td>≥ 85%</td>
+    </tr>
+    <tr>
+      <td>6.6.1</td>
+      <td>Percentage of wastewater systems in Canada where effluent quality standards are achieved</td>
+      <td>100%</td>
+    </tr>
+    <tr>
+      <td>7.1.1</td>
+      <td>Total annual energy savings resulting from adoption of energy efficiency codes, standards and practices</td>
+      <td>≥ 600</td>
+    </tr>
+    <tr>
+      <td>7.2.1</td>
+      <td>Proportion of electricity generated from renewable and other non-greenhouse gas emitting sources</td>
+      <td>≥ 90%</td>
+    </tr>
+    <tr>
+      <td>7.3.1</td>
+      <td>Total energy consumption per capita</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>8.1.1</td>
+      <td>Unemployment rate</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>8.2.1</td>
+      <td>Employment rate</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>8.3.1</td>
+      <td>Proportion of youth not in education, employment or training</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>8.4.1</td>
+      <td>Rate of involuntary part-time work</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>8.5.1</td>
+      <td>Gross domestic product per capita</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>8.6.1</td>
+      <td>Jobs in the clean technology products sector</td>
+      <td>≥ 244,715</td>
+    </tr>
+    <tr>
+      <td>9.1.1</td>
+      <td>Proportion of enterprises that introduced innovations with environmental benefits</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>9.2.1</td>
+      <td>Gross domestic expenditure on research and development intensity</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>9.3.1</td>
+      <td>Proportion of households that have access to broadband Internet service at speeds of 50/10 Mbps</td>
+      <td>100%</td>
+    </tr>
+    <tr>
+      <td>9.4.1</td>
+      <td>Proportion of Canadians that have access to the latest generally deployed mobile wireless technology</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>9.5.1</td>
+      <td>Greenhouse gas emissions per dollar of value-added from the production of infrastructure assets</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>9.6.1</td>
+      <td>Number of publicly available electric vehicle charging and alternative fuelling stations in Canada</td>
+      <td>≥ +30%/year</td>
+    </tr>
+    <tr>
+      <td>9.7.1</td>
+      <td>Remaining useful service life ratio of infrastructure assets</td>
+      <td>&gt; 50%</td>
+    </tr>
+    <tr>
+      <td>10.1.1</td>
+      <td>Gini Coefficient</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>10.2.1</td>
+      <td>Proportion of the population reporting discrimination or unfair treatment</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>11.1.1</td>
+      <td>(a) Number of shelter users experiencing chronic homelessness; and (b) percentage change in the number of shelter users experiencing chronic homelessness from the 2016 baseline</td>
+      <td>(a) ≤ 13,433</td>
+    </tr>
+    <tr>
+      <td>11.2.1</td>
+      <td>Proportion of households in core housing need</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>11.3.1</td>
+      <td>Percentage of the population living in areas where air pollutant concentrations are less than or equal to the 2020 Canadian Ambient Air Quality Standards</td>
+      <td>≥ 85%</td>
+    </tr>
+    <tr>
+      <td>11.4.1</td>
+      <td>Percentage of the population living within 500 metres of a public transport stop</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>11.5.1</td>
+      <td>Proportion of commuters using sustainable transportation</td>
+      <td>≥ 22%</td>
+    </tr>
+    <tr>
+      <td>11.6.1</td>
+      <td>Total waste disposal per capita</td>
+      <td>≤ 490 kg/person</td>
+    </tr>
+    <tr>
+      <td>11.7.1</td>
+      <td>Proportion of the population aged 12 and over who reported their sense of belonging to their local community as being very strong or somewhat strong</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>12.1.1</td>
+      <td>Proportion of new light duty vehicle registrations that are zero-emission vehicles</td>
+      <td>≥ 60%</td>
+    </tr>
+    <tr>
+      <td>12.2.1</td>
+      <td>Proportion of businesses that adopted selected environmental protection activities and management practices</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>12.3.1</td>
+      <td>Total waste diversion per capita</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>12.4.1</td>
+      <td>Proportion of discarded plastic leaked permanently into the environment</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>13.1.1</td>
+      <td>Greenhouse gas emissions</td>
+      <td>≤ 456.89</td>
+    </tr>
+    <tr>
+      <td>13.2.1</td>
+      <td>Deaths due to exposure to excessive natural heat</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>13.3.1</td>
+      <td>Proportion of municipal organizations who factored climate change adaptation into their decision-making process</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>13.4.1</td>
+      <td>Flood protection infrastructure spending</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>14.1.1</td>
+      <td>Proportion of marine and coastal areas conserved</td>
+      <td>≥ 30%</td>
+    </tr>
+    <tr>
+      <td>14.2.1</td>
+      <td>Proportion of key fish stocks in the Cautious and Healthy zones</td>
+      <td>≥ 55%</td>
+    </tr>
+    <tr>
+      <td>15.1.1</td>
+      <td>Proportion of native wild species ranked secure or apparently secure according to the national extinction risk level</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>15.2.1</td>
+      <td>Proportion of species at risk showing progress towards their population and distribution objectives</td>
+      <td>≥ 60%</td>
+    </tr>
+    <tr>
+      <td>15.3.1</td>
+      <td>Canadian species index</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>15.4.1</td>
+      <td>Proportion of Canada’s land and inland waters conserved</td>
+      <td>≥ 30%</td>
+    </tr>
+    <tr>
+      <td>15.5.1</td>
+      <td>Proportion of the sustainable wood supply harvested</td>
+      <td>&lt; 100%</td>
+    </tr>
+    <tr>
+      <td>15.6.1</td>
+      <td>Forest area as a proportion of total land area</td>
+      <td>No change</td>
+    </tr>
+    <tr>
+      <td>16.1.1</td>
+      <td>Proportion of Canadians who reported feeling safe walking alone in their neighbourhood after dark</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>16.2.1</td>
+      <td>Incidence of selected types of crime</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>16.3.1</td>
+      <td>Incidence of cyber-crime</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>16.4.1</td>
+      <td>Civil Court case completion time</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>16.5.1</td>
+      <td>Criminal Court case completion time</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>16.6.1</td>
+      <td>Incarceration rate</td>
+      <td>Decrease</td>
+    </tr>
+    <tr>
+      <td>16.7.1</td>
+      <td>Proportion of the population with high levels of confidence in selected institutions</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>17.1.1</td>
+      <td>Statistical Performance Indicators</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>17.2.1</td>
+      <td>Total official support for sustainable development</td>
+      <td>Increase</td>
+    </tr>
+    <tr>
+      <td>17.3.1</td>
+      <td>Exports of environmental and clean technology goods and services to developing countries</td>
+      <td>Increase</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="references">References</h2>
+
+<p>Destatis. <em>Indicator status summary</em>.</p>
+
+<p>Eurostat (2021). <em>Sustainable development in the European Union - Monitoring report on progress towards the SDGs in an EU context</em>.</p>
+
+<p>Eurostat (2014). <em>Getting messages across using indicators - A handbook based on experiences from assessing Sustainable Development Indicators</em>.</p>
+
+<p>Gennari, P. and D’Orazio, M. (2020). <em>Statistical approach for assessing progress toward the SDG targets</em>. Statistical Journal of the IAOS, 36, 1129–1142</p>
+
+<p>OECD (2019). <em>Measuring Distance to the SDG Targets - An Assessment of Where OECD Countries Stand</em>.</p>
+
+<p>UN DESA (2020). <em>Sustainable Development Goals Progress Chart 2020 - Technical Note</em>.</p>
+
+<p>Bidarbakht Nia, A. (2017). <em>A weighted extrapolation method for measuring the SDGs progress</em>. UNESCAP SD Working paper series, 04, March 2017</p>
+
+<p>Bidarbakht Nia, A. (2017). <em>Tracking progress towards the SDGs: measuring the otherwise ambiguous progress</em>. UNESCAP SD Working paper series, 05, May 2017</p>
+
+<p>UNESCAP (2020). <em>Progress Assessment Methodology</em>.</p>
+
+<p>Sachs, J., Kroll, C., Lafortune, G., Fuller, G., Woelm, F. (2021). <em>The Decade of Action for the Sustainable Development Goals: Sustainable Development Report 2021</em>. Cambridge: Cambridge University Press.</p>
+
+<h2 id="notes">Notes</h2>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>For a detailed description of the methodology, please refer to Eurostat (2021). <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>All thresholds are standards in the international community. After assessment, it was found that they are also applicable in the Canadian context. <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:3">
+      <p>Fifteen years is the expected validity period for the methodology (generally from 2015 to 2030). <a href="#fnref:3" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:4">
+      <p>For more details on aspects of the methodology such as the scaling factor, please <a href="mailto:statcan.sdg-odd.statcan@statcan.gc.ca">contact us</a>. <a href="#fnref:4" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+
+
+    </div>
+</div>
+
+<footer role="contentinfo">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div id="footerLinks">
+          <ul>
+            <li><a href="https://open-sdg.org">Built using Open SDG</a></li>
+            
+              <li>
+                
+                  <a href="mailto:statcan.sdg-odd.statcan@statcan.gc.ca" target="_blank">Contact us</a>
+                
+                </li>
+              <li>
+                
+                  <a href="https://www.facebook.com/StatisticsCanada/" target="_blank">Facebook</a>
+                
+                </li>
+              <li>
+                
+                  <a href="https://instagram.com/statcan_eng/" target="_blank">Instagram</a>
+                
+                </li>
+              <li>
+                
+                  <a href="https://ca.linkedin.com/company/statcan" target="_blank">LinkedIn</a>
+                
+                </li>
+              <li>
+                
+                  <a href="https://www.reddit.com/user/StatCanada/" target="_blank">Reddit</a>
+                
+                </li>
+              <li>
+                
+                  <a href="https://twitter.com/statcan_eng" target="_blank">X (formerly Twitter)</a>
+                
+                </li>
+              <li>
+                
+                  <a href="https://www.youtube.com/statisticscanada" target="_blank">YouTube</a>
+                
+                </li>
+              <li>
+                
+                  <a href="https://www.statcan.gc.ca/" target="_blank">Statistics Canada</a>
+                
+                </li>
+              <li>
+                <a href="/about/cookies-and-privacy/">Cookies</a>
+                
+                </li>
+              
+            
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- /.container </div> -->
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js" integrity="sha384-ficRBwtap/VLzILv81vIvgp30PoJYnlCm96tPpNYHXAf+h9SIThOZxxIzRUzbpAh" crossorigin="anonymous"></script>
+<script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js" integrity="sha384-jIAE3P7Re8BgMkT0XOtfQ6lzZgbDw/02WeRMJvXK3WMHBNynEx5xofqia1OHuGh0" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js" integrity="sha256-Y26AMvaIfrZ1EQU49pf6H4QzVTrOI8m9wQYKkftBt4s=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.js" integrity="sha384-kdgUFNEbslNOEAQ/zFH9wjDORAbvN0KUYOpfJIJYPdjtzLXkZsMJAXU9HPpi5B5c" crossorigin="anonymous"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha384-eEX5kO4tdQpY+eTjDbZNPlMm4QhsK+kosSZtkzp+uZk0L5g0lSzmWXWHzKDoOzA7" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js" integrity="sha384-3qyhlVVDXXiWhzgKIoL/aw+uaXN5kyAFE0Jv2LGoV+nnQnum4ebt1QAtRbjnz9pL" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js" integrity="sha384-KQ8aykg/lc6595wSrMplFVs4kRS66x+EdkX7EQsJ2Pe6FX7l3tMqyD1Am0c2dKBG" crossorigin="anonymous"></script>
+
+
+
+
+
+  <script >
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'G-CX45HHXL38', 'auto');
+ga('require', 'eventTracker', {
+    attributePrefix: 'data-'
+});
+// anonymize user IPs (chops off the last IP triplet)
+ga('set', 'anonymizeIp', true);
+// forces SSL even if the page were somehow loaded over http://
+ga('set', 'forceSSL', true);
+ga('send', 'pageview');
+</script>
+
+
+
+<script>translations['general'] = translations['general'] || {};
+    translations['general']['hide'] = 'hide';</script>
+
+<script>translations['search'] = translations['search'] || {};
+    translations['search']['search'] = 'Search';</script>
+
+<script src='/assets/js/sdg.js?v=20260622150748'></script>
+
+
+    
+    
+    <script src="/assets/js/custom.js?v=20260622150748"></script><script>
+    new indicatorInit();
+    new accessibilitySwitcher();
+</script>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CX45HHXL38"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CX45HHXL38');
+</script>
+
+
+</body>
+</html>
+</script>

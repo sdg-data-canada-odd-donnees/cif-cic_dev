@@ -1,0 +1,825 @@
+[
+  {
+    "goal": {
+      "id": "1",
+      "title": "End poverty in all its forms everywhere",
+      "indicators": [
+        
+        {
+          "id": "1-1-1",
+          "title": "Poverty rate, as measured by Canada’s official poverty line",
+          "description": "This indicator measures the percentage of persons in low income using the Market Basket Measures (MBM), which was adopted as Canada's Official Poverty Line. According to the MBM, a family lives in poverty if it does not have enough income to purchase a specific basket of goods and services in its community.",
+          "keywords": "women, gender",
+          "href": "/1-1-1/",
+          "status": "complete"
+        },
+        {
+          "id": "1-2-1",
+          "title": "Prevalence of asset resilience",
+          "description": "This indicator measures the percentage of persons who are asset resilient. Asset resilience is defined as having enough savings to maintain well-being for a specified period of time. More specifically, the ability of Canadians to cover unexpected expenses, or reduced income, by drawing from assets (e.g. a bank account) for a specified period of time.",
+          "keywords": "women, gender",
+          "href": "/1-2-1/",
+          "status": "complete"
+        },
+        {
+          "id": "1-3-1",
+          "title": "Debt to disposable income ratio",
+          "description": "This indicator measures the debt to disposable income ratio. The debt to disposable income ratio shows how much debt households have compared to the money they have available to spend after taxes and other deductions. A higher ratio means households have more debt relative to their disposable income.",
+          "keywords": "debt, income",
+          "href": "/1-3-1/",
+          "status": "complete"
+        },
+        {
+          "id": "1-4-1",
+          "title": "Median household after-tax income",
+          "description": "This indicator measures the median after-tax income. The concept of income covers income received while a resident of Canada or as relevant for income tax purposes in Canada.",
+          "keywords": "income, tax",
+          "href": "/1-4-1/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "2",
+      "title": "End hunger, achieve food security and improved nutrition and promote sustainable agriculture",
+      "indicators": [
+        
+        {
+          "id": "2-1-1",
+          "title": "Prevalence of food insecurity",
+          "description": "This indicator measures the prevalence of moderate and severe food insecurity.",
+          "keywords": "women, gender",
+          "href": "/2-1-1/",
+          "status": "complete"
+        },
+        {
+          "id": "2-2-1",
+          "title": "Index of Agri-Environmental Sustainability",
+          "description": "This indicator is an index that measures Agri-Environmental Sustainability. Agriculture and Agri-Food Canada developed a set of science-based agri-environmental indicators (AEIs) that integrate information on soils, climate and topography with statistics on land use and crop and livestock management practices. The indices are divided in five “health classes”, defined as: 80-100 Desired; 60-79 Good; 40-59 Moderate; 20-39 Poor; 0-19 At risk.",
+          "keywords": "",
+          "href": "/2-2-1/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "3",
+      "title": "Ensure healthy lives and promote well-being for all at all ages",
+      "indicators": [
+        
+        {
+          "id": "3-1-1",
+          "title": "Percentage of Canadians who report eating fruits and vegetables 5 or more times per day",
+          "description": "This indicator measures the percentage of Canadians who report eating fruits and vegetables 5 or more times per day. This includes fresh fruits and vegetables as well as pure fruit juice, frozen or canned fruits and vegetables, and dried fruit, but excludes fried potatoes.",
+          "keywords": "women, gender",
+          "href": "/3-1-1/",
+          "status": "complete"
+        },
+        {
+          "id": "3-2-1",
+          "title": "Percentage of youth (aged 12 to 17) who have used an e-cigarette in the past 30 days",
+          "description": "This indicator measures the percentage of Canadian youth, aged 12 to 17 who have used one or more e-cigarettes in the past 30 days. This category will include current users as well as experimental users who have tried a vaping product in the past 30 days.",
+          "keywords": "women, gender",
+          "href": "/3-2-1/",
+          "status": "complete"
+        },
+        {
+          "id": "3-3-1",
+          "title": "Proportion of the population living with obesity",
+          "description": "This indicator measures the percentage of the population living with obesity. The indicator uses the body mass index (BMI) which is calculated by dividing the respondent's body weight (in kilograms) by their height (in metres) squared.",
+          "keywords": "women, gender",
+          "href": "/3-3-1/",
+          "status": "complete"
+        },
+        {
+          "id": "3-4-1",
+          "title": "Alcohol per capita consumption (aged 15 years and older) within a calendar year in litres of pure alcohol",
+          "description": "Research shows that per capita consumption is correlated with mortality, burden of disease and other alcohol harms. Per capita sales is a suitable proxy indicator for per capita consumption. A change in volume of sales (increase or decrease) would be reflective of a similar change in volume of consumption.",
+          "keywords": "alcohol, consumption",
+          "href": "/3-4-1/",
+          "status": "complete"
+        },
+        {
+          "id": "3-5-1",
+          "title": "Proportion of Canadians meeting the 2020 Canadian physical activity guidelines",
+          "description": "This indicator measures the proportion of Canadians meeting the 2020 Canadian physical activity guidelines. <br><br> Canadian 24-Hour movement guidelines for 3 to 4 year olds consist of accumulating at least 180 minutes spent in a variety of physical activities spread throughout the day, of which at least 60 minutes is energetic play—more is better.<br><br> Canadian 24-Hour movement guidelines for 5 to 17 year olds consist of accumulating at least 60 minutes of moderate- to vigorous-intensity physical activity daily. Vigorous physical activities, and muscle and  bone strengthening activities should each be incorporated  at least 3 days per week.<br><br> Canadian 24-hour movement guidelines for adults 18 to 64 year olds consist of accumulating at least 150 minutes of moderate- to vigorous-intensity aerobic physical activity per week as well as muscle strengthening activities using major muscle groups at least twice a week.<br><br> Canadian 24-hour movement guidelines for adults 65 to 79 year olds consist of accumulating at least 150 minutes of moderate- to vigorous-intensity aerobic physical activity per week as well as muscle strengthening activities using major muscle groups at least twice a week and physical activities that challenge balance. <br><br> The guidelines can be found in Canadian Society for Exercise Physiology. Canadian 24-Hour Movement Guidelines. Ottawa, ON. 2020. <a href='https://csepguidelines.ca/'>https://csepguidelines.ca/</a>",
+          "keywords": "physical, activity",
+          "href": "/3-5-1/",
+          "status": "complete"
+        },
+        {
+          "id": "3-6-1",
+          "title": "Percentage of Canadians who are satisfied or very satisfied with their life",
+          "description": "This indicator measures the percentage of the population aged 18 and over who reported being satisfied or very satisfied with their life in general.",
+          "keywords": "women, gender",
+          "href": "/3-6-1/",
+          "status": "complete"
+        },
+        {
+          "id": "3-7-1",
+          "title": "Percentage of Canadians who perceived their overall health as very good to excellent",
+          "description": "This indicator measures the percentage of Canadians aged 18 and over who reported perceiving their own health status as being either excellent or very good. Perceived health refers to the perception of a person’s health in general, either by the person himself or herself, or, in the case of proxy response, by the person responding. Health means not only the absence of disease or injury but also physical, mental and social well-being.",
+          "keywords": "women, gender",
+          "href": "/3-7-1/",
+          "status": "complete"
+        },
+        {
+          "id": "3-8-1",
+          "title": "Percentage of Canadians who perceived their mental health as very good to excellent",
+          "description": "This indicator measures the percentage of the population who perceived their mental health as very good to excellent. Perceived mental health refers to the perception of a person's mental health in general.",
+          "keywords": "women, gender",
+          "href": "/3-8-1/",
+          "status": "complete"
+        },
+        {
+          "id": "3-9-1",
+          "title": "Vaccination rates for selected diseases",
+          "description": "This indicator measures the childhood vaccination rates for selected diseases. The Public Health Agency of Canada routinely monitors childhood vaccination coverage in Canada through the childhood National Immunization Coverage Survey.",
+          "keywords": "women, gender",
+          "href": "/3-9-1/",
+          "status": "complete"
+        },
+        {
+          "id": "3-10-1",
+          "title": "Incidence of selected diseases",
+          "description": "This indicator measures the incidence of 10 selected diseases. This refers to the rate incidence of a specific disease per 100,000 population.",
+          "keywords": "",
+          "href": "/3-10-1/",
+          "status": "complete"
+        },
+        {
+          "id": "3-11-1",
+          "title": "Mortality rate for selected causes of death",
+          "description": "This indicator measures the age-specific mortality rate for selected diseases. The age-specific mortality rate represents the number of deaths in a particular age group during a given year per 100,000 population in the same age group of the same year.",
+          "keywords": "women, gender",
+          "href": "/3-11-1/",
+          "status": "complete"
+        },
+        {
+          "id": "3-12-1",
+          "title": "Tuberculosis incidence per 100,000 population in Inuit Nunangat",
+          "description": "This indicator measures the tuberculosis incidence rate per 100,000 population in Inuit Nunangat.",
+          "keywords": "Indigenous",
+          "href": "/3-12-1/",
+          "status": "complete"
+        },
+        {
+          "id": "3-13-1",
+          "title": "Rate of apparent opioid toxicity deaths per 100,000 population",
+          "description": "This indicator measures the rate of apparent opioid-related deaths. <br><br> Apparent opioid-related death: A death caused by intoxication/toxicity (poisoning) as a result of drug use, where one or more of the drugs is an opioid.",
+          "keywords": "",
+          "href": "/3-13-1/",
+          "status": "complete"
+        },
+        {
+          "id": "3-14-1",
+          "title": "Percentage of Canadians (aged 18+) who currently smoke cigarettes",
+          "description": "This indicator measures the percentage of Canadians who currently smoke cigarettes.",
+          "keywords": "cigarette, smoking",
+          "href": "/3-14-1/",
+          "status": "complete"
+        },
+        {
+          "id": "3-15-1",
+          "title": "Proportion of persons with unmet health care needs",
+          "description": "This indicator measures the proportion of persons with unmet health care needs. <br><br> Unmet health care needs refer to whether or not a person felt that he or she required health care in the last 12 months but did not receive it.",
+          "keywords": "health",
+          "href": "/3-15-1/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "4",
+      "title": "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all",
+      "indicators": [
+        
+        {
+          "id": "4-1-1",
+          "title": "High school completion rate",
+          "description": "This indicator measures the percentage of persons who have completed a high school diploma or equivalency certificate.",
+          "keywords": "women, gender, Indigenous",
+          "href": "/4-1-1/",
+          "status": "complete"
+        },
+        {
+          "id": "4-2-1",
+          "title": "Post-secondary education attainment rate",
+          "description": "This indicator measures the attainment rate for post-secondary education. Categories represent the highest level of education achieved, and are mutually exclusive.",
+          "keywords": "women, gender, Indigenous",
+          "href": "/4-2-1/",
+          "status": "complete"
+        },
+        {
+          "id": "4-3-1",
+          "title": "Proportion of children aged 0 to 5 years who use any forms of early learning and child care services",
+          "description": "This indicator measures the proportion of children aged 0 to 5 years who use any forms of early learning and child care services.",
+          "keywords": "children, learning, childcare",
+          "href": "/4-3-1/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "5",
+      "title": "Achieve gender equality and empower all women and girls",
+      "indicators": [
+        
+        {
+          "id": "5-1-1",
+          "title": "Proportion of the population who self-reported being sexually assaulted in the last 12 months",
+          "description": "This indicator measures the proportion of the population who self-reported being sexually assaulted in the last 12 months.",
+          "keywords": "women, gender",
+          "href": "/5-1-1/",
+          "status": "complete"
+        },
+        {
+          "id": "5-2-1",
+          "title": "Proportion of women and girls aged 15 years and older subjected to physical, sexual or psychological violence by a current or former intimate partner in the last 12 months",
+          "description": "This indicator measures the proportion of women and girls aged 15 years and older subjected to intimate partner violence in the last 12 months. Intimate partner violence (IPV) encompasses a broad range of behaviours, ranging from emotional and financial abuse to physical and sexual assault.",
+          "keywords": "women, gender, Indigenous",
+          "href": "/5-2-1/",
+          "status": "complete"
+        },
+        {
+          "id": "5-3-1",
+          "title": "Proportion of leadership roles held by women",
+          "description": "This indicator measures the proportion of women in leadership roles. Leadership roles selected include women elected to national Parliament, ministers appointed to federal cabinet, federally appointed judges, and various types of management positions.",
+          "keywords": "women, gender, Indigenous",
+          "href": "/5-3-1/",
+          "status": "complete"
+        },
+        {
+          "id": "5-4-1",
+          "title": "Proportion of time spent on unpaid domestic and care work",
+          "description": "This indicator measures the proportion of time spent on unpaid domestic and care work. Unpaid domestic and care work includes: household chores, care of household children or adults and shopping for goods and services.",
+          "keywords": "women, gender",
+          "href": "/5-4-1/",
+          "status": "complete"
+        },
+        {
+          "id": "5-5-1",
+          "title": "Median hourly gender wage ratio",
+          "description": "This indicator measures the gender wage ratio. The gender wage ratio can be interpreted as the proportion of a dollar that women earn for every dollar earned by men.",
+          "keywords": "women, gender",
+          "href": "/5-5-1/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "6",
+      "title": "Ensure availability and sustainable management of water and sanitation for all",
+      "indicators": [
+        
+        {
+          "id": "6-1-1",
+          "title": "Number of long-term drinking water advisories on public systems on reserves",
+          "description": "This indicator measures the number of long-term drinking water advisories on public systems in First Nations communities. Drinking water advisories are issued to warn people to not drink water that may be unsafe or is known to not be safe based on water quality test results.",
+          "keywords": "Indigenous",
+          "href": "/6-1-1/",
+          "status": "complete"
+        },
+        {
+          "id": "6-2-1",
+          "title": "Percentage of municipalities across Canada with sustained drinking water advisories",
+          "description": "This indicator measures the percentage of municipalities across Canada with sustained drinking water advisories per year. A sustained drinking water advisory is defined as one that exceeds 15 days in duration.",
+          "keywords": "",
+          "href": "/6-2-1/",
+          "status": "complete"
+        },
+        {
+          "id": "6-3-1",
+          "title": "Water use growth rate",
+          "description": "This indicator measures the growth rate in water use for different sectors of the economy as well as for households. Water use refers to the intake of water either self-supplied (i.e. direct abstraction from the environment) or supplied from municipal systems.",
+          "keywords": "",
+          "href": "/6-3-1/",
+          "status": "complete"
+        },
+        {
+          "id": "6-4-1",
+          "title": "Water quality in Canadian rivers",
+          "description": "<p>These indicators provide a measure of the ability of river water across Canada to support plants and animals. At each monitoring site, specific water quality data are compared to water quality guidelines to create a rating for the site. If measured water quality remains within the guidelines, it can maintain a healthy ecosystem.<br><br> Water quality at a monitoring site is considered excellent when parameters in a river almost always meet their guidelines. Conversely, water quality is rated poor when parameters usually do not meet their guidelines, sometimes by a wide margin. (<em>Environment and Climate Change Canada (ECCC)</em>)</p>",
+          "keywords": "",
+          "href": "/6-4-1/",
+          "status": "complete"
+        },
+        {
+          "id": "6-5-1",
+          "title": "Percentage of wastewater systems on reserves where effluent quality standards are achieved",
+          "description": "This indicator tracks the percentage of wastewater systems on reserves that meet the effluent quality standards of the [Wastewater Systems Effluent Regulations](https://laws-lois.justice.gc.ca/eng/regulations/sor-2012-139/fulltext.html) or an equivalency agreement.",
+          "keywords": "",
+          "href": "/6-5-1/",
+          "status": "complete"
+        },
+        {
+          "id": "6-6-1",
+          "title": "Percentage of wastewater systems in Canada where effluent quality standards are achieved",
+          "description": "This indicator tracks the percentage of wastewater systems that meet the effluent quality standards of the [Wastewater Systems Effluent Regulations](https://laws-lois.justice.gc.ca/eng/regulations/sor-2012-139/fulltext.html) or an equivalency agreement. <br><br>Data for Canada includes Indigenous communities.",
+          "keywords": "",
+          "href": "/6-6-1/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "7",
+      "title": "Ensure access to affordable, reliable, sustainable and modern energy for all",
+      "indicators": [
+        
+        {
+          "id": "7-1-1",
+          "title": "Total annual energy savings resulting from adoption of energy efficiency codes, standards and practices",
+          "description": "This indicator measures the total annual energy savings resulting from adoption of energy efficiency codes, standards and practices.",
+          "keywords": "",
+          "href": "/7-1-1/",
+          "status": "complete"
+        },
+        {
+          "id": "7-2-1",
+          "title": "Proportion of electricity generated from renewable and other non-greenhouse gas emitting sources",
+          "description": "This indicator measures the proportion of electricity generated from renewable and non-greenhouse gas emitting sources, which includes energy generated from hydraulic turbines, solar, tidal power turbines, wind power turbines, nuclear steam turbines and all electricity produced from biomass.",
+          "keywords": "",
+          "href": "/7-2-1/",
+          "status": "complete"
+        },
+        {
+          "id": "7-3-1",
+          "title": "Total energy consumption per capita",
+          "description": "This indicator measures the consumption of different types of energy in terajoules per capita.",
+          "keywords": "",
+          "href": "/7-3-1/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "8",
+      "title": "Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all",
+      "indicators": [
+        
+        {
+          "id": "8-1-1",
+          "title": "Unemployment rate",
+          "description": "This indicator measures the unemployment rate. The unemployment rate is the number of unemployed persons expressed as a percentage of the labour force.",
+          "keywords": "women, gender, Indigenous",
+          "href": "/8-1-1/",
+          "status": "complete"
+        },
+        {
+          "id": "8-2-1",
+          "title": "Employment rate",
+          "description": "This indicator measures the employment rate. The employment rate is the number of persons employed expressed as a percentage of the population 15 years of age and over.",
+          "keywords": "",
+          "href": "/8-2-1/",
+          "status": "complete"
+        },
+        {
+          "id": "8-3-1",
+          "title": "Proportion of youth not in education, employment or training",
+          "description": "This indicator measures the proportion of youth not in education, employment or training.",
+          "keywords": "women, gender",
+          "href": "/8-3-1/",
+          "status": "complete"
+        },
+        {
+          "id": "8-4-1",
+          "title": "Rate of involuntary part-time work",
+          "description": "This indicator measures the rate of involuntary part-time work. The rate of involuntary part-time work can be derived in different ways. The one used for this indicator is based on all involuntary part-time workers, whether they looked for full-time work or not. The rate is then presented as the number of involuntary part-timers as a share of the part-time employed.",
+          "keywords": "women, gender",
+          "href": "/8-4-1/",
+          "status": "complete"
+        },
+        {
+          "id": "8-5-1",
+          "title": "Gross domestic product per capita",
+          "description": "This indicator measures the gross domestic product (GDP) per capita.",
+          "keywords": "",
+          "href": "/8-5-1/",
+          "status": "complete"
+        },
+        {
+          "id": "8-6-1",
+          "title": "Jobs in the clean technology products sector",
+          "description": "This indicator measures the number of jobs that are attributable to environmental and clean technology activity.",
+          "keywords": "",
+          "href": "/8-6-1/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "9",
+      "title": "Build resilient infrastructure, promote inclusive and sustainable industrialization and foster innovation",
+      "indicators": [
+        
+        {
+          "id": "9-1-1",
+          "title": "Proportion of enterprises that introduced innovations with environmental benefits",
+          "description": "The indicator measures the proportion of enterprises that introduced innovations with environmental benefits. An innovation is a new or improved product or process (or combination thereof) that differs significantly from the unit's previous products or processes and that has been made available to potential users (product) or brought into use by the unit (process).",
+          "keywords": "",
+          "href": "/9-1-1/",
+          "status": "complete"
+        },
+        {
+          "id": "9-2-1",
+          "title": "Gross domestic expenditure on research and development intensity",
+          "description": "This indicator measures the proportion of gross domestic expenditure allocated to research & development (GERD). The GERD is the aggregate of the total R&D expenditures and serves as a general indicator of R&D activity.",
+          "keywords": "",
+          "href": "/9-2-1/",
+          "status": "complete"
+        },
+        {
+          "id": "9-3-1",
+          "title": "Proportion of households that have access to broadband Internet service at speeds of 50/10 Mbps",
+          "description": "This indicator measures the proportion of households that have access to broadband internet service at speeds of 50 Mbps for downloads / 10 Mbps for uploads and unlimited data.",
+          "keywords": "Indigenous",
+          "href": "/9-3-1/",
+          "status": "complete"
+        },
+        {
+          "id": "9-4-1",
+          "title": "Proportion of Canadians that have access to the latest generally deployed mobile wireless technology",
+          "description": "This indicator measures the availability of the latest generally deployed mobile wireless technology. In this case, technologies such as HSPA+, LTE and LTE‑A as well as the upcoming 5G are included.",
+          "keywords": "Indigenous",
+          "href": "/9-4-1/",
+          "status": "complete"
+        },
+        {
+          "id": "9-5-1",
+          "title": "Greenhouse gas emissions per dollar of value-added from the production of infrastructure assets",
+          "description": "This indicator measures greenhouse gas emissions per dollar of value-added from the production of infrastructure assets. Variances in greenhouse gas emissions per value added occur as the production of certain infrastructure assets results in more emissions than others.",
+          "keywords": "",
+          "href": "/9-5-1/",
+          "status": "complete"
+        },
+        {
+          "id": "9-6-1",
+          "title": "Number of publicly available electric vehicle charging and alternative fuelling stations in Canada",
+          "description": "This indicator tracks the number of publicly available electric vehicle charging and alternative fuelling stations in Canada.",
+          "keywords": "",
+          "href": "/9-6-1/",
+          "status": "complete"
+        },
+        {
+          "id": "9-7-1",
+          "title": "Remaining useful service life ratio of infrastructure assets",
+          "description": "This indicator measures the remaining useful service life ratio of infrastructure assets. This ratio indicates the percentage of the infrastructure asset class that remains and can enable analysis of where investment is most required. The higher the ratio, the more useful life remains. <br><br> The remaining useful service life ratio of infrastructure assets is obtained as follows: the remaining useful life, which is the difference between the average age of the investment spending and their expected service life, is divided by the expected service life. For example, if the average age of investment in highways is 6 years and the expected service life is 30 years, the ratio is (30 − 6) ÷ 30 = 80%.",
+          "keywords": "",
+          "href": "/9-7-1/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "10",
+      "title": "Reduce inequality within and among countries",
+      "indicators": [
+        
+        {
+          "id": "10-1-1",
+          "title": "Gini Coefficient",
+          "description": "This indicator measures the Gini coefficient. The Gini coefficient is a number between zero and one that measures the relative degree of inequality in the distribution of income.",
+          "keywords": "",
+          "href": "/10-1-1/",
+          "status": "complete"
+        },
+        {
+          "id": "10-2-1",
+          "title": "Proportion of the population reporting discrimination or unfair treatment",
+          "description": "This indicator measures the proportion of the population reporting discrimination or unfair treatment. Hate crimes refer to criminal offences motivated by bias, prejudice, or hate based on race, national or ethnic origin, language, colour, religion, sex, age, mental or physical disability, sexual orientation or any other similar factor, such as profession or political beliefs.",
+          "keywords": "",
+          "href": "/10-2-1/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "11",
+      "title": "Make cities and human settlements inclusive, safe, resilient and sustainable",
+      "indicators": [
+        
+        {
+          "id": "11-1-1",
+          "title": "(a) Number of shelter users experiencing chronic homelessness; and (b) percentage change in the number of shelter users experiencing chronic homelessness from the 2016 baseline",
+          "description": "<p>The indicator measures the number and growth rate of shelter users experiencing chronic homelessness.<br> Chronic homelessness refers to individuals who are currently experiencing homelessness AND who meet at least one of the following criteria:<br><br> 1) they have a total of at least 6 months (180 days) of homelessness over the past year;<br> 2) they have recurrent experiences of homelessness over the past 3 years, with a cumulative duration of at least 18 months (546 days). <em>(Reaching Home: Canada’s Homelessness Strategy Directives)</em>",
+          "keywords": "",
+          "href": "/11-1-1/",
+          "status": "complete"
+        },
+        {
+          "id": "11-2-1",
+          "title": "Proportion of households in core housing need",
+          "description": "This indicator measures the proportion of households in core housing need. Core housing need refers to whether a private household's housing falls below at least one of the indicator thresholds for housing adequacy, affordability or suitability, and would have to spend 30% or more of its total before-tax income to pay the median rent of alternative local housing that is acceptable (attains all three housing indicator thresholds). Housing indicator thresholds are defined as follows: <br><br> - Adequate housing is reported by their residents as not requiring any major repairs. <br><br> - Affordable housing has shelter costs equal to less than 30% of total before-tax household income. <br><br> - Suitable housing has enough bedrooms for the size and composition of resident households according to the National Occupancy Standard (NOS), conceived by the Canada Mortgage and Housing Corporation and provincial and territorial representatives.",
+          "keywords": "",
+          "href": "/11-2-1/",
+          "status": "complete"
+        },
+        {
+          "id": "11-3-1",
+          "title": "Percentage of the population living in areas where air pollutant concentrations are less than or equal to the 2020 Canadian Ambient Air Quality Standards",
+          "description": "This indicator tracks the percentage of the population across Canada living in areas where concentrations of outdoor air pollutants were less than or equal to the 2020 Canadian Ambient Air Quality Standards (CAAQS, the standards). The CAAQS are health- and environmental-based outdoor air quality objectives for pollutant concentrations in the air. The standards are intended to further protect human health and the environment and to promote continuous improvement in air quality across Canada. <em>Environment and Climate Change Canada (ECCC)</em>",
+          "keywords": "",
+          "href": "/11-3-1/",
+          "status": "complete"
+        },
+        {
+          "id": "11-4-1",
+          "title": "Percentage of the population living within 500 metres of a public transport stop",
+          "description": "This indicator measures the proportion of the population within the geographic unit living within 500 meters of a public transit stop.",
+          "keywords": "",
+          "href": "/11-4-1/",
+          "status": "complete"
+        },
+        {
+          "id": "11-5-1",
+          "title": "Proportion of commuters using sustainable transportation",
+          "description": "This indicator measures percentage of commuters using public transit or active transportation. Public transit includes bus, subway, elevated rail, light rail, streetcar, commuter train and passenger ferry. Active transport includes walking and cycling.",
+          "keywords": "",
+          "href": "/11-5-1/",
+          "status": "complete"
+        },
+        {
+          "id": "11-6-1",
+          "title": "Total waste disposal per capita",
+          "description": "The indicator measures the amount of waste disposal (in kilograms) per capita by residential and non-residential sources.",
+          "keywords": "",
+          "href": "/11-6-1/",
+          "status": "complete"
+        },
+        {
+          "id": "11-7-1",
+          "title": "Proportion of the population aged 12 and over who reported their sense of belonging to their local community as being very strong or somewhat strong",
+          "description": "This indicator measures the proportion of the population aged 12 and over who reported their sense of belonging to their local community as being very strong or somewhat strong.",
+          "keywords": "women, gender",
+          "href": "/11-7-1/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "12",
+      "title": "Ensure sustainable consumption and production patterns",
+      "indicators": [
+        
+        {
+          "id": "12-1-1",
+          "title": "Proportion of new light duty vehicle registrations that are zero-emission vehicles",
+          "description": "This indicator measures the proportion of new vehicle registration that is for zero-emission vehicles.",
+          "keywords": "",
+          "href": "/12-1-1/",
+          "status": "complete"
+        },
+        {
+          "id": "12-2-1",
+          "title": "Proportion of businesses that adopted selected environmental protection activities and management practices",
+          "description": "This indicator measures the share of establishmentsinvesting in environmental protection activities or management practices.<br><br>Environmental protection and resource management activities reflect the proportion of establishments investing in environmental protection activities. These are businesses that incurred expenditures on such activities during the reference year. This does not include expenditures made in previous years, even if the effects of those expenditures extend over several years.<br><br>Environmental management practices refer to the use of one or more environmental management practices.",
+          "keywords": "",
+          "href": "/12-2-1/",
+          "status": "complete"
+        },
+        {
+          "id": "12-3-1",
+          "title": "Total waste diversion per capita",
+          "description": "This indicator measures the amount of waste diverted per capita.",
+          "keywords": "",
+          "href": "/12-3-1/",
+          "status": "complete"
+        },
+        {
+          "id": "12-4-1",
+          "title": "Proportion of discarded plastic leaked permanently into the environment",
+          "description": "This indicator measures the proportion of discarded plastic leaked permanently into the environment. Of total discarded plastic, a small fraction is leaked permanently to the environment - based on data from consulting reports - while the majority is collected by waste and recycling management systems.",
+          "keywords": "",
+          "href": "/12-4-1/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "13",
+      "title": "Take urgent action to combat climate change and its impacts",
+      "indicators": [
+        
+        {
+          "id": "13-1-1",
+          "title": "Greenhouse gas emissions",
+          "description": "This indicator measures greenhouse gas emissions. Greenhouse gases (GHGs) are the atmospheric gases responsible for causing global warming and climate change. The major GHGs are carbon dioxide (CO2), methane (CH4) and nitrous oxide (N20). <em>(definition from United Nations Climate Change)</em>",
+          "keywords": "",
+          "href": "/13-1-1/",
+          "status": "complete"
+        },
+        {
+          "id": "13-2-1",
+          "title": "Deaths due to exposure to excessive natural heat",
+          "description": "This indicator measures the number of deaths due to excessive natural heat. Canadians may face elevated mortality risks due to climate change and more frequent, more intense, and longer extreme heat events.",
+          "keywords": "",
+          "href": "/13-2-1/",
+          "status": "complete"
+        },
+        {
+          "id": "13-3-1",
+          "title": "Proportion of municipal organizations who factored climate change adaptation into their decision-making process",
+          "description": "This indicator measures the proportion of municipal organizations who factored climate change adapatation into their decision making process, for selected core infrastructure assets. <br><br> Climate change adaptation is defined as changes in processes, practices, and structures to moderate potential damages or to benefit from opportunities associated with climate change. In 2016, climate change adaptation was defined as anticipating or monitoring climate change and undertaking actions to address the consequences of climate change. <br><br> Climate change is a long-term shift in weather conditions identified by changes in temperature, precipitation, winds, and other indicators. Climate change can involve both changes in average conditions and changes in variability, including for example, extreme events.",
+          "keywords": "",
+          "href": "/13-3-1/",
+          "status": "complete"
+        },
+        {
+          "id": "13-4-1",
+          "title": "Flood protection infrastructure spending",
+          "description": "This indicator measures expenditure on flood protection infrastructure.",
+          "keywords": "",
+          "href": "/13-4-1/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "14",
+      "title": "Conserve and sustainably use the oceans, seas and marine resources for sustainable development",
+      "indicators": [
+        
+        {
+          "id": "14-1-1",
+          "title": "Proportion of marine and coastal areas conserved",
+          "description": "This indicator measures the proportion of Canada's marine area that is conserved. Conserved areas are lands and waters where human use is limited. They include protected areas as well as other effective area-based conservation measures. <em>Environment and Climate Change Canada (ECCC)</em>",
+          "keywords": "",
+          "href": "/14-1-1/",
+          "status": "complete"
+        },
+        {
+          "id": "14-2-1",
+          "title": "Proportion of key fish stocks in the Cautious and Healthy zones",
+          "description": "This indicator reports on the status (Healthy, Cautious, Critical or Uncertain) of key Canadian fish stocks. Human use of the oceans (including fishing) and environmental conditions affect the abundance and health of fish stocks at national and global levels. In order to maintain fish stocks for future generations, it is important to track their status and adjust management measures (such as harvest rates and limits). <em>Environment and Climate Change Canada (ECCC)</em>",
+          "keywords": "",
+          "href": "/14-2-1/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "15",
+      "title": "Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss",
+      "indicators": [
+        
+        {
+          "id": "15-1-1",
+          "title": "Proportion of native wild species ranked secure or apparently secure according to the national extinction risk level",
+          "description": "This indicator summarizes the risk of extinction for individual species in Canada. A species is defined as a population of organisms that does not usually interbreed with other populations, even where they overlap in space and time. <em>Environment and Climate Change Canada (ECCC)</em>",
+          "keywords": "",
+          "href": "/15-1-1/",
+          "status": "complete"
+        },
+        {
+          "id": "15-2-1",
+          "title": "Proportion of species at risk showing progress towards their population and distribution objectives",
+          "description": "The indicator shows whether population and distribution trends of species at risk are consistent with the objectives in final recovery strategies or management plans. <em>Environment and Climate Change Canada (ECCC)</em>",
+          "keywords": "",
+          "href": "/15-2-1/",
+          "status": "complete"
+        },
+        {
+          "id": "15-3-1",
+          "title": "Canadian species index",
+          "description": "<p>The Canadian species index represents the average percent change in the abundances of Canadian vertebrate species' populations since 1970. The index is an 'average of trends', rather than a measure of change in the total number of animals: each species, whether it is common or rare, has the same effect on the index. <br><br>Animal wildlife populations depend on healthy habitats and can be negatively impacted by threats, such as pollution, habitat degradation or overhunting. Trends in animal populations can provide an indication of the health of biodiversity and ecosystems in Canada. <em>Environment and Climate Change Canada (ECCC)</em></p>",
+          "keywords": "",
+          "href": "/15-3-1/",
+          "status": "complete"
+        },
+        {
+          "id": "15-4-1",
+          "title": "Proportion of Canada's land and inland waters conserved",
+          "description": "This indicator measures the proportion of Canada's terrestrial (land and freshwater) area that is conserved. Conserved areas are lands and waters where human use is limited. They include protected areas as well as other effective area-based conservation measures. <em>Environment and Climate Change Canada (ECCC)</em>",
+          "keywords": "",
+          "href": "/15-4-1/",
+          "status": "complete"
+        },
+        {
+          "id": "15-5-1",
+          "title": "Proportion of the sustainable wood supply harvested",
+          "description": "This indicator measures the total amount of timber harvested annually as a percentage of the sustainable wood supply. To ensure that forests can continue to provide timber, harvests must remain within sustainable limits. The sustainable wood supply is defined as the potential volume of timber which can be harvested sustainably as determined by a complex analysis of ecological, economic, and social considerations. <em>Environment and Climate Change Canada (ECCC)</em>",
+          "keywords": "",
+          "href": "/15-5-1/",
+          "status": "complete"
+        },
+        {
+          "id": "15-6-1",
+          "title": "Forest area as a proportion of total land area",
+          "description": "This indicator measures the proportion of forested areas as a proportion of total land area. Forest area is a basic sustainability indicator and is important to monitor closely, particularly in regions where forest area is being lost. <em>(NRCan)</em>",
+          "keywords": "",
+          "href": "/15-6-1/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "16",
+      "title": "Promote peaceful and inclusive societies for sustainable development, provide access to justice for all and build effective, accountable and inclusive institutions at all levels",
+      "indicators": [
+        
+        {
+          "id": "16-1-1",
+          "title": "Proportion of Canadians who reported feeling safe walking alone in their neighbourhood after dark",
+          "description": "This indicator measures the proportion of people in Canada who reported feeling safe walking alone in their neighbourhood after dark.",
+          "keywords": "women, gender",
+          "href": "/16-1-1/",
+          "status": "complete"
+        },
+        {
+          "id": "16-2-1",
+          "title": "Incidence of selected types of crime",
+          "description": "This indicator measures the incidence rate of selected types of crime.",
+          "keywords": "",
+          "href": "/16-2-1/",
+          "status": "complete"
+        },
+        {
+          "id": "16-3-1",
+          "title": "Incidence of cyber-crime",
+          "description": "This indicator measures the rate of cyber-crimes per 100,000 population.",
+          "keywords": "",
+          "href": "/16-3-1/",
+          "status": "complete"
+        },
+        {
+          "id": "16-4-1",
+          "title": "Civil Court case completion time",
+          "description": "This indicator measures the time elapsed from the initiation of a civil court case to its first disposition. <br><br> A disposition is a court event that disposes part or all of the civil case (settlement, consent judgment and judgment). A general civil case is any civil action that is not a family-related action, such as contracts, torts, bankruptcy, probate matters, and other claims involving money. Family cases are cases involving family law-related issues, including child protection, divorce, separation, custody and access, division of property, support, and adoption.",
+          "keywords": "",
+          "href": "/16-4-1/",
+          "status": "complete"
+        },
+        {
+          "id": "16-5-1",
+          "title": "Criminal Court case completion time",
+          "description": "This indicator measures the median number of days elapsed from first appearance to final decision of criminal court cases.",
+          "keywords": "women, gender",
+          "href": "/16-5-1/",
+          "status": "complete"
+        },
+        {
+          "id": "16-6-1",
+          "title": "Incarceration rate",
+          "description": "The adult incarceration rate represents the average number of adults in custody per day for every 100,000 individuals in the adult population (18 years and older). It includes adults in sentenced custody, remand and other temporary detention.",
+          "keywords": "",
+          "href": "/16-6-1/",
+          "status": "complete"
+        },
+        {
+          "id": "16-7-1",
+          "title": "Proportion of the population with high levels of confidence in selected institutions",
+          "description": "This indicator measures the percentage of the population with high levels of confidence in selected institutions.",
+          "keywords": "women, gender",
+          "href": "/16-7-1/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "17",
+      "title": "Strengthen the means of implementation and revitalize the Global Partnership for Sustainable Development",
+      "indicators": [
+        
+        {
+          "id": "17-1-1",
+          "title": "Statistical Performance Indicators",
+          "description": "<p> The Statistical Performance Indicators (SPI) assess the maturity and performance of national statistical systems in five key areas, called pillars. The five pillars are:<br><br> 1. Data Use: Statistics have value only if they are used. A successful statistical system produces data that are used widely and frequently.<br> 2. Data Services: A range of services connects data users to producers and facilitate dialogues between them, thus building trust and a sense of value.<br> 3. Data Products: The dialogues between users and producers drive the design and range of statistical products and their accuracy, timeliness, frequency, comparability, and levels of disaggregation. The products signal whether countries are able to produce indicators related to the 17 Sustainable Development Goals.<br> 4. Data Sources: To create useful products, the statistical system needs to draw on sources inside and outside the government. Data collection thus goes beyond the typical censuses and surveys to include administrative and geospatial data as well as data generated by private firms and citizens.<br> 5. Data Infrastructure: A mature statistical system has well-developed hard infrastructure (legislation, governance, standards) and soft infrastructure (skills, partnerships) as well as the financial resources to deliver useful—and widely used—data products and services.<br><br> Each of these pillars is supported by four or five dimensions and uses defined methods and indicators. <em>(World Bank Group)</em><br><br> The series labelled as 'Canada' represents the overall SPI score for Canada. </p>",
+          "keywords": "",
+          "href": "/17-1-1/",
+          "status": "complete"
+        },
+        {
+          "id": "17-2-1",
+          "title": "Total official support for sustainable development",
+          "description": "The concept of 'Sustainable Development' is defined as development that meets the needs of the present without compromising the ability of future generations to meet their own needs (<em>UNESCO</em> definition). Total Official Support for International Assistance (TOSSD) encompasses all officially supported resource flows to promote sustainable development in developing countries and to support development enablers and address global challenges. ([<em>Global Affairs Canada</em>](https://www.international.gc.ca/transparency-transparence/international-assistance-report-stat-rapport-aide-internationale/2019-2020.aspx?lang=eng#a1_7))",
+          "keywords": "",
+          "href": "/17-2-1/",
+          "status": "complete"
+        },
+        {
+          "id": "17-3-1",
+          "title": "Exports of environmental and clean technology goods and services to developing countries",
+          "description": "This indicator measures the estimated exports of environmental and clean technology products (in millions of dollars) to developing countries. Exports of environmental products include environmental goods, such as clean electricity, biofuels and primary goods, and waste and scrap goods, as well as waste management and remediation services. Exports of clean technology products include clean technology goods as well as clean technology services, including scientific and research and development services, support services, and construction services.",
+          "keywords": "",
+          "href": "/17-3-1/",
+          "status": "complete"
+        }]
+    }
+  }]
