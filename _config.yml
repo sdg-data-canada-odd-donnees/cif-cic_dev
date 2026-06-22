@@ -130,6 +130,10 @@ menu:
  #   translation_key: menu.related-products
   - path: /faq
     translation_key: menu.faq
+  - translation_key: menu.summary
+    dropdown:
+      - path: /summary_2025
+        translation_key: menu.summary_2025
   - translation_key: menu.more_info
     dropdown:
       - path: /related-products
